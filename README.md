@@ -1,7 +1,3 @@
-Como seu projeto é em **LaTeX** e segue a estrutura da imagem anexada, o README pode ser adaptado para destacar a organização do código e as instruções de compilação. Aqui está uma versão revisada para o seu repositório no **GitHub**:
-
----
-
 # 📖 **Tese de Doutorado - Economic Commensalism**  
 **Governing the Commons through Rational Incentives**  
 
