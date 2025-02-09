@@ -10,6 +10,7 @@ Este repositório contém a estrutura da tese de doutorado em Economia Aplicada 
 📂 Economic-Commensalism
 ├── 📜 README.md           # Visão geral do projeto
 ├── 📂 Backups             # Arquivos de backup da tese
+├── 📂 Diversos            # Imagens e diagramas utilizados no documento
 ├── 📂 Figuras             # Imagens e diagramas utilizados no documento
 ├── 📂 Graficos            # Gráficos gerados via LaTeX, Python ou R
 ├── 📂 Quadros             # Tabelas formatadas em ambiente "table" do LaTeX
@@ -44,10 +45,3 @@ Este repositório contém a estrutura da tese de doutorado em Economia Aplicada 
 ## 🏛 **Instituição**  
 📍 Universidade de São Paulo - **FEARP/USP**  
 📜 Programa de Doutorado em Economia Aplicada  
-
-## 🚀 **Como Contribuir**  
-Caso tenha sugestões ou queira colaborar com ajustes no LaTeX, abra uma _issue_ ou _pull request_!  
-
----
-
-Isso deve cobrir bem a estrutura do seu projeto. Algo mais que gostaria de adicionar ou modificar?
