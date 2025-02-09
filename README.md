@@ -16,7 +16,7 @@ Este repositório contém a estrutura da tese de doutorado em Economia Aplicada 
 ├── 📂 Tabelas             # Outras tabelas utilizadas na tese
 ├── 📜 bibliografia.bib    # Arquivo BibTeX contendo as referências bibliográficas
 ├── 📜 main.tex            # Arquivo principal da tese em LaTeX
-└── 📜 usp-logo-png-1.png  # Logotipo da USP inserido na capa ou cabeçalho
+└── 📜 usp_logo.png        # Logotipo da USP inserido na capa ou cabeçalho
 ```
 
 ## 🖊 **Como Compilar**  
