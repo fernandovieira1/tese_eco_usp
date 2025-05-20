@@ -1,0 +1,18 @@
+\textbf{Limited awareness}: agents are not aware of all risks and opportunities related to environment. % Cap1
+
+\textbf{The role of beliefs and individual preferences in adopting sustainable practices:} Agricultural producers respond not only to economic incentives but also to cultural factors and subjective perceptions of the advantages of preservation, which can be altered through awareness policies.
+
+***
+\textbf{The interaction between global and local incentives affects the effectiveness of environmental policies:} Global environmental policies (international carbon market, REDD+) and local policies (regional subsidies, biome-specific compensations) have distinct impacts, and their combination can be a potentially more efficient strategy.
+
+\textbf{Intra-biome environmental compensation is more efficient than inter-biome compensation:} Considering compensation within the same biome can result in greater conservation and less regional degradation compared to a global carbon credit system.
+
+
+
+
+
+
+Crie um parágrafo (4-5 linhas) a ser inserido abaixo dessa hipótese, justificando o porquê dessa hipótese. Aproveite o que já conversei neste projeto que esteja relacionado
+
+***
+Espelhe o que foi feito na forma e no conteúdo de Specific Hypothesis (texto abaixo) em Specific Objectives, ou seja, um parágrafo introdutório curto, o objetivo (conversando com a hipótese HX) e a justificativa abaixo de H0 em outro parágrafo. Procure "espelhar" os conteúdos de um e outro, mas mantendo originalidade, coerência e coesão, nas devidas proporções.
