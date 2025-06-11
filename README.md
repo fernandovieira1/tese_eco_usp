@@ -17,12 +17,12 @@ A tese está dividida em três capítulos principais, cada qual concebido como u
 ### 📐 Capítulo 2 – Modelo Matemático
 - **Abordagem:** Otimização dinâmica e teoria dos jogos.
 - **Ferramentas:** 
-  - Equação de Bellman
-  - Filtro de Kalman
-  - Processos Markovianos
-  - Aprendizado Bayesiano (passivo)
-  - Redes Spin / aprendizado ativo
-  - Equilíbrio de Nash
+  - Equação de Bellman (dinâmica intertemporal)
+  - Filtro de Kalman (correção de ruídos de informação)
+  - Processos Markovianos (eventos aleatórios)
+  - Aprendizado Bayesiano (aprendizado passivo)
+  - Redes Spin (aprendizado ativo)
+  - Equilíbrio de Nash (estabilidade do sistema)
 - **Modelos Beta:**
   - `Beta 1`: Incentivos positivos
   - `Beta 2`: Punições e desincentivos
