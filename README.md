@@ -49,12 +49,12 @@ Rather than treating the environment as an exogenous constraint, economic commen
 
 | Dimension                               | Extractivism (current paradigm)                                                      | Economic Commensalism (proposed)                                                                        |
 | --------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
-| **Relationship with environment** | Natural resource as exogenous stock, used up to regeneration limit                   | Environment as**endogenous productive factor (E)** , strategic asset that amplifies K and L      |
+| **Relationship with environment** | Natural resource as exogenous stock, used up to regeneration limit                   | Environment as **endogenous productive factor (E)** , strategic asset that amplifies K and L    |
 | **Dominant incentives**           | State coercion, fines, taxes, diffuse subsidies                                      | **Positive, calibrated, territorial** incentives tied to local environmental performance         |
 | **Agent rationality**             | Short-term profit maximizer; environment as external barrier                         | **Intertemporal maximizer** : preservation becomes rational because it generates economic returns |
 | **Institutional structure**       | Centralized vertical regulation (Código Florestal, embargos), often poorly enforced | Decentralized, adaptive, bottom-up governance anchored in verifiable environmental data                 |
 | **Long-run economic outcome**     | Declining marginal productivity, rising costs (pests, soil degradation)              | **Rising marginal productivity** of K and L via preservation of factor E                         |
-| **Expected equilibrium**          | Unstable; tends to breach tipping points and generate crises                         | Stable strategic equilibrium: **preservation is individually rational and collectively optimal** |
+| **Expected equilibrium**          | Unstable; tends to breach tipping points and generate crises                         | Stable strategic equilibrium:**preservation is individually rational and collectively optimal**   |
 | **Role of the state**             | Enforcer and punisher                                                                | **Value inducer**: structures incentives, verifies performance                                    |
 
 ---
