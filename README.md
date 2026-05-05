@@ -110,10 +110,14 @@ The region offers ideal conditions to test whether rational eco-economic dynamic
 
 ```
 /
-├── proposal/          # PhD research proposal (full document)
-├── chapters/          # Draft chapters (theoretical, mathematical, empirical)
+├── backup/            # copies or drafts of the main text
+├── chapters/          # Draft chapters (theoretical, mathematical, empirical) written in latex
+├── code/              # algorithms (Python, R, Dynare etc) related to the chapters
+├── data/              # Empirical datasets (Brazil and Mato Grosso)
+├── grafs/             # graphics belonging to the chapters 
+├── images/            # images belonging to the project 
 ├── notes/             # Working notes, intuitions, and auxiliary materials
-├── data/              # Empirical datasets (Mato Grosso)
+├── proposal/          # PhD research proposal (full project)
 └── references/        # Bibliography and literature review materials
 ```
 
