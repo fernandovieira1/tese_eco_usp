@@ -1,9 +1,9 @@
-\documentclass[a4paper,12pt,oneside,brazil,english,nottoc,notbib]{abntex2}
-
+\documentclass[a4paper,12pt,oneside,brazil,english]{abntex2}
+% Paper / article em vez de chapter
 % =============================
-% ==== BIBLIOTECAS ====
+% ==== PACKAGES ====
 % =============================
-\usepackage{lmodern} % fonte padrão
+\usepackage{lmodern}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{babel}
@@ -11,72 +11,61 @@
 \usepackage{ragged2e}
 \usepackage{graphicx}
 \usepackage{xcolor}
-\usepackage{amsmath}
+\usepackage{amsmath,amssymb}
+\usepackage{amsthm}            % theorem-like environments
+\usepackage{svg}
+\usepackage{microtype}         % better justification
 \usepackage{titlesec}
 \usepackage{etoolbox}
 \usepackage{tocloft}
 \usepackage[alf,abnt-etal-list=2,abnt-etal-cite=1,abnt-doi=link,abnt-url-package=hyperref,abnt-emphasize=bf]{abntex2cite}
-% Tabelas
 \usepackage{tabularx}
 \usepackage{adjustbox}
 \usepackage{booktabs}
-
-% ==== Sumario com seções principais em negrito ====
-\renewcommand{\ABNTEXsectionfont}{\bfseries}
-
 \usepackage{fancyhdr}
 \usepackage{appendix}
 \usepackage{setspace}
 \usepackage{titling}
 \usepackage{hyperref}
-\usepackage{lipsum}
 \usepackage{float}
 \usepackage{caption}
 
-% ==== Ajuste do nome para figuras ====
+% ==== English figure name ====
 \addto\captionsenglish{\renewcommand{\figurename}{Graph}}
 
-% ==== Ambiente para quadros ====
+% ==== Custom float: Panel ====
 \newfloat{quadro}{htbp}{loq}
-\floatname{quadro}{Quadro}
-
-% ==== Customizacoes tocloft ====
-\newcommand{\listabstractname}{Abstract}
-\newcommand{\addabstracttoc}{%
-  \addcontentsline{toc}{section}{\protect\numberline{}\listabstractname}%
-}
-\renewcommand{\cftsecindent}{1.5em}
+\floatname{quadro}{Chart}
 
 % =============================
-% ==== LAYOUT E MARGENS ====
+% ==== LAYOUT AND MARGINS ====
 % =============================
 \geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
 \setlength{\parindent}{1.25cm}
-\onehalfspacing
+\setlength{\parskip}{0pt}
 
-% ==== Cabecalho e rodape ====
+% ==== Header and footer ====
 \setlength{\headheight}{24.63824pt}
-\pagestyle{plain}
+\pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\fontsize{9.5pt}{11pt}\selectfont\includegraphics[height=1cm]{Figuras/usp_logo.png}}
-\fancyhead[R]{\fontsize{9.5pt}{11pt}\selectfont\raisebox{0.25cm}{\textcolor{gray}{PhD Thesis Proposal}}}
+\fancyhead[C]{\fontsize{11pt}{11pt}\selectfont\textcolor{gray}{article 1 - Economic Commensalism: A Theoretical Framework to Endogenize Nature in the Production Function}}
 \fancyfoot[C]{\fontsize{9.5pt}{11pt}\selectfont\textcolor{darkgray}{\textbf{\thepage}}}
 
 % =============================
-% ==== ESTILOS ====
+% ==== SECTION STYLES ====
 % =============================
 \titleformat{\section}{\bfseries\Large}{\thesection}{1em}{}
 \titleformat{\subsection}{\bfseries\large}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}{\normalfont\normalsize}{\thesubsubsection}{1em}{}
 \titleformat{\paragraph}{\normalfont\normalsize}{\theparagraph}{1em}{}
 
-% ==== Numeracao com ponto ====
+% ==== Numbering with dots ====
 \renewcommand{\thesection}{\arabic{section}.}
 \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}.}
 \renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}
 \renewcommand{\theparagraph}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{paragraph}.}
 
-% ==== Redefine secao de referencias ====
+% ==== References section title ====
 \makeatletter
 \renewcommand\bibsection{%
   \clearpage
@@ -87,93 +76,287 @@
 }
 \makeatother
 
-% ==== Configuracao do hyperref ====
+% ==== Hyperref ====
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
     citecolor=black,
     urlcolor=black,
-    pdftitle={Economic Commensalism: Governing the Commons through Rational Incentives},
+    pdftitle={Economic Commensalism: A Theoretical Framework - article 1},
     pdfauthor={Fernando Souza da Vieira}
 }
 
 % =============================
-% ==== INICIO DO DOCUMENTO ====
+% ==== THEOREM ENVIRONMENTS ===
+% =============================
+\newtheorem{definition}{Definition}[section]
+\newtheorem{hypothesis}{Hypothesis}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[section]
+
+% =============================
+% ==== DOCUMENT START ====
 % =============================
 \begin{document}
 
-% ==== CAPA ====
-\pagenumbering{roman}
-\begin{titlepage}
-    \centering
-    {\large UNIVERSITY OF S\~AO PAULO (USP)\\[0.2cm]
-    FACULTY OF ECONOMICS, ADMINISTRATION AND ACCOUNTING
-    OF RIBEIR\~AO PRETO (FEARP)}\\[3.5cm]
-
-    {\Huge \bfseries Economic Commensalism:}\\[0.3cm]
-    {\LARGE Governing the Commons through Rational Incentives}
-
-    \vspace{1.5cm}
-
-    {\large \textbf{Doctoral Researcher: Fernando Souza da Vieira}}\\[0.3cm]
-    {\large \textbf{Advisor: Prof. Dr. Alexandre Chibebe Nicolella}}\\[2cm]
-
-    \textit{Research Proposal for the PhD in Applied Economics}\\
-    University of S\~ao Paulo (FEARP/USP)\\[2.5cm]
-
-\vfill
-{\large Ribeir\~ao Preto, SP}\\[0.3cm]
-{\large June, 2025}
-
-\end{titlepage}
-
-% ==== SUMARIO ====
-\clearpage
-\begingroup
-\selectlanguage{english}
-\renewcommand{\addcontentsline}[3]{}
-\tableofcontents
-\endgroup
-\clearpage
-
-% ==== PAGINA INICIAL ====
+% ==== TITLE AND AUTHOR ====
 \pagenumbering{arabic}
-\setcounter{page}{5}
+\setcounter{page}{1}
 \pagestyle{fancy}
 
+{\centering\Large\bfseries Economic Commensalism: A Theoretical Framework to Endogenize Nature in the Production Function\par}
+\vspace{0.3cm}
+{\centering\normalsize Fernando Souza da Vieira\\University of S\~ao Paulo (FEARP/USP)\par}
+\vspace{0.8cm}
+
 % ==== ABSTRACT ====
-\clearpage
-\addabstracttoc
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{fancy}
+
 \section*{Abstract}
-\input{0_abstract}
+\vspace{0.5cm}
+\noindent
+>>>MUDAR NO FINAL<<< Mainstream economic models treat the environment as exogenous---either a passive boundary or a damage function external to production. Built on full rationality, perfect foresight, and aggregate optimization, they seek Pareto-efficient equilibria under extractivist or predatory logics, where short-term gains prevail over ecological balance. Such frameworks detach behavior from biophysical feedbacks, systematically misaligning private incentives and environmental resilience.
 
-% ==== ORGANIZACAO DAS SECOES ====
-\clearpage
-\thispagestyle{fancy}
-\input{1_introduction}
-\clearpage
-\thispagestyle{fancy}
-\input{2_Research_Design}
-\clearpage
-\thispagestyle{fancy}
-\input{3_Significance_Study}
-\clearpage
-\thispagestyle{fancy}
-\input{4_Final_Remarks}
+This work redefines nature ($E$) as an endogenous, multidimensional factor that interacts with capital ($K$) and labor ($L$) within a \textit{commensalist} architecture---a framework in which agents pursue self-interest while benefiting from the preservation of shared ecological stocks. Grounded in bounded rationality, adaptive learning, and Nash equilibria, the model replaces coercive or moral imperatives with incentive-compatible dynamics, showing that environmental preservation can emerge as a rational and stable economic equilibrium. >>>MUDAR NO FINAL<<< 
 
-% ==== APENDICES ====
-\clearpage
-\appendix
-\renewcommand{\thesection}{\Alph{section}.}
-\thispagestyle{fancy}
-\input{A_Timeline}
-\clearpage
-\thispagestyle{fancy}
-\input{B_On_AI_use}
+\section{Introduction}
 
-% ==== REFERENCIAS ====
+Mainstream economic models have traditionally treated the environment as an exogenous component of the production process---a passive boundary or a sink for residuals. From the neoclassical growth tradition (Solow, 1956; Swan, 1956) to integrated assessment models (Nordhaus, 2008), nature has entered economic reasoning either as a constraint or as a damage function external to agents' decisions. Built upon assumptions of full rationality, perfect foresight, and aggregate social optimization, these frameworks seek Pareto-efficient outcomes under a representative planner or homogeneous agent. Yet such abstractions detach economic behavior from ecological feedbacks, systematically misaligning private incentives and environmental resilience, and thus reinforcing extractivist dynamics that maximize short-term returns at the expense of long-term welfare (Hardin, 1968; Dasgupta, 2021).
+
+A wide range of contributions have sought to correct this misalignment through fiscal or institutional instruments---from Pigouvian taxation (Pigou, 1920) and Coasean bargaining (Coase, 1960) to the commons governance frameworks of Ostrom (1990) and the applied environmental economics of Assunção, Scheinkman, and Sant'Anna (2019). Although these approaches have improved environmental governance, they remain essentially corrective: the environment continues to be modeled as external to the production function, and preservation emerges as a normative or coercive outcome rather than as a rational economic choice.
+
+This article proposes an alternative theoretical framework---\textit{Economic Commensalism}---that redefines nature ($E$) as an endogenous, multidimensional factor of production interacting with capital ($K$) and labor ($L$). By endogenizing $E$, the model alters the marginal productivity structure of the economy, allowing ecological preservation to generate private as well as collective gains. The idea builds on recent efforts to integrate natural capital into production theory (Dasgupta, 2021; Brock \& Taylor, 2010) but departs from them by emphasizing decentralized decision-making and strategic stability rather than planner-based optimality.
+
+% Deixar esse parágrafo para o fechamento?
+% Remover
+% Sugestão: "In article 2, these premises are formalized in an intertemporal stochastic model with strategic interaction and uncertainty."
+The formal development, presented in article~2, introduces heterogeneous agents facing intertemporal trade-offs between extraction and preservation under uncertainty. Using dynamic programming (Bellman, 1957), stochastic processes (Markov, 1954), Bayesian updating, Kalman filtering, and Nash equilibrium concepts (Nash, 1951), the model examines how boundedly rational producers adjust strategies in response to ecological and informational feedbacks. The resulting equilibria---termed \textit{commensal equilibria}---illustrate conditions under which cooperation with nature becomes individually rational and dynamically stable.
+
+%%% INCREMENTAR MAIS COM OUTROS MODELOS ->>
+This approach differs from the Green Solow Model (Brock \& Taylor, 2010), which introduces environmental constraints through abatement or depreciation but maintains Pareto efficiency as its organizing principle. In the commensalist setup, Nash equilibrium replaces Pareto optimality as the relevant criterion: the focus shifts from aggregate welfare to strategic compatibility. Furthermore, while integrated assessment models such as DICE (Nordhaus, 2008) and PAGE (Hope, 2013) treat emissions and damages as exogenous cost functions, the commensalist framework incorporates environmental quality directly into production, enabling mutual reinforcement between ecological balance and economic performance.
+
+% Linkar isso com as motivações e implicações que geram o problema
+The theoretical foundations of this proposal draw upon ecological concepts of interaction---predation, mutualism, and commensalism (Odum, 1969; Margulis \& Sagan, 1995)---adapted to economic analysis. By mapping these ecological relationships onto economic behavior, the article reinterprets the tragedy of the commons as a mis-specified equilibrium problem: when nature is modeled as exogenous, equilibria are extractive or predatory; when endogenized, new stable configurations emerge where preservation is incentive-compatible.
+
+This paper aims to achieve its objectives in four steps. First, it identifies the epistemological gap that results from treating environmental variables as exogenous in production theory. Second, it reviews the main economic and ecological contributions that have addressed, directly or indirectly, this omission. Third, it introduces the conceptual and mathematical premises underlying the commensalist framework. % Mudar esse fim
+Finally, it establishes the bridge to the Beta Models of article~2, in which these premises are formalized through dynamic equations and equilibrium analysis. Together, these steps advance a coherent theoretical reconstruction of the environment's role in economic systems, wherein preservation emerges not as moral restraint but as a rational equilibrium outcome.
+
+
+\section{World and Brazilian Evidence}
+
+The foundational approaches to environmental economics, while groundbreaking, treated ecological problems as market failures to be corrected from the outside. Arthur Pigou's work established the concept of negative externalities, proposing corrective taxes to force firms to internalize the social costs of pollution \cite{pigou2010liberty}. This top-down approach inspired mechanisms like carbon pricing and environmental fines. In contrast, Ronald Coase argued that, with clearly defined property rights and low transaction costs, private bargaining could lead to efficient outcomes without state intervention \cite{coase1937nature}. Coase's framework underpins market-based solutions such as cap-and-trade systems and payments for ecosystem services. However, both paradigms model the environment as external to the core production function; for Pigou, it is a source of social cost, and for Coase, a property to be negotiated. They do not conceive of environmental integrity as a direct, productive input that enhances the marginal productivity of capital and labor---a core premise of the commensalist framework.
+
+The debate evolved with Garrett Hardin's influential ``Tragedy of the Commons,'' which argued that shared resources are doomed to overexploitation due to the conflict between individual incentives and collective well-being. As \citeonline[p.~1244]{hardin1968tragedy} famously concluded: ``Freedom in a commons brings ruin to all.'' Hardin's pessimistic diagnosis prompted solutions based on privatization or stringent government regulation. Elinor Ostrom challenged this deterministic view by providing extensive empirical evidence of communities successfully managing common-pool resources. However, as noted by \citeonline[p.~1317]{ostrom2002commonpool}, in the conventional theory criticized by her, ``participants do not undertake efforts to design their own governance arrangements.'' While Ostrom's polycentric governance model \cite{ostrom1990governing} is a clear precursor to the regionalized governance proposed in this thesis, it still focuses on the \textit{rules of access} to a resource rather than on the resource's \textit{endogenous role} in boosting productivity. The environment remains a stock to be managed, not a dynamic factor of production.
+
+Despite the theoretical and practical impacts of these contributions, empirical data show that environmental degradation continues, and in many cases, has accelerated. Global greenhouse gas emissions have risen dramatically: annual global carbon dioxide emissions from fossil fuels and industry increased significantly since 1990, reaching record highs in 2024 \cite{statista2024emissions}\cite{carbonbrief2024}. Deforestation in critical biomes like the Amazon continues at alarming rates. According to INPE's PRODES monitoring system, the Brazilian Amazon experienced deforestation rates exceeding 13,000 km² in recent years, a significant increase compared to previous decades \cite{inpe2021prodes}\cite{wwf2022deforestation}. 
+
+\begin{figure}[htbp]
+    \centering
+    \caption{Global Carbon Emissions Trends}
+    \includegraphics[width=\textwidth]{../../grafs/carbon_emissions_graph.png}
+    \legend{Source: Statista (2025).}
+    \label{fig:carbon_emissions}
+\end{figure}
+
+
+This persistent gap between policy and outcomes suggests a structural limitation in existing models. This persistent gap between policy and outcomes suggests that existing models, while valuable, may be incomplete. It raises a critical question: what if the environment is not merely an external constraint but a productive component of the economy? This thesis aims to explore this possibility by developing a framework where environmental health ($E$) is treated as an endogenous factor. The goal is to investigate whether, under such a reconceptualization, ecological preservation can become a stable equilibrium rather than just a trade-off. Before developing this model formally, it is essential to build its epistemological foundation, which the next section undertakes by mapping the evolution from classic externality theory to contemporary models of incentive-compatible governance.
+
+% =============================
+% ==== LITERATURE REVIEW  ====
+% =============================
+% I. Problema + literatura + dados empíricos ilustrando
+% Mostrar que aqueciomento global e desastres ambientais aumentam e as medidas de coerção e incentivo não resolvem
+\section{From externalities to incentive-compatible governance}
+
+This section does not aim to provide an exhaustive history of environmental thought in economics. Rather, it traces how different theoretical traditions treated nature in ways that shaped modeling choices and policy instruments. In classical political economy, nature appears implicitly as a fixed or passive substrate, precluding feedback from ecological degradation to productivity and thereby legitimizing purely extractive dynamics. Neoclassical economics formalized this via externalities (Pigou, Coase), treating the environment as external to production---a source of cost (Pigou) or a property to be negotiated (Coase). Institutional economics challenged this with evidence of successful commons management (Ostrom), yet still focused on resource access rules rather than on the resource's endogenous role in production.
+
+Contemporary approaches---the Green Solow Model (Brock \& Taylor), integrated assessment models (Nordhaus's DICE), and environmental game theory---have advanced our understanding, introducing dynamics, uncertainty, and strategic interaction. However, they retain a fundamental assumption: the environment enters primarily as a constraint or a corrective mechanism, not as a constitutive factor of productivity. 
+
+This structural limitation has two key consequences: \emph{(1) systematic mispricing}: the marginal productivity contribution of environmental integrity is not internalized by private agents, resulting in undervaluation of natural capital; and \emph{(2) institutional fragility}: when incentives are not calibrated locally and territorially, benefits concentrate while costs diffuse, perpetuating extractive equilibria even under formal regulation.
+
+The commensalist framework addresses both by endogenizing the environment as a productive factor and calibrating incentives to render preservation individually rational and collectively stable---a shift from corrective policy to constitutive economic design.
+
+
+% =============================
+% ==== ECOLOGICAL FOUNDATIONS ====
+% =============================
+\section{Ecological archetypes and economic interaction}
+
+We translate four ecological archetypes into economic strategies:
+
+\begin{itemize}
+\item \textbf{Predation}: rapid resource depletion; output surges then collapses; ecological debt grows beyond a critical point.
+\item \textbf{Extraction (regulated)}: constrained use mitigates collapse but still crosses sustainability thresholds over longer horizons.
+\item \textbf{Mutualism}: conservative, low-elasticity use that preserves integrity at the cost of modest productivity.
+\item \textbf{Commensalism}: the environment is not harmed and may regenerate; output per unit of ecological impact improves, leveraging complementarities between $E$, $K$, and $L$.
+\end{itemize}
+
+Commensalism is thus an \emph{economic} category: an institutional-production arrangement where private best responses choose conservation levels that keep $E$ within integrity domains and raise long-run productivity relative to extractive baselines.
+
+Formalizar!!
+
+% =============================
+% ==== ECONOMIC COMMENSALISM ===
+% =============================
+
+\section{Economic Commensalism}
+
+\subsection{Fundamentos teóricos}
+
+O Comensalismo Econômico redefine a relação entre economia e meio ambiente ao tratar a natureza não como uma restrição ou externalidade, mas como um componente produtivo e endógeno dos sistemas econômicos. 
+--> FALAR QUE sua lógica repousa em um conjunto de princípios inter-relacionados que combinam realismo ontológico, racionalidade limitada e compatibilidade de incentivos.
+
+\begin{itemize}
+    \item \textbf{Endogeneização de $E$:} 
+    O meio ambiente ($E$) é modelado como fator ativo de produção, ao lado do capital ($K$) e do trabalho ($L$), afetando diretamente a produtividade total:
+    \[
+    \frac{\partial Y}{\partial E}>0,\quad 
+    \frac{\partial^2 Y}{\partial K\,\partial E}>0,\quad 
+    \frac{\partial^2 Y}{\partial L\,\partial E}>0.
+    \]
+
+    \item \textbf{Racionalidade limitada e aprendizado:} 
+    Os agentes operam sob informação imperfeita e expectativas adaptativas. Suas decisões evoluem por atualização bayesiana e filtragem de Kalman, refletindo incerteza e retroalimentação entre economia e ecossistema.
+
+    \item \textbf{Governança regionalizada:} 
+    A governança é policêntrica e territorial. Cada bioma calibra incentivos conforme suas dinâmicas ecológicas e produtivas, enquanto o Estado atua como coordenador e garante coercitivo orgânico.
+
+    \item \textbf{Ambiente físico como recurso ótimo:} 
+    O meio ambiente é tratado como estoque físico sujeito à otimalidade econômica. A preservação é racional quando a utilidade marginal da integridade ecológica se iguala à sua contribuição marginal à produção:
+    \[
+    \frac{\partial U}{\partial E} = \lambda \frac{\partial F}{\partial E}.
+    \]
+
+    \item \textbf{Incentivos positivos e negativos combinados:} 
+    A eficácia depende da calibração entre recompensas e punições. Mecanismos positivos (subsídios, créditos, bônus) e negativos (multas, impostos, restrições) devem atuar em conjunto.
+
+    \item \textbf{Estabilidade dinâmica e equilíbrio:} 
+    Esses mecanismos permitem a convergência para equilíbrios de Nash ou pontos fixos em que a preservação se torna estrategicamente racional. O modelo busca não apenas eficiência, mas estabilidade dinâmica e alinhamento entre objetivos econômicos e ecológicos.
+\end{itemize}
+
+\noindent
+Em síntese, o arcabouço comensalista combina endogeneização, racionalidade limitada, governança regional e incentivos mistos em um modelo coerente no qual a preservação ambiental emerge como resultado racional e estável do comportamento econômico.
+
+% =============================
+% ==== FORMALIZAÇÃO MATEMÁTICA ====
+% =============================
+
+% =============================
+% ==== FORMALIZAÇÃO MATEMÁTICA (AMPLIADA) ====
+% =============================
+
+\subsection{Formalização}
+
+\begin{definition}[Fator ambiental endógeno]
+Seja $E$ um vetor multidimensional de estados ambientais. 
+A produção é dada por $Y = F(K,L,E)$, com:
+\[
+\frac{\partial Y}{\partial E}>0,\quad 
+\frac{\partial^2 Y}{\partial E^2}<0,\quad
+\frac{\partial^2 Y}{\partial K \,\partial E}\ge 0,\quad 
+\frac{\partial^2 Y}{\partial L \,\partial E}\ge 0.
+\]
+\end{definition}
+
+\noindent
+Os dois primeiros sinais indicam contribuição positiva de $E$ com retornos decrescentes. 
+Os termos cruzados expressam complementaridade técnica: melhores condições ambientais elevam a produtividade marginal do capital e do trabalho.
+
+\begin{definition}[Comensalismo econômico]
+Um arranjo institucional-produtivo é \emph{comensalista} quando as estratégias ótimas dos agentes escolhem trajetórias de uso de $E$ que maximizam o ganho intertemporal privado \emph{e} mantêm $E$ em domínio de integridade ecológica, de modo que a razão $\Delta Y/\Delta E$ supere o regime extrativista regulado.
+\end{definition}
+
+\begin{hypothesis}[Ganho comensal]
+Existe um intervalo $[x',x^*)$ de impacto ecológico agregado tal que a produção sob comensalismo $P_c(x)$ domina a produção extrativista $P_e(x)$ em termos líquidos:
+\[
+C \equiv \int_{x'}^{x^*}\!\!\big[P_c(x)-P_e(x)\big]\,dx \;>\; 0,
+\]
+com $x^*$ inferior ao ponto de colapso ecológico e $x'$ uma referência normativa.
+\end{hypothesis}
+
+\subsubsection*{Modelo estático (período único)}
+
+Considere um agente que escolhe ação $a\in\mathcal{A}$ que afeta o estado ambiental contemporâneo $e = e_0 + \phi(a)$, com $\phi'(a)\ge 0$ (ação não degrada $E$ no domínio comensal). A restrição orçamentária é
+\[
+c = F(K,L,e) - \kappa(a),
+\]
+onde $\kappa'(a)>0$ é o custo privado de $a$. O problema estático é:
+\[
+\max_{a\in\mathcal{A}} \; u\big(c,e\big) \;=\; u\big(F(K,L,e_0+\phi(a))-\kappa(a),\, e_0+\phi(a)\big).
+\]
+\textbf{FOC interior:}
+\[
+\underbrace{u_c\big[F_E\,\phi'(a) - \kappa'(a)\big]}_{\text{efeito via consumo}}
+\;+\;
+\underbrace{u_e\,\phi'(a)}_{\text{efeito via ambiente}}
+\;=\; 0,
+\]
+onde $u_c\equiv \partial u/\partial c$, $u_e\equiv \partial u/\partial e$ e $F_E\equiv \partial F/\partial E$.
+
+\begin{proposition}[Condição de comensalidade estática]
+Se $F_E>0$, $\phi'(a)\ge 0$, $u_c>0$, $u_e\ge 0$ e os incentivos forem calibrados de forma que $\kappa'(a)\le F_E\,u_c/u_c + u_e/u_c$ no ótimo interior, então existe $a^\star$ tal que o ganho marginal total de aumentar $e$ não é negativo. Em particular, se $u$ tiver diferenças crescentes em $(c,e)$ e $F$ tiver diferenças crescentes em $(K,E)$ e $(L,E)$, o ótimo exibe \emph{monotonicidade} em $e$ e $a^\star$ (comparativos estáticos ascendentes).
+\end{proposition}
+
+\noindent
+\textit{Ideia:} a soma dos efeitos marginais (via produto e via utilidade direta de $e$) supera o custo marginal privado quando os instrumentos de política (subsídios, bônus, créditos) reduzem $\kappa'(a)$ de modo a internalizar a complementaridade técnica de $E$.
+
+\subsubsection*{Esboço dinâmico (Bellman)}
+
+No caso intertemporal discreto, com estado $s_t$ (econômico), $e_t$ (ambiental), crenças $b_t$ e ruído $\xi_t$, o operador de Bellman é
+\[
+\mathcal{T}[V](s_t,e_t) \;=\; \max_{a_t\in\mathcal{A}} \Big\{ u(c_t,e_t) + \beta\,\mathbb{E}_{t}^{\,b}\big[V(s_{t+1},e_{t+1})\big] \Big\},
+\]
+\[
+c_t=F(K_t,L_t,e_t)-\kappa(a_t),\qquad e_{t+1}=G(e_t,a_t,\xi_t),\quad \partial G/\partial a_t \ge 0 \text{ no domínio comensal}.
+\]
+
+\begin{definition}[Monotonicidade comensal do operador]
+Dizemos que o sistema é \emph{comensal} se, para todo $(s_t,e_t)$ e todo $\Delta e\ge 0$,
+\[
+\mathcal{T}[V](s_t,e_t+\Delta e)\;-\;\mathcal{T}[V](s_t,e_t)\;\ge\;0.
+\]
+\end{definition}
+
+\begin{proposition}[Endogeneização e estabilidade (versão dinâmica)]
+Suponha (i) $u$ com diferenças crescentes em $(c,e)$; (ii) $F$ com complementaridades em $(K,E)$ e $(L,E)$; (iii) $G$ não decrescente em $e$ e $a$ no domínio comensal; (iv) incentivos que tornem $\kappa$ submodular em $(a,e)$. Então o mapeamento de melhor resposta é monótono e admite (i) equilíbrio de Nash estável e/ou (ii) ponto fixo em correspondência semicontínua superior (Kakutani). Além disso, $\mathcal{T}$ é não-decrescente em $e$, de modo que melhorias em $E$ não reduzem o valor.
+\end{proposition}
+
+\noindent
+\textit{Esboço:} aplicar monotone comparative statics (diferenças crescentes) ao problema estático de cada período e teoremas de ponto fixo para a dinâmica agregada; a propriedade de monotonicidade de $\mathcal{T}$ decorre de $u_e\ge 0$, $F_E>0$ e $G_e,G_a\ge 0$ no domínio comensal.
+
+
+% =============================
+% ==== BRIDGE TO article 2 ====
+% =============================
+\section{Bridge to article 2}
+
+The mathematical article will (i) specify functional forms (modified Cobb--Douglas / CES) with explicit $E$; 
+(ii) pose the intertemporal optimization via Bellman; 
+(iii) model environmental uncertainty with Markov chains and informational friction with Bayesian/Kalman learning; 
+(iv) prove existence/stability using fixed-point arguments; and 
+(v) compare regimes (penalty-only, incentive-only, mixed) to test the \textit{commensal gain} and stability claims.
+
+% ===
+\section{Fazer empírica}
+% ===
+
+% =============================
+% ==== FINAL REMARKS ====
+% =============================
+\section{Final remarks}
+
+Endogenizing the environment in production theory clarifies why purely extractive equilibria are dynamically fragile and why calibrated incentives at territorial scales can render preservation privately optimal. 
+This article positioned the conceptual move, stated hypotheses and propositions, and set the agenda for the formal proof in article~2. 
+If validated, economic commensalism reframes environmental policy from reactive command-and-control to proactive incentive design grounded in the productive complementarities between $E$, $K$, and $L$.
+
+% =============================
+% ==== REFERENCES (enable when .bib is available) ====
+% =============================
 \clearpage
-\bibliographystyle{abntex2-alf-negrito}
+\bibliographystyle{abntex2-alf}
 \bibliography{library}
+
 
 \end{document}
