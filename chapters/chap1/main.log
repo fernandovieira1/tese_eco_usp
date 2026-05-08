@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.4.28)  8 MAY 2026 00:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.4.28)  8 MAY 2026 11:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -978,7 +978,12 @@ File: ../../images/fearp_logo.png Graphic file (type png)
 <use ../../images/fearp_logo.png>
 Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 17.
 (pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
- [2{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <../../images/fearp_logo.png>]
+
+Overfull \hbox (28.45273pt too wide) has occurred while \output is active
+[]|$[]$|  
+ []
+
+[2{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <../../images/fearp_logo.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
@@ -986,17 +991,32 @@ File: ../../images/fearp_logo.png Graphic file (type png)
 <use ../../images/fearp_logo.png>
 Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 37.
 (pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
- [4] [5]
+
+Overfull \hbox (28.45273pt too wide) has occurred while \output is active
+[]|$[]$|  
+ []
+
+[4] [5]
 File: ../../images/fearp_logo.png Graphic file (type png)
 <use ../../images/fearp_logo.png>
 Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 63.
 (pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
- [6]) (./2_World_and_Brazilian_Evidence.tex) (./3_From_externalities_to_incentive.tex) (./4_Final_Remarks.tex [7]
+
+Overfull \hbox (28.45273pt too wide) has occurred while \output is active
+[]|$[]$|  
+ []
+
+[6]) (./2_World_and_Brazilian_Evidence.tex) (./3_From_externalities_to_incentive.tex) (./4_Final_Remarks.tex [7]
 File: ../../images/fearp_logo.png Graphic file (type png)
 <use ../../images/fearp_logo.png>
 Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 17.
 (pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
- [8]) (./main.bbl
+
+Overfull \hbox (28.45273pt too wide) has occurred while \output is active
+[]|$[]$|  
+ []
+
+[8]) (./main.bbl
 bibitemlist
 [9
 
@@ -1005,7 +1025,12 @@ File: ../../images/fearp_logo.png Graphic file (type png)
 <use ../../images/fearp_logo.png>
 Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 243.
 (pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
- [10] (./main.aux)
+
+Overfull \hbox (28.45273pt too wide) has occurred while \output is active
+[]|$[]$|  
+ []
+
+[10] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
