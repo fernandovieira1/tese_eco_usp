@@ -9,8 +9,8 @@
 \usepackage{babel}
 \usepackage{geometry}
 \usepackage{ragged2e}
-\usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{titlesec}
 \usepackage{etoolbox}
@@ -21,7 +21,7 @@
 \usepackage{adjustbox}
 \usepackage{booktabs}
 
-% Figuras e quadros
+% Figuras, quadros e legendas
 \usepackage{float}
 \usepackage{caption}
 
@@ -34,7 +34,14 @@
 % =============================
 % ==== CONFIGURAÇÕES GERAIS ====
 % =============================
-\geometry{top=3cm, bottom=2cm, left=3cm, right=2cm, includefoot, footskip=40pt}
+\geometry{
+    top=3cm,
+    bottom=2cm,
+    left=3cm,
+    right=2cm,
+    includefoot,
+    footskip=45pt
+}
 
 \setlength{\parindent}{1.25cm}
 \setlength{\parskip}{0pt}
@@ -58,30 +65,62 @@
 % =============================
 % ==== CABEÇALHO E RODAPÉ ====
 % =============================
-\setlength{\headheight}{34pt}
-\setlength{\footskip}{40pt}
-
-\makepagestyle{firstpage}
-\makeevenhead{firstpage}{}{}{ }
-\makeoddhead{firstpage}{%
-  \fontsize{9.5pt}{11pt}\selectfont\includegraphics[height=1cm]{Figuras/usp_logo.png}%
-}{}{%
-  \fontsize{9.5pt}{11pt}\selectfont\raisebox{0.25cm}{\textcolor{gray}{colocar algo aqui???}}%
-}
-\makeevenfoot{firstpage}{}{}{ }
-\makeoddfoot{firstpage}{}{}{ }
+\setlength{\headheight}{15pt}
+\setlength{\footskip}{45pt}
 
 \makepagestyle{bodypage}
-\makeevenhead{bodypage}{}{}{ }
-\makeoddhead{bodypage}{}{}{ }
-\makeevenfoot{bodypage}{%
-  \fontsize{9.5pt}{11pt}\selectfont\includegraphics[height=1cm]{Figuras/usp_logo.png}%
-}{}{%
-  \fontsize{9.5pt}{11pt}\selectfont\textcolor{darkgray}{\textbf{\thepage}}%
+
+% Sem cabeçalho
+\makeevenhead{bodypage}{}{}{}
+\makeoddhead{bodypage}{}{}{}
+
+% Altura comum dos elementos do rodapé
+\newlength{\footerboxheight}
+\setlength{\footerboxheight}{1cm}
+
+% Logo do rodapé
+\newcommand{\footerlogo}{%
+  \parbox[c][\footerboxheight][c]{12cm}{%
+    \centering
+    \includegraphics[
+        width=22cm,
+        height=1.6cm,
+        keepaspectratio
+    ]{../../images/fearp_logo.png}%
+  }%
 }
-\makeoddfoot{bodypage}{%
-  \fontsize{9.5pt}{11pt}\selectfont\textcolor{darkgray}{\textbf{\thepage}}\hspace{2em}\textcolor{gray}{Vieira e Nicolella}%
-}{}{}%
+
+% Número da página
+\newcommand{\footerpage}{%
+  \parbox[c][\footerboxheight][c]{1cm}{%
+    \centering
+    \fontsize{9.5pt}{11pt}\selectfont
+    \textcolor{darkgray}{\textbf{\thepage}}%
+  }%
+}
+
+% Autores no rodapé
+\newcommand{\footerauthors}{%
+  \fontsize{9.5pt}{11pt}\selectfont
+  \textcolor{gray}{Vieira e Nicolella}%
+}
+
+% Rodapé das páginas pares
+\makeevenfoot{bodypage}
+  {\footerlogo}
+  {}
+  {\footerpage}
+
+% Rodapé das páginas ímpares
+\makeoddfoot{bodypage}
+  {\parbox[c][\footerboxheight][c]{6cm}{%
+      \fontsize{9.5pt}{11pt}\selectfont
+      \textcolor{darkgray}{\textbf{\thepage}}%
+      \hspace{2em}%
+      \footerauthors%
+   }}
+  {}
+  {}
 
 % =============================
 % ==== ESTILOS DAS SEÇÕES ====
@@ -152,7 +191,7 @@
 
 \pagenumbering{arabic}
 \setcounter{page}{1}
-\thispagestyle{firstpage}
+\thispagestyle{empty}
 
 % =============================
 % ==== TÍTULO E AUTORES ====

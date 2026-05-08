@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.4.28)  8 MAY 2026 00:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.4.28)  8 MAY 2026 00:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -638,6 +638,24 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \RaggedLeftParindent=\skip269
 \RaggedRightParindent=\skip270
 \JustifyingParindent=\skip271
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
@@ -648,27 +666,9 @@ Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-))
+)
 \Gin@req@height=\dimen265
 \Gin@req@width=\dimen266
-) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 274.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1365.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip272
@@ -850,7 +850,8 @@ Package caption Info: hyperref package is loaded.
 )
 \@float@every@quadro=\toks41
 \c@quadro=\count386
-Package hyperref Info: Option `colorlinks' set `true' on input line 141.
+\footerboxheight=\skip280
+Package hyperref Info: Option `colorlinks' set `true' on input line 180.
 
 
 LaTeX Warning: Unused global option(s):
@@ -862,27 +863,27 @@ Package babel Info: 'brazil' activates 'portuges' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-Package hyperref Info: Link coloring ON on input line 146.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+Package hyperref Info: Link coloring ON on input line 185.
 \myptabbox=\box66
-\myptabboxwidth=\skip280
+\myptabboxwidth=\skip281
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -897,14 +898,14 @@ Package hyperref Info: Link coloring ON on input line 146.
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=455.24411pt
-* \textheight=662.78308pt
+* \textheight=657.78308pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=-15.36449pt
 * \topmargin=-21.28552pt
-* \headheight=34.0pt
+* \headheight=15.0pt
 * \headsep=19.8738pt
 * \topskip=12.0pt
-* \footskip=40.0pt
+* \footskip=45.0pt
 * \marginparwidth=42.9055pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
@@ -939,76 +940,71 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 164.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 203.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 164.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 203.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 164.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 203.
  (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 164.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 203.
  (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 164.
+(Font)              <12> on input line 203.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 164.
+(Font)              <8> on input line 203.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 164.
+(Font)              <6> on input line 203.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 166.
- (./0_abstract.tex) (./1_introduction.tex
-<Figuras/usp_logo.png, id=12, 803.0pt x 602.25pt>
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 9.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}
+(Font)              <10.95> on input line 205.
+ (./0_abstract.tex) (./1_introduction.tex [1
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc} <./Figuras/usp_logo.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 14.
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 17.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [2{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
+<../../images/fearp_logo.png, id=38, 427.5975pt x 60.225pt>
+File: ../../images/fearp_logo.png Graphic file (type png)
+<use ../../images/fearp_logo.png>
+Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 17.
+(pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
+ [2{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <../../images/fearp_logo.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 37.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
+File: ../../images/fearp_logo.png Graphic file (type png)
+<use ../../images/fearp_logo.png>
+Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 37.
+(pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
  [4] [5]
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 63.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
+File: ../../images/fearp_logo.png Graphic file (type png)
+<use ../../images/fearp_logo.png>
+Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 63.
+(pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
  [6]) (./2_World_and_Brazilian_Evidence.tex) (./3_From_externalities_to_incentive.tex) (./4_Final_Remarks.tex [7]
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 17.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
+File: ../../images/fearp_logo.png Graphic file (type png)
+<use ../../images/fearp_logo.png>
+Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 17.
+(pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
  [8]) (./main.bbl
 bibitemlist
 [9
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}])
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 204.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
+File: ../../images/fearp_logo.png Graphic file (type png)
+<use ../../images/fearp_logo.png>
+Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 243.
+(pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
  [10] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
@@ -1016,15 +1012,15 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 20016 strings out of 467533
- 322959 string characters out of 5422138
- 790885 words of memory out of 5000000
- 48580 multiletter control sequences out of 15000+600000
+ 19980 strings out of 467533
+ 322331 string characters out of 5422138
+ 789612 words of memory out of 5000000
+ 48544 multiletter control sequences out of 15000+600000
  671945 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,15n,117p,1176b,694s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,16n,117p,1176b,694s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
-Output written on main.pdf (10 pages, 191606 bytes).
+Output written on main.pdf (10 pages, 191587 bytes).
 PDF statistics:
  193 PDF objects out of 1000 (max. 8388607)
  161 compressed objects within 2 object streams
