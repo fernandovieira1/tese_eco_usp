@@ -5,6 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Acosta 2013]{acosta2013extractivism}
+\abntrefinfo{Acosta}{ACOSTA}{2013}
+{ACOSTA, A. Extractivism and neoextractivism: two sides of the same curse.
+\textbf{Beyond development: alternative visions from Latin America}, Quito, v.~1, p. 61--86, 2013.}
+
 \bibitem[Agrawal 2005]{agrawal2005environmentality}
 \abntrefinfo{Agrawal}{AGRAWAL}{2005}
 {AGRAWAL, A. \textbf{Environmentality: Technologies of Government and the Making of Subjects}. Durham: Duke University Press, 2005.
@@ -26,10 +31,6 @@ Dispon{\'\i}vel em: \htmladdnormallink{$<$https:\-/\-/www\-.planalto\-.gov\-.br\
 {BöRNER, J. et al. Mixing carrots and sticks to conserve forests in the brazilian amazon: A spatial probabilistic modeling approach.
 \textbf{PLoS ONE}, Public Library of Science, v.~11, n.~2, p. e0148622, 2016.}
 
-\bibitem[Chichilnisky 2017]{chichilnisky2017north}
-\abntrefinfo{Chichilnisky}{CHICHILNISKY}{2017}
-{CHICHILNISKY, G. North--south trade and the global environment. In:  \textbf{International trade and the environment}. [S.l.]: Routledge, 2017. p. 261--284.}
-
 \bibitem[Dasgupta 2001]{dasgupta2001human}
 \abntrefinfo{Dasgupta}{DASGUPTA}{2001}
 {DASGUPTA, P. \textbf{Human Well-Being and the Natural Environment}. 1st. ed. Oxford: Oxford University Press, 2001.
@@ -40,19 +41,20 @@ ISBN 9780199247882.}
 {EASTERLY, W. \textbf{The Tyranny of Experts: Economists, Dictators, and the Forgotten Rights of the Poor}. New York: Basic Books, 2013.
 ISBN 9780465082415.}
 
-\bibitem[Hanley et al. 2007]{hanley2007environmental}
-\abntrefinfo{Hanley et al.}{HANLEY et al.}{2007}
-{HANLEY, N. et al. \textbf{Environmental Economics in Theory and Practice}. London: Palgrave Macmillan, 2007.}
+\bibitem[Gudynas et al. 2009]{gudynas2009diez}
+\abntrefinfo{Gudynas et al.}{GUDYNAS et al.}{2009}
+{GUDYNAS, E. et al. Diez tesis urgentes sobre el nuevo extractivismo.
+\textbf{Extractivismo, pol{\'\i}tica y sociedad}, Quito, Ecuador, v.~187, p. 187--225, 2009.}
 
 \bibitem[Hardin 1968]{hardin1968tragedy}
 \abntrefinfo{Hardin}{HARDIN}{1968}
 {HARDIN, G. The tragedy of the commons.
 \textbf{Science}, v.~162, n.~3859, p. 1243--1248, 1968.}
 
-\bibitem[Hubacek et al. 2002]{article}
-\abntrefinfo{Hubacek et al.}{HUBACEK et al.}{2002}
-{HUBACEK, K. et al. The role of land in economic theory.
-04 2002.}
+\bibitem[Hubacek e Bergh 2002]{hubacek2002role}
+\abntrefinfo{Hubacek e Bergh}{HUBACEK; BERGH}{2002}
+{HUBACEK, K.; BERGH, J.~C. Van~den. The role of land in economic theory.
+IR-02-037, 2002.}
 
 \bibitem[Jacobs 1991]{jacobs1991green}
 \abntrefinfo{Jacobs}{JACOBS}{1991}
@@ -67,9 +69,10 @@ ISBN 9780465082415.}
 {LOMBORG, B. \textbf{The Skeptical Environmentalist: Measuring the Real State of the World}. Cambridge: Cambridge University Press, 2001.
 ISBN 9780521010689.}
 
-\bibitem[Ostrom 1990]{ostrom1990commons}
-\abntrefinfo{Ostrom}{OSTROM}{1990}
-{OSTROM, E. \textbf{Governing the Commons: The Evolution of Institutions for Collective Action}. Cambridge: Cambridge University Press, 1990.}
+\bibitem[McKay 2017]{mckay2017agrarian}
+\abntrefinfo{McKay}{MCKAY}{2017}
+{MCKAY, B.~M. Agrarian extractivism in bolivia.
+\textbf{World Development}, Elsevier, v.~97, p. 199--211, 2017.}
 
 \bibitem[Ostrom 2002]{ostrom2002commonpool}
 \abntrefinfo{Ostrom}{OSTROM}{2002}
