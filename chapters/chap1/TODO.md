@@ -1,8 +1,8 @@
 **TAREFAS CAP1.**
 
-* [ ] Definir título
+* [X] Definir título
 * [ ] Definir seções
-* [ ] Revisãointrodução
+* [ ] Revisão introdução
 * [ ] Revisão seção 1
 * [ ] Revisão seção 2
 * [ ] Escrever seção 3
