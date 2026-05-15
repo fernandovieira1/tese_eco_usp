@@ -12,7 +12,6 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{amsmath}
-\usepackage{titlesec}
 \usepackage{etoolbox}
 \usepackage[alf,abnt-etal-list=2,abnt-etal-cite=1,abnt-doi=link,abnt-url-package=hyperref,abnt-emphasize=bf]{abntex2cite}
 
@@ -23,7 +22,6 @@
 
 % Figuras, quadros e legendas
 \usepackage{float}
-\usepackage{caption}
 
 % Hiperlinks
 \usepackage{hyperref}
@@ -125,29 +123,10 @@
 % =============================
 % ==== ESTILOS DAS SEÇÕES ====
 % =============================
-\titleformat{\section}
-  {\bfseries\Large}
-  {\thesection}
-  {1em}
-  {}
-
-\titleformat{\subsection}
-  {\bfseries\large}
-  {\thesubsection}
-  {1em}
-  {}
-
-\titleformat{\subsubsection}
-  {\normalfont\normalsize\bfseries}
-  {\thesubsubsection}
-  {1em}
-  {}
-
-\titleformat{\paragraph}
-  {\normalfont\normalsize\bfseries}
-  {\theparagraph}
-  {1em}
-  {}
+\setsecheadstyle{\bfseries\Large}
+\setsubsecheadstyle{\bfseries\large}
+\setsubsubsecheadstyle{\normalfont\normalsize\bfseries}
+\setparaheadstyle{\normalfont\normalsize\bfseries}
 
 % Numeração das seções
 \renewcommand{\thesection}{\arabic{section}.}
@@ -200,11 +179,9 @@
 
     {\Large \bfseries Endogenizing Nature in Production Theory: A Framework of Economic Commensalism}\\[0.8cm]
 
-    Fernando Souza da Vieira$^{1}$ \quad Alexandre Chibebe Nicolella$^{1}$\\[0.3cm]
+    Fernando Souza da Vieira\footnote{fernandodvieira@usp.br} \quad Alexandre Chibebe Nicolella\footnote{nicolella@usp.br}\\[0.3cm]
 
-    {\small $^{1}$Faculty of Economics, Administration and Accounting of Ribeirão Preto, University of São Paulo, Brazil}\\[0.3cm]
-
-    {\small Corresponding author: inserir e-mail}\\[0.8cm]
+    {\small $^{1}$Faculty of Economics, Administration and Accounting of Ribeirão Preto, University of São Paulo, Brazil}
 
 \end{center}
 
