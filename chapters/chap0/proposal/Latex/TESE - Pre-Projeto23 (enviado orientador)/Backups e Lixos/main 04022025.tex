@@ -1,0 +1,235 @@
+%% FAÇA UM BACKUP SEMPRE QUE RETOMAR ESTE PROJETO. 
+% Reabriu o documento e vai alterá-lo? Salve um backup antes.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% I. PREÂMBULO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% /// **i. FONTES DE FORMATAÇÃO** %%%%%%
+%% Diretrizes para Apresentação de Dissertações e Teses da USP
+% https://www.livrosabertos.abcd.usp.br/portaldelivrosUSP/catalog/view/1353/1233/5293
+
+%% Estrura do Projeto de Pesquisa USP
+% https://sites.usp.br/pesquisaletrasusp/estrutura-de-um-projeto-de-pesquisa/
+%%%%%% \\\ **i. FONTES DE FORMATAÇÃO** %%%%%%
+
+%%%%%% /// **ii. BIBLIOTECAS LATEX** %%%%%%
+\documentclass[a4paper,12pt]{article}
+\setlength{\headheight}{25.68825pt}
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue]{hyperref}
+\usepackage{natbib}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{titlesec}
+%%%%%% \\\ **ii. BIBLIOTECAS LATEX** %%%%%%
+
+%%%%%% /// **iii. CONFIGURAÇÕES DAS PÁGINAS** %%%%%%
+\geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0.2cm}
+\onehalfspacing
+\pagestyle{fancy}
+\fancyhf{}
+\titlespacing*{\section}{0pt}{0.5cm}{0.25cm}
+%%%%%% \\\ **iii. CONFIGURAÇÕES DAS PÁGINAS** %%%%%%
+
+%%%%%% /// **iv. CONFIGURAÇÕES DE CABEÇALHO E RODAPÉ** %%%%%%
+\fancyhead[L]{\includegraphics[width=1cm]{usp-logo-png-1.png}}
+\fancyhead[R]{\raisebox{0.25cm}{\textcolor{gray}{\fontsize{10pt}{11pt}\selectfont PhD Thesis Proposal}}} % Ajusta cor e espaçamento
+\fancyfoot[C]{\textcolor{darkgray}{\fontsize{10pt}{11pt}\selectfont\textbf{\thepage}}}
+%%%%%% \\\ **iv. CONFIGURAÇÕES DE CABEÇALHO E RODAPÉ** %%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% II. ELEMENTOS PRÉ-TEXTUAIS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% /// **i. PERSONALIZAÇÃO DA CAPA** %%%%%%
+\newcommand{\institutionaltext}{
+    {\large University of São Paulo (USP)\\[0.25cm]
+    Faculty of Economics, Business Administration, and Accounting \--\\[0.25cm] 
+    Ribeirão Preto (FEARP)}\\[2.5cm]
+}
+%%%%%% \\\ **i. PERSONALIZAÇÃO DA CAPA** %%%%%%
+
+\begin{document} %%%%%% \\\ ****INÍCIO DO DOCUMENTO**** %%%%%%
+
+%%%%%% /// **ii. CAPA** %%%%%%
+\begin{titlepage}
+    \centering
+    \institutionaltext % Texto institucional acima do título
+    
+    % Título principal
+    \begin{spacing}{1.1}\Huge \textbf{Economic Commensalism:\\ Governing the Commons through Rational Incentives}\end{spacing}
+    Economic Commensalism:\\
+    Governing the Commons through Rational Incentives
+    \vspace{1.5cm}
+
+    % Autor
+    {\large \textbf{Doctoral Researcher: Fernando Souza de Vieira}}\\[1.5cm]
+    
+    % Tipo de documento
+    \textit{Research Proposal for the PhD in Applied Economics}\\
+    University of São Paulo (FEARP/USP)\\[1.5cm]
+
+    % Orientador
+    {\large \textbf{Advisor: Alexandre Chibebe Nicolella, PhD}}\\[3cm]
+    
+    % Local e data
+    Ribeirão Preto, SP\\
+    December 2024
+
+\end{titlepage}
+%%%%%% \\\ **ii. CAPA** %%%%%%
+
+%%%%%% /// **iii. SUMÁRIO** %%%%%%
+\tableofcontents
+\newpage
+%%%%%% \\\ **iii. SUMÁRIO** %%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% III. TEXTO PRINCIPAL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% /// **RESUMO** %%%%%%
+\section*{Abstract}
+The passage "Economic Commensalism: Governing the Commons through Rational Incentives" seems to suggest an approach to managing shared resources, or the 'commons,' by applying economic principles that encourage mutual benefit. 
+
+'Economic Commensalism' could be referring to a situation where different entities, perhaps individuals or organizations, coexist and benefit from shared resources without harming each other. In biology, 'commensalism' refers to a relationship between two living entities where one benefits and the other is neither helped nor harmed. Applying this concept to economics implies a focus on creating systems where shared resources are utilized in ways that are sustainable and mutually advantageous.
+
+'Governing the Commons' points towards managing resources that belong to everyone, like the environment, public spaces, or shared information. 'Through Rational Incentives' indicates that these shared resources may be governed by strategies that encourage rational decision-making and efficient use by all parties involved, likely through incentives that align individual actions with collective good.
+
+While the context is limited, this passage implies a framework where economic strategies and possibly incentives are used to effectively manage shared resources in a way that's beneficial to all parties without creating a competitive detriment.
+%%%%%% \\\ **RESUMO** %%%%%%
+
+\newpage
+%%%%%% /// **1. INTRODUÇÃO** %%%%%%
+\section{Introduction}
+
+\begin{itemize}
+    \item Objeto do trabalho
+    \item Problema
+    \begin{itemize}
+        \item Tragédia dos comuns
+        \item Direitos de propriedade
+        \item Recursos ambientais hoje são exógenos
+        \item Conflitos mercado, governos e terceiro setor
+        \item Conceitos indefinidos (extrativismo, parasitismo e comensalismo): erros fáticos (destruição meio ambiente) e interpretativos
+        \item Clareza de conceitos endogeniza os recursos naturais
+        \item Equilibrios de Nash e Pareto (qual a situação e qual deve ser o objetivo)
+    \end{itemize}
+    \item Histórico
+    \begin{itemize}
+        \item Motivos relevantes
+        \item Buscas que efetuou
+        \item Decisões
+        \item Teorias selecionadas
+    \end{itemize}
+    \item nononono
+\end{itemize}
+%%%%%% \\\ **1. INTRODUÇÃO** %%%%%%
+
+%%%%%% /// **2. OBJETIVOS** %%%%%%
+\section{Objectives}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt massa odio, nec convallis tellus bibendum quis. Nam aliquam pharetra nibh, vitae malesuada leo. Aliquam in est non nisl cursus viverra. Vestibulum commodo bibendum neque. Nam at turpis et eros sagittis dapibus. Aliquam eu ex nisi. In dictum odio eget dignissim tincidunt.
+
+%%%%%% /// **2.1 Objetivo geral** %%%%%%
+\subsection{General Objective}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt massa odio, nec convallis tellus bibendum quis. Nam aliquam pharetra nibh, vitae malesuada leo. Aliquam in est non nisl cursus viverra. Vestibulum commodo bibendum neque. Nam at turpis et eros sagittis dapibus. Aliquam eu ex nisi. In dictum odio eget dignissim tincidunt.
+%%%%%% \\\ **2.1 Objetivo geral** %%%%%%
+
+%%%%%% /// **2.2 Objetivos específicos** %%%%%%
+\subsection{Specific Objectives}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt massa odio, nec convallis tellus bibendum quis. Nam aliquam pharetra nibh, vitae malesuada leo. Aliquam in est non nisl cursus viverra. Vestibulum commodo bibendum neque. Nam at turpis et eros sagittis dapibus. Aliquam eu ex nisi. In dictum odio eget dignissim tincidunt.
+%%%%%% \\\ **2.2 Objetivos específicos** %%%%%%
+
+%%%%%% \\\ **2. OBJETIVOS** %%%%%%
+
+%%%%%% /// **3. REVISÃO DA LITERATURA** %%%%%%
+\section{Literature Review}
+
+\begin{itemize}
+    \item Contexto
+    
+    \item Literatura
+    \begin{itemize}
+        \item Hardin
+        \item Pigou
+        \item Pareto
+        \item Coase
+        \item Georgescu-Roegen
+    \end{itemize}
+    
+    \item Situação atual
+    \begin{itemize}
+        \item Mundo
+        \item Brasil
+        \item Mato Grosso
+    \end{itemize}
+   
+    \item Literatura atual
+    \begin{itemize}
+        \item Problemas
+        \item Metodologias
+        \item Resultados
+    \end{itemize}
+    
+    \item Perspectivas de pesquisa
+\end{itemize}
+%%%%%% \\\ **3. REVISÃO DA LITERATURA** %%%%%%
+
+%%%%%% /// **4. JUSTIFICATIVA** %%%%%%
+\section{Rationale}
+
+\begin{itemize}
+    \item Motivação
+    \item Contribuições do trabalho
+    \item Pressupostos
+    \item Hipóteses
+\end{itemize}
+%%%%%% \\\ **4. JUSTIFICATIVA** %%%%%%
+
+%%%%%% /// **5. METODOLOGIA** %%%%%%
+\section{Methodology}
+
+\begin{itemize}
+    \item Cap. 1
+    \item Cap. 2
+    \item Cap. 3
+\end{itemize}
+%%%%%% \\\ **5. METODOLOGIA** %%%%%%
+
+%%%%%% /// **6. CRONOGRAMA** %%%%%%
+\section{Timeline}
+
+\begin{itemize}
+    \item Cap. 1
+    \item Cap. 2
+    \item Cap. 3
+\end{itemize}
+%%%%%% \\\ **6. CRONOGRAMA** %%%%%%
+
+%%%%%% /// **7. CONSIDERAÇÕES FINAIS** %%%%%%
+\section{Final Remarks}
+
+\begin{itemize}
+    \item Dificuldades esperadas
+    \item Sujeito a mudanças
+    \item Orientador é o chefe
+\end{itemize}
+%%%%%% \\\ **7. CONSIDERAÇÕES FINAIS** %%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% IV. ELEMENTOS PÓS-TEXTUAIS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+%%%%%% /// **REFERÊNCIAS** %%%%%%
+
+\bibliography{bibliografia}
+
+%%%%%% \\\ **REFERÊNCIAS** %%%%%%
+
+
+\end{document} %%%%%% \\\ ****FIM DO DOCUMENTO**** %%%%%%
+

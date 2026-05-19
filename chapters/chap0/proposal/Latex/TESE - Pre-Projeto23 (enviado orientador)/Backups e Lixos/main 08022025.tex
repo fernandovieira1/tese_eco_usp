@@ -1,0 +1,185 @@
+% Fernando, não esquecer:
+%% FAÇA UM BACKUP SEMPRE QUE RETOMAR ESTE PROJETO. 
+% Reabriu o documento e vai alterá-lo? Salve um backup antes.
+
+%%%===========================================
+%% CONFIGURAÇÃO DO DOCTO
+
+%%=======
+% Tipo
+\documentclass[a4paper,12pt]{article}
+\setlength{\headheight}{25.68825pt}
+
+%%=======
+% Pacotes
+\usepackage{natbib}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue]{hyperref}
+\usepackage{natbib}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+%%=======
+% Medidas
+\geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0.2cm}
+\onehalfspacing
+\pagestyle{fancy}
+\fancyhf{}
+\titlespacing*{\section}{0pt}{0.5cm}{0.25cm}
+
+%%=======
+% Cabeçalho e rodapé
+\fancyhead[L]{\includegraphics[width=1cm]{usp-logo-png-1.png}}
+\fancyhead[R]{\raisebox{0.25cm}{\textcolor{gray}{\fontsize{10pt}{11pt}\selectfont PhD Thesis Proposal}}}
+\fancyfoot[C]{\textcolor{darkgray}{\fontsize{10pt}{11pt}\selectfont\textbf{\thepage}}}
+
+%%%===========================================
+\begin{document}
+
+%%%===========================================
+\begin{titlepage}
+    \centering
+    {\large University of São Paulo (USP)\\[0.25cm]
+    Faculty of Economics, Business Administration, and Accounting –\\[0.25cm] 
+    Ribeirão Preto (FEARP)}\\[2.5cm]
+
+    \begin{spacing}{1.1}\Huge \textbf{Economic Commensalism:}\\
+    Governing the Commons through Rational Incentives
+    \end{spacing}
+
+    {\large \textbf{Doctoral Researcher: Fernando Souza de Vieira}}\\[1.5cm]
+
+    \textit{Research Proposal for the PhD in Applied Economics}\\
+    University of São Paulo (FEARP/USP)\\[1.5cm]
+
+    {\large \textbf{Advisor: Alexandre Chibebe Nicolella, PhD}}\\[3cm]
+
+    Ribeirão Preto, SP\\
+    December 2024
+
+\end{titlepage}
+
+%%%===========================================
+\tableofcontents
+\newpage
+
+%%%===========================================
+\section*{Abstract}
+This research proposes a novel approach to balancing environmental preservation and economic interests through the concept of \textit{economic commensalism}. Building on ecological principles—extractivism, parasitism, and commensalism—it integrates advanced economic models to align individual utility maximization with sustainability goals. The theoretical framework employs Bellman equations for intertemporal modeling, Kalman filters to manage uncertainty, and Bayesian-Markovian processes to capture dynamic learning effects among economic agents. 
+
+By applying these models to Brazil’s Mato Grosso region, an area marked by deforestation and agricultural expansion, this study aims to validate the feasibility of incentive-based environmental policies. The research contributes to both economic theory and policy design by proposing a market-driven mechanism where economic actors voluntarily engage in sustainable practices without compromising profitability.
+
+\newpage
+
+%%%===========================================
+\section{Introduction}
+
+%%=======
+\subsection{Context and Justification}
+Economic models typically frame natural resources within extractivist or parasitic interactions: either resources are depleted for economic gain, or they are exploited illegally without long-term sustainability concerns. The proposed model seeks a third alternative—commensalism—where economic activity can coexist with conservation efforts. 
+
+By leveraging insights from Nash equilibria and constrained Pareto optimality, this study develops a game-theoretic and optimization-based approach to policy design. The research builds on the limitations of existing frameworks (Hardin, Ostrom, Georgescu-Roegen) and integrates dynamic modeling tools to explore optimal environmental incentives.
+
+\newpage
+
+%%%===========================================
+\section{Literature Review}
+
+%%=======
+\subsection{Theoretical Foundations}
+\begin{itemize}
+    \item \textbf{The Tragedy of the Commons:} Hardin’s classical framework and Ostrom’s institutional critique.
+    \item \textbf{Market-Based Environmental Solutions:} Pigouvian taxes, Coasian bargaining, and Georgescu-Roegen’s sustainability principles.
+    \item \textbf{Game Theory and Equilibrium Analysis:} Nash equilibrium, correlated equilibrium, and strategic incentives for conservation.
+    \item \textbf{Behavioral Economics in Environmental Policy:} Bayesian learning, Markovian expectations, and the role of bounded rationality.
+\end{itemize}
+
+\newpage
+
+%%%===========================================
+\section{Research Problem}
+The classical \textit{tragedy of the commons} suggests that unregulated use of shared environmental resources leads to overexploitation. Traditional economic approaches—such as Pigouvian taxation, Coasian bargaining, and Pareto efficiency—fail to fully internalize environmental resources into production decisions. In the current framework, natural resources are treated as exogenous, making preservation a cost rather than a rational strategy for producers. 
+
+The key question is: \textbf{How can economic incentives be structured to align private and social interests in environmental preservation?}. 
+This study contests these assumptions by presenting \textit{economic commensalism}, a framework whereby economic agents can incorporate conservation within their profit-driven plans independently, as long as suitable incentives and resources are effectively distributed. 
+
+%%=======
+\subsection{Hypothesis}
+
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\newpage
+
+%%%===========================================
+\section{Objectives}
+
+%%=======
+\subsection{General Objective}
+To develop a theoretical and empirical model that integrates environmental preservation into economic decision-making, using incentives that encourage rational conservation behaviors among economic agents.
+
+%%=======
+\subsection{Specific Objectives}
+
+\begin{itemize}
+    \item Establish a formal model incorporating \textit{economic commensalism} into production decisions.
+    \item To propose a unit of measurement to quantify and qualify environmental resources and their economic value.
+    \item Evaluate the effectiveness of positive (subsidies) and negative (fines, regulations) incentives in influencing conservation behaviors.
+    \item Assess the feasibility of a localized versus globalized approach to carbon credit markets.
+    \item Use econometric validation and historical case studies to test model predictions.
+\end{itemize}
+
+\newpage
+
+%%%===========================================
+\section{Methodology}
+
+%%=======
+\subsection{Mathematical and Econometric Modeling}
+\begin{itemize}
+    \item \textbf{Dynamic Optimization:} Bellman’s equation for intertemporal decision-making.
+    \item \textbf{Uncertainty Modeling:} Kalman filters for adjusting predictions based on real-time information.
+    \item \textbf{Agent-Based Learning:} Bayesian-Markovian models to capture adaptive expectations.
+    \item \textbf{Game-Theoretic Simulations:} Pareto and Nash equilibria to assess policy effectiveness.
+\end{itemize}
+
+%%=======
+\subsection{Empirical Validation}
+\begin{itemize}
+    \item Analysis of historical environmental policy outcomes (California Cap-and-Trade, REDD+ initiatives).
+    \item Field surveys with agricultural producers in Mato Grosso to assess incentive responsiveness.
+    \item Econometric testing of incentive efficiency using panel data regression and machine learning techniques.
+\end{itemize}
+
+\newpage
+
+%%%===========================================
+\section{Timeline}
+
+\begin{itemize}
+    \item \textbf{Year 1:} Theoretical model development and initial literature review.
+    \item \textbf{Year 2:} Empirical data collection, econometric validation, and case study analysis.
+    \item \textbf{Year 3:} Simulation refinement, policy recommendation formulation, and finalization of thesis chapters.
+\end{itemize}
+
+\newpage
+
+%%%===========================================
+\section{Final Remarks}
+This research presents an innovative framework for reconciling environmental conservation with economic efficiency. The proposed methodology, combining dynamic modeling, game theory, and econometric validation, offers a structured approach to designing market-compatible conservation policies. While ambitious, the model has the potential to inform both academic discourse and real-world policy applications.
+
+\newpage
+
+%%%===========================================
+\bibliographystyle{plainnat}
+\bibliography{bibliografia}
+
+\end{document}

@@ -1,0 +1,179 @@
+\documentclass[a4paper,12pt,oneside,brazil,english,nottoc,notbib]{abntex2}
+
+% =============================
+% ==== BIBLIOTECAS ====
+% =============================
+\usepackage{lmodern} % Mudar fonte padrão
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{geometry}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{tocloft}
+\usepackage[alf,abnt-etal-list=2,abnt-etal-cite=1,abnt-doi=link,abnt-url-package=hyperref,abnt-emphasize=bf]{abntex2cite}
+% Tabelas
+\usepackage{tabularx}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+
+% ==== Sumario com seções principais em negrito ====
+\renewcommand{\ABNTEXsectionfont}{\bfseries}
+
+\usepackage{fancyhdr}
+\usepackage{appendix}
+\usepackage{setspace}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{caption}
+
+% ==== Ajuste do nome para figuras ====
+\addto\captionsenglish{\renewcommand{\figurename}{Graph}}
+
+% ==== Ambiente para quadros ====
+\newfloat{quadro}{htbp}{loq}
+\floatname{quadro}{Quadro}
+
+% ==== Customizacoes tocloft ====
+\newcommand{\listabstractname}{Abstract}
+\newcommand{\addabstracttoc}{%
+  \addcontentsline{toc}{section}{\protect\numberline{}\listabstractname}%
+}
+\renewcommand{\cftsecindent}{1.5em}
+
+% =============================
+% ==== LAYOUT E MARGENS ====
+% =============================
+\geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
+\setlength{\parindent}{1.25cm}
+\onehalfspacing
+
+% ==== Cabecalho e rodape ====
+\setlength{\headheight}{24.63824pt}
+\pagestyle{plain}
+\fancyhf{}
+\fancyhead[L]{\fontsize{9.5pt}{11pt}\selectfont\includegraphics[height=1cm]{Figuras/usp_logo.png}}
+\fancyhead[R]{\fontsize{9.5pt}{11pt}\selectfont\raisebox{0.25cm}{\textcolor{gray}{PhD Thesis Proposal}}}
+\fancyfoot[C]{\fontsize{9.5pt}{11pt}\selectfont\textcolor{darkgray}{\textbf{\thepage}}}
+
+% =============================
+% ==== ESTILOS ====
+% =============================
+\titleformat{\section}{\bfseries\Large}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries\large}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}{\normalfont\normalsize}{\theparagraph}{1em}{}
+
+% ==== Numeracao com ponto ====
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}
+\renewcommand{\theparagraph}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{paragraph}.}
+
+% ==== Redefine secao de referencias ====
+\makeatletter
+\renewcommand\bibsection{%
+  \clearpage
+  \phantomsection
+  \section*{References}%
+  \addcontentsline{toc}{section}{\protect\numberline{}References}%
+  \thispagestyle{fancy}%
+}
+\makeatother
+
+% ==== Configuracao do hyperref ====
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=black,
+    pdftitle={Economic Commensalism: Governing the Commons through Rational Incentives},
+    pdfauthor={Fernando Souza da Vieira}
+}
+
+% =============================
+% ==== INICIO DO DOCUMENTO ====
+% =============================
+\begin{document}
+
+% ==== CAPA ====
+\pagenumbering{roman}
+\begin{titlepage}
+    \centering
+    {\large UNIVERSITY OF S\~AO PAULO (USP)\\[0.2cm]
+    FACULTY OF ECONOMICS, ADMINISTRATION AND ACCOUNTING\\
+    OF RIBEIR\~AO PRETO (FEARP)}\\[3.5cm]
+
+    {\Huge \bfseries Economic Commensalism:}\\[0.3cm]
+    {\LARGE Governing the Commons through Rational Incentives}
+
+    \vspace{1.5cm}
+
+    {\large \textbf{Doctoral Researcher: Fernando Souza da Vieira}}\\[0.3cm]
+    {\large \textbf{Advisor: Prof. Dr. Alexandre Chibebe Nicolella}}\\[2cm]
+
+    \textit{Research Proposal for the PhD in Applied Economics}\\
+    University of S\~ao Paulo (FEARP/USP)\\[2.5cm]
+
+\vfill
+{\large Ribeir\~ao Preto, SP}\\[0.3cm]
+{\large June, 2025}
+
+\end{titlepage}
+
+% ==== SUMARIO ====
+\clearpage
+\begingroup
+\selectlanguage{english}
+\renewcommand{\addcontentsline}[3]{}
+\tableofcontents
+\endgroup
+\clearpage
+
+% ==== PAGINA INICIAL ====
+\pagenumbering{arabic}
+\setcounter{page}{5}
+\pagestyle{fancy}
+
+% ==== ABSTRACT ====
+\clearpage
+\addabstracttoc
+\section*{Abstract}
+\input{0_abstract}
+
+% ==== ORGANIZACAO DAS SECOES ====
+\clearpage
+\thispagestyle{fancy}
+\input{1_introduction}
+\clearpage
+\thispagestyle{fancy}
+\input{2_Research_Design}
+\clearpage
+\thispagestyle{fancy}
+\input{3_Significance_Study}
+\clearpage
+\thispagestyle{fancy}
+\input{4_Final_Remarks}
+
+% ==== APENDICES ====
+\clearpage
+\appendix
+\renewcommand{\thesection}{\Alph{section}.}
+\thispagestyle{fancy}
+\input{A_Timeline}
+\clearpage
+\thispagestyle{fancy}
+\input{B_On_AI_use}
+
+% ==== REFERENCIAS ====
+\clearpage
+\bibliographystyle{abntex2-alf-negrito}
+\bibliography{library}
+
+\end{document}

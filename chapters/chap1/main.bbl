@@ -10,9 +10,15 @@
 {ACOSTA, A. Extractivism and neoextractivism: two sides of the same curse.
 \textbf{Beyond development: alternative visions from Latin America}, Quito, v.~1, p. 61--86, 2013.}
 
-\bibitem[Clark 2010]{clark2010mathematical}
-\abntrefinfo{Clark}{CLARK}{2010}
-{CLARK, C.~W. \textbf{Mathematical bioeconomics: the mathematics of conservation}. [S.l.]: John Wiley \& Sons, 2010.}
+\bibitem[Brasil 2012]{brasil2012florestal}
+\abntrefinfo{Brasil}{BRASIL}{2012}
+{BRASIL. \textbf{Lei nº 12.651, de 25 de maio de 2012}. 2012. Diário Oficial da União: seção 1, Brasília, DF, ano CXLIX, n. 102, p. 1--8, 28 maio 2012.
+Dispõe sobre a proteção da vegetação nativa; altera diversas leis e revoga outras.
+Dispon{\'\i}vel em: \htmladdnormallink{$<$https:\-/\-/www\-.planalto\-.gov\-.br\-/ccivil\underline{\ }03\-/\underline{\ }ato2011-2014\-/2012\-/lei\-/l12651\-.htm$>$}{https://www.planalto.gov.br/ccivil\_03/\_ato2011-2014/2012/lei/l12651.htm}.}
+
+\bibitem[Chichilnisky 2017]{chichilnisky2017north}
+\abntrefinfo{Chichilnisky}{CHICHILNISKY}{2017}
+{CHICHILNISKY, G. North--south trade and the global environment. In:  \textbf{International trade and the environment}. [S.l.]: Routledge, 2017. p. 261--284.}
 
 \bibitem[Dasgupta 2001]{dasgupta2001human}
 \abntrefinfo{Dasgupta}{DASGUPTA}{2001}
@@ -24,14 +30,35 @@ ISBN 9780199247882.}
 {GUDYNAS, E. et al. Diez tesis urgentes sobre el nuevo extractivismo.
 \textbf{Extractivismo, pol{\'\i}tica y sociedad}, Quito, Ecuador, v.~187, p. 187--225, 2009.}
 
-\bibitem[Hotelling 1931]{hotelling1931economics}
-\abntrefinfo{Hotelling}{HOTELLING}{1931}
-{HOTELLING, H. The economics of exhaustible resources.
-\textbf{Journal of political Economy}, The University of Chicago Press, v.~39, n.~2, p. 137--175, 1931.}
+\bibitem[Hanley et al. 2007]{hanley2007environmental}
+\abntrefinfo{Hanley et al.}{HANLEY et al.}{2007}
+{HANLEY, N. et al. \textbf{Environmental Economics in Theory and Practice}. London: Palgrave Macmillan, 2007.}
 
-\bibitem[McKay 2017]{mckay2017agrarian}
-\abntrefinfo{McKay}{MCKAY}{2017}
-{MCKAY, B.~M. Agrarian extractivism in bolivia.
-\textbf{World Development}, Elsevier, v.~97, p. 199--211, 2017.}
+\bibitem[Hardin 1968]{hardin1968tragedy}
+\abntrefinfo{Hardin}{HARDIN}{1968}
+{HARDIN, G. The tragedy of the commons.
+\textbf{Science}, v.~162, n.~3859, p. 1243--1248, 1968.}
+
+\bibitem[Jehle e Reny 2011]{jehle2011}
+\abntrefinfo{Jehle e Reny}{JEHLE; RENY}{2011}
+{JEHLE, G.~A.; RENY, P.~J. \textbf{Advanced Microeconomic Theory}. 3rd. ed. Essex: Pearson, 2011.}
+
+\bibitem[Ostrom 1990]{ostrom1990commons}
+\abntrefinfo{Ostrom}{OSTROM}{1990}
+{OSTROM, E. \textbf{Governing the Commons: The Evolution of Institutions for Collective Action}. Cambridge: Cambridge University Press, 1990.}
+
+\bibitem[Ostrom 2002]{ostrom2002commonpool}
+\abntrefinfo{Ostrom}{OSTROM}{2002}
+{OSTROM, E. Common-pool resources and institutions: Toward a revised theory. In:  \textbf{Handbook of Agricultural Economics}. [S.l.]: Elsevier, 2002. v.~2, p. 1315--1339.}
+
+\bibitem[Pigou 2010]{pigou2010liberty}
+\abntrefinfo{Pigou}{PIGOU}{2010}
+{PIGOU, A.~C. The online library of liberty.
+\textbf{Online Library of Liberty}, 2010.}
+
+\bibitem[Stiglitz 1989]{stiglitz1989reflections}
+\abntrefinfo{Stiglitz}{STIGLITZ}{1989}
+{STIGLITZ, J.~E. Reflections on the state of economics: 1988.
+1989.}
 
 \end{thebibliography}
