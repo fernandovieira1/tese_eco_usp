@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  19 MAY 2026 23:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  19 MAY 2026 23:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -934,7 +934,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <../../images/fearp_logo.png, id=46, 427.5975pt x 60.225pt>
 File: ../../images/fearp_logo.png Graphic file (type png)
 <use ../../images/fearp_logo.png>
-Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 28.
+Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 30.
 (pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
 
 Overfull \hbox (28.45273pt too wide) has occurred while \output is active
@@ -947,7 +947,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3]
 File: ../../images/fearp_logo.png Graphic file (type png)
 <use ../../images/fearp_logo.png>
-Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 72.
+Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 73.
 (pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
 
 Overfull \hbox (28.45273pt too wide) has occurred while \output is active
@@ -995,13 +995,13 @@ L3 programming layer <2020/03/25>
 Here is how much of TeX's memory you used:
  18382 strings out of 467538
  291691 string characters out of 5423724
- 758281 words of memory out of 5000000
+ 759281 words of memory out of 5000000
  46944 multiletter control sequences out of 15000+600000
  688332 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,107p,1577b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,16n,107p,1577b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on main.pdf (8 pages, 211164 bytes).
+Output written on main.pdf (8 pages, 210817 bytes).
 PDF statistics:
  176 PDF objects out of 1000 (max. 8388607)
  144 compressed objects within 2 object streams
