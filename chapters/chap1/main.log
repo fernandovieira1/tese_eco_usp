@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  19 MAY 2026 23:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  19 MAY 2026 23:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -934,7 +934,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <../../images/fearp_logo.png, id=46, 427.5975pt x 60.225pt>
 File: ../../images/fearp_logo.png Graphic file (type png)
 <use ../../images/fearp_logo.png>
-Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 23.
+Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 28.
 (pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
 
 Overfull \hbox (28.45273pt too wide) has occurred while \output is active
@@ -947,7 +947,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3]
 File: ../../images/fearp_logo.png Graphic file (type png)
 <use ../../images/fearp_logo.png>
-Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 67.
+Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 72.
 (pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
 
 Overfull \hbox (28.45273pt too wide) has occurred while \output is active
