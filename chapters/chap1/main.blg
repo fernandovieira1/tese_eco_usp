@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2025)
+This is BibTeX, Version 0.99d (TeX Live 2025/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: abntex2-alf.bst
@@ -13,6 +13,10 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: library.bib
+Warning--I didn't find a database entry for "placeholder_positive_incentives"
+Warning--I didn't find a database entry for "placeholder_enforcement"
+Warning--I didn't find a database entry for "placeholder_spatial_compensation"
+Warning--I didn't find a database entry for "placeholder_biome_governance"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -24,7 +28,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 18 entries,
             6714 wiz_defined-function locations,
-            1282 strings with 11122 characters,
+            1286 strings with 11236 characters,
 and the built_in function-call counts, 15221 in all, are:
 = -- 1746
 > -- 246
@@ -63,3 +67,4 @@ warning$ -- 0
 while$ -- 91
 width$ -- 0
 write$ -- 194
+(There were 4 warnings)
