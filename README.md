@@ -20,11 +20,11 @@ This repository gathers the materials for a PhD thesis proposal in Applied Econo
 
 ## Repository Structure
 
-| Pasta-mãe | Descrição                                                                         |
-| ---------- | ----------------------------------------------------------------------------------- |
-| backup/    | Cópias, versões antigas e rascunhos de apoio da tese e da proposta.               |
-| chapters/  | Capítulos principais da tese e materiais da proposta, organizados por fase e tema. |
-| code/      | Códigos, scripts e notebooks usados nas análises e simulações do projeto.       |
-| data/      | Bases de dados e arquivos auxiliares usados nas etapas empíricas.                  |
-| grafs/     | Gráficos, figuras e saídas visuais associadas aos capítulos e análises.         |
-| images/    | Imagens gerais utilizadas no repositório.                                          |
+| Parent folder | Description |
+| --- | --- |
+| backup/ | Copies, older versions, and working drafts supporting the thesis and proposal. |
+| chapters/ | Main thesis chapters and proposal materials, organized by phase and topic. |
+| code/ | Code, scripts, and notebooks used in the project's analyses and simulations. |
+| data/ | Datasets and auxiliary files used in the empirical stages. |
+| grafs/ | Graphs, figures, and visual outputs associated with chapters and analyses. |
+| images/ | General images used in the repository. |
