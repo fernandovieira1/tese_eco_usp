@@ -2,17 +2,24 @@
 \section{Research Design}
 % ===
 
-Building on the conceptual discussion presented in the previous section, this study now outlines its research design, which integrates theoretical modeling with empirical investigation. Given the structural limitations of current environmental economic approaches, particularly their exogenous treatment of ecological variables, the research seeks to construct and test an alternative framework grounded in the principle of economic commensalism.
+Building on the conceptual discussion presented in the Introduction, this section outlines the research design of the thesis. The study combines theoretical analysis, formal modeling, and empirical investigation to examine whether environmental preservation can be reframed not merely as an external restriction on production, but as an endogenous and incentive-compatible component of economic decision-making.
 
-To that end, this section presents the research problem, hypotheses, objectives, and methodological foundations that guide the study. By combining dynamic optimization, learning models, and institutional analysis, we aim to assess whether incentive-compatible public policies can reconcile individual profitability with long-term sustainability preservation.
+The research is guided by the concept of \emph{economic commensalism}, understood here as a theoretical framework in which ecological preservation may become compatible with private productivity and profitability when incentives are spatially grounded, intertemporally coherent, and strategically stable. The central purpose is not to reject existing environmental instruments, such as regulation, enforcement, carbon markets, payments for environmental services, or community governance, but to investigate how these instruments can be reorganized around the structural payoff of economic agents.
 
-This thesis is organized into three principal sections to implement its objectives: two theoretical chapters and an empirical chapter. The opening chapter lays out the ontological and epistemological underpinnings of economic commensalism, introduces a typology for ecological-economic strategies, and critiques the shortcomings of traditional models. The second chapter constructs a formal dynamic model, integrating Bellman equations, elements of game theory, and learning processes, to assess the internal coherence and logical outcomes of the proposed framework. The final chapter performs an econometric and geospatial analysis using real-world data from Mato Grosso to determine if the theoretical model's predictions hold true in practice. Collectively, these components intend to offer conceptual clarity, mathematical precision, and empirical significance to the study's key assertion.
+The thesis is organized into three complementary chapters. Chapter 1 develops the theoretical foundations of economic commensalism, discussing the relationship between production theory, environmental preservation, extractivism, predation, common-pool resources, and incentive-compatible governance. Chapter 2 formalizes the proposed framework through a dynamic model that incorporates environmental variables, intertemporal choice, uncertainty, bounded rationality, learning, and strategic interaction. Chapter 3 evaluates the empirical feasibility of the framework through an application to the Brazilian state of Mato Grosso, a territory marked by agricultural expansion, deforestation pressures, and ecological heterogeneity across biomes.
+
+Together, these three components seek to provide conceptual clarity, formal consistency, and empirical plausibility to the central claim of the thesis: environmental preservation may become economically rational when ecological variables are incorporated into production decisions and when institutional incentives are designed according to spatial, temporal, and behavioral constraints.
 
 % ---
-\subsection{Problem}
+\subsection{Research Problem}
 % ---
 
-In light of the constraints inherent within existing economic theory and contemporary institutional and legal proposals, the \textbf{research problem} of this study is to answer the following question: 
+The research problem emerges from a specific limitation in conventional approaches to environmental economics and policy design. Although environmental degradation is widely recognized as a problem of externalities, common-pool resources, institutional failure, and intertemporal welfare, environmental preservation is still frequently treated as an external obligation imposed on private agents. In this setting, producers often face preservation as a legal constraint, compliance cost, reputational requirement, or compensatory burden, rather than as a component of their own productive strategy.
+
+This thesis therefore asks whether the apparent conflict between private profitability and socially desirable environmental preservation is inevitable, or whether it results, at least in part, from theoretical and institutional misalignment. If ecological variables are treated as exogenous to production, and if environmental policy operates mainly as a corrective layer imposed after private decisions have already been made, preservation will tend to appear as a burden. Conversely, if ecological preservation is incorporated into the productive calculus of agents, it may become possible to design institutional arrangements in which preserving environmental assets is compatible with productivity, profitability, and long-term welfare.
+
+Accordingly, the central research question is:
+
 \vspace{1em}
 
 \begin{flushright}
@@ -20,298 +27,302 @@ In light of the constraints inherent within existing economic theory and contemp
 \noindent
 \hspace{0.4em}\vrule width 0.4pt height 5.5em \hspace{1.2em}%
 \parbox[b]{0.95\linewidth}{
-\textit{Is it possible to effectively and efficiently reconcile private productivity and profitability with socially desirable environmental preservation through well-structured economic incentives, surpassing the economic performance of the current extractivism system?}
+\textit{Can environmental preservation be theoretically reframed as an endogenous and incentive-compatible component of economic decision-making, capable of reconciling private productivity and profitability with socially desirable ecological outcomes?}
 }
 \end{minipage}
 \end{flushright}
 
 \vspace{1em}
 
-That being so, this question guides the theoretical and empirical investigation conducted throughout this study. If the answer is affirmative, it may offer a foundation for understanding both why and how incentive-compatible policies can reconcile environmental preservation with economic productivity, with more efficient and effective results than those achieved by current institutional actions, based on an extractive system founded on centralized regulations, taxation and state punishments. If not, the findings will still be relevant by delineating the limitations of existing frameworks and informing future designs of conservation oriented governance. In either case, the study seeks to contribute both conceptually and practically to the advancement of environmental economics.
+This question guides the theoretical, formal, and empirical investigation developed throughout the thesis. An affirmative answer would indicate that environmental preservation can be designed as part of the agent's rational economic calculus, rather than depending exclusively on coercion, moral commitment, or fragmented compensation. A negative or partial answer would still be relevant, since it would clarify the limits of incentive-compatible environmental governance and identify the conditions under which preservation cannot be reconciled with private profitability without stronger forms of regulation or redistribution.
 
 % ---
 \subsection{Hypotheses}
 % ---
-Our study is based on the premises that, as explained, economic science traditionally treats the environment as an exogenous factor to the production process. Therefore, this conceptual separation has led to a persistent misalignment between economic rationality and ecological preservation, as illustrated by the so-called tragedy of the commons. Although several theoretical and institutional responses have sought to mitigate this conflict, they fail to address its root causes. 
 
-Consequently, this situation leads us to define the parameters of our investigation at the intersection of rural producers,  governmental entities, and other institutional actors, such as NGOs, corporations, and consumers as economic agents with incomplete rationality. In this matters, these actors simultaneously influence and are influenced by environmental dynamics, shaping patterns of land use, policy design, and economic behavior in the face of ecological constraints.
+The hypotheses of the thesis are structured around one general hypothesis and five specific hypotheses. The general hypothesis expresses the central proposition of the research. The specific hypotheses decompose this proposition into theoretical, behavioral, spatial, institutional, and strategic dimensions.
 
 %...
 \subsubsection{General Hypothesis}
 %...
 
-The formulation of a general hypothesis serves as the conceptual axis of this research, guiding the theoretical, mathematical, and empirical developments toward a unified objective: reconciling economic efficiency with environmental preservation.
+The general hypothesis is that:
 
-\vspace{1em}
-
-The \textbf{general hypothesis} is that: 
-
-% H0 (meio ambiente e economia podem coexistir de uma forma mais eficiente e eficaz)
-\begin{itemize} 
-
-    \item[\textbf{H0.}] 
-    
-    \textit{It is possible to design an economic-institutional framework grounded in incentive-compatible practices that jointly optimize environmental performance and private productivity and profitability, thereby overcoming the theoretical and practical limitations of externality based models.}
-    
-\end{itemize}
-
-This general hypothesis will be addressed through the methodological strategy developed in the following chapters, combining theoretical paradigms, logical-mathematical modeling, and empirical validation. Each specific hypothesis contributes to testing a critical dimension of the problem, culminating in a comprehensive answer to the central question posed in H0.
-
-%...
-\subsubsection{Specific Hypothesis}
-%...
-
-The specific hypotheses operationalize the general proposition of this research by addressing its core theoretical, behavioral, institutional, geographical and ecological dimensions. Each hypothesis isolates a critical mechanism or condition that must hold for the general hypothesis to be valid. Together, they structure the logical progression of the argument and inform the methodological design of the following chapters.
-
-\vspace{1em}
-
-The following \textbf{specific hypotheses} guide the research:
-
-% H1 (endogenizar meio ambiente é necessário para evoluir a economia e as instituições de preservação ecológica)
-\begin{itemize} 
-
-    \item[\textbf{H1.}] 
-    
-    \textit{Endogenizing environmental variables into the production function is essential to correct the systematic misestimation of social costs, overcome inefficient economic outcomes, and enable the evolution of institutional and legal frameworks towards more effective environmental governance.}
-    
-\end{itemize}
-
-This hypothesis stems from the recognition that traditional economic models, by treating the environment as exogenous, systematically underestimate its role in production and misallocate incentives. This omission not only distorts economic signals but also hampers the design of coherent institutional and legal responses to environmental degradation. By endogenizing environmental variables, it becomes possible to realign private and social interests, fostering a more rational basis for environmental governance and enabling the design of effective preservation strategies.
-
-% H2 (o ser humano é parcialmente racional (não totalmente) e o equilíbrio entre exploração ou preservação do meio ambiente deve ser dinâmico, não estático)
 \begin{itemize}
 
-    \item[\textbf{H2.}] 
+    \item[\textbf{H0.}]
     
-    \textit{Economic decisions regarding the exploitation or preservation of environmental resources are intertemporal and shaped by bounded rationality, as agents operate under random shocks, social interactions, and incomplete information, making equilibrium a dynamic rather than static outcome.}
-    
+    \textit{It is possible to design an economic-institutional framework in which environmental preservation becomes compatible with private productivity and profitability when ecological variables are endogenized into production decisions and incentives are spatially, intertemporally, and strategically calibrated.}
+
 \end{itemize}
 
-Such assumption reflects the understanding that economic agents do not operate under full information or perfect foresight, but rather adapt their decisions over time in response to uncertainty, social influence, and limited cognitive capacity. Such conditions make the exploitation versus preservation dilemma inherently dynamic, requiring models that incorporate temporal feedback and evolving expectations. Recognizing this complexity is essential to simulate realistic behaviors and to identify equilibrium paths that emerge from iterative learning rather than static optimization. 
+H0 does not assume that preservation and profitability are automatically compatible. Rather, it states that compatibility may emerge under specific theoretical and institutional conditions. These conditions are examined through the specific hypotheses below.
 
-% H3: políticas ambientais tem de adotar como premissa a realidade local (bioma, região, floresta etc), não serem genéricas
-\begin{itemize}  
+%...
+\subsubsection{Specific Hypotheses}
+%...
 
-    \item[\textbf{H3.}] 
+\begin{itemize}
+
+    \item[\textbf{H1.}]
     
-    \textit{Environmental incentives must be spatially and ecologically targeted, otherwise, private benefits will tend to concentrate among a few agents, while social and ecological costs will be disproportionately spread across regions and populations.}
+    \textit{Endogenizing environmental variables into the production function is necessary to correct the underrepresentation of ecological systems in production theory and to improve the design of environmental governance mechanisms.}
+
 \end{itemize}
 
-The presented hypothesis responds to the risk that generic environmental policies may generate ecological imbalances and distributive injustices when they ignore the specificities of each biome or region. Spatially indifferent incentives tend to concentrate private benefits in areas with lower opportunity costs while externalizing degradation and social burdens elsewhere. By targeting policies to ecological and territorial contexts, it becomes possible to prevent environmental dumping and promote compensation mechanisms that are both environmentally effective and socially equitable.
+H1 addresses the theoretical foundation of the thesis. If the environment is treated only as an externality, constraint, or fixed stock, its effects on productivity, resilience, and intertemporal welfare tend to be represented only after degradation occurs. By incorporating ecological variables into production decisions, the thesis investigates whether environmental preservation can be modeled as part of the productive structure itself.
 
-% H4: incentivos positivos (mercado de carbono, certificados ambientais, incentivos fiscais e créditos subsidiados) ou mistos são melhores que negativos (taxas, multas e embargos)
-\begin{itemize}  
+\begin{itemize}
 
-    \item[\textbf{H4.}] 
+    \item[\textbf{H2.}]
     
-    \textit{When properly calibrated, economic incentives can effectively induce agents to internalize environmental preservation, reducing reliance on coercive measures and promoting sustainable long-term outcomes.}
+    \textit{Economic decisions regarding environmental exploitation or preservation are intertemporal and shaped by bounded rationality, incomplete information, uncertainty, and adaptive learning.}
+
 \end{itemize}
 
-This inference is grounded in the idea that positive and well-calibrated economic incentives — such as carbon markets, tax incentives, environmental certification, and subsidized credit — can realign private behavior with social and ecological goals more effectively than punitive measures, such as taxes, embargoes and all sorts of state coercion. When incentives are structured to reward preservation without compromising productivity, they foster voluntary compliance and long-term engagement. Dynamic models suggest that this alignment can shift the system from an extractive to a preservation oriented equilibrium, where sustainability becomes the rational choice.
+H2 defines the behavioral and temporal nature of the problem. Environmental decisions are not purely static choices made under perfect information. Agents face uncertain ecological feedback, price fluctuations, institutional instability, credit constraints, enforcement uncertainty, and imperfect knowledge about long-term consequences. This makes the preservation--exploitation dilemma dynamic and requires a framework capable of representing learning, expectations, and intertemporal trade-offs.
 
-% H5: um novo -- e melhor -- equilíbrio de Nash surge.
-\begin{itemize}  
+\begin{itemize}
+
+    \item[\textbf{H3.}]
+    
+    \textit{Environmental incentives are more likely to be effective when they are spatially and ecologically targeted to the units affected by production, such as biomes, watersheds, ecoregions, or transition zones.}
+
+\end{itemize}
+
+H3 addresses the spatial dimension of environmental governance. Ecological degradation is territorially specific, while many environmental compensation mechanisms are standardized, centralized, or globally tradable. The hypothesis is that incentives detached from the affected ecological unit may satisfy accounting or regulatory requirements without preserving the ecological functions that sustain local production and resilience.
+
+\begin{itemize}
+
+    \item[\textbf{H4.}]
+    
+    \textit{Properly calibrated positive or mixed incentives can alter the structural payoff of economic agents, making preservation more attractive than degradation under specific institutional and economic conditions.}
+
+\end{itemize}
+
+H4 addresses the institutional mechanism of the thesis. The argument is not that positive incentives are always superior to negative incentives, nor that coercion is unnecessary. Rather, the hypothesis is that incentives linked to credit, certification, fiscal treatment, market access, carbon valuation, production rights, or payments for environmental services may reduce dependence on punitive enforcement when they make preservation privately advantageous.
+
+\begin{itemize}
 
     \item[\textbf{H5.}]
     
-    \textit{Under conditions of ecological feedback, bounded rationality, and calibrated incentives, the interaction among economic agents tends toward a stable strategic equilibrium where environmental preservation becomes individually rational and collectively optimal.}
+    \textit{Under ecological feedback, bounded rationality, and calibrated incentives, the interaction among agents may converge toward a stable strategic equilibrium in which environmental preservation becomes individually rational and collectively beneficial.}
+
 \end{itemize}
 
-This hypothesis synthesizes the theoretical and mathematical structure of the model, proposing that a stable strategic equilibrium emerges when environmental feedbacks, bounded rationality, and incentive alignment are jointly considered. Under these conditions, dynamic optimization and adaptive learning allow agents to adjust their behavior over time, leading to the internalization of environmental preservation as an individually rational and collectively optimal strategy. This outcome reflects the transition from an extractive to a commensal equilibrium.
+H5 synthesizes the strategic dimension of the thesis. Preservation becomes stable only if it is compatible with the incentives faced by agents in interaction with one another. The relevant question is therefore not merely whether preservation is socially desirable, but whether it can become a rational strategy in a dynamic setting marked by uncertainty, local ecological constraints, institutional rules, and strategic behavior.
 
 % ---
 \subsection{Objectives}
 % ---
 
-As previously stated, it is intended to develop a theoretical and empirical model that integrates environmental preservation into economic decision-making, using incentives that promote rational conservation behavior among economic agents. The broader goal is to demonstrate that is possible to stabilize long-term ecological and economic outcomes through rational, market-based mechanisms.
-
-If the theoretical and empirical development of this study succeeds in demonstrating that commensalism is a viable and rational strategy, then the supply curve associated with it, which assumes higher production with lower environmental degradation, will no longer be merely hypothetical. Instead, it will represent a feasible economic alternative to mutualistic (economically unviable), predatory (ecologically unsustainable), and extractive (both economically and ecologically ineffective) models. 
+The objectives of the thesis follow the same structure as the hypotheses. The general objective states the main ambition of the research, while the specific objectives identify the analytical steps required to pursue it.
 
 %...
 \subsubsection{General Objective}
 %...
 
-The formulation of a general objective defines the normative and pragmatic ambition of this research: to demonstrate the feasibility of aligning ecological preservation with private economic interest through rational, incentive based policy design.
+The general objective of the thesis is:
 
-\vspace{1em}
-
-The \textbf{general objective} (goal) of this research is to:
-
-% G0: economia e meio ambiente podem caminhar juntos (commensalismo como alternativa ao extrativismo e desincentivo ao predatismo)
 \begin{itemize}
 
     \item[\textbf{G0.}]
     
-    \textit{To demonstrate that it is possible to reconcile private productivity and profitability with socially desirable environmental preservation through well-structured economic incentives, allowing economics and ecology to be jointly optimized in a more effective and efficient way.}
-    
+    \textit{To develop a theoretical, formal, and empirical framework for investigating whether environmental preservation can be incorporated into economic decision-making as an endogenous and incentive-compatible component of production.}
+
 \end{itemize}
 
-This objective will be pursued through the integration of ecological concepts into economic reasoning, the construction of a formalized logical-mathematical model, and its empirical validation. Each specific objective operationalizes a key facet of the general goal, building a coherent path toward answering the central research question outlined in H0.
+This objective is pursued through the articulation of environmental economics, institutional economics, microeconomic theory, dynamic modeling, and empirical analysis applied to Mato Grosso.
 
 %...
 \subsubsection{Specific Objectives}
 %...
 
-The specific objectives of this research translate the general ambition into concrete analytical goals that explore the economic, institutional, behavioral, and ecological dimensions of the problem. Each objective delineates a necessary step to operationalize the general objective, serving as a foundation for the methodological development in subsequent chapters.
-
-\vspace{1em}
-
-The following \textbf{specific objectives} (goals) structure the research agenda:
-
-% G1 (integrar o meio ambiente como variável endógena da função de produção)
 \begin{itemize}
 
     \item[\textbf{G1.}]
     
-    \textit{Integrate environmental variables into the production function in order to capture their real economic relevance, adjust distorted incentive structures, and support the development of institutional and legal mechanisms capable of promoting effective and sustainable environmental governance.}
-    
+    \textit{To examine the theoretical implications of representing the environment as an endogenous cofactor of production rather than merely as an externality, constraint, or fixed stock.}
+
 \end{itemize}
 
-This objective responds to the theoretical limitation of conventional economic models that treat nature as an exogenous factor, neglecting its contribution to productivity and its vulnerability to degradation. By incorporating ecological parameters directly into the production function, the research seeks to redefine the economic rationale behind resource use, allowing incentive structures to reflect true social costs and benefits. This adjustment is expected to strengthen institutional responses, align private behavior with collective goals, and enable the design of more coherent and enforceable environmental policies.
+This objective corresponds to H1 and provides the conceptual foundation of the thesis. It seeks to clarify how environmental variables may affect productivity, resilience, opportunity costs, and welfare over time.
 
-% G2: Pessoas que tomam ações de exploração da economia tem informação imperfeita, vieses e eventos randômicos
 \begin{itemize}
 
-    \item[\textbf{G2.}] 
+    \item[\textbf{G2.}]
     
-    \textit{Model the economic decision-making process under uncertainty, bounded rationality, and intertemporal constraints, in order to reflect how agents actually respond to environmental preservation or exploitation opportunities.}
-    
+    \textit{To model environmental decision-making under intertemporal constraints, uncertainty, bounded rationality, incomplete information, and adaptive learning.}
+
 \end{itemize}
 
-The indicated goal addresses the need to consider how real-world economic agents operate under imperfect information, social influences, and temporal trade-offs. Traditional models often assume full rationality and static equilibria, overlooking the dynamic and path-dependent nature of environmental decisions. By explicitly incorporating stochastic shocks, learning processes, and strategic interactions into the modeling framework, this research aims to produce a more realistic account of agent behavior. Such modeling is essential for designing adaptive policies capable of guiding decisions toward sustainable outcomes despite uncertainty and limited foresight.
+This objective corresponds to H2 and supports the formal modeling developed in Chapter 2. It aims to represent the exploitation--preservation dilemma as a dynamic process rather than a static choice.
 
-% G3: políticas e arranjos institucionais podem ter metas globais, mas devem ser desenhados para realidades locais.
 \begin{itemize}
 
-    \item[\textbf{G3.}] 
+    \item[\textbf{G3.}]
     
-    \textit{Investigate how spatial and jurisdictional scales influence the environmental effectiveness and economic efficiency of compensation mechanisms, particularly in contexts involving heterogeneous biomes and decentralized governance.}
-    
+    \textit{To investigate how spatial and ecological scales affect the efficiency and effectiveness of environmental compensation and incentive mechanisms.}
+
 \end{itemize}
 
-Here we target to recognize that environmental and institutional outcomes vary according to the scale at which policies are implemented. Decisions made at local, regional, or global levels—especially when involving inter-biome compensation—may produce divergent effects in terms of ecological resilience, transaction costs, and strategic behavior. By analyzing compensation mechanisms under different spatial constraints and political boundaries, this research aims to identify governance configurations that maximize ecological coherence while preserving economic viability.
+This objective corresponds to H3 and examines whether environmental governance should be designed according to broad political boundaries or ecological units such as biomes, watersheds, ecoregions, and transition zones.
 
-% G4: incentivar e provar que incentivos positivos são melhores que os negativos (atuais)
 \begin{itemize}
 
     \item[\textbf{G4.}]
     
-    \textit{Assess the effectiveness of properly calibrated economic incentives in inducing agents to internalize environmental preservation, reducing dependence on coercive instruments and fostering sustainable, self-reinforcing behavioral change.}
-    
+    \textit{To assess whether positive or mixed incentives can alter the private payoff associated with preservation and reduce reliance on exclusively coercive environmental policy.}
+
 \end{itemize}
 
-This objective aims to evaluate the extent to which incentive-compatible mechanisms—such as subsidies, carbon credits, and environmental certifications—can replace or complement traditional punitive approaches. Rather than relying solely on fines or legal enforcement, the research seeks to understand how positive incentives can shape agent behavior over time, making preservation a rational and attractive choice. This analysis is crucial for identifying which incentive structures most effectively induce sustainable behavior across different economic contexts.
+This objective corresponds to H4 and evaluates the role of instruments such as carbon credits, payments for environmental services, environmental certification, fiscal incentives, subsidized credit, enforcement, and conditional production rights.
 
-% G5: Um novo e melhor equilíbrio de Nash poderá ser conseguido.
 \begin{itemize}
 
-    \item[\textbf{G5.}]  
+    \item[\textbf{G5.}]
     
-    \textit{Analyze how temporal flexibility in compliance and reward mechanisms affects ecological recovery dynamics and the long-term sustainability of incentive-based preservation strategies.}
-    
+    \textit{To analyze whether incentive-compatible preservation can generate stable strategic outcomes under ecological feedback and interaction among heterogeneous agents.}
+
 \end{itemize}
 
-This objective recognizes that the ecological effects of environmental degradation and recovery are not instantaneous, and that rigid short-term enforcement may backfire by discouraging participation or failing to account for biophysical time lags. Conversely, overly lenient frameworks risk enabling irreversible damage. By incorporating time-sensitive components—such as delayed rewards, intertemporal penalties, and ecological regeneration curves—into the analysis, the research seeks to identify optimal timing structures that balance ecological realism with economic rationality.
+This objective corresponds to H5 and examines whether preservation can become a rational strategy in equilibrium, rather than merely a socially desirable outcome imposed from outside the agent's decision structure.
 
 % ---
-\subsection{Methodology}
+\subsection{Methodological Strategy}
 % ---
 
-As previously discussed, this thesis argues that mainstream economic theory, by treating the \textbf{environment as exogenous} to the production process, contributes to economic and ecological inefficiency by generating social externalities that diffuse throughout the broader social and economic order \textbf{(H1)}. Building on this premise, the research assumes that this structural weakness is exacerbated in contexts of \textbf{asymmetric information and bounded rationality}, where expectations are shaped by environmental, economic, cultural, and social instabilities. If these expectations are\textbf{ adjusted both temporally} \textbf{(H2)}\textbf{ and spatially (H3)}, then properly \textbf{calibrated incentives} can induce stakeholders to voluntarily engage in \textbf{environmental preservation (H4)}, leading to a \textbf{higher and more stable general equilibrium} for the system as a whole \textbf{(H5)}, a dynamic we refer to as "economic commensalism".
+The thesis adopts a mixed research strategy composed of three interdependent methodological layers: theoretical-conceptual analysis, formal modeling, and empirical application. Each layer corresponds to one chapter of the thesis and contributes to a different dimension of the general hypothesis.
 
-To achieve its objectives, this thesis is structured into three interdependent chapters, each of which may also be developed as a standalone academic article. Each chapter adopts a distinct methodological approach, collectively guided by the overarching aim of evaluating whether it is indeed feasible to develop an economic and institutional framework based on incentive aligned strategies that simultaneously enhance environmental efficiency and private sector productivity and profitability, thereby addressing the theoretical and practical shortcomings of externality based models (H0). In simple terms, \textbf{Chapter 1} provides the \textbf{ontological\footnote{Addresses the question “What is the nature of the reality being studied?” This thesis assumes that the environment is not external to the economy, but an endogenous and structural element of productive systems, not merely an externality to be corrected.}, epistemological\footnote{Answers the question “How can we know or understand this reality?” The research uses formal models and empirical testing to examine whether environmental preservation can emerge as a rational choice under uncertainty and bounded rationality.} and conceptual\footnote{Engages with the question “Which ideas and categories are used to think about this problem?” The thesis introduces ecological notions — such as commensalism, parasitism, and extractivism — as analytical concepts to describe the strategic relationships between economic agents and the environment.}} foundations for economic commensalism, \textbf{Chapter 2} examines its \textbf{internal logical} consistency through formal modeling, and \textbf{Chapter 3} tests its \textbf{external validity} by confronting the model with empirical data \footnote{Depending on the research findings, a fourth chapter — normative in nature, unlike the positive approach of the first three — may be added. It would outline a practical proposal for applying the concept of commensalism to legal, institutional, and market mechanisms, such as adaptations to carbon markets, valuation of productive land, and payment for environmental services.}.
+The first layer is theoretical and conceptual. It examines the foundations of environmental and resource economics, common-pool resource theory, institutional economics, and production theory in order to identify how the environment has been represented in economic reasoning. This layer introduces the concept of economic commensalism and distinguishes it from predation, extraction, extractivism, and strict preservation. Its purpose is to clarify the conceptual problem that motivates the thesis: the treatment of environmental preservation as an external obligation rather than as a potentially endogenous component of production.
 
-%...
-\subsubsection{Article 1}
-%...
+The second layer is formal and deductive. It develops a mathematical model of economic commensalism in which agents make intertemporal decisions under uncertainty, bounded rationality, ecological feedback, and strategic interaction. The model is expected to use dynamic optimization, elements of game theory, stochastic processes, Bayesian updating, Markovian transitions, and filtering mechanisms where appropriate. The purpose of this layer is to examine the internal coherence of the proposed framework and to identify the conditions under which a commensal equilibrium may exist.
 
-\begin{itemize}
+The third layer is empirical and applied. It evaluates the plausibility of the theoretical and formal propositions using data from Mato Grosso. The empirical strategy will combine economic, environmental, geospatial, and institutional data to examine the relationship between land use, agricultural productivity, deforestation, ecological heterogeneity, environmental policy, and incentive mechanisms. The precise empirical specification will depend on data availability, policy relevance, and the feasibility of identifying credible counterfactuals.
 
-    \item \textbf{Preliminary title:} \emph{\textbf{Economic Commensalism: A Theoretical Framework to Endogenize Nature in the Production Function}}
-    
-    \item \textbf{Methodology}: This chapter/article lays the theoretical and conceptual foundations for reinterpreting the trade-off between economic productivity and environmental sustainability upon a theoretical-analytical approach grounded in ecological theory, environmental economics, microeconomics and institutional analysis to expose foundational inconsistencies in treating nature as external to the production process. Through heuristic modeling and a reinterpretation of microeconomic tools, it will explore whether a novel theoretical paradigm, termed economic commensalism, can emerge as a neutral ecological alternative capable of encouraging more efficient economic outcomes. 
-    
-    \item \textbf{Chapter Outline}: More specifically, this chapter contextualizes the problem of environmental endogenization in analytical terms and its practical consequences for the economy (items i, ii, and iii), and establishes the theoretical foundations that support the proposed concept of economic commensalism (items iv, and v), as described ahead:
-        
-        \begin{itemize}
-            
-            \item[i.] \underline{Literature Review}: * The conflict between preserving and exploiting the environment that leads to the tragedy of the commons. * Political economy and environment conceptions. * Environmental economics. * What led economics theory to consider natural resources an exogenous factor. * Proposed solutions and historical background. * Environmental negative externalities an theoretical interventions: Pigou, Coase, Hardin, Ostrom, others (?), and applied economics (Assunção, Sheinkman, Sant'Anna, and others). * Negative instruments: fees, legal measures, judicial embargoes, and social exposure. * Positive incentives: Carbon credits, Payments for Ecosystem Services (PES), Environmental Reserve Certificates (ERCs). * Positive and negative inducements results. * Economic and ecological consequences.
-            
-            \item[ii.] \underline{Ecological Concepts}: * Why it matters. * How it fits with economics and economy. * Economic extractivism and symbiotic ecological relationships: predation, mutualism, and commensalism. * Economic and ecological consequences.  
-            \item[iii.] \underline{Environmental Endogenization}: * Theoretical and practical reasons. * Assumptions: agents with limited rationality and influenced by biases; internal (active) and external (passive) beliefs; asymmetric information and randomness are preponderant. * Nash equilibrium according to ecological interaction. * Economic and ecological consequences. 
-            
-            \item[iv.] \underline{Commensal Justification}: * Endogenization of the environment (\(E\)): Heuristic demonstration. * Pareto and Nash. * Cobb-Douglas, Arrow-Debreau and Fundamental Theorems of Welfare. * Isoquant and Isocost. * Tangency conditions (Lagrangean solution points). * Marginal effects on \(K\) and \(L\) (\(T\) and \(H\) also?). * Factor substitutability. * Effects on Solow Residual. * Extractivism, predation, mutualism, and commensalism at their optimum points. * Economic and ecological consequences.
-            
-            \item[v.] \underline{Economic Commensalism}: * Definition. * Theoretical improvements. * Practical contributions. * Opportunities. * Carbon markets and public policies enhancements. * Economic and ecological consequences. * Economic Commensalism Index (ECI).
-            
-        \end{itemize}
-    
-    \item \textbf{Journals to submit:}\footnote{Non-exhaustive suggestions of journals to which the article can be submitted.}
-        
-        \begin{itemize}
-            
-            \item[a):] \textit{Ecological Economics (Elsevier);}
-            \item[b):] 	\textit{Review of Environmental Economics and Policy (Oxford);}
-            \item[c):] 	\textit{World Development (Elsevier).}
-        
-        \end{itemize}
+This methodological structure allows the thesis to proceed from conceptual definition to formal analysis and then to empirical assessment. The theoretical chapter defines the problem and the framework. The mathematical chapter tests the internal consistency of the proposed mechanism. The empirical chapter evaluates whether the mechanism is compatible with observed economic and environmental dynamics in a concrete territory.
 
-\end{itemize}
+% ---
+\subsection{Chapter Structure}
+% ---
 
 %...
-\subsubsection{Article 2}
+\subsubsection{Chapter 1: Theoretical Framework}
 %...
 
 \begin{itemize}
 
-    \item \textbf{Preliminary title:} \emph{\textbf{Economic Commensalism: A Dynamic Production Model with Environmental Endogeneity}}
-    
-    \item \textbf{Methodology}: This chapter/article examines the internal consistency of the economic commensalism hypothesis under scenarios of risk and bounded rationality. It simulates equilibrium transitions across distinct ecology–economy interaction regimes by means of parameterized incentive mechanisms. The core methodological tools include advanced mathematical modeling techniques drawn from dynamic programming, stochastic processes, game theory, and learning models.
-    
-    \item \textbf{Chapter Outline}: In particular, part two of the thesis endeavors to reformulate the theoretical foundations underlying the epistemological justifications established in the first chapter and to validate its hypothesis deductively and systematically. To this end, the mathematical premises that support the conceptual model developed in Chapter 1 are delineated (item i), leading to the construction and logical proof of a formal model aimed at assessing whether the environment should indeed be treated as an endogenous production factor that enhances both economic and ecological outcomes under imperfect information and bounded rationality (items ii and iii). Finally, to evaluate whether these theoretical results manifest in real-world dynamics, a computational simulation is conducted based on the same postulates embedded in the proposed model (item iv).
-    
+    \item \textbf{Preliminary title:} \emph{Economic Commensalism: A Theoretical Framework to Endogenize Nature in Production Theory}
+
+    \item \textbf{Purpose:} Chapter 1 develops the conceptual foundations of economic commensalism. It reviews the treatment of nature in production theory, environmental economics, common-pool resource theory, and institutional analysis. It also introduces a typology of economy--environment interactions, distinguishing predation, extraction, extractivism, strict preservation, and economic commensalism.
+
+    \item \textbf{Methodological approach:} The chapter adopts a theoretical-analytical methodology based on literature review, conceptual reconstruction, and heuristic modeling. It does not aim to provide empirical proof at this stage, but to establish the conceptual conditions under which environmental preservation can be interpreted as an endogenous and strategically relevant component of production decisions. MUDAR: DEIXAR CLARO QUE GAP EPISTEMOLÓGICO E COERÊNCIA INTERNA VIA FORMALIZAÇÃO SÃO A META.
+
+    \item \textbf{Expected contribution:} The expected contribution of Chapter 1 is to clarify the theoretical gap that motivates the thesis and to provide a coherent conceptual vocabulary for the formal and empirical chapters that follow.
+
+    \item \textbf{Preliminary outline:}
+
     \begin{itemize}
-    
-    \item[i.] \underline{Commensal system}: * Economic and environmental equilibrium as an Intertemporal condition (1). * Exogenous random events influence dynamics (2). * Stakeholders passively and actively shape dynamics (3-4). * Periodic corrections needed for equilibrium and noise reduction (5). Resulting equilibrium is Nash-superior to extractive baseline (6).
-    
-    \item[ii.] \underline{Functional Components}: * Intertemporal equilibrium via Bellman's equation (1). * Environmental uncertainty modeled through Markov chains (2). * Passive learning via Bayesian inference (3). * Active information exchange through Spin networks (4). * Informational noise correction using the Kalman filter (5). * Kakutani’s fixed point as a result of an optimal ecological–economic equilibrium (6).
-    
-    \item[iii.] \underline{Proof Conditions}: * Continuity and Differentiability (1). * Concavity and Convexity (1). Monotonicity (1). * Compactness and Connectivity of the Set of States (1). * Asymptotic Behavior (1). * Critical and Saddle Points (1). * Transition Properties (2). * Stationarity and Ergodicity (2). * Temporal Homogeneity (Invariance) (2). * Continuity and Differentiability of Conditional Probabilities (2). * Continuity and Smoothness of the Posterior Function (3). * Concavity or Convexity of Distributions (3). Integrability and Normalization (3). * Monotonicity of Updates (3). * Topological Structure of Networks (4). * Existence and Uniqueness of Equilibrium (4). * Monotonicity of Interactions (4). * Symmetries and Periodicities of Interactions (4). * Linearity of the State Model (5). * Differentiability and Smoothness of Observation and Transition Functions (5). Convexity of Covariance Matrices (5). * Asymptotic Behavior (Ergodicity) (5). * Existence and Uniqueness (6). * Continuity and Differentiability of Payoff Functions (6). * Convexity of Strategy Sets (6). * Concavity/Convexity of Individual Payoffs (6). * Optimization and Critical Points (Maximums, Minimums and Saddle Points) (6). % C22652025a
-    
-    \item[iv.] \underline{Computational Validation}: * Recursive convergence of the Bellman equation under different incentive regimes. * Incentive-positive environments, penalty-based systems, and Mixed regimes. * Local and global consequences. * Model’s stability via Markov chains. * Critical thresholds. * Existence and robustness of fixed points (Kakutani) and Nash equilibria. * Commensal results compared to extractivism system. 
-  
-  \end{itemize}
-  
-    \item \textbf{Journals to submit:}
-        \begin{itemize}
-            \item[a):] \textit{Journal of Environmental Economics and Management (JEEM);}
-            \item[b):] \textit{Mathematical Social Sciences (Elsevier);}
-            \item[c):] \textit{Journal of Economic Dynamics and Control (Elsevier).}
-        \end{itemize}
+
+        \item[i.] \underline{Production theory and the environment}: land, natural resources, externalities, common-pool resources, and the exogenous treatment of ecological systems.
+
+        \item[ii.] \underline{Environmental economics and institutional responses}: Pigouvian taxation, Coasian bargaining, regulation, enforcement, carbon markets, payments for environmental services, certifications, and common-pool governance.
+
+        \item[iii.] \underline{Typology of economy--environment interactions}: predation, extraction, extractivism, strict preservation, and economic commensalism.
+
+        \item[iv.] \underline{Endogenizing environmental variables}: theoretical justification for treating ecological systems as cofactors of production and as determinants of intertemporal productivity.
+
+        \item[v.] \underline{Economic commensalism}: definition, assumptions, theoretical contribution, institutional implications, and limits.
+
+    \end{itemize}
 
 \end{itemize}
 
 %...
-\subsubsection{Article 3}
+\subsubsection{Chapter 2: Formal Model}
+%...
 
-\textbf{Preliminary title:} \emph{\textbf{Economic Efficiency and Environmental Resilience: Empirical Evidence of Commensal Strategies in Mato Grosso}}
-
-\textbf{Methodology}: This chapter/article aims to empirically validate the theoretical assumptions presented in Chapter 1 and the mathematical structure of the economic commensalism framework developed in Chapter 2. To this end, it adopts an integrated strategy combining econometric modeling, geospatial data analysis, and qualitative field research, using real-world data from the state of Mato Grosso (MT)—a region characterized by rapid agricultural expansion and significant deforestation across three major biomes: the Amazon, the Cerrado, and the Pantanal. The central goal is to assess whether market-based preservation strategies, when structured as commensal interactions, can simultaneously improve environmental outcomes and enhance economic performance. \textbf{Specific programs, time periods, and biome-level disaggregation will be defined based on data availability and policy relevance.}
-
-\textbf{Chapter Outline}:
 \begin{itemize}
-    \item[i.] \underline{General Overview}: The importance of agribusiness in Mato Grosso’s economy; environmental background by biome; land tenure regularization and environmental compliance; the challenge of ecotonal regions; main agricultural commodities by biome and landholding scale; institutional landscape; legal frameworks and key bottlenecks.
-    \item[ii.] \underline{Programs and Frameworks}: Voluntary and compliance-based carbon markets; REDD Early Movers (REM-MT) / REDD+; Environmental Reserve Quotas (CRAs); the Produce, Conserve, and Include Program (PCI); Carbono Neutro MT.
-    \item[iii.] \underline{Econometric Models}: Multiple linear regression; Propensity Score Matching (PSM); Difference-in-Differences (DiD); Synthetic Control Method (SCM); Geographically Weighted Regression (GWR); Spatial AutoRegressive Model (SAR); Spatial Durbin Model (SDM).
+
+    \item \textbf{Preliminary title:} \emph{Economic Commensalism: A Dynamic Production Model with Environmental Endogeneity}
+
+    \item \textbf{Purpose:} Chapter 2 examines the internal consistency of the economic commensalism framework through formal modeling. It investigates whether environmental preservation can become individually rational and strategically stable when ecological variables are incorporated into the agent's intertemporal decision problem. MUDAR: NÃO APENAS EXAMINA, COMO APROFUNDA.
+
+    \item \textbf{Methodological approach:} The chapter adopts a formal-deductive methodology. It is expected to combine dynamic programming, game theory, stochastic processes, Bayesian learning, Markovian dynamics, and filtering mechanisms where these tools are mathematically justified by the structure of the model. The model will identify the conditions under which a commensal equilibrium may exist and compare it with predatory or extractivist baselines.
+
+    \item \textbf{Expected contribution:} The expected contribution of Chapter 2 is to provide a formal representation of the thesis mechanism and to clarify the mathematical conditions required for preservation to be compatible with private rationality and strategic equilibrium.
+
+    \item \textbf{Preliminary outline:}
+
+    \begin{itemize}
+
+        \item[i.] \underline{Basic structure of the model}: agents, state variables, control variables, environmental stock or quality, production, payoff, and constraints.
+
+        \item[ii.] \underline{Intertemporal decision problem}: Bellman equation, value function, preservation choice, exploitation choice, and incentive regimes.
+
+        \item[iii.] \underline{Uncertainty and learning}: ecological shocks, incomplete information, Markovian transitions, Bayesian updating, and informational noise.
+
+        \item[iv.] \underline{Strategic interaction}: interaction among agents, local ecological feedback, governance rules, best responses, and equilibrium conditions.
+
+        \item[v.] \underline{Existence and stability}: continuity, compactness, convexity or concavity conditions, fixed point arguments, convergence, and comparative analysis of incentive regimes.
+
+        \item[vi.] \underline{Computational simulation}: simulation of positive incentives, negative incentives, mixed regimes, local compensation, global compensation, and commensal outcomes compared with extractivist baselines.
+
+    \end{itemize}
+
 \end{itemize}
 
-\textbf{Target Journals for Submission}:
+%...
+\subsubsection{Chapter 3: Empirical Application}
+%...
+
 \begin{itemize}
-    \item[a)] \textit{Journal of Development Economics (Elsevier);}\
-    \item[b)] \textit{Environmental and Resource Economics (Springer);}\
-    \item[c)] \textit{American Economic Journal: Economic Policy (AEA).}
+
+    \item \textbf{Preliminary title:} \emph{Economic Efficiency and Environmental Resilience: Empirical Evidence of Commensal Strategies in Mato Grosso}
+
+    \item \textbf{Purpose:} Chapter 3 evaluates the empirical plausibility of the economic commensalism framework using Mato Grosso as a case study. The chapter examines whether economic productivity, land use, deforestation, ecological heterogeneity, and environmental incentives interact in ways consistent with the theoretical and formal propositions developed in Chapters 1 and 2.
+
+    \item \textbf{Methodological approach:} The chapter adopts an empirical strategy combining econometric analysis, geospatial analysis, and institutional interpretation. The precise methods will be selected according to data availability, treatment definition, policy relevance, and identification feasibility. Potential methods include panel data models, difference-in-differences, propensity score matching, synthetic control, spatial econometric models, and geographically weighted regression.
+
+    \item \textbf{Expected contribution:} The expected contribution of Chapter 3 is to assess whether the mechanisms proposed by the thesis are empirically plausible in a territory marked by agricultural expansion, deforestation pressure, ecological heterogeneity, and relevant environmental governance instruments.
+
+    \item \textbf{Preliminary outline:}
+
+    \begin{itemize}
+
+        \item[i.] \underline{Mato Grosso as empirical context}: agricultural expansion, land use, deforestation, biome heterogeneity, institutional arrangements, and environmental policy.
+
+        \item[ii.] \underline{Relevant programs and mechanisms}: carbon markets, REDD+, REDD Early Movers, Environmental Reserve Quotas, payments for environmental services, the Produce, Conserve and Include Program, and other state or federal initiatives.
+
+        \item[iii.] \underline{Data}: agricultural productivity, land use, deforestation, vegetation cover, carbon-related indicators, environmental compliance, rural properties, credit, market access, and socioeconomic controls.
+
+        \item[iv.] \underline{Empirical strategy}: model selection, identification assumptions, spatial scale, temporal scale, treatment definition, control groups, and robustness checks.
+
+        \item[v.] \underline{Expected empirical contribution}: evaluation of whether locally grounded and incentive-compatible mechanisms are associated with better environmental and economic outcomes.
+
+    \end{itemize}
+
 \end{itemize}
+
+% ---
+\subsection{Scope and Limitations}
+% ---
+
+The thesis is primarily theoretical and exploratory, with a formal and empirical component designed to test the plausibility of the proposed framework. It does not claim that economic commensalism is universally applicable, nor that environmental preservation will always be compatible with private profitability. The argument is conditional: compatibility depends on ecological characteristics, institutional capacity, monitoring technology, incentive design, enforcement credibility, market structure, and the intertemporal preferences of agents.
+
+The empirical chapter is also subject to important limitations. Data availability may restrict the level of spatial disaggregation, the time period analyzed, and the possibility of identifying causal effects. Some mechanisms relevant to economic commensalism, such as expectations, perceived opportunity costs, informal governance, and strategic behavior, may not be directly observable in available datasets. For this reason, the empirical analysis will be interpreted as evidence of plausibility rather than definitive proof of the entire theoretical framework.
+
+A further limitation concerns the normative implications of the thesis. The first three chapters adopt a primarily positive approach: they seek to define, model, and empirically assess the conditions under which preservation may become economically rational. A fourth chapter may be developed later to discuss legal, institutional, and policy applications of the framework, but such normative proposals will depend on the theoretical, formal, and empirical results obtained in the preceding chapters.
+
+% ---
+\subsection{Expected Contribution}
+% ---
+
+The expected contribution of this thesis is threefold. First, it contributes to environmental and resource economics by proposing a conceptual framework in which ecological preservation is analyzed as a potentially endogenous component of production decisions. Second, it contributes to institutional economics and public policy design by emphasizing the importance of incentive compatibility, local ecological specificity, and intertemporal coordination. Third, it contributes empirically by applying the framework to Mato Grosso, a case in which agricultural productivity, deforestation pressure, ecological heterogeneity, and environmental governance interact in a concrete and policy-relevant setting.
+
+The thesis therefore seeks to advance the discussion on environmental governance by shifting the central question from whether private agents should preserve nature to whether institutions can be designed so that preservation becomes a rational and strategically stable component of economic behavior.
 
 \newpage
 
 % fim %
+

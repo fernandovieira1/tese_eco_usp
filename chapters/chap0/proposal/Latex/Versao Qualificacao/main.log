@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  28 MAY 2026 16:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  28 MAY 2026 16:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1003,780 +1003,1011 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ] (./0_abstract.tex
-<Figuras/usp_logo.png, id=81, 803.0pt x 602.25pt>
+<Figuras/usp_logo.png, id=85, 803.0pt x 602.25pt>
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 18.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 17.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
  [5
 
 
  <./Figuras/usp_logo.png>]) (./1_introduction.tex
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 14.
- (c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 15.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 13.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
  [6
 
 ]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 23.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 22.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [7{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+ [7]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 35.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 30.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
  [8]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 49.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 40.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
  [9]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 61.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 43.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [10]
+ [10]) (./2_Research_Design.tex
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 63.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 20.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [11]) (./2_Research_Design.tex
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 31.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [12
+ [11
 
 ]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 65.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 60.
+(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
+ [12]
+File: Figuras/usp_logo.png Graphic file (type png)
+<use Figuras/usp_logo.png>
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 104.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
  [13]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 101.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 153.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
  [14]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 129.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 198.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
  [15]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 215.
+ (c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 171.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 220.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [16]
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 212.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [17]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 222.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 222.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 222.
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 223.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [18]
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 241.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [19]
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 272.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [20{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 282.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [21]
-Overfull \hbox (5.64496pt too wide) in paragraph at lines 304--305
-[]$[]$\T1/lmr/m/n/12 : Vo-lun-tary and compliance-based car-bon mar-kets; REDD
+ [16{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+Overfull \hbox (1.69756pt too wide) in paragraph at lines 229--230
+[]$[]$\T1/lmr/m/n/12 : Pi-gou-vian ta-xa-tion, Co-
+ []
+
+
+Overfull \hbox (1.72989pt too wide) in paragraph at lines 233--234
+[]$[]$\T1/lmr/m/n/12 : the-o-re-ti-cal jus-ti-fi-ca-tion for tre-a-ting eco-
+ []
+
+
+Overfull \hbox (3.10376pt too wide) in paragraph at lines 235--236
+[]$[]$\T1/lmr/m/n/12 : de-fi-ni-tion, as-sump-ti-ons, the-o-re-ti-cal con-tri-bu-tion, ins-
  []
 
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 306.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 254.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
-[22]
+[17]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 315.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 293.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [23]) (./3_Significance_Study.tex
+ [18]
+Overfull \hbox (10.28188pt too wide) in paragraph at lines 297--298
+[]$[]$\T1/lmr/m/n/12 : agri-cul-tu-ral pro-duc-ti-vity, land use, de-fo-res-ta-tion, ve-ge-ta-tion co-ver, carbon-
+ []
+
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 26.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 318.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [24
+[19]
+File: Figuras/usp_logo.png Graphic file (type png)
+<use Figuras/usp_logo.png>
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 325.
+(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
+ [20]) (./3_Significance_Study.tex
+File: Figuras/usp_logo.png Graphic file (type png)
+<use Figuras/usp_logo.png>
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 20.
+(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
+ [21
 
 ]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 65.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 50.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [25{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
-<Figuras/eco_interactions.png, id=251, 698.8509pt x 412.6617pt>
-File: Figuras/eco_interactions.png Graphic file (type png)
-<use Figuras/eco_interactions.png>
-Package pdftex.def Info: Figuras/eco_interactions.png  used on input line 76.
-(pdftex.def)             Requested size: 455.24411pt x 268.8125pt.
+ [22{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 87.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 77.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [26 <./Figuras/eco_interactions.png>]
+ [23{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 99.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 92.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [27]
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/bx/n/10 Classical-
+ [24]
+File: Figuras/usp_logo.png Graphic file (type png)
+<use Figuras/usp_logo.png>
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 111.
+(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
+ [25]
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/bx/n/10 Classical
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/bx/n/10 Neoclassical
+Underfull \hbox (badness 7740) in paragraph at lines 179--179
+\T1/lmr/bx/n/10 and Neo-
  []
 
 
-Overfull \hbox (1.71828pt too wide) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/bx/n/10 clas-si-cal
+ []
+
+
+Overfull \hbox (8.17606pt too wide) in paragraph at lines 179--179
 []|\T1/lmr/bx/n/10 Institutional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/bx/n/10 Ecology
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 179--179
+\T1/lmr/bx/n/10 and En-vi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/bx/n/10 ron-men-tal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/bx/n/10 Green
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 []|\T1/lmr/bx/n/10 Economic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/bx/n/10 Com-men-sa-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/bx/n/10 Com-men-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/bx/n/10 lism (pro-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Production
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Fixed pro-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 fac-tor,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 duc-tion
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 re-source
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 fac-tor with
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 stock, or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 di-mi-nishing
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 source of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Governed
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Resource
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 by pro-perty
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 go-ver-ned
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 ru-les, and
+Underfull \hbox (badness 1603) in paragraph at lines 179--179
+\T1/lmr/m/n/10 norms, and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 ins-ti-tu-ti-o-nal
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 tran-sac-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Foundational
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 and ir-re-pla-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 ce-a-ble ba-sis
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 of life and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 eco-lo-gi-cal
- []
-
-
-Underfull \hbox (badness 6691) in paragraph at lines 174--174
-\T1/lmr/m/n/10 po-ra-ted into
- []
-
-
-Underfull \hbox (badness 7451) in paragraph at lines 174--174
-\T1/lmr/m/n/10 lo-gi-cal stock
- []
-
-
-Underfull \hbox (badness 1675) in paragraph at lines 174--174
-\T1/lmr/m/n/10 with pro-duc-
- []
-
-
-Underfull \hbox (badness 1314) in paragraph at lines 174--174
-\T1/lmr/m/n/10 and stra-te-gic
- []
-
-
-Underfull \hbox (badness 3199) in paragraph at lines 174--174
-\T1/lmr/m/n/10 re-serve func-
- []
-
-
-Underfull \hbox (badness 7451) in paragraph at lines 174--174
-\T1/lmr/m/n/10 be cor-rec-ted
- []
-
-
-Underfull \hbox (badness 2302) in paragraph at lines 174--174
-\T1/lmr/m/n/10 via ta-xes or
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Common
- []
-
-
-Underfull \hbox (badness 2818) in paragraph at lines 174--174
-\T1/lmr/m/n/10 good sub-ject
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 to ins-ti-tu-ti-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 o-nal fai-lure
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 (Tra-gedy of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 the Com-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Systemic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 in-ter-de-pen-
- []
-
-
-Overfull \hbox (8.78645pt too wide) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Complementary
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 as-set with
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 eco-lo-gi-cal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Endogenous
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 174--174
-\T1/lmr/m/n/10 stra-te-gic fac-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 pro-duc-ti-vity
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Driven by
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 pri-ces and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 uti-lity/profit
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 ma-xi-mi-za-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Shaped by
- []
-
-
-Underfull \hbox (badness 5036) in paragraph at lines 174--174
-\T1/lmr/m/n/10 and tran-sac-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Ethics, eco-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 lo-gi-cal res-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 pon-si-bi-lity,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 re-gu-la-tory
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Rational,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 territory-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 specific,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 dy-na-mic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 in-cen-ti-ves
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Intertemporal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 op-ti-mi-za-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 with fi-xed
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Path-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 dependent
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 ins-ti-tu-ti-o-nal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Quasi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 irreversible
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 eco-lo-gi-cal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Inter-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 generational
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Strategic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 long-term
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 ra-ti-o-na-lity;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 pre-ser-va-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 as an-ti-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 ci-pa-tory
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 pro-duc-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Rational
- []
-
-
-Underfull \hbox (badness 4569) in paragraph at lines 174--174
-\T1/lmr/m/n/10 agent (homo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 ins-ti-tu-ti-o-nal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 ar-ran-ge-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 []|\T1/lmr/m/n/10 Ecological
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 sys-tems,
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 foun-da-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 spe-cies in-
+Underfull \hbox (badness 4765) in paragraph at lines 179--179
+\T1/lmr/m/n/10 li-ence, and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 te-rac-ti-ons,
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 sys-te-mic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 bi-o-tic com-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 in-ter-de-pen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Population
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Natural
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 174--174
-\T1/lmr/m/n/10 and ter-ri-tory
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ca-pi-tal to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 with en-vi-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 be va-lued,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 ron-men-tal
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 pro-tec-ted,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Rational
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and in-cor-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 agent in-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 eco-no-mic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 te-rac-ting
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Dynamic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 with en-vi-
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 174--174
-\T1/lmr/m/n/10 ron-ment and
- []
-
-
-Underfull \hbox (badness 3735) in paragraph at lines 174--174
-\T1/lmr/m/n/10 others un-der
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 \T1/lmr/m/n/10 eco-lo-gi-cal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Allocative
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 co-fac-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 com-pe-ti-tive
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 with pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 duc-tive,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 stra-te-gic,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and in-ter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 tem-po-ral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Frequently
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 tre-a-ted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 as an ex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ter-na-lity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 cons-traint,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Common-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 pool re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 source
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 sub-ject to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ins-ti-tu-ti-o-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 de-sign and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 collective-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 action
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 in-trin-sic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 va-lue and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 eco-lo-gi-cal
+ []
+
+
+Overfull \hbox (15.24423pt too wide) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Complementary
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 bi-lity and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 in-ter-ge-ne-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ra-ti-o-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Endogenous
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 com-po-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 nent of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 pro-duc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 de-ci-si-ons
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and lo-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 eco-lo-gi-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Prices,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 mar-gi-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 pro-duc-ti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and pro-fit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ma-xi-mi-za-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Rules, go-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ver-nance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 struc-tu-res,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 en-for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ce-ment,
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 179--179
+\T1/lmr/m/n/10 norms, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 tran-sac-tion
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Ethical res-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 pon-si-bi-lity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 eco-lo-gi-cal
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 179--179
+\T1/lmr/m/n/10 li-mits, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Regulatory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and fi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 nan-cial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 in-cen-ti-ves
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Spatially
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 groun-ded
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and in-ter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 tem-po-ral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 in-cen-ti-ves
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 that al-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 the payoff
+ []
+
+
+Overfull \hbox (6.10571pt too wide) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Intertemporal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 op-ti-mi-za-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 tion, dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 coun-ting,
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and ca-pi-tal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ac-cu-mu-la-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 []|\T1/lmr/m/n/10 Institutional
  []
 
 
-Underfull \hbox (badness 3849) in paragraph at lines 174--174
-\T1/lmr/m/n/10 sta-bi-lity and
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 evo-lu-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 mi-ni-mi-za-tion
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 path de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Balance
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 pen-dence,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 between so-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and rule
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 ci-ety and
+Overfull \hbox (6.46745pt too wide) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Irreversibility,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 na-ture;
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 re-si-li-ence,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 th-resholds,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and eco-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 lo-gi-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 re-ge-ne-ra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Long-term
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 plan-ning,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 \T1/lmr/m/n/10 eco-lo-gi-cal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Economic,
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 risk, and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 eco-lo-gi-cal,
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 in-ter-ge-ne-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 and so-cial
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ra-ti-o-nal
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 174--174
-[]|\T1/lmr/m/n/10 Alignment of
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Dynamic
  []
 
 
-Underfull \hbox (badness 2865) in paragraph at lines 174--174
-\T1/lmr/m/n/10 eco-no-mic ra-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 stra-te-gic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-\T1/lmr/m/n/10 en-vi-ron-men-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 in-te-rac-tion
  []
 
 
-Underfull \hbox (badness 5036) in paragraph at lines 174--174
-\T1/lmr/m/n/10 tal re-si-li-ence
- []
-
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 184.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
-[28]
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 186.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [29]
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
-[]|\T1/lmr/bx/n/10 Alignment
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 un-der un-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
-\T1/lmr/bx/n/10 with Sci-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 cer-tainty,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
-[]|\T1/lmr/m/n/10 High (pro-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 le-ar-ning,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
-\T1/lmr/m/n/10 cri-ti-cal th-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and eco-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
-[]|\T1/lmr/m/n/10 Low (le-gal
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 lo-gi-cal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
-\T1/lmr/m/n/10 li-mit be-low
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Individual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 con-su-mer,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 or re-pre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 sen-ta-tive
+ []
+
+
+Overfull \hbox (6.10507pt too wide) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Communities,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 or-ga-ni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 za-ti-ons,
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 179--179
+\T1/lmr/m/n/10 gi-mes, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 go-ver-nance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ar-ran-ge-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Ecosystems,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 spe-cies in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 te-rac-ti-ons,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 \T1/lmr/m/n/10 eco-lo-gi-cal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
-\T1/lmr/m/n/10 not con-si-de-
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Territory,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 po-pu-la-tion,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 eco-nomy,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and en-vi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ron-men-tal
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Agent in-te-
+ []
+
+
+Underfull \hbox (badness 4416) in paragraph at lines 179--179
+\T1/lmr/m/n/10 cal eco-lo-gi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Allocative
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ef-fi-ci-ency
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and wel-fare
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ma-xi-mi-za-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Institutional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 go-ver-nance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Ecological
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 in-te-grity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 and li-mits
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 179--179
+\T1/lmr/m/n/10 to de-gra-da-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Sustainable
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 de-ve-lop-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ment and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 na-tu-ral
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ca-pi-tal pre-
+ []
+
+
+Overfull \hbox (6.32784pt too wide) in paragraph at lines 179--179
+[]|\T1/lmr/m/n/10 Compatibility
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 between
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 pri-vate ra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 ti-o-na-lity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 pro-duc-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 tion, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\T1/lmr/m/n/10 eco-lo-gi-cal
  []
 
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 244.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 188.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
-[30]
+[26]
+Overfull \vbox (78.14174pt too high) has occurred while \output is active []
+
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 256.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 188.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [31]
+ [27]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 269.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 210.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [32]) (./4_Final_Remarks.tex
+ [28]
+File: Figuras/usp_logo.png Graphic file (type png)
+<use Figuras/usp_logo.png>
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 215.
+(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
+ [29]) (./4_Final_Remarks.tex
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
 Package pdftex.def Info: Figuras/usp_logo.png  used on input line 17.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [33
+ [30
 
 ]
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 19.
+Package pdftex.def Info: Figuras/usp_logo.png  used on input line 26.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [34]) (./A_Timeline.tex
+ [31]) (./A_Timeline.tex
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
 Package pdftex.def Info: Figuras/usp_logo.png  used on input line 32.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [35
+ [32
 
 ]) (./B_On_AI_use.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--7
@@ -1788,23 +2019,19 @@ File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
 Package pdftex.def Info: Figuras/usp_logo.png  used on input line 179.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [36
+ [33
 
 ] (./main.bbl
 bibitemlist
-File: Figuras/usp_logo.png Graphic file (type png)
-<use Figuras/usp_logo.png>
-Package pdftex.def Info: Figuras/usp_logo.png  used on input line 81.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
-[37
-
-
-])
+)
 File: Figuras/usp_logo.png Graphic file (type png)
 <use Figuras/usp_logo.png>
 Package pdftex.def Info: Figuras/usp_logo.png  used on input line 183.
 (pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [38]
+ [34
+
+
+]
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -1815,18 +2042,18 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 20928 strings out of 467538
- 340909 string characters out of 5423724
- 905220 words of memory out of 5000000
- 49383 multiletter control sequences out of 15000+600000
- 718482 words of font info for 85 fonts, out of 8000000 for 9000
+ 20814 strings out of 467538
+ 338368 string characters out of 5423724
+ 904251 words of memory out of 5000000
+ 49296 multiletter control sequences out of 15000+600000
+ 702244 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,117p,2343b,724s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (36 pages, 536885 bytes).
+ 99i,16n,117p,1144b,667s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on main.pdf (32 pages, 404969 bytes).
 PDF statistics:
- 535 PDF objects out of 1000 (max. 8388607)
- 444 compressed objects within 5 object streams
- 97 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 453 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 262 words of extra memory for PDF output out of 10000 (max. 10000000)
 
