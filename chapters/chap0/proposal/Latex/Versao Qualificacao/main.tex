@@ -14,7 +14,7 @@
 \usepackage{amsmath}
 \usepackage{titlesec}
 \usepackage{etoolbox}
-\usepackage{tocloft}
+%\usepackage{tocloft} % removed: memoir/abntex2 provide ToC controls
 \usepackage[alf,abnt-etal-list=2,abnt-etal-cite=1,abnt-doi=link,abnt-url-package=hyperref,abnt-emphasize=bf]{abntex2cite}
 % Tabelas
 \usepackage{tabularx}
@@ -45,17 +45,17 @@
 \newcommand{\addabstracttoc}{%
   \addcontentsline{toc}{section}{\protect\numberline{}\listabstractname}%
 }
-\renewcommand{\cftsecindent}{1.5em}
+% tocloft removed; keep default ToC settings from memoir/abntex2
 
 % =============================
 % ==== LAYOUT E MARGENS ====
 % =============================
 \geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
 \setlength{\parindent}{1.25cm}
-\onehalfspacing
+\OnehalfSpacing
 
 % ==== Cabecalho e rodape ====
-\setlength{\headheight}{24.63824pt}
+\setlength{\headheight}{32pt} % increased to satisfy fancyhdr
 \pagestyle{plain}
 \fancyhf{}
 \fancyhead[L]{\fontsize{9.5pt}{11pt}\selectfont\includegraphics[height=1cm]{Figuras/usp_logo.png}}
@@ -97,6 +97,9 @@
     pdfauthor={Fernando Souza da Vieira}
 }
 
+% Provide fallback for HTML link macro sometimes emitted by .bbl
+\providecommand{\htmladdnormallink}[2]{#2}
+
 % =============================
 % ==== INICIO DO DOCUMENTO ====
 % =============================
@@ -104,7 +107,8 @@
 
 % ==== CAPA ====
 \pagenumbering{roman}
-\begin{titlepage}
+% Use titling's titlingpage environment (more compatible with memoir/abntex2)
+\begin{titlingpage}
     \centering
     {\large UNIVERSITY OF S\~AO PAULO (USP)\\[0.2cm]
     FACULTY OF ECONOMICS, ADMINISTRATION AND ACCOUNTING\\
@@ -125,7 +129,7 @@
 {\large Ribeir\~ao Preto, SP}\\[0.3cm]
 {\large June, 2025}
 
-\end{titlepage}
+\end{titlingpage}
 
 % ==== SUMARIO ====
 \clearpage
@@ -173,7 +177,7 @@
 
 % ==== REFERENCIAS ====
 \clearpage
-\bibliographystyle{abntex2-alf-negrito}
+\bibliographystyle{abntex2-alf}
 \bibliography{library}
 
 \end{document}
