@@ -15,8 +15,8 @@
 \contentsline {subsubsection}{\numberline {2.3.2.}Specific Objectives}{14}{subsubsection.0.2.3.2}%
 \contentsline {subsection}{\numberline {2.4.}Methodological Strategy}{15}{subsection.0.2.4}%
 \contentsline {subsection}{\numberline {2.5.}Chapter Structure}{16}{subsection.0.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1.}Chapter 1: Theoretical Framework}{16}{subsubsection.0.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2.}Chapter 2: Formal Model}{17}{subsubsection.0.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.1.}Chapter 1: Theoretical Framework and Preliminary Formalization}{16}{subsubsection.0.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2.}Chapter 2: Dynamic Formal Model}{17}{subsubsection.0.2.5.2}%
 \contentsline {subsubsection}{\numberline {2.5.3.}Chapter 3: Empirical Application}{18}{subsubsection.0.2.5.3}%
 \contentsline {subsection}{\numberline {2.6.}Scope and Limitations}{19}{subsection.0.2.6}%
 \contentsline {subsection}{\numberline {2.7.}Expected Contribution}{20}{subsection.0.2.7}%
@@ -26,12 +26,11 @@
 \contentsline {subsection}{\numberline {3.3.}Theoretical Significance}{24}{subsection.0.3.3}%
 \contentsline {subsection}{\numberline {3.4.}Methodological Significance}{24}{subsection.0.3.4}%
 \contentsline {subsection}{\numberline {3.5.}Empirical Significance}{25}{subsection.0.3.5}%
-\contentsline {subsection}{\numberline {3.6.}Practical and Policy Significance}{25}{subsection.0.3.6}%
+\contentsline {subsection}{\numberline {3.6.}Practical and Policy Significance}{26}{subsection.0.3.6}%
 \contentsline {subsection}{\numberline {3.7.}Comparative Contribution}{26}{subsection.0.3.7}%
 \contentsline {subsection}{\numberline {3.8.}Research Opportunities}{28}{subsection.0.3.8}%
 \contentsline {subsection}{\numberline {3.9.}Limitations}{28}{subsection.0.3.9}%
 \contentsline {section}{\numberline {4.}Final Remarks}{30}{section.0.4}%
 \contentsline {section}{\numberline {A.}Timeline}{32}{section.Alph0.1}%
-\contentsline {subsection}{\numberline {1.1.}Research Schedule and Timeline}{32}{subsection.Alph0.1.1}%
-\contentsline {section}{\numberline {B.}On the Use of AI}{33}{section.Alph0.2}%
-\contentsline {section}{\numberline {}References}{34}{section*.4}%
+\contentsline {section}{\numberline {B.}On the Use of AI}{35}{section.Alph0.2}%
+\contentsline {section}{\numberline {}References}{36}{section*.4}%

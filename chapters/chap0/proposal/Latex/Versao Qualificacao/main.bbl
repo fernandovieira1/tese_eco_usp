@@ -11,6 +11,17 @@
 Dispõe sobre a proteção da vegetação nativa; altera diversas leis e revoga outras.
 Dispon{\'\i}vel em: \htmladdnormallink{$<$https:\-/\-/www\-.planalto\-.gov\-.br\-/ccivil\underline{\ }03\-/\underline{\ }ato2011-2014\-/2012\-/lei\-/l12651\-.htm$>$}{https://www.planalto.gov.br/ccivil\_03/\_ato2011-2014/2012/lei/l12651.htm}.}
 
+\bibitem[Coase 1960]{coase1960social}
+\abntrefinfo{Coase}{COASE}{1960}
+{COASE, R.~H. The problem of social cost.
+\textbf{Journal of Law and Economics}, v.~3, p. 1--44, 1960.}
+
+\bibitem[Cobb e Douglas 1928]{cobb1928}
+\abntrefinfo{Cobb e Douglas}{COBB; DOUGLAS}{1928}
+{COBB, C.~W.; DOUGLAS, P.~H. A theory of production.
+\textbf{The American Economic Review}, v.~18, n.~1, p. 139--165, 1928.
+Dispon{\'\i}vel em: \htmladdnormallink{$<$https:\-/\-/www\-.jstor\-.org\-/stable\-/1811556$>$}{https://www.jstor.org/stable/1811556}.}
+
 \bibitem[Dasgupta 2001]{dasgupta2001human}
 \abntrefinfo{Dasgupta}{DASGUPTA}{2001}
 {DASGUPTA, P. \textbf{Human Well-Being and the Natural Environment}. 1st. ed. Oxford: Oxford University Press, 2001.
@@ -37,5 +48,13 @@ ISBN 9780199247882.}
 \abntrefinfo{Pigou}{PIGOU}{2010}
 {PIGOU, A.~C. The online library of liberty.
 \textbf{Online Library of Liberty}, 2010.}
+
+\bibitem[Ricardo 1817]{ricardo1817}
+\abntrefinfo{Ricardo}{RICARDO}{1817}
+{RICARDO, D. \textbf{On the Principles of Political Economy and Taxation}. John Murray, 1817. Dispon{\'\i}vel em: \htmladdnormallink{$<$https:\-/\-/www\-.econlib\-.org\-/library\-/Ricardo\-/ricP\-.html$>$}{https://www.econlib.org/library/Ricardo/ricP.html}.}
+
+\bibitem[Smith 1776]{smith1776}
+\abntrefinfo{Smith}{SMITH}{1776}
+{SMITH, A. \textbf{An Inquiry into the Nature and Causes of the Wealth of Nations}. W. Strahan and T. Cadell, 1776. Dispon{\'\i}vel em: \htmladdnormallink{$<$https:\-/\-/www\-.gutenberg\-.org\-/ebooks\-/3300$>$}{https://www.gutenberg.org/ebooks/3300}.}
 
 \end{thebibliography}
