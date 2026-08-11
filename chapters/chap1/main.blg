@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2025/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: abntex2-alf.bst
@@ -26,45 +26,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 18 entries,
+You've used 13 entries,
             6714 wiz_defined-function locations,
-            1286 strings with 11236 characters,
-and the built_in function-call counts, 15221 in all, are:
-= -- 1746
-> -- 246
-< -- 163
-+ -- 280
-- -- 79
-* -- 798
-:= -- 1733
-add.period$ -- 46
-call.type$ -- 19
-change.case$ -- 115
-chr.to.int$ -- 43
-cite$ -- 12
-duplicate$ -- 1361
-empty$ -- 1019
-format.name$ -- 355
-if$ -- 3512
+            1253 strings with 10483 characters,
+and the built_in function-call counts, 11362 in all, are:
+= -- 1460
+> -- 129
+< -- 156
++ -- 239
+- -- 43
+* -- 535
+:= -- 1219
+add.period$ -- 29
+call.type$ -- 14
+change.case$ -- 72
+chr.to.int$ -- 32
+cite$ -- 7
+duplicate$ -- 1150
+empty$ -- 690
+format.name$ -- 185
+if$ -- 2583
 int.to.chr$ -- 5
 int.to.str$ -- 3
-missing$ -- 276
-newline$ -- 64
-num.names$ -- 60
-pop$ -- 325
+missing$ -- 186
+newline$ -- 42
+num.names$ -- 35
+pop$ -- 214
 preamble$ -- 1
-purify$ -- 58
+purify$ -- 40
 quote$ -- 0
-skip$ -- 1631
+skip$ -- 1421
 stack$ -- 1
-substring$ -- 602
-swap$ -- 369
-text.length$ -- 12
+substring$ -- 427
+swap$ -- 268
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2
+type$ -- 1
 warning$ -- 0
-while$ -- 91
+while$ -- 52
 width$ -- 0
-write$ -- 194
+write$ -- 116
 (There were 4 warnings)

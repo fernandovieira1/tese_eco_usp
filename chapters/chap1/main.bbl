@@ -5,34 +5,16 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
-\bibitem[Acosta 2013]{acosta2013extractivism}
-\abntrefinfo{Acosta}{ACOSTA}{2013}
-{ACOSTA, A. Extractivism and neoextractivism: two sides of the same curse.
-\textbf{Beyond development: alternative visions from Latin America}, Quito, v.~1, p. 61--86, 2013.}
-
 \bibitem[Brasil 2012]{brasil2012florestal}
 \abntrefinfo{Brasil}{BRASIL}{2012}
 {BRASIL. \textbf{Lei nº 12.651, de 25 de maio de 2012}. 2012. Diário Oficial da União: seção 1, Brasília, DF, ano CXLIX, n. 102, p. 1--8, 28 maio 2012.
 Dispõe sobre a proteção da vegetação nativa; altera diversas leis e revoga outras.
 Dispon{\'\i}vel em: \htmladdnormallink{$<$https:\-/\-/www\-.planalto\-.gov\-.br\-/ccivil\underline{\ }03\-/\underline{\ }ato2011-2014\-/2012\-/lei\-/l12651\-.htm$>$}{https://www.planalto.gov.br/ccivil\_03/\_ato2011-2014/2012/lei/l12651.htm}.}
 
-\bibitem[Chichilnisky 2017]{chichilnisky2017north}
-\abntrefinfo{Chichilnisky}{CHICHILNISKY}{2017}
-{CHICHILNISKY, G. North--south trade and the global environment. In:  \textbf{International trade and the environment}. [S.l.]: Routledge, 2017. p. 261--284.}
-
 \bibitem[Dasgupta 2001]{dasgupta2001human}
 \abntrefinfo{Dasgupta}{DASGUPTA}{2001}
 {DASGUPTA, P. \textbf{Human Well-Being and the Natural Environment}. 1st. ed. Oxford: Oxford University Press, 2001.
 ISBN 9780199247882.}
-
-\bibitem[Gudynas et al. 2009]{gudynas2009diez}
-\abntrefinfo{Gudynas et al.}{GUDYNAS et al.}{2009}
-{GUDYNAS, E. et al. Diez tesis urgentes sobre el nuevo extractivismo.
-\textbf{Extractivismo, pol{\'\i}tica y sociedad}, Quito, Ecuador, v.~187, p. 187--225, 2009.}
-
-\bibitem[Hanley et al. 2007]{hanley2007environmental}
-\abntrefinfo{Hanley et al.}{HANLEY et al.}{2007}
-{HANLEY, N. et al. \textbf{Environmental Economics in Theory and Practice}. London: Palgrave Macmillan, 2007.}
 
 \bibitem[Hardin 1968]{hardin1968tragedy}
 \abntrefinfo{Hardin}{HARDIN}{1968}
@@ -42,10 +24,6 @@ ISBN 9780199247882.}
 \bibitem[Jehle e Reny 2011]{jehle2011}
 \abntrefinfo{Jehle e Reny}{JEHLE; RENY}{2011}
 {JEHLE, G.~A.; RENY, P.~J. \textbf{Advanced Microeconomic Theory}. 3rd. ed. Essex: Pearson, 2011.}
-
-\bibitem[Ostrom 1990]{ostrom1990commons}
-\abntrefinfo{Ostrom}{OSTROM}{1990}
-{OSTROM, E. \textbf{Governing the Commons: The Evolution of Institutions for Collective Action}. Cambridge: Cambridge University Press, 1990.}
 
 \bibitem[Ostrom 2002]{ostrom2002commonpool}
 \abntrefinfo{Ostrom}{OSTROM}{2002}

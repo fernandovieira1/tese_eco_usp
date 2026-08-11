@@ -1,0 +1,208 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
+(c:/texlive/2025/texmf-dist/tex/latex/abntex2/abntex2.cls
+Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
+(c:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2025/11/04 v3.8.4b configurable book, report, article do
+cument class
+(c:/texlive/2025/texmf-dist/tex/latex/xpatch/xpatch.sty
+(c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+(c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def))
+(c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty))
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/memoir/mem12.clo)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/array.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/dcolumn.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/delarray.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
+(c:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(c:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(c:/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(c:/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
+(c:/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/base/shortvrb.sty))
+(c:/texlive/2025/texmf-dist/tex/latex/textcase/textcase.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+(c:/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(c:/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(c:/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty))
+(c:/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(c:/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(c:/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def)
+(c:/texlive/2025/texmf-dist/tex/latex/url/url.sty)
+(c:/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+(c:/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(c:/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+(c:/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(c:/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(c:/texlive/2025/texmf-dist/tex/latex/memoir/memhfixc.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
+(c:/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-pdftex.def))
+(c:/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
+(c:/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
+(c:/texlive/2025/texmf-dist/tex/generic/babel/locale/invalid/babel-brazil.tex)
+(c:/texlive/2025/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+(c:/texlive/2025/texmf-dist/tex/generic/babel/locale/invalid/babel-brazil.tex)
+
+Package babel Warning: Name 'brazil' is deprecated.
+(babel)                Use 'brazilian' instead.
+(babel)                Reported on input line 4320.
+
+(c:/texlive/2025/texmf-dist/tex/generic/babel-portuges/brazilian.ldf)
+(c:/texlive/2025/texmf-dist/tex/generic/babel-english/english.ldf)
+
+Package babel Warning: Name 'brazil' is deprecated.
+(babel)                Use 'brazilian' instead.
+(babel)                Reported on input line 4320.
+
+(c:/texlive/2025/texmf-dist/tex/generic/babel-portuges/brazilian.ldf))
+(c:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/calc.sty)
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 708pt by 455pt
+Spine and edge margins: 85.35826pt and 56.9055pt
+Upper and lower margins: 85.35826pt and 51.68858pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7pt and 42.9055pt
+Sidecapsep and sidecapwidth: 7pt and 92pt
+Sidebarhsep and sidebarwidth: 7pt and 92pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 92pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
+******************************************************
+
+
+Class memoir Warning: \settocpreprocessor is marked deprecated and will be
+(memoir)              removed in 2026, the problem it tried to solve 
+(memoir)              (see manual, section 9.2.3),
+(memoir)              has been fixed in the kernel, and the feature is
+(memoir)              no longer needed. on input line 483.
+
+) (c:/texlive/2025/texmf-dist/tex/latex/lm/lmodern.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+(c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd))
+(c:/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty))
+(c:/texlive/2025/texmf-dist/tex/latex/ragged2e/ragged2e.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(c:/texlive/2025/texmf-dist/tex/latex/abntex2/abntex2cite.sty
+(c:/texlive/2025/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/ifpdf.sty)
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/ifxetex.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/relsize/relsize.sty))
+(c:/texlive/2025/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+(c:/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+(c:/texlive/2025/texmf-dist/tex/latex/adjustbox/adjcalc.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/adjustbox/trimclip.sty
+(c:/texlive/2025/texmf-dist/tex/latex/collectbox/collectbox.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/adjustbox/tc-pdftex.def))
+(c:/texlive/2025/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/varwidth/varwidth.sty)
+==> First Aid for varwidth.sty applied!
+) (c:/texlive/2025/texmf-dist/tex/latex/float/float.sty)
+
+LaTeX Warning: Unused global option(s):
+    [nottoc,notbib].
+
+(./main.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd)
+(c:/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd)
+(c:/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd)
+(c:/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd) (./0_abstract.tex)
+(./1_introduction.tex [1{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdft
+ex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/202
+5/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+
+LaTeX Warning: Citation `placeholder_positive_incentives' on page 2 undefined o
+n input line 67.
+
+
+LaTeX Warning: Citation `placeholder_enforcement' on page 2 undefined on input 
+line 67.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \hbox (28.45273pt too wide) has occurred while \output is active
+[]|$[]$|  
+[2 <../../images/fearp_logo.png>]
+
+LaTeX Warning: Citation `placeholder_spatial_compensation' on page 3 undefined 
+on input line 69.
+
+
+LaTeX Warning: Citation `placeholder_biome_governance' on page 3 undefined on i
+nput line 69.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [3]
+Overfull \hbox (28.45273pt too wide) has occurred while \output is active
+[]|$[]$|  
+[4]) (./2_contextualization.tex
+Overfull \hbox (14.70992pt too wide) in paragraph at lines 5--6
+[]\T1/lmr/m/n/12 ---> Da-dos e ev-idÛn-cias mostram que, ape-sar dos es-forþos,
+ as tendÛn-cias de degradaþÒo
+) (./3_literature_review.tex) (./4_model.tex) [5] (./5_results.tex)
+(./6_discussion.tex) (./7_Final_Remarks.tex
+Overfull \hbox (28.45273pt too wide) has occurred while \output is active
+[]|$[]$|  
+[6] [7]) (./main.bbl
+bibitemlist
+(c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd))
+Overfull \hbox (28.45273pt too wide) has occurred while \output is active
+[]|$[]$|  
+[8{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2025/te
+xmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+ )
+(see the transcript file for additional information)<c:/texlive/2025/texmf-dist
+/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/publi
+c/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c
+:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texm
+f-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/
+public/lm/lmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb>
+Output written on main.pdf (8 pages, 195729 bytes).
+Transcript written on main.log.

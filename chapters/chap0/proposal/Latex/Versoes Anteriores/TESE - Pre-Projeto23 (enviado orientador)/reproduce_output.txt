@@ -1,0 +1,569 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
+(c:/texlive/2025/texmf-dist/tex/latex/abntex2/abntex2.cls
+Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
+(c:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2025/11/04 v3.8.4b configurable book, report, article do
+cument class
+(c:/texlive/2025/texmf-dist/tex/latex/xpatch/xpatch.sty
+(c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+(c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def))
+(c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty))
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/memoir/mem12.clo)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/array.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/dcolumn.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/delarray.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
+(c:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(c:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+(c:/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(c:/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))))
+(c:/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/base/shortvrb.sty))
+(c:/texlive/2025/texmf-dist/tex/latex/textcase/textcase.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+(c:/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(c:/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(c:/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty))
+(c:/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(c:/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(c:/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def)
+(c:/texlive/2025/texmf-dist/tex/latex/url/url.sty)
+(c:/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+(c:/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(c:/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+(c:/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(c:/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(c:/texlive/2025/texmf-dist/tex/latex/memoir/memhfixc.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
+(c:/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-pdftex.def))
+(c:/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
+(c:/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
+(c:/texlive/2025/texmf-dist/tex/generic/babel/locale/invalid/babel-brazil.tex)
+(c:/texlive/2025/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+(c:/texlive/2025/texmf-dist/tex/generic/babel/locale/invalid/babel-brazil.tex)
+
+Package babel Warning: Name 'brazil' is deprecated.
+(babel)                Use 'brazilian' instead.
+(babel)                Reported on input line 4320.
+
+(c:/texlive/2025/texmf-dist/tex/generic/babel-portuges/brazilian.ldf)
+(c:/texlive/2025/texmf-dist/tex/generic/babel-english/english.ldf)
+
+Package babel Warning: Name 'brazil' is deprecated.
+(babel)                Use 'brazilian' instead.
+(babel)                Reported on input line 4320.
+
+(c:/texlive/2025/texmf-dist/tex/generic/babel-portuges/brazilian.ldf))
+(c:/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/calc.sty)
+
+******************************************************
+Stock height and width: 845.04684pt by 597.50787pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 845.04684pt by 597.50787pt
+Text height and width: 708pt by 455pt
+Spine and edge margins: 85.35826pt and 56.9055pt
+Upper and lower margins: 85.35826pt and 51.68858pt
+Headheight and headsep: 14.5pt and 19.8738pt
+Footskip: 30pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7pt and 42.9055pt
+Sidecapsep and sidecapwidth: 7pt and 42pt
+Sidebarhsep and sidebarwidth: 7pt and 42pt
+Sidebarvsep and sidebartopsep: 14.5pt and 0pt
+Sidebarheight: 590.14995pt
+Sidefoothsep and sidefootwidth: 7pt and 42pt
+Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
+******************************************************
+
+
+Class memoir Warning: \settocpreprocessor is marked deprecated and will be
+(memoir)              removed in 2026, the problem it tried to solve 
+(memoir)              (see manual, section 9.2.3),
+(memoir)              has been fixed in the kernel, and the feature is
+(memoir)              no longer needed. on input line 483.
+
+) (c:/texlive/2025/texmf-dist/tex/latex/lm/lmodern.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+(c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd))
+(c:/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty))
+(c:/texlive/2025/texmf-dist/tex/latex/ragged2e/ragged2e.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty))
+
+Class memoir Warning: The titlesec package is not recommended with memoir.
+(memoir)              With it we loose some of the features provides by the
+(memoir)              class. We provide our own interface to adjust how 
+(memoir)              sections and chapters should look like.
+(memoir)              See the manual sections 6.4 through 6.6 for details.  on 
+input line 16.
+
+(c:/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/abntex2/abntex2cite.sty
+(c:/texlive/2025/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/ifpdf.sty)
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/ifxetex.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/relsize/relsize.sty))
+(c:/texlive/2025/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+(c:/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+(c:/texlive/2025/texmf-dist/tex/latex/adjustbox/adjcalc.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/adjustbox/trimclip.sty
+(c:/texlive/2025/texmf-dist/tex/latex/collectbox/collectbox.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/adjustbox/tc-pdftex.def))
+(c:/texlive/2025/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/varwidth/varwidth.sty)
+==> First Aid for varwidth.sty applied!
+)
+
+Class memoir Warning: The fancyhdr package is not recommended with memoir.
+(memoir)              We have our own well integrated interface to handle
+(memoir)              headers and footers. See the manual section 7.3
+(memoir)              onwards for details. on input line 28.
+
+(c:/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.sty
+(c:/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+(c:/texlive/2025/texmf-dist/tex/latex/float/float.sty)
+(c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+(c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+(c:/texlive/2025/texmf-dist/tex/latex/caption/caption-memoir.sto)))
+
+LaTeX Warning: Unused global option(s):
+    [nottoc,notbib].
+
+(./main.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(c:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) [1{c:/texl
+ive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-di
+st/fonts/enc/dvips/lm/lm-ec.enc}]
+(c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmss.fd) (./main.toc
+(c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd)
+(c:/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd)
+(c:/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd)
+(c:/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd)) [1] (./0_abstract.tex
+[5 <./Figuras/usp_logo.png>]) (./1_introduction.tex
+(c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd) [6] [7{c:/texlive/2025/texm
+f-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [8] [9] [10] [11])
+(./2_Research_Design.tex [12] [13] [14] [15] [16] [17] [18] [19] [20{c:/texlive
+/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [21]
+Overfull \hbox (5.64496pt too wide) in paragraph at lines 304--305
+[]$[]$\T1/lmr/m/n/12 : Vo-lun-tary and compliance-based car-bon mar-kets; REDD
+[22] [23]) (./3_Significance_Study.tex [24] [25{c:/texlive/2025/texmf-dist/font
+s/enc/dvips/lm/lm-rm.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-math
+sy.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [26 <./Fi
+guras/eco_interactions.png>] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/bx/n/10 Classical-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/bx/n/10 Neoclassical
+
+Overfull \hbox (1.71828pt too wide) in paragraph at lines 174--174
+[]|\T1/lmr/bx/n/10 Institutional
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/bx/n/10 Economic
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/bx/n/10 Com-men-sa-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/bx/n/10 lism (pro-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Fixed pro-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 duc-tion
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 fac-tor with
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 di-mi-nishing
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Governed
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 by pro-perty
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 ru-les, and
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 ins-ti-tu-ti-o-nal
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Foundational
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 and ir-re-pla-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 ce-a-ble ba-sis
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 of life and
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 eco-lo-gi-cal
+
+Underfull \hbox (badness 6691) in paragraph at lines 174--174
+\T1/lmr/m/n/10 po-ra-ted into
+
+Underfull \hbox (badness 7451) in paragraph at lines 174--174
+\T1/lmr/m/n/10 lo-gi-cal stock
+
+Underfull \hbox (badness 1675) in paragraph at lines 174--174
+\T1/lmr/m/n/10 with pro-duc-
+
+Underfull \hbox (badness 1314) in paragraph at lines 174--174
+\T1/lmr/m/n/10 and stra-te-gic
+
+Underfull \hbox (badness 3199) in paragraph at lines 174--174
+\T1/lmr/m/n/10 re-serve func-
+
+Underfull \hbox (badness 7451) in paragraph at lines 174--174
+\T1/lmr/m/n/10 be cor-rec-ted
+
+Underfull \hbox (badness 2302) in paragraph at lines 174--174
+\T1/lmr/m/n/10 via ta-xes or
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Common
+
+Underfull \hbox (badness 2818) in paragraph at lines 174--174
+\T1/lmr/m/n/10 good sub-ject
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 to ins-ti-tu-ti-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 o-nal fai-lure
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 (Tra-gedy of
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 the Com-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Systemic
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 in-ter-de-pen-
+
+Overfull \hbox (8.78645pt too wide) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Complementary
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 as-set with
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 eco-lo-gi-cal
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Endogenous
+
+Underfull \hbox (badness 1609) in paragraph at lines 174--174
+\T1/lmr/m/n/10 stra-te-gic fac-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 pro-duc-ti-vity
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Driven by
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 pri-ces and
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 uti-lity/profit
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 ma-xi-mi-za-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Shaped by
+
+Underfull \hbox (badness 5036) in paragraph at lines 174--174
+\T1/lmr/m/n/10 and tran-sac-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Ethics, eco-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 lo-gi-cal res-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 pon-si-bi-lity,
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 re-gu-la-tory
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Rational,
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 territory-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 specific,
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 dy-na-mic
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 in-cen-ti-ves
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Intertemporal
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 op-ti-mi-za-tion
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 with fi-xed
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Path-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 dependent
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 ins-ti-tu-ti-o-nal
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Quasi-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 irreversible
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 eco-lo-gi-cal
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Inter-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 generational
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Strategic
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 long-term
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 ra-ti-o-na-lity;
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 pre-ser-va-tion
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 as an-ti-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 ci-pa-tory
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 pro-duc-tion
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Rational
+
+Underfull \hbox (badness 4569) in paragraph at lines 174--174
+\T1/lmr/m/n/10 agent (homo
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 ins-ti-tu-ti-o-nal
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 ar-ran-ge-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Ecological
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 sys-tems,
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 spe-cies in-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 te-rac-ti-ons,
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 bi-o-tic com-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Population
+
+Underfull \hbox (badness 1609) in paragraph at lines 174--174
+\T1/lmr/m/n/10 and ter-ri-tory
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 with en-vi-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 ron-men-tal
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Rational
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 agent in-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 te-rac-ting
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 with en-vi-
+
+Underfull \hbox (badness 2418) in paragraph at lines 174--174
+\T1/lmr/m/n/10 ron-ment and
+
+Underfull \hbox (badness 3735) in paragraph at lines 174--174
+\T1/lmr/m/n/10 others un-der
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 eco-lo-gi-cal
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Allocative
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 com-pe-ti-tive
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Institutional
+
+Underfull \hbox (badness 3849) in paragraph at lines 174--174
+\T1/lmr/m/n/10 sta-bi-lity and
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 mi-ni-mi-za-tion
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Balance
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 between so-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 ci-ety and
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 na-ture;
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 eco-lo-gi-cal
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Economic,
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 eco-lo-gi-cal,
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 and so-cial
+
+Underfull \hbox (badness 1127) in paragraph at lines 174--174
+[]|\T1/lmr/m/n/10 Alignment of
+
+Underfull \hbox (badness 2865) in paragraph at lines 174--174
+\T1/lmr/m/n/10 eco-no-mic ra-
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T1/lmr/m/n/10 en-vi-ron-men-
+
+Underfull \hbox (badness 5036) in paragraph at lines 174--174
+\T1/lmr/m/n/10 tal re-si-li-ence
+[28] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+[]|\T1/lmr/bx/n/10 Alignment
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\T1/lmr/bx/n/10 with Sci-
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+[]|\T1/lmr/m/n/10 High (pro-
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\T1/lmr/m/n/10 cri-ti-cal th-
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+[]|\T1/lmr/m/n/10 Low (le-gal
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\T1/lmr/m/n/10 li-mit be-low
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\T1/lmr/m/n/10 eco-lo-gi-cal
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+\T1/lmr/m/n/10 not con-si-de-
+[30] [31] [32]) (./4_Final_Remarks.tex [33] [34]) (./A_Timeline.tex [35])
+(./B_On_AI_use.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
+
+) [36] (./main.bbl
+bibitemlist
+[37]) [38] (./main.aux) )
+(see the transcript file for additional information)<c:/texlive/2025/texmf-dist
+/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/publi
+c/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><
+c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/te
+xmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/typ
+e1/public/lm/lmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8
+.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/20
+25/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts
+/type1/public/lm/lmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lm
+r7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2
+025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2025/texmf-dist/fon
+ts/type1/public/lm/lmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm
+/lmss12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/te
+xlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2025/texmf
+-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/
+public/lm/lmsy6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
+>
+Output written on main.pdf (36 pages, 536885 bytes).
+Transcript written on main.log.
