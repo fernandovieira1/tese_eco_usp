@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  11 AUG 2026 01:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  11 AUG 2026 22:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -817,7 +817,7 @@ LaTeX Warning: Unused global option(s):
 
 (./main.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 22.
+(babel)             Reported on input line 19.
 )
 \openout1 = `main.aux'.
 
@@ -928,101 +928,58 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 184.
  (./0_abstract.tex) (./1_introduction.tex [1
 
-{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-
-LaTeX Warning: Citation `placeholder_positive_incentives' on page 2 undefined on input line 67.
-
-
-LaTeX Warning: Citation `placeholder_enforcement' on page 2 undefined on input line 67.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<../../images/fearp_logo.png, id=34, 427.5975pt x 60.225pt>
-File: ../../images/fearp_logo.png Graphic file (type png)
-<use ../../images/fearp_logo.png>
-Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 68.
-(pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
-
-Overfull \hbox (28.45273pt too wide) has occurred while \output is active
-[]|$[]$|  
- []
-
-[2 <../../images/fearp_logo.png>]
-
-LaTeX Warning: Citation `placeholder_spatial_compensation' on page 3 undefined on input line 69.
-
-
-LaTeX Warning: Citation `placeholder_biome_governance' on page 3 undefined on input line 69.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-File: ../../images/fearp_logo.png Graphic file (type png)
-<use ../../images/fearp_logo.png>
-Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 193.
-(pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
-
-Overfull \hbox (28.45273pt too wide) has occurred while \output is active
-[]|$[]$|  
- []
-
-[4]) (./2_contextualization.tex
+{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]) (./2_contextualization.tex
 Overfull \hbox (14.70992pt too wide) in paragraph at lines 5--6
 []\T1/lmr/m/n/12 ---> Da-dos e ev-idên-cias mostram que, ape-sar dos es-forços, as tendên-cias de degradação
  []
 
-) (./3_literature_review.tex) (./4_model.tex) [5] (./5_results.tex) (./6_discussion.tex) (./7_Final_Remarks.tex
+) (./3_literature_review.tex) (./4_model.tex)
+<../../images/fearp_logo.png, id=20, 427.5975pt x 60.225pt>
 File: ../../images/fearp_logo.png Graphic file (type png)
 <use ../../images/fearp_logo.png>
-Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 9.
+Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 213.
 (pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
 
 Overfull \hbox (28.45273pt too wide) has occurred while \output is active
 []|$[]$|  
  []
 
-[6] [7]) (./main.bbl
+[2 <../../images/fearp_logo.png>] (./5_results.tex) (./6_discussion.tex) (./7_Final_Remarks.tex [3]
+File: ../../images/fearp_logo.png Graphic file (type png)
+<use ../../images/fearp_logo.png>
+Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 17.
+(pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
+
+Overfull \hbox (28.45273pt too wide) has occurred while \output is active
+[]|$[]$|  
+ []
+
+[4]) (./main.bbl
 bibitemlist
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 10.
-(c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-))
-File: ../../images/fearp_logo.png Graphic file (type png)
-<use ../../images/fearp_logo.png>
-Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 226.
-(pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
 
-Overfull \hbox (28.45273pt too wide) has occurred while \output is active
-[]|$[]$|  
- []
+LaTeX Warning: Empty `thebibliography' environment on input line 8.
 
-[8
+) [5
 
-{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] (./main.aux)
+] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 18363 strings out of 467538
- 291315 string characters out of 5423724
- 756281 words of memory out of 5000000
- 46931 multiletter control sequences out of 15000+600000
- 684070 words of font info for 75 fonts, out of 8000000 for 9000
+ 18277 strings out of 467538
+ 289238 string characters out of 5423724
+ 753008 words of memory out of 5000000
+ 46861 multiletter control sequences out of 15000+600000
+ 683694 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,107p,1795b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb>
-Output written on main.pdf (8 pages, 195729 bytes).
+ 99i,16n,107p,1027b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb>
+Output written on main.pdf (5 pages, 175132 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
  62 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -13,10 +13,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: library.bib
-Warning--I didn't find a database entry for "placeholder_positive_incentives"
-Warning--I didn't find a database entry for "placeholder_enforcement"
-Warning--I didn't find a database entry for "placeholder_spatial_compensation"
-Warning--I didn't find a database entry for "placeholder_biome_governance"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -26,45 +22,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 13 entries,
+You've used 6 entries,
             6714 wiz_defined-function locations,
-            1253 strings with 10483 characters,
-and the built_in function-call counts, 11362 in all, are:
-= -- 1460
-> -- 129
-< -- 156
-+ -- 239
-- -- 43
-* -- 535
-:= -- 1219
-add.period$ -- 29
-call.type$ -- 14
-change.case$ -- 72
-chr.to.int$ -- 32
-cite$ -- 7
-duplicate$ -- 1150
-empty$ -- 690
-format.name$ -- 185
-if$ -- 2583
+            1203 strings with 9413 characters,
+and the built_in function-call counts, 2102 in all, are:
+= -- 249
+> -- 3
+< -- 3
++ -- 51
+- -- 3
+* -- 81
+:= -- 274
+add.period$ -- 0
+call.type$ -- 7
+change.case$ -- 18
+chr.to.int$ -- 13
+cite$ -- 0
+duplicate$ -- 25
+empty$ -- 260
+format.name$ -- 0
+if$ -- 574
 int.to.chr$ -- 5
 int.to.str$ -- 3
-missing$ -- 186
-newline$ -- 42
-num.names$ -- 35
-pop$ -- 214
+missing$ -- 61
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 44
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 18
 quote$ -- 0
-skip$ -- 1421
+skip$ -- 313
 stack$ -- 1
-substring$ -- 427
-swap$ -- 268
-text.length$ -- 7
+substring$ -- 74
+swap$ -- 3
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1
+type$ -- 0
 warning$ -- 0
-while$ -- 52
+while$ -- 2
 width$ -- 0
-write$ -- 116
-(There were 4 warnings)
+write$ -- 8

@@ -5,38 +5,4 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
-\bibitem[Brasil 2012]{brasil2012florestal}
-\abntrefinfo{Brasil}{BRASIL}{2012}
-{BRASIL. \textbf{Lei nº 12.651, de 25 de maio de 2012}. 2012. Diário Oficial da União: seção 1, Brasília, DF, ano CXLIX, n. 102, p. 1--8, 28 maio 2012.
-Dispõe sobre a proteção da vegetação nativa; altera diversas leis e revoga outras.
-Dispon{\'\i}vel em: \htmladdnormallink{$<$https:\-/\-/www\-.planalto\-.gov\-.br\-/ccivil\underline{\ }03\-/\underline{\ }ato2011-2014\-/2012\-/lei\-/l12651\-.htm$>$}{https://www.planalto.gov.br/ccivil\_03/\_ato2011-2014/2012/lei/l12651.htm}.}
-
-\bibitem[Dasgupta 2001]{dasgupta2001human}
-\abntrefinfo{Dasgupta}{DASGUPTA}{2001}
-{DASGUPTA, P. \textbf{Human Well-Being and the Natural Environment}. 1st. ed. Oxford: Oxford University Press, 2001.
-ISBN 9780199247882.}
-
-\bibitem[Hardin 1968]{hardin1968tragedy}
-\abntrefinfo{Hardin}{HARDIN}{1968}
-{HARDIN, G. The tragedy of the commons.
-\textbf{Science}, v.~162, n.~3859, p. 1243--1248, 1968.}
-
-\bibitem[Jehle e Reny 2011]{jehle2011}
-\abntrefinfo{Jehle e Reny}{JEHLE; RENY}{2011}
-{JEHLE, G.~A.; RENY, P.~J. \textbf{Advanced Microeconomic Theory}. 3rd. ed. Essex: Pearson, 2011.}
-
-\bibitem[Ostrom 2002]{ostrom2002commonpool}
-\abntrefinfo{Ostrom}{OSTROM}{2002}
-{OSTROM, E. Common-pool resources and institutions: Toward a revised theory. In:  \textbf{Handbook of Agricultural Economics}. [S.l.]: Elsevier, 2002. v.~2, p. 1315--1339.}
-
-\bibitem[Pigou 2010]{pigou2010liberty}
-\abntrefinfo{Pigou}{PIGOU}{2010}
-{PIGOU, A.~C. The online library of liberty.
-\textbf{Online Library of Liberty}, 2010.}
-
-\bibitem[Stiglitz 1989]{stiglitz1989reflections}
-\abntrefinfo{Stiglitz}{STIGLITZ}{1989}
-{STIGLITZ, J.~E. Reflections on the state of economics: 1988.
-1989.}
-
 \end{thebibliography}
