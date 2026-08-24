@@ -1,0 +1,22 @@
+% \textbf{H1.} The environmental must be considered an endogenous productive cofactor, considering that it affects economic output, while its evolution responds to production intensity, preservation decisions, ecological feedback, and institutional rules.
+
+% ```
+% \item[\textbf{H2.}] When environmental assets and ecosystem services are incorporated into and remunerated through the agent's productive payoff, preservation becomes part of the equilibrium itself, making the conventional project-by-project additionality counterfactual endogenous to that equilibrium rather than a fixed and external baseline.
+
+% \item[\textbf{H3.}] Environmental governance anchored in ecologically relevant local units---particularly biomes and, where appropriate, their internal ecological subdivisions---is better able to identify locally calibrated thresholds and optimal points of resource use, while broader accountability and compliance mechanisms provide monitoring, verification, market access, and reputational or legal enforcement.
+
+% \item[\textbf{H4.}] An intertemporal restructuring of private incentives can make the maintenance of ecological functionality an individually rational best response and support a Nash equilibrium, even in the absence of global coordination capable of implementing a Pareto-optimal allocation.
+% ```
+
+
+% ------------------
+%%% PRAXIS
+% ------------------
+% ????
+
+Existing approaches illuminate parts of these relationships, but their joint theoretical implications for production, incentives, and environmental governance remain insufficiently developed.
+
+As we will argue, the spatial dimension is especially important. Carbon compensation programs may be fungible for the purpose of accounting for a global atmospheric stock, but equivalent quantities of carbon do not imply equivalence in biodiversity, hydrological regulation, soil resilience, or ecological connectivity. Compensation undertaken elsewhere may satisfy a market or regulatory requirement without restoring the local ecological functions that sustain a particular productive territory. Likewise, adding an environmental variable $E$ to a production function does not by itself make the environment endogenous: endogeneity requires that $E$ affect productive outcomes while its condition also responds, directly or indirectly, to production, preservation, institutional rules, and ecological feedback.
+
+%% Contribuições
+The article aims to make three principal contributions. First, to propose a more precise representation of nature in production theory by distinguishing the mere inclusion of a natural-resource input from the endogeneity of an ecological state that affects productivity and responds to economic decisions. Second, to connect this representation to private incentives and ecologically grounded governance, emphasizing that environmental equivalence at the level of carbon accounting does not necessarily preserve locally specific ecosystem functions. Third, it introduces economic commensalism as a testable analytical framework and derives theoretical conditions for distinguishing productive use that maintains ecological functionality from resource-use regimes that erode the basis of future production. The proposed framework does not reject regulation, enforcement, markets, or collective governance; it reorganizes their roles around the problem of making preservation a more robust component of the agent's rational decision rather than an exclusively external burden.
