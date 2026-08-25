@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  25 AUG 2026 14:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  25 AUG 2026 18:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -703,31 +703,31 @@ Dictionary: translator-theorem-dictionary, Language: English
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}] [2
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 96.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 97.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 96.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 97.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 96.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 97.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 96.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 97.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 96.
+(Font)              <6> on input line 97.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 96.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 96.
+(Font)              <5> on input line 97.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 97.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 96.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3
@@ -740,17 +740,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <assets/grafico_estrategias_projeto.png, id=108, 505.89pt x 337.26pt>
 File: assets/grafico_estrategias_projeto.png Graphic file (type png)
 <use assets/grafico_estrategias_projeto.png>
-Package pdftex.def Info: assets/grafico_estrategias_projeto.png  used on input line 178.
+Package pdftex.def Info: assets/grafico_estrategias_projeto.png  used on input line 179.
 (pdftex.def)             Requested size: 268.75798pt x 179.17407pt.
  [6
 
  <./assets/grafico_estrategias_projeto.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 208.
+(Font)              <10> on input line 209.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 208.
+(Font)              <7> on input line 209.
 
-Underfull \hbox (badness 1259) in paragraph at lines 208--208
+Underfull \hbox (badness 1259) in paragraph at lines 209--209
 []|\T1/lmr/m/n/10 Existência teórica / co-
  []
 
@@ -758,23 +758,28 @@ Underfull \hbox (badness 1259) in paragraph at lines 208--208
 
 {c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 250.
+(Font)              <10.95> on input line 239.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 250.
- [8
+(Font)              <8> on input line 239.
 
-{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] [9
+Underfull \hbox (badness 10000) detected at line 239
+[][][][][][][][][]
+ []
+
+[8
+
+{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [9
 
 ]
-<assets/mapa_biomas_mt.png, id=202, 441.65pt x 297.11pt>
+<assets/mapa_biomas_mt.png, id=187, 441.65pt x 297.11pt>
 File: assets/mapa_biomas_mt.png Graphic file (type png)
 <use assets/mapa_biomas_mt.png>
-Package pdftex.def Info: assets/mapa_biomas_mt.png  used on input line 318.
+Package pdftex.def Info: assets/mapa_biomas_mt.png  used on input line 307.
 (pdftex.def)             Requested size: 268.75798pt x 180.80614pt.
  [10
 
  <./assets/mapa_biomas_mt.png>]
-Underfull \hbox (badness 1259) in paragraph at lines 351--351
+Underfull \hbox (badness 1259) in paragraph at lines 340--340
 []|\T1/lmr/m/n/10 A co-or-de-nação ter-ri-to-rial pro-duz tra-jetórias
  []
 
@@ -805,18 +810,18 @@ Package rerunfilecheck Info: File `qualificacao_fernando.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22504 strings out of 467538
- 435822 string characters out of 5423724
+ 22485 strings out of 467538
+ 435153 string characters out of 5423724
  810341 words of memory out of 5000000
- 50884 multiletter control sequences out of 15000+600000
+ 50866 multiletter control sequences out of 15000+600000
  680335 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,123p,467b,949s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on qualificacao_fernando.pdf (14 pages, 829165 bytes).
+<c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on qualificacao_fernando.pdf (14 pages, 818817 bytes).
 PDF statistics:
- 345 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
+ 323 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
  29 named destinations out of 1000 (max. 500000)
- 539 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 503 words of extra memory for PDF output out of 10000 (max. 10000000)
 
