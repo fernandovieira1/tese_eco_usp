@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  27 AUG 2026 00:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  27 AUG 2026 01:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -945,16 +945,6 @@ Overfull \hbox (28.45273pt too wide) has occurred while \output is active
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-Overfull \hbox (21.1851pt too wide) in paragraph at lines 54--55
-[]\T1/lmr/bx/n/12 (H3) Com-pat-i-bil-i-dade in-tertem-po-ral de in-cen-tivos. \T1/lmr/m/n/12 Quando o cál-culo econômico
- []
-
-
-Overfull \hbox (1.1981pt too wide) in paragraph at lines 59--60
-\T1/lmr/m/n/12 unidades ter-ri-to-ri-ais eco-logi-ca-mente rel-e-vantes. Ter-ceiro, de-fine o comen-sal-ismo econômico
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ../../images/fearp_logo.png Graphic file (type png)
@@ -966,20 +956,30 @@ Overfull \hbox (28.45273pt too wide) has occurred while \output is active
 []|$[]$|  
  []
 
-[4]) (./2_problem_context.tex) (./3_literature_review.tex) (./4_conceptual_and_analytical_framework.tex)
+[4]
+Overfull \hbox (1.1981pt too wide) in paragraph at lines 62--63
+\T1/lmr/m/n/12 unidades ter-ri-to-ri-ais eco-logi-ca-mente rel-e-vantes. Ter-ceiro, de-fine o comen-sal-ismo econômico
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5] (./5_theoretical_results.tex) (./6_discussion.tex) (./7_Final_Remarks.tex
+ [5]) (./2_problem_context.tex) (./3_literature_review.tex) (./4_theoretical_model.tex
+Overfull \hbox (25.3873pt too wide) in paragraph at lines 24--25
+[]\T1/lmr/m/n/12 Preliminarmente, define-se o \T1/lmr/m/it/12 comen-sal-ismo econômico \T1/lmr/m/n/12 como uma con-fig-u-ração ecológico-
+ []
+
+) (./5_existence_stability.tex) (./6_discussion.tex
 File: ../../images/fearp_logo.png Graphic file (type png)
 <use ../../images/fearp_logo.png>
-Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 8.
+Package pdftex.def Info: ../../images/fearp_logo.png  used on input line 3.
 (pdftex.def)             Requested size: 323.2354pt x 45.5261pt.
 
 Overfull \hbox (28.45273pt too wide) has occurred while \output is active
 []|$[]$|  
  []
 
-[6] [7]) (./main.bbl
+[6]) (./7_Final_Remarks.tex [7]) (./main.bbl
 bibitemlist
 )
 File: ../../images/fearp_logo.png Graphic file (type png)
@@ -1001,14 +1001,14 @@ L3 programming layer <2020/03/25>
  ) 
 Here is how much of TeX's memory you used:
  18311 strings out of 467538
- 290210 string characters out of 5423724
+ 290066 string characters out of 5423724
  756973 words of memory out of 5000000
  46886 multiletter control sequences out of 15000+600000
  687956 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,107p,1368b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on main.pdf (8 pages, 206446 bytes).
+Output written on main.pdf (8 pages, 208075 bytes).
 PDF statistics:
  142 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
