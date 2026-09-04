@@ -1,6 +1,3 @@
-% Ajuste as chaves abaixo às chaves efetivamente exportadas pelo Zotero.
-% O texto usa apenas \cite{...}; portanto, é compatível com os gerenciadores
-% bibliográficos usuais. As equações requerem o pacote amsmath.
 
 \section{Introdução}
 \label{sec:introducao}
@@ -27,6 +24,8 @@ Esses resultados tornam inadequada qualquer alegação de que este estudo seria 
 
 e não apenas o efeito médio de $E$ sobre $Y$. Essa distinção permite interpretar a vegetação como possível condicionante da resiliência produtiva, sem presumir que ela seja um insumo convencional ou que qualquer nível adicional de preservação seja necessariamente ótimo.
 
+A importância econômica dessa margem decorre justamente de transformar um serviço biofísico da vegetação em uma consequência mensurável para a produção e para o risco agrícola. A literatura mostra que a perda de vegetação pode alterar precipitação e temperatura, reduzir rendimentos e gerar perdas de receita agrícola \cite{spera2020brazilian,leitefilho2021deforestation,batista2023deforestation,leitefilho2025intensification,li2026amazon}. Se, além disso, um mesmo choque climático produzir perdas distintas conforme o estoque de vegetação existente, então a conservação passa a afetar não apenas benefícios ambientais externos à atividade agrícola, mas também o nível esperado e a estabilidade dos retornos privados da própria produção. Na prática, essa margem pode alterar decisões de uso da terra, adaptação, crédito, seguro e priorização territorial de políticas ambientais. Conceitualmente, esse resultado também fornece uma das condições necessárias para a endogeneização do meio ambiente proposta nesta pesquisa: H1 identifica a direção em que o estado ambiental condiciona os resultados econômicos, $E\rightarrow Y$, enquanto a decisão privada de uso da terra examinada em H2 opera na direção inversa, $R,G\rightarrow D\rightarrow E$. H1, isoladamente, não demonstra a endogeneidade completa do sistema; em conjunto com a resposta da conversão aos incentivos econômicos, porém, permite representar o estoque ambiental como variável que simultaneamente afeta e é afetada pelo processo econômico.
+
 A segunda parte da literatura mostra que retornos e instituições influenciam a conversão. Para Mato Grosso, \cite{richards2026profits} constroem medidas de lucro da soja e do milho safrinha e encontram associação entre maior rentabilidade, valorização da terra e perda florestal. Os autores distinguem o retorno esperado por hectare da disponibilidade setorial de capital para reinvestimento. Assim, nem a relação entre rentabilidade e conversão, nem o uso de lucros construídos em lugar de preços isolados podem ser reivindicados aqui como inteiramente novos.
 
 Também está estabelecido que instituições modificam escolhas de uso da terra. A restrição de crédito rural condicionada à regularidade fundiária e ambiental reduziu substancialmente o desmatamento na Amazônia, sobretudo em municípios com maior presença da pecuária \cite{assuncao2020credit}. A inclusão de municípios em listas prioritárias foi acompanhada por redução do desmatamento e aumento da produtividade pecuária, resultado compatível com deslocamento do investimento da expansão para a intensificação \cite{koch2019productivity}. Evidências sobre monitoramento e fiscalização também mostram que a capacidade estatal de detectar e sancionar altera o custo esperado da ilegalidade \cite{assuncao2023deter}. Políticas públicas e privadas podem, ainda, afetar investimento e produtividade, e não apenas restringir área \cite{moffette2021policies}.
@@ -37,13 +36,15 @@ A terceira parte da literatura desloca o problema da escolha privada para a esco
 
 Por isso, o terceiro bloco não propõe comparar um escore sofisticado com uma regra uniforme sabidamente fraca. O teste relevante é o valor incremental da informação produzida pelos dois blocos anteriores. A pergunta é se o benefício produtivo estimado em H1 e a resposta comportamental estimada em H2 contêm informação que não está em uma regra de priorização já defensável e se essa informação melhora uma decisão sujeita ao mesmo orçamento. A comparação deve usar uma métrica comum, definida antes dos resultados, e precisa incorporar incerteza de estimação, possíveis spillovers e custos adicionais de informação e implementação. Sem essas condições, a superioridade do escore ampliado seria construída por definição, e não demonstrada empiricamente.
 
-Diante desse quadro, a pergunta central do artigo é:
+Diante desse quadro, a pergunta central --- ou o \textbf{problema} --- do artigo é:
 
 \begin{quote}
-\emph{Como o estoque de vegeta\c{c}\~ao nativa e os custos institucionais de convers\~ao da terra, em conjunto, determinam a aloca\c{c}\~ao \'otima de pol\'iticas ambientais sob restri\c{c}\~ao or\c{c}ament\'aria? Esta pergunta desdobra-se em tr\^es margens: (i) o efeito do estoque de vegeta\c{c}\~ao nativa sobre a resposta da produtividade agr\'icola a choques clim\'aticos; (ii) o papel de custos e riscos institucionais na decis\~ao de converter terra em fun\c{c}\~ao dos retornos econ\^omicos de usos alternativos; (iii) o ganho de alocar territorialmente a pol\'itica ambiental quando ambas as margens s\~ao internalizadas.}
+\emph{Como o estoque de vegetação nativa e os custos institucionais de conversão da terra, em conjunto, determinam a alocação ótima de políticas ambientais?}
 \end{quote}
 
-O objetivo geral é estimar e integrar três margens distintas: uma margem tecnológica, que relaciona estoque ambiental, clima e produtividade; uma margem comportamental, que relaciona retornos, instituições e conversão; e uma margem de escolha pública, que mede o valor da informação anterior para a alocação de recursos ambientais. A arquitetura do argumento pode ser representada por
+Esta pergunta desdobra-se em três direções: (i) o efeito do estoque de vegetação nativa sobre a resposta da produtividade agrícola a choques climáticos; (ii) o papel de custos e riscos institucionais na decisão de converter terra em função dos retornos econômicos de usos alternativos; e (iii) o ganho de alocar territorialmente a política ambiental quando ambas as margens são internalizadas.
+
+O \textbf{objetivo geral} é estimar e integrar três margens distintas: uma margem tecnológica, que relaciona estoque ambiental, clima e produtividade; uma margem comportamental, que relaciona retornos, instituições e conversão; e uma margem de escolha pública, que mede o valor da informação anterior para a alocação de recursos ambientais. A arquitetura do argumento pode ser representada por
 
 \begin{equation}
 \begin{aligned}
@@ -64,21 +65,29 @@ em que $R$ representa os retornos econômicos dos usos alternativos da terra; $G
 Essa estrutura conduz às seguintes hipóteses.
 
 \medskip
+
 \noindent\textbf{H1 --- Capital natural e produtividade.}
-\emph{Se o estoque de vegetação nativa modifica, em magnitude economicamente relevante, a resposta da produtividade agrícola aos choques climáticos, então sua contribuição deve ser incorporada à representação econômica da função de produção agrícola.}
+
+\emph{Se o estoque de vegetação nativa altera, em magnitude economicamente relevante, o efeito dos choques climáticos sobre a produtividade agrícola, então ele afeta o nível e a estabilidade da produtividade.}
 
 \medskip
+
 \noindent\textbf{H1b --- Heterogeneidade entre biomas.}
+
 \emph{A contribuição do estoque de vegetação nativa para a resposta da produtividade agrícola aos choques climáticos é heterogênea entre biomas.}
 
 Em H1, ``magnitude economicamente relevante'' não será sinônimo de significância estatística. O termo designa uma alteração suficientemente grande na perda esperada de produtividade, na receita agrícola ou na variabilidade dos rendimentos para afetar uma decisão econômica, segundo limiares definidos antes da observação dos resultados. Intervalos de confiança que admitam apenas efeitos substantivamente pequenos não serão tratados como evidência favorável, ainda que alguma especificação produza um valor-$p$ convencionalmente significativo.
 
 \medskip
+
 \noindent\textbf{H2 --- Retornos, instituições e conversão.}
+
 \emph{A resposta marginal da conversão da vegetação nativa aos retornos econômicos dos usos alternativos da terra é menor quando aumentam os custos e riscos institucionais efetivamente enfrentados pelos agentes.}
 
 \medskip
+
 \noindent\textbf{H2b --- Heterogeneidade comportamental.}
+
 \emph{O condicionamento institucional da resposta da conversão aos retornos econômicos é heterogêneo entre atividades e territórios de Mato Grosso.}
 
 Com a convenção de que valores maiores de $G$ representam maior exposição esperada à fiscalização, à sanção ou a outras restrições efetivas, a previsão central de H2 pode ser escrita como
@@ -92,11 +101,15 @@ Com a convenção de que valores maiores de $G$ representam maior exposição es
 Essa desigualdade é uma previsão empírica, e não uma identidade. Ela pode falhar se a instituição for inefetiva, se produzir antecipação, fuga ou deslocamento espacial, ou se os agentes responderem pela intensificação de modo que altere posteriormente a rentabilidade da expansão.
 
 \medskip
+
 \noindent\textbf{H3 --- Valor da informação e alocação pública.}
+
 \emph{A incorporação conjunta do benefício produtivo da vegetação estimado em H1 e da resposta comportamental estimada em H2 altera materialmente a priorização territorial de uma política ambiental, em comparação com uma regra de referência baseada em benefícios ambientais, risco de perda e custos.}
 
 \medskip
+
 \noindent\textbf{H3b --- Custo-efetividade incremental.}
+
 \emph{Sob o mesmo orçamento e uma métrica comum definida ex ante, a regra informada por H1 e H2 produz ganho positivo e robusto de custo-efetividade, em validação fora da amostra ou em simulação ajustada pela incerteza, relativamente à regra de referência economicamente defensável.}
 
 Formalmente, sejam
@@ -137,6 +150,6 @@ Por fim, H3 combinará os parâmetros estimados nos dois blocos anteriores em um
 
 A contribuição pretendida é, portanto, integradora e incremental. O artigo não reivindica descobrir isoladamente que a vegetação afeta o clima, que o clima afeta a produtividade, que retornos pressionam a conversão, que instituições alteram o uso da terra ou que a priorização espacial pode elevar a eficiência. Sua contribuição potencial consiste em estimar, no mesmo problema territorial, uma margem produtiva e uma margem comportamental e submetê-las a um teste aplicado: saber se o conhecimento adicional muda uma decisão pública e gera ganho material em relação ao que um formulador de política razoavelmente informado já poderia fazer.
 
-Essa interpretação também impõe um limite conceitual. Evidência favorável a H1 mostra que o estoque ambiental deve ser considerado na representação da tecnologia, mas não demonstra, sozinha, que preservar sempre maximiza o bem-estar. Evidência favorável a H2 mostra que instituições condicionam escolhas privadas, mas não identifica automaticamente o instrumento ótimo. Evidência favorável a H3 mostra valor decisório da informação dentro do exercício especificado, mas não prova a existência ou a estabilidade de um equilíbrio econômico-ambiental comensal. As três margens são insumos empíricos para essa discussão mais ampla, e não substitutos de uma demonstração teórica de equilíbrio e estabilidade.
+Essa interpretação também impõe um limite conceitual. Evidência favorável a H1 mostra que o estoque ambiental possui relevância produtiva e condiciona a exposição econômica aos choques climáticos, mas não demonstra, isoladamente, que o meio ambiente seja endógeno ao sistema econômico nem que preservar sempre maximize o bem-estar. A endogeneidade relevante para o argumento mais amplo surge da combinação entre essa direção, $E\rightarrow Y$, e a direção inversa examinada em H2, na qual incentivos econômicos e instituições condicionam decisões de conversão que alteram o estoque ambiental. Evidência favorável a H2, por sua vez, não identifica automaticamente o instrumento ótimo. Finalmente, evidência favorável a H3 mostra valor decisório da informação dentro do exercício especificado, mas não prova a existência ou a estabilidade de um equilíbrio econômico-ambiental comensal. As três margens são insumos empíricos para essa discussão mais ampla, e não substitutos de uma demonstração teórica de equilíbrio e estabilidade.
 
 Além desta introdução, o artigo apresenta o mecanismo conceitual e a literatura que fundamentam as três margens, descreve os dados e a estratégia empírica, reporta os resultados de H1 e H2, realiza o exercício de alocação correspondente a H3 e, por fim, discute implicações, limitações e extensões.

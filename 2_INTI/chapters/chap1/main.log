@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  4 SEP 2026 09:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  4 SEP 2026 13:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/ferna/Documents/dev/Tese USP/tese_eco_usp/2_Inti/chapters/chap1/main"
+**"c:/Users/ferna/Documents/dev/Tese USP/tese_eco_usp/2_INTI/chapters/chap1/main"
 (c:/Users/ferna/Documents/dev/Tese USP/tese_eco_usp/2_INTI/chapters/chap1/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
@@ -752,97 +752,113 @@ Package hyperref Info: Link coloring ON on input line 32.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./0_abstract.tex) (./1_introduction.tex
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 5.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
 
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
 
-LaTeX Warning: Citation `spera2020brazilian' on page 2 undefined on input line 16.
+LaTeX Warning: Citation `spera2020brazilian' on page 2 undefined on input line 13.
 
 
-LaTeX Warning: Citation `leitefilho2021deforestation' on page 2 undefined on input line 16.
+LaTeX Warning: Citation `leitefilho2021deforestation' on page 2 undefined on input line 13.
 
 
-LaTeX Warning: Citation `rattis2021climatic' on page 2 undefined on input line 16.
+LaTeX Warning: Citation `rattis2021climatic' on page 2 undefined on input line 13.
 
 
-LaTeX Warning: Citation `batista2023deforestation' on page 2 undefined on input line 18.
+LaTeX Warning: Citation `batista2023deforestation' on page 2 undefined on input line 15.
 
 
-LaTeX Warning: Citation `leitefilho2025intensification' on page 2 undefined on input line 18.
+LaTeX Warning: Citation `leitefilho2025intensification' on page 2 undefined on input line 15.
 
 
-LaTeX Warning: Citation `li2026amazon' on page 2 undefined on input line 18.
+LaTeX Warning: Citation `li2026amazon' on page 2 undefined on input line 15.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 20.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 17.
 (c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 20.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 17.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 20.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 17.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 20.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 17.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 20.
+(Font)              <12> on input line 17.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 20.
+(Font)              <8> on input line 17.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 20.
+(Font)              <6> on input line 17.
  [2{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
 
-LaTeX Warning: Citation `richards2026profits' on page 3 undefined on input line 30.
+LaTeX Warning: Citation `spera2020brazilian' on page 3 undefined on input line 27.
 
 
-LaTeX Warning: Citation `assuncao2020credit' on page 3 undefined on input line 32.
+LaTeX Warning: Citation `leitefilho2021deforestation' on page 3 undefined on input line 27.
 
 
-LaTeX Warning: Citation `koch2019productivity' on page 3 undefined on input line 32.
+LaTeX Warning: Citation `batista2023deforestation' on page 3 undefined on input line 27.
 
 
-LaTeX Warning: Citation `assuncao2023deter' on page 3 undefined on input line 32.
+LaTeX Warning: Citation `leitefilho2025intensification' on page 3 undefined on input line 27.
 
 
-LaTeX Warning: Citation `moffette2021policies' on page 3 undefined on input line 32.
+LaTeX Warning: Citation `li2026amazon' on page 3 undefined on input line 27.
 
 
-LaTeX Warning: Citation `harding2021commodity' on page 3 undefined on input line 34.
+LaTeX Warning: Citation `richards2026profits' on page 3 undefined on input line 29.
 
 
-LaTeX Warning: Citation `kuschnig2021spillovers' on page 3 undefined on input line 34.
+LaTeX Warning: Citation `assuncao2020credit' on page 3 undefined on input line 31.
 
 
-LaTeX Warning: Citation `wunscher2008targeting' on page 3 undefined on input line 36.
+LaTeX Warning: Citation `koch2019productivity' on page 3 undefined on input line 31.
 
 
-LaTeX Warning: Citation `guo2020targeting' on page 3 undefined on input line 36.
+LaTeX Warning: Citation `assuncao2023deter' on page 3 undefined on input line 31.
 
 
-LaTeX Warning: Citation `izquierdotort2024redesigning' on page 3 undefined on input line 36.
+LaTeX Warning: Citation `moffette2021policies' on page 3 undefined on input line 31.
+
+
+LaTeX Warning: Citation `harding2021commodity' on page 3 undefined on input line 33.
+
+
+LaTeX Warning: Citation `kuschnig2021spillovers' on page 3 undefined on input line 33.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3] [4{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [5]
-Underfull \vbox (badness 1052) has occurred while \output is active []
+ [3]
 
- [6]) (./2_problem_context.tex) (./3_literature_review.tex) (./4_theoretical_model.tex [7]) (./5_existence_stability.tex) (./6_discussion.tex) (./7_Final_Remarks.tex) (./main.bbl [8]
+LaTeX Warning: Citation `wunscher2008targeting' on page 4 undefined on input line 35.
+
+
+LaTeX Warning: Citation `guo2020targeting' on page 4 undefined on input line 35.
+
+
+LaTeX Warning: Citation `izquierdotort2024redesigning' on page 4 undefined on input line 35.
+
+[4{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] [5] [6]) (./2_problem_context.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]) (./3_literature_review.tex) (./4_theoretical_model.tex) (./5_existence_stability.tex) (./6_discussion.tex) (./7_Final_Remarks.tex [8]) (./main.bbl [9] [10
+
+]
 bibitemlist
 
 LaTeX Warning: Empty `thebibliography' environment on input line 8.
 
-) [9
-
-] (./main.aux)
+) [11] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -853,18 +869,18 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15789 strings out of 467538
- 247429 string characters out of 5423724
- 709442 words of memory out of 5000000
+ 15790 strings out of 467538
+ 247368 string characters out of 5423724
+ 709444 words of memory out of 5000000
  44452 multiletter control sequences out of 15000+600000
  670722 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,107p,1085b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,107p,1718b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on main.pdf (9 pages, 179253 bytes).
+Output written on main.pdf (11 pages, 180455 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
