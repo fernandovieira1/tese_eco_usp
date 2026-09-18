@@ -1,3 +1,8 @@
+<!-- 
+SUYANA: Esperança
+INTI: Sol 
+-->
+
 # Tese de Doutorado — Fase INTI
 
 > Programa de Pós-Graduação em Economia — FEARP/USP<br>
