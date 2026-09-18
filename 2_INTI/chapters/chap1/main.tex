@@ -8,6 +8,7 @@
 \usepackage{amsmath}
 \usepackage{setspace}
 \usepackage{hyperref}
+\usepackage{xcolor}
 
 \geometry{
     top=3cm,
@@ -19,6 +20,11 @@
 \setlength{\parindent}{1.25cm}
 \setlength{\parskip}{0pt}
 \OnehalfSpacing
+
+% Numeração das seções sem o prefixo do capítulo
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
 
 \hypersetup{
     colorlinks=true,
