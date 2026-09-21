@@ -9,6 +9,9 @@
 \usepackage{setspace}
 \usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage[alf,no-abnt-option-file]{abntex2cite}
+% Configuração local evita importar todas as opções do pacote com \nocite{*}.
+\citeoption{config-citacoes-abnt}
 
 \geometry{
     top=3cm,
@@ -20,6 +23,33 @@
 \setlength{\parindent}{1.25cm}
 \setlength{\parskip}{0pt}
 \OnehalfSpacing
+
+% Citações indiretas: \cite{chave} ou \citeonline{chave}.
+% Citações diretas curtas: ``trecho'' com \cite[p.~45]{chave},
+% ou \citeonline[p.~45]{chave} antes do trecho entre aspas.
+% Citações diretas com mais de três linhas: ambiente citacao, sem aspas,
+% com autoria, ano e página. O espaço externo acompanha uma linha do corpo.
+\setlength{\ABNTEXcitacaorecuo}{4cm}
+\newlength{\espacocitacao}
+\setlength{\espacocitacao}{\baselineskip}
+\renewenvironment{citacao}{%
+    \par\addvspace{\espacocitacao}%
+    \begin{list}{}{%
+        \setlength{\leftmargin}{\ABNTEXcitacaorecuo}%
+        \setlength{\rightmargin}{0pt}%
+        \setlength{\listparindent}{0pt}%
+        \setlength{\itemindent}{0pt}%
+        \setlength{\topsep}{0pt}%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\parsep}{0pt}%
+        \setlength{\itemsep}{0pt}%
+    }%
+    \item\relax
+    \SingleSpacing\fontsize{10}{12}\selectfont
+}{%
+    \end{list}%
+    \par\addvspace{\espacocitacao}%
+}
 
 % Numeração das seções sem o prefixo do capítulo
 \renewcommand{\thesection}{\arabic{section}.}
@@ -46,18 +76,16 @@
 
 \noindent\textbf{Resumo}
 
-\input{0_abstract}
-
-\input{1_introduction}
-\input{2_problem_context}
-\input{3_literature_review}
-\input{4_theoretical_model}
-\input{5_existence_stability}
-\input{6_discussion}
-\input{7_Final_Remarks}
+\input{_abstract}
+\input{0_introduction}
+\input{1_literature_review}
+\input{2_mt_descriptive}
+\input{3_econometrics_strategy}
+\input{4_discussion}
+\input{5_Final_Remarks}
 
 \nocite{*}
 \bibliographystyle{abntex2-alf}
-\bibliography{library}
+\bibliography{citation-options,library}
 
 \end{document}
