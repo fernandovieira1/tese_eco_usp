@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  18 SEP 2026 14:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  21 SEP 2026 00:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -687,7 +687,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 38.
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./main.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 12.
+(babel)             Reported on input line 23.
 )
 \openout1 = `main.aux'.
 
@@ -772,32 +772,42 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3] [4]) (./2_problem_context.tex) (./3_literature_review.tex) (./4_theoretical_model.tex) (./5_existence_stability.tex) (./6_discussion.tex [5]) (./7_Final_Remarks.tex) (./main.bbl [6]
+ [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4] [5]) (./2_problem_context.tex) (./3_literature_review.tex) (./4_theoretical_model.tex [6]) (./5_existence_stability.tex) (./6_discussion.tex) (./7_Final_Remarks.tex) (./main.bbl [7] [8
+
+]
 bibitemlist
 
-LaTeX Warning: Empty `thebibliography' environment on input line 8.
+Underfull \hbox (badness 2626) in paragraph at lines 20--22
+[]\T1/lmr/m/n/12 ASSUNÇÃO, J.; GAN-DOUR, C.; RO-CHA, R.
+ []
 
-) [7
 
-] (./main.aux)
+Underfull \hbox (badness 2564) in paragraph at lines 50--52
+[]\T1/lmr/m/n/12 HARDING, T.; HERZ-BERG, J.; KU-RAL-
+ []
+
+[9]) [10] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16045 strings out of 467538
- 249956 string characters out of 5423724
- 723300 words of memory out of 5000000
- 44744 multiletter control sequences out of 15000+600000
+ 16094 strings out of 467538
+ 250813 string characters out of 5423724
+ 722357 words of memory out of 5000000
+ 44770 multiletter control sequences out of 15000+600000
  653717 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,107p,1196b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,107p,1495b,647s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb>
-Output written on main.pdf (7 pages, 114645 bytes).
+Output written on main.pdf (10 pages, 132558 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
