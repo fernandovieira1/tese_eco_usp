@@ -1,0 +1,190 @@
+% !TEX recipe = pdflatex
+% Compilar: pdflatex -interaction=nonstopmode -halt-on-error topicos_micro.tex
+% Executar duas vezes para atualizar o total de slides.
+% Tema: https://latex-beamer.com/tutorials/beamer-themes/
+% Conteúdo: ../../chapters/chap1/{0_introduction,1_literature_review}.tex
+\documentclass[aspectratio=169,11pt]{beamer}
+\usetheme{Madrid}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs,array,tabularx}
+\definecolor{verde}{HTML}{24574D}
+\definecolor{grafite}{HTML}{253A40}
+\setbeamercolor{structure}{fg=verde}
+\setbeamercolor{title}{bg=verde,fg=white}
+\setbeamercolor{frametitle}{bg=verde,fg=white}
+\setbeamercolor{normal text}{fg=grafite}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{\leavevmode\hbox{\begin{beamercolorbox}[wd=.86\paperwidth,ht=2.7ex,dp=1.2ex,leftskip=1em]{author in head/foot}Capital natural e governança territorial\end{beamercolorbox}\begin{beamercolorbox}[wd=.14\paperwidth,ht=2.7ex,dp=1.2ex,center]{date in head/foot}\insertframenumber\,/\,\inserttotalframenumber\end{beamercolorbox}}}
+\setbeamersize{text margin left=8mm,text margin right=8mm}
+\setbeamertemplate{itemize items}[circle]
+\newcommand{\fonte}[1]{\par\vfill{\fontsize{7.5}{9}\selectfont\color{gray}#1\par}}
+\newcommand{\tpar}{\par\vspace{1.5mm}}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\title[Capital natural e governança territorial]{Capital Natural e Governança Territorial}
+\subtitle{Produtividade, conversão e política ambiental em Mato Grosso}
+\author{Fernando Souza da Vieira}
+\institute{Tópicos de Microeconomia}
+\date{}
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{Tema do trabalho}
+\begin{frame}{Meio ambiente e decisões econômicas}
+\begin{description}
+\item[Meio ambiente] O estoque de vegetação integra as condições biofísicas que sustentam a produção agropecuária.
+\medskip
+\item[Endogenização] Decisões de conversão e conservação alteram esse estoque, que pode afetar a produtividade e os retornos econômicos.
+\medskip
+\item[Governança local] Regras, fiscalização e sanções condicionam os incentivos privados conforme as condições de cada território.
+\medskip
+\item[Intertemporalidade dos agentes] O uso da terra no presente altera estoques ambientais relevantes para oportunidades e riscos produtivos futuros.
+\end{description}
+\fonte{A intertemporalidade constitui um mecanismo conceitual do artigo, sem hipótese empírica independente. Fonte: introdução.}
+\end{frame}
+
+\section{Motivação}
+\begin{frame}{Motivação: retornos privados e efeitos ambientais}
+\begin{itemize}
+\item A conversão pode ampliar a renda privada e reduzir serviços ecossistêmicos cujos benefícios não entram integralmente no cálculo do produtor.
+\medskip
+\item Alterações na vegetação afetam água, solo e microclima, com possíveis repercussões sobre a produtividade e o risco da atividade.
+\medskip
+\item A literatura oferece evidências para cada elo dessa relação, mas a identificação conjunta dos mecanismos permanece limitada.
+\end{itemize}
+\medskip
+\begin{block}{Relevância econômica}
+Compreender essa interação pode orientar decisões de uso da terra e a focalização territorial das políticas de conservação.
+\end{block}
+\fonte{Mann et al. (2012), Berman et al. (2023) e Redhead et al. (2020). Síntese da introdução e da revisão da literatura.}
+\end{frame}
+
+\begin{frame}{Mato Grosso no contexto da pesquisa}
+\begin{itemize}
+\item Produção agrícola e pecuária em larga escala, em um território que reúne \textbf{Amazônia, Cerrado e Pantanal}.
+\medskip
+\item Diferenças de vegetação, clima, disponibilidade hídrica e sistemas produtivos permitem investigar respostas heterogêneas.
+\medskip
+\item Custos de oportunidade e efetividade da fiscalização podem modificar a resposta dos agentes aos mesmos incentivos.
+\medskip
+\item A evidência sobre vegetação, choques climáticos e produtividade é desigual entre biomas, especialmente fragmentada para o Pantanal.
+\end{itemize}
+\fonte{VanWey et al. (2013), Simões et al. (2020), Sousa (2016), Seidl et al. (2001) e Cardoso et al. (2011), conforme os textos-base.}
+\end{frame}
+
+\section{Problema}
+\begin{frame}{Problema de pesquisa}
+\begin{block}{Questão central}
+Como retornos econômicos e instituições condicionam as decisões de conversão ou manutenção da vegetação, e em que medida o estoque de vegetação nativa altera a resposta da produtividade agrícola a choques climáticos em contextos ecologicamente e economicamente heterogêneos?
+\end{block}
+\medskip
+\begin{description}
+\item[Decisão de uso da terra] Examinar a interação entre retornos privados e condições institucionais.
+\medskip
+\item[Resposta produtiva] Investigar se a vegetação anterior ao choque modifica seus efeitos sobre a produtividade, com diferenças entre biomas.
+\end{description}
+\fonte{Pergunta de pesquisa reproduzida da introdução. As relações propostas constituem hipóteses a investigar.}
+\end{frame}
+
+\section{Hipóteses}
+\begin{frame}{HG: interdependência entre economia e meio ambiente}
+\begin{block}{Hipótese geral}
+Retornos econômicos e instituições condicionam decisões de uso da terra que alteram o estoque ambiental, enquanto esse estoque pode, por sua vez, condicionar resultados produtivos relevantes para decisões econômicas subsequentes.
+\end{block}
+\medskip
+\begin{itemize}
+\item O mecanismo econômico-institucional explica a formação do estoque ambiental pela decisão de converter ou conservar.
+\medskip
+\item O mecanismo biofísico-produtivo relaciona esse estoque às condições de produção e aos retornos econômicos futuros.
+\end{itemize}
+\fonte{Formulação da introdução. H1 e H2 examinam os dois mecanismos que sustentam HG.}
+\end{frame}
+
+\begin{frame}{HG: respaldo na literatura}
+\fontsize{8.5}{10.6}\selectfont
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{P{2.6cm} P{2.25cm} X P{2.25cm}}
+\toprule
+\textbf{Hipótese} & \textbf{Autores principais} & \textbf{Literatura} & \textbf{Outros autores} \\
+\midrule
+Retornos e instituições moldam o uso da terra e o estoque ambiental. Esse estoque pode afetar a produção e decisões econômicas posteriores.
+& Angelsen (2010)\tpar Berman et al. (2023)\tpar Redhead et al. (2020)
+& \textbf{Angelsen:} relaciona políticas de redução do desmatamento e produção agrícola. Fundamenta a conexão entre instituições, incentivos e conservação.\tpar
+\textbf{Berman et al.:} relacionam preços agrícolas e desmatamento. Sustentam o elo entre retornos privados e alteração da cobertura vegetal.\tpar
+\textbf{Redhead et al.:} relacionam composição e configuração da paisagem à resiliência dos rendimentos. Sustentam o elo entre condição ambiental e desempenho produtivo.
+& Bradford et al. (2006)\tpar Upton et al. (2014)\tpar Mann et al. (2012)\tpar VanWey et al. (2013)\tpar Simões et al. (2020) \\
+\bottomrule
+\end{tabularx}
+\fonte{Seleção por aderência aos mecanismos apresentados nos textos-base. As evidências respaldam elos do circuito, sem estabelecer conjuntamente toda a retroalimentação.}
+\end{frame}
+
+\begin{frame}{H1: retornos, instituições e conversão}
+\begin{block}{Hipótese específica 1}
+A decisão de converter vegetação nativa para usos agropecuários responde à vantagem econômica esperada da conversão em relação à conservação, sendo essa resposta condicionada pelo ambiente institucional e podendo variar entre atividades, territórios e biomas.
+\end{block}
+\medskip
+\begin{itemize}
+\item \textbf{Vantagem econômica:} diferença entre os benefícios privados esperados da conversão e da conservação, considerados os custos relevantes.
+\medskip
+\item \textbf{Ambiente institucional:} direitos de propriedade, regras ambientais, monitoramento, fiscalização e sanções.
+\end{itemize}
+\fonte{Formulação e definições da introdução. O foco recai sobre a interação entre retornos e instituições e sua heterogeneidade territorial.}
+\end{frame}
+
+\begin{frame}{H1: respaldo na literatura}
+\fontsize{8.5}{10.6}\selectfont
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{P{2.6cm} P{2.25cm} X P{2.25cm}}
+\toprule
+\textbf{Hipótese} & \textbf{Autores principais} & \textbf{Literatura} & \textbf{Outros autores} \\
+\midrule
+A conversão responde à vantagem econômica esperada, condicionada pelas instituições, com possíveis diferenças entre atividades, territórios e biomas.
+& Harding et al. (2021)\tpar Assunção et al. (2023)\tpar Sousa (2016)
+& \textbf{Harding et al.:} a lista prioritária reduziu o desmatamento associado aos preços das commodities. Respalda a interação entre pressão econômica e regulação.\tpar
+\textbf{Assunção et al.:} identificam efeito do monitoramento por satélite e da fiscalização sobre o desmatamento. Sustentam o papel da efetividade institucional.\tpar
+\textbf{Sousa:} encontra capacidade dissuasória dos embargos e baixa efetividade potencial das multas em Mato Grosso. Justifica distinguir instrumentos e condições locais.
+& Angelsen (2010)\tpar Chomitz e Thomas (2003)\tpar Pacheco e Meyer (2022)\tpar Stickler et al. (2013)\tpar Bragança (2018) \\
+\bottomrule
+\end{tabularx}
+\fonte{Síntese da revisão da literatura, especialmente RL6--RL10. A heterogeneidade entre os três biomas permanece uma questão empírica do artigo.}
+\end{frame}
+
+\begin{frame}{H2: vegetação, clima e produtividade}
+\begin{block}{Hipótese específica 2}
+O estoque de vegetação previamente existente modifica, em magnitude economicamente relevante, a resposta da produtividade agrícola aos choques climáticos, podendo essa relação variar entre contextos produtivos, territórios e biomas.
+\end{block}
+\medskip
+\begin{itemize}
+\item \textbf{Anterioridade:} medir a cobertura vegetal antes do choque de precipitação, temperatura ou déficit hídrico.
+\medskip
+\item \textbf{Efeito de interesse:} diferenças na sensibilidade da produtividade ao choque conforme o estoque ambiental prévio.
+\medskip
+\item \textbf{Magnitude:} avaliar consequências substantivas para o desempenho produtivo, além da significância estatística.
+\end{itemize}
+\fonte{Formulação da introdução. H2 não pressupõe que maior vegetação implique maior produtividade média ou amortecimento em todos os contextos.}
+\end{frame}
+
+\begin{frame}{H2: respaldo na literatura}
+\fontsize{8.5}{10.6}\selectfont
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{P{2.6cm} P{2.25cm} X P{2.25cm}}
+\toprule
+\textbf{Hipótese} & \textbf{Autores principais} & \textbf{Literatura} & \textbf{Outros autores} \\
+\midrule
+A vegetação anterior ao choque modifica a resposta da produtividade ao clima, em magnitude relevante, com possíveis diferenças entre territórios e biomas.
+& Redhead et al. (2020)\tpar Spracklen et al. (2012)\tpar Dell et al. (2014)
+& \textbf{Redhead et al.:} relacionam a composição e o arranjo da paisagem à resiliência dos rendimentos. Fundamentam a hipótese de sensibilidade produtiva diferenciada.\tpar
+\textbf{Spracklen et al.:} associam a passagem do ar sobre florestas à precipitação tropical. Sustentam um mecanismo biofísico entre vegetação e condições de produção.\tpar
+\textbf{Dell et al.:} discutem o uso de variações meteorológicas para estudar efeitos econômicos. Fundamentam a estratégia empírica, sem comprovar a moderação pela vegetação.
+& Joshi e Garkoti (2023)\tpar Huang et al. (2021)\tpar Morel et al. (2019)\tpar Nóbrega et al. (2017)\tpar Xiao et al. (2023) \\
+\bottomrule
+\end{tabularx}
+\fonte{Síntese da introdução e da revisão (RL11--RL14). A identificação do efeito da vegetação exige distingui-lo de solo, manejo e disponibilidade hídrica.}
+\end{frame}
+\end{document}
+
