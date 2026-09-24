@@ -5,9 +5,9 @@ INTI: Sol
 
 # Tese de Doutorado — Fase INTI
 
-> Programa de Pós-Graduação em Economia — FEARP/USP<br>
-> **Doutorando:** Fernando Souza da Vieira<br>
-> **Orientador:** Prof. Dr. Alexandre Chibebe Nicolella<br>
+> Programa de Pós-Graduação em Economia — FEARP/USP
+> **Doutorando:** Fernando Souza da Vieira
+> **Orientador:** Prof. Dr. Alexandre Chibebe Nicolella
 > **Período:** 2025–2028
 
 ## Apresentação
@@ -58,11 +58,15 @@ O terceiro artigo também dependerá dos resultados do Artigo 1 e de sua articul
 
 ## Organização do repositório
 
-| Diretório | Conteúdo |
-| --- | --- |
-| `1_SUYANA/` | Materiais produzidos na fase anterior da pesquisa. |
-| `2_INTI/` | Materiais da fase atual da tese. |
-| `2_INTI/chapters/chap1/` | Arquivos-fonte, bibliografia e versões compiladas do Artigo 1. |
-| `2_INTI/backup/` | Versões anteriores e cópias de trabalho dos textos da fase INTI. |
+| Diretório    | Conteúdo                                       |
+| ------------- | ----------------------------------------------- |
+| `1_SUYANA/` | Materiais produzidos no Projeto da pesquisa     |
+| `2_INTI/`   | Materiais produzidos no Capítulo 1 da pesquisa |
 
 O conteúdo deste README reflete o estágio atual e provisório da pesquisa. Títulos, estratégias empíricas e a composição dos Artigos 2 e 3 poderão ser revistos conforme o desenvolvimento do Artigo 1 e as discussões de orientação.
+
+
+<!-- ***
+SUYANA: Esperança
+INTI  : Sol
+-->
