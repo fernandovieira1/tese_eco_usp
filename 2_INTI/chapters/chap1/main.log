@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  24 SEP 2026 11:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.13)  25 SEP 2026 00:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -792,7 +792,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3] [4] [5]) (./1_literature_review.tex [6]
+ [3] [4] [5] [6]) (./1_literature_review.tex [7]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 11.
  (c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -822,9 +822,6 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 11.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
 Underfull \vbox (badness 1845) has occurred while \output is active []
 
  [8]
@@ -833,14 +830,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]) (./2_mt_descriptive.tex
+ [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]) (./3_econometrics_strategy.tex) (./4_discussion.tex) (./5_Final_Remarks.tex) (./main.bbl [12]
-bibitemlist
-[13
+ [11]) (./2_mt_descriptive.tex) (./3_econometrics_strategy.tex) (./4_discussion.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [14] [15]) [16] (./main.aux)
+ [12]) (./5_Final_Remarks.tex) (./main.bbl [13] [14
+
+]
+bibitemlist
+[15] [16] [17]) [18] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -848,21 +848,21 @@ L3 programming layer <2020/03/25>
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 105 ({)
+### simple group (level 1) entered at line 106 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 16796 strings out of 467538
- 263423 string characters out of 5423724
+ 16798 strings out of 467538
+ 263437 string characters out of 5423724
  737304 words of memory out of 5000000
  45394 multiletter control sequences out of 15000+600000
  684502 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,107p,1750b,833s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,107p,1777b,833s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss17.pfb>
-Output written on main.pdf (16 pages, 227426 bytes).
+Output written on main.pdf (18 pages, 230026 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 338 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 500000)
+ 380 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
+ 77 named destinations out of 1000 (max. 500000)
  57 words of extra memory for PDF output out of 10000 (max. 10000000)
 

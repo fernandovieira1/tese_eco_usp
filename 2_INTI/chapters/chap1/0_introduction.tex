@@ -100,6 +100,7 @@ Em termos empíricos e aplicados, compreender essas relações pode: (a) orienta
 %%% (IV) HIPÓTESES
 % ------------------------------------
 
+%% --- HG
 Dito isso, a análise parte da seguinte \textbf{hipótese geral (HG):} 
 
 \noindent{\emph{Retornos econômicos e instituições condicionam decisões de uso da terra que alteram o estoque ambiental, enquanto esse estoque pode, por sua vez, condicionar resultados produtivos relevantes para decisões econômicas subsequentes.} 
@@ -110,23 +111,204 @@ Essa hipótese geral é examinada por meio de duas \textbf{hipóteses específic
 
 \medskip
 
+%% --- H1
 % Instituições e resultados/expectativas condicionam decisões de conversão/conservação, que alteram o estoque ambiental.
 %% \E afeta decisões econômicas
-\noindent{\textbf{(H1) Retornos, instituições e conversão}}
+\noindent{\textbf{**(H1) Retornos, instituições e conversão.**}}
 
-\noindent{\emph{A decisão de converter vegetação nativa para usos agropecuários responde à vantagem econômica esperada da conversão em relação à conservação, sendo essa resposta condicionada pelo ambiente institucional e podendo variar entre atividades, territórios e biomas.}}
+\noindent{\emph{*A taxa de conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.*}}
+
+% -------------------------------------------------------------------------
+% NOTA ECONOMÉTRICA — H1
+%
+% Variável dependente esperada:
+% Conv_it = taxa de conversão de vegetação nativa para usos agropecuários
+% no município/território i e período t.
+%
+% Construção candidata:
+% Conv_it =
+%   (área de vegetação nativa em t-1 convertida para uso agropecuário em t)
+%   / (área de vegetação nativa disponível em t-1).
+%
+% Fonte candidata para Conv_it:
+% MapBiomas — cobertura e transições anuais de uso da terra.
+%
+% Variável independente conceitual:
+% R^e_i,t-1 = retorno econômico esperado dos usos agropecuários.
+%
+% R^e não precisa ser diretamente observado. Pode ser aproximado por
+% determinantes observáveis do retorno esperado, especialmente:
+% - preços dos produtos agropecuários
+%   (World Bank Pink Sheet; CEPEA; IMEA; CONAB);
+% - capacidade produtiva/aptidão/produtividade potencial da terra
+%   (FAO-GAEZ; eventualmente IBGE/PAM em especificações alternativas);
+% - custos de produção/comercialização, caso haja dados adequados.
+%
+% Modelo-base esperado:
+% Conv_it = beta_1 R^e_i,t-1 + alpha_i + lambda_t
+%           + gamma' Z_it + epsilon_it
+%
+% onde:
+% alpha_i  = efeitos fixos territoriais/municipais;
+% lambda_t = efeitos fixos de período;
+% Z_it     = controles variantes no tempo;
+% epsilon_it = termo de erro.
+%
+% Predição de H1:
+% beta_1 > 0.
+%
+% Temporalidade inicial esperada:
+% retorno em t-1 -> conversão em t.
+% Testar posteriormente lags adicionais e efeitos acumulados.
+% -------------------------------------------------------------------------
 
 \medskip
 
-Nesta hipótese, vegetação nativa corresponde à cobertura vegetal natural existente no território, enquanto sua conversão designa a substituição, total ou parcial, dessa cobertura por usos agropecuários, como lavouras ou pastagens. Conservação, por sua vez, refere-se à manutenção da vegetação nativa e de usos compatíveis com sua permanência. A vantagem econômica esperada da conversão corresponde à diferença, percebida pelo agente, entre os benefícios econômicos privados esperados da conversão e aqueles associados à conservação, considerando preços, produtividade esperada, custos de produção e de conversão e demais condições econômicas relevantes. O ambiente institucional compreende as regras formais e informais que condicionam essa decisão, incluindo direitos de propriedade, regulação ambiental, monitoramento, fiscalização e sanções, que podem alterar os incentivos, custos e riscos associados à conversão ou à conservação. Por fim, a hipótese admite que essa relação seja heterogênea entre atividades agropecuárias, que diferem em tecnologias, custos e retornos esperados; entre territórios, caracterizados por distintas condições econômicas e institucionais; e entre biomas, que apresentam diferentes condições ecológicas e biofísicas.
+\noindent{\textbf{**(H1-a) Preços e capacidade produtiva local.**}}
+
+\noindent{\emph{*O efeito de aumentos nos preços dos produtos agropecuários sobre a taxa de conversão de vegetação nativa é maior onde a capacidade produtiva local da terra para esses usos é mais elevada.*}}
+
+% -------------------------------------------------------------------------
+% NOTA ECONOMÉTRICA — H1-a
+%
+% H1-a fornece uma operacionalização observável do retorno econômico
+% esperado previsto em H1.
+%
+% Variável dependente:
+% Conv_it = taxa de conversão definida em H1
+%           (MapBiomas).
+%
+% Componente temporal:
+% P_k,t = preço do produto agropecuário k no período t
+%         (World Bank Pink Sheet; CEPEA; IMEA; CONAB).
+%
+% Transformações candidatas:
+% ln(P_k,t), Delta ln(P_k,t), variação percentual, médias ou lags.
+% A forma definitiva dependerá da estratégia de identificação.
+%
+% Componente espacial/predeterminado:
+% S_ik = capacidade produtiva local da terra no território i
+%        para o produto/atividade k.
+%
+% Proxies candidatas para S_ik:
+% - aptidão agroecológica por cultura (FAO-GAEZ);
+% - produtividade potencial por cultura (FAO-GAEZ);
+% - produtividade histórica pré-determinada (IBGE/PAM);
+% - composição produtiva em período-base (IBGE/PAM);
+% - efetivo/estrutura pecuária prévia, se aplicável (IBGE/PPM).
+%
+% Construção candidata do choque de retorno:
+%
+% ShockReturn_it =
+%     sum_k [ Delta ln(P_k,t-1) * S_ik ].
+%
+% Modelo esperado:
+%
+% Conv_it = beta_1 ShockReturn_it
+%           + alpha_i + lambda_t
+%           + gamma' Z_it + epsilon_it.
+%
+% Predição de H1-a:
+% beta_1 > 0.
+%
+% Interpretação:
+% um mesmo aumento de preço deve produzir maior pressão sobre a conversão
+% onde a terra possui maior capacidade produtiva para a atividade
+% beneficiada pelo choque.
+%
+% Possíveis desfechos adicionais:
+%
+% ConvAgric_it =
+%   (vegetação nativa t-1 -> agricultura t)
+%   / (vegetação nativa disponível t-1)
+%
+% ConvPast_it =
+%   (vegetação nativa t-1 -> pastagem t)
+%   / (vegetação nativa disponível t-1)
+%
+% Fonte:
+% MapBiomas.
+%
+% Esses desfechos permitem separar respostas associadas a lavouras
+% e à pecuária, sem transformar essa heterogeneidade em nova hipótese.
+% -------------------------------------------------------------------------
 
 \medskip
 
+\noindent{\textbf{**(H1-b) Condicionamento institucional.**}}
+
+\noindent{\emph{*A resposta da taxa de conversão ao retorno econômico esperado dos usos agropecuários é condicionada pelo ambiente institucional, particularmente pelas regras, pelo monitoramento, pela fiscalização e pelas sanções que alteram os custos e os riscos associados à conversão.*}}
+
+% -------------------------------------------------------------------------
+% NOTA ECONOMÉTRICA — H1-b
+%
+% Variável dependente:
+% Conv_it = taxa de conversão de vegetação nativa
+%           (MapBiomas).
+%
+% Variável de retorno:
+% R^e_i,t-1 ou ShockReturn_it, conforme operacionalização adotada em H1-a.
+%
+% Variável institucional:
+% I_i,t-1 = indicador do ambiente institucional/enforcement.
+%
+% Proxies candidatas:
+% - autos de infração ambiental (IBAMA);
+% - valor das multas (IBAMA);
+% - número ou área de embargos (IBAMA);
+% - intensidade de monitoramento/fiscalização (IBAMA/MMA);
+% - regimes diferenciados de fiscalização ou mudanças regulatórias;
+% - informações de regularização ambiental, se houver série histórica
+%   adequada (SICAR/Serviço Florestal Brasileiro).
+%
+% Modelo esperado:
+%
+% Conv_it = beta_1 R^e_i,t-1
+%           + beta_2 I_i,t-1
+%           + beta_3 (R^e_i,t-1 * I_i,t-1)
+%           + alpha_i + lambda_t
+%           + gamma' Z_it + epsilon_it.
+%
+% Coeficiente central de H1-b:
+% beta_3.
+%
+% Se I_it for construído de modo que valores maiores representem
+% enforcement ambiental mais efetivo:
+% beta_3 < 0.
+%
+% Interpretação:
+% maior enforcement reduz a intensidade com que aumentos do retorno
+% econômico esperado se convertem em maior conversão.
+%
+% ATENÇÃO:
+% autos, multas e embargos são potencialmente endógenos, pois a fiscalização
+% pode responder ao próprio desmatamento/conversão.
+% Defasagens não resolvem necessariamente esse problema.
+% A estratégia causal para I_it deverá ser tratada separadamente na
+% metodologia e nos testes de robustez.
+% -------------------------------------------------------------------------
+
+\medskip
+
+Nesta hipótese, vegetação nativa corresponde à cobertura vegetal natural existente no território, enquanto sua conversão designa a substituição, total ou parcial, dessa cobertura por usos agropecuários, como lavouras ou pastagens. A taxa de conversão refere-se à parcela da vegetação nativa disponível em determinado território e período que é convertida para esses usos, constituindo o principal resultado de interesse da hipótese.
+
+O retorno econômico esperado dos usos agropecuários corresponde ao benefício privado esperado da utilização produtiva da terra, considerando receitas e custos associados à atividade. Empiricamente, esse retorno não precisa ser observado diretamente, podendo ser representado por seus determinantes econômicos observáveis. Entre eles, destacam-se os preços dos produtos agropecuários e a capacidade produtiva local da terra, esta última relacionada às condições que afetam a produtividade potencial ou esperada das atividades consideradas. A H1-a expressa, portanto, a expectativa de que choques favoráveis de preços produzam maior pressão sobre a conversão onde a terra oferece maior capacidade produtiva para os usos beneficiados por esses choques.
+
+O ambiente institucional compreende as regras formais e os mecanismos de implementação que alteram os incentivos econômicos associados à conversão, incluindo direitos de propriedade, regulação ambiental, monitoramento, fiscalização e sanções. A H1-b não pressupõe que essas instituições determinem isoladamente a conversão, mas que modifiquem a intensidade com que alterações nos retornos econômicos esperados se traduzem em conversão efetiva da vegetação nativa.
+
+As relações previstas em H1, H1-a e H1-b podem apresentar heterogeneidade entre atividades agropecuárias e biomas. Diferentes atividades apresentam tecnologias, estruturas de custos e retornos distintos, enquanto os biomas diferem em condições biofísicas, produtivas e regulatórias. Essa heterogeneidade será tratada como dimensão empírica da análise, sem constituir, neste estágio, uma hipótese autônoma.
+
+\medskip
+
+%% --- H2
 % Estoque ambiental modifica a resposta de Y ao choque climático posterior
 %% \E afeta resultados produtivos
 \noindent{\textbf{(H2) Vegetação, clima e produtividade}}
 
-\noindent{\emph{O estoque de vegetação previamente existente modifica, em magnitude economicamente relevante, a resposta da produtividade agrícola aos choques climáticos, podendo essa relação variar entre contextos produtivos, territórios e biomas.}}
+\noindent{\emph{O estoque de vegetação previamente existente modifica a resposta da produtividade agrícola aos choques climáticos.}}
+
+\textbf{(H2-a)}
+\noindent{\emph{Essa relação  pode variar conforme atividades agropecuárias, territórios e biomas.}}
 
 \medskip
 
