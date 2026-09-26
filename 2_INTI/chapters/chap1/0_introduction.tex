@@ -114,7 +114,7 @@ Essa hipótese geral é examinada por meio de duas \textbf{hipóteses específic
 %% --- H1
 % Instituições e resultados/expectativas condicionam decisões de conversão/conservação, que alteram o estoque ambiental.
 %% \E afeta decisões econômicas
-\noindent{\textbf{**(H1) Retornos, instituições e conversão.**}}
+\noindent{\textbf{(H1) Retornos, instituições e conversão.}}
 
 \noindent{\emph{*A taxa de conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.*}}
 
@@ -122,57 +122,44 @@ Essa hipótese geral é examinada por meio de duas \textbf{hipóteses específic
 % NOTA ECONOMÉTRICA — H1
 %
 % Variável dependente esperada:
-% Conv_it = taxa de conversão de vegetação nativa para usos agropecuários
-% no município/território i e período t.
+%     - Conv_it = taxa de conversão de vegetação nativa para usos agropecuários no município/território i e período t.
 %
 % Construção candidata:
-% Conv_it =
-%   (área de vegetação nativa em t-1 convertida para uso agropecuário em t)
-%   / (área de vegetação nativa disponível em t-1).
+% Conv_it = (área de vegetação nativa em t-1 convertida para uso agropecuário em t) / (área de vegetação nativa disponível em t-1).
 %
-% Fonte candidata para Conv_it:
-% MapBiomas — cobertura e transições anuais de uso da terra.
+% Fonte candidata para Conv_it: MapBiomas — cobertura e transições anuais de uso da terra.
 %
-% Variável independente conceitual:
-% R^e_i,t-1 = retorno econômico esperado dos usos agropecuários.
+% Variável independente conceitual: R^e_i,t-1 = retorno econômico esperado dos usos agropecuários.
 %
-% R^e não precisa ser diretamente observado. Pode ser aproximado por
-% determinantes observáveis do retorno esperado, especialmente:
-% - preços dos produtos agropecuários
-%   (World Bank Pink Sheet; CEPEA; IMEA; CONAB);
-% - capacidade produtiva/aptidão/produtividade potencial da terra
-%   (FAO-GAEZ; eventualmente IBGE/PAM em especificações alternativas);
-% - custos de produção/comercialização, caso haja dados adequados.
+% R^e não precisa ser diretamente observado. Pode ser aproximado por determinantes observáveis do retorno esperado, especialmente:
+%     - preços dos produtos agropecuários (World Bank Pink Sheet; CEPEA; IMEA; CONAB);
+%     - capacidade produtiva/aptidão/produtividade potencial da terra (FAO-GAEZ; eventualmente IBGE/PAM em especificações alternativas);
+%     - custos de produção/comercialização, caso haja dados adequados.
 %
-% Modelo-base esperado:
-% Conv_it = beta_1 R^e_i,t-1 + alpha_i + lambda_t
-%           + gamma' Z_it + epsilon_it
+% Modelo-base esperado: Conv_it = beta_1 R^e_i,t-1 + alpha_i + lambda_t + gamma' Z_it + epsilon_it
 %
 % onde:
-% alpha_i  = efeitos fixos territoriais/municipais;
-% lambda_t = efeitos fixos de período;
-% Z_it     = controles variantes no tempo;
-% epsilon_it = termo de erro.
+%     - alpha_i  = efeitos fixos territoriais/municipais;
+%     - lambda_t = efeitos fixos de período;
+%     - Z_it     = controles variantes no tempo;
+%     - epsilon_it = termo de erro.
 %
-% Predição de H1:
-% beta_1 > 0.
+% Predição de H1: beta_1 > 0.
 %
-% Temporalidade inicial esperada:
-% retorno em t-1 -> conversão em t.
+% Temporalidade inicial esperada: retorno em t-1 -> conversão em t.
 % Testar posteriormente lags adicionais e efeitos acumulados.
 % -------------------------------------------------------------------------
 
 \medskip
 
-\noindent{\textbf{**(H1-a) Preços e capacidade produtiva local.**}}
+\noindent{\textbf{(H1-a) Preços e capacidade produtiva local.}}
 
 \noindent{\emph{*O efeito de aumentos nos preços dos produtos agropecuários sobre a taxa de conversão de vegetação nativa é maior onde a capacidade produtiva local da terra para esses usos é mais elevada.*}}
 
 % -------------------------------------------------------------------------
 % NOTA ECONOMÉTRICA — H1-a
 %
-% H1-a fornece uma operacionalização observável do retorno econômico
-% esperado previsto em H1.
+% H1-a fornece uma operacionalização observável do retorno econômico esperado previsto em H1.
 %
 % Variável dependente:
 % Conv_it = taxa de conversão definida em H1
@@ -235,7 +222,7 @@ Essa hipótese geral é examinada por meio de duas \textbf{hipóteses específic
 
 \medskip
 
-\noindent{\textbf{**(H1-b) Condicionamento institucional.**}}
+\noindent{\textbf{(H1-b) Condicionamento institucional.}}
 
 \noindent{\emph{*A resposta da taxa de conversão ao retorno econômico esperado dos usos agropecuários é condicionada pelo ambiente institucional, particularmente pelas regras, pelo monitoramento, pela fiscalização e pelas sanções que alteram os custos e os riscos associados à conversão.*}}
 
@@ -301,18 +288,189 @@ As relações previstas em H1, H1-a e H1-b podem apresentar heterogeneidade entr
 \medskip
 
 %% --- H2
-% Estoque ambiental modifica a resposta de Y ao choque climático posterior
-%% \E afeta resultados produtivos
-\noindent{\textbf{(H2) Vegetação, clima e produtividade}}
+% O estoque ambiental previamente existente modifica a resposta
+% da produtividade a choques climáticos posteriores.
 
-\noindent{\emph{O estoque de vegetação previamente existente modifica a resposta da produtividade agrícola aos choques climáticos.}}
+\noindent{\textbf{(H2) Vegetação, clima e produtividade.}}
 
-\textbf{(H2-a)}
-\noindent{\emph{Essa relação  pode variar conforme atividades agropecuárias, territórios e biomas.}}
+\noindent{\emph{*A resposta da produtividade agrícola aos choques climáticos varia, em magnitude economicamente relevante, conforme o estoque de vegetação previamente existente no território.*}}
+
+% -------------------------------------------------------------------------
+% NOTA ECONOMÉTRICA — H2
+%
+% Variável dependente esperada:
+% Y_it = produtividade agrícola no município/território i e período t.
+%
+% Operacionalização principal atualmente prevista:
+% Y_it = rendimento médio da soja, em kg/ha
+%        (IBGE/PAM; eventualmente RAMMT como base complementar
+%        ou de robustez, conforme cobertura e comparabilidade).
+%
+% Variável climática:
+% C_it = choque climático ocorrido no território i no período t.
+%
+% Proxies candidatas:
+% - anomalia de precipitação (CHIRPS);
+% - déficit/excesso de precipitação em relação à normal histórica (CHIRPS);
+% - temperatura média, máxima ou extremos térmicos (ERA5-Land; INMET
+%   como possível fonte de validação);
+% - medida de déficit hídrico construída a partir das variáveis
+%   meteorológicas disponíveis.
+%
+% IMPORTANTE:
+% "Choque" deve representar desvio em relação à condição climática
+% esperada/referencial, e não simplesmente o nível bruto de chuva
+% ou temperatura.
+%
+% Variável ambiental:
+% E_i,t-1 = estoque de vegetação nativa previamente existente
+%           no território i.
+%
+% Construções candidatas:
+% - proporção da área municipal coberta por vegetação nativa em t-1;
+% - área de vegetação nativa em t-1;
+% - estoque inicial/predeterminado de vegetação em período-base,
+%   como especificação alternativa.
+%
+% Fonte candidata:
+% MapBiomas — cobertura anual e classes de vegetação nativa.
+%
+% Modelo-base esperado:
+%
+% Y_it = beta_1 C_it
+%        + beta_2 E_i,t-1
+%        + beta_3 (C_it * E_i,t-1)
+%        + alpha_i
+%        + lambda_t
+%        + gamma' Z_it
+%        + epsilon_it.
+%
+% onde:
+% alpha_i  = efeitos fixos municipais;
+% lambda_t = efeitos fixos de período;
+% Z_it     = vetor de controles variantes no tempo;
+% epsilon_it = termo de erro.
+%
+% Quantidade central de interesse:
+%
+% dY_it / dC_it = beta_1 + beta_3 E_i,t-1.
+%
+% Predição de H2:
+% beta_3 != 0 e o efeito associado deve possuir magnitude
+% economicamente relevante.
+%
+% H2 NÃO impõe, neste estágio, sinal a beta_3.
+% O sinal dependerá:
+% (i) da forma como o choque climático C_it for codificado; e
+% (ii) de a vegetação amplificar ou amortecer sua transmissão
+%      para a produtividade.
+%
+% Exemplo:
+% se C_it for definido como intensidade de um choque climático adverso,
+% com valores maiores significando maior severidade, e a vegetação atuar
+% como amortecedor, espera-se beta_1 < 0 e beta_3 > 0.
+%
+% Essa previsão direcional NÃO deve ser incorporada à hipótese antes
+% de a literatura e a definição empírica do choque justificarem o sinal.
+%
+% Anterioridade temporal:
+% E_i,t-1 -> C_it -> Y_it.
+%
+% A defasagem do estoque vegetal busca assegurar que a condição ambiental
+% utilizada como moderadora seja anterior ao choque e ao resultado
+% produtivo observado.
+% -------------------------------------------------------------------------
 
 \medskip
 
-Nesta hipótese, estoque de vegetação previamente existente corresponde à quantidade ou proporção de cobertura vegetal presente no território antes da ocorrência do choque climático considerado, de modo a preservar a anterioridade temporal entre condição ambiental e resultado produtivo. A produtividade refere-se ao resultado da produção por unidade de área ou de outro insumo relevante, conforme a medida empírica adotada. Por choques climáticos entendem-se variações de curto prazo em condições como precipitação, temperatura ou déficit hídrico, capazes de afetar a produção agrícola. Dizer que o estoque de vegetação modifica a resposta da produtividade significa que o efeito de um mesmo choque climático pode diferir conforme a condição ambiental previamente existente, sem pressupor que maior estoque de vegetação implique, por si só, maior produtividade média. A expressão magnitude economicamente relevante indica que essa diferença deve ser suficientemente expressiva para produzir consequências substantivas sobre o desempenho produtivo, e não apenas apresentar significância estatística. Por fim, a hipótese admite heterogeneidade entre contextos produtivos, territórios e biomas, refletindo diferenças nas características produtivas, institucionais, ecológicas e biofísicas sob as quais a relação entre vegetação, clima e produtividade pode assumir magnitudes ou padrões distintos.
+\noindent{\textbf{(H2-a) Heterogeneidade entre biomas.}}
+
+\noindent{\emph{*A magnitude da modificação exercida pelo estoque de vegetação sobre a resposta da produtividade agrícola aos choques climáticos é heterogênea entre biomas.*}}
+
+% -------------------------------------------------------------------------
+% NOTA ECONOMÉTRICA — H2-a
+%
+% Variável dependente:
+% Y_it = produtividade agrícola
+%        (principalmente rendimento da soja em kg/ha; IBGE/PAM).
+%
+% Variáveis centrais:
+% C_it     = choque climático
+%            (CHIRPS; ERA5-Land; eventualmente INMET para validação);
+%
+% E_i,t-1  = estoque de vegetação nativa previamente existente
+%            (MapBiomas);
+%
+% B_ib     = pertencimento/composição do município i no bioma b
+%            (IBGE / sobreposição espacial com dados de cobertura).
+%
+% Possível classificação:
+% - Amazônia;
+% - Cerrado;
+% - Pantanal;
+% - municípios de composição mista, conforme critério previamente
+%   definido para predominância territorial.
+%
+% Estratégia 1 — interação tripla:
+%
+% Y_it = beta_1 C_it
+%        + beta_2 E_i,t-1
+%        + beta_3 (C_it * E_i,t-1)
+%        + sum_b delta_b (C_it * E_i,t-1 * B_ib)
+%        + alpha_i
+%        + lambda_t
+%        + gamma' Z_it
+%        + epsilon_it.
+%
+% H2-a:
+% os efeitos marginais da interação clima x vegetação não são iguais
+% entre os biomas.
+%
+% Equivalentemente:
+%
+% beta_3,Amazonia != beta_3,Cerrado
+% ou
+% beta_3,Amazonia != beta_3,Pantanal
+% ou
+% beta_3,Cerrado != beta_3,Pantanal.
+%
+% Estratégia 2 — estimações separadas por bioma:
+%
+% Y_it^(b) = beta_1^(b) C_it
+%            + beta_2^(b) E_i,t-1
+%            + beta_3^(b) (C_it * E_i,t-1)
+%            + alpha_i
+%            + lambda_t
+%            + gamma' Z_it
+%            + epsilon_it.
+%
+% Comparar beta_3^(b) entre os biomas.
+%
+% ATENÇÃO:
+% a estimação separada depende de suporte amostral suficiente em cada
+% bioma. Pantanal e grupos mistos podem exigir tratamento exploratório
+% ou agrupamentos alternativos caso o número de municípios/observações
+% não permita inferência adequada.
+%
+% A classificação por bioma deve ser definida ex ante.
+% Possíveis análises de sensibilidade:
+% - predominância >= 80% como especificação principal;
+% - limiares de 70% e 90% como robustez.
+%
+% "Heterogeneidade" significa diferença na magnitude do coeficiente
+% associado a C_it * E_i,t-1, e não simplesmente diferenças nos níveis
+% médios de produtividade, clima ou vegetação entre os biomas.
+% -------------------------------------------------------------------------
+
+\medskip
+
+Nesta hipótese, estoque de vegetação previamente existente corresponde à quantidade ou proporção de cobertura vegetal presente no território antes da ocorrência do choque climático considerado, de modo a preservar a anterioridade temporal entre condição ambiental e resultado produtivo. A produtividade refere-se ao resultado da produção por unidade de área ou de outro insumo relevante, conforme a medida empírica adotada. Por choques climáticos entendem-se desvios de curto prazo das condições climáticas em relação a uma referência temporal pertinente, envolvendo dimensões como precipitação, temperatura ou déficit hídrico, capazes de afetar a produção agrícola.
+
+Dizer que o estoque de vegetação modifica a resposta da produtividade significa que o efeito de um mesmo choque climático pode diferir conforme a condição ambiental previamente existente. A hipótese não pressupõe que maior estoque de vegetação implique, por si só, maior produtividade média, nem estabelece previamente que a vegetação necessariamente atenue ou amplifique os efeitos dos choques. O objeto de interesse é a modificação da resposta da produtividade ao choque climático associada ao estoque de vegetação previamente existente.
+
+A expressão magnitude economicamente relevante indica que essa diferença deve ser suficientemente expressiva para produzir consequências substantivas sobre o desempenho produtivo, e não apenas apresentar significância estatística. Sua avaliação deverá considerar a dimensão do efeito estimado sobre a produtividade e, quando pertinente, sua tradução em perdas ou ganhos de produção e valor econômico.
+
+A H2-a admite que essa relação seja heterogênea entre biomas em razão de diferenças nas condições climáticas, ecológicas, biofísicas e produtivas sob as quais vegetação e produção agrícola interagem. Essa heterogeneidade refere-se especificamente à magnitude da modificação da resposta da produtividade aos choques climáticos, e não simplesmente a diferenças nos níveis médios de produtividade, vegetação ou clima entre os biomas.
 
 \medskip
 
