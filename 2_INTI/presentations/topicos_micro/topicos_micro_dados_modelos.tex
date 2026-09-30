@@ -1,0 +1,197 @@
+% !TEX recipe = pdflatex
+% Nova apresentacao; modelo visual: Apresentacao 24092026 - Hipoteses e RL/topicos_micro.tex
+\documentclass[aspectratio=169,11pt]{beamer}
+\usetheme{Madrid}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs,array,tabularx}
+\definecolor{verde}{HTML}{24574D}
+\definecolor{grafite}{HTML}{253A40}
+\setbeamercolor{structure}{fg=verde}
+\setbeamercolor{title}{bg=verde,fg=white}
+\setbeamercolor{frametitle}{bg=verde,fg=white}
+\setbeamercolor{normal text}{fg=grafite}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{\leavevmode\hbox{\begin{beamercolorbox}[wd=.86\paperwidth,ht=2.7ex,dp=1.2ex,leftskip=1em]{author in head/foot}Capital natural e governança territorial\end{beamercolorbox}\begin{beamercolorbox}[wd=.14\paperwidth,ht=2.7ex,dp=1.2ex,center]{date in head/foot}\insertframenumber\,/\,\inserttotalframenumber\end{beamercolorbox}}}
+\setbeamersize{text margin left=8mm,text margin right=8mm}
+\setbeamertemplate{itemize items}[circle]
+\newcommand{\fonte}[1]{\par\vfill{\fontsize{7.5}{9}\selectfont\color{gray}#1\par}}
+\newcommand{\tpar}{\par\vspace{1.5mm}}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\disp}{\textcolor{verde}{Disponível}}
+\newcommand{\parcial}{\textcolor{orange!75!black}{Parcial}}
+\newcommand{\pend}{\textcolor{red!70!black}{Pendente}}
+\title[Capital natural e governança territorial]{Capital Natural e Governança Territorial}
+\subtitle{Hipóteses, dados e estratégia econométrica}
+\author{Fernando Souza da Vieira}
+\institute{Tópicos de Microeconomia}
+\date{}
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Problema de pesquisa em Mato Grosso}
+\begin{block}{Pergunta central}
+Como retornos e instituições condicionam a conversão da vegetação? O estoque prévio modifica a resposta da produtividade a choques climáticos?
+\end{block}
+\medskip
+\begin{itemize}
+\item O ambiente integra a produção e é alterado pelo uso da terra.
+\item Mato Grosso reúne agropecuária, Amazônia, Cerrado e Pantanal.
+\item Instituições condicionam decisões locais; estas afetam condições futuras.
+\end{itemize}
+\medskip
+\centering\small\color{verde}Retornos + instituições $\rightarrow$ uso da terra $\rightarrow$ vegetação $\rightarrow$ produtividade $\rightarrow$ retornos
+\fonte{Fonte: introdução atual. Intertemporalidade é mecanismo conceitual, sem hipótese empírica independente.}
+\end{frame}
+
+\begin{frame}{H1: hipóteses e variáveis}
+\fontsize{9.5}{11.5}\selectfont
+\textbf{H1} A taxa de conversão aumenta quando se eleva o retorno econômico esperado dos usos agropecuários.\par\smallskip
+\textbf{H1-a} O efeito de aumentos de preços é maior onde a capacidade produtiva local da terra é maior.\par\smallskip
+\textbf{H1-b} Regras, monitoramento, fiscalização e sanções condicionam a resposta da conversão ao retorno esperado.
+\medskip
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{P{2.45cm} P{3.0cm} X}
+\toprule
+\textbf{Papel} & \textbf{Variável candidata} & \textbf{Operacionalização / interpretação} \\
+\midrule
+Desfecho & $Conv_{it}$ & Área convertida em $t$ / vegetação nativa em $t-1$; destinos: agricultura e pastagem. \\
+Retorno conceitual & $R^e_{i,t-1}$ & Benefício esperado do uso agropecuário; não observado. \\
+Determinantes & $P_{kt}$, $S_{ik}$ & Preço do produto $k$ e capacidade produtiva local. \\
+Instituições & $I_{i,t-1}$ & Regras e \textit{enforcement}; histórico incompleto. \\
+Interações & $\Delta\ln P_{k,t-1}\!\times\! S_{ik}$; $R^e_{i,t-1}\!\times\! I_{i,t-1}$ & Capacidade produtiva e condicionamento institucional. \\
+\bottomrule
+\end{tabularx}
+\fonte{Formulações: introdução atual. $Conv^{Agric}$ e $Conv^{Past}$ são desfechos candidatos; nenhum está construído.}
+\end{frame}
+
+\begin{frame}{H1: dados, fontes e períodos}
+\fontsize{8.5}{10.2}\selectfont
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\textwidth}{P{2.3cm} P{3.15cm} P{2.1cm} X}
+\toprule
+\textbf{Variável / insumo} & \textbf{Fonte} & \textbf{Cobertura da fonte} & \textbf{Situação para H1} \\
+\midrule
+Vegetação / conversão & MapBiomas 10.1 & 1985--2024 & \parcial: estoque preparado; conversões brutas para agricultura e pastagem \pend. \\
+Produção agrícola & IBGE/PAM, soja e milho & 1974--2025 & \disp; cobertura municipal variável. \\
+Pecuária & IBGE/PPM, bovinos & 1974--2024 & \disp; 2025 não retornado. \\
+Capacidade produtiva & FAO/GAEZ v4 & clima 1961--1990 & \parcial: oito variantes; base de terras inclui 2010. \\
+Preços externos & World Bank Pink Sheet & jan. 1960--ago. 2026 & \disp; USD nominais; transmissão local por definir. \\
+Preços / custos locais & CEPEA, IMEA, CONAB & séries não consolidadas & \pend: acesso a preços; custos CONAB extraídos, sem série comparável. \\
+Fiscalização & IBAMA, autos de MT & 1987--2026 & \parcial: 52.991 eventos; 2026 parcial; medida institucional por definir. \\
+Regras / cadastro & MMA / CAR & histórico insuficiente & \pend: vigência normativa e acesso histórico. \\
+\bottomrule
+\end{tabularx}
+\smallskip
+\textbf{Conversão exige transições brutas.} Variação líquida do estoque não substitui $Conv_{it}$.
+\fonte{Fonte: auditoria de 30/09/2026. Cobertura das fontes não define a amostra.}
+\end{frame}
+
+\begin{frame}{H1: especificações candidatas}
+\fontsize{9.5}{11.5}\selectfont
+\textbf{H1: retorno esperado}\par\vspace{-2mm}
+\[Conv_{it}=\beta_1R^e_{i,t-1}+\alpha_i+\lambda_t+\gamma'Z_{it}+\varepsilon_{it}\]
+\textbf{H1-a: componente observável do retorno}\par\vspace{-2mm}
+\[ShockReturn_{it}=\sum_k \Delta\ln(P_{k,t-1})S_{ik},\qquad
+  Conv_{it}=\beta_1ShockReturn_{it}+\alpha_i+\lambda_t+\gamma'Z_{it}+\varepsilon_{it}\]
+\textbf{H1-b: moderação institucional}\par\vspace{-2mm}
+\[Conv_{it}=\beta_1R^e_{i,t-1}+\beta_2I_{i,t-1}+\beta_3(R^e_{i,t-1}I_{i,t-1})+\alpha_i+\lambda_t+\gamma'Z_{it}+\varepsilon_{it}\]
+\fontsize{9}{11}\selectfont
+$\alpha_i$: município; $\lambda_t$: tempo; $Z_{it}$: controles a definir. Painel municipal e erros agrupados por município são ponto de partida. Desfechos proporcionais, exposição à vegetação e dependência espacial requerem avaliação.
+\begin{alertblock}{Identificação ainda aberta}
+Fiscalização pode responder ao desmatamento. Autos defasados não fornecem variação exógena automaticamente; \textit{event study}/DiD exige variação institucional adequada.
+\end{alertblock}
+\fonte{Especificações derivadas da introdução atual; nenhum modelo foi estimado.}
+\end{frame}
+
+\begin{frame}{H2: hipóteses e variáveis}
+\small
+\textbf{H2} A resposta da produtividade agrícola aos choques climáticos varia, em magnitude economicamente relevante, conforme a vegetação previamente existente.\par\smallskip
+\textbf{H2-a} A magnitude dessa modificação é heterogênea entre biomas.
+\medskip
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{P{2.55cm} P{2.0cm} X}
+\toprule
+\textbf{Papel} & \textbf{Variável} & \textbf{Operacionalização candidata} \\
+\midrule
+Desfecho & $Y_{it}$ & Rendimento médio da soja, kg/ha (PAM). \\
+Choque climático & $C_{it}$ & Anomalia, déficit ou excesso de chuva; temperatura, extremos ou déficit hídrico dependem de dados. \\
+Moderadora & $E_{i,t-1}$ & Estoque ou proporção prévia de vegetação nativa. \\
+Efeito central & $C_{it}\times E_{i,t-1}$ & Mudança na sensibilidade do rendimento ao choque. \\
+Heterogeneidade & Bioma$_i$ & Amazônia, Cerrado, Pantanal e municípios mistos. \\
+\bottomrule
+\end{tabularx}
+\medskip
+\begin{block}{Distinção de mensuração}
+Precipitação observada $\neq$ choque: exige desvio frente a uma referência. H2 não impõe sinal nem maior produtividade média.
+\end{block}
+\fonte{Fonte: introdução atual; Redhead et al. (2020); Dell et al. (2014).}
+\end{frame}
+
+\begin{frame}{H2: dados, fontes e períodos}
+\fontsize{8.5}{10.2}\selectfont
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\textwidth}{P{2.1cm} P{2.85cm} P{2.2cm} X}
+\toprule
+\textbf{Variável / insumo} & \textbf{Fonte} & \textbf{Cobertura da fonte} & \textbf{Situação para H2} \\
+\midrule
+Rendimento da soja & IBGE/PAM & 1974--2025 & \disp; símbolos SIDRA e cobertura por município a revisar. \\
+Vegetação prévia & MapBiomas 10.1 & 1985--2024 & \parcial: estoque candidato; taxonomia e denominador pendentes. \\
+Chuva / anomalias & CHIRPS v2 & 1981--2025; 540 meses & \parcial: chuva, déficit, excesso e z-score em ano civil; janela agrícola pendente. \\
+Temperatura & ERA5-Land & não adquirida & \pend: configuração e condições de acesso CDS. \\
+Biomas & IBGE 2019 / malha 2024 & corte espacial & \parcial: limiar de 80\% candidato; sensibilidades de 70\% e 90\%. \\
+Topografia & Copernicus GLO-90 & corte espacial & \disp: elevação de modelo de superfície; declividade não calculada. \\
+Calendário agrícola & ZARC/MAPA/\newline CONAB & safra 2025/26 & \parcial: documento não cobre calendário histórico. \\
+\bottomrule
+\end{tabularx}
+\smallskip
+\textbf{1986--2024: janela potencial} de vegetação defasada e chuva, não amostra final. Faltam geografia histórica, janela agrícola e choque definitivo.
+\fonte{Fonte: auditoria de 30/09/2026. Temperatura depende do desenho escolhido.}
+\end{frame}
+
+\begin{frame}{H2: modelo candidato e estado dos dados}
+\small
+\[Y_{it}=\beta_1C_{it}+\beta_2E_{i,t-1}+\beta_3(C_{it}E_{i,t-1})+\alpha_i+\lambda_t+\gamma'Z_{it}+\varepsilon_{it}\]
+\[\frac{\partial Y_{it}}{\partial C_{it}}=\beta_1+\beta_3E_{i,t-1}\]
+$\beta_3$ descreve como a sensibilidade da produtividade ao choque varia com a vegetação prévia; interpretação causal depende da identificação.
+\medskip
+\textbf{H2-a:} interação $C_{it}\times E_{i,t-1}\times Bioma_i$ ou estimações por bioma, conforme suporte amostral. Pantanal e grupos mistos podem ter poucas observações.
+\medskip
+\begin{columns}[T]
+\column{.49\textwidth}
+\begin{block}{Já disponível}
+Produtividade, estoque vegetal candidato, chuva e anomalias de ano civil, frações de biomas e elevação.
+\end{block}
+\column{.49\textwidth}
+\begin{block}{Ainda a resolver}
+Geografia histórica, janela agrícola, choque climático definitivo e temperatura se necessária.
+\end{block}
+\end{columns}
+\fonte{Especificação candidata. Painel, controles e robustez dependem da integração e da avaliação de identificação.}
+\end{frame}
+
+\begin{frame}{Do desenho conceitual à estimação}
+\begin{block}{H1}
+Retornos + instituições $\rightarrow$ conversão $\rightarrow$ estoque ambiental
+\end{block}
+\begin{block}{H2}
+Vegetação prévia $\times$ choque climático $\rightarrow$ produtividade
+\end{block}
+\smallskip
+\textbf{Próximas etapas}\par\smallskip
+\begin{enumerate}
+\item Harmonizar municípios e construir conversões brutas.
+\item Definir janela e choque; consolidar preços, aptidão e instituições.
+\item Integrar o painel, revisar identificação e estimar modelos.
+\end{enumerate}
+\medskip
+\begin{alertblock}{Escopo da apresentação}
+Os modelos são candidatos. A identificação final depende das propriedades, limitações e variação efetivamente disponíveis nos dados.
+\end{alertblock}
+\end{frame}
+\end{document}
