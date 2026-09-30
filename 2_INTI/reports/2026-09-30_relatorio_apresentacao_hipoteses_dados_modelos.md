@@ -2,7 +2,7 @@
 
 **Data:** 30/09/2026  
 **Ferramenta:** Codex, pdfLaTeX (TeX Live 2025), Poppler  
-**Objetivo:** preparar uma nova apresentação Beamer para discussão acadêmica do desenho empírico, sem estimar regressões nem tratar especificações candidatas como finais.
+**Objetivo:** preparar e revisar uma apresentação Beamer para discussão acadêmica do desenho empírico, sem estimar regressões nem tratar especificações candidatas como finais.
 
 ## Fontes consultadas
 
@@ -19,11 +19,13 @@
 - Este relatório.
 - 2_INTI/thread/2026-09-30_codex_apresentacao_hipoteses_dados_modelos.md
 
-Nenhum arquivo preexistente foi modificado. A compilação também criou arquivos auxiliares com o mesmo prefixo e extensões .aux, .log, .nav, .out, .snm e .toc. A tentativa de removê-los foi rejeitada pela política automática da ferramenta. Esses arquivos permanecem no diretório e são ignorados pelo Git.
+Na revisão solicitada pelo autor, foram modificados o .tex, o PDF, este relatório e o registro de continuidade. Os demais arquivos do projeto foram preservados. A compilação também mantém auxiliares com o mesmo prefixo e extensões .aux, .log, .nav, .out, .snm e .toc, ignorados pelo Git. A tentativa anterior de removê-los foi rejeitada pela política automática da ferramenta.
 
 ## Estrutura final
 
-**Nove slides:** 1 capa; 2 problema e mecanismo em Mato Grosso; 3 H1, H1-a, H1-b e variáveis; 4 dados de H1; 5 modelos candidatos de H1; 6 H2, H2-a e variáveis; 7 dados de H2; 8 modelo de H2 e estado dos dados; 9 fechamento.
+**Nove slides:** 1 capa; 2 problema e dois mecanismos segundo as linhas 81–87 da introdução; 3 texto integral de H1, H1-a e H1-b; 4 desfecho e capacidade produtiva de H1; 5 preços e instituições de H1; 6 texto integral de H2 e H2-a e variáveis candidatas; 7 dados de H2; 8 tabela comparativa de variáveis dependentes, independentes e modelos candidatos; 9 próximas etapas.
+
+Os slides 4 e 5 agora incluem a coluna **Descrição da variável** imediatamente após **Variável / insumo**. As equações específicas dos antigos slides 5 e 8 foram substituídas pelo quadro único de modelos. O circuito antes usado no fechamento passou a apoiar a apresentação do problema.
 
 As variáveis centrais apresentadas são conversão bruta de vegetação para usos agropecuários, retorno econômico esperado e seus determinantes observáveis, ambiente institucional, rendimento de soja, choque climático, estoque vegetal prévio e bioma. As interações explicitam H1-a, H1-b, H2 e H2-a.
 
@@ -50,8 +52,8 @@ Harmonização territorial histórica; transições brutas entre classes MapBiom
 
 ## Compilação e inspeção
 
-O PDF foi compilado com pdfLaTeX em duas passagens, sem erro, e contém **9 páginas 16:9**. Restaram dois avisos tipográficos de caixa horizontal inferiores a 5 pt nos slides 3 e 6; as renderizações não mostram texto cortado. As nove páginas foram renderizadas com Poppler e inspecionadas visualmente quanto a legibilidade, tabelas, equações, rodapé, numeração, símbolos e alinhamento. O slide 4 e o slide 7 foram compactados para preservar as fontes e os períodos sem cortar conteúdo.
+O PDF revisado foi compilado com pdfLaTeX em duas passagens, sem erro, e contém **9 páginas 16:9**. Restou um aviso tipográfico de caixa horizontal de 2,21 pt no slide 8; a renderização não mostra texto cortado. As nove páginas foram renderizadas com Poppler e inspecionadas visualmente quanto a legibilidade, tabelas, rodapé, numeração, símbolos e alinhamento. Os dois quadros de H1 foram ajustados para manter a descrição das variáveis e a leitura em sala.
 
 ## Estado do Git
 
-Branch inicial e final: main. O git status --short inicial estava vazio. O status final mostra quatro entradas não rastreadas: o .tex, o PDF, este relatório e o diretório 2_INTI/thread/ contendo apenas o registro desta tarefa. Os auxiliares LaTeX são ignorados pelo Git. Nenhum commit, push, merge ou troca de branch foi executado.
+Branch inicial e final da revisão: main. O git status --short estava vazio no início desta revisão. O estado final deve mostrar apenas o .tex, o PDF, este relatório e o registro de continuidade modificados. Os auxiliares LaTeX são ignorados pelo Git. Nenhum commit, push, merge ou troca de branch foi executado nesta revisão.
