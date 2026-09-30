@@ -23,9 +23,9 @@ Na revisão solicitada pelo autor, foram modificados o .tex, o PDF, este relató
 
 ## Estrutura final
 
-**Nove slides:** 1 capa; 2 problema e dois mecanismos segundo as linhas 81–87 da introdução; 3 texto integral de H1, H1-a e H1-b; 4 desfecho e capacidade produtiva de H1; 5 preços e instituições de H1; 6 texto integral de H2 e H2-a e variáveis candidatas; 7 dados de H2; 8 tabela comparativa de variáveis dependentes, independentes e modelos candidatos; 9 próximas etapas.
+**Nove slides:** 1 capa; 2 problema e dois mecanismos segundo as linhas 81–87 da introdução; 3 H1 e H1-a com a ideia intuitiva de como investigá-las; 4 H1-b, comparação proposta e cautela sobre fiscalização; 5 conversão, produção e capacidade da terra; 6 preços e instituições; 7 H2 e H2-a com as comparações propostas; 8 dados de H2; 9 síntese das tarefas necessárias para responder às perguntas.
 
-Os slides 4 e 5 agora incluem a coluna **Descrição da variável** imediatamente após **Variável / insumo**. As equações específicas dos antigos slides 5 e 8 foram substituídas pelo quadro único de modelos. O circuito antes usado no fechamento passou a apoiar a apresentação do problema.
+Os slides 5 e 6 mantêm a coluna explicativa logo após **Variável / insumo**, agora intitulada **O que significa** e redigida para uma audiência que não acompanha a pesquisa. O quadro técnico de modelos foi retirado: a lógica das comparações aparece sob cada hipótese. A frase de fonte no slide 2 e o box **Escopo da apresentação** foram removidos. O fechamento usa dois blocos análogos aos das hipóteses, sem fixar o período econométrico.
 
 As variáveis centrais apresentadas são conversão bruta de vegetação para usos agropecuários, retorno econômico esperado e seus determinantes observáveis, ambiente institucional, rendimento de soja, choque climático, estoque vegetal prévio e bioma. As interações explicitam H1-a, H1-b, H2 e H2-a.
 
@@ -44,7 +44,7 @@ As variáveis centrais apresentadas são conversão bruta de vegetação para us
 | Copernicus GLO-90 | Corte espacial | Elevação disponível; declividade e rugosidade não inferidas. |
 | ZARC/MAPA/CONAB | Documento safra 2025/26 | Não oferece calendário histórico completo. |
 
-CEPEA e IMEA permanecem sem aquisição útil de preços locais. A consulta de preços CONAB depende de CAPTCHA; planilhas de custos foram extraídas, mas ainda não formam série comparável. MMA/CAR carecem de cobertura histórica útil. ERA5-Land não foi adquirida. O intervalo **1986–2024** aparece apenas como janela potencial de vegetação defasada e precipitação, não como amostra econométrica final.
+CEPEA e IMEA permanecem sem aquisição útil de preços locais. A consulta de preços CONAB depende de CAPTCHA; planilhas de custos foram extraídas, mas ainda não formam série comparável. MMA/CAR carecem de cobertura histórica útil. ERA5-Land não foi adquirida. Os períodos nos slides descrevem a cobertura de cada fonte. Nenhuma data de início ou fim da amostra econométrica foi escolhida.
 
 ## Pendências preservadas
 
@@ -52,7 +52,7 @@ Harmonização territorial histórica; transições brutas entre classes MapBiom
 
 ## Compilação e inspeção
 
-O PDF revisado foi compilado com pdfLaTeX em duas passagens, sem erro, e contém **9 páginas 16:9**. Restou um aviso tipográfico de caixa horizontal de 2,21 pt no slide 8; a renderização não mostra texto cortado. As nove páginas foram renderizadas com Poppler e inspecionadas visualmente quanto a legibilidade, tabelas, rodapé, numeração, símbolos e alinhamento. Os dois quadros de H1 foram ajustados para manter a descrição das variáveis e a leitura em sala.
+O PDF revisado foi compilado com pdfLaTeX em duas passagens, sem erro nem avisos de transbordamento, e contém **9 páginas 16:9**. As nove páginas foram renderizadas com Poppler e inspecionadas visualmente quanto a legibilidade, tabelas, rodapé, numeração, símbolos e alinhamento. Os quadros de dados preservam fonte, período e situação de cada variável, com descrições mais diretas.
 
 ## Estado do Git
 

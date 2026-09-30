@@ -51,21 +51,32 @@ O estoque vegetal prévio pode alterar o efeito do choque climático sobre a pro
 \centering\small\color{verde}
 Retornos + instituições $\rightarrow$ conversão $\rightarrow$ vegetação\par
 Vegetação prévia $\times$ choque climático $\rightarrow$ produtividade
-\fonte{Pergunta e duas dimensões: introdução atual, linhas 81--87. A retroalimentação permanece mecanismo conceitual.}
 \end{frame}
 
-\begin{frame}{H1: retornos, preços e instituições}
+\begin{frame}{H1: retorno esperado e preços}
 \begin{block}{H1 — Retornos, instituições e conversão}
 A taxa de conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.
 \end{block}
-\smallskip
+\textbf{Como investigar:} em cada município e ano, medir a parcela convertida e relacioná-la a preços e capacidade da terra, pistas do retorno esperado. Os anos da análise ainda serão definidos.
+\medskip
 \begin{block}{H1-a — Preços e capacidade produtiva local}
 O efeito de aumentos nos preços dos produtos agropecuários sobre a taxa de conversão de vegetação nativa é maior onde a capacidade produtiva local da terra para esses usos é mais elevada.
 \end{block}
-\smallskip
+\textbf{Como investigar:} quando o mesmo preço sobe, verificar se a conversão aumenta mais nos municípios cujas terras são mais favoráveis ao produto.
+\end{frame}
+
+\begin{frame}{H1-b: o papel das instituições}
 \begin{block}{H1-b — Condicionamento institucional}
 A resposta da taxa de conversão ao retorno econômico esperado dos usos agropecuários é condicionada pelo ambiente institucional, particularmente pelas regras, pelo monitoramento, pela fiscalização e pelas sanções que alteram os custos e os riscos associados à conversão.
 \end{block}
+\medskip
+\textbf{Como investigar:} verificar se a relação entre retorno esperado e conversão muda conforme as condições de fiscalização e as regras aplicáveis ao território.
+\medskip
+\begin{itemize}
+\item \textbf{Resultado observado:} parcela da vegetação nativa transformada em lavoura ou pasto em cada município e ano.
+\item \textbf{Fatores de interesse:} preços, capacidade produtiva local e medidas institucionais disponíveis.
+\item \textbf{Cuidado:} a fiscalização pode aumentar justamente onde houve mais conversão. Sua presença não demonstra, por si, um efeito causal.
+\end{itemize}
 \end{frame}
 
 \begin{frame}{H1: desfecho e capacidade produtiva}
@@ -73,12 +84,12 @@ A resposta da taxa de conversão ao retorno econômico esperado dos usos agropec
 \setlength{\tabcolsep}{3pt}
 \begin{tabularx}{\textwidth}{P{2.0cm} P{3.45cm} P{2.0cm} P{1.8cm} X}
 \toprule
-\textbf{Variável / insumo} & \textbf{Descrição da variável} & \textbf{Fonte} & \textbf{Período} & \textbf{Situação} \\
+\textbf{Variável / insumo} & \textbf{O que significa} & \textbf{Fonte} & \textbf{Período} & \textbf{Situação} \\
 \midrule
-$Conv_{it}$, $Conv^{Agric}_{it}$, $Conv^{Past}_{it}$ & Área nativa em $t-1$ convertida em $t$ / vegetação nativa disponível em $t-1$; destinos agropecuários. & MapBiomas 10.1 & 1985--2024 & \pend: transições brutas; variação líquida não substitui conversão. \\
-Produção agrícola & Área, produção e rendimento de soja e milho; apoio à caracterização produtiva. & IBGE/PAM & 1974--2025 & \disp; cobertura municipal variável. \\
-Pecuária & Efetivo bovino; indicador da atividade pecuária, não da conversão em pastagem. & IBGE/PPM & 1974--2024 & \disp; 2025 não retornou. \\
-$S_{ik}$ & Aptidão ou rendimento atingível candidato para soja e milho; não é rendimento observado. & FAO/GAEZ v4 & clima 1961--1990 & \parcial; base de terras inclui 2010. \\
+Conversão para lavoura ou pasto & Parte da vegetação nativa do ano anterior que virou lavoura ou pasto em cada município. & MapBiomas 10.1 & 1985--2024 & \pend: falta medir as mudanças brutas entre classes. \\
+Soja e milho & Quanto foi plantado, colhido e produzido em cada município. & IBGE/PAM & 1974--2025 & \disp; cobertura municipal variável. \\
+Rebanho bovino & Tamanho do rebanho; ajuda a descrever a pecuária local. & IBGE/PPM & 1974--2024 & \disp; 2025 não retornou. \\
+Capacidade da terra & Quanto as condições locais favorecem o cultivo de soja e milho; medida candidata. & FAO/GAEZ v4 & clima 1961--1990 & \parcial; base de terras inclui 2010. \\
 \bottomrule
 \end{tabularx}
 \end{frame}
@@ -88,12 +99,12 @@ $S_{ik}$ & Aptidão ou rendimento atingível candidato para soja e milho; não �
 \setlength{\tabcolsep}{3pt}
 \begin{tabularx}{\textwidth}{P{2.0cm} P{3.45cm} P{2.0cm} P{1.8cm} X}
 \toprule
-\textbf{Variável / insumo} & \textbf{Descrição da variável} & \textbf{Fonte} & \textbf{Período} & \textbf{Situação} \\
+\textbf{Variável / insumo} & \textbf{O que significa} & \textbf{Fonte} & \textbf{Período} & \textbf{Situação} \\
 \midrule
-$P_{kt}$ & Preços mensais de soja, milho e carne bovina; determinantes candidatos do retorno. & World Bank Pink Sheet & jan. 1960--ago. 2026 & \disp; USD nominais. \\
-Preços e custos locais & Preços e custos para aproximações alternativas do retorno. & CEPEA / IMEA / CONAB & séries não consolidadas & \pend; custos CONAB extraídos. \\
-$I_{i,t-1}$ & Autos e multas candidatos; não equivalem a sanções efetivas. & IBAMA & 1987--2026 & \parcial; 52.991 eventos, 2026 parcial. \\
-Regras / cadastro & Vigência normativa e informação fundiária para caracterizar instituições. & MMA /\newline CAR & histórico insuficiente & \pend. \\
+Preços externos & Como os preços de soja, milho e carne bovina variam ao longo do tempo. & World Bank Pink Sheet & jan. 1960--ago. 2026 & \disp; valores em USD. \\
+Preços e custos locais & Quanto produtores locais recebem pelos produtos e gastam para produzir. & CEPEA / IMEA / CONAB & séries não consolidadas & \pend; custos CONAB extraídos. \\
+Fiscalização & Onde e quando foram registrados autos de infração e multas. & IBAMA & 1987--2026 & \parcial; 52.991 eventos, 2026 parcial. \\
+Regras / cadastro & Quais regras valiam em cada período e o que se sabe sobre os imóveis rurais. & MMA /\newline CAR & histórico insuficiente & \pend. \\
 \bottomrule
 \end{tabularx}
 \end{frame}
@@ -102,15 +113,13 @@ Regras / cadastro & Vigência normativa e informação fundiária para caracteri
 \begin{block}{H2 — Vegetação, clima e produtividade}
 A resposta da produtividade agrícola aos choques climáticos varia, em magnitude economicamente relevante, conforme o estoque de vegetação previamente existente no território.
 \end{block}
-\smallskip
+\textbf{Como investigar:} observar se uma chuva fora do habitual afeta de modo diferente o rendimento da soja em municípios com mais ou menos vegetação nativa antes do choque.
+\medskip
 \begin{block}{H2-a — Heterogeneidade entre biomas}
 A magnitude da modificação exercida pelo estoque de vegetação sobre a resposta da produtividade agrícola aos choques climáticos é heterogênea entre biomas.
 \end{block}
-\medskip
-\begin{block}{Variáveis candidatas}
-$Y_{it}$: rendimento da soja; $C_{it}$: choque climático; $E_{i,t-1}$: vegetação prévia. O interesse recai sobre $C_{it}\times E_{i,t-1}$ e sua heterogeneidade entre biomas.
-\end{block}
-\fonte{Texto integral das hipóteses da introdução atual. H2 não impõe sinal nem maior produtividade média.}
+\textbf{Como investigar:} comparar essa diferença de resposta entre Amazônia, Cerrado e Pantanal, desde que haja municípios suficientes em cada grupo.
+\fonte{H2 trata da resposta ao choque; não presume que mais vegetação eleve o rendimento médio.}
 \end{frame}
 
 \begin{frame}{H2: dados, fontes e períodos}
@@ -120,55 +129,30 @@ $Y_{it}$: rendimento da soja; $C_{it}$: choque climático; $E_{i,t-1}$: vegetaç
 \toprule
 \textbf{Variável / insumo} & \textbf{Fonte} & \textbf{Cobertura da fonte} & \textbf{Situação para H2} \\
 \midrule
-Rendimento da soja & IBGE/PAM & 1974--2025 & \disp; símbolos SIDRA e cobertura por município a revisar. \\
-Vegetação prévia & MapBiomas 10.1 & 1985--2024 & \parcial: estoque candidato; taxonomia e denominador pendentes. \\
-Chuva / anomalias & CHIRPS v2 & 1981--2025; 540 meses & \parcial: chuva, déficit, excesso e z-score em ano civil; janela agrícola pendente. \\
+Rendimento da soja & IBGE/PAM & 1974--2025 & \disp; produção por hectare, com cobertura variável por município. \\
+Vegetação prévia & MapBiomas 10.1 & 1985--2024 & \parcial: área nativa no ano anterior; definição das classes pendente. \\
+Chuva fora do habitual & CHIRPS v2 & 1981--2025; 540 meses & \parcial: medidas atuais usam ano civil; falta definir a safra. \\
 Temperatura & ERA5-Land & não adquirida & \pend: configuração e condições de acesso CDS. \\
-Biomas & IBGE 2019 / malha 2024 & corte espacial & \parcial: limiar de 80\% candidato; sensibilidades de 70\% e 90\%. \\
-Topografia & Copernicus GLO-90 & corte espacial & \disp: elevação de modelo de superfície; declividade não calculada. \\
-Calendário agrícola & ZARC/MAPA/\newline CONAB & safra 2025/26 & \parcial: documento não cobre calendário histórico. \\
+Biomas & IBGE 2019 / malha 2024 & corte espacial & \parcial: classificação dos municípios ainda será escolhida. \\
+Elevação & Copernicus GLO-90 & corte espacial & \disp; altura da superfície, que pode incluir vegetação e construções. \\
+Calendário agrícola & ZARC/MAPA/\newline CONAB & safra 2025/26 & \parcial: documento não cobre todas as safras anteriores. \\
 \bottomrule
 \end{tabularx}
 \smallskip
-\textbf{1986--2024: janela potencial} de vegetação defasada e chuva, não amostra final. Faltam geografia histórica, janela agrícola e choque definitivo.
-\fonte{Fonte: auditoria de 30/09/2026. Temperatura depende do desenho escolhido.}
+\textbf{Ainda a definir:} municípios comparáveis ao longo do tempo, período da análise e meses relevantes da safra.
+\fonte{Períodos indicam a cobertura das fontes, não o intervalo da análise.}
 \end{frame}
 
-\begin{frame}{Modelos econométricos candidatos}
-\fontsize{9}{11}\selectfont
-\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\textwidth}{P{1.2cm} P{2.25cm} P{4.4cm} X}
-\toprule
-\textbf{Hipótese} & \textbf{Dependente} & \textbf{Independentes centrais} & \textbf{Modelo candidato} \\
-\midrule
-H1 & $Conv_{it}$ & Retorno esperado $R^e_{i,t-1}$ ou determinantes observáveis. & Painel municipal com efeitos fixos de município e tempo. \\
-H1-a & $Conv_{it}$ & Choques de preços $\Delta\ln P_{k,t-1}$ interagidos com capacidade $S_{ik}$. & Painel com interação preço $\times$ capacidade. \\
-H1-b & $Conv_{it}$ & Retorno esperado, instituição $I_{i,t-1}$ e sua interação. & Painel com interação retorno $\times$ instituição. \\
-H2 & $Y_{it}$, soja kg/ha & Choque climático $C_{it}$, vegetação prévia $E_{i,t-1}$ e interação. & Painel com efeitos fixos e moderação climática. \\
-H2-a & $Y_{it}$, soja kg/ha & $C_{it}\times E_{i,t-1}\times Bioma_i$. & Interação tripla ou painéis por bioma, se houver suporte. \\
-\bottomrule
-\end{tabularx}
-\medskip
-\begin{block}{Ponto de partida, sujeito à validação}
-Controles, defasagens e amostra dependerão da integração dos dados. Erros agrupados por município são candidatos; desfechos proporcionais e dependência espacial exigem avaliação.
-\end{block}
-\fonte{Associação não implica causalidade. Fiscalização pode reagir à conversão; a identificação institucional permanece aberta.}
-\end{frame}
-
-\begin{frame}{Próximas etapas}
-\begin{block}{Dados ainda não formam uma amostra econométrica}
-1986--2024 é janela potencial de vegetação defasada e chuva. A interseção das variáveis, a unidade territorial e as medidas finais ainda precisam ser definidas.
+\begin{frame}{O que falta para responder às perguntas}
+\begin{block}{Uso da terra}
+Medir, ano a ano, quanta vegetação nativa virou lavoura ou pasto em cada município. Depois, relacionar essa mudança a preços, capacidade da terra e condições institucionais.
 \end{block}
 \medskip
-\begin{enumerate}
-\item Harmonizar municípios e construir as conversões brutas MapBiomas.
-\item Definir janela agrícola e choque climático; consolidar preços, aptidão e instituições.
-\item Integrar o painel e verificar cobertura, ausências e suporte por bioma.
-\item Revisar a identificação antes de definir modelos e robustez.
-\end{enumerate}
+\begin{block}{Produção agrícola}
+Definir quais meses de chuva importam para a soja e comparar a resposta do rendimento em lugares com diferentes estoques prévios de vegetação e em diferentes biomas.
+\end{block}
 \medskip
-\begin{alertblock}{Escopo da apresentação}
-Os modelos apresentados são candidatos; a identificação final dependerá das propriedades, limitações e variação efetivamente disponíveis nos dados.
-\end{alertblock}
+\textbf{Próximo passo:} integrar as fontes em uma geografia municipal comparável e verificar quais municípios e anos têm dados suficientes.
+\fonte{A pesquisa está em fase de preparação dos dados e das escolhas de mensuração. Ainda não há resultados econométricos.}
 \end{frame}
 \end{document}
