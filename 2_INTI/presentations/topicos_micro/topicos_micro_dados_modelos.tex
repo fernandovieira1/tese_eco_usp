@@ -8,6 +8,7 @@
 \usepackage{lmodern}
 \usepackage{booktabs,array,tabularx}
 \definecolor{verde}{HTML}{24574D}
+\definecolor{azul}{HTML}{1769A5}
 \definecolor{grafite}{HTML}{253A40}
 \setbeamercolor{structure}{fg=verde}
 \setbeamercolor{title}{bg=verde,fg=white}
@@ -20,7 +21,7 @@
 \newcommand{\fonte}[1]{\par\vfill{\fontsize{7.5}{9}\selectfont\color{gray}#1\par}}
 \newcommand{\tpar}{\par\vspace{1.5mm}}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
-\newcommand{\disp}{\textcolor{verde}{Disponível}}
+\newcommand{\disp}{\textcolor{azul}{Disponível}}
 \newcommand{\parcial}{\textcolor{orange!75!black}{Parcial}}
 \newcommand{\pend}{\textcolor{red!70!black}{Pendente}}
 \title[Capital natural e governança territorial]{Capital Natural e Governança Territorial}
@@ -53,16 +54,31 @@ Retornos + instituições $\rightarrow$ conversão $\rightarrow$ vegetação\par
 Vegetação prévia $\times$ choque climático $\rightarrow$ produtividade
 \end{frame}
 
-\begin{frame}{H1: retorno esperado e preços}
+\begin{frame}{H1: retorno esperado e conversão}
 \begin{block}{H1 — Retornos, instituições e conversão}
 A taxa de conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.
 \end{block}
-\textbf{Como investigar:} em cada município e ano, medir a parcela convertida e relacioná-la a preços e capacidade da terra, pistas do retorno esperado. Os anos da análise ainda serão definidos.
 \medskip
+\begin{block}{Modelo buscado — candidato}
+\textbf{Tipo:} painel municipal anual, acompanhando os mesmos municípios ao longo do tempo.\par
+\textbf{Dependente:} parte da vegetação nativa que virou lavoura ou pasto.\par
+\textbf{Independentes:} indicadores do retorno esperado, como preços e capacidade produtiva da terra. O retorno não é observado diretamente.\par
+\textbf{Período candidato:} 2001--2024, sujeito à cobertura conjunta das fontes e à harmonização dos municípios.
+\end{block}
+\fonte{Essa comparação mostra se as variáveis andam juntas; sozinha, não prova que preços causaram conversão.}
+\end{frame}
+
+\begin{frame}{H1-a: preços e capacidade da terra}
 \begin{block}{H1-a — Preços e capacidade produtiva local}
 O efeito de aumentos nos preços dos produtos agropecuários sobre a taxa de conversão de vegetação nativa é maior onde a capacidade produtiva local da terra para esses usos é mais elevada.
 \end{block}
-\textbf{Como investigar:} quando o mesmo preço sobe, verificar se a conversão aumenta mais nos municípios cujas terras são mais favoráveis ao produto.
+\medskip
+\begin{block}{Modelo buscado — candidato}
+\textbf{Tipo:} painel municipal anual, comparando municípios expostos à mesma mudança de preço, mas com capacidade produtiva diferente.\par
+\textbf{Dependente:} parte da vegetação nativa convertida em lavoura ou pasto.\par
+\textbf{Independentes:} mudança no preço, capacidade local da terra e a combinação das duas.\par
+\textbf{Período candidato:} 2001--2024; o mapa de capacidade produtiva requer validação temporal.
+\end{block}
 \end{frame}
 
 \begin{frame}{H1-b: o papel das instituições}
@@ -70,77 +86,117 @@ O efeito de aumentos nos preços dos produtos agropecuários sobre a taxa de con
 A resposta da taxa de conversão ao retorno econômico esperado dos usos agropecuários é condicionada pelo ambiente institucional, particularmente pelas regras, pelo monitoramento, pela fiscalização e pelas sanções que alteram os custos e os riscos associados à conversão.
 \end{block}
 \medskip
-\textbf{Como investigar:} verificar se a relação entre retorno esperado e conversão muda conforme as condições de fiscalização e as regras aplicáveis ao território.
+\begin{block}{Modelo buscado — candidato}
+\textbf{Tipo:} painel municipal anual, comparando a resposta da conversão ao retorno sob diferentes condições institucionais.\par
+\textbf{Dependente:} parte da vegetação nativa convertida em lavoura ou pasto.\par
+\textbf{Independentes:} indicadores do retorno, fiscalização e regras, além da combinação entre retorno e instituições.\par
+\textbf{Período candidato:} 2001--2024, condicionado à série institucional que puder ser construída.
+\end{block}
+\end{frame}
+
+\begin{frame}{H1: conversão e atividade agropecuária}
+\fontsize{9.2}{11.2}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{P{2.0cm} P{3.25cm} P{1.75cm} P{1.65cm} X}
+\toprule
+\textbf{Variável} & \textbf{O que significa} & \textbf{Fonte} & \textbf{Período da fonte} & \textbf{O que já temos e o que falta} \\
+\midrule
+Conversão\textsuperscript{*} & Da vegetação nativa existente no início do ano, qual parte virou lavoura ou pasto? & MapBiomas 10.1 & 1985--2024 & \pend: áreas anuais por tipo de cobertura baixadas. Falta contar as mudanças de uma área para outra entre anos. \\
+Soja e milho & Quanto cada município plantou, colheu e produziu. & IBGE/PAM & 1974--2025 & \disp: dados baixados. Há municípios e anos sem registro; precisamos distinguir ausência de produção de ausência de informação. \\
+Rebanho bovino & Número de cabeças de gado; descreve a atividade pecuária. & IBGE/PPM & 1974--2024 & \disp: dados baixados. A fonte não retornou 2025. \\
+\bottomrule
+\end{tabularx}
 \medskip
-\begin{itemize}
-\item \textbf{Resultado observado:} parcela da vegetação nativa transformada em lavoura ou pasto em cada município e ano.
-\item \textbf{Fatores de interesse:} preços, capacidade produtiva local e medidas institucionais disponíveis.
-\item \textbf{Cuidado:} a fiscalização pode aumentar justamente onde houve mais conversão. Sua presença não demonstra, por si, um efeito causal.
-\end{itemize}
+\small\textbf{* Variável dependente:} resultado que o modelo busca explicar. A conversão não pode ser substituída pela diferença entre estoques anuais.
 \end{frame}
 
-\begin{frame}{H1: desfecho e capacidade produtiva}
-\fontsize{8.8}{10.3}\selectfont
+\begin{frame}{H1: capacidade, preços e custos}
+\fontsize{9.2}{11.2}\selectfont
 \setlength{\tabcolsep}{3pt}
-\begin{tabularx}{\textwidth}{P{2.0cm} P{3.45cm} P{2.0cm} P{1.8cm} X}
+\begin{tabularx}{\textwidth}{P{2.0cm} P{3.25cm} P{1.75cm} P{1.65cm} X}
 \toprule
-\textbf{Variável / insumo} & \textbf{O que significa} & \textbf{Fonte} & \textbf{Período} & \textbf{Situação} \\
+\textbf{Variável} & \textbf{O que significa} & \textbf{Fonte} & \textbf{Período da fonte} & \textbf{O que já temos e o que falta} \\
 \midrule
-Conversão para lavoura ou pasto & Parte da vegetação nativa do ano anterior que virou lavoura ou pasto em cada município. & MapBiomas 10.1 & 1985--2024 & \pend: falta medir as mudanças brutas entre classes. \\
-Soja e milho & Quanto foi plantado, colhido e produzido em cada município. & IBGE/PAM & 1974--2025 & \disp; cobertura municipal variável. \\
-Rebanho bovino & Tamanho do rebanho; ajuda a descrever a pecuária local. & IBGE/PPM & 1974--2024 & \disp; 2025 não retornou. \\
-Capacidade da terra & Quanto as condições locais favorecem o cultivo de soja e milho; medida candidata. & FAO/GAEZ v4 & clima 1961--1990 & \parcial; base de terras inclui 2010. \\
+Capacidade da terra & Quanto o local favorece soja ou milho, segundo um mapa de condições de cultivo. & FAO/GAEZ v4 & clima 1961--1990 & \parcial: oito mapas baixados. A base também usa informação de 2010; seu uso para anos anteriores precisa ser justificado. \\
+Preços mundiais & Quanto variam os preços internacionais de soja, milho e carne bovina. & World Bank Pink Sheet & jan. 1960--ago. 2026 & \disp: séries mensais baixadas. Preço mundial não equivale ao recebido pelo produtor de MT. \\
+Custos de produção & Quanto custa produzir soja e milho em condições registradas nas planilhas. & CONAB & planilhas até 2026 & \parcial: três planilhas baixadas e células de MT extraídas. Falta montar séries comparáveis entre anos e tecnologias. \\
 \bottomrule
 \end{tabularx}
 \end{frame}
 
-\begin{frame}{H1: preços e instituições}
-\fontsize{8.8}{10.3}\selectfont
+\begin{frame}{H1: preços locais e instituições}
+\fontsize{9}{11}\selectfont
 \setlength{\tabcolsep}{3pt}
-\begin{tabularx}{\textwidth}{P{2.0cm} P{3.45cm} P{2.0cm} P{1.8cm} X}
+\begin{tabularx}{\textwidth}{P{1.9cm} P{3.0cm} P{2.1cm} P{1.7cm} X}
 \toprule
-\textbf{Variável / insumo} & \textbf{O que significa} & \textbf{Fonte} & \textbf{Período} & \textbf{Situação} \\
+\textbf{Variável} & \textbf{O que significa} & \textbf{Fonte} & \textbf{Período da fonte} & \textbf{O que já temos e o que falta} \\
 \midrule
-Preços externos & Como os preços de soja, milho e carne bovina variam ao longo do tempo. & World Bank Pink Sheet & jan. 1960--ago. 2026 & \disp; valores em USD. \\
-Preços e custos locais & Quanto produtores locais recebem pelos produtos e gastam para produzir. & CEPEA / IMEA / CONAB & séries não consolidadas & \pend; custos CONAB extraídos. \\
-Fiscalização & Onde e quando foram registrados autos de infração e multas. & IBAMA & 1987--2026 & \parcial; 52.991 eventos, 2026 parcial. \\
-Regras / cadastro & Quais regras valiam em cada período e o que se sabe sobre os imóveis rurais. & MMA /\newline CAR & histórico insuficiente & \pend. \\
+Preços locais & Valores de venda mais próximos dos recebidos pelos produtores de MT. & CEPEA / IMEA & não consolidado & \pend: a coleta pretendida não terminou. CEPEA negou acesso; IMEA teve erro de conexão e página indisponível. \\
+Preços CONAB & Outra possível série de preços locais. & CONAB & não adquirido & \pend: consulta exige código de segurança; preços não baixados. \\
+Fiscalização & Registros de infrações ambientais, por lugar e ano. & IBAMA & 1987--2026 & \parcial: 52.991 autos baixados; 2026 incompleto. Falta validar onde ocorreram e resumir a atuação por município e ano. \\
+Regras e cadastro & Regras ambientais e registros de imóveis rurais. & MMA /\newline CAR & histórico insuficiente & \pend: lista atual do MMA obtida, sem histórico de vigência; acesso ao CAR foi negado. \\
 \bottomrule
 \end{tabularx}
+\fonte{Autos registrados não são multas pagas. Fiscalização pode reagir à própria conversão.}
 \end{frame}
 
 \begin{frame}{H2: vegetação, clima e produtividade}
 \begin{block}{H2 — Vegetação, clima e produtividade}
 A resposta da produtividade agrícola aos choques climáticos varia, em magnitude economicamente relevante, conforme o estoque de vegetação previamente existente no território.
 \end{block}
-\textbf{Como investigar:} observar se uma chuva fora do habitual afeta de modo diferente o rendimento da soja em municípios com mais ou menos vegetação nativa antes do choque.
 \medskip
+\begin{block}{Modelo buscado — candidato}
+\textbf{Tipo:} painel municipal anual, acompanhando os mesmos municípios e suas safras.\par
+\textbf{Dependente:} rendimento da soja em kg por hectare.\par
+\textbf{Independentes:} chuva fora do habitual, vegetação nativa antes da safra e a combinação das duas. Temperatura é outra possibilidade, se os dados forem obtidos.\par
+\textbf{Período candidato:} 2001--2024, sujeito à definição dos meses relevantes da safra.
+\end{block}
+\fonte{A pergunta é se a vegetação modifica a resposta à chuva, não se ela eleva o rendimento médio.}
+\end{frame}
+
+\begin{frame}{H2-a: diferenças entre biomas}
 \begin{block}{H2-a — Heterogeneidade entre biomas}
 A magnitude da modificação exercida pelo estoque de vegetação sobre a resposta da produtividade agrícola aos choques climáticos é heterogênea entre biomas.
 \end{block}
-\textbf{Como investigar:} comparar essa diferença de resposta entre Amazônia, Cerrado e Pantanal, desde que haja municípios suficientes em cada grupo.
-\fonte{H2 trata da resposta ao choque; não presume que mais vegetação eleve o rendimento médio.}
+\medskip
+\begin{block}{Modelo buscado — candidato}
+\textbf{Tipo:} painel municipal anual com comparação entre biomas. Estimações separadas por bioma são alternativa se houver municípios suficientes.\par
+\textbf{Dependente:} rendimento da soja em kg por hectare.\par
+\textbf{Independentes:} chuva fora do habitual, vegetação prévia e bioma; interessa saber se a combinação chuva + vegetação muda entre Amazônia, Cerrado e Pantanal.\par
+\textbf{Período candidato:} 2001--2024, sujeito ao número de municípios e safras utilizáveis em cada bioma.
+\end{block}
+\fonte{Municípios mistos e o pequeno grupo do Pantanal exigem cuidado na comparação.}
 \end{frame}
 
-\begin{frame}{H2: dados, fontes e períodos}
-\fontsize{8.5}{10.2}\selectfont
-\setlength{\tabcolsep}{3.5pt}
-\begin{tabularx}{\textwidth}{P{2.1cm} P{2.85cm} P{2.2cm} X}
+\begin{frame}{H2: rendimento, vegetação e biomas}
+\fontsize{9.2}{11.2}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{P{2.0cm} P{3.25cm} P{1.75cm} P{1.65cm} X}
 \toprule
-\textbf{Variável / insumo} & \textbf{Fonte} & \textbf{Cobertura da fonte} & \textbf{Situação para H2} \\
+\textbf{Variável} & \textbf{O que significa} & \textbf{Fonte} & \textbf{Período da fonte} & \textbf{O que já temos e o que falta} \\
 \midrule
-Rendimento da soja & IBGE/PAM & 1974--2025 & \disp; produção por hectare, com cobertura variável por município. \\
-Vegetação prévia & MapBiomas 10.1 & 1985--2024 & \parcial: área nativa no ano anterior; definição das classes pendente. \\
-Chuva fora do habitual & CHIRPS v2 & 1981--2025; 540 meses & \parcial: medidas atuais usam ano civil; falta definir a safra. \\
-Temperatura & ERA5-Land & não adquirida & \pend: configuração e condições de acesso CDS. \\
-Biomas & IBGE 2019 / malha 2024 & corte espacial & \parcial: classificação dos municípios ainda será escolhida. \\
-Elevação & Copernicus GLO-90 & corte espacial & \disp; altura da superfície, que pode incluir vegetação e construções. \\
-Calendário agrícola & ZARC/MAPA/\newline CONAB & safra 2025/26 & \parcial: documento não cobre todas as safras anteriores. \\
+Rendimento da soja\textsuperscript{*} & Quantos quilos de soja foram colhidos por hectare. & IBGE/PAM & 1974--2025 & \disp: produção e área baixadas; rendimento calculado. Alguns registros usam símbolos cujo sentido precisa ser conferido. \\
+Vegetação prévia & Quanto do município ainda tinha vegetação nativa antes da safra. & MapBiomas 10.1 & 1985--2024 & \parcial: mapas anuais baixados e área nativa candidata calculada. Falta decidir quais tipos de cobertura contam como nativos. \\
+Bioma & Qual parte do município pertence à Amazônia, Cerrado ou Pantanal. & IBGE 2019 / malha 2024 & mapas de 2019 e 2024 & \parcial: mapas baixados e proporções calculadas. Falta decidir como classificar municípios com mais de um bioma. \\
 \bottomrule
 \end{tabularx}
-\smallskip
-\textbf{Ainda a definir:} municípios comparáveis ao longo do tempo, período da análise e meses relevantes da safra.
-\fonte{Períodos indicam a cobertura das fontes, não o intervalo da análise.}
+\medskip
+\small\textbf{* Variável dependente:} resultado que o modelo busca explicar. A soja pode não ter valor numérico em todo município e ano.
+\end{frame}
+
+\begin{frame}{H2: clima e condições locais}
+\fontsize{9}{11}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{P{1.9cm} P{3.0cm} P{2.1cm} P{1.7cm} X}
+\toprule
+\textbf{Variável} & \textbf{O que significa} & \textbf{Fonte} & \textbf{Período da fonte} & \textbf{O que já temos e o que falta} \\
+\midrule
+Chuva fora do habitual & Quanto a chuva se afastou do padrão de referência em cada lugar. & CHIRPS v2 & 1981--2025 & \parcial: 540 mapas mensais baixados; desvios anuais calculados. Falta refazer a medida para os meses relevantes da soja. \\
+Temperatura & Calor médio; extremos exigiriam dados com detalhe diário. & ERA5-Land & não adquirida & \pend: pedido preparado; faltam configuração da conta CDS e condições de acesso. \\
+Elevação & Altura da superfície; pode incluir vegetação e construções. & Copernicus GLO-90 & mapa espacial & \disp: 101 partes do mapa baixadas; médias municipais calculadas. Não equivale à inclinação do terreno. \\
+Calendário da soja & Meses do plantio e do crescimento da soja. & ZARC/MAPA & safra 2025/26 & \parcial: portaria recente obtida. Ela não informa, sozinha, o calendário de todas as safras anteriores. \\
+\bottomrule
+\end{tabularx}
 \end{frame}
 
 \begin{frame}{O que falta para responder às perguntas}

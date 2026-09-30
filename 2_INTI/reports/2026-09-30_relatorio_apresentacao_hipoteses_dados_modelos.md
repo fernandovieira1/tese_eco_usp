@@ -23,9 +23,9 @@ Na revisão solicitada pelo autor, foram modificados o .tex, o PDF, este relató
 
 ## Estrutura final
 
-**Nove slides:** 1 capa; 2 problema e dois mecanismos segundo as linhas 81–87 da introdução; 3 H1 e H1-a com a ideia intuitiva de como investigá-las; 4 H1-b, comparação proposta e cautela sobre fiscalização; 5 conversão, produção e capacidade da terra; 6 preços e instituições; 7 H2 e H2-a com as comparações propostas; 8 dados de H2; 9 síntese das tarefas necessárias para responder às perguntas.
+**Treze slides:** 1 capa; 2 problema de pesquisa; 3 H1; 4 H1-a; 5 H1-b; 6 conversão e produção; 7 capacidade, preços mundiais e custos; 8 preços locais e instituições; 9 H2; 10 H2-a; 11 rendimento, vegetação e biomas; 12 clima e condições locais; 13 síntese das tarefas restantes.
 
-Os slides 5 e 6 mantêm a coluna explicativa logo após **Variável / insumo**, agora intitulada **O que significa** e redigida para uma audiência que não acompanha a pesquisa. O quadro técnico de modelos foi retirado: a lógica das comparações aparece sob cada hipótese. A frase de fonte no slide 2 e o box **Escopo da apresentação** foram removidos. O fechamento usa dois blocos análogos aos das hipóteses, sem fixar o período econométrico.
+Cada hipótese aparece com sua redação original e um bloco **Modelo buscado — candidato**, com tipo de comparação, variável dependente, variáveis independentes e período candidato. O autor escolheu **2001–2024** para discussão, sujeito à cobertura conjunta dos dados, à harmonização municipal e às decisões de mensuração; não é uma amostra pronta. Os dados foram distribuídos em cinco slides. Todas as tabelas explicam o que já foi obtido e por que cada item parcial ou pendente ainda não está pronto. **Disponível** aparece em azul; o asterisco assinala as duas variáveis dependentes.
 
 As variáveis centrais apresentadas são conversão bruta de vegetação para usos agropecuários, retorno econômico esperado e seus determinantes observáveis, ambiente institucional, rendimento de soja, choque climático, estoque vegetal prévio e bioma. As interações explicitam H1-a, H1-b, H2 e H2-a.
 
@@ -44,7 +44,7 @@ As variáveis centrais apresentadas são conversão bruta de vegetação para us
 | Copernicus GLO-90 | Corte espacial | Elevação disponível; declividade e rugosidade não inferidas. |
 | ZARC/MAPA/CONAB | Documento safra 2025/26 | Não oferece calendário histórico completo. |
 
-CEPEA e IMEA permanecem sem aquisição útil de preços locais. A consulta de preços CONAB depende de CAPTCHA; planilhas de custos foram extraídas, mas ainda não formam série comparável. MMA/CAR carecem de cobertura histórica útil. ERA5-Land não foi adquirida. Os períodos nos slides descrevem a cobertura de cada fonte. Nenhuma data de início ou fim da amostra econométrica foi escolhida.
+CEPEA e IMEA permanecem sem aquisição útil de preços locais. A consulta de preços CONAB depende de CAPTCHA; planilhas de custos foram extraídas, mas ainda não formam série comparável. MMA/CAR carecem de cobertura histórica útil. ERA5-Land não foi adquirida. Os períodos nas tabelas descrevem a cobertura de cada fonte. A janela **2001–2024** consta apenas como período candidato dos modelos, escolhido pelo autor.
 
 ## Pendências preservadas
 
@@ -52,7 +52,7 @@ Harmonização territorial histórica; transições brutas entre classes MapBiom
 
 ## Compilação e inspeção
 
-O PDF revisado foi compilado com pdfLaTeX em duas passagens, sem erro nem avisos de transbordamento, e contém **9 páginas 16:9**. As nove páginas foram renderizadas com Poppler e inspecionadas visualmente quanto a legibilidade, tabelas, rodapé, numeração, símbolos e alinhamento. Os quadros de dados preservam fonte, período e situação de cada variável, com descrições mais diretas.
+O PDF revisado foi compilado com pdfLaTeX em duas passagens, sem erro nem avisos de transbordamento, e contém **13 páginas 16:9**. Todas as páginas foram renderizadas com Poppler e inspecionadas visualmente quanto a legibilidade, tabelas, rodapé, numeração, símbolos, cores e alinhamento. As descrições de status distinguem arquivo obtido de variável pronta para análise.
 
 ## Estado do Git
 
