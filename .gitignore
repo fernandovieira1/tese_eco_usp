@@ -55,6 +55,9 @@ htmlcov/
 *.bcf
 *.run.xml
 
+# PDFs compilados dos artigos ativos
+2_INTI/chapters/*/main.pdf
+
 # Sistema operacional
 .DS_Store
 Thumbs.db
