@@ -1,0 +1,1855 @@
+[
+  {
+    "arquivo": "raw\\raster\\gaez_v4_6190\\sxHr0_mze.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "bbox": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "nodata": -9.0,
+    "bands": 1,
+    "dtype": "int16"
+  },
+  {
+    "arquivo": "raw\\raster\\gaez_v4_6190\\sxHr0_soy.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "bbox": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "nodata": -9.0,
+    "bands": 1,
+    "dtype": "int16"
+  },
+  {
+    "arquivo": "raw\\raster\\gaez_v4_6190\\sxLr0_mze.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "bbox": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "nodata": -9.0,
+    "bands": 1,
+    "dtype": "int16"
+  },
+  {
+    "arquivo": "raw\\raster\\gaez_v4_6190\\sxLr0_soy.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "bbox": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "nodata": -9.0,
+    "bands": 1,
+    "dtype": "int16"
+  },
+  {
+    "arquivo": "raw\\raster\\gaez_v4_6190\\yxHr0_mze.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "bbox": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "nodata": -9.0,
+    "bands": 1,
+    "dtype": "int16"
+  },
+  {
+    "arquivo": "raw\\raster\\gaez_v4_6190\\yxHr0_soy.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "bbox": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "nodata": -9.0,
+    "bands": 1,
+    "dtype": "int16"
+  },
+  {
+    "arquivo": "raw\\raster\\gaez_v4_6190\\yxLr0_mze.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "bbox": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "nodata": -9.0,
+    "bands": 1,
+    "dtype": "int16"
+  },
+  {
+    "arquivo": "raw\\raster\\gaez_v4_6190\\yxLr0_soy.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "bbox": [
+      -180.0,
+      -90.0,
+      180.0,
+      90.0
+    ],
+    "nodata": -9.0,
+    "bands": 1,
+    "dtype": "int16"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S08_00_W058_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -58.000416666666666,
+      -7.999583333333334,
+      -57.000416666666666,
+      -6.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S08_00_W059_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -59.000416666666666,
+      -7.999583333333334,
+      -58.000416666666666,
+      -6.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S09_00_W058_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -58.000416666666666,
+      -8.999583333333334,
+      -57.000416666666666,
+      -7.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S09_00_W059_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -59.000416666666666,
+      -8.999583333333334,
+      -58.000416666666666,
+      -7.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S09_00_W060_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -60.000416666666666,
+      -8.999583333333334,
+      -59.000416666666666,
+      -7.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S09_00_W061_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -61.000416666666666,
+      -8.999583333333334,
+      -60.000416666666666,
+      -7.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S09_00_W062_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -62.000416666666666,
+      -8.999583333333334,
+      -61.000416666666666,
+      -7.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S10_00_W051_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -51.000416666666666,
+      -9.999583333333334,
+      -50.000416666666666,
+      -8.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S10_00_W052_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -52.000416666666666,
+      -9.999583333333334,
+      -51.000416666666666,
+      -8.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S10_00_W053_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -53.000416666666666,
+      -9.999583333333334,
+      -52.000416666666666,
+      -8.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S10_00_W054_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -54.000416666666666,
+      -9.999583333333334,
+      -53.000416666666666,
+      -8.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S10_00_W055_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -55.000416666666666,
+      -9.999583333333334,
+      -54.000416666666666,
+      -8.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S10_00_W056_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -56.000416666666666,
+      -9.999583333333334,
+      -55.000416666666666,
+      -8.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S10_00_W057_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -57.000416666666666,
+      -9.999583333333334,
+      -56.000416666666666,
+      -8.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S10_00_W058_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -58.000416666666666,
+      -9.999583333333334,
+      -57.000416666666666,
+      -8.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S10_00_W059_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -59.000416666666666,
+      -9.999583333333334,
+      -58.000416666666666,
+      -8.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S10_00_W060_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -60.000416666666666,
+      -9.999583333333334,
+      -59.000416666666666,
+      -8.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S10_00_W061_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -61.000416666666666,
+      -9.999583333333334,
+      -60.000416666666666,
+      -8.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S10_00_W062_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -62.000416666666666,
+      -9.999583333333334,
+      -61.000416666666666,
+      -8.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S11_00_W051_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -51.000416666666666,
+      -10.999583333333334,
+      -50.000416666666666,
+      -9.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S11_00_W052_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -52.000416666666666,
+      -10.999583333333334,
+      -51.000416666666666,
+      -9.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S11_00_W053_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -53.000416666666666,
+      -10.999583333333334,
+      -52.000416666666666,
+      -9.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S11_00_W054_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -54.000416666666666,
+      -10.999583333333334,
+      -53.000416666666666,
+      -9.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S11_00_W055_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -55.000416666666666,
+      -10.999583333333334,
+      -54.000416666666666,
+      -9.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S11_00_W056_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -56.000416666666666,
+      -10.999583333333334,
+      -55.000416666666666,
+      -9.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S11_00_W057_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -57.000416666666666,
+      -10.999583333333334,
+      -56.000416666666666,
+      -9.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S11_00_W058_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -58.000416666666666,
+      -10.999583333333334,
+      -57.000416666666666,
+      -9.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S11_00_W059_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -59.000416666666666,
+      -10.999583333333334,
+      -58.000416666666666,
+      -9.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S11_00_W060_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -60.000416666666666,
+      -10.999583333333334,
+      -59.000416666666666,
+      -9.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S11_00_W061_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -61.000416666666666,
+      -10.999583333333334,
+      -60.000416666666666,
+      -9.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S11_00_W062_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -62.000416666666666,
+      -10.999583333333334,
+      -61.000416666666666,
+      -9.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S12_00_W051_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -51.000416666666666,
+      -11.999583333333334,
+      -50.000416666666666,
+      -10.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S12_00_W052_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -52.000416666666666,
+      -11.999583333333334,
+      -51.000416666666666,
+      -10.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S12_00_W053_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -53.000416666666666,
+      -11.999583333333334,
+      -52.000416666666666,
+      -10.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S12_00_W054_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -54.000416666666666,
+      -11.999583333333334,
+      -53.000416666666666,
+      -10.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S12_00_W055_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -55.000416666666666,
+      -11.999583333333334,
+      -54.000416666666666,
+      -10.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S12_00_W056_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -56.000416666666666,
+      -11.999583333333334,
+      -55.000416666666666,
+      -10.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S12_00_W057_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -57.000416666666666,
+      -11.999583333333334,
+      -56.000416666666666,
+      -10.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S12_00_W058_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -58.000416666666666,
+      -11.999583333333334,
+      -57.000416666666666,
+      -10.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S12_00_W059_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -59.000416666666666,
+      -11.999583333333334,
+      -58.000416666666666,
+      -10.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S12_00_W060_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -60.000416666666666,
+      -11.999583333333334,
+      -59.000416666666666,
+      -10.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S12_00_W061_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -61.000416666666666,
+      -11.999583333333334,
+      -60.000416666666666,
+      -10.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S13_00_W051_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -51.000416666666666,
+      -12.999583333333334,
+      -50.000416666666666,
+      -11.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S13_00_W052_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -52.000416666666666,
+      -12.999583333333334,
+      -51.000416666666666,
+      -11.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S13_00_W053_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -53.000416666666666,
+      -12.999583333333334,
+      -52.000416666666666,
+      -11.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S13_00_W054_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -54.000416666666666,
+      -12.999583333333334,
+      -53.000416666666666,
+      -11.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S13_00_W055_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -55.000416666666666,
+      -12.999583333333334,
+      -54.000416666666666,
+      -11.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S13_00_W056_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -56.000416666666666,
+      -12.999583333333334,
+      -55.000416666666666,
+      -11.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S13_00_W057_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -57.000416666666666,
+      -12.999583333333334,
+      -56.000416666666666,
+      -11.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S13_00_W058_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -58.000416666666666,
+      -12.999583333333334,
+      -57.000416666666666,
+      -11.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S13_00_W059_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -59.000416666666666,
+      -12.999583333333334,
+      -58.000416666666666,
+      -11.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S13_00_W060_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -60.000416666666666,
+      -12.999583333333334,
+      -59.000416666666666,
+      -11.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S13_00_W061_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -61.000416666666666,
+      -12.999583333333334,
+      -60.000416666666666,
+      -11.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S14_00_W051_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -51.000416666666666,
+      -13.999583333333334,
+      -50.000416666666666,
+      -12.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S14_00_W052_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -52.000416666666666,
+      -13.999583333333334,
+      -51.000416666666666,
+      -12.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S14_00_W053_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -53.000416666666666,
+      -13.999583333333334,
+      -52.000416666666666,
+      -12.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S14_00_W054_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -54.000416666666666,
+      -13.999583333333334,
+      -53.000416666666666,
+      -12.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S14_00_W055_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -55.000416666666666,
+      -13.999583333333334,
+      -54.000416666666666,
+      -12.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S14_00_W056_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -56.000416666666666,
+      -13.999583333333334,
+      -55.000416666666666,
+      -12.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S14_00_W057_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -57.000416666666666,
+      -13.999583333333334,
+      -56.000416666666666,
+      -12.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S14_00_W058_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -58.000416666666666,
+      -13.999583333333334,
+      -57.000416666666666,
+      -12.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S14_00_W059_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -59.000416666666666,
+      -13.999583333333334,
+      -58.000416666666666,
+      -12.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S14_00_W060_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -60.000416666666666,
+      -13.999583333333334,
+      -59.000416666666666,
+      -12.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S14_00_W061_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -61.000416666666666,
+      -13.999583333333334,
+      -60.000416666666666,
+      -12.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S15_00_W051_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -51.000416666666666,
+      -14.999583333333334,
+      -50.000416666666666,
+      -13.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S15_00_W052_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -52.000416666666666,
+      -14.999583333333334,
+      -51.000416666666666,
+      -13.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S15_00_W053_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -53.000416666666666,
+      -14.999583333333334,
+      -52.000416666666666,
+      -13.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S15_00_W054_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -54.000416666666666,
+      -14.999583333333334,
+      -53.000416666666666,
+      -13.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S15_00_W055_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -55.000416666666666,
+      -14.999583333333334,
+      -54.000416666666666,
+      -13.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S15_00_W056_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -56.000416666666666,
+      -14.999583333333334,
+      -55.000416666666666,
+      -13.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S15_00_W057_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -57.000416666666666,
+      -14.999583333333334,
+      -56.000416666666666,
+      -13.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S15_00_W058_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -58.000416666666666,
+      -14.999583333333334,
+      -57.000416666666666,
+      -13.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S15_00_W059_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -59.000416666666666,
+      -14.999583333333334,
+      -58.000416666666666,
+      -13.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S15_00_W060_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -60.000416666666666,
+      -14.999583333333334,
+      -59.000416666666666,
+      -13.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S15_00_W061_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -61.000416666666666,
+      -14.999583333333334,
+      -60.000416666666666,
+      -13.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S16_00_W052_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -52.000416666666666,
+      -15.999583333333334,
+      -51.000416666666666,
+      -14.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S16_00_W053_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -53.000416666666666,
+      -15.999583333333334,
+      -52.000416666666666,
+      -14.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S16_00_W054_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -54.000416666666666,
+      -15.999583333333334,
+      -53.000416666666666,
+      -14.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S16_00_W055_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -55.000416666666666,
+      -15.999583333333334,
+      -54.000416666666666,
+      -14.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S16_00_W056_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -56.000416666666666,
+      -15.999583333333334,
+      -55.000416666666666,
+      -14.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S16_00_W057_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -57.000416666666666,
+      -15.999583333333334,
+      -56.000416666666666,
+      -14.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S16_00_W058_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -58.000416666666666,
+      -15.999583333333334,
+      -57.000416666666666,
+      -14.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S16_00_W059_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -59.000416666666666,
+      -15.999583333333334,
+      -58.000416666666666,
+      -14.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S16_00_W060_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -60.000416666666666,
+      -15.999583333333334,
+      -59.000416666666666,
+      -14.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S16_00_W061_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -61.000416666666666,
+      -15.999583333333334,
+      -60.000416666666666,
+      -14.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S17_00_W053_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -53.000416666666666,
+      -16.999583333333334,
+      -52.000416666666666,
+      -15.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S17_00_W054_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -54.000416666666666,
+      -16.999583333333334,
+      -53.000416666666666,
+      -15.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S17_00_W055_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -55.000416666666666,
+      -16.999583333333334,
+      -54.000416666666666,
+      -15.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S17_00_W056_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -56.000416666666666,
+      -16.999583333333334,
+      -55.000416666666666,
+      -15.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S17_00_W057_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -57.000416666666666,
+      -16.999583333333334,
+      -56.000416666666666,
+      -15.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S17_00_W058_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -58.000416666666666,
+      -16.999583333333334,
+      -57.000416666666666,
+      -15.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S17_00_W059_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -59.000416666666666,
+      -16.999583333333334,
+      -58.000416666666666,
+      -15.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S17_00_W060_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -60.000416666666666,
+      -16.999583333333334,
+      -59.000416666666666,
+      -15.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S17_00_W061_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -61.000416666666666,
+      -16.999583333333334,
+      -60.000416666666666,
+      -15.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S18_00_W054_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -54.000416666666666,
+      -17.999583333333334,
+      -53.000416666666666,
+      -16.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S18_00_W055_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -55.000416666666666,
+      -17.999583333333334,
+      -54.000416666666666,
+      -16.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S18_00_W056_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -56.000416666666666,
+      -17.999583333333334,
+      -55.000416666666666,
+      -16.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S18_00_W057_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -57.000416666666666,
+      -17.999583333333334,
+      -56.000416666666666,
+      -16.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S18_00_W058_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -58.000416666666666,
+      -17.999583333333334,
+      -57.000416666666666,
+      -16.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S18_00_W059_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -59.000416666666666,
+      -17.999583333333334,
+      -58.000416666666666,
+      -16.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  },
+  {
+    "arquivo": "raw\\raster\\copdem90\\Copernicus_DSM_COG_30_S19_00_W054_00_DEM.tif",
+    "crs": "EPSG:4326",
+    "resolution": [
+      0.0008333333333333334,
+      0.0008333333333333334
+    ],
+    "bbox": [
+      -54.000416666666666,
+      -18.999583333333334,
+      -53.000416666666666,
+      -17.999583333333334
+    ],
+    "nodata": null,
+    "bands": 1,
+    "dtype": "float32"
+  }
+]

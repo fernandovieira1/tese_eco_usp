@@ -1,0 +1,251 @@
+{
+  "particoes": [
+    {
+      "arquivo": "auto_infracao_1977.csv",
+      "n_brasil": 2,
+      "n_mt": 0
+    },
+    {
+      "arquivo": "auto_infracao_1980.csv",
+      "n_brasil": 12,
+      "n_mt": 0
+    },
+    {
+      "arquivo": "auto_infracao_1981.csv",
+      "n_brasil": 98,
+      "n_mt": 0
+    },
+    {
+      "arquivo": "auto_infracao_1982.csv",
+      "n_brasil": 295,
+      "n_mt": 0
+    },
+    {
+      "arquivo": "auto_infracao_1983.csv",
+      "n_brasil": 135,
+      "n_mt": 0
+    },
+    {
+      "arquivo": "auto_infracao_1984.csv",
+      "n_brasil": 251,
+      "n_mt": 0
+    },
+    {
+      "arquivo": "auto_infracao_1985.csv",
+      "n_brasil": 661,
+      "n_mt": 0
+    },
+    {
+      "arquivo": "auto_infracao_1986.csv",
+      "n_brasil": 617,
+      "n_mt": 0
+    },
+    {
+      "arquivo": "auto_infracao_1987.csv",
+      "n_brasil": 829,
+      "n_mt": 2
+    },
+    {
+      "arquivo": "auto_infracao_1988.csv",
+      "n_brasil": 2611,
+      "n_mt": 8
+    },
+    {
+      "arquivo": "auto_infracao_1989.csv",
+      "n_brasil": 1423,
+      "n_mt": 9
+    },
+    {
+      "arquivo": "auto_infracao_1990.csv",
+      "n_brasil": 3387,
+      "n_mt": 19
+    },
+    {
+      "arquivo": "auto_infracao_1991.csv",
+      "n_brasil": 2121,
+      "n_mt": 14
+    },
+    {
+      "arquivo": "auto_infracao_1992.csv",
+      "n_brasil": 1063,
+      "n_mt": 7
+    },
+    {
+      "arquivo": "auto_infracao_1993.csv",
+      "n_brasil": 1312,
+      "n_mt": 33
+    },
+    {
+      "arquivo": "auto_infracao_1994.csv",
+      "n_brasil": 2099,
+      "n_mt": 33
+    },
+    {
+      "arquivo": "auto_infracao_1995.csv",
+      "n_brasil": 3755,
+      "n_mt": 91
+    },
+    {
+      "arquivo": "auto_infracao_1996.csv",
+      "n_brasil": 36651,
+      "n_mt": 1983
+    },
+    {
+      "arquivo": "auto_infracao_1997.csv",
+      "n_brasil": 37761,
+      "n_mt": 2553
+    },
+    {
+      "arquivo": "auto_infracao_1998.csv",
+      "n_brasil": 33597,
+      "n_mt": 3426
+    },
+    {
+      "arquivo": "auto_infracao_1999.csv",
+      "n_brasil": 34456,
+      "n_mt": 3606
+    },
+    {
+      "arquivo": "auto_infracao_2000.csv",
+      "n_brasil": 24898,
+      "n_mt": 1294
+    },
+    {
+      "arquivo": "auto_infracao_2001.csv",
+      "n_brasil": 26814,
+      "n_mt": 1453
+    },
+    {
+      "arquivo": "auto_infracao_2002.csv",
+      "n_brasil": 37646,
+      "n_mt": 1913
+    },
+    {
+      "arquivo": "auto_infracao_2003.csv",
+      "n_brasil": 22056,
+      "n_mt": 1863
+    },
+    {
+      "arquivo": "auto_infracao_2004.csv",
+      "n_brasil": 27190,
+      "n_mt": 2223
+    },
+    {
+      "arquivo": "auto_infracao_2005.csv",
+      "n_brasil": 33104,
+      "n_mt": 2204
+    },
+    {
+      "arquivo": "auto_infracao_2006.csv",
+      "n_brasil": 25983,
+      "n_mt": 1971
+    },
+    {
+      "arquivo": "auto_infracao_2007.csv",
+      "n_brasil": 28992,
+      "n_mt": 2368
+    },
+    {
+      "arquivo": "auto_infracao_2008.csv",
+      "n_brasil": 31316,
+      "n_mt": 2365
+    },
+    {
+      "arquivo": "auto_infracao_2009.csv",
+      "n_brasil": 23285,
+      "n_mt": 2057
+    },
+    {
+      "arquivo": "auto_infracao_2010.csv",
+      "n_brasil": 21384,
+      "n_mt": 1451
+    },
+    {
+      "arquivo": "auto_infracao_2011.csv",
+      "n_brasil": 20516,
+      "n_mt": 1712
+    },
+    {
+      "arquivo": "auto_infracao_2012.csv",
+      "n_brasil": 18979,
+      "n_mt": 1426
+    },
+    {
+      "arquivo": "auto_infracao_2013.csv",
+      "n_brasil": 16184,
+      "n_mt": 1365
+    },
+    {
+      "arquivo": "auto_infracao_2014.csv",
+      "n_brasil": 15292,
+      "n_mt": 1330
+    },
+    {
+      "arquivo": "auto_infracao_2015.csv",
+      "n_brasil": 17326,
+      "n_mt": 1324
+    },
+    {
+      "arquivo": "auto_infracao_2016.csv",
+      "n_brasil": 17823,
+      "n_mt": 1492
+    },
+    {
+      "arquivo": "auto_infracao_2017.csv",
+      "n_brasil": 16885,
+      "n_mt": 2181
+    },
+    {
+      "arquivo": "auto_infracao_2018.csv",
+      "n_brasil": 17884,
+      "n_mt": 2097
+    },
+    {
+      "arquivo": "auto_infracao_2019.csv",
+      "n_brasil": 14530,
+      "n_mt": 1504
+    },
+    {
+      "arquivo": "auto_infracao_2020.csv",
+      "n_brasil": 9533,
+      "n_mt": 633
+    },
+    {
+      "arquivo": "auto_infracao_2021.csv",
+      "n_brasil": 9662,
+      "n_mt": 734
+    },
+    {
+      "arquivo": "auto_infracao_2022.csv",
+      "n_brasil": 12853,
+      "n_mt": 754
+    },
+    {
+      "arquivo": "auto_infracao_2023.csv",
+      "n_brasil": 17192,
+      "n_mt": 970
+    },
+    {
+      "arquivo": "auto_infracao_2024.csv",
+      "n_brasil": 12308,
+      "n_mt": 791
+    },
+    {
+      "arquivo": "auto_infracao_2025.csv",
+      "n_brasil": 16272,
+      "n_mt": 987
+    },
+    {
+      "arquivo": "auto_infracao_2026.csv",
+      "n_brasil": 12398,
+      "n_mt": 745
+    }
+  ],
+  "n_mt": 52991,
+  "ids_ausentes": 379,
+  "ids_duplicados_nao_vazios": 0,
+  "codigo_invalido": 0,
+  "data_invalida": 0,
+  "valores_ausentes": 156,
+  "regra": "data da lavratura ISO com ou sem horario; todos status; sem preencher municipio-ano ausente com zero; geocodificacao candidata separada; area sem unidade confirmada nao somada"
+}

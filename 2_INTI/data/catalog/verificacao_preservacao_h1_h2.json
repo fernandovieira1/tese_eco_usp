@@ -1,0 +1,13 @@
+{
+  "branch": "main",
+  "head": "e5c8ece0c4516a79e2cef0b293ae2ce13f1259ce",
+  "originais_alterados": [],
+  "arquivos_dados": 1512,
+  "catalogo_linhas": 1737,
+  "perfis_tabelas": 19,
+  "falhas_http_rede": 8,
+  "hashes_divergentes": [],
+  "formato_incorreto": [
+    "2_INTI/data/raw/tabular/source_documents/mma_historico2021_20260930.pdf"
+  ]
+}

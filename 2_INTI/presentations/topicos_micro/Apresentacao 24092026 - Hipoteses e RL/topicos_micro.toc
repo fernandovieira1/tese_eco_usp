@@ -1,5 +1,0 @@
-\babel@toc {brazilian}{}\relax 
-\beamer@sectionintoc {1}{Tema do trabalho}{2}{0}{1}
-\beamer@sectionintoc {2}{Motivação}{3}{0}{2}
-\beamer@sectionintoc {3}{Problema}{5}{0}{3}
-\beamer@sectionintoc {4}{Hipóteses}{6}{0}{4}

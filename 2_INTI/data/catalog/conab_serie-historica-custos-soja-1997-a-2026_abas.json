@@ -1,0 +1,497 @@
+[
+  {
+    "aba": "C. Novo do Parecis-MT-2006",
+    "linhas": 47,
+    "colunas": 4
+  },
+  {
+    "aba": "C. Novo do Parecis-MT-2007",
+    "linhas": 47,
+    "colunas": 4
+  },
+  {
+    "aba": "C. Novo do Parecis-MT-2008",
+    "linhas": 47,
+    "colunas": 4
+  },
+  {
+    "aba": "C. Novo do Parecis-MT-2009",
+    "linhas": 47,
+    "colunas": 4
+  },
+  {
+    "aba": "C. Novo do Parecis-MT-2010",
+    "linhas": 47,
+    "colunas": 4
+  },
+  {
+    "aba": "C. Novo do Parecis-MT-2011",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "C. Novo do Parecis-MT-2012",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "C. Novo do Parecis-MT-2013",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "C. Novo do Parecis-MT-2014",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "C. Novo do Parecis-MT-2015",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "C. Novo do Parecis-MT-2016",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "C. Novo do Parecis-MT-2017",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "C. Novo do Parecis-MT-2018",
+    "linhas": 74,
+    "colunas": 16
+  },
+  {
+    "aba": "OGM-C. Novo do Parecis-MT-2014",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-C. Novo do Parecis-MT-2015",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-C. Novo do Parecis-MT-2016",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-C. Novo do Parecis-MT-2017",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-C. Novo do Parecis-MT-2018",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-C. Novo do Parecis-MT-2019",
+    "linhas": 73,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-C. Novo do Parecis-MT-2020",
+    "linhas": 64,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-C. Novo do Parecis-MT-2021",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-C. Novo do Parecis-MT-2022",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-C. Novo do Parecis-MT-2023",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-C. Novo do Parecis-MT-2024",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-C. Novo do Parecis-MT-2025",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "P. do Leste-MT-1997",
+    "linhas": 46,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-1998",
+    "linhas": 49,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-1999",
+    "linhas": 49,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-2000",
+    "linhas": 48,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-2001",
+    "linhas": 48,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-2002",
+    "linhas": 48,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-2003",
+    "linhas": 48,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-2004",
+    "linhas": 48,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-2005",
+    "linhas": 48,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-2006",
+    "linhas": 48,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-2007",
+    "linhas": 48,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-2008",
+    "linhas": 49,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-2009",
+    "linhas": 49,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-2010",
+    "linhas": 49,
+    "colunas": 4
+  },
+  {
+    "aba": "P. do Leste-MT-2011",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "P. do Leste-MT-2012",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "P. do Leste-MT-2013",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "P. do Leste-MT-2014",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "P. do Leste-MT-2015",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "P. do Leste-MT-2016",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "P. do Leste-MT-2017",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "P. do Leste-MT-2018",
+    "linhas": 74,
+    "colunas": 16
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2007",
+    "linhas": 50,
+    "colunas": 4
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2008",
+    "linhas": 50,
+    "colunas": 4
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2009",
+    "linhas": 50,
+    "colunas": 4
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2010",
+    "linhas": 50,
+    "colunas": 4
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2011",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2012",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2013",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2014",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2015",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2016",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2017",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2018",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2019",
+    "linhas": 73,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2020",
+    "linhas": 64,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2021",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2022",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2023",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2024",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2025",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-P. do Leste-MT-2026",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "Sorriso-MT-2007",
+    "linhas": 49,
+    "colunas": 4
+  },
+  {
+    "aba": "Sorriso-MT-2008",
+    "linhas": 49,
+    "colunas": 4
+  },
+  {
+    "aba": "Sorriso-MT-2009",
+    "linhas": 49,
+    "colunas": 4
+  },
+  {
+    "aba": "Sorriso-MT-2010",
+    "linhas": 49,
+    "colunas": 4
+  },
+  {
+    "aba": "Sorriso-MT-2011",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "Sorriso-MT-2012",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "Sorriso-MT-2013",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "Sorriso-MT-2014",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "Sorriso-MT-2015",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "Sorriso-MT-2016",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "Sorriso-MT-2017",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "Sorriso-MT-2018",
+    "linhas": 74,
+    "colunas": 16
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2007",
+    "linhas": 50,
+    "colunas": 4
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2008",
+    "linhas": 50,
+    "colunas": 4
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2009",
+    "linhas": 50,
+    "colunas": 4
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2010",
+    "linhas": 50,
+    "colunas": 4
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2011",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2012",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2013",
+    "linhas": 80,
+    "colunas": 15
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2014",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2015",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2016",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2017",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2018",
+    "linhas": 74,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2019",
+    "linhas": 73,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2020",
+    "linhas": 64,
+    "colunas": 13
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2021",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2022",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2023",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2024",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2025",
+    "linhas": 63,
+    "colunas": 5
+  },
+  {
+    "aba": "OGM-Sorriso-MT-2026",
+    "linhas": 63,
+    "colunas": 5
+  }
+]

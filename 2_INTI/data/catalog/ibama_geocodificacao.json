@@ -1,0 +1,9 @@
+{
+  "n_total": 52991,
+  "n_coordenadas_bbox": 25345,
+  "n_sem_poligono": 132,
+  "divergencias_codigo": 2355,
+  "assuncao": "coordenadas em graus tratadas provisoriamente como EPSG4326; datum original precisa autenticacao",
+  "malha": "IBGE 2024; nao representa historico de limites",
+  "zeros_coordenadas": "excluidos da geocodificacao, preservados nos eventos"
+}

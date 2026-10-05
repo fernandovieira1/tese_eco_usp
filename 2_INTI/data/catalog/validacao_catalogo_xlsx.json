@@ -1,0 +1,12 @@
+{
+  "csv_xlsx_identicos": true,
+  "linhas": 1737,
+  "colunas": 19,
+  "freeze_panes": "B2",
+  "tabelas": 1,
+  "abas": [
+    "Catalogo"
+  ],
+  "formulas": 0,
+  "timestamps": "prefixo UTC: preserva string ISO original e impede conversao automatica"
+}

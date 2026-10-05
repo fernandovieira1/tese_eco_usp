@@ -1,0 +1,1180 @@
+ 
+ 
+ 
+ 
+GAEZ v4 DATA REPOSITORY 
+USER’S GUIDE 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The recommended citation for the GAEZ v4 data is: 
+FAO and IIASA. Global Agro Ecological Zones version 4 (GAEZ v4). [Date accessed and/or 
+downloaded] Accessed DATE. URL: http://www.fao.org/gaez/ 
+ 
+ 
+  
+GAEZ v4 data repository 
+This is the list of folders contained in the GAEZ v4 data repository: 
+• LR: Land and water resources (link) 
+• Module I: res01 - Agro-climatic resources (link) 
+• Module II: res02 - Agro-climatic potential yield (link) 
+• Module V: res05 - Suitability and attainable yield (link) 
+• Module VI: res06 - Actual yields and production (link) 
+• Module VII: res07 - Yield and production gaps (link) 
+• Crop summary tables: tabulated results (link) 
+Please refer to Annex I for a complete list of themes, sub-themes and variables. 
+In the documentation folder of the GAEZ v4 data repository, the user can also access and download 
+the following documents: 
+• GAEZ v4 Model Documentation and excel file with related appendices; 
+• List of all the variables and corresponding units, crops and adopted symbology to use; 
+• List of all rasters (.tif) contained in the GAEZ v4 data repository and relative URL for the 
+download; 
+• Zip file with files in .clr format to use in desktop GIS software to visualize the categorical 
+layers with the correct symbology and classes and .xml files for the visualization of the 
+symbology for continuous layers. Instructions on how to load .clr files in QGIS and ArcGIS 
+softwares is provided in Annex II of this guide; 
+• Frequently Asked Questions document; 
+• Glossary with definitions of terms. 
+  
+GAEZ v4 data structure 
+The whole GAEZ v4 content is organized in several folders that correspond to the main GAEZ 
+modules shown in Figure 1 (see also GAEZ v4 Model Documentation1).  
+Figure 1. Overall structure of GAEZ v4 (Module I-VII) 
+ 
+ 
+1 Fischer, G., Nachtergaele, F.O., van Velthuizen, H.T., Chiozza, F., Franceschini, G., Henry, M., Muchoney, D. and 
+Tramberend, S. 2021. Global Agro-Ecological Zones v4 – Model documentation. Rome, FAO. 
+https://doi.org/10.4060/cb4744en  
+Module I
+Agro-climatic 
+indicators
+Module II/III
+Agro-climatic 
+suitability and
+yield estimation
+Module IV
+Agro-edaphic 
+suitability
+Module V
+Agro-ecological 
+suitability
+Module VI
+Downscaled 
+area, yield and 
+production
+Module VII
+Yield and 
+production gaps
+Spatial
+GIS Land 
+Resources 
+Database:
+Historical 
+and future 
+climate 
+attributes,
+Soil and 
+terrain 
+resources,
+Land cover, 
+Protected 
+areas, 
+Biodiversity 
+areas,
+Water 
+resources,
+Administr.
+units,
+Population, 
+Livestock
+Soil attribute 
+database; crop 
+soil requirements
+Crop statistics:
+Area, production, 
+yield, agricultural 
+prices
+Suitable extents;
+Attainable yields 
+and production
+Yield and 
+production gaps
+Agro-climatic
+Indicators
+Agro-climatic 
+suitability;
+Potential yields
+Spatial crop area, 
+yield, production
+Agro-edaphic 
+suitability;
+Soil unit rating
+LUT definition,
+crop parameters
+Data structure and naming convention for LR data 
+The LR directory contains data on different topics organized by folder: 
+• aez – with results by climate and time period on AEZ classification by 
+climate/soil/terrain/LC (33 or 57 classes), moisture regime class and thermal regime 
+classes  
+• excl – exclusion class layer 
+• lco – land cover class layers 
+• socio – selected socio-economic and demographic data 
+• soi1 – soil resources layers 
+• soi2 – soil Suitability 
+• ter – terrain resources layers 
+• wat – water resources layers 
+Please refer to Annex I for a complete list variables. 
+Data structure and naming convention for res01 data 
+The res01 directory contains: 
+• Historical observational climate data 
+• Modelled climate projections from multiple Global Climate Models (GCMs) 
+• Annual time-series datasets (TS) for each data category 
+Historical observational data are organized within the CRUTS32/Hist directory and include annual 
+time-series datasets stored in the TS folder. 
+CRUTS32/ 
+└── Hist/ 
+    └── TS/        # Annual time-series datasets 
+Historical time-series results include three 30-year average periods (6190 = 1961–1990; 7100 = 
+1971–2000; 8110 = 1981–2010), one 10-year average period (0010 = 2000–2010) and annual 
+time-series (TS) datasets from 1960 to 2010. 
+Projected modelled data are organized by climate model (five folders) and Representative 
+Concentration Pathways (RCPs) (four folders). In addition to individual model outputs, results for 
+an ENSEMBLE mean scenario are also provided. The assessment includes the following climate 
+models derived from recent IPCC AR5 Earth System Model (ESM) outputs: 
+• GFDL-ESM2M 
+• HadGEM2-ES 
+• IPSL-CM5A-LR 
+• MIROC-ESM-CHEM 
+• NorESM1-M 
+ 
+ 
+Model Description 
+GFDL-ESM2M The Geophysical Fluid Dynamics Laboratory (GFDL) has constructed 
+NOAA’s first Earth System Models (ESMs) to advance our understanding 
+of how the Earth's biogeochemical cycles, including human actions, 
+interact with the climate system. 
+HadGEM2-ES It is a coupled Earth System Model that was used by the Met Office 
+Hadley Centre for the CMIP5 centennial simulations. 
+IPSL-CM5A-LR It is developed by IPSL, includes 5 component models representing the 
+Earth System climate and its carbon cycle: LMDz (atmosphere), NEMO 
+(ocean, oceanic biogeochemistry and sea-ice), ORCHIDEE (continental 
+surfaces and vegetation), and INCA (atmospheric chemistry), coupled 
+through OASIS. 
+MIROC-ESM-CHEM It is based on a global climate model MIROC (Model for Interdisciplinary 
+Research on Climate) which has been cooperatively developed by the 
+University of Tokyo, NIES, and JAMSTEC (K-1 model developers, 2004; 
+Nozawa et al., 2007) 
+NorESM1-M (Norwegian Earth System Model) based on the Community Climate 
+System Model version 4 (CCSM4) of the University Corporation for 
+Atmospheric Research. 
+ 
+The selected Representative Carbon Pathways (RCP) applied to the models are: 
+RCP Description 
+rcp2p6 The emission pathway is representative for scenarios in the literature 
+leading to very low greenhouse gas concentration levels. It is a so-called 
+"peak" scenario: represents a strong mitigation scenario and is 
+extended by assuming constant emissions after 2100 (including net 
+negative CO2 emissions), leading to CO2 concentrations returning to 
+360 ppm by 2300. 
+rcp4p5 It is a stabilization scenario where total radiative forcing is stabilized 
+before 2100 by employment of a range of technologies and strategies 
+for reducing greenhouse gas emissions. 
+rcp6p0 It is a stabilization scenario where total radiative forcing is stabilized 
+after 2100 without overshoot by employment of a range of technologies 
+and strategies for reducing greenhouse gas emissions. 
+rcp8p5 It is characterized by increasing greenhouse gas emissions over time 
+representative for scenarios in the literature leading to high greenhouse 
+gas concentration levels. The underlying scenario drivers and resulting 
+development path are based on the A2r scenario detailed in Riahi et al. 
+(2007). 
+ 
+GAEZ v4 future periods correspond to 30-year average of years 2011-2040 (2020s), 2041-2070 
+(2050s), and 2070-2099 (2080s). 
+All projected datasets follow the same structure: 
+GFDL-ESM2M/ 
+├── rcp2p6/ 
+│   └── TS/ 
+├── rcp4p5/ 
+│   └── TS/ 
+├── rcp6p0/ 
+│   └── TS/ 
+└── rcp8p5/ 
+    └── TS/ 
+HadGEM2-ES/ 
+├── rcp2p6/ 
+│   └── TS/ 
+├── rcp4p5/ 
+│   └── TS/ 
+├── rcp6p0/ 
+│   └── TS/ 
+└── rcp8p5/ 
+    └── TS/ 
+IPSL-CM5A-LR/ 
+├── rcp2p6/ 
+│   └── TS/ 
+├── rcp4p5/ 
+│   └── TS/ 
+├── rcp6p0/ 
+│   └── TS/ 
+└── rcp8p5/ 
+    └── TS/ 
+MIROC-ESM-CHEM/ 
+├── rcp2p6/ 
+│   └── TS/ 
+├── rcp4p5/ 
+│   └── TS/ 
+├── rcp6p0/ 
+│   └── TS/ 
+└── rcp8p5/ 
+    └── TS/ 
+NorESM1-M/ 
+├── rcp2p6/ 
+│   └── TS/ 
+├── rcp4p5/ 
+│   └── TS/ 
+├── rcp6p0/ 
+│   └── TS/ 
+└── rcp8p5/ 
+    └── TS/ 
+ 
+Each raster filename follows a structured naming convention that encodes key information about 
+the data. The format is: <res01 variable>_<source climate dataset or climate 
+model>_<emission scenario or pathway code>_<time period>.tif. This includes: 
+• the res01 variable (e.g., “et0” for reference evapotranspiration, see GAEZ v4 variable 
+listing in Annex I) 
+• the climate model (e.g., GFDL-ESM4) 
+• the scenario (e.g., rcp2p6, rcp4p5, rcp6p0, rcp5p85 or hist that is used for historical 
+data modelled using CRUTS32 climate data) 
+• the time period 
+For example, historical datasets use paths such as 
+\res01\CRUTS32\Hist\cbt_CRUTS32_Hist_0010.tif, while future projections follow formats like 
+\res01\GFDL-ESM2M\rcp2p6\cbt_GFDL-ESM2M_rcp2p6_2020s.tif. 
+Data structure and naming convention for res02 data 
+For res02 there are folders for the historical data and for the modelled projected results as follows. 
+Historical data are organized within the CRUTS32/Hist folder, with the first 4 digits showing the 
+period (e.g. 6190 for 1961-1990) and the fifth digit represents the input level (H - High, L - Low): 
+CRUTS32/ 
+└── Hist/ 
+    └── 6190H/ 
+    └── 6190L/ 
+    └── 7100H/ 
+    └── 7100L/ 
+    └── 8110H/ 
+    └── 8110L/ 
+Projected modelled data are organized by scenario (5 folders), RCPs (4 folders) and then by time 
+period (3 folders). To note that only high input level is modelled for projected data. See example 
+below for one climate model: 
+GFDL-ESM2M/ 
+├── rcp2p6/ 
+│   └── 2020sH/ 
+│   └── 2050sH/ 
+│   └── 2080sH/ 
+├── rcp4p5/ 
+│   └── 2020sH/ 
+│   └── 2050sH/ 
+│   └── 2080sH/ 
+├── rcp6p0/ 
+│   └── 2020sH/ 
+│   └── 2050sH/ 
+│   └── 2080sH/ 
+└── rcp8p5/ 
+│   └── 2020sH/ 
+│   └── 2050sH/ 
+│   └── 2080sH/ 
+ 
+Each raster filename follows a structured naming convention that encodes key information about 
+the data. The format is: <crop>_<water balance>_<res02 variable>.tif. This includes: 
+• the crop name (e.g., “maiz” for maize) 
+• the water balance level (see table below) 
+• the res02 variable (e.g., “cbd” for beginning crop growth cycle, see GAEZ v4 variable 
+listing in Annex I) 
+For example, historical datasets use paths such as \res02\6190H\alfa015b_eta.tif, while future 
+projections follow formats like \res02\GFDL-ESM2M\rcp2p6\2020sH\alfa015b_eta.tif. 
+For res02 the following crops have been modelled: 
+Crop code Crop name Crop code Crop name 
+alfa Alfalfa oats Oat 
+bana Banana oilp Oil palm 
+barl Barley oliv Olive 
+bckw Buckwheat onio Onion 
+bean Phaseolus bean pigp Pigeonpea 
+bhsg Biomass highland sorghum pmlt Pearl millet 
+blsg Biomass lowland sorghum prub Para rubber 
+bsrg Biomass sorghum rape Rapeseed 
+btsg Biomass temperate sorghum rcgr Reed canary grass 
+cabb Cabbage ricd Dryland rice 
+carr Carrot ricw Wetland rice 
+casv Cassava ryes Rye 
+chck Chickpea sbrl Spring barley 
+citr Citrus sorg Sorghum 
+cocc Cocoa common soyb Soybean 
+coch Cocoa hybrid spot Sweet potato 
+cocn Coconut srye Spring rye 
+coco Cocoa sugb Sugar beet 
+cofa Coffee arabica sugc Sugar cane 
+coff Coffee sunf Sunflower 
+cofr Coffee robusta swgr Switchgrass 
+cott Cotton swhe Spring wheat 
+cowp Cowpea teas Tea 
+cyam Cocoyam tmze Temperate maize 
+dpea Dry pea toba Tobacco 
+flax Flax toma Tomato 
+fmlt Foxtail millet tsrg Temperate sorghum 
+gram Gram wbrl Winter barley 
+gras Grass whea Wheat 
+grlg Pasture legumes wpot White potato 
+grnd Groundnut wrye Winter rye 
+gyam Greater yam wwhe Winter wheat 
+hmze Highland maize wyam White yam 
+hsrg Highland sorghum yams Yam 
+jatr Jatropha yyam Yellow yam 
+lmze Lowland maize   
+lsrg Lowland sorghum   
+maiz Maize   
+misc Miscanthus   
+mllt Millet   
+mzsi Silage maize   
+napr Napier grass   
+ 
+For the water balance levels, the following codes were adopted: 
+Water content Description 
+015b Available water content of 15 mm/m (under rain-fed conditions) 
+050b Available water content of 50 mm/m (under rain-fed conditions) 
+075b Available water content of 75 mm/m (under rain-fed conditions) 
+100a Available water content of 100 mm/m (under irrigation conditions) 
+100b Available water content of 100 mm/m (under rain-fed conditions) 
+125b Available water content of 125 mm/m (under rain-fed conditions) 
+150a Available water content of 150 mm/m (under irrigation conditions) 
+150b Available water content of 150 mm/m (under rain-fed conditions) 
+175b Available water content of 175 mm/m (under rain-fed conditions) 
+200a Available water content of 200 mm/m (under irrigation conditions) 
+200b Available water content of 200 mm/m (under rain-fed conditions) 
+Data structure and naming convention for res05 data 
+The data structure for res05 is the same as for res02. Historical data are organized within the 
+CRUTS32/Hist folder, with the first 4 digits showing the period (e.g. 6190 for 1961-1990) and the 
+fifth digit represents the input level (H - High, L - Low): 
+CRUTS32/ 
+└── Hist/ 
+    └── 6190H/ 
+    └── 6190L/ 
+    └── 7100H/ 
+    └── 7100L/ 
+    └── 8110H/ 
+    └── 8110L/ 
+Projected modelled data are organized by scenario (5 folders), RCPs (4 folders) and then by time 
+period (3 folders). In addition to the five climate scenarios, results for an ENSEMBLE mean scenario 
+are also provided. To note that only high input level is modelled for projected data. See example 
+below for one climate model: 
+GFDL-ESM2M/ 
+├── rcp2p6/ 
+│   └── 2020sH/ 
+│   └── 2050sH/ 
+│   └── 2080sH/ 
+├── rcp4p5/ 
+│   └── 2020sH/ 
+│   └── 2050sH/ 
+│   └── 2080sH/ 
+├── rcp6p0/ 
+│   └── 2020sH/ 
+│   └── 2050sH/ 
+│   └── 2080sH/ 
+└── rcp8p5/ 
+│   └── 2020sH/ 
+│   └── 2050sH/ 
+│   └── 2080sH/ 
+ 
+Each raster filename follows a structured naming convention that encodes key information about 
+the data. The format is: <res05 variable><input level><water supply><CO2 
+fertilization><crop>.tif. This includes: 
+• the res05 variable (e.g., “sc” for crop suitability index in classes; for current cultivated 
+land in grid cell, see GAEZ v4 variable listing in Annex I) 
+• the input level (“H” for high input level of management and “L” for low input level of 
+management) 
+• the water supply (see table below) 
+• CO2 fertilization (“0” without Co2 Fertilization otherwise with Co2 Fertilization) 
+• the crop name (e.g., “mze” for maize) 
+For example, historical datasets use paths such as \res05\6190H\scHr0_mze.tif, while future 
+projections follow formats like \res05\GFDL-ESM2M\rcp2p6\2020sH\scHr0_mze.tif. 
+For res05 the following crops have been modelled: 
+Crop code Crop name Crop code Crop name 
+alf Alfalfa pea Dry pea 
+ban Banana phb Phaseolus bean 
+bck Buckwheat pig Pigeonpea 
+brl Barley pml Pearl millet 
+bsg Biomass sorghum rcd Dryland rice 
+cab Cabbage rcg Reed canary grass 
+car Carrot rcw Wetland rice 
+chk Chickpea rsd Rapeseed 
+cit Citrus rub Rubber 
+coc Cocoa rye Rye 
+cof Coffee sfl Sunflower 
+con Coconut soy Soybean 
+cot Cotton spo Sweet potato 
+cow Cowpea srg Sorghum 
+csv Cassava sub Sugar beet 
+flx Flax suc Sugar cane 
+fml Foxtail millet swg Switchgrass 
+grd Groundnut tea Tea 
+grm Gram tob Tobacco 
+jtr Jatropha tom Tomato 
+mis Miscanthus whe Wheat 
+mze Maize wpo White potato 
+nap Napier grass yam Yam 
+oat Oat   
+olp Oil palm   
+olv Olive   
+oni Onion   
+ 
+For the water supply, the following codes were adopted: 
+Water supply Description 
+a Rain-fed all phases2 
+d Drip irrigation 
+g Gravity irrigation 
+r Rain-fed 
+s Sprinkler irrigation 
+i Irrigation (not present in the rasters)3 
+ 
+2 For rain-fed conditions two soil evaluations were done because of soil phases. A subset of soil phases in the HWSD is 
+considered removable and is assumed to have been removed when the land is in agricultural use (this is the set of ‘r’ 
+results). The ‘a’ results take all soil phases into account as recorded in the HWSD. The difference of ‘a’ and ‘r’ results can 
+indicate areas where additional measures are needed to deal with these removable soil phases. 
+3 The ‘I’ was generated from ‘s’, ‘g’ and ‘d’ results according to the following rule: ‘I’ is taken from ‘s’ where available. 
+When ‘s’ is not available then use ‘g’ (e.g. wetland rice). When both ‘s’ and ‘g’ are not available then use ‘d’ (e.g. oil palm). 
+For two crops, cassava and yams, irrigation was not considered at all. 
+Data structure and naming convention for res06 data 
+The res06 directory is organized into four main sub-folders representing production systems and 
+output types: 
+• I — Irrigated 
+• R — Rain-fed 
+• T — Total (combined rain-fed and irrigated) 
+• V — Aggregated crop volumes 
+res06/ 
+├── R/ 
+│   └── 2000/ 
+│   └── 2010/ 
+├── I/ 
+│   └── 2000/ 
+│   └── 2010/ 
+├── T/ 
+│   └── 2000/ 
+│   └── 2010/ 
+├── V/ 
+│   └── 2000/ 
+│   └── 2010/ 
+ 
+Each of these folders contains results for two reference periods: 
+• 2000 — representing downscaled statistics for 1999–2001 
+• 2010 — representing downscaled statistics for 2009–2011 
+These datasets present the results of spatial downscaling of agricultural statistics covering 31 crops 
+and crop groups: 
+Crop code Crop name Crop code Crop name 
+all Main crops pls Pulses 
+ban Banana rcw Wetland rice 
+brl Barley rsd Rapeseed 
+cc2 Stimulants rt1 Potato and sweet potato 
+cer Cereals rt2 Cassava 
+cot Cotton rt3 Yams and other roots 
+fdd Fodder crops rts Root crops 
+frt Fruits and nuts sfl Sunflower 
+grd Groundnut soy Soybean 
+mlt Millet srg Sorghum 
+mze Maize sub Sugar beet 
+nes Rest of crops suc Sugar cane 
+oce Other cereals tob Tobacco 
+oil Oil seeds veg Vegetables 
+olp Oil palm whe Wheat 
+olv Olive   
+ 
+Each raster filename follows a structured naming convention that encodes key information about 
+the data. The format is: <crop>_<reference period>_<res06 variable>.tif. This includes: 
+• the crop name (e.g., “ban” for banana), 
+• the reference period (2000 or 2010), and 
+• the res06 variable (e.g., “har” for harvested area, see GAEZ v4 variable listing in Annex 
+I). 
+For example, rain-fed datasets use paths such as \res06\R\2000\ban_2000_har.tif.  
+Data structure and naming convention for res07 data 
+The res07 directory contains results from the Yield Gap Analysis based on current downscaling for 
+the reference years 2000 and 2010. Same as for res06, the res07 directory is organized into four 
+main sub-folders representing production systems and output types: 
+• I — Irrigated 
+• R — Rain-fed 
+• T — Total (combined rain-fed and irrigated) 
+• V — Aggregated crop volumes 
+res07/ 
+├── R/ 
+│   └── 2000/ 
+│   └── 2010/ 
+├── I/ 
+│   └── 2000/ 
+│   └── 2010/ 
+├── T/ 
+│   └── 2000/ 
+│   └── 2010/ 
+├── V/ 
+│   └── 2000/ 
+│   └── 2010/ 
+The directories refer to: 
+• I — Irrigated 
+• R — Rain-fed 
+• T — Total (combined rain-fed and irrigated) 
+• V — Aggregated crop volumes 
+For each crop and time point (2000 and 2010) results are available in terms of Apparent 
+Production Gap and Apparent Yield Achievement Ratio. For res07 the following crops have been 
+modelled: 
+Crop code Crop name Crop code Crop name 
+ban Banana pls Pulses 
+brl Barley rcw Wetland rice 
+cot Cotton rsd Rapeseed 
+gap All crops rt1 Potato and sweet potato 
+gce Cereals rt2 Cassava 
+goi Oil crops rt3 Yams and other roots 
+grd Groundnut sfl Sunflower 
+grt Root crops soy Soybean 
+mlt Millet srg Sorghum 
+mze Maize sub Sugar beet 
+oce Other cereals suc Sugar cane 
+olp Oil palm tob Tobacco 
+olv Olive whe Wheat 
+ 
+Each raster filename follows a structured naming convention that encodes key information about 
+the data. The format is: <crop>_<reference period>_<res07 variable>.tif. This includes: 
+• the crop name (e.g., “ban” for banana), 
+• the reference period (2000 or 2010), and 
+• the res07 variable (e.g., “qga” for apparent production gap, see GAEZ v4 variable listing 
+in Annex I). 
+For example, rain-fed datasets use paths such as \res07\R\2000\ban_2000_qga.tif.  
+Data structure and naming convention for crop summary tables 
+In the summary tables folder of the GAEZ v4 data repository are presented the tabulated results of 
+the crop evaluation in Module V (res05) on suitability and attainable yield. 
+The results have been aggregated and tabulated by administrative units (country or 
+country/province for some major countries, and by sub-continental and continental regional 
+aggregations) and by broad hydro-regions. The crop summary tables are organized by land cover 
+class, protection/exclusion class and AEZ class and summarize by suitability class the suitable 
+extents, attainable production and yields, various constraint factors (due to thermal regime, 
+moisture deficits, agro-climatic constraints due to pest, disease and workability limitations, and due 
+to soil/terrain limitations) and aggregate simulated water deficits (rain-fed conditions) 
+respectively net irrigation requirements (irrigated conditions). 
+Crop summary tables are provided for 53 crops, separately for rain-fed and irrigated conditions, 
+and for historical and future climate scenarios. For 12 major countries, summary statistic were 
+prepared also at sub-national level. Those countries have been selected based on their ranking in 
+terms of three criteria: (i) total country area, (ii) total cropland area, and (iii) average size of sub-
+national administrative units. 
+The data are organized in three folders for historical data (CRUTS32), projected data for ENSEMBLE 
+mean climate scenario and for the single five climate scenarios. Users can download the data by 
+crop, geographic level, climate data source, and input level. The result is downloadable as .zip file 
+containing the crop summary tables in .csv format.  
+The geographic levels are: 
+Geographic level code Description 
+bn1 Sub-national 
+ctr Country 
+rg1 Sub-continental regions 
+rg2 Continent 
+rg3 World Bank income groups 
+hy0 Major hydrological basins 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Each .csv file contained in the .zip file adopts the same naming convention. See example below: 
+ 
+The table below explains the column headings used in the crop summary tables: 
+Column heading Description 
+ADM0/CTR Country-level administrative ISO 3166-1 alpha-3 code (admin. 
+Level 0) 
+ADM1 Province-level administrative code (admin. Level 1) 
+REG1 Regional aggregation level 1 (sub-continental regions) 
+REG2 Regional aggregation level 2 (continental regions) 
+REG3 Regional aggregation level 3 (classification by World Bank income 
+groups) 
+HYD0 Major hydro-basin 4-digit code 
+HR1 Code of continental-level hydro-region 
+LC Land cover class indicator 
+EXC Protection/exclusion class indicator 
+AEZ AEZ class indicator (by aggregate 33-class system) 
+CRP Crop acronym 
+Land extents Total area of spatial unit in square kilometers (km2) 
+Suitability classes  Suitable area (km2), by suitability class, for:  
+VS - very suitable land 
+S - suitable land 
+MS  - moderately suitable land 
+mS  - marginally suitable land 
+vmS  - very marginally suitable land 
+NS  - not suitable land 
+
+Potential production  
+Attainable production, in 1000 tons dry matter (DM)*, by 
+suitability class. Note, estimates of attainable production account 
+for (input level specific) fallow requirements 
+Potential yield  Attainable agro-ecological yield, in kg/ha DM* 
+Ymax  - highest occurring class yield in spatial unit 
+VS, S, etc.  - average class yield by suitability class in spatial unit 
+Crop production 
+constraints  
+Constraint indicators (range 0-10000) are provided by suitability 
+class:  
+fc1  - thermal constraints indicator 
+fc2  - moisture constraints indicator 
+fc3  - agro-climatic constraints indicator 
+fc4  - soil and terrain constraints indicator 
+ Constraint scale runs from 10000 (=no constraint) to 0 (=100 
+percent constraint).  
+Water deficits / Net 
+irrigation requirement 
+Provides by suitability class estimates (in mm) of simulated water 
+deficits (rain-fed conditions) respectively net irrigation 
+requirements (irrigated conditions); values are average (wd), 
+minimum (wn) and maximum (wx) levels for each spatial unit 
+Area, production and 
+yield aggregated data 
+Summarizes area (A), production (P) and yield (Yld) results for 
+combinations of suitability classes, by VS+S land, VS+S+MS land 
+and VS+S+MS+mS land 
+* For most crops the yields are given in kg dry weight per hectare. For alfalfa, miscanthus, napier grass, reed canary grass, 
+pasture legumes and grasses the yields are in 10kg dry weight per hectare. For sugar beet and sugar cane the yields are in kg 
+sugar per hectare and for oil palm in kg oil per hectare. Cotton yields are given as kg lint per hectare. 
+LC class codes (column LC) include: 1. Cropland; 2. Built-up/Artificial surfaces; 3. Tree-covered 
+land; Mangroves; 4. Shrub-covered land; 5. Grassland; Herbaceous vegetation, aquatic or regularly 
+flooded; 6. Sparse vegetation; Bare soil; Snow and glaciers; 7. Water bodies; 8. Cropland, rain-fed; 9. 
+Cropland, equipped with irrigation; 10. LC not assigned, and 11. Total land. 
+Exclusion class codes (column EXC) comprise of: 1. No protection/exclusion; 2. Protected area 
+recorded in WDPA 2017; 3. Exclusion status due to presence in KBA 2017, GLWD-3 classes 4–9, or 
+in 1-pixel buffer zone around WDPA 2017 polygon; 4. Dominantly forest, and 5. Total land. The 
+class 'Dominantly forest' is defined as land in 30 arc-second grid cells where the share of tree-
+covered land and mangroves is 90% or more and which are not marked as exclusion classes 2 or 3. 
+Agro-ecological Zones class codes (column AEZ): 1. Tropics, lowland; semi-arid; 2. Tropics, 
+lowland; sub-humid; 3. Tropics, lowland; humid; 4. Tropics, highland; semi-arid; 5. Tropics, 
+highland; sub-humid; 6. Tropics, highland; humid; 7. Subtropics, warm; semi-arid; 8. Subtropics, 
+warm; sub-humid; 9. Subtropics, warm; humid; 10. Subtropics, moderately cool; semi-arid; 11. 
+Subtropics, moderately cool; sub-humid; 12. Subtropics, moderately cool; humid; 13. Subtropics, 
+cool; semi-arid; 14. Subtropics, cool; sub-humid; 15. Subtropics, cool; humid; 16. Temperate, 
+moderate; dry; 17. Temperate, moderate; moist; 18. Temperate, moderate; wet; 19. Temperate, 
+cool; dry; 20. Temperate, cool; moist; 21. Temperate, cool; wet; 22. Boreal/Cold, no permafrost; dry; 
+23. Boreal/Cold, no permafrost; moist; 24. Boreal/Cold, no permafrost; wet; 25. Dominantly very 
+steep terrain; 26. Land with severe soil/terrain limitations; 27. Land with ample irrigated soils; 28. 
+Dominantly hydromorphic soil; 29. Desert/Arid climate; 30. Boreal/Cold, with permafrost; 31. 
+Arctic/Very cold climate; 32. Dominantly urban/built-up; 33. Dominantly water; 34. Undefined, and 
+35. Total land. 
+Annex I – GAEZ v4 variable listing 
+Module 
+code Module name Variable 
+acronym Variable name 
+LR Land and Water 
+Resources aez_v9v2 AEZ classification by climate/soil/terrain/LC (57 
+classes) 
+LR Land and Water 
+Resources aez_v9v2red Simplified AEZ classification (33 classes) 
+LR Land and Water 
+Resources 
+aez_v9v2red_
+5m Dominant AEZ class (33 classes) at 5 arc-minutes 
+LR Land and Water 
+Resources 
+mst_regime_c
+lass Moisture regime class 
+LR Land and Water 
+Resources 
+soil_regime_c
+lass 
+Soil/terrain and special purpose land cover 
+classes 
+LR Land and Water 
+Resources 
+thz_regime_cl
+ass Thermal regime class 
+LR Land and Water 
+Resources faocmb_2010 Dominant land cover/use 
+LR Land and Water 
+Resources 
+GLCSv11_01_
+5m Artificial surfaces 
+LR Land and Water 
+Resources 
+GLCSv11_02_
+5m Cropland 
+LR Land and Water 
+Resources 
+GLCSv11_03_
+5m Grassland 
+LR Land and Water 
+Resources 
+GLCSv11_04_
+5m Tree-covered land 
+LR Land and Water 
+Resources 
+GLCSv11_05_
+5m Shrub-covered land 
+LR Land and Water 
+Resources 
+GLCSv11_06_
+5m Herbaceous, regularly flooded 
+LR Land and Water 
+Resources 
+GLCSv11_07_
+5m Mangroves 
+LR Land and Water 
+Resources 
+GLCSv11_08_
+5m Sparsely vegetated land 
+LR Land and Water 
+Resources 
+GLCSv11_09_
+5m Bare land 
+LR Land and Water 
+Resources 
+GLCSv11_10_
+5m Permanent snow/glacier 
+LR Land and Water 
+Resources 
+GLCSv11_11_
+5m Water 
+LR Land and Water 
+Resources 
+GLCSv11_12_
+5m Cropland, equipped for full control irrigation 
+LR Land and Water 
+Resources 
+hwsd_domi_0
+5m Dominant soil (5 arc-minute) 
+LR Land and Water 
+Resources 
+hwsd_domi_3
+0s Dominant soil (30 arc-second) 
+LR Land and Water 
+Resources 
+SQ0_idx_v9a
+H Most limiting soil quality, high inputs 
+LR Land and Water 
+Resources SQ0_idx_v9aL Most limiting soil quality, low inputs 
+LR Land and Water 
+Resources 
+SQ0_mze_v9a
+H Most limiting soil quality rating factor, high inputs 
+LR Land and Water 
+Resources 
+SQ0_mze_v9a
+L Most limiting soil quality rating factor, low inputs 
+LR Land and Water 
+Resources 
+SQ1_mze_v9a
+L Nutrient availability, low inputs 
+LR Land and Water 
+Resources 
+SQ2_mze_v9a
+H Nutrient retention capacity, high inputs 
+LR Land and Water 
+Resources 
+SQ3_mze_v9a
+H Rooting conditions, high inputs 
+LR Land and Water 
+Resources 
+SQ3_mze_v9a
+L Rooting conditions, low inputs 
+LR Land and Water 
+Resources 
+SQ4_mze_v9a
+H Oxygen availability to roots, high inputs 
+LR Land and Water 
+Resources 
+SQ4_mze_v9a
+L Oxygen availability to roots, low inputs 
+LR Land and Water 
+Resources 
+SQ5_mze_v9a
+H Presence of salinity and sodicity, high inputs 
+LR Land and Water 
+Resources 
+SQ5_mze_v9a
+L Presence of salinity and sodicity, low inputs 
+LR Land and Water 
+Resources 
+SQ6_mze_v9a
+H Presence of lime and gypsum, high inputs 
+LR Land and Water 
+Resources 
+SQ6_mze_v9a
+L Presence of lime and gypsum, low inputs 
+LR Land and Water 
+Resources 
+SQ7_mze_v9a
+H Workability, high inputs 
+LR Land and Water 
+Resources 
+SQ7_mze_v9a
+L Workability, low inputs 
+LR Land and Water 
+Resources siHr_sss_mze Soil suitability, rain-fed, high inputs 
+LR Land and Water 
+Resources siHr_sst_mze Soil and terrain suitability, rain-fed, high inputs 
+LR Land and Water 
+Resources siLr_sss_mze Soil suitability, rain-fed, low inputs 
+LR Land and Water 
+Resources siLr_sst_mze Soil and terrain suitability, rain-fed, low inputs 
+LR Land and Water 
+Resources altmed05m Median altitude (5 arc-minute) 
+LR Land and Water 
+Resources altmed30s Median altitude (30 arc-second) 
+LR Land and Water 
+Resources slp05cl1 Terrain slope 0-0.5% (5 arc-minute) 
+LR Land and Water 
+Resources slp05cl2 Terrain slope 0.5-2% (5 arc-minute) 
+LR Land and Water 
+Resources slp05cl3 Terrain slope 2-5% (5 arc-minute) 
+LR Land and Water 
+Resources slp05cl4 Terrain slope 5-8% (5 arc-minute) 
+LR Land and Water 
+Resources slp05cl5 Terrain slope 8-16% (5 arc-minute) 
+LR Land and Water 
+Resources slp05cl6 Terrain slope 16-30% (5 arc-minute) 
+LR Land and Water 
+Resources slp05cl7 Terrain slope 30-45% (5 arc-minute) 
+LR Land and Water 
+Resources slp05cl8 Terrain slope >45% (5 arc-minute) 
+LR Land and Water 
+Resources slp30cl1 Terrain slope 0-0.5% (30 arc-second) 
+LR Land and Water 
+Resources slp30cl2 Terrain slope 0.5-2% (30 arc-second) 
+LR Land and Water 
+Resources slp30cl3 Terrain slope 2-5% (30 arc-second) 
+LR Land and Water 
+Resources slp30cl4 Terrain slope 5-8% (30 arc-second) 
+LR Land and Water 
+Resources slp30cl5 Terrain slope 8-16% (30 arc-second) 
+LR Land and Water 
+Resources slp30cl6 Terrain slope 16-30% (30 arc-second) 
+LR Land and Water 
+Resources slp30cl7 Terrain slope 30-45% (30 arc-second) 
+LR Land and Water 
+Resources slp30cl8 Terrain slope >45% (30 arc-second) 
+LR Land and Water 
+Resources slpmed05m Median terrain slope class (5 arc-minute) 
+LR Land and Water 
+Resources slpmed30s Median terrain slope class (30 arc-second) 
+LR Land and Water 
+Resources 
+exclusion_20
+17 Exclusion class 
+LR Land and Water 
+Resources 
+pa2017_ag05
+_1 
+Share of IUCN class protected area in 5 arcmin 
+grid cell 
+LR Land and Water 
+Resources 
+pa2017_ag05
+_2 
+Share of non-IUCN class protected area in 5 
+arcmin grid cell 
+LR Land and Water 
+Resources 
+pa2017_ag05
+_3 Share of KBA area in 5 arcmin grid cell 
+LR Land and Water 
+Resources 
+pa2017_ag05
+_4 Share of GLW3 class 4-9 area in 5 arcmin grid cell 
+LR Land and Water 
+Resources 
+pa2017_ag05
+_5 
+Share of protected area buffer in 5 arcmin grid 
+cell 
+LR Land and Water 
+Resources 
+GLCSv11_12_
+5m Cropland, equipped for full control irrigation 
+LR Land and Water 
+Resources 
+hydromajsq_
+30s Major hydrological basins (30 arc-second) 
+LR Land and Water 
+Resources 
+hydromajsq0
+5 Major hydrological basins (5 arc-minute) 
+LR Land and Water 
+Resources wcs_30s Water collecting sites (30 arc-second) 
+LR Land and Water 
+Resources wcs05 Water collecting sites (5 arc-minute) 
+LR Land and Water 
+Resources pop2010 Population number (year 2010) 
+LR Land and Water 
+Resources 
+TLU30s_AD_
+2010_v2_1 Ruminant livestock density (year 2010) 
+res01 Agro-climatic 
+Resources KG2 Koeppen-Geiger (2-character) classification 
+res01 Agro-climatic 
+Resources KG3 Koeppen-Geiger (3-character) classification 
+res01 Agro-climatic 
+Resources lgp Total number of growing period days class 
+res01 Agro-climatic 
+Resources mc2 Thermal Zones 
+res01 Agro-climatic 
+Resources mc3 Classification by Thermal Climates and Thermal 
+Zones 
+res01 Agro-climatic 
+Resources mci Multi-cropping class (with irrigation) 
+res01 Agro-climatic 
+Resources mcl Thermal Climates (temperatures reduced to sea 
+level) 
+res01 Agro-climatic 
+Resources mcr Multi-cropping class (rain-fed) 
+res01 Agro-climatic 
+Resources pfr Permafrost zones (classes) 
+res01 Agro-climatic 
+Resources fss Snow-adjusted air frost number 
+res01 Agro-climatic 
+Resources fst Air frost number 
+res01 Agro-climatic 
+Resources lt2 Temperature growing period (LGPt=5); number 
+of days with Ta > 5 °C 
+res01 Agro-climatic 
+Resources lt3 Temperature growing period (LGPt=10); number 
+of days with Ta > 10 °C 
+res01 Agro-climatic 
+Resources n00 Number of days with Tmin < 0 °C 
+res01 Agro-climatic 
+Resources n10 Number of days with Tmin < 10 °C 
+res01 Agro-climatic 
+Resources n15 Number of days with Tmin < 15 °C 
+res01 Agro-climatic 
+Resources td2 Annual temperature amplitude (°C) 
+res01 Agro-climatic 
+Resources tmp Mean annual temperature (°C) 
+res01 Agro-climatic 
+Resources ts2 Annual temperature sum for days with Ta>5 °C 
+(degree-days) 
+res01 Agro-climatic 
+Resources ts3 Annual temperature sum for days with Ta>10 °C 
+(degree-days) 
+res01 Agro-climatic 
+Resources x35 Number of days with Tmax > 35 °C 
+res01 Agro-climatic 
+Resources x40 Number of days with Tmax > 40 °C 
+res01 Agro-climatic 
+Resources x45 Number of days with Tmax > 45 °C 
+res01 Agro-climatic 
+Resources et0 Reference potential evapotranspiration (using 
+AWC=100 mm/m) 
+res01 Agro-climatic 
+Resources eta Reference actual evapotranspiration (using 
+AWC=100 mm/m) 
+res01 Agro-climatic 
+Resources ndr Total number of rain days (days with P > 1 mm) 
+res01 Agro-climatic 
+Resources prc Annual precipitation (mm) 
+res01 Agro-climatic 
+Resources rfm Modified Fournier Index (mm) 
+res01 Agro-climatic 
+Resources ri2 P/PET (*100) for days with Ta > 5 °C 
+res01 Agro-climatic 
+Resources rid Annual P/PET ratio (*100) 
+res01 Agro-climatic 
+Resources riS Seasonal P/PET ratio (*100) in summer (April-
+September in northern hemisphere) 
+res01 Agro-climatic 
+Resources riW Seasonal P/PET ratio (*100) in winter (October-
+March in northern hemisphere) 
+res01 Agro-climatic 
+Resources rQ1 Quarterly P/PET ratio (January-March) 
+res01 Agro-climatic 
+Resources rQ2 Quarterly P/PET ratio (April-June) 
+res01 Agro-climatic 
+Resources rQ3 Quarterly P/PET ratio (July-September) 
+res01 Agro-climatic 
+Resources rQ4 Quarterly P/PET ratio (October-December) 
+res01 Agro-climatic 
+Resources wde Reference evapotranspiration deficit (mm; 
+AWC=100) 
+res01 Agro-climatic 
+Resources ld1 Length of longest component LGP (days) 
+res01 Agro-climatic 
+Resources lgb Beginning date of longest component LGP (day-of-
+year) 
+res01 Agro-climatic 
+Resources lgd Total number of growing period days 
+res01 Agro-climatic 
+Resources ndd Longest period of consecutive dry days in 
+temperature growing period LGPt=5(days) 
+res01 Agro-climatic 
+Resources ndd2 Number of dry days during temperature growing 
+period LGPt=5 (days) 
+res01 Agro-climatic 
+Resources np1 Net primary production (with irrigation) 
+res01 Agro-climatic 
+Resources np2 Net primary production (rain-fed) 
+res02 Agro-climatic 
+Potential Yield yld Agro-climatic potential yield 
+res02 Agro-climatic 
+Potential Yield fc0 Total climate related crop yield constraint factor 
+‘0’ 
+res02 Agro-climatic 
+Potential Yield fc1 Crop yield constraint factor ‘1’ (thermal) 
+res02 Agro-climatic 
+Potential Yield fc2 Crop yield constraint factor ‘2’ (moisture) 
+res02 Agro-climatic 
+Potential Yield fc3 Crop yield constraint factor ‘3’ (agro-climatic) 
+res02 Agro-climatic 
+Potential Yield cbd Beginning of crop growth cycle (day) 
+res02 Agro-climatic 
+Potential Yield cyl Length of crop growth cycle (days) 
+res02 Agro-climatic 
+Potential Yield eta2 Crop-specific actual evapotranspiration (mm) 
+res02 Agro-climatic 
+Potential Yield Tsc Crop-specific accumulated temperature during 
+crop growth cycle 
+res02 Agro-climatic 
+Potential Yield wde2 Crop water deficit (mm) 
+res02 Agro-climatic 
+Potential Yield idx Selected LUT sequence number 
+res05 Suitability and 
+Attainable Yield sc Crop suitability index in classes; current cropland 
+in grid cell 
+res05 Suitability and 
+Attainable Yield si Crop suitability index in classes; all land in grid 
+cell 
+res05 Suitability and 
+Attainable Yield su Suitability index  range (0 – 10000); current 
+cropland in grid cell 
+res05 Suitability and 
+Attainable Yield sx Suitability index  range (0 – 10000); all land in 
+grid cell 
+res05 Suitability and 
+Attainable Yield sx1 Share of grid cell assessed as VS or S (range 0 – 
+10000) 
+res05 Suitability and 
+Attainable Yield sx2 Share of VS+S+MS land in grid cell (range 0 – 
+10000) 
+res05 Suitability and 
+Attainable Yield sx3 Share of VS+S+MS+mS land in grid cell (range 0 – 
+10000) 
+res05 Suitability and 
+Attainable Yield yc Average attainable yield of current cropland 
+res05 Suitability and 
+Attainable Yield yl Output density (potential production divided by 
+total grid cell area) 
+res05 Suitability and 
+Attainable Yield yx Average attainable yield of best occurring 
+suitability class in grid cell 
+res05 Suitability and 
+Attainable Yield etc Actual crop evapotranspiration (excluding 
+irrigation), for current cropland 
+res05 Suitability and 
+Attainable Yield etl Actual crop evapotranspiration (excluding 
+irrigation), average for grid cell 
+res05 Suitability and 
+Attainable Yield wdc Water deficit/net irrigation requirement during 
+crop cycle, current cropland 
+res05 Suitability and 
+Attainable Yield wdl Water deficit/net irrigation requirement during 
+crop cycle, total grid cell 
+res06 Actual Yields and 
+Production har Harvested area 
+res06 Actual Yields and 
+Production prd Production 
+res06 Actual Yields and 
+Production yld2 Yield 
+res06 Actual Yields and 
+Production val Total crop production volume 
+res07 Yield and 
+Production Gaps yga_cl Cropwise Yield Achievement Ratio 
+res07 Yield and 
+Production Gaps qga Cropwise Apparent Production Gap 
+res07 Yield and 
+Production Gaps H_cl Aggregate Yield Achievement Ratio 
+res07 Yield and 
+Production Gaps Hi_cl Aggregate Yield Achievement Ratio 
+res07 Yield and 
+Production Gaps Hr_cl Aggregate Yield Achievement Ratio 
+ 
+Annex II – Import symbology in desktop GIS Software 
+Import symbology in ArcGIS Pro 
+When loaded in desktop GIS softwares, categorical data are visualized with random colors for each 
+class. To visualize in ArcGIS Pro the categorical GAEZ v4 data with the correct symbology, load the 
+data in the Map, right-click on the layer name and select the Symbology menu. 
+ 
+This will open the Symbology menu, click on the three lines button on the top right corner and 
+select the Import Colormap option. 
+Select the corresponding .clr file depending on the GAEZ v4 data that has been downloaded and 
+added in ArcGIS Pro. Information about the corresponding color map file to use are given in Annex 
+II of this User’s Guide. Click OK. The Colormap will be adeed to the layer. This will allow the user to 
+display the layer with the pre-defined set of colors for each class. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+It is suggested to use the same styles as in the GAEZ v4 Data Portal also for continuous data. Colors 
+ramps to use for continuous GAEZ v4 data are stored in the ArcGIS Pro style file (GAEZv4 
+Styles.stylx). To add a style to an ArcGIS project, follow these steps: 
+• On the Insert tab, in the Styles group, click Add  and then Add Style; 
+• Browse to the location of the style 
+• Click OK to add the style to the project. 
+Load the data downloaded from the GAEZv4 Data Portal in the Map, right-click on the layer name 
+and select the Symbology menu. The available color schemes will be in the drop-down list of the 
+Symbology panel. Ensure that a Stretch Symbology is applied with Minimum Maximum Stretch 
+type. 
+ 
+
+Select the corresponding color ramp from the drop down list (i.e. in the example below, with the 
+Mean annual temperature (°C) layer, the corresponding color ramp to adopt is 
+AgroClimaticDaysColorRamp, see Annex II). Now the layer is visualized with the correct color 
+scheme. 
+ 
+Import symbology in QGIS 
+After having downloaded the layer from the GAEZ v4 platform, open the .TIF file in QGIS. 
+ 
+Categorical data are visualized with random colors for each class. To visualize the layer with the 
+correct symbology, open the layer properties window by double clicking on the layer in the Layers 
+panel and go to the Symbology tab. 
+For categorical data ensure to choose the Paletted/Unique values as Renderer type. Click on the 
+three dots button (red circle in screenshot below) and use the option Load colour map from file to 
+
+load the corresponding .clr file that can be downloaded from the GAEZ v4 platform (i.e. in the 
+example below, with the Thermal Zones layer select the ThermalZones.clr file, see Annex II). Click 
+Apply. 
+ 
+Once loaded, the layer will be visualized with the pre-defined set of colors for each class and with 
+the corresponding class name. 
+ 
+ 
+
+ 
+For continuous data it is suggested to use the same styles as in the GAEZ v4 Data Portal.  
+Color ramps have been saved as .xml files. To add color ramps in QGIS, load the .xml files from the 
+Settings – Style Manager menu, click on the Import button and search for the GAEZ .xml files. 
+ 
+ 
+Select the .xml file, select the “Add to favourites” option and the item to import. Click on Import. 
+After having opened the .TIF file in QGIS, open the layer properties window by double clicking on 
+the layer in the Layers panel and go to the Symbology tab. Choose Singleband pseudocolor as 
+Render type and select the corresponding color ramp from the drop down list (i.e. in the example 
+below, with the Total number of growing period days layer the color ramp to use is the 
+AgroClimaticPrecipitation_ColorRamp.xml, see Annex II). Click on Apply. 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
