@@ -1,0 +1,4 @@
+# Dependências opcionais para tarefas específicas
+
+# Download de ERA5-Land via Copernicus Climate Data Store
+cdsapi==0.7.7
