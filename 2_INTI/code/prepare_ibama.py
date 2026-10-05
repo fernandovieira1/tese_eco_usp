@@ -3,6 +3,7 @@
 Keep cancellations/statuses; count registered events without implying exogeneity.
 Personal identifiers are retained only in the original source archives.
 """
+from data_paths import data_path
 import zipfile
 import pandas as pd
 from data_common import DATA,write_json
@@ -11,7 +12,7 @@ from prepare_h1_h2 import save
 def main():
     rows=[]; audit=[]
     cols=['SEQ_AUTO_INFRACAO','NUM_AUTO_INFRACAO','SER_AUTO_INFRACAO','VAL_AUTO_INFRACAO','DAT_HORA_AUTO_INFRACAO','DT_FATO_INFRACIONAL','COD_MUNICIPIO','MUNICIPIO','UF','TIPO_INFRACAO','DES_INFRACAO','SIT_CANCELADO','DS_SIT_AUTO_AIE','QT_AREA','INFRACAO_AREA','NUM_LONGITUDE_AUTO','NUM_LATITUDE_AUTO','DS_WKT','DS_ENQUADRAMENTO_ADMINISTRATIVO','ULTIMA_ATUALIZACAO_RELATORIO']
-    with zipfile.ZipFile(DATA/'raw/tabular/ibama/auto_infracao_csv.zip') as z:
+    with zipfile.ZipFile(data_path('raw/tabular/ibama/auto_infracao_csv.zip')) as z:
         assert z.testzip() is None
         for name in z.namelist():
             d=pd.read_csv(z.open(name),sep=';',dtype=str,encoding='utf-8',usecols=lambda c:c in cols,keep_default_na=False)

@@ -1,0 +1,56 @@
+\section{Mato Grosso: Contexto e Dados}
+
+\subsection{Unidade de análise, período e suporte territorial}
+
+A análise será realizada com um painel de unidades territoriais comparáveis de Mato Grosso, tendo o município como ponto de partida. O período candidato é 2001--2024, já adotado na discussão do projeto. Esse recorte não corresponde, ainda, a uma amostra econométrica concluída: sua definição dependerá da disponibilidade conjunta de rendimento, vegetação anterior à safra e clima, bem como da correspondência histórica entre os territórios.
+
+O estado reúne contextos agrícolas distintos, cuja ocupação e intensificação não se distribuíram uniformemente \cite{VanWeyEtAl2013,SimoesEtAl2020}. Para caracterizar os biomas, serão utilizadas as interseções entre a malha municipal e os limites do IBGE de 2019 \cite{IBGEBiomas2019}. A classificação por predominância de 80\% da área é candidata; serão comparadas as alternativas de 70\% e 90\% e as frações contínuas de participação de cada bioma. Municípios sem predominância suficiente serão identificados como mistos.
+
+Conforme a auditoria de dados do projeto, de 30 de setembro de 2026, a malha de 2024 contém 142 códigos municipais, enquanto a base de cobertura vegetal utilizada contém 141. A criação de Boa Esperança do Norte e sua relação com Sorriso e Nova Ubiratã requerem atenção específica. Será construída uma correspondência para territórios estáveis, agregando produção e área antes de calcular o rendimento e reagregando clima e vegetação para os mesmos limites. Na ausência de correspondência defensável, as unidades afetadas serão retiradas da amostra principal e sua exclusão será documentada. Não será atribuída automaticamente a um município recém-criado uma série histórica de seus municípios de origem.
+
+A mesma auditoria registra somente dois municípios com predominância pantaneira sob o limiar de 80\%, antes de impor a existência de soja e a cobertura das demais variáveis. Esse número pode diminuir na amostra analítica. Sendo assim, o Pantanal integrará a caracterização territorial, mas sua comparação econométrica ficará condicionada ao suporte efetivo. Contar muitos anos para dois municípios não cria muitas unidades independentes. Resultados obtidos nos municípios mistos também não serão interpretados como efeitos específicos da porção pantaneira sem dados produtivos submunicipais.
+
+\subsection{Produtividade e estoque ambiental}
+
+O desfecho principal será o rendimento da soja, em quilogramas por hectare, obtido da Produção Agrícola Municipal (PAM), tabela 1612 do SIDRA \cite{IBGEPAM}. A escolha mantém a operacionalização já prevista para H2. A base local contém informações de soja e milho de 1974 a 2025, com cobertura municipal variável. O rendimento será conferido pela identidade entre quantidade produzida e área colhida:
+\begin{equation}
+Y_{it}=\frac{1.000\,Q_{it}}{A^{\mathrm{colhida}}_{it}},
+\qquad A^{\mathrm{colhida}}_{it}>0,
+\label{eq:rendimento}
+\end{equation}
+em que $Q_{it}$ é a produção em toneladas. Símbolos especiais do SIDRA serão distinguidos de zeros efetivos e dados ausentes conforme a documentação da fonte, preservando-se os valores originais. A variável dependente da especificação principal será $y_{it}=\ln Y_{it}$ nas observações de rendimento positivo.
+
+Essa definição exige cuidado com seleção. Uma quebra de safra pode reduzir a área efetivamente colhida, de modo que o rendimento por hectare colhido não represente toda a perda produtiva. Serão descritas a produção, a área plantada e a área colhida, bem como a entrada e a saída de municípios produtores. Especificações com rendimento em nível e produção por área plantada, quando interpretáveis e disponíveis, serão usadas para avaliar essa margem. Não se converterá ausência de produção em rendimento nulo sem verificar o significado da informação. O milho constitui extensão por cultura, condicionada à possibilidade de separar calendários; o efetivo bovino da PPM não será utilizado como medida de produtividade pecuária.
+
+O estoque ambiental será obtido da coleção 10.1 do MapBiomas \cite{MapBiomas101}, cuja base local cobre 1985--2024. A medida candidata soma as classes nativas 3, 4, 5, 6, 49, 11, 12 e 50, com revisão da taxonomia para preservar formações florestais, savânicas e campestres. A proporção será calculada em relação à área territorial compatível. O produto já processado usa a soma das classes mapeadas, incluindo água e áreas não observadas; essa escolha será revista e documentada, com sensibilidade à exclusão de áreas não observadas. Classes de níveis hierárquicos diferentes não serão somadas em duplicidade.
+
+Denote-se por $E^{\mathrm{pre}}_{it}$ a proporção de vegetação medida no último ano completo anterior ao início da janela agrícola associada à colheita $t$. Se a janela começar no ano civil $t-1$, a cobertura de $t-1$ poderá conter observações contemporâneas à exposição e não será automaticamente considerada anterior; nesse caso, a medida anual de $t-2$ é uma alternativa conservadora. A correspondência entre o ano do mapa, os meses do choque e o ano da PAM será explicitada. Também será considerada uma medida fixa de vegetação anterior ao período amostral. Ambas preservam a precedência temporal, sem assegurar exogeneidade.
+
+\subsection{Precipitação, referência histórica e calendário agrícola}
+
+A fonte climática disponível é o CHIRPS v2, que combina informações de satélite e estações para estimar precipitação em grade de 0,05 grau desde 1981 \cite{CHIRPSv2}. A base local contém 540 rasters mensais de 1981--2025 e suas agregações municipais. Os totais, anomalias e componentes de déficit e excesso já construídos referem-se ao ano civil. Portanto, ainda precisam ser recompostos para a janela agrícola correspondente ao rendimento observado.
+
+Seja $\Omega_{it}$ o conjunto de meses de exposição relevante, definido por calendário agronômico documentado antes da estimação. A janela será compatibilizada com a cultura e a região, evitando escolher seus limites a partir da significância dos resultados. A documentação ZARC já obtida, referente à safra 2025/2026, não estabelece por si só o calendário histórico de 2001--2024. Os dados mensais permitirão examinar totais e distribuição da chuva entre fases da safra; não permitem medir diretamente a duração de veranicos ou extremos diários.
+
+O choque de precipitação será um desvio em relação a uma referência explicitamente definida:
+\begin{align}
+P^{\Omega}_{it}&=\sum_{m\in\Omega_{it}}P_{im}, &
+C_{it}&=\frac{P^{\Omega}_{it}-\mu_i^{\Omega}}{\sigma_i^{\Omega}},
+\label{eq:choque}\\
+D_{it}&=\max\{-C_{it},0\}, &
+X_{it}&=\max\{C_{it},0\}.
+\label{eq:deficitexcesso}
+\end{align}
+Valores maiores de $D_{it}$ indicam déficit de chuva e valores maiores de $X_{it}$ indicam excesso, em desvios-padrão da referência, exigindo-se $\sigma_i^{\Omega}>0$. Essas medidas não constituem um balanço hídrico nem, isoladamente, caracterizam seca agronômica. A distribuição mensal da chuva, a demanda evaporativa e as propriedades do solo podem alterar a exposição efetiva da cultura.
+
+A padronização local também exige uma ressalva para a comparação entre territórios: um desvio-padrão pode corresponder a volumes diferentes de chuva em milímetros. Se a variabilidade histórica da precipitação estiver associada à vegetação ou ao bioma, parte da interação estimada poderá refletir essa diferença de escala. Por isso, uma análise central utilizará o desvio $P^{\Omega}_{it}-\mu_i^{\Omega}$ em unidades físicas comuns, preferencialmente por 100 mm, preservando a separação entre déficit e excesso e a mesma referência histórica. A comparação entre as duas escalas distinguirá a resposta a um evento relativamente incomum no território da resposta a uma mesma quantidade de chuva.
+
+Propõe-se, para discussão metodológica, uma referência fixa anterior à amostra, construída com as janelas agrícolas completas disponíveis até 2000. A disponibilidade do CHIRPS a partir de 1981 limita sua extensão a aproximadamente vinte anos; ela será denominada referência histórica, e não normal climatológica trintenária. As normais de 1981--2010 e 1991--2020 já calculadas servirão como alternativas descritivas, após adequação ao calendário. Como incluem informações posteriores às primeiras safras da amostra, não serão interpretadas como expectativas dos produtores naquela data. Os meses utilizados, a exigência de completude e a quantidade de anos de cada referência serão registrados antes das regressões.
+
+Temperatura não está disponível no painel preparado: a aquisição de ERA5-Land permanece pendente. Por isso, o teste inicial de H2 será delimitado aos choques de precipitação. Temperatura, extremos térmicos e medidas de déficit hídrico poderão ampliar o desenho quando existirem dados com frequência e cobertura adequadas. A ausência dessas dimensões será considerada na interpretação, especialmente se calor e chuva estiverem associados.
+
+\subsection{Condições locais e preparação da amostra}
+
+Serão priorizadas informações sobre condições produtivas anteriores à exposição, evitando controlar mecanicamente variáveis que já respondam ao choque climático. A auditoria registra dados de aptidão do GAEZ v4 e elevação do Copernicus GLO-90; seu uso será condicionado à validação da escala e da referência temporal. O GAEZ incorpora uma base de terras de 2010, embora utilize clima de 1961--1990, e não será presumido predeterminado em toda a amostra. A elevação disponível provém de um modelo de superfície e não equivale a declividade, rugosidade ou atributos do solo.
+
+As estatísticas descritivas serão produzidas após a integração das fontes. Elas apresentarão cobertura por ano e bioma, ausências, distribuição da vegetação, rendimento e exposição climática, além do suporte comum das comparações. A classificação territorial, os pesos espaciais, a taxonomia de vegetação e as perdas nas junções serão documentados. Os arquivos preparados para este artigo encontram-se em \texttt{2\_INTI/data/chap2}, mantendo as camadas de dados brutos, intermediários, processados e catálogo. Os relatórios de 30 de setembro de 2026 registram o estado da preparação anterior; suas contagens não substituem a validação do painel que será efetivamente estimado.

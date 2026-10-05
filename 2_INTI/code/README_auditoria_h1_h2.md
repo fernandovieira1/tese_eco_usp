@@ -1,5 +1,20 @@
 # Reprodução da auditoria H1/H2
 
+## Atualização de caminhos — 2 de outubro de 2026
+
+As bases estão agora em `2_INTI/data/chap1` e `2_INTI/data/chap2`. As fontes compartilhadas, incluindo os rasters e intermediários CHIRPS, têm cópias físicas em ambos os capítulos. `data_paths.py` resolve os caminhos dos scripts; `fetch` reconhece os identificadores antigos dos manifestos e continua verificando URL e SHA256. A preparação grava as cópias compartilhadas dos derivados.
+
+`data/catalog` preserva o registro da execução anterior. Os catálogos com caminhos atuais estão em `data/chap1/catalog` e `data/chap2/catalog`. O mapa de realocação e a descrição das verificações estão em [organização dos dados](../reports/organizacao_dados_chap1_chap2.md).
+
+Para verificar a organização atual, executar na raiz do repositório:
+
+```powershell
+python 2_INTI/code/organize_chapter_data.py --verify
+python -m pytest 2_INTI/code/test_h1_h2.py -q -p no:cacheprovider -k 'not checkpoint_originals_unchanged'
+```
+
+O teste excluído exige que todo o repositório continue idêntico ao checkpoint de setembro. O pedido atual autoriza editar capítulos e scripts; o baseline não foi redefinido. A preservação de todos os dados realocados é verificada separadamente. Não reexecutar os geradores históricos `audit_repository.py`, `catalog_h1_h2.py` e `report_h1_h2.py` para sobrescrever a evidência da execução anterior. Os comandos de aquisição e preparação abaixo usam o novo roteamento; as afirmações de preservação integral dos scripts e os caminhos sem capítulo nas demais seções descrevem a execução de setembro.
+
 ## Ambiente e preservação
 
 Trabalhar em `main`. Dados novos devem permanecer em `2_INTI/data`. Os scripts originais não foram editados. O ambiente usado foi Python 3.12, com dependências exatas em `requirements-audit-lock.txt`; ele foi instalado em um ambiente virtual temporário separado do repositório e das dependências internas do aplicativo.

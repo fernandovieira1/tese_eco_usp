@@ -1,0 +1,91 @@
+\section{Estratégia Econométrica}
+
+\subsection{O mecanismo e a quantidade de interesse}
+
+A formulação econômica parte de uma produção condicionada pelo estado ambiental, além dos insumos privados e do clima. Em termos conceituais, pode-se escrever:
+\begin{equation}
+Q_{it}=F(K_{it},L_{it},A_{it},M_{it};E^{\mathrm{pre}}_{it},C_{it},G_i),
+\label{eq:producao}
+\end{equation}
+em que $Q_{it}$ é a produção, $K$, $L$, $A$ e $M$ representam capital, trabalho, terra e manejo, e $G_i$ reúne condições territoriais. O rendimento $Y_{it}$ será calculado a partir de produção e área colhida, conforme a equação \ref{eq:rendimento}. Essa representação organiza o mecanismo; não será estimada como função estrutural completa com a base atual. H2 diz respeito à possibilidade de a resposta desse rendimento ao clima depender do estado ambiental, isto é, de uma derivada cruzada entre clima e vegetação diferente de zero e economicamente relevante.
+
+Tratar o capital natural como componente produtivo não elimina a existência de externalidades. Um serviço ambiental pode contribuir para a produção e, ao mesmo tempo, beneficiar agentes que não participam da decisão de conservação. A estimação proposta alcança uma dimensão da resposta produtiva; não identifica, por si só, o valor total da natureza, o preço-sombra do estoque ambiental ou o nível ótimo de conservação.
+
+\subsection{Especificação de H2}
+
+O ponto de partida será um modelo de painel com efeitos fixos territoriais e anuais, distinguindo déficit e excesso de chuva:
+\begin{align}
+y_{it}={}&\alpha_i+\lambda_t+\theta E^{\mathrm{pre}}_{it}
++\beta_D D_{it}+\beta_X X_{it}\nonumber\\
+&+\delta_D(D_{it}E^{\mathrm{pre}}_{it})
++\delta_X(X_{it}E^{\mathrm{pre}}_{it})
++\gamma'Z^{\mathrm{pre}}_{it}+u_{it},
+\label{eq:h2}
+\end{align}
+em que $y_{it}$ é o logaritmo do rendimento, $\alpha_i$ controla características territoriais constantes, $\lambda_t$ absorve choques comuns a cada ano e $Z^{\mathrm{pre}}_{it}$ reúne controles cuja temporalidade e interpretação sejam compatíveis com o mecanismo. A especificação linear por partes constitui um ponto de partida. Serão examinadas respostas não lineares e distribuição da chuva entre fases, conforme o suporte dos dados, sem impor que qualquer desvio da referência seja necessariamente prejudicial.
+
+As quantidades centrais de interesse são:
+\begin{equation}
+\frac{\partial y_{it}}{\partial D_{it}}=\beta_D+\delta_D E^{\mathrm{pre}}_{it},
+\qquad
+\frac{\partial y_{it}}{\partial X_{it}}=\beta_X+\delta_X E^{\mathrm{pre}}_{it}.
+\label{eq:marginais}
+\end{equation}
+Assim, H2 será examinada por um teste conjunto de $\delta_D=\delta_X=0$ e por contrastes de magnitude entre estoques vegetais observados. Nenhum sinal será imposto a $\delta_D$ ou $\delta_X$. Por exemplo, se o déficit reduzir o rendimento e maior vegetação estiver associada a uma redução menor, a interação com déficit será positiva. Essa interpretação depende dos efeitos marginais estimados, não apenas do sinal isolado de um coeficiente.
+
+O modelo será inicialmente estimado sem ponderação, atribuindo peso unitário a cada observação territorial e anual. Em um painel desbalanceado, isso não assegura contribuição igual de cada território, pois municípios com mais anos observados fornecem mais observações. Serão descritas essas diferenças de cobertura. Uma análise alternativa utilizará pesos de área agrícola de um período anterior, explicitando a mudança de população de referência. Pesos de área colhida contemporânea podem responder ao próprio choque e não serão empregados automaticamente. Na especificação com vegetação fixa em período-base, seu efeito de nível será absorvido por $\alpha_i$, mas sua interação com o clima continuará identificável se houver variação adequada.
+
+A interpretação das interações também depende da unidade do choque. Considere-se, apenas para ilustrar o problema, uma resposta constante por milímetro, $y_{it}=b(P^{\Omega}_{it}-\mu_i^{\Omega})$, e uma variabilidade local dada por $\sigma_i^{\Omega}=a+cE_i$. Ao escrever a mesma relação em desvios-padrão, obtém-se $y_{it}=baC_{it}+bc(C_{it}E_i)$. A interação surge, nesse exemplo, mesmo sem modificação da resposta física por milímetro. Portanto, a padronização local pode gerar diferenças mecânicas quando sua escala se relaciona à vegetação ou ao bioma.
+
+Para examinar esse problema, as especificações de H2 e H2-a serão estimadas também com choques definidos em escala física comum:
+\begin{equation}
+\widetilde C_{it}=\frac{P^{\Omega}_{it}-\mu_i^{\Omega}}{100},\qquad
+\widetilde D_{it}=\max\{-\widetilde C_{it},0\},\qquad
+\widetilde X_{it}=\max\{\widetilde C_{it},0\}.
+\label{eq:choquecomum}
+\end{equation}
+Com precipitação medida em milímetros, uma unidade corresponde a 100 mm de desvio da referência. Essa será uma comparação central, mantendo a referência histórica e os demais componentes do desenho. A evidência de moderação produtiva não será sustentada apenas por uma interação em desvios-padrão que possa decorrer da diferença de escala. As comparações em unidades físicas comuns também respeitarão o suporte observado de chuva, vegetação e bioma.
+
+\subsection{Heterogeneidade entre biomas: H2-a}
+
+Seja $B_{ib}$ um indicador de pertencimento ao grupo territorial $b$, incluindo uma categoria para municípios mistos. Uma extensão permitirá que os efeitos do clima, da vegetação e de suas interações variem entre grupos:
+\begin{align}
+y_{it}={}&\alpha_i+\lambda_t+\gamma'Z^{\mathrm{pre}}_{it}\nonumber\\
+&+\sum_b B_{ib}\left[\theta_b E^{\mathrm{pre}}_{it}
++\sum_{q\in\{D,X\}}\left(\beta_{qb}q_{it}
++\delta_{qb}q_{it}E^{\mathrm{pre}}_{it}\right)\right]+u_{it}.
+\label{eq:h2biomas}
+\end{align}
+Os indicadores de nível de bioma são absorvidos pelos efeitos fixos territoriais. A hipótese de homogeneidade será examinada por restrições de igualdade entre os coeficientes de interação, acompanhadas de contrastes dos efeitos marginais em valores de clima e vegetação com suporte comum. Também será avaliada uma alternativa com frações territoriais dos biomas, incluindo todos os termos inferiores das interações e retirando uma fração de referência quando necessário para evitar colinearidade.
+
+A comparação não será forçada se a amostra apresentar poucos produtores, pouca variação climática ou ausência de sobreposição da vegetação entre grupos. Em particular, a pequena quantidade de municípios predominantemente pantaneiros impede presumir inferência confiável para esse grupo. Se essa restrição persistir, a análise econométrica será delimitada aos grupos com suporte, mantendo o Pantanal na discussão descritiva e registrando que H2-a não foi integralmente testada. Isso não será interpretado como evidência de ausência de efeito no bioma.
+
+\subsection{Identificação, seleção e dependência espacial}
+
+A estratégia utiliza a variação temporal do clima dentro das unidades territoriais, conforme a abordagem discutida por \citeonline{DellEtAl2014}. Sua interpretação causal requer que os componentes climáticos utilizados sejam independentes dos determinantes não observados do rendimento, condicionalmente aos controles e efeitos fixos. Esse requisito é particularmente exigente para a interação. Municípios com mais vegetação podem diferir em tecnologia, irrigação, solos, escala de produção e seleção das áreas cultivadas, características que também alteram a resposta ao clima.
+
+Por essa razão, além dos controles de nível, serão consideradas interações dos choques climáticos com características produtivas e biofísicas anteriores à exposição. Efeitos fixos, isoladamente, não absorvem a interação de uma característica territorial constante com um choque que varia no tempo. Medidas de manejo contemporâneo, expansão de área e irrigação adotada em reação ao evento não serão incluídas como controles sem definir se o interesse recai sobre o efeito total ou sobre um mecanismo específico.
+
+Há ainda uma questão adicional: a própria vegetação pode afetar a precipitação local e regional \cite{SpracklenEtAl2012}. Logo, o uso de chuva observada não demonstra automaticamente que o choque seja externo à cobertura. Serão avaliadas exposições meteorológicas em escalas alternativas e a relação entre cobertura anterior e distribuição dos choques. Eventual uso de variação atmosférica de maior escala exigirá um desenho próprio e uma justificativa de exclusão; nenhum instrumento será declarado válido apenas por estar geograficamente distante. Na ausência de identificação convincente, os resultados serão apresentados como heterogeneidade condicional da resposta ao clima associada à vegetação, sem atribuir à conservação um efeito causal isolado.
+
+A cobertura municipal também não mede distância entre lavouras e fragmentos, qualidade ecológica ou vegetação situada fora dos limites administrativos. A transmissão de umidade e de serviços ambientais entre territórios pode produzir interferência espacial. A análise distinguirá esse problema de mensuração e identificação da correlação entre erros. Corrigir erros-padrão não elimina omissão de mecanismos espaciais.
+
+Para a inferência, erros agrupados por unidade territorial constituirão a referência inicial para dependência serial. Serão examinadas covariâncias que permitam dependência espacial, com distâncias e critérios explicitados, seguindo a motivação de \citeonline{Conley1999}. A sensibilidade a choques comuns de ano e ao pequeno número de grupos será considerada. Não se tratarão os três biomas como três agrupamentos suficientes para inferência convencional, nem se utilizará a repetição anual para encobrir a baixa quantidade de municípios no Pantanal.
+
+\subsection{Magnitude econômica e análises de robustez}
+
+A relevância econômica será avaliada separadamente da significância estatística. Para uma variação unitária de déficit ou excesso e um contraste de dez pontos percentuais de vegetação, a diferença entre respostas em logaritmos é $0{,}10\delta_q$. Sua transformação percentual é:
+\begin{equation}
+\Delta_q^{\%}=100\left[\exp(0{,}10\delta_q)-1\right],
+\qquad q\in\{D,X\}.
+\label{eq:magnitude}
+\end{equation}
+Essa transformação compara os fatores multiplicativos de resposta ao choque nos dois estoques vegetais. Ela não representa a diferença, em pontos percentuais, entre duas perdas de rendimento, nem o efeito de nível de acrescentar vegetação. Para explicitar a distinção, sejam $e_0$ e $e_1=e_0+0{,}10$ dois estoques e $\Delta q$ uma mesma variação do choque. Na especificação linear, os fatores de resposta são $r_j=\exp[(\beta_q+\delta_q e_j)\Delta q]$, para $j\in\{0,1\}$. A comparação relativa é $100(r_1/r_0-1)$, enquanto a diferença entre variações percentuais é $100(r_1-r_0)$. A equação \ref{eq:magnitude} corresponde à primeira medida quando $\Delta q=1$.
+
+Para expressar o contraste em quilogramas por hectare, serão calculadas previsões para os dois cenários, com rendimento de referência, choque, controles e regra de retransformação explicitados. Se ambos partirem de um mesmo rendimento de referência $Y_0$, o contraste das respostas será $Y_0(r_1-r_0)$. Essa convenção isola a comparação da sensibilidade ao choque; cenários com rendimentos iniciais diferentes serão apresentados separadamente. A unidade de $\Delta q$ será informada em cada caso, distinguindo desvio-padrão local de 100 mm.
+
+Os contrastes só serão apresentados dentro do suporte observado. Serão mostrados intervalos de confiança e comparações com a variabilidade histórica. Um limiar de relevância agronômica e econômica deverá ser justificado e registrado antes da leitura dos coeficientes; não será escolhido retrospectivamente para qualificar como relevante um resultado significativo.
+
+As análises de robustez abrangerão: (i) calendários agrícolas, referências climáticas e escalas do choque, com comparação central em milímetros ou por 100 mm; (ii) vegetação anterior à safra e vegetação fixa antes da amostra; (iii) diferentes definições de classes nativas e denominadores; (iv) rendimento em logaritmo e em nível, com exame da margem de área colhida; (v) tratamentos de municípios mistos e de mudanças territoriais; (vi) controles e interações de condições produtivas anteriores; e (vii) formas de inferência compatíveis com dependência espacial e temporal. Tendências territoriais e efeitos de bioma por ano serão examinados como alternativas, reconhecendo que podem absorver parte relevante da variação de interesse. Nenhuma dessas verificações, isoladamente, comprova exogeneidade.
+
+As especificações e a população de referência serão registradas antes das regressões finais. O teste distinguirá evidência de magnitude relevante, evidência compatível com efeitos pequenos e imprecisão que impeça decidir entre as duas possibilidades. Um coeficiente sem significância estatística e com intervalo amplo não será tomado como demonstração de irrelevância produtiva da vegetação.

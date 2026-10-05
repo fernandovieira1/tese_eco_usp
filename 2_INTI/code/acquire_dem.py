@@ -2,6 +2,7 @@
 
 The source is a surface model (DSM); do not interpret it as bare-earth terrain.
 """
+from data_paths import data_path
 import math,xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 import geopandas as gpd
@@ -23,7 +24,7 @@ def tile(pair):
     except Exception as e:print('DEM FALHA',stem,str(e)[:140],flush=True);return False
 
 if __name__=='__main__':
-    m=gpd.read_file('zip://'+str(DATA/'raw/vector/ibge/MT_Municipios_2024.zip')).to_crs(4326).geometry.union_all()
+    m=gpd.read_file('zip://'+str(data_path('raw/vector/ibge/MT_Municipios_2024.zip'))).to_crs(4326).geometry.union_all()
     x0,y0,x1,y1=m.bounds
     tiles=[(lat,lon) for lat in range(math.floor(y0),math.ceil(y1)) for lon in range(math.floor(x0),math.ceil(x1)) if box(lon,lat,lon+1,lat+1).intersects(m)]
     with ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(tile,tiles))

@@ -7,6 +7,7 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 from data_common import DATA,ROOT,sha256,write_json
+from data_paths import data_paths, legacy_repository_path, resolve_repository_path
 
 CAT=DATA/'catalog'
 COLUMNS='nome_da_variavel descricao fonte link_dado_original periodo periodicidade hipotese papel tipo_variavel unidade granularidade_espacial arquivo_local formato_arquivo versao_fonte data_acesso status resolucao_espacial sistema_referencia_crs observacoes'.split()
@@ -104,7 +105,7 @@ def main():
     for p in sorted(CAT.glob('acquisition*.jsonl')):
         for line in p.read_text(encoding='utf-8').splitlines():
             r=json.loads(line);r['manifesto']=p.name;manifests.append(r)
-    provenance={r['arquivo_local']:r for r in manifests if r.get('status')=='BAIXADO'}
+    provenance={legacy_repository_path(r['arquivo_local']):r for r in manifests if r.get('status')=='BAIXADO'}
     failures=[r for r in manifests if r.get('status')=='FALHA']
     write_json('catalog/falhas_aquisicao_h1_h2.json',failures)
     matrix=[]
@@ -114,7 +115,7 @@ def main():
     inventory=[];catalog=[];profiles=[]
     for p in sorted(DATA.rglob('*')):
         if not p.is_file() or 'catalog' in p.relative_to(DATA).parts:continue
-        rel=p.relative_to(ROOT).as_posix();prov=provenance.get(rel,{})
+        rel=p.relative_to(ROOT).as_posix();prov=provenance.get(legacy_repository_path(rel),{})
         h,variables,priority,source,url,spatial,freq,period,status,note=spec_for(p)
         digest=sha256(p)
         verified=prov.get('sha256')==digest if prov else None
@@ -213,7 +214,7 @@ def main():
         }
         if row['variavel_conceitual'] in aliases:
             fname,actual=aliases[row['variavel_conceitual']]
-            found=['2_INTI/data/processed/tabular/'+fname];row['variavel_operacional']=actual
+            found=[p.relative_to(ROOT).as_posix() for p in data_paths('processed/tabular/'+fname)];row['variavel_operacional']=actual
         row['arquivo_existente']=';'.join(sorted(set(found)))
         if not found:
             r=dict.fromkeys(COLUMNS,'')
@@ -238,7 +239,7 @@ def main():
     write_json('catalog/perfis_validacao_h1_h2.json',profiles)
     # Current local branch checkpoint remains authoritative, not hardcoded old prose.
     baseline=pd.read_csv(CAT/'baseline_repositorio_sha256.csv',dtype=str)
-    changed=[r.arquivo for r in baseline.itertuples() if sha256(ROOT/r.arquivo)!=r.sha256]
+    changed=[r.arquivo for r in baseline.itertuples() if sha256(resolve_repository_path(r.arquivo))!=r.sha256]
     report={'branch':subprocess.check_output(['git','branch','--show-current'],cwd=ROOT,text=True).strip(),'head':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'originais_alterados':changed,'arquivos_dados':len(inventory),'catalogo_linhas':len(catalog),'perfis_tabelas':len(profiles),'falhas_http_rede':len(failures),'hashes_divergentes':[x['arquivo'] for x in inventory if x['hash_confere_manifesto'] is False],'formato_incorreto':[x['arquivo'] for x in inventory if not x['formato_valido']]}
     write_json('catalog/verificacao_preservacao_h1_h2.json',report)
     assert not changed and not report['hashes_divergentes']

@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,twoside,brazil]{abntex2}
+\documentclass[a4paper,12pt,twoside,openany,brazil]{abntex2}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -6,11 +6,12 @@
 \usepackage{geometry}
 \usepackage{lmodern}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{setspace}
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage[alf,no-abnt-option-file]{abntex2cite}
-% Configuração local evita importar todas as opções do pacote com \nocite{*}.
+% Configuração local das citações; referências restritas às obras citadas.
 \citeoption{config-citacoes-abnt}
 
 \geometry{
@@ -61,14 +62,16 @@
     linkcolor=black,
     citecolor=black,
     urlcolor=black,
-    pdftitle={Endogeneização da Natureza na Teoria da Produção},
+    pdftitle={Retornos Econômicos, Instituições e Conversão da Vegetação Nativa em Mato Grosso},
     pdfauthor={Fernando Souza da Vieira}
 }
 
 \begin{document}
+\pagestyle{plain}
+\aliaspagestyle{chapter}{plain}
 
 \begin{center}
-    {\Large \bfseries Capital Natural e Governança Territorial: Produtividade, Conversão e Política Ambiental em Mato Grosso }\par\vspace{0.8cm}
+    {\Large \bfseries Retornos Econômicos, Instituições e Conversão da Vegetação Nativa em Mato Grosso}\par\vspace{0.8cm}
     Fernando Souza da Vieira
 \end{center}
 
@@ -84,7 +87,6 @@
 \input{4_discussion}
 \input{5_Final_Remarks}
 
-\nocite{*}
 \bibliographystyle{abntex2-alf}
 \bibliography{citation-options,library}
 

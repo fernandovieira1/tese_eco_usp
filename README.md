@@ -14,7 +14,7 @@ INTI: Sol
 
 Este repositório reúne os textos, dados, códigos e demais materiais de trabalho da tese de doutorado em Economia na FEARP/USP. A pesquisa encontra-se atualmente na fase **INTI** e está sendo estruturada no formato de três artigos.
 
-Nesta etapa, o esforço está concentrado no desenvolvimento do **Artigo 1**, de natureza empírica. Os **Artigos 2 e 3 ainda serão definidos** a partir dos resultados, mecanismos e questões que emergirem dessa primeira investigação. A expectativa atual é que ambos tenham caráter teórico ou, alternativamente, que um seja teórico e o outro normativo. Essa composição permanece deliberadamente aberta para assegurar unidade entre os artigos e permitir que os desdobramentos da tese sejam orientados pelas evidências do estudo empírico.
+Nesta etapa, o esforço está concentrado no desenvolvimento de dois artigos empíricos, que servirão de base à qualificação. O **Artigo 1 examina H1**, sobre retornos econômicos, instituições e conversão da vegetação. O **Artigo 2 examina H2**, sobre vegetação previamente existente, choques climáticos e produtividade agrícola. O **Artigo 3 permanece a definir**, a partir dos mecanismos e questões que emergirem dessas investigações.
 
 ## Eixo geral da pesquisa
 
@@ -29,28 +29,28 @@ Essa relação envolve três dimensões transversais: a **endogeneidade ambienta
 
 ## Estrutura prevista da tese
 
-### Artigo 1 — estudo empírico em desenvolvimento
+### Artigo 1 — H1: retornos, instituições e conversão
 
-**Título provisório:** *Capital Natural e Governança Territorial: Produtividade, Conversão e Política Ambiental em Mato Grosso*.
+O artigo investiga como retornos econômicos e instituições se relacionam com as decisões de conversão da vegetação em Mato Grosso. Seu projeto LaTeX está em `2_INTI/chapters/chap1/main.tex`.
 
-O artigo investiga como retornos econômicos e instituições se relacionam com as decisões de conversão ou manutenção da vegetação e se o estoque de vegetação previamente existente modifica a resposta da produtividade agrícola a choques climáticos. A análise tem como recorte o estado de Mato Grosso, cuja composição territorial permite explorar diferenças ambientais e econômicas entre Amazônia, Cerrado e Pantanal.
+**H1:** a taxa de conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.
 
-A pergunta central do artigo é:
+- **H1-a:** a resposta da conversão aos preços depende da capacidade produtiva local da terra.
+- **H1-b:** o ambiente institucional condiciona a resposta da conversão aos retornos esperados.
 
-> Como retornos econômicos e instituições condicionam as decisões de conversão ou manutenção da vegetação, e em que medida o estoque de vegetação nativa altera a resposta da produtividade agrícola a choques climáticos em contextos ecologicamente e economicamente heterogêneos?
+As diferenças entre atividades e biomas integram a análise de heterogeneidade. A estratégia prevê dados em painel, exposição territorial aos preços, medidas institucionais e suas interações. A interpretação causal depende da identificação e não decorre automaticamente da inclusão de efeitos fixos ou defasagens.
 
-O estudo está organizado em torno de duas hipóteses específicas:
+### Artigo 2 — H2: vegetação, clima e produtividade
 
-- **H1 — Retornos, instituições e conversão:** a resposta da conversão da vegetação aos retornos econômicos dos usos alternativos da terra é condicionada pelos incentivos, custos e riscos associados ao ambiente institucional, podendo variar entre atividades, territórios e biomas.
-- **H2 — Vegetação, clima e produtividade:** o estoque de vegetação previamente existente modifica, em magnitude economicamente relevante, a resposta da produtividade agrícola a choques climáticos, podendo essa relação variar entre biomas.
+O artigo investiga se o estoque prévio de vegetação modifica a resposta da produtividade agrícola aos choques climáticos em Mato Grosso. Seu projeto LaTeX está em `2_INTI/chapters/chap2/main.tex`.
 
-A estratégia empírica prevista utiliza dados em painel para Mato Grosso. Para H1, serão relacionadas a conversão da vegetação, os retornos econômicos dos usos alternativos da terra e o ambiente institucional. Para H2, serão examinadas as relações entre produtividade agrícola, choques climáticos e estoque prévio de vegetação. As especificações deverão considerar efeitos fixos territoriais e temporais, heterogeneidade entre biomas, dependência espacial e análises de robustez. A interpretação causal ficará condicionada às estratégias de identificação sustentadas pelos dados.
+**H2:** a resposta da produtividade agrícola aos choques climáticos varia, em magnitude economicamente relevante, conforme o estoque de vegetação previamente existente no território.
 
-Além da contribuição empírica, o artigo deverá fornecer os mecanismos e resultados que orientarão a formulação dos dois trabalhos seguintes.
+- **H2-a:** a magnitude dessa modificação é heterogênea entre biomas.
 
-### Artigo 2 — a definir
+Não se impõe previamente que a vegetação atenue os efeitos dos choques. A estratégia prevê interações entre clima e vegetação anterior, efeitos fixos e análises de heterogeneidade e robustez. A anterioridade da vegetação não resolve, por si só, sua endogeneidade.
 
-O segundo artigo será delimitado após o avanço da análise empírica do Artigo 1. A possibilidade principal é desenvolver teoricamente um dos mecanismos identificados na relação entre incentivos econômicos, instituições, estoque ambiental e produtividade.
+Os artigos examinam elos complementares da relação entre economia e meio ambiente. Sua separação permite explicitar os problemas de mensuração e identificação de cada mecanismo; não equivale à estimação conjunta de todo o circuito de retroalimentação.
 
 ### Artigo 3 — a definir
 
@@ -61,9 +61,27 @@ O terceiro artigo também dependerá dos resultados do Artigo 1 e de sua articul
 | Diretório    | Conteúdo                                       |
 | ------------- | ----------------------------------------------- |
 | `1_SUYANA/` | Materiais produzidos no Projeto da pesquisa     |
-| `2_INTI/`   | Materiais produzidos no Capítulo 1 da pesquisa |
+| `2_INTI/` | Materiais da fase atual de pesquisa e da qualificação |
+| `2_INTI/chapters/chap1/` | Artigo relativo a H1 e bibliografia própria |
+| `2_INTI/chapters/chap2/` | Artigo relativo a H2 e bibliografia própria |
+| `2_INTI/data/chap1/` | Dados e cópias compartilhadas pertinentes a H1 |
+| `2_INTI/data/chap2/` | Dados e cópias compartilhadas pertinentes a H2 |
+| `2_INTI/data/catalog/` | Registros históricos de aquisição e rastreabilidade |
+| `2_INTI/reports/` | Auditorias das fontes, organização dos dados e pendências |
 
-O conteúdo deste README reflete o estágio atual e provisório da pesquisa. Títulos, estratégias empíricas e a composição dos Artigos 2 e 3 poderão ser revistos conforme o desenvolvimento do Artigo 1 e as discussões de orientação.
+## Estado dos artigos e compilação
+
+Os textos constituem projetos para qualificação. As seções finais apresentam o plano de análise e os limites da contribuição; não contêm resultados econométricos produzidos nesta etapa. A disponibilidade de arquivos não equivale à existência de uma amostra pronta para estimação. As lacunas de dados e identificação estão explicitadas em cada artigo e nos relatórios.
+
+Cada capítulo tem projeto independente, com a mesma estrutura de arquivos e configuração ABNT. Na pasta do respectivo capítulo, compile com:
+
+```powershell
+latexmk -pdf -synctex=1 -interaction=nonstopmode -halt-on-error main.tex
+```
+
+As fontes citadas estão documentadas em `2_INTI/reports/auditoria_fontes_chap1.md` e `2_INTI/reports/auditoria_fontes_chap2.md`. A versão anterior à separação, incluindo as alterações locais que já existiam, foi preservada em `2_INTI/backup/2026-10-02_separacao_h1_h2/`.
+
+Títulos, estratégias empíricas e a composição do Artigo 3 poderão ser revistos conforme o avanço das duas investigações e as discussões de orientação.
 
 
 <!-- ***

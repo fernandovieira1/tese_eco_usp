@@ -1,498 +1,66 @@
-
 \section*{Introdução}
 \addcontentsline{toc}{section}{Introdução}
 \label{sec:introducao}
-% (==>) Este é o fenômeno; esta é a questão; há evidência científica suficiente para justificar investigá-la
 
-% ECONOMIA --> MEIO AMBIENTE --> ECONOMIA
-% Retroalimentação: decisões econômicas afetam o estoque ambiental, que pode alterar as condições produtivas e os retornos econômicos.
+A expansão agropecuária costuma ser analisada à luz do dilema entre conservar a vegetação nativa, promovendo a sustentabilidade ambiental, e converter a terra para explorar usos potencialmente mais rentáveis \cite{Angelsen2010}. Essa representação, contudo, simplifica uma decisão que não depende apenas da aptidão agronômica da terra ou da rentabilidade esperada da produção. A conversão da vegetação é uma decisão privada realizada sob preços, custos de produção, restrições de crédito, expectativas, direitos de propriedade, regras ambientais e mecanismos de implementação dessas regras. Os retornos dos usos alternativos da terra e a qualidade da terra ajudam a explicar as escolhas dos proprietários \cite{LubowskiEtAl2008}, enquanto o acesso ao crédito e a implementação da regulação podem produzir respostas distintas conforme a atividade e o perfil do produtor \cite{JungEtAl2022}.
 
-% HIPÓTESES
-% ---
-% HG: ECONOMIA E MEIO AMBIENTE FORMAM UM SISTEMA INTERDEPENDENTE
-% Retornos + instituições --> conversão/conservação --> estoque de vegetação
-% Estoque de vegetação × choques climáticos --> produtividade --> retornos econômicos
+Isto posto, uma mesma regra formal pode produzir respostas diferentes conforme as condições locais de implementação. A análise de arranjos regulatórios na Suíça mostra a relevância dos recursos das autoridades e dos direitos dos proprietários para essa implementação \cite{ViallonEtAl2019}; na Amazônia brasileira, há evidência de que monitoramento e fiscalização podem conter o desmatamento \cite{AssuncaoEtAl2023}. Sob essa perspectiva, a conversão ou conservação da vegetação pode ser tratada como resultado endógeno da interação entre os retornos econômicos dos usos alternativos da terra e os incentivos, custos e riscos associados ao ambiente institucional \cite{PachecoMeyer2022}.
 
-% H1: RETORNOS E INSTITUIÇÕES AFETAM CONVERSÃO/CONSERVAÇÃO
-% Retorno econômico + instituições --> decisão de uso da terra --> estoque de vegetação
-% Heterogeneidade territorial/biomas pode alterar incentivos e respostas dos agentes.
+Nessa toada, mudanças nos preços relativos, na rentabilidade agrícola ou nas condições de acesso aos mercados podem aumentar o retorno esperado da conversão, enquanto fiscalização, sanções e restrições legais podem alterar a resposta dos agentes a esses incentivos. A intensidade dessa resposta também pode variar conforme o contexto econômico e as características territoriais \cite{HardingEtAl2021,ChomitzThomas2003}. Portanto, compreender a evolução do estoque de vegetação requer analisar os retornos econômicos associados ao uso da terra e as instituições sob as quais esses retornos são percebidos e transformados em decisões de conversão ou conservação.
 
-% H2: VEGETAÇÃO MODIFICA A RESPOSTA DA PRODUTIVIDADE A CHOQUES CLIMÁTICOS
-% Choque climático (exógeno) × estoque de vegetação --> produtividade
-% Heterogeneidade entre biomas pode alterar a magnitude dessa relação.
+Essa relação, ressalte-se, não autoriza antecipar que qualquer aumento de preço aumentará o desmatamento. Na bacia do Tapajós, \citeonline{Braganca2018} encontra que a elevação do preço relativo de lavouras em relação à carne favoreceu a substituição de pastagens por cultivos e reduziu o desmatamento local. A pressão para abrir novas áreas deve, assim, ser distinguida da reorganização da produção em áreas já convertidas. Da mesma forma, o resultado de uma política de conservação deve ser investigado, e não deduzido de sua classificação como instrumento regulatório ou econômico.
 
-% EXTENSÃO POSSÍVEL:
-% Informação conjunta de H1 e H2 pode subsidiar desenho e focalização territorial de políticas de conservação. Não constitui, por ora, hipótese independente.
+Nesse contexto, Mato Grosso constitui um caso empírico especialmente informativo para a investigação dessas relações. O estado combina produção agrícola e pecuária em larga escala com três biomas --- Amazônia, Cerrado e Pantanal --- que apresentam peculiaridades ambientais e econômicas. Além disso, observam-se, dentro de um mesmo território estadual, diferenças relevantes de vegetação, clima, disponibilidade hídrica, sistemas produtivos e custo de oportunidade da terra. A literatura documenta tanto a expansão e a intensificação agrícola quanto a diversidade das trajetórias de uso da terra no estado \cite{VanWeyEtAl2013,SimoesEtAl2020}.
 
-% EIXOS CONCEITUAIS QUE CONECTAM O ARTIGO À TESE:
-% ---
-% ENDOGENEIDADE AMBIENTAL
-% O estado ambiental não é apenas resultado da atividade econômica:
-% ele também pode alterar resultados produtivos e incentivos econômicos.
+Sendo assim, essa heterogeneidade permite examinar se retornos econômicos e instituições produzem respostas distintas de conversão entre atividades e biomas. Nesse caso, não basta identificar se uma regra ambiental ou uma alteração na rentabilidade afeta, em média, a conversão. Importa verificar se a intensidade dessas respostas depende das condições econômicas e territoriais sobre as quais os incentivos incidem. A heterogeneidade entre Amazônia, Cerrado e Pantanal interessa à pesquisa como parte dos próprios mecanismos econômicos em análise.
 
-% GOVERNANÇA TERRITORIAL
-% Instituições, enforcement e incentivos operam sobre agentes e territórios heterogêneos, produzindo respostas distintas de conversão e conservação.
+\subsection*{Problema, objetivos e justificativa}
 
-% INTERTEMPORALIDADE
-% Decisões presentes de uso da terra alteram o estoque ambiental relevante para períodos posteriores e podem, por essa via, modificar condições futuras de produção. Por ora, é mecanismo conceitual, não hipótese testada diretamente.
-
-% ------------------------------------
-%%% (I) CONTEXTO
-% ------------------------------------
-% CITAÇÃO1–6 — H1: economia da conversão, retornos, instituições e enforcement.
-% CITAÇÃO7–11 — H2: vegetação, clima, produtividade e identificação econométrica.
-% CITAÇÃO12–14 — integração e Mato Grosso: feedback economia-ambiente, heterogeneidade e contexto empírico.
-
-%% Conflito: preservar ou converter.
-A expansão agropecuária costuma ser analisada à luz do dilema entre conservar a vegetação nativa, promovendo a sustentabilidade ambiental, e converter a terra para explorar usos potencialmente mais rentáveis \cite{Angelsen2010}. Essa representação, contudo, simplifica uma decisão que não depende apenas da aptidão agronômica da terra ou da rentabilidade esperada da produção. A conversão da vegetação é uma decisão privada realizada sob preços, custos de produção, restrições de crédito, expectativas, liquidez, direitos de propriedade, regras ambientais, \textit{enforcement} e probabilidade de sanções pelo uso irregular ou insustentável \cite{LubowskiEtAl2008,JungEtAl2022}. Assim, territórios com expectativas de retornos agrícolas semelhantes podem apresentar distintos níveis de conversão quando diferem na configuração e na efetividade das instituições que regulam o uso da terra. % CITAÇÃO1 e CITAÇÃO2
-
-\begin{sloppypar}
-Isto posto, uma mesma regra formal pode produzir respostas diferentes conforme a atividade econômica, o custo de oportunidade da terra e as condições locais de fiscalização \cite{ViallonEtAl2019,AssuncaoEtAl2023}. Sob essa perspectiva, a conversão ou conservação da vegetação pode ser tratada como resultado endógeno da interação entre os retornos econômicos dos usos alternativos da terra e os incentivos, custos e riscos associados ao ambiente institucional \cite{Braganca2018,PachecoMeyer2022}. % CITAÇÃO3 e CITAÇÃO4
-\end{sloppypar}
-
-%% Ponte para H1 (Retornos, instituições e conversão)
-% H1: produtores respondem racionalmente aos retornos relativos da conversão, mas essa resposta muda com instituições, fiscalização, risco ou condições territoriais.
-Nessa toada, mudanças nos preços relativos, na rentabilidade agrícola ou nas condições de acesso aos mercados podem aumentar o retorno esperado da conversão, enquanto fiscalização, sanções, restrições legais ou outros mecanismos institucionais podem alterar a resposta dos agentes a esses incentivos e a intensidade dessa resposta também pode variar conforme o contexto econômico e as características dos biomas \cite{HardingEtAl2021,ChomitzThomas2003}. Portanto, compreender a evolução do estoque de vegetação requer analisar não apenas os retornos econômicos associados ao uso da terra, mas também as instituições sob as quais esses retornos são percebidos e transformados em decisões de conversão ou conservação \cite{Angelsen2010,AnderssonEtAl2014}. % CITAÇÃO5 e CITAÇÃO6
-
-%% Ponte para H2 (Vegetação, clima e produtividade)
-% H2: a vegetação previamente existente modifica materialmente os danos provocados pelos choques climáticos sobre a produtividade.
-Não menos importante, o estoque ambiental afetado por essas decisões não é alheio ao processo produtivo. A vegetação nativa interfere diretamente nas condições biofísicas que sustentam a produção e, por essa via, tende a afetar os resultados econômicos, por estar associada a processos relacionados à umidade, precipitação e temperatura, que, por conseguinte, impactam a dinâmica físico-química e biológica do solo \cite{SpracklenEtAl2012,JoshiGarkoti2023}. Isso ocorre, sobretudo, porque o estoque local de vegetação pode modificar as condições ecológicas do território e, consequentemente, a resposta da agricultura a choques climáticos \cite{RedheadEtAl2020}. % CITAÇÃO7 e CITAÇÃO8
-
-Essa distinção é particularmente importante porque variações climáticas de curto prazo podem fornecer uma fonte de variação plausivelmente exógena para investigar se a resposta da produtividade aos choques depende do estoque de vegetação previamente existente \cite{DellEtAl2014}. Se áreas com diferentes estoques prévios de vegetação respondem de maneira distinta a choques comparáveis de precipitação, temperatura ou déficit hídrico, então o estoque ambiental pode modificar o efeito desses choques sobre a produtividade agrícola \cite{RedheadEtAl2020}. A questão deixa, portanto, de ser apenas se a vegetação está correlacionada com maior ou menor produtividade e passa a ser se ela altera a sensibilidade da produção a perturbações externas, e se essa relação apresenta magnitude economicamente relevante e heterogeneidade entre biomas \cite{RedheadEtAl2020,XiaoEtAl2023}. % CITAÇÃO9 e CITAÇÃO10 e CITAÇÃO11
-
-% Justificativa para a integração das duas hipóteses (H1 e H2)
-Os dois mecanismos formam, em conjunto, uma relação de codependência entre economia e meio ambiente. O primeiro, de natureza econômico-institucional, diz respeito à forma como retornos econômicos, preços, custos e instituições alteram os incentivos privados à conversão ou à conservação da vegetação e, consequentemente, a evolução do estoque ambiental. O segundo, de natureza biofísico-produtiva, refere-se à forma como esse estoque pode modificar as condições ambientais relevantes para a produção e a resposta da atividade agrícola a choques climáticos, afetando a produtividade e os retornos econômicos associados ao uso da terra. Assim, de um lado, retornos econômicos e instituições condicionam a decisão de converter ou conservar a vegetação e, consequentemente, a evolução do estoque ambiental. De outro, esse estoque pode modificar as condições biofísicas da produção e a resposta da atividade agrícola a choques climáticos, afetando a produtividade e os retornos econômicos associados ao uso da terra \cite{BermanEtAl2023,RedheadEtAl2020}. Em resumo, percebe-se que decisões econômicas alteram o estado ambiental, enquanto o estado ambiental pode alterar os resultados econômicos que fundamentam decisões subsequentes. % CITAÇÃO12
-
-Enfatize-se ainda que essa retroalimentação entre meio ambiente e produtividade pode ser especialmente relevante quando seus componentes são espacialmente heterogêneos. Os retornos da conversão, os custos institucionais enfrentados pelos agentes e a contribuição produtiva da vegetação podem variar entre atividades, territórios e biomas \cite{BradfordEtAl2006,UptonEtAl2014}. Consequentemente, políticas que tratam a conservação apenas como restrição à atividade econômica, ou que consideram separadamente os incentivos à conversão e os efeitos produtivos do estoque ambiental, podem deixar de capturar parte relevante da relação entre produção e conservação. Surge, então, uma questão econômica central: em que medida a interação entre incentivos privados, instituições e contribuição produtiva do estoque ambiental pode informar o desenho e a focalização territorial das políticas de conservação? % CITAÇÃO13
-
-%% Mato Grosso neste contexto.
-Nesse contexto, Mato Grosso constitui um caso empírico especialmente informativo para a investigação dessas relações. O estado combina produção agrícola e pecuária em larga escala com três biomas — cerrado, pantanal e amazônia — que apresentam peculiaridades ambientais e econômicas submetidas a usos ora predatórios, ora racionais e sustentáveis. Além disso, observa-se, dentro de um mesmo território estadual, diferenças relevantes de vegetação, clima, disponibilidade hídrica, sistemas produtivos e custo de oportunidade da terra. Esses três biomas representam, portanto, não apenas formações ecológicas distintas, mas também contextos econômicos diferenciados, nos quais podem variar tanto os incentivos privados associados à conversão ou à conservação da terra quanto a contribuição do estoque de vegetação para as condições produtivas \cite{VanWeyEtAl2013,SimoesEtAl2020}. % CITAÇÃO14
-
-Sendo assim, essa heterogeneidade permite investigar empiricamente os dois mecanismos discutidos anteriormente. Do lado da decisão de uso da terra, ela possibilita examinar se retornos econômicos e instituições produzem respostas distintas de conversão entre atividades e biomas. Nesse caso, não basta identificar se uma regra ambiental ou uma alteração na rentabilidade afeta, em média, o desmatamento ou a conversão. Importa verificar se a intensidade dessas respostas depende das condições econômicas e territoriais sobre as quais os incentivos incidem. Desta forma, a heterogeneidade entre amazônia, cerrado e pantanal interessa à pesquisa não apenas como controle espacial, mas como parte dos próprios mecanismos econômicos em análise.
-
-Do lado da produção, importa saber se o estoque de vegetação modifica a resposta da produtividade aos choques climáticos e se essa relação varia entre biomas. O objetivo não é apenas verificar se a vegetação está associada ao nível médio de produtividade, mas também se ela altera a intensidade com que condições climáticas adversas afetam os resultados produtivos.
-
-% ------------------------------------
-%%% (II) PROBLEMA
-% ------------------------------------
-
-Diante desse quadro, o problema central deste artigo consiste em compreender como incentivos econômicos e institucionais moldam a conversão ou manutenção da vegetação e, simultaneamente, em que medida o estoque de vegetação previamente existente condiciona a resposta da produtividade agrícola a choques climáticos em ambientes ecologicamente e economicamente heterogêneos. A articulação desses dois mecanismos permite examinar uma relação de interdependência na qual decisões econômicas e arranjos institucionais alteram o estado ambiental, enquanto esse estado ambiental, por sua vez, pode influenciar resultados produtivos que retroalimentam decisões subsequentes. 
-
-O \textbf{problema} do artigo pode ser sintetizado no seguinte questionamento: 
-
-\noindent{\emph{Como retornos econômicos e instituições condicionam as decisões de conversão ou manutenção da vegetação, e em que medida o estoque de vegetação nativa altera a resposta da produtividade agrícola a choques climáticos em contextos ecologicamente e economicamente heterogêneos?}}
+Diante desse quadro, o problema central deste artigo consiste em compreender como incentivos econômicos e institucionais moldam a conversão ou manutenção da vegetação em ambientes ecologicamente e economicamente heterogêneos. O \textbf{problema} pode ser sintetizado no seguinte questionamento:
 
 \medskip
-
-Essa pergunta desdobra-se em duas dimensões empiricamente relacionadas: (i) como retornos econômicos, custos, riscos e incentivos institucionais se relacionam com as decisões de conversão ou manutenção da vegetação; e (ii) se o estoque de vegetação previamente existente modifica, em magnitude economicamente relevante, o efeito de choques climáticos sobre a produtividade agrícola, e se essa relação varia entre biomas. Em conjunto, essas duas dimensões buscam esclarecer como incentivos privados, instituições e condições ambientais interagem na relação entre produção e conservação, oferecendo subsídios para o desenho e a focalização territorial de políticas ambientais.
-
-% ------------------------------------
-%%% (III) OBJETIVOS E JUSTIFICATIVA
-% ------------------------------------
-
-O \textbf{objetivo geral} deste artigo é investigar como e em que intensidade retornos econômicos e instituições se relacionam com as decisões de conversão ou manutenção da vegetação e se o estoque de vegetação previamente existente modifica a resposta da produtividade agrícola a choques climáticos em contextos territorialmente heterogêneos. De forma específica, o artigo busca: (i) examinar como retornos econômicos e incentivos institucionais se relacionam com as decisões de conversão ou manutenção da vegetação; (ii) verificar se estoques de vegetação alteram a resposta da produtividade agrícola a choques climáticos; e (iii) avaliar se esses mecanismos apresentam heterogeneidade entre biomas.
-
-A relevância deste trabalho decorre, em termos teóricos, de tratar o \textbf{meio ambiente} não apenas como restrição ou externalidade, mas como componente \textbf{endógeno} do processo econômico, capaz de afetar resultados produtivos e, simultaneamente, ser transformado por decisões econômicas e institucionais. Essa relação envolve também uma \textbf{dimensão territorial}, na medida em que incentivos e instituições podem gerar respostas econômicas e ecológicas distintas conforme as condições locais, e uma \textbf{dimensão intertemporal}, pois decisões presentes de uso da terra alteram estoques ambientais que condicionam oportunidades e riscos econômicos futuros. 
-
-Em termos empíricos e aplicados, compreender essas relações pode: (a) orientar decisões de firmas e produtores sobre conversão, conservação e manejo da terra, bem como sobre estratégias de adaptação a choques climáticos; (b) identificar potenciais repercussões para consumidores e mercados decorrentes de alterações na oferta, nos preços e na estabilidade da produção, na medida em que mudanças no estoque ambiental podem modificar a sensibilidade da atividade produtiva a choques climáticos; e (c) subsidiar governos e organizações do terceiro setor responsáveis por fiscalização, conservação e alocação de recursos ambientais, ao revelar como incentivos econômicos, condições institucionais e características ambientais locais podem produzir respostas distintas entre territórios.
-
-% ------------------------------------
-%%% (IV) HIPÓTESES
-% ------------------------------------
-
-%% --- HG
-Dito isso, a análise parte da seguinte \textbf{hipótese geral (HG):} 
-
-\noindent{\emph{Retornos econômicos e instituições condicionam decisões de uso da terra que alteram o estoque ambiental, enquanto esse estoque pode, por sua vez, condicionar resultados produtivos relevantes para decisões econômicas subsequentes.} 
-
+\noindent\emph{Como retornos econômicos e instituições condicionam as decisões de conversão ou manutenção da vegetação nativa em Mato Grosso, e em que medida essa relação varia conforme a capacidade produtiva local, as atividades agropecuárias e os biomas?}
 \medskip
 
-Essa hipótese geral é examinada por meio de duas \textbf{hipóteses específicas}:
+Essa pergunta desdobra-se em duas dimensões empiricamente relacionadas: (i) se mudanças nos preços dos produtos agropecuários se traduzem em maior conversão onde a capacidade produtiva para esses usos é mais elevada; e (ii) se as condições institucionais modificam a intensidade dessa resposta. Em conjunto, essas dimensões buscam esclarecer como incentivos privados e instituições interagem na relação entre produção e conservação, oferecendo subsídios para o desenho e a focalização territorial de políticas ambientais.
+
+O \textbf{objetivo geral} deste artigo é investigar como e em que intensidade os determinantes observáveis do retorno econômico esperado e o ambiente institucional se relacionam com as decisões de conversão da vegetação nativa em Mato Grosso. De forma específica, o artigo busca: (i) construir medidas de conversão bruta para agricultura e pastagem; (ii) examinar a resposta dessas medidas a variações de preços combinadas com capacidade produtiva predeterminada; (iii) avaliar o condicionamento institucional dessa resposta, distinguindo associação de identificação causal; e (iv) verificar sua heterogeneidade entre atividades e biomas.
+
+A relevância deste trabalho decorre, em termos teóricos, de tratar o \textbf{meio ambiente} como componente \textbf{endógeno} do processo econômico, cujo estoque é transformado por decisões de produção e pelas instituições que as condicionam. Essa relação envolve uma \textbf{dimensão territorial}, na medida em que incentivos e instituições podem gerar respostas distintas conforme as condições locais, e uma \textbf{dimensão intertemporal}, pois a conversão presente altera estoques ambientais e oportunidades econômicas futuras. No âmbito da tese, este artigo examina a formação desse estoque pela decisão de uso da terra; o capítulo 2, dedicado à H2, examina se a vegetação previamente existente modifica a resposta da produtividade agrícola a choques climáticos. A articulação dos capítulos permitirá discutir a contribuição produtiva do meio ambiente, sem atribuir a este primeiro artigo um teste do circuito completo de retroalimentação. A condição de insumo produtivo é compatível com a existência de serviços ambientais cujos benefícios ultrapassam a propriedade e geram externalidades.
+
+Em termos empíricos e aplicados, compreender essas relações pode orientar decisões de produtores sobre conversão, conservação e manejo da terra e subsidiar governos e organizações responsáveis por fiscalização e alocação de recursos ambientais. A contribuição pretendida está em revelar quando condições institucionais e territoriais alteram a resposta aos incentivos econômicos. Isso não pressupõe a ineficácia dos instrumentos existentes nem a superioridade automática da governança local: a literatura admite diferentes combinações de regras, monitoramento e sanções, cuja efetividade depende do contexto \cite{AnderssonEtAl2014}.
+
+\subsection*{Hipóteses}
+
+Dito isso, o artigo examina a primeira hipótese da tese e seus dois desdobramentos:
 
 \medskip
+\noindent\textbf{(H1) Retornos, instituições e conversão.}
 
-%% --- H1
-% Instituições e resultados/expectativas condicionam decisões de conversão/conservação, que alteram o estoque ambiental.
-%% \E afeta decisões econômicas
-\noindent{\textbf{(H1) Retornos, instituições e conversão.}}
-
-\noindent{\emph{*A taxa de conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.*}}
-
-% -------------------------------------------------------------------------
-% NOTA ECONOMÉTRICA — H1
-%
-% Variável dependente esperada:
-%     - Conv_it = taxa de conversão de vegetação nativa para usos agropecuários no município/território i e período t.
-%
-% Construção candidata:
-% Conv_it = (área de vegetação nativa em t-1 convertida para uso agropecuário em t) / (área de vegetação nativa disponível em t-1).
-%
-% Fonte candidata para Conv_it: MapBiomas — cobertura e transições anuais de uso da terra.
-%
-% Variável independente conceitual: R^e_i,t-1 = retorno econômico esperado dos usos agropecuários.
-%
-% R^e não precisa ser diretamente observado. Pode ser aproximado por determinantes observáveis do retorno esperado, especialmente:
-%     - preços dos produtos agropecuários (World Bank Pink Sheet; CEPEA; IMEA; CONAB);
-%     - capacidade produtiva/aptidão/produtividade potencial da terra (FAO-GAEZ; eventualmente IBGE/PAM em especificações alternativas);
-%     - custos de produção/comercialização, caso haja dados adequados.
-%
-% Modelo-base esperado: Conv_it = beta_1 R^e_i,t-1 + alpha_i + lambda_t + gamma' Z_it + epsilon_it
-%
-% onde:
-%     - alpha_i  = efeitos fixos territoriais/municipais;
-%     - lambda_t = efeitos fixos de período;
-%     - Z_it     = controles variantes no tempo;
-%     - epsilon_it = termo de erro.
-%
-% Predição de H1: beta_1 > 0.
-%
-% Temporalidade inicial esperada: retorno em t-1 -> conversão em t.
-% Testar posteriormente lags adicionais e efeitos acumulados.
-% -------------------------------------------------------------------------
+\noindent\emph{A taxa de conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.}
 
 \medskip
+\noindent\textbf{(H1-a) Preços e capacidade produtiva local.}
 
-\noindent{\textbf{(H1-a) Preços e capacidade produtiva local.}}
-
-\noindent{\emph{*O efeito de aumentos nos preços dos produtos agropecuários sobre a taxa de conversão de vegetação nativa é maior onde a capacidade produtiva local da terra para esses usos é mais elevada.*}}
-
-% -------------------------------------------------------------------------
-% NOTA ECONOMÉTRICA — H1-a
-%
-% H1-a fornece uma operacionalização observável do retorno econômico esperado previsto em H1.
-%
-% Variável dependente:
-% Conv_it = taxa de conversão definida em H1
-%           (MapBiomas).
-%
-% Componente temporal:
-% P_k,t = preço do produto agropecuário k no período t
-%         (World Bank Pink Sheet; CEPEA; IMEA; CONAB).
-%
-% Transformações candidatas:
-% ln(P_k,t), Delta ln(P_k,t), variação percentual, médias ou lags.
-% A forma definitiva dependerá da estratégia de identificação.
-%
-% Componente espacial/predeterminado:
-% S_ik = capacidade produtiva local da terra no território i
-%        para o produto/atividade k.
-%
-% Proxies candidatas para S_ik:
-% - aptidão agroecológica por cultura (FAO-GAEZ);
-% - produtividade potencial por cultura (FAO-GAEZ);
-% - produtividade histórica pré-determinada (IBGE/PAM);
-% - composição produtiva em período-base (IBGE/PAM);
-% - efetivo/estrutura pecuária prévia, se aplicável (IBGE/PPM).
-%
-% Construção candidata do choque de retorno:
-%
-% ShockReturn_it =
-%     sum_k [ Delta ln(P_k,t-1) * S_ik ].
-%
-% Modelo esperado:
-%
-% Conv_it = beta_1 ShockReturn_it
-%           + alpha_i + lambda_t
-%           + gamma' Z_it + epsilon_it.
-%
-% Predição de H1-a:
-% beta_1 > 0.
-%
-% Interpretação:
-% um mesmo aumento de preço deve produzir maior pressão sobre a conversão
-% onde a terra possui maior capacidade produtiva para a atividade
-% beneficiada pelo choque.
-%
-% Possíveis desfechos adicionais:
-%
-% ConvAgric_it =
-%   (vegetação nativa t-1 -> agricultura t)
-%   / (vegetação nativa disponível t-1)
-%
-% ConvPast_it =
-%   (vegetação nativa t-1 -> pastagem t)
-%   / (vegetação nativa disponível t-1)
-%
-% Fonte:
-% MapBiomas.
-%
-% Esses desfechos permitem separar respostas associadas a lavouras
-% e à pecuária, sem transformar essa heterogeneidade em nova hipótese.
-% -------------------------------------------------------------------------
+\noindent\emph{O efeito de aumentos nos preços dos produtos agropecuários sobre a taxa de conversão de vegetação nativa é maior onde a capacidade produtiva local da terra para esses usos é mais elevada.}
 
 \medskip
+\noindent\textbf{(H1-b) Condicionamento institucional.}
 
-\noindent{\textbf{(H1-b) Condicionamento institucional.}}
-
-\noindent{\emph{*A resposta da taxa de conversão ao retorno econômico esperado dos usos agropecuários é condicionada pelo ambiente institucional, particularmente pelas regras, pelo monitoramento, pela fiscalização e pelas sanções que alteram os custos e os riscos associados à conversão.*}}
-
-% -------------------------------------------------------------------------
-% NOTA ECONOMÉTRICA — H1-b
-%
-% Variável dependente:
-% Conv_it = taxa de conversão de vegetação nativa
-%           (MapBiomas).
-%
-% Variável de retorno:
-% R^e_i,t-1 ou ShockReturn_it, conforme operacionalização adotada em H1-a.
-%
-% Variável institucional:
-% I_i,t-1 = indicador do ambiente institucional/enforcement.
-%
-% Proxies candidatas:
-% - autos de infração ambiental (IBAMA);
-% - valor das multas (IBAMA);
-% - número ou área de embargos (IBAMA);
-% - intensidade de monitoramento/fiscalização (IBAMA/MMA);
-% - regimes diferenciados de fiscalização ou mudanças regulatórias;
-% - informações de regularização ambiental, se houver série histórica
-%   adequada (SICAR/Serviço Florestal Brasileiro).
-%
-% Modelo esperado:
-%
-% Conv_it = beta_1 R^e_i,t-1
-%           + beta_2 I_i,t-1
-%           + beta_3 (R^e_i,t-1 * I_i,t-1)
-%           + alpha_i + lambda_t
-%           + gamma' Z_it + epsilon_it.
-%
-% Coeficiente central de H1-b:
-% beta_3.
-%
-% Se I_it for construído de modo que valores maiores representem
-% enforcement ambiental mais efetivo:
-% beta_3 < 0.
-%
-% Interpretação:
-% maior enforcement reduz a intensidade com que aumentos do retorno
-% econômico esperado se convertem em maior conversão.
-%
-% ATENÇÃO:
-% autos, multas e embargos são potencialmente endógenos, pois a fiscalização
-% pode responder ao próprio desmatamento/conversão.
-% Defasagens não resolvem necessariamente esse problema.
-% A estratégia causal para I_it deverá ser tratada separadamente na
-% metodologia e nos testes de robustez.
-% -------------------------------------------------------------------------
-
+\noindent\emph{A resposta da taxa de conversão ao retorno econômico esperado dos usos agropecuários é condicionada pelo ambiente institucional, particularmente pelas regras, pelo monitoramento, pela fiscalização e pelas sanções que alteram os custos e os riscos associados à conversão.}
 \medskip
 
-Nesta hipótese, vegetação nativa corresponde à cobertura vegetal natural existente no território, enquanto sua conversão designa a substituição, total ou parcial, dessa cobertura por usos agropecuários, como lavouras ou pastagens. A taxa de conversão refere-se à parcela da vegetação nativa disponível em determinado território e período que é convertida para esses usos, constituindo o principal resultado de interesse da hipótese.
+Nesta hipótese, vegetação nativa corresponde à cobertura vegetal natural existente no território, enquanto sua conversão designa a substituição dessa cobertura por usos agropecuários, como lavouras ou pastagens. A taxa de conversão refere-se à parcela da vegetação nativa disponível em determinado território e período que é convertida para esses usos, constituindo o principal resultado de interesse. A ausência de conversão observada tampouco equivale, necessariamente, a uma decisão ativa de conservação ou à integridade ecológica da vegetação remanescente.
 
-O retorno econômico esperado dos usos agropecuários corresponde ao benefício privado esperado da utilização produtiva da terra, considerando receitas e custos associados à atividade. Empiricamente, esse retorno não precisa ser observado diretamente, podendo ser representado por seus determinantes econômicos observáveis. Entre eles, destacam-se os preços dos produtos agropecuários e a capacidade produtiva local da terra, esta última relacionada às condições que afetam a produtividade potencial ou esperada das atividades consideradas. A H1-a expressa, portanto, a expectativa de que choques favoráveis de preços produzam maior pressão sobre a conversão onde a terra oferece maior capacidade produtiva para os usos beneficiados por esses choques.
+O retorno econômico esperado dos usos agropecuários corresponde ao benefício privado esperado da utilização produtiva da terra, considerando receitas e custos associados à atividade. Empiricamente, esse retorno não é diretamente observado nas bases reunidas, podendo ser aproximado por seus determinantes econômicos observáveis. Entre eles, destacam-se os preços dos produtos agropecuários e a capacidade produtiva local da terra. A H1-a expressa a expectativa de que choques favoráveis de preços produzam maior pressão sobre a conversão onde a terra oferece maior capacidade produtiva para os usos beneficiados. O teste dessa previsão será, portanto, um teste de uma implicação observável de H1, condicionado à validade da aproximação; não uma estimativa direta do retorno líquido esperado.
 
-O ambiente institucional compreende as regras formais e os mecanismos de implementação que alteram os incentivos econômicos associados à conversão, incluindo direitos de propriedade, regulação ambiental, monitoramento, fiscalização e sanções. A H1-b não pressupõe que essas instituições determinem isoladamente a conversão, mas que modifiquem a intensidade com que alterações nos retornos econômicos esperados se traduzem em conversão efetiva da vegetação nativa.
+O ambiente institucional compreende as regras formais e os mecanismos de implementação que alteram os incentivos econômicos associados à conversão, incluindo direitos de propriedade, regulação ambiental, monitoramento, fiscalização e sanções. A H1-b não pressupõe que essas instituições determinem isoladamente a conversão, mas que modifiquem a intensidade com que alterações nos retornos econômicos esperados se traduzem em conversão efetiva. Quando uma medida representar, de maneira defensável, maior efetividade da fiscalização, espera-se menor sensibilidade da conversão ao retorno. Contagens de autos ou valores de multas, por si sós, não satisfazem essa condição.
 
-As relações previstas em H1, H1-a e H1-b podem apresentar heterogeneidade entre atividades agropecuárias e biomas. Diferentes atividades apresentam tecnologias, estruturas de custos e retornos distintos, enquanto os biomas diferem em condições biofísicas, produtivas e regulatórias. Essa heterogeneidade será tratada como dimensão empírica da análise, sem constituir, neste estágio, uma hipótese autônoma.
+As relações previstas em H1, H1-a e H1-b podem apresentar heterogeneidade entre atividades agropecuárias e biomas. Diferentes atividades apresentam tecnologias, estruturas de custos e retornos distintos, enquanto os biomas diferem em condições biofísicas e produtivas. Essa heterogeneidade será tratada como dimensão empírica da análise, sem constituir uma hipótese autônoma. Resultados nulos, de sinal contrário ou restritos a determinados grupos serão discutidos como limites ou evidência contrária às previsões propostas.
 
-\medskip
+\subsection*{Método e organização do artigo}
 
-%% --- H2
-% O estoque ambiental previamente existente modifica a resposta
-% da produtividade a choques climáticos posteriores.
+As hipóteses serão examinadas com dados em painel para Mato Grosso, tendo 2001--2024 como período candidato, conforme a delimitação já adotada na preparação da qualificação. A análise combinará transições anuais de uso da terra, preços agropecuários, medidas predeterminadas de capacidade produtiva e registros institucionais. As especificações considerarão a ordenação temporal entre incentivos e conversão, efeitos fixos territoriais e temporais e controles compatíveis com a identificação. A endogeneidade da fiscalização, a dependência espacial e a validade temporal das medidas de capacidade produtiva receberão tratamento explícito. A amostra final depende da harmonização territorial e da obtenção das conversões brutas, ainda pendentes.
 
-\noindent{\textbf{(H2) Vegetação, clima e produtividade.}}
+Além desta introdução, o artigo está organizado em cinco seções. A primeira revisa a literatura sobre retornos, instituições e conversão da vegetação. A segunda apresenta Mato Grosso como contexto empírico, descreve os dados e explicita a construção das variáveis. A terceira desenvolve a estratégia econométrica para examinar as hipóteses do artigo. A quarta estabelece os critérios de apresentação e discussão dos resultados a serem obtidos, com atenção à heterogeneidade e à robustez. Por fim, a quinta reúne as contribuições pretendidas e as limitações do estudo. Nesta versão para qualificação, não são apresentados resultados econométricos.
 
-\noindent{\emph{*A resposta da produtividade agrícola aos choques climáticos varia, em magnitude economicamente relevante, conforme o estoque de vegetação previamente existente no território.*}}
-
-% -------------------------------------------------------------------------
-% NOTA ECONOMÉTRICA — H2
-%
-% Variável dependente esperada:
-% Y_it = produtividade agrícola no município/território i e período t.
-%
-% Operacionalização principal atualmente prevista:
-% Y_it = rendimento médio da soja, em kg/ha
-%        (IBGE/PAM; eventualmente RAMMT como base complementar
-%        ou de robustez, conforme cobertura e comparabilidade).
-%
-% Variável climática:
-% C_it = choque climático ocorrido no território i no período t.
-%
-% Proxies candidatas:
-% - anomalia de precipitação (CHIRPS);
-% - déficit/excesso de precipitação em relação à normal histórica (CHIRPS);
-% - temperatura média, máxima ou extremos térmicos (ERA5-Land; INMET
-%   como possível fonte de validação);
-% - medida de déficit hídrico construída a partir das variáveis
-%   meteorológicas disponíveis.
-%
-% IMPORTANTE:
-% "Choque" deve representar desvio em relação à condição climática
-% esperada/referencial, e não simplesmente o nível bruto de chuva
-% ou temperatura.
-%
-% Variável ambiental:
-% E_i,t-1 = estoque de vegetação nativa previamente existente
-%           no território i.
-%
-% Construções candidatas:
-% - proporção da área municipal coberta por vegetação nativa em t-1;
-% - área de vegetação nativa em t-1;
-% - estoque inicial/predeterminado de vegetação em período-base,
-%   como especificação alternativa.
-%
-% Fonte candidata:
-% MapBiomas — cobertura anual e classes de vegetação nativa.
-%
-% Modelo-base esperado:
-%
-% Y_it = beta_1 C_it
-%        + beta_2 E_i,t-1
-%        + beta_3 (C_it * E_i,t-1)
-%        + alpha_i
-%        + lambda_t
-%        + gamma' Z_it
-%        + epsilon_it.
-%
-% onde:
-% alpha_i  = efeitos fixos municipais;
-% lambda_t = efeitos fixos de período;
-% Z_it     = vetor de controles variantes no tempo;
-% epsilon_it = termo de erro.
-%
-% Quantidade central de interesse:
-%
-% dY_it / dC_it = beta_1 + beta_3 E_i,t-1.
-%
-% Predição de H2:
-% beta_3 != 0 e o efeito associado deve possuir magnitude
-% economicamente relevante.
-%
-% H2 NÃO impõe, neste estágio, sinal a beta_3.
-% O sinal dependerá:
-% (i) da forma como o choque climático C_it for codificado; e
-% (ii) de a vegetação amplificar ou amortecer sua transmissão
-%      para a produtividade.
-%
-% Exemplo:
-% se C_it for definido como intensidade de um choque climático adverso,
-% com valores maiores significando maior severidade, e a vegetação atuar
-% como amortecedor, espera-se beta_1 < 0 e beta_3 > 0.
-%
-% Essa previsão direcional NÃO deve ser incorporada à hipótese antes
-% de a literatura e a definição empírica do choque justificarem o sinal.
-%
-% Anterioridade temporal:
-% E_i,t-1 -> C_it -> Y_it.
-%
-% A defasagem do estoque vegetal busca assegurar que a condição ambiental
-% utilizada como moderadora seja anterior ao choque e ao resultado
-% produtivo observado.
-% -------------------------------------------------------------------------
-
-\medskip
-
-\noindent{\textbf{(H2-a) Heterogeneidade entre biomas.}}
-
-\noindent{\emph{*A magnitude da modificação exercida pelo estoque de vegetação sobre a resposta da produtividade agrícola aos choques climáticos é heterogênea entre biomas.*}}
-
-% -------------------------------------------------------------------------
-% NOTA ECONOMÉTRICA — H2-a
-%
-% Variável dependente:
-% Y_it = produtividade agrícola
-%        (principalmente rendimento da soja em kg/ha; IBGE/PAM).
-%
-% Variáveis centrais:
-% C_it     = choque climático
-%            (CHIRPS; ERA5-Land; eventualmente INMET para validação);
-%
-% E_i,t-1  = estoque de vegetação nativa previamente existente
-%            (MapBiomas);
-%
-% B_ib     = pertencimento/composição do município i no bioma b
-%            (IBGE / sobreposição espacial com dados de cobertura).
-%
-% Possível classificação:
-% - Amazônia;
-% - Cerrado;
-% - Pantanal;
-% - municípios de composição mista, conforme critério previamente
-%   definido para predominância territorial.
-%
-% Estratégia 1 — interação tripla:
-%
-% Y_it = beta_1 C_it
-%        + beta_2 E_i,t-1
-%        + beta_3 (C_it * E_i,t-1)
-%        + sum_b delta_b (C_it * E_i,t-1 * B_ib)
-%        + alpha_i
-%        + lambda_t
-%        + gamma' Z_it
-%        + epsilon_it.
-%
-% H2-a:
-% os efeitos marginais da interação clima x vegetação não são iguais
-% entre os biomas.
-%
-% Equivalentemente:
-%
-% beta_3,Amazonia != beta_3,Cerrado
-% ou
-% beta_3,Amazonia != beta_3,Pantanal
-% ou
-% beta_3,Cerrado != beta_3,Pantanal.
-%
-% Estratégia 2 — estimações separadas por bioma:
-%
-% Y_it^(b) = beta_1^(b) C_it
-%            + beta_2^(b) E_i,t-1
-%            + beta_3^(b) (C_it * E_i,t-1)
-%            + alpha_i
-%            + lambda_t
-%            + gamma' Z_it
-%            + epsilon_it.
-%
-% Comparar beta_3^(b) entre os biomas.
-%
-% ATENÇÃO:
-% a estimação separada depende de suporte amostral suficiente em cada
-% bioma. Pantanal e grupos mistos podem exigir tratamento exploratório
-% ou agrupamentos alternativos caso o número de municípios/observações
-% não permita inferência adequada.
-%
-% A classificação por bioma deve ser definida ex ante.
-% Possíveis análises de sensibilidade:
-% - predominância >= 80% como especificação principal;
-% - limiares de 70% e 90% como robustez.
-%
-% "Heterogeneidade" significa diferença na magnitude do coeficiente
-% associado a C_it * E_i,t-1, e não simplesmente diferenças nos níveis
-% médios de produtividade, clima ou vegetação entre os biomas.
-% -------------------------------------------------------------------------
-
-\medskip
-
-Nesta hipótese, estoque de vegetação previamente existente corresponde à quantidade ou proporção de cobertura vegetal presente no território antes da ocorrência do choque climático considerado, de modo a preservar a anterioridade temporal entre condição ambiental e resultado produtivo. A produtividade refere-se ao resultado da produção por unidade de área ou de outro insumo relevante, conforme a medida empírica adotada. Por choques climáticos entendem-se desvios de curto prazo das condições climáticas em relação a uma referência temporal pertinente, envolvendo dimensões como precipitação, temperatura ou déficit hídrico, capazes de afetar a produção agrícola.
-
-Dizer que o estoque de vegetação modifica a resposta da produtividade significa que o efeito de um mesmo choque climático pode diferir conforme a condição ambiental previamente existente. A hipótese não pressupõe que maior estoque de vegetação implique, por si só, maior produtividade média, nem estabelece previamente que a vegetação necessariamente atenue ou amplifique os efeitos dos choques. O objeto de interesse é a modificação da resposta da produtividade ao choque climático associada ao estoque de vegetação previamente existente.
-
-A expressão magnitude economicamente relevante indica que essa diferença deve ser suficientemente expressiva para produzir consequências substantivas sobre o desempenho produtivo, e não apenas apresentar significância estatística. Sua avaliação deverá considerar a dimensão do efeito estimado sobre a produtividade e, quando pertinente, sua tradução em perdas ou ganhos de produção e valor econômico.
-
-A H2-a admite que essa relação seja heterogênea entre biomas em razão de diferenças nas condições climáticas, ecológicas, biofísicas e produtivas sob as quais vegetação e produção agrícola interagem. Essa heterogeneidade refere-se especificamente à magnitude da modificação da resposta da produtividade aos choques climáticos, e não simplesmente a diferenças nos níveis médios de produtividade, vegetação ou clima entre os biomas.
-
-\medskip
-
-% ------------------------------------
-%%% (V) METODOLOGIA
-% ------------------------------------
-
-% Falta melhorar: detalhar melhor dados/variáveis, fontes e período.
-\textcolor{gray}{As hipóteses serão examinadas com dados em painel para Mato Grosso. H1 relacionará a conversão da vegetação aos retornos econômicos dos usos alternativos da terra, ao ambiente institucional e à interação entre essas dimensões. H2 relacionará a produtividade agrícola aos choques climáticos, ao estoque prévio de vegetação e à interação entre essas variáveis. As especificações considerarão a ordenação temporal compatível com cada mecanismo, efeitos fixos territoriais e temporais e controles pertinentes a cada hipótese. Dependência espacial, heterogeneidade entre biomas e especificações alternativas serão examinadas por meio de testes e análises de robustez. A interpretação causal dos resultados dependerá das condições de identificação sustentadas pelos dados.}
-
-% ------------------------------------
-%%% (VI) DIVISÃO DO TRABALHO
-% ------------------------------------
-
-% Falta melhorar: nova divisão do trabalho
-Além desta introdução, o artigo está organizado em cinco seções. A primeira revisa a literatura sobre os mecanismos que relacionam conversão da vegetação, instituições, clima e produtividade. A segunda apresenta Mato Grosso como contexto empírico, descreve os dados e explicita a construção das variáveis. A terceira seção desenvolve a estratégia econométrica para examinar as hipóteses do artigo. A quarta apresenta e discute os resultados, com atenção à heterogeneidade entre biomas e às análises de robustez. Por fim, a quinta seção reúne as considerações finais, as implicações dos resultados e as limitações do estudo.
-
-
-
- 
-
-
-
-
-% FIM

@@ -3,16 +3,20 @@
 Numeric missing values retain the original SIDRA symbol in companion columns.
 MapBiomas native vegetation is an explicit candidate taxonomic definition.
 """
+from data_paths import data_path
 import json, re, unicodedata, zipfile
 import pandas as pd
 import numpy as np
 import openpyxl
 from data_common import DATA, write_json
+from data_paths import sync_shared
 
-OUT=DATA/'processed/tabular'
 def save(df,name):
-    OUT.mkdir(parents=True,exist_ok=True)
-    df.to_csv(OUT/name,index=False,encoding='utf-8-sig')
+    relative='processed/tabular/'+name
+    target=data_path(relative)
+    target.parent.mkdir(parents=True,exist_ok=True)
+    df.to_csv(target,index=False,encoding='utf-8-sig')
+    sync_shared(relative,replace=True)
     print(name,len(df),flush=True)
 
 def norm(s):
@@ -22,7 +26,7 @@ def sidra():
     names={'109':'area_plantada_ha','216':'area_colhida_ha','214':'producao_t','112':'rendimento_medio_kg_ha','105':'efetivo_bovino'}
     for table,label in [('1612','pam_soja_milho'),('3939','ppm_bovinos')]:
         rows=[]
-        for p in sorted((DATA/'raw/tabular/ibge').glob(f't{table}_*.json')):
+        for p in sorted((data_path('raw/tabular/ibge')).glob(f't{table}_*.json')):
             a=json.loads(p.read_text(encoding='utf-8'))
             for v in a:
                 for result in v['resultados']:
@@ -44,12 +48,12 @@ def sidra():
         save(w,f'h1_h2__{label}__ibge__municipio_anual.csv')
 
 def mapbiomas():
-    p=DATA/'raw/tabular/mapbiomas/collection10_1_coverage.xlsx'
+    p=data_path('raw/tabular/mapbiomas/collection10_1_coverage.xlsx')
     wb=openpyxl.load_workbook(p,read_only=True,data_only=True)
     it=wb['COVERAGE_10.1'].iter_rows(values_only=True); header=next(it)[:51]
     rows=[r[:51] for r in it if r[3]=='MT']
     d=pd.DataFrame(rows,columns=header)
-    lookup=json.loads((DATA/'raw/tabular/ibge/municipios_mt_consulta20260928.json').read_text(encoding='utf-8'))
+    lookup=json.loads((data_path('raw/tabular/ibge/municipios_mt_consulta20260928.json')).read_text(encoding='utf-8'))
     lookup={norm(r['nome']):str(r['id']) for r in lookup}
     d['codigo_ibge']=d.municipality.map(lambda x:lookup.get(norm(x)))
     unmatched=d[d.codigo_ibge.isna()].copy()
@@ -74,7 +78,7 @@ def mapbiomas():
     write_json('catalog/mapbiomas_legenda_taxonomia.json',{'classes_nativas_candidatas':native,'excluidas_da_vegetacao':[29,32,33,31],'denominador':'soma de todas as classes mapeadas; inclui agua e nao observado','legend_rows':legend,'crosswalk':'nome normalizado exato + UF; cadastro IBGE 2026; nao constitui harmonizacao historica'})
 
 def prices():
-    w=openpyxl.load_workbook(DATA/'raw/tabular/worldbank/pink_sheet_monthly_20260930.xlsx',read_only=True,data_only=True)
+    w=openpyxl.load_workbook(data_path('raw/tabular/worldbank/pink_sheet_monthly_20260930.xlsx'),read_only=True,data_only=True)
     rows=list(w['Monthly Prices'].values); h=rows[4];units=rows[5]
     cols=[(h.index('Soybeans'),'price_soja'),(h.index('Maize'),'price_milho'),(h.index('Beef **'),'price_carne_bovina')]
     result=[]
@@ -89,8 +93,8 @@ def prices():
 
 def vectors():
     import geopandas as gpd
-    m=gpd.read_file('zip://'+str(DATA/'raw/vector/ibge/MT_Municipios_2024.zip'))
-    b=gpd.read_file('zip://'+str(DATA/'raw/vector/ibge/Biomas_250mil_2019.zip'))
+    m=gpd.read_file('zip://'+str(data_path('raw/vector/ibge/MT_Municipios_2024.zip')))
+    b=gpd.read_file('zip://'+str(data_path('raw/vector/ibge/Biomas_250mil_2019.zip')))
     print('VECTOR SCHEMA',list(m.columns),list(b.columns),flush=True)
     info={}
     for name,g in [('municipios_2024',m),('biomas_2019',b)]:

@@ -1,4 +1,5 @@
 """Refresh human-readable validation and final delivery counts from evidence."""
+from data_paths import data_path
 import json,subprocess
 from pathlib import Path
 import pandas as pd
@@ -27,7 +28,7 @@ def main():
     files=subprocess.check_output(['git','ls-files','--others','--exclude-standard','-z'],cwd=ROOT).decode('utf-8').split('\0')
     new=[{'arquivo':name,'bytes':(ROOT/name).stat().st_size} for name in files if name and (ROOT/name).is_file()]
     pd.DataFrame(new).to_csv(c/'novos_arquivos_h1_h2.csv',index=False,encoding='utf-8-sig')
-    n_chirps=len(list((DATA/'raw/raster/chirps_v2').glob('*.tif.gz')))
+    n_chirps=len(list((data_path('raw/raster/chirps_v2')).glob('*.tif.gz')))
     report=f'''# Entrega da auditoria e preparação H1/H2
 
 ## Resultado

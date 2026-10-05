@@ -3,15 +3,16 @@
 GAEZ uses pixel centres and cos(latitude) weights. DEM means use native pixels;
 no slope or ruggedness is fabricated from an elevation mean.
 """
+from data_paths import data_path
 import numpy as np,pandas as pd,geopandas as gpd,rasterio
 from rasterio.mask import mask
 from data_common import DATA,write_json
 from prepare_h1_h2 import save
 
 def main():
-    municipalities=gpd.read_file('zip://'+str(DATA/'raw/vector/ibge/MT_Municipios_2024.zip')).to_crs(4326)
+    municipalities=gpd.read_file('zip://'+str(data_path('raw/vector/ibge/MT_Municipios_2024.zip'))).to_crs(4326)
     result=[];metadata=[]
-    for p in sorted((DATA/'raw/raster/gaez_v4_6190').glob('*.tif')):
+    for p in sorted((data_path('raw/raster/gaez_v4_6190')).glob('*.tif')):
         with rasterio.open(p) as src:
             metadata.append({'arquivo':str(p.relative_to(DATA)),'crs':str(src.crs),'resolution':list(src.res),'bbox':list(src.bounds),'nodata':src.nodata,'bands':src.count,'dtype':src.dtypes[0]})
             for r in municipalities.itertuples():
@@ -25,7 +26,7 @@ def main():
     # Native COG tile statistics; municipal membership tested per pixel.
     sums=np.zeros(len(municipalities));counts=np.zeros(len(municipalities));mins=np.full(len(municipalities),np.inf);maxs=np.full(len(municipalities),-np.inf)
     from shapely.geometry import box
-    for p in sorted((DATA/'raw/raster/copdem90').glob('*.tif')):
+    for p in sorted((data_path('raw/raster/copdem90')).glob('*.tif')):
         with rasterio.open(p) as src:
             metadata.append({'arquivo':str(p.relative_to(DATA)),'crs':str(src.crs),'resolution':list(src.res),'bbox':list(src.bounds),'nodata':src.nodata,'bands':src.count,'dtype':src.dtypes[0]})
             extent=box(*src.bounds)

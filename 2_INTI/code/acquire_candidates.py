@@ -1,4 +1,5 @@
 """Discover source resources; do not silently select a final empirical definition."""
+from data_paths import data_path
 import json
 from urllib.parse import urljoin
 from acquire_h1_h2 import get
@@ -22,14 +23,14 @@ def run():
     ]
     for name,url,ext in docs:
         get(url,f'raw/tabular/source_documents/{name}_20260930.{ext}',name)
-    p=DATA/'raw/tabular/source_documents/ibama_embargos_20260930.json'
+    p=data_path('raw/tabular/source_documents/ibama_embargos_20260930.json')
     if p.exists():
         a=json.loads(p.read_text(encoding='utf-8'))
         for r in a['result']['resources']:
             print('EMBARGO_RESOURCE',r['name'],r['url'],flush=True)
             if r['url'].endswith('/termo_embargo_csv.zip'):
                 get(r['url'],'raw/tabular/ibama/termo_embargo_csv.zip','IBAMA','snapshot 2026-09-30')
-    p=DATA/'raw/tabular/source_documents/conab_agricolas_20260930.html'
+    p=data_path('raw/tabular/source_documents/conab_agricolas_20260930.html')
     if p.exists(): print('CONAB_LINKS',[u for u in links(p) if any(t in u.lower() for t in ['soja','milho'])])
 
 if __name__=='__main__': run()

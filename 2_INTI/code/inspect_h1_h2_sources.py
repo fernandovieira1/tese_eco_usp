@@ -1,3 +1,4 @@
+from data_paths import data_path
 import json,re
 from pathlib import Path
 from html.parser import HTMLParser
@@ -12,9 +13,9 @@ def links(path):
     p=Links(); p.feed(Path(path).read_text(encoding='utf-8',errors='replace')); return p.urls
 
 if __name__=='__main__':
-    d=DATA/'raw/tabular/source_documents'
+    d=data_path('raw/tabular/source_documents')
     a=json.loads((d/'ibama_autos_20260930.json').read_text())
     print('IBAMA',[(r['name'],r['url']) for r in a['result']['resources']][:9])
     for name,term in [('worldbank','xlsx'),('gaez_v4','gaez'),('mma_amazonia','portaria')]:
         print(name,[u for u in links(d/f'{name}_20260930.html') if term in u.lower()])
-    print('PAM',str(json.loads((DATA/'raw/tabular/ibge/t1612_1974_1983.json').read_text()))[:1800])
+    print('PAM',str(json.loads((data_path('raw/tabular/ibge/t1612_1974_1983.json')).read_text()))[:1800])

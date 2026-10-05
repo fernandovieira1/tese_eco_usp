@@ -1,0 +1,41 @@
+# Dados locais
+**/data/
+**2_INTI/diversos
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Arquivos auxiliares do LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.bcf
+*.run.xml
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini

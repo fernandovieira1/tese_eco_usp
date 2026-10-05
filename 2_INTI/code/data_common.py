@@ -4,6 +4,7 @@ import hashlib
 import json
 from datetime import datetime, timezone
 import requests
+from data_paths import data_path, data_paths, sync_shared, legacy_repository_path
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / '2_INTI' / 'data'
@@ -17,7 +18,7 @@ def sha256(path):
 
 def fetch(url, relative, source, version='', manifest='acquisition_core.jsonl', timeout=90):
     """Never overwrite an existing raw file. Save failures as evidence, not data."""
-    dest = DATA / relative
+    dest = data_path(relative)
     if not dest.resolve().is_relative_to(DATA.resolve()):
         raise ValueError('Destination outside 2_INTI/data')
     log = DATA / 'catalog' / manifest
@@ -26,10 +27,11 @@ def fetch(url, relative, source, version='', manifest='acquisition_core.jsonl', 
                   versao=version, data_acesso=datetime.now(timezone.utc).isoformat())
     if dest.exists():
         entries = [json.loads(x) for x in log.read_text(encoding='utf-8').splitlines()] if log.exists() else []
-        previous = [x for x in entries if x.get('arquivo_local') == record['arquivo_local'] and x.get('sha256')]
+        previous = [x for x in entries if legacy_repository_path(x.get('arquivo_local', '')) == legacy_repository_path(record['arquivo_local']) and x.get('sha256')]
         digest = sha256(dest)
         if not previous or previous[-1]['sha256'] != digest or previous[-1]['url'] != url:
             raise ValueError(f'Existing file without matching provenance: {dest}')
+        sync_shared(relative)
         return dest
     try:
         response = requests.get(url, timeout=timeout, stream=True,
@@ -45,6 +47,7 @@ def fetch(url, relative, source, version='', manifest='acquisition_core.jsonl', 
                 f.write(chunk)
         part.rename(dest)
         record.update(status='BAIXADO', bytes=dest.stat().st_size, sha256=sha256(dest))
+        sync_shared(relative)
     except Exception as exc:
         record.update(status='FALHA', erro=str(exc))
         raise
@@ -54,7 +57,8 @@ def fetch(url, relative, source, version='', manifest='acquisition_core.jsonl', 
     return dest
 
 def write_json(relative, value):
-    p = DATA / relative
+    p = data_path(relative)
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding='utf-8')
+    sync_shared(relative, replace=True)
     return p

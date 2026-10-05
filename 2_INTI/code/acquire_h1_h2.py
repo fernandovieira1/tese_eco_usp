@@ -2,6 +2,7 @@
 
 Raw data and HTTP failure evidence remain under 2_INTI/data. No sample is selected.
 """
+from data_paths import data_path
 import argparse
 from data_common import fetch
 
@@ -43,7 +44,7 @@ def extra():
     import json
     from data_common import DATA
     from inspect_h1_h2_sources import links
-    d=DATA/'raw/tabular/source_documents'
+    d=data_path('raw/tabular/source_documents')
     for url in links(d/'worldbank_20260930.html'):
         if 'Monthly.xlsx' in url:
             get(url,'raw/tabular/worldbank/pink_sheet_monthly_20260930.xlsx','Banco Mundial','snapshot 2026-09-30; nominal USD')

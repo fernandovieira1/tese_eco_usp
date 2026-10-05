@@ -3,6 +3,7 @@
 Pixel-centre assignment, cosine latitude weights; retain cropped GeoTIFFs.
 Calendar-year anomalies are candidates, not an adopted soybean growing season.
 """
+from data_paths import data_path, sync_shared
 import gzip,re,math
 import numpy as np
 import pandas as pd
@@ -15,10 +16,10 @@ from data_common import DATA,write_json
 from prepare_h1_h2 import save
 
 def main():
-    m=gpd.read_file('zip://'+str(DATA/'raw/vector/ibge/MT_Municipios_2024.zip')).to_crs(4326).sort_values('CD_MUN').reset_index(drop=True)
+    m=gpd.read_file('zip://'+str(data_path('raw/vector/ibge/MT_Municipios_2024.zip'))).to_crs(4326).sort_values('CD_MUN').reset_index(drop=True)
     rows=[];info=[];labels=None
-    out=DATA/'interim/raster/chirps_v2_mt_fullbounds';out.mkdir(parents=True,exist_ok=True)
-    for p in sorted((DATA/'raw/raster/chirps_v2').glob('*.tif.gz')):
+    out=data_path('interim/raster/chirps_v2_mt_fullbounds');out.mkdir(parents=True,exist_ok=True)
+    for p in sorted((data_path('raw/raster/chirps_v2')).glob('*.tif.gz')):
         year,month=map(int,re.search(r'(\d{4}).(\d{2}).tif',p.name).groups())
         target=out/p.name.removesuffix('.gz')
         with rasterio.open('/vsigzip/'+p.resolve().as_posix()) as original:
@@ -30,6 +31,7 @@ def main():
                 arr=src.read(1,window=window);tr=win_transform(window,src.transform)
                 profile=src.profile.copy();profile.update(height=arr.shape[0],width=arr.shape[1],transform=tr,compress='deflate')
                 with rasterio.open(target,'w',**profile) as dst:dst.write(arr,1)
+        sync_shared('interim/raster/chirps_v2_mt_fullbounds/'+target.name)
         with rasterio.open(target) as src:
             a=src.read(1); tr=src.transform
             if labels is None:

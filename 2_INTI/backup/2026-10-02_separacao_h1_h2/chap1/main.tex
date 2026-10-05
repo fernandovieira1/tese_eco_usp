@@ -1,0 +1,91 @@
+\documentclass[a4paper,12pt,twoside,brazil]{abntex2}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[alf,no-abnt-option-file]{abntex2cite}
+% Configuração local evita importar todas as opções do pacote com \nocite{*}.
+\citeoption{config-citacoes-abnt}
+
+\geometry{
+    top=3cm,
+    bottom=2cm,
+    left=3cm,
+    right=2cm
+}
+
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+\OnehalfSpacing
+
+% Citações indiretas: \cite{chave} ou \citeonline{chave}.
+% Citações diretas curtas: ``trecho'' com \cite[p.~45]{chave},
+% ou \citeonline[p.~45]{chave} antes do trecho entre aspas.
+% Citações diretas com mais de três linhas: ambiente citacao, sem aspas,
+% com autoria, ano e página. O espaço externo acompanha uma linha do corpo.
+\setlength{\ABNTEXcitacaorecuo}{4cm}
+\newlength{\espacocitacao}
+\setlength{\espacocitacao}{\baselineskip}
+\renewenvironment{citacao}{%
+    \par\addvspace{\espacocitacao}%
+    \begin{list}{}{%
+        \setlength{\leftmargin}{\ABNTEXcitacaorecuo}%
+        \setlength{\rightmargin}{0pt}%
+        \setlength{\listparindent}{0pt}%
+        \setlength{\itemindent}{0pt}%
+        \setlength{\topsep}{0pt}%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\parsep}{0pt}%
+        \setlength{\itemsep}{0pt}%
+    }%
+    \item\relax
+    \SingleSpacing\fontsize{10}{12}\selectfont
+}{%
+    \end{list}%
+    \par\addvspace{\espacocitacao}%
+}
+
+% Numeração das seções sem o prefixo do capítulo
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=black,
+    pdftitle={Endogeneização da Natureza na Teoria da Produção},
+    pdfauthor={Fernando Souza da Vieira}
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large \bfseries Capital Natural e Governança Territorial: Produtividade, Conversão e Política Ambiental em Mato Grosso }\par\vspace{0.8cm}
+    Fernando Souza da Vieira
+\end{center}
+
+\vspace{0.8cm}
+
+\noindent\textbf{Resumo}
+
+\input{_abstract}
+\input{0_introduction}
+\input{1_literature_review}
+\input{2_mt_descriptive}
+\input{3_econometrics_strategy}
+\input{4_discussion}
+\input{5_Final_Remarks}
+
+\nocite{*}
+\bibliographystyle{abntex2-alf}
+\bibliography{citation-options,library}
+
+\end{document}

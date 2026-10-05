@@ -1,4 +1,5 @@
 """Integration checks on actual acquired data and substantive transformations."""
+from data_paths import data_path
 import json,hashlib
 from pathlib import Path
 import pandas as pd
@@ -6,16 +7,16 @@ import numpy as np
 import pytest
 from data_common import DATA,ROOT,sha256
 
-def read(name):return pd.read_csv(DATA/'processed/tabular'/name,dtype={'codigo_ibge':str},low_memory=False)
+def read(name):return pd.read_csv(data_path('processed/tabular/'+name),dtype={'codigo_ibge':str},low_memory=False)
 
 def test_checkpoint_originals_unchanged():
     b=pd.read_csv(DATA/'catalog/baseline_repositorio_sha256.csv',dtype=str)
     assert all(sha256(ROOT/r.arquivo)==r.sha256 for r in b.itertuples())
 
 def test_mapbiomas_original_md5():
-    m=json.loads((DATA/'raw/tabular/mapbiomas/collection10_1_metadata.json').read_text(encoding='utf-8'))
+    m=json.loads((data_path('raw/tabular/mapbiomas/collection10_1_metadata.json')).read_text(encoding='utf-8'))
     expected=m['data']['latestVersion']['files'][0]['dataFile']['md5']
-    assert hashlib.md5((DATA/'raw/tabular/mapbiomas/collection10_1_coverage.xlsx').read_bytes()).hexdigest()==expected
+    assert hashlib.md5((data_path('raw/tabular/mapbiomas/collection10_1_coverage.xlsx')).read_bytes()).hexdigest()==expected
 
 def test_pam_yield_and_keys():
     d=read('h1_h2__pam_soja_milho__ibge__municipio_anual.csv')

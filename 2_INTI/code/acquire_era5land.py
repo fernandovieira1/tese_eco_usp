@@ -3,6 +3,7 @@
 Requires the user's CDS account, dataset licence acceptance and configured cdsapi.
 Run only after installing cdsapi and configuring ~/.cdsapirc externally.
 """
+from data_paths import data_path, sync_shared
 import argparse,json
 from data_common import DATA,write_json
 
@@ -12,6 +13,7 @@ if __name__=='__main__':
     write_json('catalog/era5land_request_candidate.json',{'dataset':'reanalysis-era5-land-monthly-means','request':request,'status':'REQUER_CONTA_CDS_E_ACEITE_LICENCA','scope':'monthly mean cannot produce daily extreme heat days'})
     if args.download:
         import cdsapi
-        target=DATA/'raw/raster/era5land/temperature_1981_2025.nc';target.parent.mkdir(parents=True,exist_ok=True)
+        target=data_path('raw/raster/era5land/temperature_1981_2025.nc');target.parent.mkdir(parents=True,exist_ok=True)
         if target.exists():raise FileExistsError(target)
         cdsapi.Client().retrieve('reanalysis-era5-land-monthly-means',request,str(target))
+        sync_shared('raw/raster/era5land/temperature_1981_2025.nc')
