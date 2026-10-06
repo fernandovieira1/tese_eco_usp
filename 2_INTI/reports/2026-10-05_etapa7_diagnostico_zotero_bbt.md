@@ -206,3 +206,46 @@ Decisão solicitada: autorizar a importação controlada das bibliografias atuai
 Plano posterior: concluir Etapa 7 com revisão das correspondências; consolidar os artefatos mínimos e auditorias das Etapas 8–13 usando o catálogo existente; executar o piloto sem substituir texto científico na Etapa 14; produzir o fluxo operacional e a revisão de commits na Etapa 15.
 
 Este relatório não certifica a stack como concluída. O commit e eventual backup remoto deste registro serão apresentados ao pesquisador após a verificação Git.
+
+## Atualização de 6 de outubro de 2026 — coleções e primeira fonte integral
+
+O pesquisador restringiu o trabalho à Etapa 7 e autorizou a organização das referências citadas em `Tese Fernando (USP)`, com coleções `chap1` e `chap2`, preservação das citekeys e captura das fontes originais pelo Zotero Connector do Edge ou do Chrome com perfil USP. Referências ainda não utilizadas terão coleção separada; nenhuma coleção histórica deve ser reorganizada automaticamente.
+
+As coleções foram criadas manualmente pelo pesquisador e confirmadas na API local:
+
+| Coleção | Chave Zotero | Coleção superior | Itens nesta consulta |
+| --- | --- | --- | --- |
+| `2_INTI` | `THQDCPZS` | raiz do grupo `5553057` | 0 |
+| `chap1` | `SBUNZNZV` | `THQDCPZS` | 0 |
+| `chap2` | `2PBN6A48` | `THQDCPZS` | 0 |
+
+Não foram criadas coleções redundantes nem movidos itens existentes. A coleção de referências não utilizadas ainda está pendente. A ordem alfabética deverá ser configurada na visualização dos itens e comparada com a bibliografia compilada, sem alterar títulos ou citekeys para forçar ordenação.
+
+### Fonte verificada: `PachecoMeyer2022` — H1
+
+- Origem: [página da editora](https://www.nature.com/articles/s41467-022-33398-3), aberta pelo pesquisador no navegador embutido.
+- Arquivo: [PDF da editora](https://www.nature.com/articles/s41467-022-33398-3.pdf), baixado pelo link `Download PDF` com o controle documentado do navegador.
+- Autores: Andrea Pacheco e Carsten Meyer; publicação em 1 de outubro de 2022; Nature Communications, volume 13, artigo 5759.
+- DOI: `10.1038/s41467-022-33398-3`, correspondente ao BibTeX de H1.
+- Cópia local: `C:/Users/ferna/Downloads/s41467-022-33398-3.pdf`; 1.415.819 bytes, 10 páginas.
+- SHA-256: `a63159e4096d2d7186ec109c135dea2cc99a71f964d594b777ebe4f1005b6439`.
+- Validação: título, ambos os autores e DOI no conteúdo da primeira página conferidos com Python 3.12.10 da `.venv` canônica e `pypdf`; primeira página renderizada com o Poppler já disponível e inspecionada visualmente. O título nos metadados internos do PDF tem um apóstrofo com codificação defeituosa; o título impresso está correto. O arquivo não foi modificado.
+- O leitor `pypdf` emitiu avisos sobre `fontTools` ausente durante a extração; não foi instalada dependência adicional. A renderização da página ocorreu normalmente.
+
+| Citekey LaTeX/BibTeX | Fonte integral validada | Registro no Zotero | PDF anexado ao registro | Chave Zotero validada |
+| --- | --- | --- | --- | --- |
+| `PachecoMeyer2022` | sim, PDF da editora | pendente | pendente | pendente |
+
+A nova consulta paginada encontrou 43 itens de nível superior no grupo da tese e 122 na biblioteca pessoal, sem correspondência por DOI ou título para este artigo. Esses totais incluem itens que não são referências bibliográficas e não substituem a contagem de 147 referências do diagnóstico inicial.
+
+O download em `Downloads` não cumpre, sozinho, a exigência de fonte no Zotero. A captura só poderá ser considerada concluída depois da confirmação do registro na coleção `chap1`, do anexo integral legível e da chave `PachecoMeyer2022`. O navegador embutido permitiu consultar e baixar a fonte; a captura solicitada pelo Connector permanece destinada ao Edge ou ao Chrome autorizado.
+
+### Limitações de controle observadas
+
+O Zotero está aberto, com a janela principal intitulada `chap1 - Zotero`. O controle nativo falhou ao editar a caixa modal de criação de coleção: as ações de teclado retornavam o foco à janela principal. Por isso, o pesquisador criou as duas coleções. Em uma tentativa anterior de controlar a barra de extensões do Edge, o mecanismo de Computer Use interrompeu o controle por não conseguir identificar a URL atual com confiança suficiente para aplicar sua política. A interrupção foi respeitada; nenhuma captura foi declarada concluída ou substituída por um mecanismo oculto.
+
+### Preservação e verificações desta atualização
+
+`git status` confirmou a branch de trabalho limpa antes das alterações documentais; `git fetch origin` concluiu sem erro; `main...origin/main` retornou `0 0`. Os 20 SHA-256 LaTeX/BibTeX acima continuam iguais. Nenhum `.tex`, `.bib`, dado de pesquisa ou configuração de exportação foi alterado. Não houve compilação nova nem execução da suíte econométrica nesta atualização, pois somente a documentação foi alterada. A conferência de diferenças e `git diff --check` deve anteceder o commit.
+
+Próximo passo: concluir a captura desta primeira fonte com o Connector e validar seu anexo e sua citekey pela API. Em seguida, repetir a conferência para as demais referências, resolver os dois pares de aliases sem mudar o LaTeX e validar exportações separadas antes de habilitar qualquer destino canônico. As Etapas 8–15 permanecem fora do escopo ativo.
