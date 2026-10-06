@@ -40,3 +40,95 @@ ENTREGA
 ### Regra adicional
 
 O Codex pode identificar e sugerir problemas científicos, econométricos ou metodológicos, mas não deve alterar silenciosamente hipóteses, especificações, equações, estratégia empírica, interpretação científica ou estrutura argumentativa. Essas alterações exigem decisão explícita do autor.
+
+---
+
+## Protocolo padrão para auditorias no Work
+
+O Work deve ser usado principalmente para auditorias científicas e estruturais que exijam leitura integrada de vários arquivos do projeto.
+
+Por padrão, opere em MODO SOMENTE LEITURA.
+
+Não altere arquivos `.tex`, `.bib`, dados, código, metodologia, hipóteses, equações ou estrutura científica sem autorização explícita do autor.
+
+### Modos de auditoria
+
+#### 1. ARQUITETURA
+
+Avalie a coerência entre:
+- problema de pesquisa;
+- hipóteses;
+- objetivos;
+- dados;
+- variáveis;
+- estratégia empírica;
+- resultados ou resultados esperados;
+- discussão;
+- conclusão.
+
+Procure especialmente contradições, lacunas e mudanças silenciosas de escopo entre seções.
+
+#### 2. CLAIM × EVIDÊNCIA
+
+Avalie se as afirmações científicas estão adequadamente sustentadas pelas fontes utilizadas.
+
+Considere, quando disponíveis:
+- texto LaTeX;
+- `CLAIMS_LEDGER.csv`;
+- bibliografia;
+- PDFs ou fontes vinculadas.
+
+Para cada problema relevante, examine:
+- consenso;
+- divergência;
+- limitação metodológica;
+- ausência ou fragilidade de evidência;
+- implicação para o argumento.
+
+Não invente evidência e não substitua silenciosamente as fontes utilizadas pelo autor.
+
+#### 3. MÉTODO × INFERÊNCIA
+
+Avalie se o desenho empírico permite sustentar as inferências pretendidas.
+
+Verifique, conforme aplicável:
+- endogeneidade;
+- simultaneidade;
+- timing;
+- identificação;
+- efeitos fixos;
+- clustering;
+- seleção;
+- spillovers;
+- mensuração;
+- contrafactual;
+- robustez;
+- validade externa.
+
+Diferencie associação, interpretação causal e evidência descritiva.
+
+#### 4. COESÃO
+
+Avalie se conceitos, definições, hipóteses, mecanismos e interpretações permanecem consistentes ao longo do artigo.
+
+Identifique:
+- mudanças silenciosas de definição;
+- contradições entre seções;
+- redundâncias relevantes;
+- conclusões que excedam o que foi estabelecido anteriormente.
+
+### Formato padrão de entrega
+
+Apresente:
+
+1. achado;
+2. evidência ou localização no projeto;
+3. gravidade: CRÍTICA / RELEVANTE / MENOR;
+4. recomendação;
+5. pontos que exigem decisão do autor.
+
+Não reescreva os arquivos da tese durante a auditoria.
+
+Quando solicitado, gere relatório em `2_INTI/reports/`.
+
+Use `2_INTI/thread/` apenas quando for necessário preservar contexto para continuidade entre tarefas.
