@@ -15,5 +15,6 @@ Este repositório contém a tese de doutorado de Fernando Souza de Vieira.
 - Preserve dados brutos, metodologia, fórmulas, citekeys e decisões científicas salvo autorização explícita.
 - Não faça commit, merge ou push sem autorização explícita.
 - Para tarefas técnicas, execute os testes adequados e informe regressões separadamente de falhas preexistentes.
-- Registre execuções relevantes em `2_INTI/reports/`.
-- Use `2_INTI/thread/` quando for necessário preservar contexto para continuidade entre tarefas.
+- Use `2_INTI/reports/` somente para relatórios consolidados, decisões, validações e marcos relevantes; esse diretório é versionado pelo Git.
+- Grave logs, diffs, relatórios timestampados, saídas de testes e outros artefatos automáticos ou reproduzíveis em `2_INTI/xreports/`; esse diretório é local e ignorado pelo Git.
+- Use `2_INTI/thread/` para registros relevantes de continuidade entre tarefas/agentes; esse diretório é versionado pelo Git.

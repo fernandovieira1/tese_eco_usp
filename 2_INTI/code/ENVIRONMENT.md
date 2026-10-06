@@ -208,6 +208,28 @@ Os PDFs compilados automaticamente dos artigos ativos:
 
 também não são versionados, pois são produtos reproduzíveis a partir dos arquivos-fonte.
 
+### 5.1. Auditoria técnica dos artigos ativos
+
+Na raiz do repositório:
+
+```powershell
+& "2_INTI\code\.venv\Scripts\python.exe" "2_INTI\code\audit_thesis.py"
+```
+
+O auditor usa somente a biblioteca padrão, funciona offline e compila `chap1` e
+`chap2` em cópias temporárias com `latexmk`. Não altera fontes científicas nem
+artefatos existentes. Os relatórios detalhados e logs são gravados em
+`2_INTI/xreports/audit_thesis_<timestamp>/`. Apenas `ERROR` produz exit code 1;
+`WARNING` e `INFO` não impedem aprovação. Consulte `--help` para auditar um único
+artigo ou usar `--skip-compile` (compilação não verificada). De outro diretório,
+utilize os caminhos absolutos do interpretador e do script.
+
+### 5.2. Convenção de relatórios e continuidade
+
+- `2_INTI/reports/` contém somente relatórios consolidados, decisões, validações e marcos relevantes; é versionado pelo Git.
+- `2_INTI/xreports/` contém logs, diffs, relatórios timestampados, saídas de testes e outros artefatos automáticos ou reproduzíveis; é local e ignorado pelo Git.
+- `2_INTI/thread/` contém registros relevantes para continuidade entre tarefas/agentes; é versionado pelo Git.
+
 ---
 
 ## 6. Política geral de reprodutibilidade

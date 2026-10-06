@@ -3,6 +3,12 @@
 Este documento contém os protocolos operacionais do projeto de tese.
 As regras aqui registradas devem ser tratadas como fonte de referência para execução de tarefas por agentes de IA.
 
+## Convenção de relatórios e continuidade
+
+- `2_INTI/reports/`: somente relatórios consolidados, decisões, validações e marcos relevantes. É versionado pelo Git.
+- `2_INTI/xreports/`: logs, diffs, relatórios timestampados, saídas de testes e outros artefatos automáticos ou reproduzíveis. É local e ignorado pelo Git.
+- `2_INTI/thread/`: registros relevantes para continuidade entre tarefas/agentes. É versionado pelo Git.
+
 ---
 
 ## Protocolo padrão para tarefas no Codex
@@ -34,7 +40,7 @@ ENTREGA
 - testes executados e resultados;
 - limitações ou pendências;
 - git diff/status final;
-- relatório de execução em 2_INTI/reports;
+- relatório consolidado de execução em 2_INTI/reports e artefatos automáticos ou reproduzíveis em 2_INTI/xreports;
 - quando a tarefa exigir continuidade, registro correspondente em 2_INTI/thread.
 
 ### Regra adicional
@@ -129,7 +135,7 @@ Apresente:
 
 Não reescreva os arquivos da tese durante a auditoria.
 
-Quando solicitado, gere relatório em `2_INTI/reports/`.
+Quando solicitado, gere relatório consolidado em `2_INTI/reports/`; grave outputs automáticos ou reproduzíveis em `2_INTI/xreports/`.
 
 Use `2_INTI/thread/` apenas quando for necessário preservar contexto para continuidade entre tarefas.
 
