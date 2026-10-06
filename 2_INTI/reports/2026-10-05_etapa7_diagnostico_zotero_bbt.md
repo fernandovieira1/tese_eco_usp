@@ -2,7 +2,9 @@
 
 Data: 5 de outubro de 2026. Execução interrompida antes da integração bibliográfica.
 
-## Resultado e decisão necessária
+Estado final em 6 de outubro de 2026: configuração automática cancelada pelo pesquisador, que fará a integração manualmente. A revisão e incorporação destes registros documentais em `main` foram autorizadas explicitamente. A Etapa 7 não foi concluída; as informações abaixo registram as consultas realizadas, sem certificar o estado posterior da biblioteca.
+
+## Resultado do diagnóstico inicial
 
 O Zotero está aberto no Windows, versão **9.0.6**, com Better BibTeX **9.0.68** ativo. A porta `127.0.0.1:23119` pertence ao processo principal do Zotero (PID 37968 na consulta). A leitura de `/api/users/0/collections?limit=1`, sem proxy, retornou **HTTP 200**, e `api.ready` confirmou ambas as versões.
 
@@ -12,7 +14,7 @@ As primeiras consultas ao endereço-base `/api/` terminaram prematuramente. O di
 
 A seção 5 do pedido exige: “Se houver incompatibilidade relevante: PARE esta subetapa, gere relatório e solicite decisão humana.” A seção 17 também impede prosseguir quando a divergência pode quebrar LaTeX. Assim, não houve importação, criação de coleções ou ativação de auto-export. As bibliografias atuais continuam intactas.
 
-## Segurança Git
+## Verificações Git no diagnóstico inicial
 
 - Repositório: `C:/Users/ferna/Documents/dev/Tese USP/tese_eco_usp`.
 - Remoto confirmado: `https://github.com/fernandovieira1/tese_eco_usp.git`.
@@ -197,7 +199,7 @@ A [documentação oficial da Local API](https://www.zotero.org/support/dev/web_a
 | `2_INTI/chapters/chap2/library.bib` | `1f49fc8260f5d22bc291267b767a5507e51bc68c0853832cbc7e412effef67eb` |
 | `2_INTI/chapters/chap2/main.tex` | `54eeffcb692c67315a3f7e20fbd3249c1f4d45b9b2018921bef0f91121ec456f` |
 
-## Continuidade e decisões humanas
+## Plano de continuidade antes do cancelamento
 
 A integração da Etapa 7 está suspensa. As Etapas 8–15 não foram executadas nesta interrupção.
 
@@ -211,7 +213,7 @@ Este relatório não certifica a stack como concluída. O commit e eventual back
 
 O pesquisador restringiu o trabalho à Etapa 7 e autorizou a organização das referências citadas em `Tese Fernando (USP)`, com coleções `chap1` e `chap2`, preservação das citekeys e captura das fontes originais pelo Zotero Connector do Edge ou do Chrome com perfil USP. Referências ainda não utilizadas terão coleção separada; nenhuma coleção histórica deve ser reorganizada automaticamente.
 
-As coleções foram criadas manualmente pelo pesquisador e confirmadas na API local:
+As coleções `chap1` e `chap2` foram criadas manualmente pelo pesquisador sob a coleção `2_INTI`, que já existia. A estrutura foi confirmada na API local:
 
 | Coleção | Chave Zotero | Coleção superior | Itens nesta consulta |
 | --- | --- | --- | --- |
@@ -248,4 +250,12 @@ O Zotero está aberto, com a janela principal intitulada `chap1 - Zotero`. O con
 
 `git status` confirmou a branch de trabalho limpa antes das alterações documentais; `git fetch origin` concluiu sem erro; `main...origin/main` retornou `0 0`. Os 20 SHA-256 LaTeX/BibTeX acima continuam iguais. Nenhum `.tex`, `.bib`, dado de pesquisa ou configuração de exportação foi alterado. Não houve compilação nova nem execução da suíte econométrica nesta atualização, pois somente a documentação foi alterada. A conferência de diferenças e `git diff --check` deve anteceder o commit.
 
-Próximo passo: concluir a captura desta primeira fonte com o Connector e validar seu anexo e sua citekey pela API. Em seguida, repetir a conferência para as demais referências, resolver os dois pares de aliases sem mudar o LaTeX e validar exportações separadas antes de habilitar qualquer destino canônico. As Etapas 8–15 permanecem fora do escopo ativo.
+Pendências transferidas ao procedimento manual do pesquisador: capturar as fontes no Zotero, validar anexos e citekeys, preservar os dois pares de aliases e conferir exportações separadas antes de habilitar os destinos canônicos. As Etapas 8–15 não foram executadas. Nenhuma dessas pendências autoriza retomada automática após o cancelamento.
+
+## Encerramento e revisão da branch
+
+Em 6 de outubro de 2026, o pesquisador solicitou abortar esta tarefa e autorizou levar à `main` somente o que estivesse correto na Etapa 7. A revisão da diferença da branch encontrou exclusivamente este relatório e o registro de continuidade; nenhum arquivo científico, dado, código ou configuração integra a mudança. O cancelamento foi registrado nestes mesmos documentos, sem criar novos artefatos de controle.
+
+A validação do encerramento passou: os 20 SHA-256 protegidos permanecem iguais; as 39 chaves de H1 e 25 de H2 coincidem entre LaTeX, BibTeX e a tabela deste relatório, sem chaves ausentes ou repetidas; ambos os documentos são UTF-8; `git diff --check main` retornou código 0. Após fetch, `main` e a branch de trabalho coincidiam com seus respectivos remotos antes do commit de encerramento. Não foi feita nova compilação ou execução da suíte Python, pois a diferença contém somente documentação. Os resultados históricos do Zotero não foram recertificados nesta revisão; o pesquisador assumiu a configuração manual.
+
+Commits anteriores: `7827ec4` (diagnóstico inicial) e `29de1e8` (coleções e fonte integral verificada). O commit de encerramento e o resultado da incorporação são identificados pelo histórico Git e pela resposta de entrega. A incorporação documental não representa conclusão da integração Zotero/Better BibTeX.
