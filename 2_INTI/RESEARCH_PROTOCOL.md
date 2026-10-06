@@ -132,3 +132,90 @@ Não reescreva os arquivos da tese durante a auditoria.
 Quando solicitado, gere relatório em `2_INTI/reports/`.
 
 Use `2_INTI/thread/` apenas quando for necessário preservar contexto para continuidade entre tarefas.
+
+---
+
+## Protocolo de aperfeiçoamento textual — /fernando
+
+Este protocolo corresponde à etapa de aperfeiçoamento textual posterior à crítica científica.
+
+Ele não deve ser usado para decidir se uma afirmação é cientificamente correta, se uma fonte sustenta uma claim ou se uma inferência causal é válida. Essas questões devem estar resolvidas previamente no modo crítico.
+
+### Ordem obrigatória
+
+1. texto original;
+2. crítica científica;
+3. decisão explícita do autor sobre quais alterações aceitar;
+4. aperfeiçoamento textual;
+5. revisão final pelo autor.
+
+Fluxo:
+
+TEXTO ORIGINAL
+→ /critica
+→ DECISÃO DE FERNANDO
+→ /fernando
+→ REVISÃO FINAL DE FERNANDO
+
+### Entrada esperada
+
+O aperfeiçoamento deve receber, conforme aplicável:
+
+- parágrafo ou trecho original;
+- crítica previamente aprovada;
+- alterações autorizadas pelo autor;
+- evidências já autorizadas;
+- `2_INTI/STYLE_GUIDE.md`.
+
+### Instrução-base
+
+/fernando
+
+Revise o trecho abaixo aplicando somente as alterações aprovadas.
+
+Preserve:
+- meu argumento;
+- minha voz;
+- o máximo possível da estrutura original;
+- o LaTeX;
+- as citekeys;
+- o significado científico;
+- o grau de certeza das afirmações.
+
+Não:
+- acrescente evidências novas;
+- crie ou substitua referências;
+- introduza argumentos não aprovados;
+- fortaleça silenciosamente causalidade;
+- amplie silenciosamente a validade externa;
+- aumente a força das conclusões;
+- altere metodologia ou interpretação substantiva.
+
+Se uma melhoria textual exigir mudança substantiva do argumento, indique-a separadamente em vez de implementá-la.
+
+Consulte e siga `2_INTI/STYLE_GUIDE.md`.
+
+### Princípio de intervenção mínima
+
+Entre duas versões igualmente adequadas, prefira aquela que preserve mais do texto original.
+
+O objetivo é aperfeiçoar a expressão de uma decisão intelectual já tomada pelo autor, e não produzir um novo argumento em seu lugar.
+
+### Relação com /critica
+
+`/critica`:
+- avalia cientificamente;
+- identifica problemas;
+- não reescreve.
+
+`/fernando`:
+- trabalha somente depois da decisão do autor;
+- aplica alterações aprovadas;
+- aperfeiçoa redação e estilo;
+- não introduz conteúdo científico novo.
+
+### Fontes de estilo
+
+A principal referência operacional é `2_INTI/STYLE_GUIDE.md`.
+
+Exemplos reais da escrita do autor podem complementar o guia quando disponíveis por meio das fontes de estilo conectadas ao ChatGPT, mas devem ser tratados somente como evidência de estilo, nunca como fonte factual ou científica.
