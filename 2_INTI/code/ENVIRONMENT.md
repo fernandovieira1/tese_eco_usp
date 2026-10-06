@@ -120,7 +120,7 @@ O teste:
 
 compara arquivos atuais do projeto com os hashes registrados em:
 
-`2_INTI/data/catalog/baseline_repositorio_sha256.csv`
+`2_INTI/xdata/catalog/baseline_repositorio_sha256.csv`
 
 Esse arquivo constitui um checkpoint histórico do repositório e atualmente está defasado em relação a alterações posteriores e legítimas, incluindo reorganização de arquivos, evolução dos textos, bibliografia, código e artefatos de compilação.
 

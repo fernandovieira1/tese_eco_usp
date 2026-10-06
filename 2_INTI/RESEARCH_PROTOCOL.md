@@ -540,7 +540,7 @@ Os `library.bib` dos artigos permanecem artefatos científicos versionados no Gi
 
 ### Dados
 
-Os dados ativos permanecem em `2_INTI/data/`.
+Os dados ativos permanecem exclusivamente em `2_INTI/xdata/`, que constitui a fonte canônica local dos dados da tese.
 
 Arquivos grandes ou não versionáveis permanecem locais e são protegidos pelo sistema de backup.
 Metadados, catálogo, proveniência e scripts necessários à reconstrução devem permanecer versionados quando apropriado.
@@ -600,7 +600,7 @@ Em auditorias científicas, o Work pode ler, por padrão:
 - `2_INTI/CLAIMS_LEDGER.csv`;
 - `2_INTI/RESEARCH_PROTOCOL.md`;
 - `2_INTI/STYLE_GUIDE.md`;
-- `2_INTI/data/catalog/`;
+- `2_INTI/xdata/catalog/`, quando a auditoria exigir consulta explícita aos metadados locais;
 - `2_INTI/reports/`.
 
 `2_INTI/code/` pode ser consultado quando a auditoria metodológica exigir correspondência entre método descrito e implementação.
@@ -609,7 +609,7 @@ Não usar por padrão:
 
 - `2_INTI/x*/`;
 - `.venv/`;
-- `2_INTI/data/raw/`;
+- `2_INTI/xdata/`, salvo quando o acesso aos dados locais for explicitamente necessário;
 - `1_SUYANA/`;
 - diretórios de backup.
 
@@ -631,3 +631,242 @@ Nunca criar sequências como:
 `final_agora_vai.docx`
 
 A evolução dos arquivos científicos ativos ocorre pelo Git.
+
+---
+
+## Camada de integração e controle
+
+Esta seção consolida a arquitetura operacional do stack da tese.
+
+O princípio geral é integrar somente componentes que reduzam trabalho, erro ou ambiguidade de forma demonstrável.
+
+Não adicionar ferramentas, MCPs, scripts ou automações apenas porque tecnicamente são possíveis.
+
+### Componentes centrais
+
+#### AGENTS.md
+
+Função:
+- porta de entrada automática para agentes de código;
+- identifica a fase ativa do projeto;
+- direciona para `2_INTI/RESEARCH_PROTOCOL.md`;
+- estabelece regras mínimas de segurança.
+
+Não deve se transformar em manual extenso.
+
+#### RESEARCH_PROTOCOL.md
+
+Fonte canônica das regras operacionais do stack.
+
+Contém, entre outros:
+- protocolo Codex;
+- protocolo Work;
+- aperfeiçoamento `/fernando`;
+- política de armazenamento;
+- fontes canônicas;
+- convenções de relatórios e diretórios locais.
+
+#### STYLE_GUIDE.md
+
+Fonte operacional estável para preservar a voz autoral.
+
+Complementa, mas não substitui, exemplos reais de escrita recuperados por ferramentas de Writing Style.
+
+#### CLAIMS_LEDGER.csv
+
+Ponte mínima entre:
+
+claim
+→ evidência
+→ método
+→ limitação
+→ status.
+
+Não deve se transformar em uma base bibliométrica geral.
+
+### Dados
+
+A única fonte canônica local dos dados da tese é:
+
+`2_INTI/xdata/`
+
+Não duplicar datasets para notebooks, scripts ou outras ferramentas.
+
+Os notebooks e scripts devem ler diretamente dessa estrutura.
+
+`2_INTI/xdata/catalog/` contém metadados, logs de aquisição, proveniência e documentação dos dados.
+
+O catálogo não constitui uma segunda fonte dos dados e não deve armazenar cópias redundantes dos datasets.
+
+Não criar `DATA_CATALOG.csv` enquanto a estrutura existente cumprir adequadamente essa função.
+
+### Notebooks
+
+Notebooks analíticos futuros devem ser versionados pelo Git.
+
+Local recomendado:
+
+`2_INTI/code/notebooks/`
+
+Esse diretório só precisa ser criado quando houver um notebook analítico real.
+
+Os notebooks devem ler diretamente de `2_INTI/xdata/`.
+
+Não sincronizar nem copiar os dados para uma pasta própria dos notebooks.
+
+### Bibliografia
+
+O Zotero é a fonte canônica de gestão bibliográfica.
+
+Responsabilidades do Zotero:
+- metadados;
+- PDFs;
+- citation keys;
+- organização bibliográfica.
+
+Os arquivos:
+
+- `2_INTI/chapters/chap1/library.bib`
+- `2_INTI/chapters/chap2/library.bib`
+
+são artefatos científicos versionados pelo Git.
+
+Não criar um `references.bib` global enquanto os artigos permanecerem bibliograficamente independentes.
+
+### Zotero Local API
+
+Manter habilitada.
+
+A Local API demonstrou utilidade para:
+- consultar coleções;
+- verificar itens;
+- validar citation keys;
+- comparar bibliotecas;
+- apoiar auditorias bibliográficas.
+
+Não habilitar escrita automática por API como padrão.
+
+Qualquer alteração bibliográfica deve permanecer controlada e auditável.
+
+### Better BibTeX
+
+Manter para:
+- citation keys;
+- exportação bibliográfica;
+- interoperabilidade Zotero–BibTeX.
+
+Autoexports devem apontar apenas para áreas locais de staging, nunca diretamente para os `library.bib` científicos versionados.
+
+### Scripts Python
+
+Criar scripts de integração somente quando houver problema concreto a resolver.
+
+O stack atual utiliza, entre outros:
+
+`2_INTI/code/audit_thesis.py`
+
+para auditoria técnica dos artigos.
+
+Não criar um orquestrador geral da tese enquanto as ferramentas atuais funcionarem adequadamente de forma modular.
+
+### MCP
+
+Nenhum MCP adicional é necessário neste momento.
+
+Em particular, não instalar MCP para Zotero enquanto a Local API e o Better BibTeX atenderem ao fluxo com menor complexidade.
+
+A adoção futura de MCP exige benefício concreto em:
+- redução de trabalho manual;
+- redução de erro;
+- acesso atualmente impossível;
+- ou simplificação mensurável do workflow.
+
+### Automações adicionais
+
+Não criar automações recorrentes por padrão.
+
+A tese não necessita de execução periódica automática enquanto seu desenvolvimento permanecer orientado por etapas científicas e commits deliberados.
+
+### Auditorias em marcos
+
+Executar auditoria técnica e/ou científica em marcos relevantes, por exemplo:
+
+- antes de enviar versão ao orientador;
+- antes de qualificação;
+- antes de submissão de artigo;
+- após alteração bibliográfica importante;
+- após alteração relevante de dados ou método;
+- antes de considerar uma versão científica fechada.
+
+Evitar auditoria completa após pequenas alterações textuais.
+
+### Auditoria técnica
+
+Usar:
+
+`2_INTI/code/audit_thesis.py`
+
+para verificações determinísticas de:
+- LaTeX;
+- BibTeX;
+- citekeys;
+- DOI;
+- duplicatas;
+- arquivos esperados;
+- compilação;
+- warnings relevantes.
+
+Outputs automáticos:
+`2_INTI/xreports/`
+
+Relatórios consolidados relevantes:
+`2_INTI/reports/`
+
+### Auditoria científica
+
+Usar Work em quatro modos independentes:
+
+- WORK-A — arquitetura argumentativa;
+- WORK-B — claim × evidência;
+- WORK-C — método × inferência;
+- WORK-D — coesão e redação científica.
+
+As auditorias são somente leitura por padrão.
+
+### Fluxo integrado mínimo
+
+Concepção e escrita humana
+→
+claim relevante
+→
+LeapSpace adversarial
+→
+Zotero
+→
+CLAIMS_LEDGER
+→
+ChatGPT `/critica`
+→
+decisão do autor
+→
+ChatGPT `/fernando` + STYLE_GUIDE
+→
+LaTeX
+→
+Git
+→
+audit_thesis.py / Codex
+→
+Work
+→
+revisão final do autor.
+
+### Princípio de complexidade
+
+Adicionar um novo componente somente quando:
+
+benefício operacional esperado
+>
+custo de configuração + manutenção + risco de inconsistência.
+
+Se uma integração não superar esse critério, ela não entra no stack.
