@@ -499,3 +499,135 @@ WORK-D — Coesão e redação
 Não executar WORK-D antes de resolver problemas substantivos identificados em A, B e C.
 
 A revisão final e qualquer alteração no texto permanecem sob decisão do autor.
+
+---
+
+## Política de armazenamento e fontes canônicas
+
+O projeto deve evitar versões concorrentes do mesmo artefato.
+
+### Princípio
+
+Para cada tipo de informação existe uma única fonte canônica.
+Google Drive, OneDrive, GitHub, Zotero e arquivos locais não devem manter versões ativas concorrentes do mesmo documento.
+
+### Repositório local + Git/GitHub
+
+Fonte canônica para:
+
+- arquivos `.tex`;
+- código;
+- `CLAIMS_LEDGER.csv`;
+- `RESEARCH_PROTOCOL.md`;
+- `STYLE_GUIDE.md`;
+- bibliografias `.bib` aprovadas;
+- relatórios consolidados em `2_INTI/reports/`;
+- continuidade em `2_INTI/thread/`;
+- catálogo e metadados versionáveis.
+
+Nunca editar uma cópia desses arquivos no Google Drive ou OneDrive como se fosse uma versão paralela.
+
+### Zotero
+
+Fonte canônica de gestão para:
+
+- metadados bibliográficos;
+- artigos;
+- PDFs científicos;
+- citation keys.
+
+Os `library.bib` dos artigos permanecem artefatos científicos versionados no Git e só devem ser substituídos após validação.
+
+### Dados
+
+Os dados ativos permanecem em `2_INTI/data/`.
+
+Arquivos grandes ou não versionáveis permanecem locais e são protegidos pelo sistema de backup.
+Metadados, catálogo, proveniência e scripts necessários à reconstrução devem permanecer versionados quando apropriado.
+
+### Google Drive
+
+Usar principalmente para:
+
+- documentos externos;
+- arquivos recebidos;
+- material colaborativo;
+- corpus de exemplos reais de escrita;
+- documentos que precisem ser acessados por ferramentas conectadas.
+
+O corpus de estilo pode permanecer no Google Drive, enquanto `2_INTI/STYLE_GUIDE.md` é a referência operacional versionada.
+
+Não manter no Google Drive uma segunda versão ativa dos arquivos científicos do repositório.
+
+### OneDrive
+
+Não usar como workspace ativo da tese.
+
+Pode armazenar:
+
+- documentos administrativos;
+- arquivos pessoais;
+- cópias de intercâmbio;
+- materiais não pertencentes ao fluxo científico ativo.
+
+Não usar OneDrive como mecanismo concorrente de versionamento ou backup do repositório.
+
+### Backup
+
+O mecanismo de backup do projeto é o Restic.
+
+GitHub fornece versionamento e recuperação do conteúdo versionado, mas não substitui o backup integral.
+
+Google Drive e OneDrive não são considerados backups canônicos do repositório.
+
+### Diretórios locais iniciados por x
+
+Diretórios sob `2_INTI/` cujo nome começa com `x` são locais e não canônicos.
+
+Exemplos:
+
+- `xreports/`;
+- `xdiversos/`;
+- outros `x*` que venham a ser criados.
+
+Devem permanecer ignorados pelo Git e conter somente material temporário, reproduzível ou auxiliar.
+
+### Escopo padrão do Work
+
+Em auditorias científicas, o Work pode ler, por padrão:
+
+- `2_INTI/chapters/`;
+- `2_INTI/CLAIMS_LEDGER.csv`;
+- `2_INTI/RESEARCH_PROTOCOL.md`;
+- `2_INTI/STYLE_GUIDE.md`;
+- `2_INTI/data/catalog/`;
+- `2_INTI/reports/`.
+
+`2_INTI/code/` pode ser consultado quando a auditoria metodológica exigir correspondência entre método descrito e implementação.
+
+Não usar por padrão:
+
+- `2_INTI/x*/`;
+- `.venv/`;
+- `2_INTI/data/raw/`;
+- `1_SUYANA/`;
+- diretórios de backup.
+
+Esses locais só entram no escopo mediante solicitação explícita.
+
+### Regra para documentos externos
+
+Um documento externo permanece em Google Drive, OneDrive, Zotero ou outra origem até que exista razão concreta para incorporá-lo ao projeto.
+
+Quando incorporado formalmente, deve existir apenas uma versão ativa e sua fonte canônica deve ser identificável.
+
+### Regra final
+
+Nunca criar sequências como:
+
+`final.docx`
+`final2.docx`
+`final_final.docx`
+`final_agora_vai.docx`
+
+A evolução dos arquivos científicos ativos ocorre pelo Git.
