@@ -1,9 +1,0 @@
-[
-  {
-    "dataset": "biomas",
-    "index": 0,
-    "area_before_m2": 4261746920599.124,
-    "area_after_m2": 4261746920602.5083,
-    "method": "shapely.make_valid after EPSG:5880 projection"
-  }
-]

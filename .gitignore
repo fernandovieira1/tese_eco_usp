@@ -1,26 +1,8 @@
 # Dados locais
-**/data/
-
-# Exceção: metadados e rastreabilidade do catálogo INTI
-!2_INTI/data/
-2_INTI/data/*
-!2_INTI/data/catalog/
-2_INTI/data/catalog/*
-
-!2_INTI/data/catalog/*.csv
-!2_INTI/data/catalog/*.json
-!2_INTI/data/catalog/*.jsonl
-!2_INTI/data/catalog/*.md
-!2_INTI/data/catalog/*.txt
-
-# Artefatos derivados do catálogo
-2_INTI/data/catalog/*.xlsx
-2_INTI/data/catalog/*.png
-2_INTI/data/catalog/*.ndjson
-2_INTI/data/catalog/*.values.json
+2_INTI/xdata/
 
 # Materiais auxiliares locais
-2_INTI/diversos/
+2_INTI/xdiversos/
 
 # Python
 __pycache__/
