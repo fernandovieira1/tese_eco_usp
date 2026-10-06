@@ -1,0 +1,97 @@
+\section{Estratégia Econométrica}
+\label{sec:estrategia}
+
+\subsection{Mecanismo econômico e ordenação temporal}
+
+O ponto de partida é a comparação entre os benefícios privados de converter e manter a vegetação. Uma representação conceitual dessa escolha pode ser escrita como:
+\begin{equation}
+ \Delta V_{it}
+ =-K_{it}+
+ \mathbb{E}_{t-1}\!\left[
+  \sum_{h=0}^{H}\frac{\pi^{A}_{i,t+h}-\pi^{N}_{i,t+h}
+  -\kappa_{i,t+h}}{(1+r_i)^h}
+ \right],
+ \label{eq:valor}
+\end{equation}
+em que $K_{it}$ representa o custo inicial de conversão; $\pi^{A}$, o retorno operacional do uso agropecuário; $\pi^{N}$, os benefícios privados de manter a vegetação; $\kappa$, os custos institucionais esperados associados à conversão, incluindo a aplicação de sanções quando ela for irregular; e $r_i$, a taxa de desconto do agente. A expectativa é formada com a informação disponível antes da decisão. Essa expressão organiza o mecanismo e não será estimada como modelo estrutural com os dados municipais disponíveis.
+
+A H1 prevê maior pressão de conversão quando aumenta o benefício esperado do uso agropecuário relativamente à manutenção da vegetação. A H1-a fornece uma implicação observável: preços mais favoráveis podem elevar mais esse benefício onde existe maior capacidade produtiva. A H1-b, por sua vez, prevê que regras e implementação alterem a transmissão desses incentivos à decisão. Horizontes de expectativa e taxas de desconto não serão recuperados de coeficientes defasados; estes indicarão apenas o tempo de resposta compatível com os dados.
+
+\subsection{Exposição a preços e teste de H1-a}
+
+Sejam $P_{kt}$ o preço do produto $k$ e $S_{ik,0}$ uma medida de capacidade produtiva definida antes do período analisado e mantida fixa. A exposição candidata será:
+\begin{equation}
+ X_{it}^{k}=S_{ik,0}\,\Delta\ln P_{k,t-1},
+ \qquad k\in\{\text{soja},\text{milho}\}.
+ \label{eq:exposicao}
+\end{equation}
+A janela principal utilizará preços do ano anterior à conversão. Janelas agrícolas e defasagens adicionais serão especificações alternativas, desde que definidas antes da inspeção dos resultados. A padronização de $S_{ik,0}$ será feita com parâmetros fixos e documentados por cultura, sem recalcular a exposição em função da produção contemporânea. A aplicação aos dados dependerá da validação temporal indicada na seção anterior.
+
+O modelo inicial, estimado separadamente por destino $j$, será:
+\begin{equation}
+ C_{it}^{j}
+ =\alpha_i^{j}+\lambda_t^{j}
+ +\sum_k\beta_k^{j}X_{it}^{k}
+ +Z_{it}'\gamma^{j}+\varepsilon_{it}^{j}.
+ \label{eq:h1a}
+\end{equation}
+Os efeitos fixos territoriais $\alpha_i^{j}$ absorvem características constantes no tempo, enquanto $\lambda_t^{j}$ absorvem choques comuns a Mato Grosso em cada ano. $Z_{it}$ reúne apenas controles cuja inclusão seja justificada pela estratégia de identificação. Com efeitos fixos anuais, o preço comum a todos os municípios não pode ter seu coeficiente isoladamente estimado; é a interação com a exposição territorial que fornece a variação utilizada. Da mesma forma, a capacidade fixa é absorvida pelos efeitos territoriais.
+
+No modelo linear, a diferença de resposta a uma variação logarítmica do preço $k$ entre duas capacidades é:
+\begin{equation}
+ \Delta C^{j}
+ =\beta_k^{j}(S_{\mathrm{alto},k,0}-S_{\mathrm{baixo},k,0})
+   \Delta\ln P_k.
+ \label{eq:efeito}
+\end{equation}
+A H1-a prevê $\beta_k^{j}>0$ para a conversão relacionada ao uso beneficiado, mantidas as demais condições. Essa é uma previsão a ser confrontada com os dados; substituição de pastagem por lavoura, custos de insumos e intensificação podem gerar respostas distintas. Os coeficientes serão interpretados como sensibilidade diferencial à exposição de preços. Sem observar e identificar o retorno líquido esperado, não constituem uma elasticidade estrutural da conversão em relação ao lucro.
+
+As exposições de soja e milho serão inicialmente consideradas separadamente e, havendo variação suficiente, em conjunto. A correlação entre seus preços e capacidades será examinada. Para pecuária, a inexistência de medida já validada de capacidade produtiva impede reproduzir mecanicamente a mesma construção: uma exposição baseada no rebanho anterior à amostra será uma alternativa de especialização, identificada como tal. Um eventual índice agregado usará pesos fixos e transparentes, com resultados por componente, evitando que sua composição seja escolhida pela significância estimada.
+
+\subsection{Condições de identificação}
+
+A interpretação causal de $\beta_k^{j}$ exige que, após os efeitos fixos e controles, a exposição aos movimentos de preços não esteja associada a mudanças não observadas que também afetem a conversão. A literatura que combina aptidão e preços oferece precedentes para o desenho, mas também explicita seus riscos \cite{BermanEtAl2023}. A discussão de \citeonline{GoldsmithPinkhamEtAl2020} sobre desenhos de exposição reforça que a combinação de um choque agregado com uma característica local não produz exogeneidade automaticamente. Aqui, a exposição será usada diretamente como regressor; sua denominação não a transforma em instrumento válido para um retorno esperado não observado.
+
+Há pelo menos três ameaças relevantes. Primeiro, aptidão ou especialização podem estar associadas a tendências territoriais de expansão, infraestrutura e tecnologia. Segundo, preços internacionais podem incorporar choques de oferta brasileiros ou condições climáticas que também afetem Mato Grosso. Terceiro, a medida de capacidade pode conter informações posteriores ao início da amostra, como no caso da base de terras do GAEZ v4. Serão examinadas tendências anteriores, covariáveis iniciais interagidas com tempo, efeitos de bioma por ano e alternativas de exposição com data anterior à amostra. Tendências territoriais serão análises de sensibilidade, pois podem absorver parte substancial da variação de interesse.
+
+Testes com valores futuros de preços e períodos anteriores à conversão servirão como diagnósticos de antecipação ou tendências comuns, sem serem tratados como prova definitiva de exogeneidade. A contribuição da oferta brasileira à formação de preços e os canais de câmbio e insumos deverão ser discutidos. Na ausência de uma fonte de variação que sustente as condições requeridas, os resultados serão apresentados como associações condicionais de um desenho de exposição. A escolha dos controles e da janela temporal será registrada antes das estimações principais.
+
+\subsection{Instituições e teste de H1-b}
+
+Para cada indicador institucional $I_{i,t-1}$, a especificação será ampliada para incluir a interação tripla entre preço, capacidade e instituições, preservando seus termos de ordem inferior estimáveis:
+\begin{equation}
+ \begin{split}
+ C_{it}^{j}={}&\alpha_i^{j}+\lambda_t^{j}
+ +\sum_k\beta_k^{j}X_{it}^{k}+\theta^{j}I_{i,t-1}\\
+ &+\sum_k\left[\eta_k^{j}S_{ik,0}I_{i,t-1}
+       +\rho_k^{j}\Delta\ln P_{k,t-1}I_{i,t-1}\right]\\
+ &+\sum_k\delta_k^{j}\bigl(X_{it}^{k}I_{i,t-1}\bigr)
+ +Z_{it}'\gamma^{j}+\varepsilon_{it}^{j}.
+ \end{split}
+ \label{eq:h1b}
+\end{equation}
+A quantidade central será a diferença na sensibilidade ao preço entre capacidades produtivas, condicionada pelo indicador institucional:
+\begin{equation}
+ \frac{\partial^2 C_{it}^{j}}
+ {\partial(\Delta\ln P_{k,t-1})\,\partial S_{ik,0}}
+ =\beta_k^{j}+\delta_k^{j}I_{i,t-1}.
+ \label{eq:marginal}
+\end{equation}
+A H1-b será examinada por testes conjuntos sobre $\rho_k^{j}$ e $\delta_k^{j}$ e por efeitos marginais no suporte observado. O efeito total do preço será $\beta_k^{j}S_{ik,0}+\rho_k^{j}I_{i,t-1}+\delta_k^{j}S_{ik,0}I_{i,t-1}$; a inclusão de $\rho_k^{j}$ evita impor que toda moderação institucional opere exclusivamente pela capacidade produtiva. A moderação total desse efeito por instituições será examinada por $\rho_k^{j}+\delta_k^{j}S_{ik,0}$. Se valores maiores de $I$ representarem maior efetividade de fiscalização, espera-se moderação negativa nos valores pertinentes de capacidade. O sinal de $\delta_k^{j}$ indica como essa moderação varia com a capacidade, sem substituir a avaliação do efeito total. Nenhum sinal será imposto a contagens de autos ou valores de multas, pois uma contagem maior pode representar tanto maior atuação quanto maior incidência de infrações.
+
+O uso de $I_{i,t-1}$ preserva a ordem temporal, mas não elimina a seleção: fiscalização anterior pode responder a desmatamento persistente ou a informações sobre conversão futura. Sua interação com preços herda esse problema. Por isso, a equação \ref{eq:h1b} constituirá inicialmente uma análise de associação institucional. A identificação causal exigirá variação específica e documentada na aplicação de regras ou no monitoramento, com pressupostos próprios. O precedente de \citeonline{AssuncaoEtAl2023} mostra a importância de tratar esse problema; não torna válidos, para esta amostra, os mesmos instrumentos.
+
+Uma extensão possível é explorar mudanças institucionais com datas verificadas, como entrada em regimes diferenciados de monitoramento. Nesse caso, a trajetória anterior dos territórios tratados será comparada à de territórios elegíveis ainda não tratados ou nunca tratados, avaliando antecipação, suporte e tendências paralelas. Se houver adoção em datas distintas, serão considerados estimadores por grupo e período, como os de \citeonline{CallawaySantAnna2021}. O simples anúncio de uma política ou a inclusão endógena de municípios com alto desmatamento não satisfaz a hipótese de identificação. Tampouco um efeito médio da política identificará automaticamente a interação prevista em H1-b: a análise da resposta aos preços exigirá variação e pressupostos adicionais. Essa extensão somente será implementada após reconstruir o histórico institucional.
+
+\subsection{Heterogeneidade, dinâmica e inferência}
+
+As especificações por bioma incluirão interações entre exposições de preços, indicadores institucionais e pertencimento ao bioma, preservando todos os termos de ordem inferior estimáveis. Para exposições fixas, seus níveis serão absorvidos pelos efeitos territoriais; termos de preço comuns a cada bioma poderão ser absorvidos por efeitos de bioma por ano. As diferenças entre respostas serão avaliadas por testes conjuntos, e não pela comparação entre um coeficiente significativo em um grupo e outro não significativo em outro. Não se estimará um modelo separado para o Pantanal sem observações e variação suficientes.
+
+A dimensão temporal será examinada com defasagens distribuídas de exposição, por exemplo de um a três anos, e apresentação da soma dos coeficientes. A escolha entre resposta imediata e acumulada respeitará o calendário da decisão e a disponibilidade de dados. Não será incluída automaticamente a conversão defasada como controle, pois isso modifica o estimando e introduz problemas próprios de painéis dinâmicos. A persistência do estoque disponível e a alternativa de denominador territorial fixo serão avaliadas conjuntamente.
+
+O modelo linear de efeitos fixos será o ponto de partida por permitir interpretação direta em pontos percentuais. Serão examinadas previsões fora do intervalo admissível e a concentração de zeros. Quando justificadas pelos dados, especificações alternativas para a área convertida, com tratamento explícito da exposição ao risco, complementarão a análise; a adoção de uma transformação não será usada para descartar zeros observados.
+
+Os erros-padrão serão inicialmente agrupados por território, permitindo dependência serial dentro de cada unidade. Como choques de preços são comuns, também serão avaliados agrupamento por território e ano, métodos apropriados ao pequeno número de anos e sensibilidade à dependência espacial, com referência à abordagem de \citeonline{Conley1999}. As centenas de observações municipais não serão tratadas como centenas de choques independentes de preços: a amostra candidata tem 24 anos e poucas séries de produtos, o que limita a precisão de inferências baseadas nesses choques.
+
+Por fim, serão examinados suporte das interações, influência de observações extremas, mudanças de classificação do uso da terra, alternativas de predominância de bioma e possíveis deslocamentos de conversão para territórios vizinhos. As exclusões e especificações terão justificativa substantiva documentada. Resultados favoráveis, desfavoráveis ou imprecisos serão apresentados sob o mesmo conjunto de critérios, preservando o caráter refutável das hipóteses.
+
