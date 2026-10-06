@@ -225,3 +225,277 @@ O objetivo é aperfeiçoar a expressão de uma decisão intelectual já tomada p
 A principal referência operacional é `2_INTI/STYLE_GUIDE.md`.
 
 Exemplos reais da escrita do autor podem complementar o guia quando disponíveis por meio das fontes de estilo conectadas ao ChatGPT, mas devem ser tratados somente como evidência de estilo, nunca como fonte factual ou científica.
+
+---
+
+## Prompts operacionais — Work
+
+As auditorias abaixo devem ser executadas separadamente. Não substituir as quatro auditorias por uma única revisão genérica.
+
+Por padrão, todas operam em MODO SOMENTE LEITURA.
+
+O Work pode ler os arquivos necessários do projeto, mas não deve modificar `.tex`, `.bib`, dados, código, hipóteses, metodologia ou interpretação científica sem autorização explícita do autor.
+
+Os relatórios científicos consolidados desta etapa devem ser gravados em `2_INTI/reports/`.
+Logs ou artefatos automáticos intermediários, se existirem, devem ficar em `2_INTI/xreports/`.
+
+---
+
+### WORK-A — Arquitetura argumentativa
+
+Atue como revisor científico independente em MODO SOMENTE LEITURA.
+
+ESCOPO
+[chap1 / chap2 / artigo específico]
+
+Leia de forma integrada os arquivos científicos relevantes do artigo.
+
+OBJETIVO
+
+Audite a arquitetura argumentativa do trabalho.
+
+Verifique especialmente:
+
+- progressão entre problema, pergunta, hipóteses e objetivos;
+- coerência entre revisão de literatura, dados e estratégia empírica;
+- correspondência entre hipóteses e variáveis;
+- coerência entre método e contribuição pretendida;
+- redundâncias;
+- lacunas argumentativas;
+- mudanças silenciosas de escopo;
+- elementos introduzidos e depois abandonados;
+- conclusões que não decorrem da estrutura anterior.
+
+NÃO FAÇA
+
+- não reescreva o artigo;
+- não altere arquivos;
+- não proponha novas hipóteses como se fossem decisões do autor;
+- não substitua o desenho científico existente.
+
+ENTREGA
+
+Para cada achado relevante, informe:
+
+1. localização;
+2. problema;
+3. gravidade: CRÍTICA / RELEVANTE / MENOR;
+4. razão;
+5. recomendação;
+6. decisão que depende do autor.
+
+Ao final, produza uma síntese:
+
+- arquitetura consistente;
+- pontos que exigem correção;
+- pontos que apenas merecem atenção.
+
+Salve o relatório consolidado em:
+
+2_INTI/reports/WORK_A_arquitetura_[artigo].md
+
+---
+
+### WORK-B — Claim × evidência
+
+Atue como revisor científico independente em MODO SOMENTE LEITURA.
+
+ESCOPO
+[chap1 / chap2 / artigo específico]
+
+Considere, quando disponíveis:
+
+- arquivos `.tex`;
+- `2_INTI/CLAIMS_LEDGER.csv`;
+- bibliografias;
+- artigos/PDFs associados às referências.
+
+OBJETIVO
+
+Audite a correspondência entre afirmações científicas e evidências utilizadas.
+
+Para cada claim ou afirmação relevante, examine:
+
+1. CONSENSO
+   O que a literatura utilizada sustenta com razoável robustez?
+
+2. DIVERGÊNCIA
+   Existem resultados diferentes ou contraditórios?
+   A divergência pode decorrer de dados, escala, método, período ou contexto?
+
+3. LIMITAÇÃO METODOLÓGICA
+   Identificação causal, amostra, mensuração, contrafactual, validade externa, métricas ou outras limitações relevantes.
+
+4. AUSÊNCIA OU FRAGILIDADE DE EVIDÊNCIA
+   A afirmação excede o que as fontes realmente permitem concluir?
+
+5. IMPLICAÇÃO
+   O que isso significa para a redação, interpretação ou força da claim?
+
+Verifique também:
+
+- se a citação realmente sustenta a frase;
+- se associação está sendo tratada como causalidade;
+- se a linguagem está mais forte que a evidência;
+- se há generalização geográfica ou temporal indevida;
+- se diferentes fontes estão sendo tratadas como se mostrassem a mesma coisa.
+
+NÃO FAÇA
+
+- não invente evidência;
+- não substitua silenciosamente referências;
+- não acrescente literatura sem identificar claramente que é uma sugestão externa;
+- não reescreva o texto.
+
+ENTREGA
+
+Para cada problema:
+
+1. claim/trecho;
+2. citekey(s);
+3. avaliação;
+4. gravidade: CRÍTICA / RELEVANTE / MENOR;
+5. recomendação;
+6. decisão que depende do autor.
+
+Salve o relatório consolidado em:
+
+2_INTI/reports/WORK_B_claim_evidencia_[artigo].md
+
+---
+
+### WORK-C — Método × inferência
+
+Atue como revisor metodológico independente em MODO SOMENTE LEITURA.
+
+ESCOPO
+[chap1 / chap2 / artigo específico]
+
+Leia conjuntamente hipóteses, descrição dos dados, construção das variáveis e estratégia econométrica.
+
+OBJETIVO
+
+Avalie se o desenho empírico permite sustentar as inferências pretendidas.
+
+Examine, conforme aplicável:
+
+- unidade de análise;
+- período;
+- timing das variáveis;
+- precedência temporal;
+- endogeneidade;
+- simultaneidade;
+- variável omitida;
+- seleção;
+- mensuração;
+- efeitos fixos;
+- clustering;
+- tendências;
+- choques comuns;
+- spillovers;
+- equilíbrio geral;
+- contrafactual;
+- identificação;
+- heterogeneidade;
+- robustez;
+- validade externa.
+
+Diferencie explicitamente:
+
+DESCRITIVO
+ASSOCIATIVO
+CAUSAL
+
+Verifique se a linguagem do artigo respeita essa distinção.
+
+NÃO FAÇA
+
+- não altere equações;
+- não implemente nova especificação;
+- não modifique código ou dados;
+- não transforme recomendação metodológica em decisão já tomada.
+
+ENTREGA
+
+Para cada questão:
+
+1. localização;
+2. inferência pretendida;
+3. problema metodológico;
+4. consequência para interpretação;
+5. gravidade: CRÍTICA / RELEVANTE / MENOR;
+6. alternativa ou teste recomendado;
+7. decisão que depende do autor.
+
+Salve o relatório consolidado em:
+
+2_INTI/reports/WORK_C_metodo_inferencia_[artigo].md
+
+---
+
+### WORK-D — Coesão e redação científica
+
+Atue como revisor científico-editorial independente em MODO SOMENTE LEITURA.
+
+ESCOPO
+[chap1 / chap2 / artigo específico]
+
+OBJETIVO
+
+Audite a coesão global do artigo sem reescrevê-lo.
+
+Verifique:
+
+- consistência terminológica;
+- definições que mudam ao longo do texto;
+- hipótese formulada de maneiras incompatíveis;
+- repetição desnecessária;
+- transições frágeis;
+- parágrafos deslocados;
+- mudanças silenciosas de mecanismo;
+- conceitos introduzidos sem definição;
+- conclusões que usam linguagem diferente ou mais forte que o restante do artigo;
+- inconsistências entre resumo, introdução, método, discussão e conclusão.
+
+Preserve como referência estilística:
+
+2_INTI/STYLE_GUIDE.md
+
+NÃO FAÇA
+
+- não reescreva os arquivos;
+- não homogeneíze a voz autoral;
+- não simplifique terminologia tecnicamente necessária;
+- não faça mudanças científicas sob justificativa estilística.
+
+ENTREGA
+
+Para cada questão:
+
+1. localização;
+2. problema;
+3. efeito sobre leitura/interpretação;
+4. gravidade: CRÍTICA / RELEVANTE / MENOR;
+5. recomendação.
+
+Salve o relatório consolidado em:
+
+2_INTI/reports/WORK_D_coesao_[artigo].md
+
+---
+
+## Ordem recomendada das auditorias Work
+
+Executar, preferencialmente:
+
+WORK-A — Arquitetura
+→
+WORK-B — Claim × evidência
+→
+WORK-C — Método × inferência
+→
+WORK-D — Coesão e redação
+
+Não executar WORK-D antes de resolver problemas substantivos identificados em A, B e C.
+
+A revisão final e qualquer alteração no texto permanecem sob decisão do autor.
