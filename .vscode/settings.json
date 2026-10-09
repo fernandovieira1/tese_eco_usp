@@ -34,5 +34,23 @@
             ]
         }
     ],
-    "latex-workshop.latex.recipe.default": "first"
+    "latex-workshop.latex.recipe.default": "first",
+    "folder-color.pathColors": [
+        {
+            "folderPath": "tese_eco_usp\\2_INTI\\chapters\\chap1\\",
+            "color": "foldercolorizer.color_0000ff"
+        },
+        {
+            "folderPath": "tese_eco_usp\\2_INTI\\chapters\\chap0\\",
+            "color": "foldercolorizer.color_d7875f"
+        },
+        {
+            "folderPath": "tese_eco_usp\\2_INTI\\chapters\\chap2\\",
+            "color": "foldercolorizer.color_00af5f"
+        },
+        {
+            "folderPath": "tese_eco_usp\\2_INTI\\backup\\",
+            "color": "foldercolorizer.color_ff0087"
+        }
+    ]
 }
