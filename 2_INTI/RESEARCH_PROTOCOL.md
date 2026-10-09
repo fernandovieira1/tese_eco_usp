@@ -15,37 +15,39 @@ As regras aqui registradas devem ser tratadas como fonte de referência para exe
 
 Use este protocolo como base para tarefas executadas pelo Codex no repositório da tese.
 
-### Prompt-base
+### *Prompt-base*
 
-Execute esta tarefa no repositório da tese.
+*Execute esta tarefa no repositório da tese.*
 
-OBJETIVO
-[descrever a tarefa]
+*OBJETIVO
+[descrever a tarefa]*
 
-REGRAS DE SEGURANÇA
-1. Inspecione primeiro o estado atual e reutilize a estrutura existente.
-2. Faça somente as alterações necessárias para cumprir o objetivo.
-3. Não altere metodologia, fórmulas, dados originais, citekeys, estrutura científica ou arquivos fora do escopo sem necessidade demonstrável.
-4. Não sobrescreva arquivos de dados brutos.
-5. Preserve compatibilidade com o ambiente documentado do projeto.
-6. Antes de alterar código existente, identifique testes e dependências relevantes.
-7. Execute testes adequados após as alterações.
-8. Compile LaTeX quando a tarefa afetar arquivos .tex ou .bib.
-9. Mostre claramente qualquer teste que falhe e diferencie falha preexistente de regressão introduzida.
-10. Não faça commit, merge ou push sem autorização explícita.
+*REGRAS DE SEGURANÇA*
 
-ENTREGA
-- resumo do que foi alterado;
-- arquivos modificados/criados;
-- testes executados e resultados;
-- limitações ou pendências;
-- git diff/status final;
-- relatório consolidado de execução em 2_INTI/reports e artefatos automáticos ou reproduzíveis em 2_INTI/xreports;
-- quando a tarefa exigir continuidade, registro correspondente em 2_INTI/thread.
+1. *Inspecione primeiro o estado atual e reutilize a estrutura existente.*
+2. *Faça somente as alterações necessárias para cumprir o objetivo.*
+3. *Não altere metodologia, fórmulas, dados originais, citekeys, estrutura científica ou arquivos fora do escopo sem necessidade demonstrável.*
+4. *Não sobrescreva arquivos de dados brutos.*
+5. *Preserve compatibilidade com o ambiente documentado do projeto.*
+6. *Antes de alterar código existente, identifique testes e dependências relevantes.*
+7. *Execute testes adequados após as alterações.*
+8. *Compile LaTeX quando a tarefa afetar arquivos .tex ou .bib.*
+9. *Mostre claramente qualquer teste que falhe e diferencie falha preexistente de regressão introduzida.*
+10. *Não faça commit, merge ou push sem autorização explícita.*
 
-### Regra adicional
+*ENTREGA*
 
-O Codex pode identificar e sugerir problemas científicos, econométricos ou metodológicos, mas não deve alterar silenciosamente hipóteses, especificações, equações, estratégia empírica, interpretação científica ou estrutura argumentativa. Essas alterações exigem decisão explícita do autor.
+- *resumo do que foi alterado;*
+- *arquivos modificados/criados;*
+- *testes executados e resultados;*
+- *limitações ou pendências;*
+- *git diff/status final;*
+- *relatório consolidado de execução em 2_INTI/reports e artefatos automáticos ou reproduzíveis em 2_INTI/xreports;*
+- *quando a tarefa exigir continuidade, registro correspondente em 2_INTI/thread.*
+
+### *Regra adicional*
+
+*O Codex pode identificar e sugerir problemas científicos, econométricos ou metodológicos, mas não deve alterar silenciosamente hipóteses, especificações, equações, estratégia empírica, interpretação científica ou estrutura argumentativa. Essas alterações exigem decisão explícita do autor.*
 
 ---
 
@@ -62,6 +64,7 @@ Não altere arquivos `.tex`, `.bib`, dados, código, metodologia, hipóteses, eq
 #### 1. ARQUITETURA
 
 Avalie a coerência entre:
+
 - problema de pesquisa;
 - hipóteses;
 - objetivos;
@@ -79,12 +82,14 @@ Procure especialmente contradições, lacunas e mudanças silenciosas de escopo 
 Avalie se as afirmações científicas estão adequadamente sustentadas pelas fontes utilizadas.
 
 Considere, quando disponíveis:
+
 - texto LaTeX;
 - `CLAIMS_LEDGER.csv`;
 - bibliografia;
 - PDFs ou fontes vinculadas.
 
 Para cada problema relevante, examine:
+
 - consenso;
 - divergência;
 - limitação metodológica;
@@ -98,6 +103,7 @@ Não invente evidência e não substitua silenciosamente as fontes utilizadas pe
 Avalie se o desenho empírico permite sustentar as inferências pretendidas.
 
 Verifique, conforme aplicável:
+
 - endogeneidade;
 - simultaneidade;
 - timing;
@@ -118,6 +124,7 @@ Diferencie associação, interpretação causal e evidência descritiva.
 Avalie se conceitos, definições, hipóteses, mecanismos e interpretações permanecem consistentes ao longo do artigo.
 
 Identifique:
+
 - mudanças silenciosas de definição;
 - contradições entre seções;
 - redundâncias relevantes;
@@ -180,6 +187,7 @@ O aperfeiçoamento deve receber, conforme aplicável:
 Revise o trecho abaixo aplicando somente as alterações aprovadas.
 
 Preserve:
+
 - meu argumento;
 - minha voz;
 - o máximo possível da estrutura original;
@@ -189,6 +197,7 @@ Preserve:
 - o grau de certeza das afirmações.
 
 Não:
+
 - acrescente evidências novas;
 - crie ou substitua referências;
 - introduza argumentos não aprovados;
@@ -210,11 +219,13 @@ O objetivo é aperfeiçoar a expressão de uma decisão intelectual já tomada p
 ### Relação com /critica
 
 `/critica`:
+
 - avalia cientificamente;
 - identifica problemas;
 - não reescreve.
 
 `/fernando`:
+
 - trabalha somente depois da decisão do autor;
 - aplica alterações aprovadas;
 - aperfeiçoa redação e estilo;
@@ -318,17 +329,13 @@ Para cada claim ou afirmação relevante, examine:
 
 1. CONSENSO
    O que a literatura utilizada sustenta com razoável robustez?
-
 2. DIVERGÊNCIA
    Existem resultados diferentes ou contraditórios?
    A divergência pode decorrer de dados, escala, método, período ou contexto?
-
 3. LIMITAÇÃO METODOLÓGICA
    Identificação causal, amostra, mensuração, contrafactual, validade externa, métricas ou outras limitações relevantes.
-
 4. AUSÊNCIA OU FRAGILIDADE DE EVIDÊNCIA
    A afirmação excede o que as fontes realmente permitem concluir?
-
 5. IMPLICAÇÃO
    O que isso significa para a redação, interpretação ou força da claim?
 
@@ -647,6 +654,7 @@ Não adicionar ferramentas, MCPs, scripts ou automações apenas porque tecnicam
 #### AGENTS.md
 
 Função:
+
 - porta de entrada automática para agentes de código;
 - identifica a fase ativa do projeto;
 - direciona para `2_INTI/RESEARCH_PROTOCOL.md`;
@@ -659,6 +667,7 @@ Não deve se transformar em manual extenso.
 Fonte canônica das regras operacionais do stack.
 
 Contém, entre outros:
+
 - protocolo Codex;
 - protocolo Work;
 - aperfeiçoamento `/fernando`;
@@ -719,6 +728,7 @@ Não sincronizar nem copiar os dados para uma pasta própria dos notebooks.
 O Zotero é a fonte canônica de gestão bibliográfica.
 
 Responsabilidades do Zotero:
+
 - metadados;
 - PDFs;
 - citation keys;
@@ -738,6 +748,7 @@ Não criar um `references.bib` global enquanto os artigos permanecerem bibliogra
 Manter habilitada.
 
 A Local API demonstrou utilidade para:
+
 - consultar coleções;
 - verificar itens;
 - validar citation keys;
@@ -751,6 +762,7 @@ Qualquer alteração bibliográfica deve permanecer controlada e auditável.
 ### Better BibTeX
 
 Manter para:
+
 - citation keys;
 - exportação bibliográfica;
 - interoperabilidade Zotero–BibTeX.
@@ -776,6 +788,7 @@ Nenhum MCP adicional é necessário neste momento.
 Em particular, não instalar MCP para Zotero enquanto a Local API e o Better BibTeX atenderem ao fluxo com menor complexidade.
 
 A adoção futura de MCP exige benefício concreto em:
+
 - redução de trabalho manual;
 - redução de erro;
 - acesso atualmente impossível;
@@ -807,6 +820,7 @@ Usar:
 `2_INTI/code/audit_thesis.py`
 
 para verificações determinísticas de:
+
 - LaTeX;
 - BibTeX;
 - citekeys;
@@ -866,7 +880,7 @@ revisão final do autor.
 Adicionar um novo componente somente quando:
 
 benefício operacional esperado
->
+
 custo de configuração + manutenção + risco de inconsistência.
 
 Se uma integração não superar esse critério, ela não entra no stack.
