@@ -29,6 +29,7 @@ Preferir português acadêmico formal, argumentativo e natural.
 O texto pode ter densidade conceitual, desde que a relação lógica entre as proposições permaneça clara.
 
 Evitar:
+
 - simplificação excessiva;
 - frases telegráficas em sequência;
 - linguagem promocional;
@@ -110,6 +111,7 @@ Toda alteração que modifique o significado científico deve ser indicada ao au
 Preservar as citekeys fornecidas.
 
 Não:
+
 - criar referências;
 - substituir referências;
 - acrescentar literatura;
@@ -189,17 +191,17 @@ EVIDÊNCIAS AUTORIZADAS
 +
 este STYLE_GUIDE
 
-Instrução-base:
+**Instrução-base:**
 
-"Revise o trecho aplicando somente as alterações aprovadas.
+*"Revise o trecho aplicando somente as alterações aprovadas.*
 
-Preserve meu argumento, minha voz, a estrutura sempre que possível, o LaTeX, as citekeys e o significado científico.
+*Preserve meu argumento, minha voz, a estrutura sempre que possível, o LaTeX, as citekeys e o significado científico.*
 
-Não acrescente evidências, referências ou argumentos novos.
+*Não acrescente evidências, referências ou argumentos novos.*
 
-Não aumente silenciosamente a força causal ou a generalidade das conclusões.
+*Não aumente silenciosamente a força causal ou a generalidade das conclusões.*
 
-Se uma melhoria exigir mudança substantiva do argumento, indique-a separadamente em vez de implementá-la."
+*Se uma melhoria exigir mudança substantiva do argumento, indique-a separadamente em vez de implementá-la."*
 
 ---
 

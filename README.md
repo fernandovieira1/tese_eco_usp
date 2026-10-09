@@ -1,20 +1,22 @@
-<!-- 
+<!--
 SUYANA: Esperança
-INTI: Sol 
+INTI: Sol
 -->
 
-# Tese de Doutorado — Fase INTI
+# Tese de Doutorado
 
 > Programa de Pós-Graduação em Economia — FEARP/USP
-> **Doutorando:** Fernando Souza da Vieira
+> **Doutorando:** Fernando Souza de Vieira
 > **Orientador:** Prof. Dr. Alexandre Chibebe Nicolella
 > **Período:** 2025–2028
 
 ## Apresentação
 
-Este repositório reúne os textos, dados, códigos e demais materiais de trabalho da tese de doutorado em Economia na FEARP/USP. A pesquisa encontra-se atualmente na fase **INTI** e está sendo estruturada no formato de três artigos.
+Este repositório reúne os textos, dados, códigos e demais materiais de trabalho da tese de doutorado em Economia na FEARP/USP.
 
-Nesta etapa, o esforço está concentrado no desenvolvimento de dois artigos empíricos, que servirão de base à qualificação. O **Artigo 1 examina H1**, sobre retornos econômicos, instituições e conversão da vegetação. O **Artigo 2 examina H2**, sobre vegetação previamente existente, choques climáticos e produtividade agrícola. O **Artigo 3 permanece a definir**, a partir dos mecanismos e questões que emergirem dessas investigações.
+Na etapa INTI, o esforço está concentrado no desenvolvimento de dois artigos empíricos, que servirão de base à qualificação. O **Artigo 1 examina H1**, sobre retornos econômicos, instituições e conversão da vegetação. O **Artigo 2 examina H2**, sobre vegetação previamente existente, choques climáticos e produtividade agrícola.
+
+O **Artigo 3 será definido em etapa posterior**, a partir dos mecanismos e questões que emergirem dessas investigações.
 
 ## Eixo geral da pesquisa
 
@@ -54,35 +56,36 @@ Os artigos examinam elos complementares da relação entre economia e meio ambie
 
 ### Artigo 3 — a definir
 
-O terceiro artigo também dependerá dos resultados do Artigo 1 e de sua articulação com o Artigo 2. As alternativas atualmente consideradas são um segundo desenvolvimento teórico ou uma análise normativa voltada ao desenho e à focalização territorial de políticas de conservação.
+O terceiro artigo, cuja realização e escopo ainda estão em aberto, é pensado como uma investigação teórica de natureza dedutiva, voltada à formulação de proposições econômicas e ao exame de suas implicações a partir de pressupostos explícitos. Sua execução está condicionada ao que artigos 1 e 2 demonstrarão, bem como a articulação teórica e empírica entre eles.
 
 ## Organização do repositório
 
-| Diretório    | Conteúdo                                       |
-| ------------- | ----------------------------------------------- |
-| `1_SUYANA/` | Materiais produzidos no Projeto da pesquisa     |
-| `2_INTI/` | Materiais da fase atual de pesquisa e da qualificação |
-| `2_INTI/chapters/chap1/` | Artigo relativo a H1 e bibliografia própria |
-| `2_INTI/chapters/chap2/` | Artigo relativo a H2 e bibliografia própria |
-| `2_INTI/data/chap1/` | Dados e cópias compartilhadas pertinentes a H1 |
-| `2_INTI/data/chap2/` | Dados e cópias compartilhadas pertinentes a H2 |
-| `2_INTI/data/catalog/` | Registros históricos de aquisição e rastreabilidade |
-| `2_INTI/reports/` | Auditorias das fontes, organização dos dados e pendências |
+| Diretório                 | Conteúdo                                                                           |
+| -------------------------- | ----------------------------------------------------------------------------------- |
+| `1_SUYANA/`              | Materiais históricos da etapa de elaboração do projeto de pesquisa               |
+| `2_INTI/`                | Materiais da fase atual de pesquisa e da qualificação                             |
+| `2_INTI/chapters/chap1/` | Artigo relativo a H1 e bibliografia própria                                        |
+| `2_INTI/chapters/chap2/` | Artigo relativo a H2 e bibliografia própria                                        |
+| `2_INTI/xdata/chap1/`    | Dados locais pertinentes a H1                                                       |
+| `2_INTI/xdata/chap2/`    | Dados locais pertinentes a H2                                                       |
+| `2_INTI/xdata/catalog/`  | Metadados, registros de aquisição e proveniência dos dados                       |
+| `2_INTI/reports/`        | Relatórios consolidados, decisões, validações e marcos relevantes               |
+| `2_INTI/xreports/`       | Logs e outros artefatos automáticos ou reproduzíveis, locais e ignorados pelo Git |
+| `2_INTI/thread/`         | Registros de continuidade entre tarefas e agentes                                   |
 
-## Estado dos artigos e compilação
+Os dados ativos permanecem em `2_INTI/xdata/`, a fonte canônica local dos dados da tese.
 
-Os textos constituem projetos para qualificação. As seções finais apresentam o plano de análise e os limites da contribuição; não contêm resultados econométricos produzidos nesta etapa. A disponibilidade de arquivos não equivale à existência de uma amostra pronta para estimação. As lacunas de dados e identificação estão explicitadas em cada artigo e nos relatórios.
+Cada capítulo tem um projeto LaTeX independente, com a mesma estrutura de arquivos e configuração ABNT.
 
-Cada capítulo tem projeto independente, com a mesma estrutura de arquivos e configuração ABNT. Na pasta do respectivo capítulo, compile com:
+Na pasta do respectivo capítulo, compile com:
 
 ```powershell
 latexmk -pdf -synctex=1 -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-As fontes citadas estão documentadas em `2_INTI/reports/auditoria_fontes_chap1.md` e `2_INTI/reports/auditoria_fontes_chap2.md`. A versão anterior à separação, incluindo as alterações locais que já existiam, foi preservada em `2_INTI/backup/2026-10-02_separacao_h1_h2/`.
+O histórico de evolução dos arquivos versionados pode ser consultado nos commits. O mecanismo de backup integral do projeto é o Restic, conforme definido no protocolo de pesquisa.
 
-Títulos, estratégias empíricas e a composição do Artigo 3 poderão ser revistos conforme o avanço das duas investigações e as discussões de orientação.
-
+As diretrizes para o uso de IA neste trabalho estão documentadas em [AGENTS.md](AGENTS.md), no [protocolo de pesquisa](2_INTI/RESEARCH_PROTOCOL.md) e no [guia de estilo](2_INTI/STYLE_GUIDE.md).
 
 <!-- ***
 SUYANA: Esperança
