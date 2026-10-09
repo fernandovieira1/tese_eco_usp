@@ -6,8 +6,11 @@ INTI: Sol
 # Tese de Doutorado
 
 > Programa de Pós-Graduação em Economia — FEARP/USP
+> 
 > **Doutorando:** Fernando Souza de Vieira
+> 
 > **Orientador:** Prof. Dr. Alexandre Chibebe Nicolella
+> 
 > **Período:** 2025–2028
 
 ## Apresentação
