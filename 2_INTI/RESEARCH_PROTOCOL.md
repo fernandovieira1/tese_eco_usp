@@ -542,7 +542,7 @@ Salve o relatório consolidado em:
 
 Executar, preferencialmente:
 
-WORK-A — Arquitetura
+WORK-A — Arquitetura argumentativa
 →
 WORK-B — Claim × evidência
 →
@@ -928,19 +928,19 @@ flowchart TD
     P8 -. "Blocos orientam novos ciclos" .-> P0
 ```
 
-| Passo | Ação e ferramenta | Entrada e saída |
-|---|---|---|
-| **0. Concepção preliminar** | Fernando formula o argumento, a pergunta ou a interpretação; pode retomar um bloco REF existente. | Ideia ou bloco selecionado → conteúdo a desenvolver. Na análise de resultados, partir de saídas empíricas verificadas e identificar a versão do código que as produziu. |
-| **1. Literatura inicial** | Fernando pesquisa no Google Scholar e seleciona fontes pertinentes. | Questão ou argumento → literatura inicial identificável. |
-| **2. Redação humana** | Fernando escreve no LaTeX e explicita o argumento do bloco. | Literatura inicial e concepção → texto original; usar marcações REF existentes quando disponíveis. |
-| **3. Busca adversarial** | Fernando solicita ao LeapSpace evidências **favoráveis, contrárias, nulas e condições de validade**. | Bloco original e contexto → fontes candidatas, métodos, resultados, contextos e limitações identificados. |
-| **4. Consolidação bibliográfica** | Fernando e Codex conferem as fontes; Fernando verifica os links e mantém os documentos no Zotero. | Fontes selecionadas → correspondência validada entre `.tex`, `library.bib` do capítulo e documento fonte no Zotero, preservando as citekeys. |
-| **5. Crítica** | GPT/Gemini aplica `/critica` ao bloco e às fontes conferidas. | Original, contexto e evidências → crítica sem reescrita. Fernando decide quais críticas aceitar antes do passo 6. |
-| **6. Aperfeiçoamento** | GPT/Gemini aplica `/fernando` + `STYLE_GUIDE.md`. | Original, crítica aprovada, alterações e fontes autorizadas → proposta que preserve a voz, o significado científico e o grau de certeza. |
-| **7. Revisão humana e validação técnica** | Fernando decide o que incorporar, compila e confere o PDF; Codex executa `2_INTI/audit_thesis.py` sobre o capítulo pertinente. | Proposta aprovada → texto incorporado pelo autor, PDF conferido e relatório técnico em `2_INTI/audit/`. |
-| **8. Consolidação das marcações** | Fernando confere os delimitadores `%%% REF...` e seus comentários descritivos. | Texto revisado → blocos localizáveis para auditorias e novos ciclos, preservando os identificadores existentes. |
-| **9. Auditorias científicas** | Work executa separadamente A → B → C → D, com escopo definido e contexto suficiente. | Seção ou artigo consolidado e fontes → relatórios em `2_INTI/audit/works/[artigo]/`. Correções dependem do autor; D aguarda a resolução dos problemas substantivos de A–C. |
-| **10. Revisão final** | Fernando lê a versão consolidada e confere texto, referências e PDF. | Versão auditada e correções aprovadas → versão aprovada para o próximo marco. |
+| Passo                                               | Ação e ferramenta                                                                                                              | Entrada e saída                                                                                                                                                                     |
+| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **0. Concepção preliminar**                 | Fernando formula o argumento, a pergunta ou a interpretação; pode retomar um bloco REF existente.                              | Ideia ou bloco selecionado → conteúdo a desenvolver. Na análise de resultados, partir de saídas empíricas verificadas e identificar a versão do código que as produziu.       |
+| **1. Literatura inicial**                     | Fernando pesquisa no Google Scholar e seleciona fontes pertinentes.                                                              | Questão ou argumento → literatura inicial identificável.                                                                                                                          |
+| **2. Redação humana**                       | Fernando escreve no LaTeX e explicita o argumento do bloco.                                                                      | Literatura inicial e concepção → texto original; usar marcações REF existentes quando disponíveis.                                                                             |
+| **3. Busca adversarial**                      | Fernando solicita ao LeapSpace evidências**favoráveis, contrárias, nulas e condições de validade**.                   | Bloco original e contexto → fontes candidatas, métodos, resultados, contextos e limitações identificados.                                                                        |
+| **4. Consolidação bibliográfica**          | Fernando e Codex conferem as fontes; Fernando verifica os links e mantém os documentos no Zotero.                               | Fontes selecionadas → correspondência validada entre`.tex`, `library.bib` do capítulo e documento fonte no Zotero, preservando as citekeys.                                   |
+| **5. Crítica**                               | GPT/Gemini aplica`/critica` ao bloco e às fontes conferidas.                                                                  | Original, contexto e evidências → crítica sem reescrita. Fernando decide quais críticas aceitar antes do passo 6.                                                                |
+| **6. Aperfeiçoamento**                       | GPT/Gemini aplica`/fernando` + `STYLE_GUIDE.md`.                                                                             | Original, crítica aprovada, alterações e fontes autorizadas → proposta que preserve a voz, o significado científico e o grau de certeza.                                        |
+| **7. Revisão humana e validação técnica** | Fernando decide o que incorporar, compila e confere o PDF; Codex executa`2_INTI/audit_thesis.py` sobre o capítulo pertinente. | Proposta aprovada → texto incorporado pelo autor, PDF conferido e relatório técnico em`2_INTI/audit/`.                                                                          |
+| **8. Consolidação das marcações**         | Fernando confere os delimitadores`%%% REF...` e seus comentários descritivos.                                                 | Texto revisado → blocos localizáveis para auditorias e novos ciclos, preservando os identificadores existentes.                                                                    |
+| **9. Auditorias científicas**                | Work executa separadamente A → B → C → D, com escopo definido e contexto suficiente.                                          | Seção ou artigo consolidado e fontes → relatórios em`2_INTI/audit/works/[artigo]/`. Correções dependem do autor; D aguarda a resolução dos problemas substantivos de A–C. |
+| **10. Revisão final**                        | Fernando lê a versão consolidada e confere texto, referências e PDF.                                                          | Versão auditada e correções aprovadas → versão aprovada para o próximo marco.                                                                                                  |
 
 ### Solicitação para a busca adversarial — passo 3
 
@@ -950,17 +950,17 @@ A busca produz fontes candidatas. A identidade dos documentos e a correspondênc
 
 ### Momento de aplicação dos protocolos
 
-| Protocolo | Momento e função |
-|---|---|
-| `RESEARCH_PROTOCOL.md` | Referência permanente; aplicar as regras e o protocolo específico ao iniciar cada tarefa de IA. |
-| Protocolo Codex | Tarefas técnicas, conferência bibliográfica no passo 4 e validação no passo 7; manter escopo e executar testes adequados ao que foi alterado. |
-| `/critica` | Passo 5: avaliar o bloco original com as fontes conferidas, sem reescrever. |
-| `/fernando` + `STYLE_GUIDE.md` | Passo 6: aperfeiçoar somente após decisão explícita do autor, preservando texto, voz, referências e significado. |
-| `audit_thesis.py` | Passo 7 e marcos pertinentes: verificar arquivos, citações, BibTeX e compilação. |
-| WORK-A | Primeiro no passo 9: arquitetura e coerência entre pergunta, hipóteses, objetivos, método e contribuição. |
-| WORK-B | Depois de A: sustentação das afirmações pelas fontes, divergências, resultados nulos, limites e força da linguagem. |
-| WORK-C | Depois de B: compatibilidade entre método e inferências, incluindo resultados quando disponíveis. |
-| WORK-D + `STYLE_GUIDE.md` | Após resolver problemas substantivos de A–C: coesão, terminologia, transições e consistência global. |
+| Protocolo                          | Momento e função                                                                                                                                 |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `RESEARCH_PROTOCOL.md`           | Referência permanente; aplicar as regras e o protocolo específico ao iniciar cada tarefa de IA.                                                  |
+| Protocolo Codex                    | Tarefas técnicas, conferência bibliográfica no passo 4 e validação no passo 7; manter escopo e executar testes adequados ao que foi alterado. |
+| `/critica`                       | Passo 5: avaliar o bloco original com as fontes conferidas, sem reescrever.                                                                        |
+| `/fernando` + `STYLE_GUIDE.md` | Passo 6: aperfeiçoar somente após decisão explícita do autor, preservando texto, voz, referências e significado.                              |
+| `audit_thesis.py`                | Passo 7 e marcos pertinentes: verificar arquivos, citações, BibTeX e compilação.                                                               |
+| WORK-A                             | Primeiro no passo 9: arquitetura e coerência entre pergunta, hipóteses, objetivos, método e contribuição.                                     |
+| WORK-B                             | Depois de A: sustentação das afirmações pelas fontes, divergências, resultados nulos, limites e força da linguagem.                          |
+| WORK-C                             | Depois de B: compatibilidade entre método e inferências, incluindo resultados quando disponíveis.                                               |
+| WORK-D +`STYLE_GUIDE.md`         | Após resolver problemas substantivos de A–C: coesão, terminologia, transições e consistência global.                                         |
 
 Todas as auditorias Work operam somente em leitura. Achados, recomendações e decisões são registrados nos relatórios correspondentes, com localização por arquivo e bloco REF; as alterações permanecem sob decisão do autor.
 
