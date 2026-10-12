@@ -74,14 +74,7 @@ O terceiro artigo, cuja realização e escopo ainda estão em aberto, é pensado
 | `2_INTI/`                | Materiais da fase atual de pesquisa e da qualificação                             |
 | `2_INTI/chapters/chap1/` | Artigo relativo a H1 e bibliografia própria                                        |
 | `2_INTI/chapters/chap2/` | Artigo relativo a H2 e bibliografia própria                                        |
-| `2_INTI/xdata/chap1/`    | Dados locais pertinentes a H1                                                       |
-| `2_INTI/xdata/chap2/`    | Dados locais pertinentes a H2                                                       |
-| `2_INTI/xdata/catalog/`  | Metadados, registros de aquisição e proveniência dos dados                       |
-| `2_INTI/reports/`        | Relatórios consolidados, decisões, validações e marcos relevantes               |
-| `2_INTI/xreports/`       | Logs e outros artefatos automáticos ou reproduzíveis, locais e ignorados pelo Git |
-| `2_INTI/thread/`         | Registros de continuidade entre tarefas e agentes                                   |
 
-Os dados ativos permanecem em `2_INTI/xdata/`, a fonte canônica local dos dados da tese.
 
 Cada capítulo tem um projeto LaTeX independente, com a mesma estrutura de arquivos e configuração ABNT.
 
