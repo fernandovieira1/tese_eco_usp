@@ -2,8 +2,9 @@
 2_INTI/xdata/
 
 # Materiais auxiliares locais
-2_INTI/xdiversos/
-2_INTI/reports/
+2_INTI/audit
+2_INTI/div
+2_INTI/xlegado
 
 # Python
 __pycache__/

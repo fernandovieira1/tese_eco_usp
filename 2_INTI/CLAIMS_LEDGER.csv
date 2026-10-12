@@ -1,6 +1,0 @@
-claim_id,section,citekey,support,method,limitation,status
-"H1-C001","chap1/0_introduction.tex","BermanEtAl2023","SUPPORT","preços globais × aptidão local; regressão espacial/painel","heterogeneidade não observada e efeitos indiretos","candidate"
-"H1-C001","chap1/0_introduction.tex","MortonEtAl2006","SUPPORT","correlação espaço-temporal entre preço da soja, expansão agrícola e clearing","correlação não elimina endogeneidade e fatores concomitantes","candidate"
-"H1-C001","chap1/0_introduction.tex","PeterArima2026","SUPPORT","dinâmica de lucros agrícolas, preço da terra e clearing","difícil separar lucro agrícola de valorização fundiária e fatores omitidos","candidate"
-"H1-C001","chap1/0_introduction.tex","Braganca2018","CONTEXT","preços relativos cultivo/boi e mudança de uso da terra","efeito local e possível deslocamento para outras áreas","candidate"
-"H1-C001","chap1/0_introduction.tex","LundbergAbman2022","CONTEXT","volatilidade do preço do milho e perda florestal","mede risco/valor de esperar, não nível médio do retorno esperado","candidate"
