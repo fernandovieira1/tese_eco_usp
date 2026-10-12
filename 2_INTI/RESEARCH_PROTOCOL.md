@@ -898,49 +898,19 @@ Este protocolo orienta todo o fluxo. Ao iniciar uma tarefa de IA, informe objeti
 
 O LaTeX acompanha a redação ao longo do processo. O passo 7 representa a decisão de incorporar sugestões e a conferência do documento compilado. `STYLE_GUIDE.md` é aplicado sobretudo no passo 6 e no WORK-D.
 
-```mermaid
-flowchart TD
-    P0["0. Concepção preliminar — Fernando"]
-    P1["1. Literatura inicial — Google Scholar"]
-    P2["2. Redação humana — Fernando"]
-    P3["3. Busca adversarial — LeapSpace"]
-    P4["4. Consolidação bibliográfica — Fernando + Codex + Zotero"]
-    P5["5. Crítica — GPT / Gemini"]
-    DEC["Fernando decide quais críticas aceitar"]
-    P6["6. Aperfeiçoamento — GPT / Gemini + STYLE_GUIDE"]
-    P7["7. Revisão humana + compilação + audit_thesis.py"]
-    P8["8. Consolidação das marcações REF"]
-    P9A["9. WORK-A — Arquitetura"]
-    P9B["WORK-B — Claim × evidência"]
-    P9C["WORK-C — Método × inferência"]
-    RES{"Problemas substantivos de A, B e C resolvidos?"}
-    AJ["Fernando decide o encaminhamento"]
-    P9D["WORK-D — Coesão + STYLE_GUIDE"]
-    P10["10. Revisão final — Fernando"]
-
-    P0 --> P1 --> P2 --> P3 --> P4 --> P5 --> DEC --> P6
-    P6 --> P7 --> P8 --> P9A --> P9B --> P9C --> RES
-    RES -->|Sim| P9D --> P10
-    RES -->|Não| AJ
-    AJ -->|Novas evidências| P3
-    AJ -->|Correções textuais aprovadas| P6
-    AJ -->|Decisão científica ou metodológica| P0
-    P8 -. "Blocos orientam novos ciclos" .-> P0
-```
-
-| Passo                                               | Ação e ferramenta                                                                                                              | Entrada e saída                                                                                                                                                                     |
-| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **0. Concepção preliminar**                 | Fernando formula o argumento, a pergunta ou a interpretação; pode retomar um bloco REF existente.                              | Ideia ou bloco selecionado → conteúdo a desenvolver. Na análise de resultados, partir de saídas empíricas verificadas e identificar a versão do código que as produziu.       |
-| **1. Literatura inicial**                     | Fernando pesquisa no Google Scholar e seleciona fontes pertinentes.                                                              | Questão ou argumento → literatura inicial identificável.                                                                                                                          |
-| **2. Redação humana**                       | Fernando escreve no LaTeX e explicita o argumento do bloco.                                                                      | Literatura inicial e concepção → texto original; usar marcações REF existentes quando disponíveis.                                                                             |
-| **3. Busca adversarial**                      | Fernando solicita ao LeapSpace evidências**favoráveis, contrárias, nulas e condições de validade**.                   | Bloco original e contexto → fontes candidatas, métodos, resultados, contextos e limitações identificados.                                                                        |
-| **4. Consolidação bibliográfica**          | Fernando e Codex conferem as fontes; Fernando verifica os links e mantém os documentos no Zotero.                               | Fontes selecionadas → correspondência validada entre`.tex`, `library.bib` do capítulo e documento fonte no Zotero, preservando as citekeys.                                   |
-| **5. Crítica**                               | GPT/Gemini aplica`/critica` ao bloco e às fontes conferidas.                                                                  | Original, contexto e evidências → crítica sem reescrita. Fernando decide quais críticas aceitar antes do passo 6.                                                                |
-| **6. Aperfeiçoamento**                       | GPT/Gemini aplica`/fernando` + `STYLE_GUIDE.md`.                                                                             | Original, crítica aprovada, alterações e fontes autorizadas → proposta que preserve a voz, o significado científico e o grau de certeza.                                        |
-| **7. Revisão humana e validação técnica** | Fernando decide o que incorporar, compila e confere o PDF; Codex executa`2_INTI/audit_thesis.py` sobre o capítulo pertinente. | Proposta aprovada → texto incorporado pelo autor, PDF conferido e relatório técnico em`2_INTI/audit/`.                                                                          |
-| **8. Consolidação das marcações**         | Fernando confere os delimitadores`%%% REF...` e seus comentários descritivos.                                                 | Texto revisado → blocos localizáveis para auditorias e novos ciclos, preservando os identificadores existentes.                                                                    |
-| **9. Auditorias científicas**                | Work executa separadamente A → B → C → D, com escopo definido e contexto suficiente.                                          | Seção ou artigo consolidado e fontes → relatórios em`2_INTI/audit/works/[artigo]/`. Correções dependem do autor; D aguarda a resolução dos problemas substantivos de A–C. |
-| **10. Revisão final**                        | Fernando lê a versão consolidada e confere texto, referências e PDF.                                                          | Versão auditada e correções aprovadas → versão aprovada para o próximo marco.                                                                                                  |
+| Passo                                               | Ação e ferramenta                                                                                                                                                                                                                                                                                                                                                                                               | Entrada e saída                                                                                                                                                                     |
+| --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **0. Concepção preliminar**                 | Fernando formula o argumento, a pergunta ou a interpretação; pode retomar um bloco REF existente.                                                                                                                                                                                                                                                                                                               | Ideia ou bloco selecionado → conteúdo a desenvolver. Na análise de resultados, partir de saídas empíricas verificadas e identificar a versão do código que as produziu.       |
+| **1. Literatura inicial**                     | Fernando pesquisa no Google Scholar e seleciona fontes pertinentes.                                                                                                                                                                                                                                                                                                                                               | Questão ou argumento → literatura inicial identificável.                                                                                                                          |
+| **2. Redação humana**                       | Fernando escreve no LaTeX e explicita o argumento do bloco.                                                                                                                                                                                                                                                                                                                                                       | Literatura inicial e concepção → texto original; usar marcações REF existentes quando disponíveis.                                                                             |
+| **3. Busca adversarial**                      | Fernando solicita ao LeapSpace evidências**favoráveis, contrárias, nulas e condições de validade**.                                                                                                                                                                                                                                                                                                    | Bloco original e contexto → fontes candidatas, métodos, resultados, contextos e limitações identificados.                                                                        |
+| **4. Consolidação bibliográfica**          | Fernando e Codex conferem as fontes; Fernando verifica os links e mantém os documentos no Zotero.                                                                                                                                                                                                                                                                                                                | Fontes selecionadas → correspondência validada entre`.tex`, `library.bib` do capítulo e documento fonte no Zotero, preservando as citekeys.                                   |
+| **5. Crítica**                               | GPT/Gemini aplica`/critica` ao bloco e às fontes conferidas.                                                                                                                                                                                                                                                                                                                                                   | Original, contexto e evidências → crítica sem reescrita. Fernando decide quais críticas aceitar antes do passo 6.                                                                |
+| **6. Aperfeiçoamento**                       | GPT/Gemini aplica`/fernando` + `STYLE_GUIDE.md`.                                                                                                                                                                                                                                                                                                                                                              | Original, crítica aprovada, alterações e fontes autorizadas → proposta que preserve a voz, o significado científico e o grau de certeza.                                        |
+| **7. Revisão humana e validação técnica** | Fernando decide o que incorporar, compila e confere o PDF; Codex executa`2_INTI/audit_thesis.py` sobre o capítulo pertinente.<br /><br />No caso de `2_INTI/audit_thesis.py`, o objetivo principal é garantir que a tese esteja **tecnicamente consistente, reproduzível e livre de quebras estruturais ou bibliográficas**, sem depender de consultas externas ou alterar qualquer arquivo fonte. | Proposta aprovada → texto incorporado pelo autor, PDF conferido e relatório técnico em`2_INTI/audit/`.                                                                          |
+| **8. Consolidação das marcações**         | Fernando confere os delimitadores`%%% REF...` e seus comentários descritivos.                                                                                                                                                                                                                                                                                                                                  | Texto revisado → blocos localizáveis para auditorias e novos ciclos, preservando os identificadores existentes.                                                                    |
+| **9. Auditorias científicas**                | Work executa separadamente A → B → C → D, com escopo definido e contexto suficiente.                                                                                                                                                                                                                                                                                                                           | Seção ou artigo consolidado e fontes → relatórios em`2_INTI/audit/works/[artigo]/`. Correções dependem do autor; D aguarda a resolução dos problemas substantivos de A–C. |
+| **10. Revisão final**                        | Fernando lê a versão consolidada e confere texto, referências e PDF.                                                                                                                                                                                                                                                                                                                                           | Versão auditada e correções aprovadas → versão aprovada para o próximo marco.                                                                                                  |
 
 ### Solicitação para a busca adversarial — passo 3
 
@@ -975,3 +945,33 @@ benefício operacional esperado
 custo de configuração + manutenção + risco de inconsistência.
 
 Se uma integração não superar esse critério, ela não entra no stack.
+
+```mermaid
+flowchart TD
+    P0["0. Concepção preliminar — Fernando"]
+    P1["1. Literatura inicial — Google Scholar"]
+    P2["2. Redação humana — Fernando"]
+    P3["3. Busca adversarial — LeapSpace"]
+    P4["4. Consolidação bibliográfica — Fernando + Codex + Zotero"]
+    P5["5. Crítica — GPT / Gemini"]
+    DEC["Fernando decide quais críticas aceitar"]
+    P6["6. Aperfeiçoamento — GPT / Gemini + STYLE_GUIDE"]
+    P7["7. Revisão humana + compilação + audit_thesis.py"]
+    P8["8. Consolidação das marcações REF"]
+    P9A["9. WORK-A — Arquitetura"]
+    P9B["WORK-B — Claim × evidência"]
+    P9C["WORK-C — Método × inferência"]
+    RES{"Problemas substantivos de A, B e C resolvidos?"}
+    AJ["Fernando decide o encaminhamento"]
+    P9D["WORK-D — Coesão + STYLE_GUIDE"]
+    P10["10. Revisão final — Fernando"]
+
+    P0 --> P1 --> P2 --> P3 --> P4 --> P5 --> DEC --> P6
+    P6 --> P7 --> P8 --> P9A --> P9B --> P9C --> RES
+    RES -->|Sim| P9D --> P10
+    RES -->|Não| AJ
+    AJ -->|Novas evidências| P3
+    AJ -->|Correções textuais aprovadas| P6
+    AJ -->|Decisão científica ou metodológica| P0
+    P8 -. "Blocos orientam novos ciclos" .-> P0
+```
