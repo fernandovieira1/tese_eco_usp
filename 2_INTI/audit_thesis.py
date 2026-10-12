@@ -2,7 +2,7 @@
 
 Parser estático: segue input/include e bibliografias literais; não expande macros
 TeX. BibTeX aceita valores delimitados, concatenação e @string. A compilação
-complementa a análise estática. Relatórios e logs ficam exclusivamente em xreports.
+complementa a análise estática. Relatórios e logs ficam em 2_INTI/audit/.
 """
 from __future__ import annotations
 
@@ -17,7 +17,7 @@ import subprocess
 import tempfile
 import unicodedata
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 EXPECTED = ('main.tex', '_abstract.tex', '0_introduction.tex',
             '1_literature_review.tex', '2_mt_descriptive.tex',
             '3_econometrics_strategy.tex', '4_discussion.tex',
@@ -321,7 +321,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.timeout <= 0:
         parser.error('--timeout deve ser positivo')
-    report_dir = ROOT / 'xreports' / ('audit_thesis_' + datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S_%fZ'))
+    report_dir = ROOT / 'audit' / ('audit_thesis_' + datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S_%fZ'))
     report_dir.mkdir(parents=True)
     findings, entries = [], []
     for chapter in dict.fromkeys(args.chapters):

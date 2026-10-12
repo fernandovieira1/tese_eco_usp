@@ -51,6 +51,11 @@
         {
             "folderPath": "tese_eco_usp\\2_INTI\\backup\\",
             "color": "foldercolorizer.color_ff0087"
+        },
+        {
+            "folderPath": "tese_eco_usp\\2_INTI\\chapters\\",
+            "isFolderOnly": true,
+            "color": "foldercolorizer.color_5fffd7"
         }
     ]
 }

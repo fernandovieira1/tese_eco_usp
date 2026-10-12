@@ -15,6 +15,7 @@ Este repositório contém a tese de doutorado de Fernando Souza de Vieira.
 - Preserve dados brutos, metodologia, fórmulas, citekeys e decisões científicas salvo autorização explícita.
 - Não faça commit, merge ou push sem autorização explícita.
 - Para tarefas técnicas, execute os testes adequados e informe regressões separadamente de falhas preexistentes.
-- Use `2_INTI/reports/` somente para relatórios consolidados, decisões, validações e marcos relevantes; esse diretório é versionado pelo Git.
-- Grave logs, diffs, relatórios timestampados, saídas de testes e outros artefatos automáticos ou reproduzíveis em `2_INTI/xreports/`; esse diretório é local e ignorado pelo Git.
-- Use `2_INTI/thread/` para registros relevantes de continuidade entre tarefas/agentes; esse diretório é versionado pelo Git.
+- Grave relatórios técnicos, logs, diffs e saídas de testes em `2_INTI/audit/`.
+- Use `2_INTI/audit/works/[artigo]/` para relatórios WORK-A, WORK-B, WORK-C e WORK-D e `2_INTI/audit/zotero/` para conferências bibliográficas.
+- Registre decisões e contexto de continuidade no relatório pertinente, conforme `2_INTI/RESEARCH_PROTOCOL.md`.
+- Esses relatórios são locais, ignorados pelo Git e protegidos pelo backup Restic. Não recrie os diretórios antigos preservados em `2_INTI/xlegado/` como estruturas ativas por padrão.
