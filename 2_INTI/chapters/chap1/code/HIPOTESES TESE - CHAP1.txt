@@ -1,0 +1,107 @@
+HIPÓTESES TESE - CHAP1
+-------------------------
+
+==============
+H1 (conversão => expectativas (preços, produtividade, infrações))
+-------
+A taxa de conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.
+
+EQUAÇÃO
+Conversão da vegetação nativa = f(preços agropecuários, produtividade da terra, ambiente institucional).
+
+MODELO
+Y_conv = x1_psoja-pmilho + x2_prodsoja-prodmilho + x3_infracoes
+
+- Y_conv                = conversão da vegetação, ha, municipal, anual, 
+                          2_INTI\xdata\chap1\processed\tabular\h1_h2__mapbiomas_classes__col10_1__municipio_bioma_anual.csv
+
+- x1_psoja-pmilho       = preços de soja e milho, USD/t, mundial, mensal*,
+                          2_INTI\xdata\chap1\processed\tabular\h1__prices__worldbank__mensal_robustez.csv
+                          * Converter séries para anual.
+
+- x2_prodsoja-prodmilho = produtividade de soja e milho, kg/ha, municipal, anual
+                          2_INTI\xdata\chap1\processed\tabular\h1_h2__pam_soja_milho__ibge__municipio_anual.csv
+
+- x3_infracoes          = autos de infração (IBAMA), qtde*, municipal, diário**,
+                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__espacial_municipio_anual_candidato.csv
+                          * Somar por ano e município.
+                          ** Converter séries para anual.
+
+                          autos de infração (IBAMA), qtde*, municipal, diário**,
+                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__eventos_MT.csv
+                          * Somar por ano e município.
+                          ** Converter série para anual.
+
+                          autos de infração (IBAMA), qtde*, municipal, diário**,
+                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__geocodificacao_candidata.csv
+                          * Somar por ano e município.
+                          ** Converter séries para anual.
+
+                          autos de infração (IBAMA), qtde*, municipal, diário**,
+                          2_INTI\xdata\chap1\processed\tabular\h1__autos_multas_ibama__municipio_anual_candidato.csv
+                          * Somar por ano e município.
+                          ** Converter séries para anual.
+
+
+
+==============
+H1-a (conversão => preços + produtividade terra)
+-------
+O efeito de aumentos nos preços dos produtos agropecuários sobre a taxa de conversão de vegetação nativa é maior onde a capacidade produtiva local da terra para esses usos é mais elevada.
+
+EQUAÇÃO
+Conversão da vegetação nativa = f(preços agropecuários, produtividade da terra).
+
+MODELO
+Y_conv = x1_psoja-pmilho + x2_prodsoja-prodmilho
+
+MODELO
+Y_conv = x1_psoja-pmilho + x2_prodsoja-prodmilho + x3_infracoes
+
+- Y_conv                = conversão da vegetação, ha, municipal, anual, 
+                          2_INTI\xdata\chap1\processed\tabular\h1_h2__mapbiomas_classes__col10_1__municipio_bioma_anual.csv
+
+- x1_psoja-pmilho       = preços de soja e milho, USD/t, mundial, mensal*,
+                          2_INTI\xdata\chap1\processed\tabular\h1__prices__worldbank__mensal_robustez.csv
+                          * Converter séries para anual.
+
+==============
+H1-b (conversão => expectativas (preços, produtividade, infrações))
+-------
+A taxa de conversão ao retorno econômico esperada dos usos agropecuários é condicionada pelo ambiente institucional, particularmente pelas regras, pelo monitoramento, pela fiscalização e pelas sanções que alteram os custos e os riscos associados à conversão.
+
+EQUAÇÃO
+Conversão da vegetação nativa = f(preços agropecuários, produtividade da terra, ambiente institucional).
+
+MODELO
+Y_conv = x1_psoja-pmilho + x2_prodsoja-prodmilho + x3_infracoes
+
+- Y_conv                = conversão da vegetação, ha, municipal, anual, 
+                          2_INTI\xdata\chap1\processed\tabular\h1_h2__mapbiomas_classes__col10_1__municipio_bioma_anual.csv
+
+- x1_psoja-pmilho       = preços de soja e milho, USD/t, mundial, mensal*,
+                          2_INTI\xdata\chap1\processed\tabular\h1__prices__worldbank__mensal_robustez.csv
+                          * Converter séries para anual.
+
+- x2_prodsoja-prodmilho = produtividade de soja e milho, kg/ha, municipal, anual
+                          2_INTI\xdata\chap1\processed\tabular\h1_h2__pam_soja_milho__ibge__municipio_anual.csv
+
+- x3_infracoes          = autos de infração (IBAMA), qtde*, municipal, diário**,
+                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__espacial_municipio_anual_candidato.csv
+                          * Somar por ano e município.
+                          ** Converter séries para anual.
+
+                          autos de infração (IBAMA), qtde*, municipal, diário**,
+                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__eventos_MT.csv
+                          * Somar por ano e município.
+                          ** Converter série para anual.
+
+                          autos de infração (IBAMA), qtde*, municipal, diário**,
+                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__geocodificacao_candidata.csv
+                          * Somar por ano e município.
+                          ** Converter séries para anual.
+
+                          autos de infração (IBAMA), qtde*, municipal, diário**,
+                          2_INTI\xdata\chap1\processed\tabular\h1__autos_multas_ibama__municipio_anual_candidato.csv
+                          * Somar por ano e município.
+                          ** Converter séries para anual.
