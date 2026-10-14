@@ -1,107 +1,176 @@
 HIPÓTESES TESE - CHAP1
 -------------------------
 
+Municípios do Estado de Mato Grosso
+Período: 2021-2024
+
 ==============
 H1 (conversão => expectativas (preços, produtividade, infrações))
 -------
-A taxa de conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.
+A conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.
 
 EQUAÇÃO
 Conversão da vegetação nativa = f(preços agropecuários, produtividade da terra, ambiente institucional).
 
-MODELO
-Y_conv = x1_psoja-pmilho + x2_prodsoja-prodmilho + x3_infracoes
+MODELO — VARIÁVEIS CANDIDATAS À ANÁLISE EXPLORATÓRIA
+Y_conv = f(x1_preços, x2_capacidade_produtiva, x3_instituições; demais candidatos x4 a x9).
+* Recorte candidato: municípios de Mato Grosso, 2001–2024, conforme cobertura e harmonização territorial.
+* Os grupos abaixo organizam alternativas; não pressupõem a inclusão simultânea de todas as medidas no modelo.
+* Nos nomes, o hífen reúne soja e milho; não indica subtração. Manter cada produto em coluna própria.
+* Após a descritiva, avaliar preços × capacidade produtiva e o condicionamento institucional dessa resposta,
+  além de efeitos fixos, defasagens e transformações. A especificação econométrica permanece em aberto.
 
-- Y_conv                = conversão da vegetação, ha, municipal, anual, 
+[Y] (2)
+-----
+- Y_conv                = conversão bruta de vegetação nativa para agricultura e pastagem, ha, municipal, anual*
                           2_INTI\xdata\chap1\processed\tabular\h1_h2__mapbiomas_classes__col10_1__municipio_bioma_anual.csv
+                          * O arquivo contém estoques por classe e bioma; as transições ainda precisam ser obtidas/construídas.
+                          * Manter os destinos agricultura e pastagem separados; diferença de estoques não mede conversão bruta.
 
-- x1_psoja-pmilho       = preços de soja e milho, USD/t, mundial, mensal*,
+- Y_tx-conv             = taxa de conversão para agricultura e pastagem, proporção 0–1, municipal, anual*
+                          2_INTI\xdata\chap1\processed\tabular\h2__native_veg__mapbiomas_col10_1__candidato.csv
+                          * Construir: área convertida por destino / área nativa no início do período.
+                          * Este arquivo fornece o denominador candidato (native_veg_ha_lag1), não o numerador.
+                          * Compatibilizar geografia e máscara com as transições; denominador zero implica taxa indefinida.
+
+[x1] (2)
+-----
+- x1_psoja-pmilho        = preços de soja e milho, USD/t, mundial, mensal*
                           2_INTI\xdata\chap1\processed\tabular\h1__prices__worldbank__mensal_robustez.csv
-                          * Converter séries para anual.
+                          * Selecionar price_soja e price_milho; explorar média anual e janela anterior à decisão de conversão.
+                          * Não somar preços mensais; definir calendário, transformação e eventual deflação/conversão monetária.
 
-- x2_prodsoja-prodmilho = produtividade de soja e milho, kg/ha, municipal, anual
+- x1a_pcarne             = preço da carne bovina, USD/kg, mundial, mensal*
+                          2_INTI\xdata\chap1\processed\tabular\h1__prices__worldbank__mensal_robustez.csv
+                          * Selecionar price_carne_bovina; anualizar conforme a janela escolhida.
+                          * Candidato para a dimensão pecuária; não equivale ao preço local do boi gordo.
+
+[x2] (4)
+-----
+- x2_prodsoja-prodmilho  = produtividade de soja e milho, kg/ha, municipal, anual
                           2_INTI\xdata\chap1\processed\tabular\h1_h2__pam_soja_milho__ibge__municipio_anual.csv
+                          * Explorar rendimento_medio_kg_ha por produto, cobertura, ausências e evolução temporal.
+                          * Rendimento observado nas áreas colhidas; não representa automaticamente capacidade predeterminada.
 
-- x3_infracoes          = autos de infração (IBAMA), qtde*, municipal, diário**,
-                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__espacial_municipio_anual_candidato.csv
-                          * Somar por ano e município.
-                          ** Converter séries para anual.
-
-                          autos de infração (IBAMA), qtde*, municipal, diário**,
-                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__eventos_MT.csv
-                          * Somar por ano e município.
-                          ** Converter série para anual.
-
-                          autos de infração (IBAMA), qtde*, municipal, diário**,
-                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__geocodificacao_candidata.csv
-                          * Somar por ano e município.
-                          ** Converter séries para anual.
-
-                          autos de infração (IBAMA), qtde*, municipal, diário**,
-                          2_INTI\xdata\chap1\processed\tabular\h1__autos_multas_ibama__municipio_anual_candidato.csv
-                          * Somar por ano e município.
-                          ** Converter séries para anual.
-
-
-
-==============
-H1-a (conversão => preços + produtividade terra)
--------
-O efeito de aumentos nos preços dos produtos agropecuários sobre a taxa de conversão de vegetação nativa é maior onde a capacidade produtiva local da terra para esses usos é mais elevada.
-
-EQUAÇÃO
-Conversão da vegetação nativa = f(preços agropecuários, produtividade da terra).
-
-MODELO
-Y_conv = x1_psoja-pmilho + x2_prodsoja-prodmilho
-
-MODELO
-Y_conv = x1_psoja-pmilho + x2_prodsoja-prodmilho + x3_infracoes
-
-- Y_conv                = conversão da vegetação, ha, municipal, anual, 
-                          2_INTI\xdata\chap1\processed\tabular\h1_h2__mapbiomas_classes__col10_1__municipio_bioma_anual.csv
-
-- x1_psoja-pmilho       = preços de soja e milho, USD/t, mundial, mensal*,
-                          2_INTI\xdata\chap1\processed\tabular\h1__prices__worldbank__mensal_robustez.csv
-                          * Converter séries para anual.
-
-==============
-H1-b (conversão => expectativas (preços, produtividade, infrações))
--------
-A taxa de conversão ao retorno econômico esperada dos usos agropecuários é condicionada pelo ambiente institucional, particularmente pelas regras, pelo monitoramento, pela fiscalização e pelas sanções que alteram os custos e os riscos associados à conversão.
-
-EQUAÇÃO
-Conversão da vegetação nativa = f(preços agropecuários, produtividade da terra, ambiente institucional).
-
-MODELO
-Y_conv = x1_psoja-pmilho + x2_prodsoja-prodmilho + x3_infracoes
-
-- Y_conv                = conversão da vegetação, ha, municipal, anual, 
-                          2_INTI\xdata\chap1\processed\tabular\h1_h2__mapbiomas_classes__col10_1__municipio_bioma_anual.csv
-
-- x1_psoja-pmilho       = preços de soja e milho, USD/t, mundial, mensal*,
-                          2_INTI\xdata\chap1\processed\tabular\h1__prices__worldbank__mensal_robustez.csv
-                          * Converter séries para anual.
-
-- x2_prodsoja-prodmilho = produtividade de soja e milho, kg/ha, municipal, anual
+- x2a_hprodsoj-hprodmil  = produtividade histórica de soja e milho, kg/ha, municipal, período anterior ao painel*
                           2_INTI\xdata\chap1\processed\tabular\h1_h2__pam_soja_milho__ibge__municipio_anual.csv
+                          * Alternativa a construir: média anterior a 2001, com janela e cobertura a definir.
+                          * Não preencher rendimento ausente com zero; avaliar a seleção dos municípios produtores.
 
-- x3_infracoes          = autos de infração (IBAMA), qtde*, municipal, diário**,
-                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__espacial_municipio_anual_candidato.csv
-                          * Somar por ano e município.
-                          ** Converter séries para anual.
+- x2b_yield-sojamilho    = rendimento potencial de soja e milho (GAEZ), kg de matéria seca/ha, municipal, estático*
+                          2_INTI\xdata\chap1\processed\tabular\h1__suitability_yield__gaez_v4_6190__candidatos.csv
+                          * Explorar variantes yx, por produto e alto/baixo insumo, em sequeiro; clima de referência 1961–1990.
+                          * Base de terras de 2010: validar sua adequação como capacidade predeterminada para 2001–2024.
+                          * Compatibilizar a base de umidade antes de comparar com PAM ou combinar com preços comerciais.
 
-                          autos de infração (IBAMA), qtde*, municipal, diário**,
-                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__eventos_MT.csv
-                          * Somar por ano e município.
-                          ** Converter série para anual.
+- x2c_aptid-sojamilho    = aptidão agrícola para soja e milho (GAEZ), índice 0–10.000, municipal, estático*
+                          2_INTI\xdata\chap1\processed\tabular\h1__suitability_yield__gaez_v4_6190__candidatos.csv
+                          * Explorar variantes sx, por produto e alto/baixo insumo; mesmas ressalvas de cenário e temporalidade.
+                          * Índice adimensional; não é rendimento em kg/ha nem receita monetária quando multiplicado pelo preço.
 
-                          autos de infração (IBAMA), qtde*, municipal, diário**,
-                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__geocodificacao_candidata.csv
-                          * Somar por ano e município.
-                          ** Converter séries para anual.
-
-                          autos de infração (IBAMA), qtde*, municipal, diário**,
+[x3] (6)
+-----
+- x3_infracoes          = autos de infração (IBAMA), quantidade, municipal pelo código informado, anual
                           2_INTI\xdata\chap1\processed\tabular\h1__autos_multas_ibama__municipio_anual_candidato.csv
-                          * Somar por ano e município.
-                          ** Converter séries para anual.
+                          * n_autos_ibama_it já está agregado por município e ano; não anualizar novamente.
+                          * Validar tipos pertinentes, status e cobertura; ausência de linha não foi convertida em zero.
+
+- x3a_infracoes         = autos de infração (IBAMA), quantidade, municipal pelas coordenadas, anual
+                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__espacial_municipio_anual_candidato.csv
+                          * n_autos_ibama_espacial já está agregado; comparar cobertura e concordância com o código informado.
+                          * Variante de associação territorial dos mesmos registros; não somar os dois agregados.
+
+- x3b_infracoes         = autos de infração (IBAMA), registros individuais, município informado, data do evento*
+                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__eventos_MT.csv
+                          * Explorar tipo/enquadramento, status e datas do fato e da lavratura antes de selecionar e agregar.
+                          * Se construída uma contagem específica, validar IDs e contar por município e ano da data escolhida.
+
+- x3c_infracoes         = correspondência espacial de autos (IBAMA), registros individuais, municipal, ano da lavratura
+                          2_INTI\xdata\chap1\processed\tabular\h1__autos_ibama__geocodificacao_candidata.csv
+                          * Explorar divergências entre codigo_ibge e codigo_ibge_espacial; subconjunto com coordenadas.
+                          * Não constitui uma quarta medida independente de fiscalização.
+
+- x3d_infracoes         = valor das multas autuadas (IBAMA), R$ nominais, municipal, anual
+                          2_INTI\xdata\chap1\processed\tabular\h1__autos_multas_ibama__municipio_anual_candidato.csv
+                          * Explorar valor_multas_ibama_it; definir deflação e seleção dos autos pertinentes.
+                          * Valor autuado não é multa paga; contagens e valores não medem diretamente efetividade da fiscalização.
+                          * Autuações podem responder à conversão; defasagens não eliminam automaticamente essa relação.
+
+- x3e_infracoes         = embargos (IBAMA), registros de histórico e coordenadas, localização pontual, datas dos registros*
+                          2_INTI\xdata\chap1\raw\tabular\ibama\termo_embargo_historico.csv
+                          2_INTI\xdata\chap1\raw\tabular\ibama\termo_de_embargo_coordenadas.csv
+                          * Candidato ainda parcial: vincular identidades, datas e municípios antes de construir contagem anual.
+                          * Linhas de histórico/coordenadas não são embargos únicos; área depende de unidade validada.
+
+[x4] (2)
+-----
+- x4_pecuaria           = efetivo bovino, cabeças, municipal, anual
+                          2_INTI\xdata\chap1\processed\tabular\h1_h2__ppm_bovinos__ibge__municipio_anual.csv
+                          * Explorar efetivo_bovino e composição produtiva anterior; rebanho é estoque, não produtividade.
+
+- x4a_pecuaria          = lotação aparente de pastagens, cabeças/ha de pastagem, municipal, anual*
+                          2_INTI\xdata\chap1\processed\tabular\h1_h2__ppm_bovinos__ibge__municipio_anual.csv
+                          2_INTI\xdata\chap1\processed\tabular\h1_h2__mapbiomas_classes__col10_1__municipio_bioma_anual.csv
+                          * Candidato a construir: efetivo bovino / área de pastagem (classe 15), com geografia e datas compatíveis.
+                          * Avaliar denominadores pequenos/nulos; não equivale a rendimento pecuário ou rentabilidade.
+
+[x5] (2)
+-----
+- x5_cobertura_terra    = estoque de vegetação nativa no início do período, ha e proporção 0–1, municipal, anual
+                          2_INTI\xdata\chap1\processed\tabular\h2__native_veg__mapbiomas_col10_1__candidato.csv
+                          * Explorar native_veg_ha_lag1 e native_veg_share_lag1 como vegetação disponível e denominador candidato.
+                          * Não incluir automaticamente como controle adicional à taxa; seu papel deve ser definido.
+
+- x5a_cobertura_terra   = áreas de pastagem e agricultura já instaladas, ha, municipal por bioma, anual
+                          2_INTI\xdata\chap1\processed\tabular\h1_h2__mapbiomas_classes__col10_1__municipio_bioma_anual.csv
+                          * Explorar composição anterior dos usos; definir classes pela legenda, sem somar categorias sobrepostas.
+                          * Distinguir conversão de vegetação nativa de substituição entre usos agropecuários.
+
+[x6] (1)
+-----
+- x6_biomas             = participação de Amazônia, Cerrado e Pantanal, proporção 0–1, municipal, estática
+                          2_INTI\xdata\chap1\processed\tabular\h2__biome_share__ibge2019_malha2024__candidato.csv
+                          * Explorar frações por bioma e classificações de predominância de 70%, 80% e 90% como alternativas.
+                          * Avaliar municípios mistos e suporte amostral; nenhum limiar está escolhido.
+
+[x7] (3)
+-----
+- x7_custo-soja         = custos de produção de soja, unidade monetária e base física a conferir por aba, localidades de MT, safra/ano*
+                          2_INTI\xdata\chap1\processed\tabular\h1__costs_conab__serie-historica-custos-soja-1997-a-2026__MT_celulas.csv
+                          * Extração de células, não série pronta; identificar R$/ha ou R$/unidade, local, tecnologia e categoria de custo.
+
+- x7_custo-milho-s1     = custos de produção de milho 1ª safra, unidade a conferir por aba, localidades de MT, safra/ano*
+                          2_INTI\xdata\chap1\processed\tabular\h1__costs_conab__milho_1a_safra_serie_historica_1997-2025__MT_celulas.csv
+                          * Construir série comparável após conferir unidade, localização, tecnologia, safra e metodologia.
+
+- x7_custo-milho-s2     = custos de produção de milho 2ª safra, unidade a conferir por aba, localidades de MT, safra/ano*
+                          2_INTI\xdata\chap1\processed\tabular\h1__costs_conab__milho_2a_safra_serie_historica_2005-2025__MT_celulas.csv
+                          * Manter safras separadas; não atribuir custos locais a todos os municípios sem justificativa.
+                          * Candidatos para explorar custos/margens; ainda não permitem medir diretamente retorno líquido esperado.
+
+[x8] (2)
+-----
+- x8_chuva              = precipitação acumulada (CHIRPS), mm, municipal, mensal
+                          2_INTI\xdata\chap1\processed\tabular\h2__precip_mm__chirps_v2__mensal_candidato.csv
+                          * Explorar precip_mm; definir janela produtiva/decisória antes da agregação anual ou por safra.
+
+- x8_chuvaa             = precipitação anual e anomalias (CHIRPS), mm ou escore padronizado, municipal, anual
+                          2_INTI\xdata\chap1\processed\tabular\h2__precip_anomaly__chirps_v2__ano_civil_candidatos.csv
+                          * Totais/anomalias em mm; z-scores adimensionais; comparar referências 1981–2010 e 1991–2020.
+                          * Ano civil e referências climáticas são candidatos; anomalia de chuva não é balanço hídrico.
+
+[x9] (1)
+-----
+- x9_relevo             = elevação média, mínima e máxima (Copernicus GLO-90), m, municipal, estática
+                          2_INTI\xdata\chap1\processed\tabular\topography__copdem90__municipio_candidato.csv
+                          * Explorar diferenças físicas; produto de superfície (DSM), com efeitos de vegetação/edificações.
+                          * Declividade e rugosidade exigem derivação dos rasters; não estão prontas nesta tabela.
+
+PENDÊNCIAS PARA A BASE EXPLORATÓRIA
+* Harmonizar limites e códigos municipais; preservar dados anteriores a 2001 necessários a denominadores e exposições.
+* Manter uma linha por município–ano e colunas próprias para produtos, destinos e alternativas; evitar multiplicação nas junções.
+* Distinguir zero, ausência de registro, ausência de cultivo e medida ainda não construída.
+* Biomas, capacidade estática e relevo podem informar heterogeneidade; seus níveis são absorvidos por efeitos fixos municipais.
+* Preços comuns aos municípios são absorvidos por efeitos fixos de ano; examinar sua interação com exposição local.
+* Crédito, CAR, preços locais, temperaturas e histórico de municípios prioritários ainda não estão disponíveis como painéis validados.
+* Os candidatos acima não implicam aprovação de controles, índice de retorno ou interpretação causal; decidir após tratamento e descritiva.
