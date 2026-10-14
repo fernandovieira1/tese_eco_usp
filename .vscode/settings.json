@@ -52,6 +52,14 @@
             "folderPath": "tese_eco_usp\\2_INTI\\chapters\\",
             "isFolderOnly": true,
             "color": "foldercolorizer.color_005f87"
+        },
+        {
+            "folderPath": "tese_eco_usp\\2_INTI\\chapters\\chap1\\code\\AED\\gemini\\",
+            "color": "foldercolorizer.color_8787d7"
+        },
+        {
+            "folderPath": "tese_eco_usp\\2_INTI\\chapters\\chap1\\code\\AED\\gpt\\",
+            "color": "foldercolorizer.color_d7d7ff"
         }
     ]
 }
