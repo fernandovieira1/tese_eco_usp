@@ -10,15 +10,15 @@
 % Foco do Capítulo 1 (H1): como retornos econômicos esperados e o ambiente institucional condicionam a conversão da vegetação nativa.
 % (A retroalimentação — vegetação × clima --> produtividade — constitui o objeto de H2 no Capítulo 2; este artigo investiga a formação e transformação do estoque).
 
-% HIPÓTESE DA TESE INVESTIGADA NESTE ARTIGO (H1 e desdobramentos):
+% HIPÓTESE DA TESE INVESTIGADA NESTE ARTIGO (H1 e dimensões empíricas):
 % ---
 % H1: RETORNOS, INSTITUIÇÕES E CONVERSÃO
 % Retorno econômico esperado + ambiente institucional --> decisão de uso da terra --> taxa de conversão de vegetação nativa
 %
-% H1-a: PREÇOS E CAPACIDADE PRODUTIVA LOCAL
+% DIMENSÃO EMPÍRICA: PREÇOS E CAPACIDADE PRODUTIVA LOCAL
 % Choques favoráveis de preços agrícolas geram maior pressão de conversão onde a capacidade produtiva da terra é mais elevada.
 %
-% H1-b: CONDICIONAMENTO INSTITUCIONAL
+% DIMENSÃO EMPÍRICA: CONDICIONAMENTO INSTITUCIONAL
 % Regras, monitoramento, fiscalização e sanções condicionam a sensibilidade da taxa de conversão ao retorno econômico esperado.
 %
 % Heterogeneidade: respostas distintas entre atividades (lavoura vs. pastagem) e entre biomas (Amazônia, Cerrado e Pantanal).
@@ -82,14 +82,14 @@ Essa pergunta desdobra-se em três dimensões empiricamente relacionadas: (i) se
 O \textbf{objetivo geral} deste artigo é investigar como e com que intensidade os determinantes observáveis do retorno econômico esperado e o ambiente institucional se relacionam com as taxas de conversão da vegetação nativa em Mato Grosso. Os \textbf{objetivos específicos} são: (i) construir medidas de conversão bruta da vegetação nativa para agricultura e pastagem; (ii) examinar a resposta das taxas de conversão a variações nos preços dos produtos agropecuários em interação com a capacidade produtiva local predeterminada; (iii) parametrizar e avaliar o condicionamento institucional dessa resposta, explicitando os limites de interpretação causal; e (iv) verificar a heterogeneidade dessas respostas entre atividades agropecuárias e biomas.
 
 % ------------------------------------
-%%% (III) HIPÓTESES
+%%% (III) HIPÓTESE
 % ------------------------------------
 
 %%% REF7
 %% H1 — Governança territorial e heterogeneidade espacial: investiga como incentivos econômicos e instituições condicionam as decisões de conversão ou preservação da vegetação, considerando diferenças entre territórios e biomas.
 
-%% Enunciação da hipótese H1 da tese e de seus desdobramentos empíricos (H1-a e H1-b).
-A partir dessa delimitação, o artigo examina a seguinte hipótese e seus dois desdobramentos:
+%% Enunciação da hipótese H1 da tese, examinada por dimensões empíricas articuladas.
+A partir dessa delimitação, o artigo examina a seguinte hipótese:
 
 % -------------------------------------------------------------------------
 \medskip
@@ -98,9 +98,11 @@ A partir dessa delimitação, o artigo examina a seguinte hipótese e seus dois 
 % Maiores retornos econômicos esperados dos usos agropecuários elevam a taxa de conversão de vegetação nativa.
 \noindent\textbf{(H1) Retornos, instituições e conversão.}
 
-\noindent\emph{A taxa de conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.}
+\noindent\emph{A conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.}
 
-%% VERSÃO DETALHADA h1
+\medskip
+
+%% DESENHO PRELIMINAR H1
 % Conversão da vegetação nativa = f(preços agropecuários, produtividade da terra, ambiente institucional).
 % Recorte candidato: municípios de Mato Grosso, 2001--2024, conforme a cobertura dos dados.
 % Os arquivos abaixo estão em 2_INTI/xdata/chap1/processed/tabular/.
@@ -133,115 +135,39 @@ A partir dessa delimitação, o artigo examina a seguinte hipótese e seus dois 
 % - Fonte: IBAMA, registros de autuação.
 % - Arquivo: h1__autos_multas_ibama__municipio_anual_candidato.csv (n_autos_ibama_it).
 % - Pendente: validar as infrações pertinentes e a cobertura; a contagem não mede diretamente a efetividade da fiscalização.
+% As autuações também podem responder ao desmatamento, o que limita sua interpretação causal.
+% Outras fontes institucionais dependerão das lacunas identificadas.
 %
 % Primeiro: tratar os dados, definir as medidas e realizar a análise descritiva.
-% Depois: avaliar modelos de efeitos fixos, defasagens, logs e interações, conforme os dados e as hipóteses.
+% Depois: avaliar modelos de efeitos fixos, defasagens, logs e interações, conforme os dados e as previsões de H1.
 % A relação acima organiza as variáveis candidatas; a especificação econométrica será definida nessa etapa posterior.
 
-%%% VERSÃO SIMPLES H1
-%% Preferir esta
+%% Mapeamento manual de referência, anterior à consolidação de H1:
 % 2_INTI\chapters\chap1\code\HIPOTESES TESE - CHAP1.txt
 
 
 %% Delimitação conceitual e variável dependente: vegetação nativa, conversão agropecuária e taxa de conversão.
-H1 pressupõe que as demais condições sejam mantidas (\textit{ceteris paribus}). A vegetação nativa corresponde à cobertura vegetal natural existente no território, enquanto sua conversão designa a substituição dessa cobertura por usos agropecuários, como lavouras ou pastagens. A taxa de conversão refere-se à parcela da vegetação nativa disponível no início de determinado período que é convertida para esses usos no mesmo período, constituindo o principal resultado de interesse. A ausência de conversão observada, contudo, não equivale necessariamente a uma decisão ativa de conservação ou à integridade ecológica da vegetação remanescente. O retorno econômico esperado dos usos agropecuários corresponde ao benefício privado líquido que se espera obter com a utilização produtiva da terra, considerando as receitas e os custos associados à atividade. Sua relevância para a decisão de converter depende também da atratividade dos usos alternativos da terra, dos custos da conversão e das restrições institucionais. A análise considerará os preços agropecuários e medidas de produtividade da terra, levando em conta o ambiente institucional. 
+H1 pressupõe que as demais condições sejam mantidas (\textit{ceteris paribus}). A vegetação nativa corresponde à cobertura vegetal natural existente no território, enquanto sua conversão designa a substituição dessa cobertura por usos agropecuários, como lavouras ou pastagens. A taxa de conversão refere-se à parcela da vegetação nativa disponível no início de determinado período que é convertida para esses usos no mesmo período, constituindo o principal resultado de interesse. 
 
-A H1-a, a seguir, desdobra H1 em uma previsão sobre como a resposta da conversão aos preços varia conforme a capacidade produtiva local.
-
-% -------------------------------------------------------------------------
-\medskip
+A ausência de conversão observada, contudo, não equivale necessariamente a uma decisão ativa de conservação ou à integridade ecológica da vegetação remanescente. O retorno econômico esperado dos usos agropecuários corresponde ao benefício privado líquido que se espera obter com a utilização produtiva da terra, considerando as receitas e os custos associados à atividade. Sua relevância para a decisão de converter depende também da atratividade dos usos alternativos da terra, dos custos da conversão e das restrições institucionais. A análise considerará os preços agropecuários e medidas de produtividade da terra, levando em conta o ambiente institucional. O exame de H1 considerará, de forma articulada, a capacidade produtiva local e o condicionamento institucional da resposta aos incentivos econômicos.
 
 %%% REF8
-%% Desdobramento empírico H1-a: relação entre preços e capacidade produtiva local.
-\noindent\textbf{(H1-a) Preços e capacidade produtiva local.}
-
-\noindent\emph{O efeito de aumentos nos preços dos produtos agropecuários sobre a taxa de conversão de vegetação nativa é maior onde a capacidade produtiva local da terra para esses usos é mais elevada.}
-
-%% VERSÃO DETALHADA h1-a
-% Conversão da vegetação nativa = f(preços agropecuários, produtividade da terra).
-% Examinar se a resposta da conversão aos preços varia conforme a capacidade produtiva local.
-% Recorte candidato: municípios de Mato Grosso, 2001--2024, conforme a cobertura dos dados.
-% Os arquivos abaixo estão em 2_INTI/xdata/chap1/processed/tabular/.
-%
-% [Y] conversão da vegetação nativa: área convertida para agricultura ou pastagem / área nativa no início do período, por destino.
-% - Fonte: MapBiomas, Coleção 10.1.
-% - Arquivo disponível: h1_h2__mapbiomas_classes__col10_1__municipio_bioma_anual.csv.
-% - Pendente: construir as transições anuais; o arquivo contém áreas por classe, não conversões.
-%
-% [X1] preços agropecuários: preços internacionais de soja e milho (USD/t), disponíveis mensalmente.
-% - Fonte: Banco Mundial, Pink Sheet.
-% - Arquivo: h1__prices__worldbank__mensal_robustez.csv (preco_nominal; price_soja e price_milho).
-%
-% [X2] produtividade da terra: rendimento observado de soja e milho, por município e ano (kg/ha).
-% - Fonte: IBGE, Produção Agrícola Municipal (PAM).
-% - Arquivo: h1_h2__pam_soja_milho__ibge__municipio_anual.csv (rendimento_medio_kg_ha).
-% - Alternativa a avaliar: rendimento potencial de soja e milho, estimado pelo GAEZ/FAO-IIASA.
-% - Arquivo: h1__suitability_yield__gaez_v4_6190__candidatos.csv (variantes yx, em kg de matéria seca/ha).
-% - PAM mede rendimento nas áreas colhidas; GAEZ representa potencial sob cenários definidos.
-%
-% Primeiro: tratar os dados, avaliar as medidas de capacidade produtiva e realizar a análise descritiva.
-% Depois: avaliar modelos de efeitos fixos, defasagens, logs e interações, conforme os dados e a hipótese.
-% A relação acima organiza as variáveis candidatas; a especificação econométrica será definida nessa etapa posterior.
-
-A H1-a expressa a expectativa de que aumentos de preços produzam maior pressão sobre a conversão onde a terra oferece maior capacidade produtiva para os usos beneficiados. Seu exame empírico considerará os preços agropecuários e medidas de produtividade da terra, cuja adequação para representar a capacidade produtiva local será avaliada. Assim, será examinada uma implicação observável de H1, sem estimar diretamente o retorno líquido esperado. Conforme a literatura, a capacidade produtiva local da terra é um determinante relevante da decisão de conversão, e sua interação com os preços agropecuários permite avaliar se a resposta da conversão varia conforme essa capacidade, mas essa relação não é suficiente para inferir causalidade, posto que outros fatores, como restrições de crédito, liquidez, expectativas e riscos, também podem influenciar a decisão de conversão, e isso tudo poder ser condicionado pelo ambiente institucional, biomas e atividades agropecuárias.
-
-A capacidade produtiva, contudo, não é o único fator que pode modificar essa resposta: as regras de uso da terra e sua implementação também podem alterar os custos e os riscos da conversão. A H1-b examina, portanto, como o ambiente institucional condiciona a resposta da conversão aos incentivos econômicos considerados em H1-a.
-
-% -------------------------------------------------------------------------
-\medskip
+%% Dimensão empírica de H1: resposta aos preços conforme a capacidade produtiva local.
+Quanto à capacidade produtiva local, espera-se que aumentos de preços produzam maior pressão sobre a conversão onde a terra oferece maior capacidade produtiva para os usos beneficiados. Seu exame empírico considerará os preços agropecuários e medidas de produtividade da terra, cuja adequação para representar a capacidade produtiva local será avaliada. Assim, será examinada uma implicação observável de H1, sem estimar diretamente o retorno líquido esperado. Conforme a literatura, a capacidade produtiva local da terra é um determinante relevante da decisão de conversão, e sua interação com os preços agropecuários permite avaliar se a resposta da conversão varia conforme essa capacidade, mas essa relação não é suficiente para inferir causalidade, posto que outros fatores, como restrições de crédito, liquidez, expectativas e riscos, também podem influenciar a decisão de conversão, e essa relação pode ser condicionada pelo ambiente institucional, pelos biomas e pelas atividades agropecuárias.
 
 %%% REF9
-% Desdobramento empírico H1-b: condicionamento institucional sobre a sensibilidade da conversão aos retornos.
-\noindent\textbf{(H1-b) Condicionamento institucional.}
-
-\noindent\emph{A taxa de conversão ao retorno econômico esperada dos usos agropecuários é condicionada pelo ambiente institucional, particularmente pelas regras, pelo monitoramento, pela fiscalização e pelas sanções que alteram os custos e os riscos associados à conversão.}
-
-% DESENHO PRELIMINAR H1-b
-% Conversão da vegetação nativa = f(preços agropecuários, produtividade da terra, ambiente institucional).
-% Examinar se o ambiente institucional [X3] modifica a relação considerada em H1-a.
-% Recorte candidato: municípios de Mato Grosso, 2001--2024, conforme a cobertura dos dados.
-% Os arquivos abaixo estão em 2_INTI/xdata/chap1/processed/tabular/.
-%
-% [Y] conversão da vegetação nativa: área convertida para agricultura ou pastagem / área nativa no início do período, por destino.
-% - Fonte: MapBiomas, Coleção 10.1.
-% - Arquivo disponível: h1_h2__mapbiomas_classes__col10_1__municipio_bioma_anual.csv.
-% - Pendente: construir as transições anuais; o arquivo contém áreas por classe, não conversões.
-%
-% [X1] preços agropecuários: preços internacionais de soja e milho (USD/t), disponíveis mensalmente.
-% - Fonte: Banco Mundial, Pink Sheet.
-% - Arquivo: h1__prices__worldbank__mensal_robustez.csv (preco_nominal; price_soja e price_milho).
-%
-% [X2] produtividade da terra: rendimento observado de soja e milho, por município e ano (kg/ha).
-% - Fonte: IBGE, Produção Agrícola Municipal (PAM).
-% - Arquivo: h1_h2__pam_soja_milho__ibge__municipio_anual.csv (rendimento_medio_kg_ha).
-% - Alternativa a avaliar: rendimento potencial de soja e milho, estimado pelo GAEZ/FAO-IIASA.
-% - Arquivo: h1__suitability_yield__gaez_v4_6190__candidatos.csv (variantes yx, em kg de matéria seca/ha).
-% - PAM mede rendimento nas áreas colhidas; GAEZ representa potencial sob cenários definidos.
-%
-% [X3] ambiente institucional: número de autos de infração do IBAMA, por município e ano.
-% - Fonte: IBAMA, registros de autuação.
-% - Arquivo: h1__autos_multas_ibama__municipio_anual_candidato.csv (n_autos_ibama_it).
-% - Pendente: validar as infrações pertinentes e a cobertura; a contagem não mede diretamente a efetividade da fiscalização.
-%
-% As autuações também podem responder ao desmatamento, o que limita sua interpretação causal.
-% Outras fontes institucionais dependerão das lacunas identificadas.
-%
-% Primeiro: tratar os dados, avaliar as medidas institucionais e realizar a análise descritiva.
-% Depois: avaliar modelos de efeitos fixos, defasagens, logs e interações, conforme os dados e a hipótese.
-% A relação acima organiza as variáveis candidatas; a especificação econométrica será definida nessa etapa posterior.
-
-%% Ambiente institucional: regras formais e mecanismos de implementação (monitoramento, fiscalização e sanções).
-O ambiente institucional compreende as regras formais e os mecanismos de implementação que alteram os incentivos econômicos associados à conversão, incluindo direitos de propriedade, regulação ambiental, monitoramento, fiscalização e sanções. A H1-b não pressupõe que essas instituições determinem isoladamente a conversão, mas que modifiquem a intensidade com que alterações nos retornos econômicos esperados se traduzem em conversão efetiva. Quando uma medida representar, de maneira defensável, maior efetividade da fiscalização, espera-se menor sensibilidade da conversão ao retorno, mantidas as demais condições relevantes. Contagens de autos ou valores de multas, por si sós, não permitem interpretar uma medida como expressão de maior efetividade da fiscalização. Diferenças de resposta entre condições institucionais observadas não serão tomadas como evidência suficiente dos efeitos causais de mudanças nessas instituições.
+%% Dimensão empírica de H1: condicionamento institucional da resposta aos incentivos econômicos.
+A capacidade produtiva, contudo, não é o único fator que pode modificar essa resposta: as regras de uso da terra e sua implementação também podem alterar os custos e os riscos da conversão. O ambiente institucional compreende as regras formais e os mecanismos de implementação que alteram os incentivos econômicos associados à conversão, incluindo direitos de propriedade, regulação ambiental, monitoramento, fiscalização e sanções. Não se pressupõe que essas instituições determinem isoladamente a conversão, mas que modifiquem a intensidade com que alterações nos retornos econômicos esperados se traduzem em conversão efetiva. Quando uma medida representar, de maneira defensável, maior efetividade da fiscalização, espera-se menor sensibilidade da conversão ao retorno, mantidas as demais condições relevantes. Contagens de autos ou valores de multas, por si sós, não permitem interpretar uma medida como expressão de maior efetividade da fiscalização. Diferenças de resposta entre condições institucionais observadas não serão tomadas como evidência suficiente dos efeitos causais de mudanças nessas instituições.
 
 %%% REF10
 %% Heterogeneidade empírica (atividades e biomas), escopo da análise e critérios para resultados nulos ou contrários.
-Consoante o contextualizado anteriormente, as relações previstas em H1, H1-a e H1-b são comparadas com vistas a verificar se há heterogeneidade entre atividades agropecuárias e biomas, porquanto diferentes atividades apresentam tecnologias, estruturas de custos e retornos distintos, enquanto os biomas diferem em características biofísicas e produtivas. Essa heterogeneidade foi tratada como dimensão empírica da análise, sem constituir uma hipótese autônoma, e foi interpretada à luz das diferenças de retorno econômico esperado, capacidade produtiva local e ambiente institucional. 
+Consoante o contextualizado anteriormente, as relações consideradas no exame de H1 são comparadas com vistas a verificar se há heterogeneidade entre atividades agropecuárias e biomas, porquanto diferentes atividades apresentam tecnologias, estruturas de custos e retornos distintos, enquanto os biomas diferem em características biofísicas e produtivas. Essa heterogeneidade foi tratada como dimensão empírica da análise, sem constituir uma hipótese autônoma, e foi interpretada à luz das diferenças de retorno econômico esperado, capacidade produtiva local e ambiente institucional.
 
 %%% REF11
 %% Justificativa artigo em relação à literatura e pesquisa empírica existentes: contribuições pretendidas.
 Em termos empíricos, o artigo se justifica porque a evidência existente aponta respostas distintas do uso da terra aos incentivos econômicos. Como será aprofundado na seção seguinte, \citeonline{BermanEtAl2023} identificaram uma relação positiva entre preços agrícolas e desmatamento nos trópicos, cuja intensidade varia com as características locais. Por sua vez, \citeonline{HardingEtAl2021} verificaram que a resposta do desmatamento aos preços varia conforme o instrumento de conservação adotado, as culturas abrangidas e a proteção territorial, com resultados compatíveis com substituição de cultivos e deslocamento da pressão para áreas não protegidas. Já \citeonline{Braganca2018} observou que, no Tapajós, aumentos dos preços relativos estiveram associados à substituição de pastagens por lavouras e a menor desmatamento local. Como se percebe, essas diferenças exigem distinguir aumentos dos preços agrícolas de mudanças nos preços relativos entre atividades, assim como a abertura de novas áreas da reorganização de usos já existentes. Esses resultados tornam pertinente investigar, em Mato Grosso, em quais contextos os incentivos produtivos se associam à conversão de vegetação nativa. 
 
-A contribuição pretendida consiste em examinar como preços, capacidade produtiva e ambiente institucional se relacionam com as taxas de conversão para agricultura e pastagem, considerando as diferenças entre atividades e biomas. Articuladas às relações previstas em H1, H1-a e H1-b, essas comparações poderão ampliar a compreensão da vegetação nativa como componente endógeno do processo econômico e oferecer subsídios à discussão de políticas de conservação que considerem a heterogeneidade territorial.
+A contribuição pretendida consiste em examinar como preços, capacidade produtiva e ambiente institucional se relacionam com as taxas de conversão para agricultura e pastagem, considerando as diferenças entre atividades e biomas. Articuladas às relações previstas em H1, essas comparações poderão ampliar a compreensão da vegetação nativa como componente endógeno do processo econômico e oferecer subsídios à discussão de políticas de conservação que considerem a heterogeneidade territorial.
 
 %% Relevância teórica e eixos da tese: meio ambiente endógeno, dimensão territorial e intertemporal.
 Em termos conceituais, o trabalho trata o estoque de vegetação nativa como um componente essencial \textbf{endógeno} ao processo econômico, e sua evolução depende, em parte, de decisões de conversão ou conservação da terra, condicionadas pelos retornos econômicos esperados e pelo ambiente institucional. Por sua vez, o estoque remanescente pode modificar as condições produtivas e os retornos que orientam decisões posteriores. A dimensão institucional da \textbf{governança territorial} é examinada ao investigar como as regras de uso da terra e sua implementação influenciam a resposta da conversão da vegetação aos retornos econômicos esperados. Essa abordagem considera que uma mesma regra formal pode produzir respostas distintas conforme a capacidade local de implementação e as características produtivas, biofísicas e geográficas do território. A \textbf{intertemporalidade} integra a motivação do estudo porque as decisões presentes de conversão respondem a retornos econômicos esperados e modificam o estoque de vegetação disponível nos períodos seguintes, podendo alterar as possibilidades futuras de uso da terra. 
@@ -256,7 +182,7 @@ Pragmaticamente, compreender essas relações pode oferecer subsídios para: (a)
 % ------------------------------------
 
 %% Estratégia empírica: dados em painel (2001–2024), fontes, ordenação temporal e identificação econométrica.
-\textcolor{gray}{As hipóteses serão examinadas com dados em painel para Mato Grosso, tendo como candidatos a unidade de análise município--ano e o período 2001--2024. A análise combinará transições anuais de uso da terra, preços agropecuários, medidas predeterminadas de capacidade produtiva e registros institucionais. As especificações considerarão a ordenação temporal entre incentivos e conversão, efeitos fixos territoriais e temporais e controles compatíveis com a estratégia de identificação. Esses procedimentos não asseguram, por si sós, identificação causal. Quando não for possível sustentar as condições necessárias a essa identificação, os resultados serão interpretados como associações condicionais. A endogeneidade da fiscalização, a dependência espacial e a validade temporal das medidas de capacidade produtiva serão consideradas na definição das especificações e na interpretação dos resultados. As comparações entre atividades e biomas dependerão do suporte amostral disponível. A definição da amostra final depende da harmonização territorial e da obtenção das conversões brutas, ainda pendentes.}
+\textcolor{gray}{H1 será examinada com dados em painel para Mato Grosso, tendo como candidatos a unidade de análise município--ano e o período 2001--2024. A análise combinará transições anuais de uso da terra, preços agropecuários, medidas predeterminadas de capacidade produtiva e registros institucionais. As especificações considerarão a ordenação temporal entre incentivos e conversão, efeitos fixos territoriais e temporais e controles compatíveis com a estratégia de identificação. Esses procedimentos não asseguram, por si sós, identificação causal. Quando não for possível sustentar as condições necessárias a essa identificação, os resultados serão interpretados como associações condicionais. A endogeneidade da fiscalização, a dependência espacial e a validade temporal das medidas de capacidade produtiva serão consideradas na definição das especificações e na interpretação dos resultados. As comparações entre atividades e biomas dependerão do suporte amostral disponível. A definição da amostra final depende da harmonização territorial e da obtenção das conversões brutas, ainda pendentes.}
 
 % DICA: Usar: GoldsmithPinkhamEtAl2020
 
@@ -265,6 +191,6 @@ Pragmaticamente, compreender essas relações pode oferecer subsídios para: (a)
 % ------------------------------------
 
 %% Organização do artigo: estrutura das seções subsequentes (1 a 5).
-Além desta introdução, o artigo está organizado em cinco seções. A primeira revisa a literatura sobre retornos, instituições e conversão da vegetação. A segunda apresenta Mato Grosso como contexto empírico, descreve os dados e explicita a construção das variáveis. A terceira desenvolve a estratégia econométrica para examinar as hipóteses do artigo. A quarta estabelece os critérios de apresentação e discussão dos resultados a serem obtidos, com atenção à heterogeneidade e à robustez. Por fim, a quinta reúne as contribuições pretendidas e as limitações do estudo. Nesta versão para qualificação, não são apresentados resultados econométricos.
+Além desta introdução, o artigo está organizado em cinco seções. A primeira revisa a literatura sobre retornos, instituições e conversão da vegetação. A segunda apresenta Mato Grosso como contexto empírico, descreve os dados e explicita a construção das variáveis. A terceira desenvolve a estratégia econométrica para examinar H1. A quarta estabelece os critérios de apresentação e discussão dos resultados a serem obtidos, com atenção à heterogeneidade e à robustez. Por fim, a quinta reúne as contribuições pretendidas e as limitações do estudo. Nesta versão para qualificação, não são apresentados resultados econométricos.
 
 Este artigo concentra-se nos retornos esperados dos usos agropecuários e em seu condicionamento institucional, ficando a análise dos mecanismos de apropriação irregular e valorização especulativa da terra reservada a artigo futuro. Frise-se, ainda, que os efeitos econômicos futuros da conversão não são estimados neste estudo e serão objeto de investigação posterior.

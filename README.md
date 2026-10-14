@@ -45,8 +45,10 @@ O artigo investiga como retornos econômicos e instituições se relacionam com 
 
 **H1:** a taxa de conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.
 
-- **H1-a:** a resposta da conversão aos preços depende da capacidade produtiva local da terra.
-- **H1-b:** o ambiente institucional condiciona a resposta da conversão aos retornos esperados.
+O exame de H1 reúne duas previsões empíricas, sem hipóteses autônomas:
+
+- maior resposta da conversão aos preços onde a capacidade produtiva local da terra é mais elevada;
+- condicionamento da resposta da conversão aos retornos esperados pelo ambiente institucional.
 
 As diferenças entre atividades e biomas integram a análise de heterogeneidade. A estratégia prevê dados em painel, exposição territorial aos preços, medidas institucionais e suas interações. A interpretação causal depende da identificação e não decorre automaticamente da inclusão de efeitos fixos ou defasagens.
 
