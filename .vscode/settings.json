@@ -54,12 +54,12 @@
             "color": "foldercolorizer.color_005f87"
         },
         {
-            "folderPath": "tese_eco_usp\\2_INTI\\chapters\\chap1\\code\\AED\\gemini\\",
+            "folderPath": "tese_eco_usp\\2_INTI\\chapters\\chap1\\code\\AED\\gm",
             "color": "foldercolorizer.color_0000ff",
             "badge": "GM"
         },
         {
-            "folderPath": "tese_eco_usp\\2_INTI\\chapters\\chap1\\code\\AED\\gpt\\",
+            "folderPath": "tese_eco_usp\\2_INTI\\chapters\\chap1\\code\\AED\\pt\\",
             "color": "foldercolorizer.color_0000ff",
             "badge": "PT"
         },

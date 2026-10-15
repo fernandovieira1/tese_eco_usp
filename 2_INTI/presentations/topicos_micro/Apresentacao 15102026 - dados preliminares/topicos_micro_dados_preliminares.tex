@@ -1,0 +1,342 @@
+% !TEX program = pdflatex
+% Modelo: Apresentacao 01102026 - Hipoteses Modelos Dados.
+% Fontes: aed_chap1_pt_ANALISE.ipynb e dados_agregados_aed_chap1_pt_ANALISE.md.
+% Rastreabilidade, compilacao e revisao: 2_INTI/audit/apresentacao_15102026/.
+\documentclass[aspectratio=169,11pt]{beamer}
+\usetheme{Madrid}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs,array,tabularx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepgfplotslibrary{statistics}
+\pgfplotsset{compat=1.18}
+\definecolor{verde}{HTML}{24574D}
+\definecolor{azul}{HTML}{1769A5}
+\definecolor{grafite}{HTML}{253A40}
+\definecolor{laranja}{HTML}{B87532}
+\setbeamercolor{structure}{fg=verde}
+\setbeamercolor{title}{bg=verde,fg=white}
+\setbeamercolor{frametitle}{bg=verde,fg=white}
+\setbeamercolor{normal text}{fg=grafite}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{\leavevmode\hbox{\begin{beamercolorbox}[wd=.86\paperwidth,ht=2.7ex,dp=1.2ex,leftskip=1em]{author in head/foot}Retornos, instituições e conversão da vegetação nativa\end{beamercolorbox}\begin{beamercolorbox}[wd=.14\paperwidth,ht=2.7ex,dp=1.2ex,center]{date in head/foot}\insertframenumber\,/\,\inserttotalframenumber\end{beamercolorbox}}}
+\setbeamersize{text margin left=8mm,text margin right=8mm}
+\setbeamertemplate{itemize items}[circle]
+\newcommand{\fonte}[1]{\par\vfill{\fontsize{7.5}{9}\selectfont\color{gray}#1\par}}
+\newcommand{\tpar}{\par\vspace{2mm}}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\renewcommand{\arraystretch}{1.16}
+\title[Retornos, instituições e conversão]{Retornos Econômicos, Instituições e Conversão da Vegetação Nativa em Mato Grosso}
+\subtitle{Dados preliminares — 2001--2024}
+\author{Fernando Souza da Vieira}
+\institute{Tópicos em Microeconomia}
+\date{15 de outubro de 2026}
+\begin{document}
+
+% 1 — Capa; título e autoria de chap1/main.tex.
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% 2 — Notebook, célula 05ad2c49.
+\begin{frame}{Problema de pesquisa}
+\begin{block}{Pergunta central}
+Como os retornos econômicos esperados e o ambiente institucional condicionam a taxa de conversão da vegetação nativa em Mato Grosso, e em que medida essa relação varia conforme a capacidade produtiva local da terra, as atividades agropecuárias e os biomas?
+\end{block}
+\medskip
+\textbf{Objeto da análise}\par\smallskip
+A conversão direta de vegetação nativa para agricultura e pastagem, observada por município e ano.
+\end{frame}
+
+% 3 — Notebook, células a4505b2a e 4fda2f9d.
+\begin{frame}{Hipótese e função}
+\begin{block}{H1 — Retorno esperado e conversão}
+A conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.
+\end{block}
+\medskip
+\begin{equation*}
+\begin{aligned}
+\text{Conversão da vegetação nativa}
+  = f\bigl(&\text{preços agropecuários},\\
+           &\text{produtividade da terra},\\
+           &\text{ambiente institucional}\bigr)
+\end{aligned}
+\end{equation*}
+\end{frame}
+
+% 4 — Notebook, célula 0d071678.
+\begin{frame}{O que o artigo busca explicar}
+O artigo busca explicar, compreender e mensurar se:
+\medskip
+\begin{enumerate}
+\setlength{\itemsep}{4mm}
+\item Aumentos nos preços dos produtos agropecuários se traduzem em maior conversão onde a \textbf{capacidade produtiva da terra} para esses usos é mais elevada.
+\item As \textbf{condições institucionais} modificam a intensidade dessa resposta.
+\item Essas relações entre expectativas e respostas aos ambientes econômico e institucional variam conforme \textbf{atividades agropecuárias e biomas}.
+\end{enumerate}
+\fonte{Nesta etapa, a AED descreve o fenômeno e a cobertura dos dados; ainda não testa H1.}
+\end{frame}
+
+% 5 — Notebook, df1.shape/info e descrição quantitativa/qualitativa.
+\begin{frame}{df1: visão geral do painel completo}
+\begin{block}{Dimensão e unidade de observação}
+\textbf{3.384 linhas $\times$ 296 colunas}: 141 municípios de Mato Grosso, acompanhados por 24 anos (2001--2024). Cada linha representa um município--ano.
+\end{block}
+\small
+\begin{tabularx}{\textwidth}{P{3.15cm} L}
+\toprule
+\textbf{Componente} & \textbf{Conteúdo quantitativo e qualitativo}\\
+\midrule
+Medidas numéricas & Conversão, estoques, produção, capacidade, preços, registros institucionais, chuva e relevo.\\
+Categorias e identificação & Código municipal, ano, malha territorial e identificação das fontes.\\
+Controle de qualidade & Indicadores de cobertura, parcialidade e pendências por fonte.\\
+\bottomrule
+\end{tabularx}\par
+\smallskip
+\textbf{Cobertura:} 2.772 valores válidos de Y e 612 ausências; chuva anual com 3.384 valores.
+\end{frame}
+
+% 6 — Notebook, agregado-1a-000 a 032.
+\begin{frame}{df1a: perfis municipais agregados de 2001--2024}
+\begin{block}{Agregação temporal}
+\textbf{141 linhas $\times$ 105 colunas}. Cada linha resume um município; as estatísticas entre municípios atribuem o mesmo peso a cada um.
+\end{block}
+\small
+\begin{tabularx}{\textwidth}{P{3.25cm} L}
+\toprule
+\textbf{Tipo de informação} & \textbf{Regra e conteúdo do agregado}\\
+\midrule
+Conversão & Somas observadas e totais completos; taxas médias e ponderadas; número de anos válidos.\\
+Medidas anuais & Médias e dispersão nos anos disponíveis, com cobertura própria de cada medida.\\
+Características fixas & Capacidade histórica PAM, frações de bioma, elevação e oito medidas/cenários GAEZ.\\
+Estoques datados & Vegetação, agricultura e pastagem em 2001 e 2024; estoques nativos do par de mapas em 2000 e 2023.\\
+\bottomrule
+\end{tabularx}\par
+\smallskip
+Ausências são preservadas. O total de conversão em 2001--2024 exige \textbf{24 anos válidos}.
+\end{frame}
+
+% 7 — Relatório, seção 3; agregado-1a-048.
+\begin{frame}{df1a: estoques mapeados de uso da terra}
+\begin{columns}[T,onlytextwidth]
+\column{.53\textwidth}
+\input{figuras/estoques.tex}
+\column{.44\textwidth}
+\small
+\textbf{Estoques em milhões de hectares}\par\smallskip
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{L r r r}
+\toprule
+ & \textbf{2001} & \textbf{2024} & \textbf{$\Delta$\%}\\
+\midrule
+Nativa & 64,673 & 54,939 & $-15,05$\\
+Agricultura & 5,004 & 12,418 & $+148,15$\\
+Pastagem & 18,386 & 20,205 & $+9,89$\\
+\bottomrule
+\end{tabularx}\par
+\medskip
+A agricultura cresce nos \textbf{141 municípios}. A pastagem aumenta em 75 e diminui em 66.
+\end{columns}
+\end{frame}
+
+% 8 — Preços são série contextual separada do agregado; GAEZ é parte de df1a.
+\begin{frame}{df1a: capacidade produtiva e contexto de preços}
+\begin{columns}[T,onlytextwidth]
+\column{.55\textwidth}
+\small\textbf{Preços internacionais reais}\par\smallskip
+{\def\LarguraGrafico{.96\linewidth}\input{figuras/precos.tex}}
+\column{.42\textwidth}
+\small
+\textbf{GAEZ (Global Agro-Ecological Zones): rendimento potencial}\par
+\footnotesize Média municipal, kg de matéria seca/ha\par\smallskip
+\small
+\begin{tabularx}{\linewidth}{L r r}
+\toprule
+\textbf{Cultura} & \textbf{Alto insumo} & \textbf{Baixo}\\
+\midrule
+Soja & 2.921,53 & 302,57\\
+Milho & 3.303,27 & 890,83\\
+\bottomrule
+\end{tabularx}\par
+\medskip
+Os preços variam no tempo; o potencial depende da cultura e do cenário de produção.
+\tpar
+GAEZ tem 141 municípios; a capacidade histórica PAM (Pesquisa Agrícola Municipal) tem 47 para soja e 117 para milho.
+\end{columns}
+\fonte{Preços: série anual separada, dólares de 2024, índice 2001 = 100.}
+\end{frame}
+
+% 9 — Parecer, seções 3 a 6.
+\begin{frame}{df1a: interpretação econômica dos agregados}
+\begin{itemize}
+\setlength{\itemsep}{4mm}
+\item A expansão agrícola e as trajetórias distintas da pastagem indicam \textbf{reorganização dos usos da terra}. A substituição entre usos já instalados é uma possibilidade a investigar com transições específicas.
+\item Os ciclos de preços podem alterar os incentivos de forma diferente conforme a atividade e a capacidade local. \textbf{Preço internacional não é retorno líquido esperado}: custos e transmissão ao produtor ainda precisam ser considerados.
+\item PAM observada, capacidade histórica e cenários GAEZ descrevem \textbf{objetos distintos}. Maior rendimento físico não implica, por si só, maior rentabilidade.
+\end{itemize}
+\fonte{Os agregados descrevem transformações e condições produtivas, não identificam seus mecanismos causais.}
+\end{frame}
+
+% % 10 — Parecer, seções 5, 6 e 9.
+% \begin{frame}{Como df1a se relaciona com o artigo}
+% \small
+% \begin{tabularx}{\textwidth}{P{3.65cm} L}
+% \toprule
+% \textbf{Evidência descritiva} & \textbf{Relação com a pergunta do artigo}\\
+% \midrule
+% Estoques e fluxos distintos & Separar expansão da atividade em áreas já utilizadas de abertura direta de vegetação nativa.\\[2mm]
+% Capacidade produtiva heterogênea & Investigar se o mesmo movimento de preço se associa a respostas diferentes conforme as condições locais.\\[2mm]
+% Preços comuns aos municípios & Recuperar a variação anual: a média de todo o período não preserva o movimento dos incentivos.\\[2mm]
+% Medidas e coberturas diferentes & Definir uma medida de capacidade defensável e verificar quais municípios entram na comparação.\\
+% \bottomrule
+% \end{tabularx}\par
+% \medskip
+% \normalsize\textbf{df1a contextualiza os territórios; a avaliação de H1 depende do painel anual.}
+% \fonte{Os resultados atuais não confirmam nem rejeitam a hipótese.}
+% \end{frame}
+
+% 11 — Notebook, df2-criterios, df2-preliminar, shape/info.
+\begin{frame}{df2: visão geral do painel selecionado}
+\begin{block}{Seleção para a análise preliminar de H1}
+\textbf{3.384 linhas $\times$ 30 colunas}: os mesmos 141 municípios e 24 anos de df1, com 2 identificadores, 24 medidas e 4 indicadores de qualidade.
+\end{block}
+\small
+\begin{tabularx}{\textwidth}{P{3.1cm} L}
+\toprule
+\textbf{Dimensão} & \textbf{Conteúdo selecionado}\\
+\midrule
+Conversão e produção & Conversão para agricultura e pastagem, vegetação inicial, rendimentos, rebanho e lotação aparente.\\
+Incentivos e território & Preços reais, capacidade histórica PAM, frações de bioma, chuva e elevação.\\
+Instituições e qualidade & Autos e multas reais de desmatamento; cobertura de Y, ausência de registro identificado e parcialidade dos registros.\\
+\bottomrule
+\end{tabularx}\par
+\smallskip
+\textbf{Limites:} GAEZ e custos não estão nessa seleção; as lacunas de informação permanecem.
+\fonte{Os indicadores de qualidade não são medidas de efetividade institucional, apenas de ação.}
+\end{frame}
+
+% 12 — df2a, corrigindo a repetição de df1a no roteiro solicitado.
+\begin{frame}{df2a: agregação e cobertura da conversão}
+\begin{block}{Perfil municipal selecionado}
+\textbf{141 linhas $\times$ 88 colunas}. As 88 colunas comuns coincidem com df1a: são as mesmas medidas e regras de cálculo, não uma confirmação independente.
+\end{block}
+\begin{columns}[T,onlytextwidth]
+\column{.40\textwidth}
+\small
+\begin{tabularx}{\linewidth}{L r}
+\toprule
+\textbf{Cobertura de Y} & \textbf{Municípios}\\
+\midrule
+24 anos completos & 95\\
+Cobertura parcial & 42\\
+Sem Y válido & 4\\
+\bottomrule
+\end{tabularx}\par
+\smallskip
+Os completos representam 67,4\% dos municípios, sem garantia de representatividade territorial.
+\column{.57\textwidth}
+\small\textbf{Taxa anual média ponderada por município}
+\[
+100\,\frac{\sum_{t\in T_i}\text{conversão}_{it}}{\sum_{t\in T_i}\text{vegetação nativa inicial}_{it}}
+\]
+Numerador e denominador usam os mesmos anos válidos, por destino.
+\tpar
+A taxa resume a intensidade anual; não mede a perda acumulada da vegetação inicial.
+\end{columns}
+\end{frame}
+
+% 13 — Notebook, agregado-2a-030/036, 95 municípios completos.
+\begin{frame}{df2a: conversão direta por destino}
+\begin{columns}[T,onlytextwidth]
+\column{.49\textwidth}
+\input{figuras/taxas.tex}
+\column{.48\textwidth}
+\small\textbf{Taxas anuais médias ponderadas (\%)}\par\smallskip
+\begin{tabularx}{\linewidth}{L r r}
+\toprule
+ & \textbf{Agricultura} & \textbf{Pastagem}\\
+\midrule
+Média & 0,1185 & 1,1979\\
+Mediana & 0,0301 & 1,0790\\
+1º quartil & 0,0085 & 0,6238\\
+3º quartil & 0,1345 & 1,4958\\
+\bottomrule
+\end{tabularx}\par
+\medskip
+A taxa de pastagem supera a agrícola em \textbf{93 dos 95 municípios}.
+\tpar
+A média para pastagem é \textbf{10,1 vezes} a agrícola; a distribuição da agricultura é mais assimétrica.
+\end{columns}
+\fonte{95 municípios com 24 anos válidos; parecer, seção 2. Caixas: quartis e mediana; hastes até 1,5 intervalo interquartil; pontos além das hastes são observações, não erros identificados.}
+\end{frame}
+
+% 14 — Cobertura 2a e parecer, seções 1 e 7.
+\begin{frame}{df2a: disponibilidade e registros institucionais}
+\begin{columns}[T,onlytextwidth]
+\column{.52\textwidth}
+\small\textbf{Municípios com dados, por medida}\par\smallskip
+{\def\LarguraGrafico{.94\linewidth}\input{figuras/cobertura.tex}}
+\column{.45\textwidth}
+\small\textbf{Médias anuais municipais observadas}\par\smallskip
+\begin{tabularx}{\linewidth}{L r r}
+\toprule
+\textbf{Medida} & \textbf{Média} & \textbf{Mediana}\\
+\midrule
+Autos (número) & 4,58 & 2,36\\
+Multas (R\$ mi) & 6,08 & 1,40\\
+\bottomrule
+\end{tabularx}\par
+\smallskip
+\footnotesize N = 139; valores reais de dezembro de 2024.\par
+\medskip\small
+Entre os registros anuais numéricos, \textbf{60,4\%} dos autos e \textbf{60,6\%} das multas têm indicação de parcialidade.
+\tpar
+Valor autuado não equivale a pagamento; mais autos não demonstram maior efetividade.
+\end{columns}
+\end{frame}
+
+% 15 — Parecer, seções 2, 4 e 7.
+\begin{frame}{df2a: interpretação econômica dos agregados}
+\begin{itemize}
+\setlength{\itemsep}{4mm}
+\item A predominância da pastagem na conversão direta justifica examinar os \textbf{incentivos específicos da pecuária}, mantendo agricultura e pastagem como destinos distintos.
+\item A lotação aparente média municipal é de \textbf{1,471 cabeça/ha}. Ela descreve a relação entre rebanho e pastagem; não mede eficiência nem demonstra intensificação tecnológica.
+\item A desigualdade e a parcialidade dos registros institucionais podem refletir infrações, detecção, direcionamento da fiscalização e registro. Os agregados \textbf{não separam esses componentes}.
+\end{itemize}
+\fonte{Os dados brutos não permitem inferir o agente, a legalidade ou o incentivo da conversão; fiscalização pode reagir à própria pressão ambiental.}
+\end{frame}
+
+% 16 — Parecer, seções 6 a 9.
+\begin{frame}{Como df2a se relaciona com o artigo}
+\small
+\begin{tabularx}{\textwidth}{P{3.35cm} L}
+\toprule
+\textbf{Dimensão de H1} & \textbf{O que a análise preliminar indica para a investigação}\\
+\midrule
+Preços e capacidade & Entre os 95 municípios com Y completo, 39 têm capacidade histórica PAM de soja e 78 de milho. A cobertura conjunta restringe a comparação.\\[2mm]
+Ambiente institucional & É necessário construir medidas válidas e distinguir condicionamento institucional de reação da fiscalização à conversão.\\[2mm]
+Atividades e biomas & As diferenças entre destinos e territórios motivam comparações específicas, respeitando a localização das transições e a amostra disponível.\\
+\bottomrule
+\end{tabularx}\par
+\medskip
+\normalsize\textbf{Relação a avaliar:} como a conversão anual responde aos incentivos, conforme capacidade produtiva e condições institucionais.
+\end{frame}
+
+% 17 — Pendências explicitamente solicitadas pelo autor.
+\begin{frame}{Próximas etapas}
+\begin{block}{Delimitação territorial}
+Ainda falta delimitar os municípios conforme \textbf{Cerrado, Amazônia, Pantanal e áreas ecótonas}, definindo como tratar territórios com mais de um bioma e localizar a conversão em cada contexto.
+\end{block}
+\medskip
+\begin{block}{Pesquisa de campo em Mato Grosso}
+Incluir os dados da pesquisa de campo junto à \textbf{SEMA}, ao \textbf{INTERMAT} e ao \textbf{INCRA}, aprofundando a caracterização das condições institucionais e territoriais.
+\end{block}
+\medskip
+\centering\textcolor{verde}{Os resultados preliminares descrevem o fenômeno e orientam a continuidade da investigação.}
+\end{frame}
+
+\end{document}

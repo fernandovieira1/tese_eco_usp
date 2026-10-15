@@ -1,0 +1,45 @@
+% Gerado de CSVs agregados; dados numericos incorporados para portabilidade.
+% Notebook SHA-256: e8ce396c21be212f5a12d673622adf543234983c3cd142088ea2dbe8e7621004
+% Parecer SHA-256: 1ee24339005b98f24afb2375d080f1aaa8ff1ab0e8812427b8b103b890cef98a
+% Requer: pgfplots, biblioteca statistics (somente taxas.tex).
+% Ajuste opcional no chamador: \def\AlturaGrafico{4.4cm} e \def\LarguraGrafico{\linewidth}.
+\begingroup
+\providecommand{\AlturaGrafico}{4.4cm}
+\providecommand{\LarguraGrafico}{\linewidth}
+\definecolor{grafverde}{HTML}{24574D}
+\definecolor{grafazul}{HTML}{1769A5}
+\definecolor{grafgrafite}{HTML}{253A40}
+\definecolor{graflaranja}{HTML}{B97736}
+\begin{tikzpicture}
+\begin{axis}[width=\LarguraGrafico,height=\AlturaGrafico,
+font=\scriptsize,tick label style={font=\scriptsize},
+label style={font=\scriptsize},
+axis line style={grafgrafite!65},tick style={grafgrafite!65},
+grid style={black!10},
+legend style={font=\scriptsize,draw=none,fill=none,cells={anchor=west}},
+/pgf/number format/use comma,
+boxplot/draw direction=y,xmin=0.4,xmax=2.6,ymin=0,ymax=5,
+xtick={1,2},xticklabels={Agricultura,Pastagem},
+ytick={0,1,2,3,4,5},ymajorgrids=true,
+ylabel={Taxa anual m\'edia ponderada (\%)},
+legend style={at={(0.5,-0.20)},anchor=north},
+]
+\addplot+[
+draw=grafverde,fill=grafverde!25,mark=*,mark size=1.5pt,
+mark options={fill=grafverde,draw=grafverde},forget plot,
+boxplot prepared={draw position=1,
+lower whisker=0.000450151748,lower quartile=0.008456447345,
+median=0.030110746995,upper quartile=0.134456746165,upper whisker=0.271390174812}
+] coordinates {(0,0.324094880044) (0,0.351016934504) (0,0.374321853199) (0,0.433539648275) (0,0.470134352143) (0,0.473911493134) (0,0.514120356654) (0,0.516830134897) (0,0.626592442615) (0,0.998122141341) (0,1.528089212448)};
+\addplot+[
+draw=grafazul,fill=grafazul!25,mark=*,mark size=1.5pt,
+mark options={fill=grafazul,draw=grafazul},forget plot,
+boxplot prepared={draw position=2,
+lower whisker=0.096504047886,lower quartile=0.623779749666,
+median=1.079040156580,upper quartile=1.495796115814,upper whisker=2.622435998947}
+] coordinates {(0,2.992642046469) (0,3.185403774944) (0,3.331745277705) (0,4.294436940632) (0,4.458760895268)};
+\addplot[only marks,mark=diamond*,mark size=2.5pt,graflaranja] coordinates {(1,0.118496647617) (2,1.197874724151)};
+\addlegendentry{M\'edia entre munic\'ipios}
+\end{axis}
+\end{tikzpicture}
+\endgroup
