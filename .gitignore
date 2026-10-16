@@ -1,6 +1,9 @@
 # Dados locais
 2_INTI/xdata/
-2_INTI/chapters/chap1/code
+2_INTI/chapters/chap1/stats/*
+!2_INTI/chapters/chap1/stats/EDA
+!2_INTI/chapters/chap1/stats/DASHBOARD
+!2_INTI/chapters/chap1/stats/HIPOTESES TESE - CHAP1.txt
 
 # Materiais auxiliares locais
 2_INTI/audit
@@ -42,6 +45,7 @@ htmlcov/
 
 # PDFs compilados dos artigos ativos
 2_INTI/chapters/*/main.pdf
+2_INTI/chapters/*/text/main.pdf
 
 # Sistema operacional
 .DS_Store

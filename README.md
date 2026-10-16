@@ -41,7 +41,7 @@ Essa relação envolve três dimensões transversais: a **endogeneidade ambienta
 
 ### Artigo 1 — H1: retornos, instituições e conversão
 
-O artigo investiga como retornos econômicos e instituições se relacionam com as decisões de conversão da vegetação em Mato Grosso. Seu projeto LaTeX está em `2_INTI/chapters/chap1/main.tex`.
+O artigo investiga como retornos econômicos e instituições se relacionam com as decisões de conversão da vegetação em Mato Grosso. Seu projeto LaTeX está em `2_INTI/chapters/chap1/text/main.tex`.
 
 **H1:** a taxa de conversão de vegetação nativa para usos agropecuários aumenta quando se eleva o retorno econômico esperado desses usos.
 

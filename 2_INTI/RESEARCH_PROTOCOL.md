@@ -20,7 +20,7 @@ Neste fluxo, uma claim é tratada operacionalmente como um bloco argumentativo c
 
 - O bloco começa na marcação `%%% REF...` e termina na próxima marcação desse tipo ou no fim do arquivo.
 - Comentários iniciados por `%%` descrevem os componentes do bloco e ajudam a localizar os achados da revisão.
-- Identifique o bloco junto com seu arquivo, por exemplo: `chap1/0_introduction.tex, REF6`.
+- Identifique o bloco junto com seu arquivo, por exemplo: `chap1/text/0_introduction.tex, REF6`.
 - Preserve os identificadores existentes. Não é necessário numerar cada frase, atribuir códigos adicionais ou etiquetar retrospectivamente todo o texto.
 - Perguntas e objetivos são avaliados quanto à coerência e ao alcance anunciado; afirmações científicas são confrontadas com as fontes pertinentes.
 
@@ -769,7 +769,7 @@ Responsabilidades do Zotero:
 
 Os arquivos:
 
-- `2_INTI/chapters/chap1/library.bib`
+- `2_INTI/chapters/chap1/text/library.bib`
 - `2_INTI/chapters/chap2/library.bib`
 
 são artefatos científicos versionados pelo Git.

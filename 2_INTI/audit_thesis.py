@@ -166,8 +166,16 @@ def missing_doi_level(entry):
     return 'INFO' if kind in optional else 'WARNING'
 
 
-def audit_article(chapter, findings):
+def article_dir(chapter):
     directory = ROOT / 'chapters' / chapter
+    if not (directory / 'main.tex').is_file() and (directory / 'text').is_dir():
+        return directory / 'text'
+    return directory
+
+
+def audit_article(chapter, findings):
+    chapter_root = (ROOT / 'chapters' / chapter).resolve()
+    directory = article_dir(chapter)
     def add(level, code, message, file='', line=None):
         findings.append(dict(article=chapter, level=level, code=code,
                              message=message, file=str(file), line=line))
@@ -181,7 +189,7 @@ def audit_article(chapter, findings):
         if path in visited:
             return
         visited.add(path)
-        if not path.is_relative_to(directory.resolve()):
+        if not path.is_relative_to(chapter_root):
             add('ERROR', 'outside_scope', 'Dependência fora do artigo ativo', path)
             return
         if not path.is_file():
@@ -207,7 +215,7 @@ def audit_article(chapter, findings):
     if not bibliographies:
         add('ERROR', 'no_bibliography', 'Nenhuma bibliografia literal encontrada')
     for path in sorted(bibliographies):
-        if not path.resolve().is_relative_to(directory.resolve()):
+        if not path.resolve().is_relative_to(chapter_root):
             add('ERROR', 'outside_scope', 'Bibliografia fora do artigo', path)
             continue
         try:
@@ -284,15 +292,20 @@ def scan_log(text, article, filename):
 
 
 def compile_article(chapter, report_dir, executable, timeout, findings):
+    chapter_root = ROOT / 'chapters' / chapter
+    directory = article_dir(chapter)
     with tempfile.TemporaryDirectory(prefix='audit_thesis_') as temporary:
         target = Path(temporary) / chapter
-        shutil.copytree(ROOT / 'chapters' / chapter, target,
-                        ignore=shutil.ignore_patterns('*.aux', '*.bbl', '*.blg', '*.log', '*.pdf',
+        shutil.copytree(chapter_root, target,
+                        ignore=shutil.ignore_patterns('stats', 'code', '.venv', 'venv', '__pycache__',
+                                                      '.pytest_cache', '.ipynb_checkpoints',
+                                                      '*.aux', '*.bbl', '*.blg', '*.log', '*.pdf',
                                                       '*.fls', '*.fdb_latexmk', '*.synctex.gz', '*.out', '*.toc'))
+        workdir = target / directory.relative_to(chapter_root)
         command = [executable, '-norc', '-pdf', '-g', '-interaction=nonstopmode',
                    '-halt-on-error', '-file-line-error', '-no-shell-escape', 'main.tex']
         try:
-            result = subprocess.run(command, cwd=target, stdout=subprocess.PIPE,
+            result = subprocess.run(command, cwd=workdir, stdout=subprocess.PIPE,
                                     stderr=subprocess.STDOUT, timeout=timeout)
             output = result.stdout.decode('utf-8', errors='replace')
             code = result.returncode
@@ -300,13 +313,13 @@ def compile_article(chapter, report_dir, executable, timeout, findings):
             output, code = str(exc), -1
         (report_dir / f'{chapter}_latexmk.txt').write_text(output, encoding='utf-8')
         for extension in ('log', 'blg'):
-            source = target / f'main.{extension}'
+            source = workdir / f'main.{extension}'
             if source.exists():
                 text = source.read_text(encoding='utf-8', errors='replace')
                 destination = report_dir / f'{chapter}.{extension}'
                 destination.write_text(text, encoding='utf-8')
                 findings.extend(scan_log(text, chapter, str(destination)))
-        pdf = target / 'main.pdf'
+        pdf = workdir / 'main.pdf'
         findings.append(dict(article=chapter, level='ERROR' if code or not pdf.is_file() else 'INFO',
                              code='compilation', message=f'latexmk exit={code}; PDF={pdf.is_file()}',
                              file=str(report_dir / f'{chapter}_latexmk.txt'), line=None))
