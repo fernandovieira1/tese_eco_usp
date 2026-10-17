@@ -21,7 +21,7 @@ Flags de qualidade pertencem ao grupo que ajudam a interpretar, mesmo sendo G4 n
 | 2       | (b)       | 2.1        | Y         | Y_tx-conv                  | 5 / 20                       | 1 / 6                        |
 | 3       | (c)       | 2.2        | X1        | x1_psoja-pmilho            | 28 / 58                      | 10 / 12                      |
 | 4       | (d)       | 2.2        | X1        | x1a_pcarne                 | 14 / 14                      | 4 / 5                        |
-| 5       | ~~(e)~~ | ~~2.3~~  | ~~X2~~  | ~~x2_prodsoja-prodmilho~~ | 8 / 8                        | 8 / 9                        |
+| 5       | (e)       | 2.3        | X2        | x2_prodsoja-prodmilho      | 8 / 8                        | 8 / 9                        |
 | 6       | ~~(f)~~ | ~~2.3~~  | ~~X2~~  | ~~x2a_hprodsoj-hprodmil~~ | 12 / 16                      | 2 / 2                        |
 | 7       | ~~(g)~~ | ~~2.3~~  | ~~X2~~  | ~~x2b_yield-sojamilho~~   | 28 / 36                      | 7 / 7                        |
 | 8       | ~~(h)~~ | ~~2.3~~  | ~~X2~~  | ~~x2c_aptid-sojamilho~~   | 28 / 36                      | 7 / 7                        |
