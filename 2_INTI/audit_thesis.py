@@ -10,6 +10,7 @@ import argparse
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 import json
+import os
 from pathlib import Path
 import re
 import shutil
@@ -340,10 +341,7 @@ def main(argv=None):
     for chapter in dict.fromkeys(args.chapters):
         entries.extend(audit_article(chapter, findings))
     audit_dois(entries, findings)
-    executable = args.latexmk or shutil.which('latexmk')
-    fallback = Path('C:/texlive/2025/bin/windows/latexmk.exe')
-    if not executable and fallback.is_file():
-        executable = str(fallback)
+    executable = args.latexmk or os.environ.get('LATEXMK_PATH') or shutil.which('latexmk')
     for chapter in dict.fromkeys(args.chapters):
         if args.skip_compile:
             findings.append(dict(article=chapter, level='INFO', code='compile_skipped',

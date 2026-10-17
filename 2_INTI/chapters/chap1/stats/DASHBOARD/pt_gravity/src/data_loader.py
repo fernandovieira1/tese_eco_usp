@@ -9,10 +9,9 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-DEFAULT_CSV_PATH = (
-    r"C:\Users\ferna\Documents\dev\Tese USP\tese_eco_usp"
-    r"\2_INTI\chapters\chap1\stats\DASHBOARD\pt_gravity\painel_tese_chap1_pt.csv"
-)
+APP_DIR = Path(__file__).resolve().parent.parent
+CSV_NAME = "painel_tese_chap1_pt.csv"
+DEFAULT_CSV_PATH = str(APP_DIR / CSV_NAME)
 
 THEORETICAL_BLOCKS: List[str] = [
     "[Y] Conversão e Uso da Terra",

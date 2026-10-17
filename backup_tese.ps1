@@ -8,7 +8,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 # ===== CONFIGURACAO =====
-$Source = "C:\Users\ferna\Documents\dev\Tese USP\tese_eco_usp"
+$Source = $PSScriptRoot
 $PermanentBackupDir = "D:\BACKUPS\Tese USP Fernando"
 $BackupLabel = "PORTATIL"
 $PasswordFile = "$env:USERPROFILE\.restic\tese-backup-password.txt"

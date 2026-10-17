@@ -18,10 +18,8 @@ import streamlit as st
 
 
 APP_DIR = Path(__file__).resolve().parents[1]
-DEFAULT_CSV = Path(
-    r"C:\Users\ferna\Documents\dev\Tese USP\tese_eco_usp\2_INTI\chapters\chap1\stats\DASHBOARD\pt_dex\painel_tese_chap1_pt.csv"
-)
 CSV_NAME = "painel_tese_chap1_pt.csv"
+DEFAULT_CSV = APP_DIR / CSV_NAME
 BIOMES = ("Amazônia", "Cerrado", "Pantanal")
 BIOME_COLUMNS = (
     "biome_amazonia_share_i", "biome_cerrado_share_i", "biome_pantanal_share_i"
