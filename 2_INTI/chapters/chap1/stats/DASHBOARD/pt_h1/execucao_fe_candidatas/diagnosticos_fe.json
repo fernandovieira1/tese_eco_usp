@@ -1,0 +1,182 @@
+[
+  {
+    "candidate": "M022",
+    "singleton_municipalities": [
+      "5103437",
+      "5103957",
+      "5105622"
+    ],
+    "singleton_count": 3,
+    "near_unit_leverage": 3,
+    "clusters": 137,
+    "clusters_non_singletons": 134,
+    "economic_coefficient_inference_finite": true
+  },
+  {
+    "candidate": "M042",
+    "singleton_municipalities": [
+      "5103437",
+      "5103957",
+      "5105622"
+    ],
+    "singleton_count": 3,
+    "near_unit_leverage": 3,
+    "clusters": 137,
+    "clusters_non_singletons": 134,
+    "economic_coefficient_inference_finite": true
+  },
+  {
+    "candidate": "M046",
+    "singleton_municipalities": [
+      "5103601",
+      "5103957",
+      "5105309",
+      "5105622",
+      "5106000",
+      "5107156",
+      "5107198",
+      "5107206",
+      "5107792"
+    ],
+    "singleton_count": 9,
+    "near_unit_leverage": 9,
+    "clusters": 130,
+    "clusters_non_singletons": 121,
+    "economic_coefficient_inference_finite": true
+  },
+  {
+    "candidate": "M072",
+    "singleton_municipalities": [
+      "5103437",
+      "5103957",
+      "5105622"
+    ],
+    "singleton_count": 3,
+    "near_unit_leverage": 3,
+    "clusters": 137,
+    "clusters_non_singletons": 134,
+    "economic_coefficient_inference_finite": true
+  },
+  {
+    "candidate": "M092",
+    "singleton_municipalities": [
+      "5103437",
+      "5103957",
+      "5105622"
+    ],
+    "singleton_count": 3,
+    "near_unit_leverage": 3,
+    "clusters": 137,
+    "clusters_non_singletons": 134,
+    "economic_coefficient_inference_finite": true
+  },
+  {
+    "candidate": "M096",
+    "singleton_municipalities": [
+      "5103601",
+      "5103957",
+      "5105309",
+      "5105622",
+      "5106000",
+      "5107156",
+      "5107198",
+      "5107206",
+      "5107792"
+    ],
+    "singleton_count": 9,
+    "near_unit_leverage": 9,
+    "clusters": 130,
+    "clusters_non_singletons": 121,
+    "economic_coefficient_inference_finite": true
+  },
+  {
+    "candidate": "M122",
+    "singleton_municipalities": [
+      "5103437",
+      "5103957",
+      "5105622"
+    ],
+    "singleton_count": 3,
+    "near_unit_leverage": 3,
+    "clusters": 137,
+    "clusters_non_singletons": 134,
+    "economic_coefficient_inference_finite": true
+  },
+  {
+    "candidate": "M142",
+    "singleton_municipalities": [
+      "5103437",
+      "5103957",
+      "5105622"
+    ],
+    "singleton_count": 3,
+    "near_unit_leverage": 3,
+    "clusters": 137,
+    "clusters_non_singletons": 134,
+    "economic_coefficient_inference_finite": true
+  },
+  {
+    "candidate": "M146",
+    "singleton_municipalities": [
+      "5103601",
+      "5103957",
+      "5105309",
+      "5105622",
+      "5106000",
+      "5107156",
+      "5107198",
+      "5107206",
+      "5107792"
+    ],
+    "singleton_count": 9,
+    "near_unit_leverage": 9,
+    "clusters": 130,
+    "clusters_non_singletons": 121,
+    "economic_coefficient_inference_finite": true
+  },
+  {
+    "candidate": "M172",
+    "singleton_municipalities": [
+      "5103437",
+      "5103957",
+      "5105622"
+    ],
+    "singleton_count": 3,
+    "near_unit_leverage": 3,
+    "clusters": 137,
+    "clusters_non_singletons": 134,
+    "economic_coefficient_inference_finite": true
+  },
+  {
+    "candidate": "M192",
+    "singleton_municipalities": [
+      "5103437",
+      "5103957",
+      "5105622"
+    ],
+    "singleton_count": 3,
+    "near_unit_leverage": 3,
+    "clusters": 137,
+    "clusters_non_singletons": 134,
+    "economic_coefficient_inference_finite": true
+  },
+  {
+    "candidate": "M196",
+    "singleton_municipalities": [
+      "5103601",
+      "5103957",
+      "5105309",
+      "5105622",
+      "5106000",
+      "5107156",
+      "5107198",
+      "5107206",
+      "5107792"
+    ],
+    "singleton_count": 9,
+    "near_unit_leverage": 9,
+    "clusters": 130,
+    "clusters_non_singletons": 121,
+    "economic_coefficient_inference_finite": true
+  }
+]

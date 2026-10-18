@@ -1,0 +1,24 @@
+{
+  "status": "VERIFICADO",
+  "new_workbook": "C:\\Users\\ferna\\Documents\\dev\\Tese USP\\tese_eco_usp\\2_INTI\\chapters\\chap1\\stats\\DASHBOARD\\pt_h1\\RESULTADOS_DASH_H1_FE.xlsx",
+  "sha256": "31da90ced04a004713016ce65263e0e74f13bd6ae7080846f572b3014f207962",
+  "source_sha256_before_after": "2154854d542259f3df5d37d4b490bbae5532ba29dee451c96559f8d8bf5db792",
+  "preserved_previous_excel": true,
+  "preserved_source_csv_and_code": true,
+  "twfe_models": 12,
+  "pooled_comparisons": 24,
+  "total_fits": 36,
+  "absorbed_terms": 36,
+  "duplicate_coefficients": 0,
+  "compared_cells": 29209,
+  "sheets": [
+    "Resultados",
+    "Comparação",
+    "Absorção",
+    "Detalhes",
+    "Coeficientes",
+    "Metodologia"
+  ],
+  "pairwise_samples_identical": true,
+  "date": "2026-10-18T00:39:55.924843-03:00"
+}

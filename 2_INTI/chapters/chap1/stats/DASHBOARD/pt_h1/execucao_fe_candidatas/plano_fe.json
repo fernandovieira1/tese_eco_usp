@@ -1,0 +1,514 @@
+{
+  "created": "2026-10-18T00:35:42.281549-03:00",
+  "source_sha256": "2154854d542259f3df5d37d4b490bbae5532ba29dee451c96559f8d8bf5db792",
+  "models": [
+    {
+      "id": "M022",
+      "original_spec": {
+        "y": "conversao_ha__agricultura",
+        "xs": [
+          "ln_preco_real_usd2024_media_anual_lag1__soja",
+          "capacidade_z__soja__gaez_sxHr0_soy",
+          "y_nativa_inicial_ha",
+          "area_referencia_ha",
+          "precip_anomaly_1981_2000"
+        ],
+        "fe": "none",
+        "cov": "cluster_entity",
+        "require_y": true,
+        "transforms": {
+          "ln_preco_real_usd2024_media_anual_lag1__soja": "level",
+          "capacidade_z__soja__gaez_sxHr0_soy": "level",
+          "y_nativa_inicial_ha": "log",
+          "area_referencia_ha": "log",
+          "precip_anomaly_1981_2000": "level"
+        },
+        "lags": {
+          "ln_preco_real_usd2024_media_anual_lag1__soja": 0,
+          "capacidade_z__soja__gaez_sxHr0_soy": 0,
+          "y_nativa_inicial_ha": 0,
+          "area_referencia_ha": 0,
+          "precip_anomaly_1981_2000": 1
+        },
+        "interactions": []
+      },
+      "original_sample": "4b1471cd0ec538c9cc859f8df9a72c0a087ac80ea9f83cda714b752522523870",
+      "models": [
+        "Pooled original",
+        "Pooled termos identificáveis",
+        "TWFE município + ano"
+      ],
+      "rule": "Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos."
+    },
+    {
+      "id": "M042",
+      "original_spec": {
+        "y": "conversao_ha__agricultura",
+        "xs": [
+          "ln_preco_real_usd2024_media_anual_lag1__soja",
+          "capacidade_z__soja__gaez_sxHr0_soy",
+          "y_nativa_inicial_ha",
+          "area_referencia_ha",
+          "precip_anomaly_1981_2000"
+        ],
+        "fe": "none",
+        "cov": "cluster_entity",
+        "require_y": true,
+        "transforms": {
+          "ln_preco_real_usd2024_media_anual_lag1__soja": "level",
+          "capacidade_z__soja__gaez_sxHr0_soy": "level",
+          "y_nativa_inicial_ha": "log",
+          "area_referencia_ha": "log",
+          "precip_anomaly_1981_2000": "level"
+        },
+        "lags": {
+          "ln_preco_real_usd2024_media_anual_lag1__soja": 0,
+          "capacidade_z__soja__gaez_sxHr0_soy": 0,
+          "y_nativa_inicial_ha": 0,
+          "area_referencia_ha": 0,
+          "precip_anomaly_1981_2000": 1
+        },
+        "interactions": [
+          [
+            "ln_preco_real_usd2024_media_anual_lag1__soja",
+            "capacidade_z__soja__gaez_sxHr0_soy"
+          ]
+        ]
+      },
+      "original_sample": "4b1471cd0ec538c9cc859f8df9a72c0a087ac80ea9f83cda714b752522523870",
+      "models": [
+        "Pooled original",
+        "Pooled termos identificáveis",
+        "TWFE município + ano"
+      ],
+      "rule": "Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos."
+    },
+    {
+      "id": "M046",
+      "original_spec": {
+        "y": "conversao_ha__agricultura",
+        "xs": [
+          "ln_preco_real_usd2024_media_anual_lag1__soja",
+          "capacidade_z__soja__gaez_sxHr0_soy",
+          "n_autos_desmatamento_lag1__ibama_espacial",
+          "y_nativa_inicial_ha",
+          "area_referencia_ha",
+          "precip_anomaly_1981_2000"
+        ],
+        "fe": "none",
+        "cov": "cluster_entity",
+        "require_y": true,
+        "transforms": {
+          "ln_preco_real_usd2024_media_anual_lag1__soja": "level",
+          "capacidade_z__soja__gaez_sxHr0_soy": "level",
+          "n_autos_desmatamento_lag1__ibama_espacial": "log1p",
+          "y_nativa_inicial_ha": "log",
+          "area_referencia_ha": "log",
+          "precip_anomaly_1981_2000": "level"
+        },
+        "lags": {
+          "ln_preco_real_usd2024_media_anual_lag1__soja": 0,
+          "capacidade_z__soja__gaez_sxHr0_soy": 0,
+          "n_autos_desmatamento_lag1__ibama_espacial": 0,
+          "y_nativa_inicial_ha": 0,
+          "area_referencia_ha": 0,
+          "precip_anomaly_1981_2000": 1
+        },
+        "interactions": [
+          [
+            "ln_preco_real_usd2024_media_anual_lag1__soja",
+            "n_autos_desmatamento_lag1__ibama_espacial"
+          ]
+        ]
+      },
+      "original_sample": "6e372b362732df2bd2a9fb86dda70d7731ab267a855a1e54b914f85ad6cdd081",
+      "models": [
+        "Pooled original",
+        "Pooled termos identificáveis",
+        "TWFE município + ano"
+      ],
+      "rule": "Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos."
+    },
+    {
+      "id": "M072",
+      "original_spec": {
+        "y": "conversao_ha__pastagem",
+        "xs": [
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+          "capacidade_z__milho__gaez_sxHr0_mze",
+          "y_nativa_inicial_ha",
+          "area_referencia_ha",
+          "precip_anomaly_1981_2000"
+        ],
+        "fe": "none",
+        "cov": "cluster_entity",
+        "require_y": true,
+        "transforms": {
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": "level",
+          "capacidade_z__milho__gaez_sxHr0_mze": "level",
+          "y_nativa_inicial_ha": "log",
+          "area_referencia_ha": "log",
+          "precip_anomaly_1981_2000": "level"
+        },
+        "lags": {
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": 0,
+          "capacidade_z__milho__gaez_sxHr0_mze": 0,
+          "y_nativa_inicial_ha": 0,
+          "area_referencia_ha": 0,
+          "precip_anomaly_1981_2000": 1
+        },
+        "interactions": []
+      },
+      "original_sample": "4b1471cd0ec538c9cc859f8df9a72c0a087ac80ea9f83cda714b752522523870",
+      "models": [
+        "Pooled original",
+        "Pooled termos identificáveis",
+        "TWFE município + ano"
+      ],
+      "rule": "Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos."
+    },
+    {
+      "id": "M092",
+      "original_spec": {
+        "y": "conversao_ha__pastagem",
+        "xs": [
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+          "capacidade_z__milho__gaez_sxHr0_mze",
+          "y_nativa_inicial_ha",
+          "area_referencia_ha",
+          "precip_anomaly_1981_2000"
+        ],
+        "fe": "none",
+        "cov": "cluster_entity",
+        "require_y": true,
+        "transforms": {
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": "level",
+          "capacidade_z__milho__gaez_sxHr0_mze": "level",
+          "y_nativa_inicial_ha": "log",
+          "area_referencia_ha": "log",
+          "precip_anomaly_1981_2000": "level"
+        },
+        "lags": {
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": 0,
+          "capacidade_z__milho__gaez_sxHr0_mze": 0,
+          "y_nativa_inicial_ha": 0,
+          "area_referencia_ha": 0,
+          "precip_anomaly_1981_2000": 1
+        },
+        "interactions": [
+          [
+            "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+            "capacidade_z__milho__gaez_sxHr0_mze"
+          ]
+        ]
+      },
+      "original_sample": "4b1471cd0ec538c9cc859f8df9a72c0a087ac80ea9f83cda714b752522523870",
+      "models": [
+        "Pooled original",
+        "Pooled termos identificáveis",
+        "TWFE município + ano"
+      ],
+      "rule": "Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos."
+    },
+    {
+      "id": "M096",
+      "original_spec": {
+        "y": "conversao_ha__pastagem",
+        "xs": [
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+          "capacidade_z__milho__gaez_sxHr0_mze",
+          "n_autos_desmatamento_lag1__ibama_espacial",
+          "y_nativa_inicial_ha",
+          "area_referencia_ha",
+          "precip_anomaly_1981_2000"
+        ],
+        "fe": "none",
+        "cov": "cluster_entity",
+        "require_y": true,
+        "transforms": {
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": "level",
+          "capacidade_z__milho__gaez_sxHr0_mze": "level",
+          "n_autos_desmatamento_lag1__ibama_espacial": "log1p",
+          "y_nativa_inicial_ha": "log",
+          "area_referencia_ha": "log",
+          "precip_anomaly_1981_2000": "level"
+        },
+        "lags": {
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": 0,
+          "capacidade_z__milho__gaez_sxHr0_mze": 0,
+          "n_autos_desmatamento_lag1__ibama_espacial": 0,
+          "y_nativa_inicial_ha": 0,
+          "area_referencia_ha": 0,
+          "precip_anomaly_1981_2000": 1
+        },
+        "interactions": [
+          [
+            "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+            "n_autos_desmatamento_lag1__ibama_espacial"
+          ]
+        ]
+      },
+      "original_sample": "6e372b362732df2bd2a9fb86dda70d7731ab267a855a1e54b914f85ad6cdd081",
+      "models": [
+        "Pooled original",
+        "Pooled termos identificáveis",
+        "TWFE município + ano"
+      ],
+      "rule": "Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos."
+    },
+    {
+      "id": "M122",
+      "original_spec": {
+        "y": "taxa_conversao__agricultura",
+        "xs": [
+          "ln_preco_real_usd2024_media_anual_lag1__soja",
+          "capacidade_z__soja__gaez_sxHr0_soy",
+          "y_nativa_inicial_ha",
+          "area_referencia_ha",
+          "precip_anomaly_1981_2000"
+        ],
+        "fe": "none",
+        "cov": "cluster_entity",
+        "require_y": true,
+        "transforms": {
+          "ln_preco_real_usd2024_media_anual_lag1__soja": "level",
+          "capacidade_z__soja__gaez_sxHr0_soy": "level",
+          "y_nativa_inicial_ha": "log",
+          "area_referencia_ha": "log",
+          "precip_anomaly_1981_2000": "level"
+        },
+        "lags": {
+          "ln_preco_real_usd2024_media_anual_lag1__soja": 0,
+          "capacidade_z__soja__gaez_sxHr0_soy": 0,
+          "y_nativa_inicial_ha": 0,
+          "area_referencia_ha": 0,
+          "precip_anomaly_1981_2000": 1
+        },
+        "interactions": []
+      },
+      "original_sample": "4b1471cd0ec538c9cc859f8df9a72c0a087ac80ea9f83cda714b752522523870",
+      "models": [
+        "Pooled original",
+        "Pooled termos identificáveis",
+        "TWFE município + ano"
+      ],
+      "rule": "Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos."
+    },
+    {
+      "id": "M142",
+      "original_spec": {
+        "y": "taxa_conversao__agricultura",
+        "xs": [
+          "ln_preco_real_usd2024_media_anual_lag1__soja",
+          "capacidade_z__soja__gaez_sxHr0_soy",
+          "y_nativa_inicial_ha",
+          "area_referencia_ha",
+          "precip_anomaly_1981_2000"
+        ],
+        "fe": "none",
+        "cov": "cluster_entity",
+        "require_y": true,
+        "transforms": {
+          "ln_preco_real_usd2024_media_anual_lag1__soja": "level",
+          "capacidade_z__soja__gaez_sxHr0_soy": "level",
+          "y_nativa_inicial_ha": "log",
+          "area_referencia_ha": "log",
+          "precip_anomaly_1981_2000": "level"
+        },
+        "lags": {
+          "ln_preco_real_usd2024_media_anual_lag1__soja": 0,
+          "capacidade_z__soja__gaez_sxHr0_soy": 0,
+          "y_nativa_inicial_ha": 0,
+          "area_referencia_ha": 0,
+          "precip_anomaly_1981_2000": 1
+        },
+        "interactions": [
+          [
+            "ln_preco_real_usd2024_media_anual_lag1__soja",
+            "capacidade_z__soja__gaez_sxHr0_soy"
+          ]
+        ]
+      },
+      "original_sample": "4b1471cd0ec538c9cc859f8df9a72c0a087ac80ea9f83cda714b752522523870",
+      "models": [
+        "Pooled original",
+        "Pooled termos identificáveis",
+        "TWFE município + ano"
+      ],
+      "rule": "Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos."
+    },
+    {
+      "id": "M146",
+      "original_spec": {
+        "y": "taxa_conversao__agricultura",
+        "xs": [
+          "ln_preco_real_usd2024_media_anual_lag1__soja",
+          "capacidade_z__soja__gaez_sxHr0_soy",
+          "n_autos_desmatamento_lag1__ibama_espacial",
+          "y_nativa_inicial_ha",
+          "area_referencia_ha",
+          "precip_anomaly_1981_2000"
+        ],
+        "fe": "none",
+        "cov": "cluster_entity",
+        "require_y": true,
+        "transforms": {
+          "ln_preco_real_usd2024_media_anual_lag1__soja": "level",
+          "capacidade_z__soja__gaez_sxHr0_soy": "level",
+          "n_autos_desmatamento_lag1__ibama_espacial": "log1p",
+          "y_nativa_inicial_ha": "log",
+          "area_referencia_ha": "log",
+          "precip_anomaly_1981_2000": "level"
+        },
+        "lags": {
+          "ln_preco_real_usd2024_media_anual_lag1__soja": 0,
+          "capacidade_z__soja__gaez_sxHr0_soy": 0,
+          "n_autos_desmatamento_lag1__ibama_espacial": 0,
+          "y_nativa_inicial_ha": 0,
+          "area_referencia_ha": 0,
+          "precip_anomaly_1981_2000": 1
+        },
+        "interactions": [
+          [
+            "ln_preco_real_usd2024_media_anual_lag1__soja",
+            "n_autos_desmatamento_lag1__ibama_espacial"
+          ]
+        ]
+      },
+      "original_sample": "6e372b362732df2bd2a9fb86dda70d7731ab267a855a1e54b914f85ad6cdd081",
+      "models": [
+        "Pooled original",
+        "Pooled termos identificáveis",
+        "TWFE município + ano"
+      ],
+      "rule": "Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos."
+    },
+    {
+      "id": "M172",
+      "original_spec": {
+        "y": "taxa_conversao__pastagem",
+        "xs": [
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+          "capacidade_z__milho__gaez_sxHr0_mze",
+          "y_nativa_inicial_ha",
+          "area_referencia_ha",
+          "precip_anomaly_1981_2000"
+        ],
+        "fe": "none",
+        "cov": "cluster_entity",
+        "require_y": true,
+        "transforms": {
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": "level",
+          "capacidade_z__milho__gaez_sxHr0_mze": "level",
+          "y_nativa_inicial_ha": "log",
+          "area_referencia_ha": "log",
+          "precip_anomaly_1981_2000": "level"
+        },
+        "lags": {
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": 0,
+          "capacidade_z__milho__gaez_sxHr0_mze": 0,
+          "y_nativa_inicial_ha": 0,
+          "area_referencia_ha": 0,
+          "precip_anomaly_1981_2000": 1
+        },
+        "interactions": []
+      },
+      "original_sample": "4b1471cd0ec538c9cc859f8df9a72c0a087ac80ea9f83cda714b752522523870",
+      "models": [
+        "Pooled original",
+        "Pooled termos identificáveis",
+        "TWFE município + ano"
+      ],
+      "rule": "Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos."
+    },
+    {
+      "id": "M192",
+      "original_spec": {
+        "y": "taxa_conversao__pastagem",
+        "xs": [
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+          "capacidade_z__milho__gaez_sxHr0_mze",
+          "y_nativa_inicial_ha",
+          "area_referencia_ha",
+          "precip_anomaly_1981_2000"
+        ],
+        "fe": "none",
+        "cov": "cluster_entity",
+        "require_y": true,
+        "transforms": {
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": "level",
+          "capacidade_z__milho__gaez_sxHr0_mze": "level",
+          "y_nativa_inicial_ha": "log",
+          "area_referencia_ha": "log",
+          "precip_anomaly_1981_2000": "level"
+        },
+        "lags": {
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": 0,
+          "capacidade_z__milho__gaez_sxHr0_mze": 0,
+          "y_nativa_inicial_ha": 0,
+          "area_referencia_ha": 0,
+          "precip_anomaly_1981_2000": 1
+        },
+        "interactions": [
+          [
+            "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+            "capacidade_z__milho__gaez_sxHr0_mze"
+          ]
+        ]
+      },
+      "original_sample": "4b1471cd0ec538c9cc859f8df9a72c0a087ac80ea9f83cda714b752522523870",
+      "models": [
+        "Pooled original",
+        "Pooled termos identificáveis",
+        "TWFE município + ano"
+      ],
+      "rule": "Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos."
+    },
+    {
+      "id": "M196",
+      "original_spec": {
+        "y": "taxa_conversao__pastagem",
+        "xs": [
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+          "capacidade_z__milho__gaez_sxHr0_mze",
+          "n_autos_desmatamento_lag1__ibama_espacial",
+          "y_nativa_inicial_ha",
+          "area_referencia_ha",
+          "precip_anomaly_1981_2000"
+        ],
+        "fe": "none",
+        "cov": "cluster_entity",
+        "require_y": true,
+        "transforms": {
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": "level",
+          "capacidade_z__milho__gaez_sxHr0_mze": "level",
+          "n_autos_desmatamento_lag1__ibama_espacial": "log1p",
+          "y_nativa_inicial_ha": "log",
+          "area_referencia_ha": "log",
+          "precip_anomaly_1981_2000": "level"
+        },
+        "lags": {
+          "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": 0,
+          "capacidade_z__milho__gaez_sxHr0_mze": 0,
+          "n_autos_desmatamento_lag1__ibama_espacial": 0,
+          "y_nativa_inicial_ha": 0,
+          "area_referencia_ha": 0,
+          "precip_anomaly_1981_2000": 1
+        },
+        "interactions": [
+          [
+            "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+            "n_autos_desmatamento_lag1__ibama_espacial"
+          ]
+        ]
+      },
+      "original_sample": "6e372b362732df2bd2a9fb86dda70d7731ab267a855a1e54b914f85ad6cdd081",
+      "models": [
+        "Pooled original",
+        "Pooled termos identificáveis",
+        "TWFE município + ano"
+      ],
+      "rule": "Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos."
+    }
+  ]
+}
