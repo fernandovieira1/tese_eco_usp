@@ -1,0 +1,26 @@
+{
+  "arquivo": "C:\\Users\\ferna\\Documents\\dev\\Tese USP\\tese_eco_usp\\2_INTI\\chapters\\chap1\\stats\\DASHBOARD\\pt_h1\\RESULTADOS_DASH_H1.xlsx",
+  "sha256": "29e01544286c7475a1be747274b7ae798326b725a36b911edeec82fcdabd2333",
+  "abas": [
+    "Resultados",
+    "Detalhes",
+    "Coeficientes",
+    "Metodologia"
+  ],
+  "contagens": {
+    "Conversão (ha) | agricultura": 50,
+    "Conversão (ha) | pastagem": 50,
+    "Taxa de conversão | agricultura": 50,
+    "Taxa de conversão | pastagem": 50
+  },
+  "originais_validos": 200,
+  "conferencias_amostra_comum": 12,
+  "conferencias_dashboard": 4,
+  "termos": 1080,
+  "celulas_comparadas": 21540,
+  "duplicatas": 0,
+  "erros_excel": 0,
+  "codigo_e_csv_preservados": true,
+  "status": "VERIFICADO",
+  "checked": "2026-10-18T00:22:41.936867-03:00"
+}

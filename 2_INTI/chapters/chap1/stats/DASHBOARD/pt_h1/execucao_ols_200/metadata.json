@@ -1,0 +1,48 @@
+{
+  "started": "2026-10-18T00:15:15.555928-03:00",
+  "finished": "2026-10-18T00:21:31.525020-03:00",
+  "meta": {
+    "csv": "2_INTI\\xdata\\chap1\\processed\\harmonizacao\\painel_notebook\\paineis\\painel_tese_chap1_pt.csv",
+    "csv_sha256": "5c17831beb0052639461d176dc4d311fdf5e58c3a072ef79638cc7307cde4dde",
+    "dictionary_sha256": "e2e072b0b0ef3645c7bea0cbc2fc4aecb89686fb8fc3f38388aa76d1f11b8034",
+    "selection_sha256": "f93a05d8ec5248777a02fe9af69ca1c06b303bc3032bf16ee349dc8766fed890",
+    "notebook_code_sha256": "0457b5118a2302aae90603a3cfccc57c0a5d7cad9203acee5246723c59caebc3",
+    "selection_matches_notebook": true,
+    "text_sources_sha256": {
+      "2_INTI/chapters/chap1/text/0_introduction.tex": "9078aab0f796ffbbe0ffc90890a406a82c2ba7cc3716801e9417b15c93899900",
+      "2_INTI/chapters/chap1/text/1_literature_review.tex": "af401c7620ca213799d419b30192d15cf0a8e539938eea3599e81978df6a044b",
+      "2_INTI/chapters/chap1/text/2_mt_descriptive.tex": "b06407ab210032e81b32a8f97ca0c7d8f7579cac1e8a48d4c7f69f4df8bb4601"
+    },
+    "text_bridge_matches_sources": true,
+    "rows": 3384,
+    "source_columns": 296,
+    "selected_columns": 176,
+    "biome_rule": "Maior fração; tolerância de domínio 1e-10 sem alterar frações; empates seguem Amazônia, Cerrado, Pantanal. Não representa exclusividade territorial.",
+    "treatment": "Sem imputação, winsorização ou exclusão de outliers; não finitos viram ausências apenas nos cálculos."
+  },
+  "git_head": "7497f14a624da33ab17d831bc982fcf99c81ea3f",
+  "git_branch": "main",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\ferna\\Documents\\dev\\Tese USP\\tese_eco_usp\\.venv\\Scripts\\python.exe",
+  "numpy": "2.5.4",
+  "pandas": "3.0.6",
+  "statsmodels": "0.15.0",
+  "code_hashes": {
+    "2_INTI\\chapters\\chap1\\stats\\DASHBOARD\\pt_h1\\app.py": "4717e2c0e8b3764e857e4b907d97be2f062238432571f5c35c83fea775379b58",
+    "2_INTI\\chapters\\chap1\\stats\\DASHBOARD\\pt_h1\\h1lab\\data.py": "4f0fe1ad8988d55f5e11a02bf8864ca231ea6dedf5cdc943d7b0a34f80b3e2f6",
+    "2_INTI\\chapters\\chap1\\stats\\DASHBOARD\\pt_h1\\h1lab\\models.py": "0e23cc01642a81f6da794c95556588f4c5f37604632a8bf9db5eea82f6faebb5",
+    "2_INTI\\chapters\\chap1\\stats\\DASHBOARD\\pt_h1\\h1lab\\model_view.py": "35c970a209d00a0217707d5e4614e8e757d4622d2a132dbf1fc55908d76b4dfa"
+  },
+  "ratio_checks": {
+    "agricultura": {
+      "max_abs_difference": 9.980080997729068e-17,
+      "nonpositive_denominator": 0
+    },
+    "pastagem": {
+      "max_abs_difference": 1.1102230246251565e-16,
+      "nonpositive_denominator": 0
+    }
+  },
+  "valid": 200,
+  "failed": 0
+}

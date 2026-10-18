@@ -1,0 +1,382 @@
+[
+  {
+    "id": "M001",
+    "method": "Streamlit AppTest executando app.py e acionando controles/Estimar OLS; sessão de teste independente do navegador localhost",
+    "filters": {
+      "years": [
+        2001,
+        2024
+      ],
+      "biomes": [
+        "Amazônia",
+        "Cerrado",
+        "Pantanal"
+      ],
+      "municipalities": []
+    },
+    "spec": {
+      "y": "conversao_ha__agricultura",
+      "xs": [
+        "ln_preco_real_usd2024_media_anual_lag1__soja"
+      ],
+      "fe": "none",
+      "cov": "cluster_entity",
+      "require_y": true,
+      "transforms": {
+        "conversao_ha__agricultura": "level",
+        "ln_preco_real_usd2024_media_anual_lag1__soja": "level"
+      },
+      "lags": {
+        "conversao_ha__agricultura": 0,
+        "ln_preco_real_usd2024_media_anual_lag1__soja": 0
+      },
+      "interactions": []
+    },
+    "sample_id": "0a734adcc6fc16bfa0626ebe339d639294f08805d5b3e8c677468e5cc3be4220",
+    "N": 2772,
+    "R2": 0.029291397744688696,
+    "adj": 0.028940961426184963,
+    "coef_max_abs_difference": 0.0,
+    "metrics_displayed": [
+      {
+        "label": "N",
+        "value": "2.772"
+      },
+      {
+        "label": "Municípios",
+        "value": "137"
+      },
+      {
+        "label": "Anos",
+        "value": "24"
+      },
+      {
+        "label": "R² ajustado",
+        "value": "0,0289"
+      },
+      {
+        "label": "RMSE",
+        "value": "1.000,2203"
+      },
+      {
+        "label": "Y ajustado no cenário (escala do modelo)",
+        "value": "550,061328"
+      }
+    ],
+    "coefficients_displayed": [
+      {
+        "variable": "ln_preco_real_usd2024_media_anual_lag1__soja",
+        "definition": "Log natural do preço médio anual real (CPI-U, base média de 2024) de soja em t−1",
+        "unit": "log do valor na unidade US$ de 2024/t",
+        "scope": "internacional; série anual comum a todos os municípios.",
+        "variation": "Comum por ano"
+      }
+    ],
+    "status": "conferido: amostra, N, R2, coeficientes, filtros, intercepto e ausência de FE idênticos"
+  },
+  {
+    "id": "M072",
+    "method": "Streamlit AppTest executando app.py e acionando controles/Estimar OLS; sessão de teste independente do navegador localhost",
+    "filters": {
+      "years": [
+        2001,
+        2024
+      ],
+      "biomes": [
+        "Amazônia",
+        "Cerrado",
+        "Pantanal"
+      ],
+      "municipalities": []
+    },
+    "spec": {
+      "y": "conversao_ha__pastagem",
+      "xs": [
+        "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+        "capacidade_z__milho__gaez_sxHr0_mze",
+        "y_nativa_inicial_ha",
+        "area_referencia_ha",
+        "precip_anomaly_1981_2000"
+      ],
+      "fe": "none",
+      "cov": "cluster_entity",
+      "require_y": true,
+      "transforms": {
+        "conversao_ha__pastagem": "level",
+        "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": "level",
+        "capacidade_z__milho__gaez_sxHr0_mze": "level",
+        "y_nativa_inicial_ha": "log",
+        "area_referencia_ha": "log",
+        "precip_anomaly_1981_2000": "level"
+      },
+      "lags": {
+        "conversao_ha__pastagem": 0,
+        "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": 0,
+        "capacidade_z__milho__gaez_sxHr0_mze": 0,
+        "y_nativa_inicial_ha": 0,
+        "area_referencia_ha": 0,
+        "precip_anomaly_1981_2000": 1
+      },
+      "interactions": []
+    },
+    "sample_id": "4b1471cd0ec538c9cc859f8df9a72c0a087ac80ea9f83cda714b752522523870",
+    "N": 2655,
+    "R2": 0.3466537715831447,
+    "adj": 0.34542057749402266,
+    "coef_max_abs_difference": 0.0,
+    "metrics_displayed": [
+      {
+        "label": "N",
+        "value": "2.655"
+      },
+      {
+        "label": "Municípios",
+        "value": "137"
+      },
+      {
+        "label": "Anos",
+        "value": "23"
+      },
+      {
+        "label": "R² ajustado",
+        "value": "0,3454"
+      },
+      {
+        "label": "RMSE",
+        "value": "3.910,9208"
+      },
+      {
+        "label": "Y ajustado no cenário (escala do modelo)",
+        "value": "1.721,767644"
+      }
+    ],
+    "coefficients_displayed": [
+      {
+        "variable": "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+        "definition": "Log natural do preço médio anual real (CPI-U, base média de 2024) de carne bovina em t−1",
+        "unit": "log do valor na unidade US$ de 2024/kg",
+        "scope": "internacional; série anual comum a todos os municípios.",
+        "variation": "Comum por ano"
+      },
+      {
+        "variable": "capacidade_z__milho__gaez_sxHr0_mze",
+        "definition": "Padronização entre municípios: aptidão de milho GAEZ, insumo alto, sequeiro",
+        "unit": "desvios-padrão (z; adimensional)",
+        "scope": "municipal (MT), fixo no tempo.",
+        "variation": "Fixa por município"
+      },
+      {
+        "variable": "y_nativa_inicial_ha",
+        "definition": "Vegetação nativa em t−1 na máscara das transições; denominador de Y",
+        "unit": "ha",
+        "scope": "municipal (MT), anual.",
+        "variation": "Município-ano"
+      },
+      {
+        "variable": "area_referencia_ha",
+        "definition": "Área mapeada em 2000; denominador fixo das participações de uso",
+        "unit": "ha",
+        "scope": "municipal (MT), fixo no tempo.",
+        "variation": "Fixa por município"
+      },
+      {
+        "variable": "precip_anomaly_1981_2000",
+        "definition": "Chuva anual menos a média de 1981–2000",
+        "unit": "mm/ano",
+        "scope": "municipal (MT), anual.",
+        "variation": "Município-ano"
+      }
+    ],
+    "status": "conferido: amostra, N, R2, coeficientes, filtros, intercepto e ausência de FE idênticos"
+  },
+  {
+    "id": "M101",
+    "method": "Streamlit AppTest executando app.py e acionando controles/Estimar OLS; sessão de teste independente do navegador localhost",
+    "filters": {
+      "years": [
+        2001,
+        2024
+      ],
+      "biomes": [
+        "Amazônia",
+        "Cerrado",
+        "Pantanal"
+      ],
+      "municipalities": []
+    },
+    "spec": {
+      "y": "taxa_conversao__agricultura",
+      "xs": [
+        "ln_preco_real_usd2024_media_anual_lag1__soja"
+      ],
+      "fe": "none",
+      "cov": "cluster_entity",
+      "require_y": true,
+      "transforms": {
+        "taxa_conversao__agricultura": "level",
+        "ln_preco_real_usd2024_media_anual_lag1__soja": "level"
+      },
+      "lags": {
+        "taxa_conversao__agricultura": 0,
+        "ln_preco_real_usd2024_media_anual_lag1__soja": 0
+      },
+      "interactions": []
+    },
+    "sample_id": "0a734adcc6fc16bfa0626ebe339d639294f08805d5b3e8c677468e5cc3be4220",
+    "N": 2772,
+    "R2": 0.021245435145357927,
+    "adj": 0.02089209414721549,
+    "coef_max_abs_difference": 0.0,
+    "metrics_displayed": [
+      {
+        "label": "N",
+        "value": "2.772"
+      },
+      {
+        "label": "Municípios",
+        "value": "137"
+      },
+      {
+        "label": "Anos",
+        "value": "24"
+      },
+      {
+        "label": "R² ajustado",
+        "value": "0,0209"
+      },
+      {
+        "label": "RMSE",
+        "value": "0,0037"
+      },
+      {
+        "label": "Y ajustado no cenário (escala do modelo)",
+        "value": "0,001916"
+      }
+    ],
+    "coefficients_displayed": [
+      {
+        "variable": "ln_preco_real_usd2024_media_anual_lag1__soja",
+        "definition": "Log natural do preço médio anual real (CPI-U, base média de 2024) de soja em t−1",
+        "unit": "log do valor na unidade US$ de 2024/t",
+        "scope": "internacional; série anual comum a todos os municípios.",
+        "variation": "Comum por ano"
+      }
+    ],
+    "status": "conferido: amostra, N, R2, coeficientes, filtros, intercepto e ausência de FE idênticos"
+  },
+  {
+    "id": "M172",
+    "method": "Streamlit AppTest executando app.py e acionando controles/Estimar OLS; sessão de teste independente do navegador localhost",
+    "filters": {
+      "years": [
+        2001,
+        2024
+      ],
+      "biomes": [
+        "Amazônia",
+        "Cerrado",
+        "Pantanal"
+      ],
+      "municipalities": []
+    },
+    "spec": {
+      "y": "taxa_conversao__pastagem",
+      "xs": [
+        "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+        "capacidade_z__milho__gaez_sxHr0_mze",
+        "y_nativa_inicial_ha",
+        "area_referencia_ha",
+        "precip_anomaly_1981_2000"
+      ],
+      "fe": "none",
+      "cov": "cluster_entity",
+      "require_y": true,
+      "transforms": {
+        "taxa_conversao__pastagem": "level",
+        "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": "level",
+        "capacidade_z__milho__gaez_sxHr0_mze": "level",
+        "y_nativa_inicial_ha": "log",
+        "area_referencia_ha": "log",
+        "precip_anomaly_1981_2000": "level"
+      },
+      "lags": {
+        "taxa_conversao__pastagem": 0,
+        "ln_preco_real_usd2024_media_anual_lag1__carne_bovina": 0,
+        "capacidade_z__milho__gaez_sxHr0_mze": 0,
+        "y_nativa_inicial_ha": 0,
+        "area_referencia_ha": 0,
+        "precip_anomaly_1981_2000": 1
+      },
+      "interactions": []
+    },
+    "sample_id": "4b1471cd0ec538c9cc859f8df9a72c0a087ac80ea9f83cda714b752522523870",
+    "N": 2655,
+    "R2": 0.08651102177958236,
+    "adj": 0.0847868070226544,
+    "coef_max_abs_difference": 0.0,
+    "metrics_displayed": [
+      {
+        "label": "N",
+        "value": "2.655"
+      },
+      {
+        "label": "Municípios",
+        "value": "137"
+      },
+      {
+        "label": "Anos",
+        "value": "23"
+      },
+      {
+        "label": "R² ajustado",
+        "value": "0,0848"
+      },
+      {
+        "label": "RMSE",
+        "value": "0,0134"
+      },
+      {
+        "label": "Y ajustado no cenário (escala do modelo)",
+        "value": "0,017449"
+      }
+    ],
+    "coefficients_displayed": [
+      {
+        "variable": "ln_preco_real_usd2024_media_anual_lag1__carne_bovina",
+        "definition": "Log natural do preço médio anual real (CPI-U, base média de 2024) de carne bovina em t−1",
+        "unit": "log do valor na unidade US$ de 2024/kg",
+        "scope": "internacional; série anual comum a todos os municípios.",
+        "variation": "Comum por ano"
+      },
+      {
+        "variable": "capacidade_z__milho__gaez_sxHr0_mze",
+        "definition": "Padronização entre municípios: aptidão de milho GAEZ, insumo alto, sequeiro",
+        "unit": "desvios-padrão (z; adimensional)",
+        "scope": "municipal (MT), fixo no tempo.",
+        "variation": "Fixa por município"
+      },
+      {
+        "variable": "y_nativa_inicial_ha",
+        "definition": "Vegetação nativa em t−1 na máscara das transições; denominador de Y",
+        "unit": "ha",
+        "scope": "municipal (MT), anual.",
+        "variation": "Município-ano"
+      },
+      {
+        "variable": "area_referencia_ha",
+        "definition": "Área mapeada em 2000; denominador fixo das participações de uso",
+        "unit": "ha",
+        "scope": "municipal (MT), fixo no tempo.",
+        "variation": "Fixa por município"
+      },
+      {
+        "variable": "precip_anomaly_1981_2000",
+        "definition": "Chuva anual menos a média de 1981–2000",
+        "unit": "mm/ano",
+        "scope": "municipal (MT), anual.",
+        "variation": "Município-ano"
+      }
+    ],
+    "status": "conferido: amostra, N, R2, coeficientes, filtros, intercepto e ausência de FE idênticos"
+  }
+]

@@ -1,0 +1,266 @@
+{
+  "plan": {
+    "id": "M037",
+    "local": 37,
+    "family": "Fiscalização e capacidade histórica",
+    "keys": [
+      "P",
+      "D",
+      "E",
+      "S",
+      "A"
+    ],
+    "spec": {
+      "y": "conversao_ha__agricultura",
+      "xs": [
+        "ln_preco_real_usd2024_media_anual_lag1__soja",
+        "capacidade_z__soja__pam_1991_2000_min7",
+        "n_autos_desmatamento_lag1__ibama_espacial",
+        "y_nativa_inicial_ha",
+        "area_referencia_ha"
+      ],
+      "fe": "none",
+      "cov": "cluster_entity",
+      "require_y": true,
+      "transforms": {
+        "ln_preco_real_usd2024_media_anual_lag1__soja": "level",
+        "capacidade_z__soja__pam_1991_2000_min7": "level",
+        "n_autos_desmatamento_lag1__ibama_espacial": "log1p",
+        "y_nativa_inicial_ha": "log",
+        "area_referencia_ha": "log"
+      },
+      "lags": {
+        "ln_preco_real_usd2024_media_anual_lag1__soja": 0,
+        "capacidade_z__soja__pam_1991_2000_min7": 0,
+        "n_autos_desmatamento_lag1__ibama_espacial": 0,
+        "y_nativa_inicial_ha": 0,
+        "area_referencia_ha": 0
+      },
+      "interactions": []
+    },
+    "description": "ln preço real (t−1) · soja + Capacidade z | soja · pam 1991 2000 min7 + ln(1+n autos desmatamento (t−1) · ibama espacial) + ln(y nativa inicial ha) + ln(area referencia ha)",
+    "rationale": "Agricultura: soja como incentivo principal, milho como alternativa/complemento e GAEZ soja como aptidão. Fiscalização e capacidade histórica. Vegetação no início do intervalo controla a exposição à abertura. Área mapeada em 2000 controla escala fixa sem usar identificadores. Registros em t−1 aproximam atuação administrativa, com seleção por pressão e cobertura parcial. ",
+    "signs": "Preço próprio: positivo condicional; alternativa agrícola: ambíguo por substituição/complementaridade; capacidade agrícola: positivo na agricultura, ambíguo na pastagem; fiscalização e sua interação com preço: potencial contenção, mas sinal observado indeterminado por seleção; estoque e escala: geralmente positivos em ha, ambíguos em taxas; clima/relevo: sem sinal imposto.",
+    "refs": "Angelsen (2010); Berman et al. (2023); Lubowski et al. (2008); Bragança (2018). 2_INTI/chapters/chap1/text/1_literature_review.tex, subseção Preços, capacidade produtiva e usos alternativos da terra; introdução REF7–REF8. Chomitz e Thomas (2003); Pfaff (1999); VanWey et al. (2013); Simões et al. (2020); Seidl et al. (2001). 1_literature_review.tex, subseções Preços, capacidade produtiva e usos alternativos da terra e Heterogeneidade territorial e contribuição do artigo; introdução REF10. Assunção et al. (2023); Harding et al. (2021); Sousa (2016); Jung et al. (2022); Probst et al. (2020). 1_literature_review.tex, subseções Instituições, implementação e respostas aos incentivos e Fiscalização e pressão econômica em Mato Grosso; introdução REF9."
+  },
+  "status": "ok",
+  "estimated": "2026-10-18T00:15:19.319634-03:00",
+  "summary": {
+    "N": 408,
+    "Municípios": 44,
+    "Anos": 24,
+    "R2": 0.07859902667130347,
+    "R2 ajustado": 0.06713881556025003,
+    "R2 parcial aos efeitos fixos": 0.07859902667130347,
+    "RMSE": 846.6296093454564,
+    "Graus de liberdade residuais": 402.0,
+    "Graus de liberdade da inferência": 43,
+    "Condição (colunas normalizadas)": 181.83762161195563,
+    "clusters": {
+      "codigo_ibge": 44
+    }
+  },
+  "coef": [
+    {
+      "term": "const",
+      "coef": 4615.004641583661,
+      "se": 3047.3000212861566,
+      "t": 1.5144569321519685,
+      "p": 0.13722667243402936,
+      "ci_low": -1530.4615400509128,
+      "ci_high": 10760.470823218235
+    },
+    {
+      "term": "ln_preco_real_usd2024_media_anual_lag1__soja",
+      "coef": -786.7671005578019,
+      "se": 332.2209565275466,
+      "t": -2.3682043083051743,
+      "p": 0.022440300857897246,
+      "ci_low": -1456.7545120069112,
+      "ci_high": -116.77968910869265
+    },
+    {
+      "term": "capacidade_z__soja__pam_1991_2000_min7",
+      "coef": 60.943834698763794,
+      "se": 66.22716876013172,
+      "t": 0.9202240687578894,
+      "p": 0.36258958875106545,
+      "ci_low": -72.61597991673847,
+      "ci_high": 194.50364931426606
+    },
+    {
+      "term": "n_autos_desmatamento_lag1__ibama_espacial",
+      "coef": 34.97482851487667,
+      "se": 38.034743130149806,
+      "t": 0.9195494865102015,
+      "p": 0.3629381306008562,
+      "ci_low": -41.72954125533051,
+      "ci_high": 111.67919828508386
+    },
+    {
+      "term": "y_nativa_inicial_ha",
+      "coef": 512.058586610298,
+      "se": 234.15722484932223,
+      "t": 2.18681523467748,
+      "p": 0.03424371913394926,
+      "ci_low": 39.83553786383425,
+      "ci_high": 984.2816353567617
+    },
+    {
+      "term": "area_referencia_ha",
+      "coef": -424.2667149991694,
+      "se": 319.3911070171252,
+      "t": -1.3283610773058279,
+      "p": 0.19106624923174503,
+      "ci_low": -1068.380269023345,
+      "ci_high": 219.84683902500615
+    }
+  ],
+  "sample_id": "e320d076e5dcd30d00a3581805bd80e4e5f2d6d1906838c7143bb19c543839df",
+  "sample_min": 2001,
+  "sample_max": 2024,
+  "municipalities": [
+    "5100201",
+    "5100300",
+    "5100409",
+    "5100508",
+    "5100607",
+    "5101803",
+    "5101902",
+    "5102637",
+    "5102678",
+    "5102702",
+    "5103007",
+    "5103502",
+    "5103601",
+    "5103908",
+    "5104203",
+    "5104609",
+    "5104807",
+    "5104906",
+    "5105200",
+    "5105259",
+    "5105903",
+    "5106000",
+    "5106224",
+    "5106257",
+    "5106281",
+    "5106307",
+    "5106372",
+    "5107008",
+    "5107040",
+    "5107065",
+    "5107198",
+    "5107248",
+    "5107263",
+    "5107305",
+    "5107602",
+    "5107701",
+    "5107800",
+    "5107909",
+    "5107925",
+    "5107958",
+    "5108006",
+    "5108105",
+    "5108204",
+    "5108501"
+  ],
+  "years": {
+    "2001": 1,
+    "2002": 2,
+    "2003": 1,
+    "2004": 13,
+    "2005": 14,
+    "2006": 22,
+    "2007": 22,
+    "2008": 22,
+    "2009": 28,
+    "2010": 25,
+    "2011": 17,
+    "2012": 16,
+    "2013": 18,
+    "2014": 23,
+    "2015": 17,
+    "2016": 16,
+    "2017": 17,
+    "2018": 16,
+    "2019": 17,
+    "2020": 18,
+    "2021": 18,
+    "2022": 21,
+    "2023": 21,
+    "2024": 23
+  },
+  "biomes": {
+    "Amazônia": 103,
+    "Cerrado": 295,
+    "Pantanal": 10
+  },
+  "ledger": [
+    {
+      "etapa": "Recorte territorial e temporal",
+      "N": 3384
+    },
+    {
+      "etapa": "Cobertura de Y (quando exigida)",
+      "N": 2772
+    },
+    {
+      "etapa": "Valores finitos e domínio das transformações: amostra comum",
+      "N": 408
+    }
+  ],
+  "missing": {
+    "conversao_ha__agricultura": 0,
+    "ln_preco_real_usd2024_media_anual_lag1__soja": 0,
+    "capacidade_z__soja__pam_1991_2000_min7": 1732,
+    "n_autos_desmatamento_lag1__ibama_espacial": 1545,
+    "y_nativa_inicial_ha": 0,
+    "area_referencia_ha": 0
+  },
+  "warnings": [],
+  "partial_ibama": {
+    "flag_contagem_desmatamento_parcial_lag1__ibama_espacial": 113
+  },
+  "max_cook": 0.23334664801046995,
+  "cooks_gt_4n": 14,
+  "pred_negative": 20,
+  "pred_gt1": null,
+  "vif": [
+    {
+      "index": 0,
+      "variable": "ln_preco_real_usd2024_media_anual_lag1__soja",
+      "vif": 1.0203506126238595,
+      "nobs": 408,
+      "status": "ok"
+    },
+    {
+      "index": 1,
+      "variable": "capacidade_z__soja__pam_1991_2000_min7",
+      "vif": 1.3905151509508613,
+      "nobs": 408,
+      "status": "ok"
+    },
+    {
+      "index": 2,
+      "variable": "n_autos_desmatamento_lag1__ibama_espacial",
+      "vif": 1.0285249001055712,
+      "nobs": 408,
+      "status": "ok"
+    },
+    {
+      "index": 3,
+      "variable": "y_nativa_inicial_ha",
+      "vif": 10.129291836640002,
+      "nobs": 408,
+      "status": "ok"
+    },
+    {
+      "index": 4,
+      "variable": "area_referencia_ha",
+      "vif": 9.489768451975433,
+      "nobs": 408,
+      "status": "ok"
+    }
+  ]
+}

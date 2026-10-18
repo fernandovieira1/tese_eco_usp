@@ -1,0 +1,203 @@
+{
+  "plan": {
+    "id": "M012",
+    "local": 12,
+    "family": "Retornos e capacidade histórica",
+    "keys": [
+      "P",
+      "D"
+    ],
+    "spec": {
+      "y": "conversao_ha__agricultura",
+      "xs": [
+        "ln_preco_real_usd2024_media_anual_lag1__soja",
+        "capacidade_z__soja__pam_1991_2000_min7"
+      ],
+      "fe": "none",
+      "cov": "cluster_entity",
+      "require_y": true,
+      "transforms": {
+        "ln_preco_real_usd2024_media_anual_lag1__soja": "level",
+        "capacidade_z__soja__pam_1991_2000_min7": "level"
+      },
+      "lags": {
+        "ln_preco_real_usd2024_media_anual_lag1__soja": 0,
+        "capacidade_z__soja__pam_1991_2000_min7": 0
+      },
+      "interactions": []
+    },
+    "description": "ln preço real (t−1) · soja + Capacidade z | soja · pam 1991 2000 min7",
+    "rationale": "Agricultura: soja como incentivo principal, milho como alternativa/complemento e GAEZ soja como aptidão. Retornos e capacidade histórica. ",
+    "signs": "Preço próprio: positivo condicional; alternativa agrícola: ambíguo por substituição/complementaridade; capacidade agrícola: positivo na agricultura, ambíguo na pastagem; fiscalização e sua interação com preço: potencial contenção, mas sinal observado indeterminado por seleção; estoque e escala: geralmente positivos em ha, ambíguos em taxas; clima/relevo: sem sinal imposto.",
+    "refs": "Angelsen (2010); Berman et al. (2023); Lubowski et al. (2008); Bragança (2018). 2_INTI/chapters/chap1/text/1_literature_review.tex, subseção Preços, capacidade produtiva e usos alternativos da terra; introdução REF7–REF8. Chomitz e Thomas (2003); Pfaff (1999); VanWey et al. (2013); Simões et al. (2020); Seidl et al. (2001). 1_literature_review.tex, subseções Preços, capacidade produtiva e usos alternativos da terra e Heterogeneidade territorial e contribuição do artigo; introdução REF10."
+  },
+  "status": "ok",
+  "estimated": "2026-10-18T00:15:16.845235-03:00",
+  "summary": {
+    "N": 1040,
+    "Municípios": 46,
+    "Anos": 24,
+    "R2": 0.052705229732601055,
+    "R2 ajustado": 0.05087823885455389,
+    "R2 parcial aos efeitos fixos": 0.052705229732601055,
+    "RMSE": 1017.8113841448081,
+    "Graus de liberdade residuais": 1037.0,
+    "Graus de liberdade da inferência": 45,
+    "Condição (colunas normalizadas)": 52.472986548796456,
+    "clusters": {
+      "codigo_ibge": 46
+    }
+  },
+  "coef": [
+    {
+      "term": "const",
+      "coef": 6482.33174592579,
+      "se": 1699.5285645571985,
+      "t": 3.814194054228633,
+      "p": 0.00041365990370302076,
+      "ci_low": 3059.305504551336,
+      "ci_high": 9905.357987300244
+    },
+    {
+      "term": "ln_preco_real_usd2024_media_anual_lag1__soja",
+      "coef": -968.2046873030371,
+      "se": 259.14927862418267,
+      "t": -3.7360886838783136,
+      "p": 0.0005245472556737262,
+      "ci_low": -1490.1581276060301,
+      "ci_high": -446.25124700004415
+    },
+    {
+      "term": "capacidade_z__soja__pam_1991_2000_min7",
+      "coef": 57.89671581180382,
+      "se": 68.84292873926692,
+      "t": 0.8409972799251414,
+      "p": 0.4047962631584413,
+      "ci_low": -80.76006026243627,
+      "ci_high": 196.55349188604393
+    }
+  ],
+  "sample_id": "fc1b42096ddb7adc184bb317edfa77c77d476b6c6520455096173b58c47b4b99",
+  "sample_min": 2001,
+  "sample_max": 2024,
+  "municipalities": [
+    "5100201",
+    "5100300",
+    "5100409",
+    "5100508",
+    "5100607",
+    "5101308",
+    "5101803",
+    "5101902",
+    "5102637",
+    "5102678",
+    "5102702",
+    "5103007",
+    "5103502",
+    "5103601",
+    "5103908",
+    "5104203",
+    "5104609",
+    "5104807",
+    "5104906",
+    "5105200",
+    "5105259",
+    "5105903",
+    "5106000",
+    "5106224",
+    "5106257",
+    "5106281",
+    "5106307",
+    "5106372",
+    "5107008",
+    "5107040",
+    "5107065",
+    "5107198",
+    "5107248",
+    "5107263",
+    "5107305",
+    "5107602",
+    "5107701",
+    "5107800",
+    "5107909",
+    "5107925",
+    "5107958",
+    "5108006",
+    "5108105",
+    "5108204",
+    "5108501",
+    "5108857"
+  ],
+  "years": {
+    "2001": 45,
+    "2002": 45,
+    "2003": 45,
+    "2004": 44,
+    "2005": 43,
+    "2006": 43,
+    "2007": 43,
+    "2008": 42,
+    "2009": 42,
+    "2010": 42,
+    "2011": 41,
+    "2012": 41,
+    "2013": 42,
+    "2014": 44,
+    "2015": 43,
+    "2016": 42,
+    "2017": 43,
+    "2018": 42,
+    "2019": 43,
+    "2020": 43,
+    "2021": 44,
+    "2022": 46,
+    "2023": 46,
+    "2024": 46
+  },
+  "biomes": {
+    "Amazônia": 222,
+    "Cerrado": 794,
+    "Pantanal": 24
+  },
+  "ledger": [
+    {
+      "etapa": "Recorte territorial e temporal",
+      "N": 3384
+    },
+    {
+      "etapa": "Cobertura de Y (quando exigida)",
+      "N": 2772
+    },
+    {
+      "etapa": "Valores finitos e domínio das transformações: amostra comum",
+      "N": 1040
+    }
+  ],
+  "missing": {
+    "conversao_ha__agricultura": 0,
+    "ln_preco_real_usd2024_media_anual_lag1__soja": 0,
+    "capacidade_z__soja__pam_1991_2000_min7": 1732
+  },
+  "warnings": [],
+  "partial_ibama": {},
+  "max_cook": 0.16896556251481737,
+  "cooks_gt_4n": 39,
+  "pred_negative": 41,
+  "pred_gt1": null,
+  "vif": [
+    {
+      "index": 0,
+      "variable": "ln_preco_real_usd2024_media_anual_lag1__soja",
+      "vif": 1.0000010505585981,
+      "nobs": 1040,
+      "status": "ok"
+    },
+    {
+      "index": 1,
+      "variable": "capacidade_z__soja__pam_1991_2000_min7",
+      "vif": 1.0000010505585983,
+      "nobs": 1040,
+      "status": "ok"
+    }
+  ]
+}
