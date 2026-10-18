@@ -11,9 +11,27 @@ import pandas as pd
 
 APP = Path(__file__).resolve().parents[1]
 ROOT = next(p for p in APP.parents if (p / '2_INTI/RESEARCH_PROTOCOL.md').is_file())
-CSV = ROOT / '2_INTI/xdata/chap1/processed/harmonizacao/painel_notebook/paineis/painel_tese_chap1_pt.csv'
+
+
+def _resolve_data_path(canonical_rel: str, fallback_rel: str) -> Path:
+    canonical = ROOT / canonical_rel
+    if canonical.is_file():
+        return canonical
+    fallback = APP / fallback_rel
+    if fallback.is_file():
+        return fallback
+    return canonical
+
+
+CSV = _resolve_data_path(
+    '2_INTI/xdata/chap1/processed/harmonizacao/painel_notebook/paineis/painel_tese_chap1_pt.csv',
+    'data/painel_tese_chap1_pt.csv',
+)
 DICIO = ROOT / '2_INTI/chapters/chap1/stats/EDA/aed_chap1_pt_DICIO.ipynb'
-MUNICIPIOS = ROOT / '2_INTI/xdata/chap1/processed/territorio_141/municipios_referencia.json'
+MUNICIPIOS = _resolve_data_path(
+    '2_INTI/xdata/chap1/processed/territorio_141/municipios_referencia.json',
+    'data/municipios_referencia.json',
+)
 SELECTION = APP / 'config/selection.json'
 KEYS = ['codigo_ibge', 'ano']
 BIOMES = ['Amazônia', 'Cerrado', 'Pantanal']

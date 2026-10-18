@@ -1,0 +1,55 @@
+{
+  "created": "2026-10-18T01:20:47.001937-03:00",
+  "focus": [
+    "M042",
+    "M092",
+    "M142",
+    "M192"
+  ],
+  "reference_without_interaction": {
+    "M042": "M022",
+    "M092": "M072",
+    "M142": "M122",
+    "M192": "M172"
+  },
+  "ids": [
+    "M022",
+    "M042",
+    "M072",
+    "M092",
+    "M122",
+    "M142",
+    "M172",
+    "M192"
+  ],
+  "covariances": [
+    "cluster_entity",
+    "cluster_twoway"
+  ],
+  "filters": {
+    "years": [
+      2001,
+      2024
+    ],
+    "biomes": [
+      "Amazônia",
+      "Cerrado",
+      "Pantanal"
+    ],
+    "municipalities": []
+  },
+  "common_N": 2655,
+  "common_sample_sha256": "4b1471cd0ec538c9cc859f8df9a72c0a087ac80ea9f83cda714b752522523870",
+  "source_xlsx_sha256": {
+    "RESULTADOS_DASH_H1.xlsx": "2154854d542259f3df5d37d4b490bbae5532ba29dee451c96559f8d8bf5db792",
+    "RESULTADOS_DASH_H1_backup_2026-10-18T03-22-36-763Z.xlsx": "3bbd8c9e44595b2a3aafd324bf9a5b0382bd6034280860ce43671576c7f20a51",
+    "RESULTADOS_DASH_H1_FE.xlsx": "31da90ced04a004713016ce65263e0e74f13bd6ae7080846f572b3014f207962"
+  },
+  "csv_sha256": "5c17831beb0052639461d176dc4d311fdf5e58c3a072ef79638cc7307cde4dde",
+  "code_sha256": {
+    "2_INTI\\chapters\\chap1\\stats\\DASHBOARD\\pt_h1\\h1lab\\models.py": "0e23cc01642a81f6da794c95556588f4c5f37604632a8bf9db5eea82f6faebb5",
+    "2_INTI\\chapters\\chap1\\stats\\DASHBOARD\\pt_h1\\h1lab\\data.py": "4f0fe1ad8988d55f5e11a02bf8864ca231ea6dedf5cdc943d7b0a34f80b3e2f6",
+    "2_INTI\\chapters\\chap1\\stats\\DASHBOARD\\pt_h1\\app.py": "4717e2c0e8b3764e857e4b907d97be2f062238432571f5c35c83fea775379b58"
+  },
+  "criterion": "Sem nova escolha de proxy, amostra, transformação ou termo por resultado. Interseção dos casos completos das 8 especificações originais antes de retirar termos absorvidos. 16 ajustes TWFE: 8 matrizes por duas covariâncias. Sem bootstrap ou novas famílias."
+}

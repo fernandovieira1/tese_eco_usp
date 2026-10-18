@@ -1,0 +1,28 @@
+{
+  "status": "VERIFICADO",
+  "new_excel": "C:\\Users\\ferna\\Documents\\dev\\Tese USP\\tese_eco_usp\\2_INTI\\chapters\\chap1\\stats\\DASHBOARD\\pt_h1\\RESULTADOS_DASH_H1_FE_ROBUSTEZ.xlsx",
+  "sha256": "46cab5e974b225c825b0df44a03d9c03185ad95e6aab7cc7ac93a73a1224de00",
+  "previous_workbooks_preserved": true,
+  "csv_code_preserved": true,
+  "interactions": 4,
+  "twfe_specifications": 8,
+  "fits": 16,
+  "common_N": 2655,
+  "entity_clusters": 137,
+  "year_clusters": 23,
+  "two_way_t_df": 22,
+  "nonpositive_interaction_variances": 0,
+  "all_interactions_CI95_include_zero": true,
+  "negative_nuisance_variances_recorded": 20,
+  "compared_cells": 40616,
+  "duplicates": 0,
+  "sheets": [
+    "Robustez",
+    "Modelos",
+    "Coeficientes",
+    "Diagnósticos",
+    "Absorção",
+    "Metodologia"
+  ],
+  "date": "2026-10-18T01:24:39.750701-03:00"
+}

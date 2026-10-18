@@ -1,0 +1,566 @@
+[
+  {
+    "codigo_ibge":"5100102",
+    "municipio":"Acorizal"
+  },
+  {
+    "codigo_ibge":"5100201",
+    "municipio":"Água Boa"
+  },
+  {
+    "codigo_ibge":"5100250",
+    "municipio":"Alta Floresta"
+  },
+  {
+    "codigo_ibge":"5100300",
+    "municipio":"Alto Araguaia"
+  },
+  {
+    "codigo_ibge":"5100359",
+    "municipio":"Alto Boa Vista"
+  },
+  {
+    "codigo_ibge":"5100409",
+    "municipio":"Alto Garças"
+  },
+  {
+    "codigo_ibge":"5100508",
+    "municipio":"Alto Paraguai"
+  },
+  {
+    "codigo_ibge":"5100607",
+    "municipio":"Alto Taquari"
+  },
+  {
+    "codigo_ibge":"5100805",
+    "municipio":"Apiacás"
+  },
+  {
+    "codigo_ibge":"5101001",
+    "municipio":"Araguaiana"
+  },
+  {
+    "codigo_ibge":"5101209",
+    "municipio":"Araguainha"
+  },
+  {
+    "codigo_ibge":"5101258",
+    "municipio":"Araputanga"
+  },
+  {
+    "codigo_ibge":"5101308",
+    "municipio":"Arenápolis"
+  },
+  {
+    "codigo_ibge":"5101407",
+    "municipio":"Aripuanã"
+  },
+  {
+    "codigo_ibge":"5101605",
+    "municipio":"Barão de Melgaço"
+  },
+  {
+    "codigo_ibge":"5101704",
+    "municipio":"Barra do Bugres"
+  },
+  {
+    "codigo_ibge":"5101803",
+    "municipio":"Barra do Garças"
+  },
+  {
+    "codigo_ibge":"5101852",
+    "municipio":"Bom Jesus do Araguaia"
+  },
+  {
+    "codigo_ibge":"5101902",
+    "municipio":"Brasnorte"
+  },
+  {
+    "codigo_ibge":"5102504",
+    "municipio":"Cáceres"
+  },
+  {
+    "codigo_ibge":"5102603",
+    "municipio":"Campinápolis"
+  },
+  {
+    "codigo_ibge":"5102637",
+    "municipio":"Campo Novo do Parecis"
+  },
+  {
+    "codigo_ibge":"5102678",
+    "municipio":"Campo Verde"
+  },
+  {
+    "codigo_ibge":"5102686",
+    "municipio":"Campos de Júlio"
+  },
+  {
+    "codigo_ibge":"5102694",
+    "municipio":"Canabrava do Norte"
+  },
+  {
+    "codigo_ibge":"5102702",
+    "municipio":"Canarana"
+  },
+  {
+    "codigo_ibge":"5102793",
+    "municipio":"Carlinda"
+  },
+  {
+    "codigo_ibge":"5102850",
+    "municipio":"Castanheira"
+  },
+  {
+    "codigo_ibge":"5103007",
+    "municipio":"Chapada dos Guimarães"
+  },
+  {
+    "codigo_ibge":"5103056",
+    "municipio":"Cláudia"
+  },
+  {
+    "codigo_ibge":"5103106",
+    "municipio":"Cocalinho"
+  },
+  {
+    "codigo_ibge":"5103205",
+    "municipio":"Colíder"
+  },
+  {
+    "codigo_ibge":"5103254",
+    "municipio":"Colniza"
+  },
+  {
+    "codigo_ibge":"5103304",
+    "municipio":"Comodoro"
+  },
+  {
+    "codigo_ibge":"5103353",
+    "municipio":"Confresa"
+  },
+  {
+    "codigo_ibge":"5103361",
+    "municipio":"Conquista D'Oeste"
+  },
+  {
+    "codigo_ibge":"5103379",
+    "municipio":"Cotriguaçu"
+  },
+  {
+    "codigo_ibge":"5103403",
+    "municipio":"Cuiabá"
+  },
+  {
+    "codigo_ibge":"5103437",
+    "municipio":"Curvelândia"
+  },
+  {
+    "codigo_ibge":"5103452",
+    "municipio":"Denise"
+  },
+  {
+    "codigo_ibge":"5103502",
+    "municipio":"Diamantino"
+  },
+  {
+    "codigo_ibge":"5103601",
+    "municipio":"Dom Aquino"
+  },
+  {
+    "codigo_ibge":"5103700",
+    "municipio":"Feliz Natal"
+  },
+  {
+    "codigo_ibge":"5103809",
+    "municipio":"Figueirópolis D'Oeste"
+  },
+  {
+    "codigo_ibge":"5103858",
+    "municipio":"Gaúcha do Norte"
+  },
+  {
+    "codigo_ibge":"5103908",
+    "municipio":"General Carneiro"
+  },
+  {
+    "codigo_ibge":"5103957",
+    "municipio":"Glória D'Oeste"
+  },
+  {
+    "codigo_ibge":"5104104",
+    "municipio":"Guarantã do Norte"
+  },
+  {
+    "codigo_ibge":"5104203",
+    "municipio":"Guiratinga"
+  },
+  {
+    "codigo_ibge":"5104500",
+    "municipio":"Indiavaí"
+  },
+  {
+    "codigo_ibge":"5104526",
+    "municipio":"Ipiranga do Norte"
+  },
+  {
+    "codigo_ibge":"5104542",
+    "municipio":"Itanhangá"
+  },
+  {
+    "codigo_ibge":"5104559",
+    "municipio":"Itaúba"
+  },
+  {
+    "codigo_ibge":"5104609",
+    "municipio":"Itiquira"
+  },
+  {
+    "codigo_ibge":"5104807",
+    "municipio":"Jaciara"
+  },
+  {
+    "codigo_ibge":"5104906",
+    "municipio":"Jangada"
+  },
+  {
+    "codigo_ibge":"5105002",
+    "municipio":"Jauru"
+  },
+  {
+    "codigo_ibge":"5105101",
+    "municipio":"Juara"
+  },
+  {
+    "codigo_ibge":"5105150",
+    "municipio":"Juína"
+  },
+  {
+    "codigo_ibge":"5105176",
+    "municipio":"Juruena"
+  },
+  {
+    "codigo_ibge":"5105200",
+    "municipio":"Juscimeira"
+  },
+  {
+    "codigo_ibge":"5105234",
+    "municipio":"Lambari D'Oeste"
+  },
+  {
+    "codigo_ibge":"5105259",
+    "municipio":"Lucas do Rio Verde"
+  },
+  {
+    "codigo_ibge":"5105309",
+    "municipio":"Luciara"
+  },
+  {
+    "codigo_ibge":"5105507",
+    "municipio":"Vila Bela da Santíssima Trindade"
+  },
+  {
+    "codigo_ibge":"5105580",
+    "municipio":"Marcelândia"
+  },
+  {
+    "codigo_ibge":"5105606",
+    "municipio":"Matupá"
+  },
+  {
+    "codigo_ibge":"5105622",
+    "municipio":"Mirassol d'Oeste"
+  },
+  {
+    "codigo_ibge":"5105903",
+    "municipio":"Nobres"
+  },
+  {
+    "codigo_ibge":"5106000",
+    "municipio":"Nortelândia"
+  },
+  {
+    "codigo_ibge":"5106109",
+    "municipio":"Nossa Senhora do Livramento"
+  },
+  {
+    "codigo_ibge":"5106158",
+    "municipio":"Nova Bandeirantes"
+  },
+  {
+    "codigo_ibge":"5106174",
+    "municipio":"Nova Nazaré"
+  },
+  {
+    "codigo_ibge":"5106182",
+    "municipio":"Nova Lacerda"
+  },
+  {
+    "codigo_ibge":"5106190",
+    "municipio":"Nova Santa Helena"
+  },
+  {
+    "codigo_ibge":"5106208",
+    "municipio":"Nova Brasilândia"
+  },
+  {
+    "codigo_ibge":"5106216",
+    "municipio":"Nova Canaã do Norte"
+  },
+  {
+    "codigo_ibge":"5106224",
+    "municipio":"Nova Mutum"
+  },
+  {
+    "codigo_ibge":"5106232",
+    "municipio":"Nova Olímpia"
+  },
+  {
+    "codigo_ibge":"5106240",
+    "municipio":"Nova Ubiratã"
+  },
+  {
+    "codigo_ibge":"5106257",
+    "municipio":"Nova Xavantina"
+  },
+  {
+    "codigo_ibge":"5106265",
+    "municipio":"Novo Mundo"
+  },
+  {
+    "codigo_ibge":"5106273",
+    "municipio":"Novo Horizonte do Norte"
+  },
+  {
+    "codigo_ibge":"5106281",
+    "municipio":"Novo São Joaquim"
+  },
+  {
+    "codigo_ibge":"5106299",
+    "municipio":"Paranaíta"
+  },
+  {
+    "codigo_ibge":"5106307",
+    "municipio":"Paranatinga"
+  },
+  {
+    "codigo_ibge":"5106315",
+    "municipio":"Novo Santo Antônio"
+  },
+  {
+    "codigo_ibge":"5106372",
+    "municipio":"Pedra Preta"
+  },
+  {
+    "codigo_ibge":"5106422",
+    "municipio":"Peixoto de Azevedo"
+  },
+  {
+    "codigo_ibge":"5106455",
+    "municipio":"Planalto da Serra"
+  },
+  {
+    "codigo_ibge":"5106505",
+    "municipio":"Poconé"
+  },
+  {
+    "codigo_ibge":"5106653",
+    "municipio":"Pontal do Araguaia"
+  },
+  {
+    "codigo_ibge":"5106703",
+    "municipio":"Ponte Branca"
+  },
+  {
+    "codigo_ibge":"5106752",
+    "municipio":"Pontes e Lacerda"
+  },
+  {
+    "codigo_ibge":"5106778",
+    "municipio":"Porto Alegre do Norte"
+  },
+  {
+    "codigo_ibge":"5106802",
+    "municipio":"Porto dos Gaúchos"
+  },
+  {
+    "codigo_ibge":"5106828",
+    "municipio":"Porto Esperidião"
+  },
+  {
+    "codigo_ibge":"5106851",
+    "municipio":"Porto Estrela"
+  },
+  {
+    "codigo_ibge":"5107008",
+    "municipio":"Poxoréu"
+  },
+  {
+    "codigo_ibge":"5107040",
+    "municipio":"Primavera do Leste"
+  },
+  {
+    "codigo_ibge":"5107065",
+    "municipio":"Querência"
+  },
+  {
+    "codigo_ibge":"5107107",
+    "municipio":"São José dos Quatro Marcos"
+  },
+  {
+    "codigo_ibge":"5107156",
+    "municipio":"Reserva do Cabaçal"
+  },
+  {
+    "codigo_ibge":"5107180",
+    "municipio":"Ribeirão Cascalheira"
+  },
+  {
+    "codigo_ibge":"5107198",
+    "municipio":"Ribeirãozinho"
+  },
+  {
+    "codigo_ibge":"5107206",
+    "municipio":"Rio Branco"
+  },
+  {
+    "codigo_ibge":"5107248",
+    "municipio":"Santa Carmem"
+  },
+  {
+    "codigo_ibge":"5107263",
+    "municipio":"Santo Afonso"
+  },
+  {
+    "codigo_ibge":"5107297",
+    "municipio":"São José do Povo"
+  },
+  {
+    "codigo_ibge":"5107305",
+    "municipio":"São José do Rio Claro"
+  },
+  {
+    "codigo_ibge":"5107354",
+    "municipio":"São José do Xingu"
+  },
+  {
+    "codigo_ibge":"5107404",
+    "municipio":"São Pedro da Cipa"
+  },
+  {
+    "codigo_ibge":"5107578",
+    "municipio":"Rondolândia"
+  },
+  {
+    "codigo_ibge":"5107602",
+    "municipio":"Rondonópolis"
+  },
+  {
+    "codigo_ibge":"5107701",
+    "municipio":"Rosário Oeste"
+  },
+  {
+    "codigo_ibge":"5107743",
+    "municipio":"Santa Cruz do Xingu"
+  },
+  {
+    "codigo_ibge":"5107750",
+    "municipio":"Salto do Céu"
+  },
+  {
+    "codigo_ibge":"5107768",
+    "municipio":"Santa Rita do Trivelato"
+  },
+  {
+    "codigo_ibge":"5107776",
+    "municipio":"Santa Terezinha"
+  },
+  {
+    "codigo_ibge":"5107792",
+    "municipio":"Santo Antônio do Leste"
+  },
+  {
+    "codigo_ibge":"5107800",
+    "municipio":"Santo Antônio de Leverger"
+  },
+  {
+    "codigo_ibge":"5107859",
+    "municipio":"São Félix do Araguaia"
+  },
+  {
+    "codigo_ibge":"5107875",
+    "municipio":"Sapezal"
+  },
+  {
+    "codigo_ibge":"5107883",
+    "municipio":"Serra Nova Dourada"
+  },
+  {
+    "codigo_ibge":"5107909",
+    "municipio":"Sinop"
+  },
+  {
+    "codigo_ibge":"5107925",
+    "municipio":"Sorriso"
+  },
+  {
+    "codigo_ibge":"5107941",
+    "municipio":"Tabaporã"
+  },
+  {
+    "codigo_ibge":"5107958",
+    "municipio":"Tangará da Serra"
+  },
+  {
+    "codigo_ibge":"5108006",
+    "municipio":"Tapurah"
+  },
+  {
+    "codigo_ibge":"5108055",
+    "municipio":"Terra Nova do Norte"
+  },
+  {
+    "codigo_ibge":"5108105",
+    "municipio":"Tesouro"
+  },
+  {
+    "codigo_ibge":"5108204",
+    "municipio":"Torixoréu"
+  },
+  {
+    "codigo_ibge":"5108303",
+    "municipio":"União do Sul"
+  },
+  {
+    "codigo_ibge":"5108352",
+    "municipio":"Vale de São Domingos"
+  },
+  {
+    "codigo_ibge":"5108402",
+    "municipio":"Várzea Grande"
+  },
+  {
+    "codigo_ibge":"5108501",
+    "municipio":"Vera"
+  },
+  {
+    "codigo_ibge":"5108600",
+    "municipio":"Vila Rica"
+  },
+  {
+    "codigo_ibge":"5108808",
+    "municipio":"Nova Guarita"
+  },
+  {
+    "codigo_ibge":"5108857",
+    "municipio":"Nova Marilândia"
+  },
+  {
+    "codigo_ibge":"5108907",
+    "municipio":"Nova Maringá"
+  },
+  {
+    "codigo_ibge":"5108956",
+    "municipio":"Nova Monte Verde"
+  }
+]

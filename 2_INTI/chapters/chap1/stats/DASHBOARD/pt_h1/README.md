@@ -34,9 +34,11 @@ Os filtros globais são exclusivamente de período, bioma dominante e município
 
 ## Dados, catálogo e rastreabilidade
 
-Fonte única, lida em seu local canônico, sem cópia adicional do CSV:
+Fonte canônica lida preferencialmente em seu local original no repositório local:
 
 `2_INTI/xdata/chap1/processed/harmonizacao/painel_notebook/paineis/painel_tese_chap1_pt.csv`
+
+Para ambientes em nuvem ou de deploy (como Streamlit Community Cloud) nos quais a pasta `2_INTI/xdata/` é omitida pelo `.gitignore`, o carregador recorre automaticamente à cópia idêntica em `data/` (`painel_tese_chap1_pt.csv` e `municipios_referencia.json`), preservando a rastreabilidade e integridade via SHA-256.
 
 Snapshot validado: 3.384 pares, 141 municípios, 2001–2024, 296 colunas de origem. A interface acrescenta apenas nome municipal, bioma dominante e indicador de empate. As chaves são código IBGE textual de sete dígitos e ano inteiro; os arquivos não são regravados.
 

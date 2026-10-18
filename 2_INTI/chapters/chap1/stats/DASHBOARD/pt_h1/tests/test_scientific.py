@@ -198,3 +198,17 @@ def test_fingerprint_invalidates_model(filters):
     a = fingerprint(filters, {'y': 'a', 'xs': ['b']}, 'v1')
     assert a != fingerprint(filters, {'y': 'a', 'xs': ['b']}, 'v2')
     assert a != fingerprint(dict(filters, years=[2002, 2008]), {'y': 'a', 'xs': ['b']}, 'v1')
+
+
+def test_data_path_resolution_and_fallback():
+    from h1lab.data import _resolve_data_path, load_data, APP
+    fallback_csv = APP / 'data/painel_tese_chap1_pt.csv'
+    fallback_mun = APP / 'data/municipios_referencia.json'
+    assert fallback_csv.is_file()
+    assert fallback_mun.is_file()
+    resolved = _resolve_data_path('non_existent/path.csv', 'data/painel_tese_chap1_pt.csv')
+    assert resolved == fallback_csv
+    df_fb, cat_fb, meta_fb = load_data(csv=fallback_csv)
+    assert len(df_fb) == 3384
+    assert meta_fb['csv_sha256'] == '5c17831beb0052639461d176dc4d311fdf5e58c3a072ef79638cc7307cde4dde'
+
