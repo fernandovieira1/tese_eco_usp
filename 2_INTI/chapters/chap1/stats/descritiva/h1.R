@@ -16,7 +16,6 @@ view(h1)
 # Carne
 # Terra
 
-
 ## PRODUTIVIDADE
 # Rendimento médio
 # Soja
