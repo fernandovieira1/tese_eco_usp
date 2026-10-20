@@ -260,11 +260,18 @@ def _load_municipality_names(csv_path: Path) -> Dict[int, str]:
     return {}
 
 
-@st.cache_data(show_spinner=False)
 def load_raw_panel(csv_path: Optional[str | Path] = None) -> pd.DataFrame:
     """Carrega o painel municipal 2001-2024 (N=3.384, 141 municípios, 296 colunas originais)
     e adiciona a coluna categórica `bioma_dominante` e rótulos municipais."""
     resolved_path = resolve_csv_path(csv_path)
+    stat = resolved_path.stat()
+    return _load_raw_panel_cached(str(resolved_path), stat.st_mtime_ns, stat.st_size)
+
+
+@st.cache_data(show_spinner=False)
+def _load_raw_panel_cached(csv_path: str, mtime_ns: int, size: int) -> pd.DataFrame:
+    """Data e tamanho do arquivo invalidam o cache quando o CSV muda."""
+    resolved_path = Path(csv_path)
     df = pd.read_csv(resolved_path, low_memory=False)
 
     # Garantir ordenação canônica de painel
