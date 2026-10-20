@@ -1,0 +1,73 @@
+ano,variavel,preco,produto,ano_preco,unidade,indice
+2001,preco_real_usd2024_media_anual_lag1__carne_bovina,3.509074997411553,Carne bovina,2000,USD de 2024/kg,100
+2002,preco_real_usd2024_media_anual_lag1__carne_bovina,3.729840366942598,Carne bovina,2001,USD de 2024/kg,106.29126962786178
+2003,preco_real_usd2024_media_anual_lag1__carne_bovina,3.679693669261372,Carne bovina,2002,USD de 2024/kg,104.86221217772987
+2004,preco_real_usd2024_media_anual_lag1__carne_bovina,3.626947421298005,Carne bovina,2003,USD de 2024/kg,103.35907394323004
+2005,preco_real_usd2024_media_anual_lag1__carne_bovina,4.436532024118606,Carne bovina,2004,USD de 2024/kg,126.43024236846423
+2006,preco_real_usd2024_media_anual_lag1__carne_bovina,4.391178753653211,Carne bovina,2005,USD de 2024/kg,125.13778579518352
+2007,preco_real_usd2024_media_anual_lag1__carne_bovina,4.123837941574095,Carne bovina,2006,USD de 2024/kg,117.51923069800498
+2008,preco_real_usd2024_media_anual_lag1__carne_bovina,4.076496049419778,Carne bovina,2007,USD de 2024/kg,116.17010330149056
+2009,preco_real_usd2024_media_anual_lag1__carne_bovina,4.706391492455499,Carne bovina,2008,USD de 2024/kg,134.12057296943323
+2010,preco_real_usd2024_media_anual_lag1__carne_bovina,3.989741547496856,Carne bovina,2009,USD de 2024/kg,113.69781353889168
+2011,preco_real_usd2024_media_anual_lag1__carne_bovina,4.9168147206745205,Carne bovina,2010,USD de 2024/kg,140.11711702660608
+2012,preco_real_usd2024_media_anual_lag1__carne_bovina,5.6875696668099645,Carne bovina,2011,USD de 2024/kg,162.081735813722
+2013,preco_real_usd2024_media_anual_lag1__carne_bovina,5.746900955869225,Carne bovina,2012,USD de 2024/kg,163.77253151067987
+2014,preco_real_usd2024_media_anual_lag1__carne_bovina,5.5598331498290685,Carne bovina,2013,USD de 2024/kg,158.4415594973104
+2015,preco_real_usd2024_media_anual_lag1__carne_bovina,6.68760499382256,Carne bovina,2014,USD de 2024/kg,190.58028109275605
+2016,preco_real_usd2024_media_anual_lag1__carne_bovina,6.037996123120933,Carne bovina,2015,USD de 2024/kg,172.06802726002786
+2017,preco_real_usd2024_media_anual_lag1__carne_bovina,5.306452485170237,Carne bovina,2016,USD de 2024/kg,151.22083423935106
+2018,preco_real_usd2024_media_anual_lag1__carne_bovina,5.613842194966167,Carne bovina,2017,USD de 2024/kg,159.98068434294456
+2019,preco_real_usd2024_media_anual_lag1__carne_bovina,5.241601346277378,Carne bovina,2018,USD de 2024/kg,149.3727364089913
+2020,preco_real_usd2024_media_anual_lag1__carne_bovina,5.84328533929848,Carne bovina,2019,USD de 2024/kg,166.51924919270013
+2021,preco_real_usd2024_media_anual_lag1__carne_bovina,5.658309547516886,Carne bovina,2020,USD de 2024/kg,161.24789443630308
+2022,preco_real_usd2024_media_anual_lag1__carne_bovina,6.177470723010001,Carne bovina,2021,USD de 2024/kg,176.04271004657278
+2023,preco_real_usd2024_media_anual_lag1__carne_bovina,6.031443135333356,Carne bovina,2022,USD de 2024/kg,171.88128323795908
+2024,preco_real_usd2024_media_anual_lag1__carne_bovina,5.046292601357103,Carne bovina,2023,USD de 2024/kg,143.80691792222933
+2001,preco_real_usd2024_media_anual_lag1__milho,161.38268829087957,Milho,2000,USD de 2024/t,100
+2002,preco_real_usd2024_media_anual_lag1__milho,158.84662880447743,Milho,2001,USD de 2024/t,98.42854304060725
+2003,preco_real_usd2024_media_anual_lag1__milho,173.03339457121365,Milho,2002,USD de 2024/t,107.21930363394034
+2004,preco_real_usd2024_media_anual_lag1__milho,179.7087389610981,Milho,2003,USD de 2024/t,111.35564840584838
+2005,preco_real_usd2024_media_anual_lag1__milho,185.81762823210823,Milho,2004,USD de 2024/t,115.14099201098112
+2006,preco_real_usd2024_media_anual_lag1__milho,158.49821511243775,Milho,2005,USD de 2024/t,98.21265018634293
+2007,preco_real_usd2024_media_anual_lag1__milho,189.5597761542431,Milho,2006,USD de 2024/t,117.45979581934871
+2008,preco_real_usd2024_media_anual_lag1__milho,247.6476245754344,Milho,2007,USD de 2024/t,153.45364933385488
+2009,preco_real_usd2024_media_anual_lag1__milho,324.581901956786,Milho,2008,USD de 2024/t,201.12560113743595
+2010,preco_real_usd2024_media_anual_lag1__milho,242.0594307494864,Milho,2009,USD de 2024/t,149.9909521355806
+2011,preco_real_usd2024_media_anual_lag1__milho,267.33665692281807,Milho,2010,USD de 2024/t,165.65386272470863
+2012,preco_real_usd2024_media_anual_lag1__milho,406.733837123328,Milho,2011,USD de 2024/t,252.0306492789501
+2013,preco_real_usd2024_media_anual_lag1__milho,407.619923577156,Milho,2012,USD de 2024/t,252.5797084520325
+2014,preco_real_usd2024_media_anual_lag1__milho,349.38396780645206,Milho,2013,USD de 2024/t,216.49408093680717
+2015,preco_real_usd2024_media_anual_lag1__milho,255.6098859409232,Milho,2014,USD de 2024/t,158.38742596740397
+2016,preco_real_usd2024_media_anual_lag1__milho,224.68585736245032,Milho,2015,USD de 2024/t,139.22550165819013
+2017,preco_real_usd2024_media_anual_lag1__milho,208.0587720582811,Milho,2016,USD de 2024/t,128.92260890044884
+2018,preco_real_usd2024_media_anual_lag1__milho,197.8006093787737,Milho,2017,USD de 2024/t,122.5661881541183
+2019,preco_real_usd2024_media_anual_lag1__milho,205.41606258287504,Milho,2018,USD de 2024/t,127.28506679268398
+2020,preco_real_usd2024_media_anual_lag1__milho,208.67272997116729,Milho,2019,USD de 2024/t,129.30304494311753
+2021,preco_real_usd2024_media_anual_lag1__milho,200.47404012611565,Milho,2020,USD de 2024/t,124.22276654902228
+2022,preco_real_usd2024_media_anual_lag1__milho,300.51845101214445,Milho,2021,USD de 2024/t,186.21480048125338
+2023,preco_real_usd2024_media_anual_lag1__milho,341.6679098377099,Milho,2022,USD de 2024/t,211.71286304382315
+2024,preco_real_usd2024_media_anual_lag1__milho,260.4298876830422,Milho,2023,USD de 2024/t,161.37411666710983
+2001,preco_real_usd2024_media_anual_lag1__soja,385.9825325631709,Soja,2000,USD de 2024/t,100
+2002,preco_real_usd2024_media_anual_lag1__soja,346.97109828244106,Soja,2001,USD de 2024/t,89.89295343971425
+2003,preco_real_usd2024_media_anual_lag1__soja,370.66600877398105,Soja,2002,USD de 2024/t,96.03180908538053
+2004,preco_real_usd2024_media_anual_lag1__soja,450.0621965841008,Soja,2003,USD de 2024/t,116.60170049546022
+2005,preco_real_usd2024_media_anual_lag1__soja,509.7247494267696,Soja,2004,USD de 2024/t,132.05901988410494
+2006,preco_real_usd2024_media_anual_lag1__soja,441.4784785466747,Soja,2005,USD de 2024/t,114.37783871072486
+2007,preco_real_usd2024_media_anual_lag1__soja,418.0461503384447,Soja,2006,USD de 2024/t,108.30701264182886
+2008,preco_real_usd2024_media_anual_lag1__soja,578.8582910843265,Soja,2007,USD de 2024/t,149.97007435552518
+2009,preco_real_usd2024_media_anual_lag1__soja,759.3790882257777,Soja,2008,USD de 2024/t,196.73923666519696
+2010,preco_real_usd2024_media_anual_lag1__soja,619.2016990878104,Soja,2009,USD de 2024/t,160.42220744444447
+2011,preco_real_usd2024_media_anual_lag1__soja,643.1348338788067,Soja,2010,USD de 2024/t,166.6227820227978
+2012,preco_real_usd2024_media_anual_lag1__soja,749.9533197243367,Soja,2011,USD de 2024/t,194.29721721969307
+2013,preco_real_usd2024_media_anual_lag1__soja,813.2113562491435,Soja,2012,USD de 2024/t,210.68605121814707
+2014,preco_real_usd2024_media_anual_lag1__soja,742.6434039410723,Soja,2013,USD de 2024/t,192.40337095294058
+2015,preco_real_usd2024_media_anual_lag1__soja,642.6787737232222,Soja,2014,USD de 2024/t,166.5046263765938
+2016,preco_real_usd2024_media_anual_lag1__soja,519.0587408270309,Soja,2015,USD de 2024/t,134.47726180253517
+2017,preco_real_usd2024_media_anual_lag1__soja,529.8669401332623,Soja,2016,USD de 2024/t,137.27744015114024
+2018,preco_real_usd2024_media_anual_lag1__soja,503.6047652963961,Soja,2017,USD de 2024/t,130.4734600169957
+2019,preco_real_usd2024_media_anual_lag1__soja,492.8342764919959,Soja,2018,USD de 2024/t,127.68305167056683
+2020,preco_real_usd2024_media_anual_lag1__soja,452.9065630837442,Soja,2019,USD de 2024/t,117.3386163555524
+2021,preco_real_usd2024_media_anual_lag1__soja,492.64496044275694,Soja,2020,USD de 2024/t,127.63400384242243
+2022,preco_real_usd2024_media_anual_lag1__soja,675.8348437140944,Soja,2021,USD de 2024/t,175.09467053498997
+2023,preco_real_usd2024_media_anual_lag1__soja,724.1734620380961,Soja,2022,USD de 2024/t,187.6181953699099
+2024,preco_real_usd2024_media_anual_lag1__soja,615.8341145506107,Soja,2023,USD de 2024/t,159.5497367357736
