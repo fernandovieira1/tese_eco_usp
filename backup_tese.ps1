@@ -2,7 +2,7 @@
 .SYNOPSIS
     Backup da tese: snapshot Restic (D: e PORTATIL), Git bundle e espelho Robocopy (PORTATIL).
 .DESCRIPTION
-    Por padrao, cria snapshot Restic no destino permanente (D:, obrigatorio). Se o volume
+    Por padrao, cria snapshot Restic incluindo .git no destino permanente (D:, obrigatorio). Se o volume
     PORTATIL estiver conectado, tambem atualiza o Git bundle, o espelho Robocopy e o
     snapshot Restic no PORTATIL. A cada $CheckIntervalDays dias (ou com -Check), executa
     "restic check --read-data-subset" em cada repositorio que recebeu o snapshot.
@@ -39,7 +39,7 @@ $CheckIntervalDays = 30
 $CheckReadDataSubset = "10%"
 $CheckStateDir = "$env:USERPROFILE\.restic"
 
-# Lista unica de exclusoes: usada pelo Robocopy (/XD e /XF) e pelo Restic (--exclude-file)
+# Exclusoes comuns; .git e excluido apenas do espelho Robocopy.
 $ExcludedDirs = @(
     ".git",
     ".venv",
@@ -491,7 +491,8 @@ if ($RunSnapshot) {
 
     $ResticExcludeFile = Join-Path $env:TEMP "restic_excludes_tese_$timestamp.txt"
     # ASCII: evita BOM; todos os padroes sao ASCII.
-    ($ExcludedDirs + $ExcludedFiles) | Set-Content -LiteralPath $ResticExcludeFile -Encoding ASCII
+    # Preserva o historico Git no snapshot mesmo sem o volume PORTATIL.
+    ($ExcludedDirs + $ExcludedFiles | Where-Object { $_ -ne ".git" }) | Set-Content -LiteralPath $ResticExcludeFile -Encoding ASCII
 
     try {
         foreach ($target in $backupTargets) {
