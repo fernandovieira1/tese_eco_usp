@@ -124,6 +124,20 @@ A adequação científica das fontes pertence à etapa de crítica; esta etapa t
 
 ---
 
+## 7.1. Tempos verbais na revisão da literatura
+
+Na revisão da literatura, adotar a seguinte convenção:
+
+- **Passado para procedimentos e resultados dos estudos revisados:** "os autores analisaram", "estimaram", "encontraram", "identificaram". Ajustar a concordância temporal das orações associadas quando necessário.
+- **Presente para conceitos, conteúdo teórico e interpretação das evidências:** "North distingue instituições de organizações"; "esses resultados sugerem". O presente também cabe ao descrever a função de materiais consultáveis, como mapas e modelos.
+- **Presente para o propósito e o argumento do próprio trabalho:** "este artigo busca compreender"; "a hipótese pressupõe".
+
+Escolher o tempo verbal pela função da passagem. Não converter mecanicamente todos os verbos ligados a citações para o passado nem reservar o presente exclusivamente ao próprio artigo. Uma proposição geral pode permanecer no presente mesmo quando o procedimento que a sustentou é relatado no passado. Preservar o alcance temporal, o significado científico e o grau de certeza da afirmação.
+
+Exemplo de encadeamento: "Os autores identificaram respostas distintas da conversão aos preços. Esses resultados sugerem que as condições locais importam para interpretar essa relação."
+
+---
+
 ## 8. LaTeX
 
 Preservar comandos LaTeX, incluindo:

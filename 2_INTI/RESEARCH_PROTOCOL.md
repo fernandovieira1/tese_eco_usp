@@ -253,6 +253,8 @@ Se uma melhoria textual exigir mudança substantiva do argumento, indique-a sepa
 
 Consulte e siga `2_INTI/STYLE_GUIDE.md`.
 
+Na revisão da literatura, aplicar também a convenção de tempos verbais da seção 7.1 do guia de estilo: passado para procedimentos e resultados dos estudos revisados; presente para conceitos, interpretações e argumentação do próprio trabalho, conforme a função da passagem.
+
 ### Princípio de intervenção mínima
 
 Entre duas versões igualmente adequadas, prefira aquela que preserve mais do texto original.
