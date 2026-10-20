@@ -1,6 +1,6 @@
 {
   "notebook": "2_INTI/chapters/chap1/stats/EDA/aed_chap1_pt_ANALISE.ipynb",
-  "code_sha256": "0457b5118a2302aae90603a3cfccc57c0a5d7cad9203acee5246723c59caebc3",
+  "code_sha256": "ddaea8ab0e25afb04b1d1bfbb11c4b2d98ebcf5b853b5e3b28ee7a2eedc03328",
   "selected_dataframes": {
     "a_Y_conv": [
       "codigo_ibge",
