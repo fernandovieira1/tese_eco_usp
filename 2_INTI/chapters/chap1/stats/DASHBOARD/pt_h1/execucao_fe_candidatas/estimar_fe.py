@@ -29,6 +29,7 @@ def absorbed_by(sample,term,key):
     residual=x-sample.groupby(key)[term].transform('mean').to_numpy(float)
     return np.linalg.norm(residual)<=1e-10*max(np.linalg.norm(x),np.finfo(float).tiny)
 def run():
+    code={str(p.relative_to(ROOT)):sha256(p) for p in [Path(__file__).resolve(),APP/'app.py',*sorted((APP/'h1lab').glob('*.py'))]}
     source=json.loads((HERE/'candidatas_origem.json').read_text(encoding='utf-8'))
     assert sha256(APP/'RESULTADOS_DASH_H1.xlsx')==source['sha256']
     assert subprocess.check_output(['git','branch','--show-current'],cwd=ROOT,text=True).strip()=='main'
@@ -45,8 +46,16 @@ def run():
         planned.append({'id':mid,'original_spec':spec,'original_sample':row['ID amostra SHA256'],
              'models':['Pooled original','Pooled termos identificáveis','TWFE município + ano'],
              'rule':'Construir amostra da especificação original; projetar cada X e interação contra intercepto/dummies municipais/anuais. Retirar apenas termos individualmente absorvidos a tolerância relativa 1e-10. Nenhuma seleção por valor-p. Interações construídas antes da retirada dos componentes absorvidos.'})
-    if not (HERE/'plano_fe.json').exists():save('plano_fe.json',{'created':source['created'],'source_sha256':source['sha256'],'models':planned})
-    else:assert json.loads((HERE/'plano_fe.json').read_text(encoding='utf-8'))['models']==planned
+    plan_path=HERE/'plano_fe.json'
+    if plan_path.exists():
+        previous=json.loads(plan_path.read_text(encoding='utf-8'))
+        if previous.get('code_hashes')!=code:
+            raise RuntimeError('Código mudou ou não foi registrado; use diretório de execução novo.')
+        assert previous['models']==planned
+    else:
+        if any(HERE.glob('M[0-9][0-9][0-9]_fe.json')):
+            raise RuntimeError('Resultados sem plano de origem; use diretório de execução novo.')
+        save(plan_path.name,{'created':source['created'],'source_sha256':source['sha256'],'models':planned,'code_hashes':code})
     results=[];failures=[]
     for p in planned:
         mid=p['id']; target=HERE/(mid+'_fe.json')
@@ -123,7 +132,7 @@ def run():
        'python':sys.version,'python_executable':sys.executable,'numpy':np.__version__,'pandas':pd.__version__,'statsmodels':statsmodels.__version__,
        'git_head':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
        'branch':'main','valid_candidates':len(results),'fits':len(results)*3,'failures':len(failures),
-       'code_hashes':{str(p.relative_to(ROOT)):sha256(p) for p in [APP/'h1lab/models.py',APP/'h1lab/data.py',APP/'app.py']}}
+       'code_hashes':code}
     save('metadata_fe.json',metadata)
     assert len(results)==12 and not failures
     print('12 candidatas TWFE + 24 pooled de comparação; sem falhas.',flush=True)

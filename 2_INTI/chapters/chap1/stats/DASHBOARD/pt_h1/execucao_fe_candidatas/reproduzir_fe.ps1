@@ -15,8 +15,11 @@ if (-not (Test-Path -LiteralPath $moduleDirectory)) {
 }
 Push-Location $appDirectory
 try {
-    & $pythonRuntime -X utf8 (Join-Path $PSScriptRoot 'extrair_candidatas.py')
-    if ($LASTEXITCODE -ne 0) { throw 'Falha ao ler candidatas do Excel anterior.' }
+    # Preserva a selecao de origem; o estimador confere o SHA256 da planilha.
+    if (-not (Test-Path -LiteralPath (Join-Path $PSScriptRoot 'candidatas_origem.json') -PathType Leaf)) {
+        & $pythonRuntime -X utf8 (Join-Path $PSScriptRoot 'extrair_candidatas.py')
+        if ($LASTEXITCODE -ne 0) { throw 'Falha ao ler candidatas do Excel anterior.' }
+    }
     foreach ($scriptName in @('estimar_fe.py','preparar_excel_fe.py')) {
         & $pythonProject -X utf8 (Join-Path $PSScriptRoot $scriptName)
         if ($LASTEXITCODE -ne 0) { throw "Falha em $scriptName" }

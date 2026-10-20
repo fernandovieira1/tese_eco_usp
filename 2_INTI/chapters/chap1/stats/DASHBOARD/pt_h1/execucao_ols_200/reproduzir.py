@@ -112,14 +112,20 @@ def sample_id(sample):
 
 def run():
     full,cat,meta=load_data()
+    code={str(p.relative_to(ROOT)):sha256(p) for p in [Path(__file__).resolve(),APP/'app.py',*sorted((APP/'h1lab').glob('*.py'))]}
     planned=plan()
     planned_path=HERE/'plano_pre_estimacao.json'
-    initial={'created':stamp(),'filters':FILTERS,'source':meta,'models':planned}
+    initial={'created':stamp(),'filters':FILTERS,'source':meta,'models':planned,'code_hashes':code}
     if planned_path.exists():
         old=json.loads(planned_path.read_text(encoding='utf-8'))
+        if old.get('code_hashes')!=code:
+            raise RuntimeError('Código mudou ou não foi registrado; use diretório de execução novo.')
         assert old['models']==planned and old['source']['csv_sha256']==meta['csv_sha256'], 'Plano/fonte mudou; use diretório de execução novo.'
         initial=old
-    else: dump(planned_path,initial)
+    else:
+        if any(HERE.glob('M[0-9][0-9][0-9].json')):
+            raise RuntimeError('Resultados sem plano de origem; use diretório de execução novo.')
+        dump(planned_path,initial)
     # No regressions have been examined before this persisted plan.
     results=[]; failures=[]
     for i,p in enumerate(planned,1):
@@ -182,7 +188,7 @@ def run():
     metadata={'started':initial['created'],'finished':stamp(),'meta':meta,'git_head':version,
       'git_branch':subprocess.check_output(['git','branch','--show-current'],cwd=ROOT,text=True).strip(),
       'python':sys.version,'python_executable':sys.executable,'numpy':np.__version__,'pandas':pd.__version__,'statsmodels':statsmodels.__version__,
-      'code_hashes':{str(p.relative_to(ROOT)):sha256(p) for p in [APP/'app.py',APP/'h1lab/data.py',APP/'h1lab/models.py',APP/'h1lab/model_view.py']},
+      'code_hashes':code,
       'ratio_checks':ratio_checks,'valid':len(results),'failed':len(failures)}
     assert metadata['git_branch']=='main'
     dump(HERE/'metadata.json',metadata)
