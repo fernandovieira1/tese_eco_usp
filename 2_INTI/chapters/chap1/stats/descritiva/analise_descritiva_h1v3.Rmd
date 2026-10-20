@@ -1,0 +1,978 @@
+---
+title: "H1 — Análise descritiva da conversão de vegetação nativa"
+subtitle: "Roteiro comentado: dados, cobertura, conversão, preços e autuações"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+    code_folding: show
+    self_contained: true
+    theme: readable
+lang: pt-BR
+---
+
+Este roteiro segue a organização didática de `aula05.Rmd`: primeiro explicamos
+qual pergunta queremos responder; depois preparamos os dados e examinamos os
+resultados. O conteúdo continua sendo a análise descritiva de H1 do código
+fornecido. Não estimamos diferenças em diferenças ou controle sintético.
+
+Queremos descrever a conversão da vegetação nativa para agricultura e pastagem,
+os preços dos produtos agropecuários, a capacidade produtiva e as autuações
+ambientais. As comparações territoriais usam a maior fração de bioma em cada
+município. Elas não isolam a conversão ocorrida dentro dos polígonos de cada bioma.
+
+**Antes de executar:** mantenha as bases na estrutura original do projeto e
+execute os blocos em ordem. O roteiro procura a pasta `2_INTI` a partir do
+arquivo ou do diretório de trabalho. Se necessário, informe `raiz_projeto`
+no bloco de configuração. A exportação começa desativada. O botão **Knit**
+gera o HTML; as tabelas, figuras e bases adicionais só são gravadas quando
+`exportar <- TRUE`.
+
+# Preparar a sessão
+
+Carregamos apenas os pacotes usados nesta análise. Se algum estiver ausente,
+o roteiro informa o comando de instalação e interrompe a execução. Não é
+necessário instalar os pacotes de avaliação causal usados na aula.
+
+```{r pacotes}
+pacotes <- c("arrow", "dplyr", "tidyr", "ggplot2", "readr", "jsonlite", "knitr")
+faltantes <- pacotes[!vapply(pacotes, requireNamespace, logical(1), quietly = TRUE)]
+
+if (length(faltantes) > 0) {
+  comando <- paste0('install.packages(c("', paste(faltantes, collapse = '", "'), '"))')
+  stop("Instale os pacotes ausentes e execute novamente:\n", comando, call. = FALSE)
+}
+
+library(arrow)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(readr)
+library(jsonlite)
+library(knitr)
+
+# O pipe |> requer R 4.1 ou posterior; linewidth requer ggplot2 3.4 ou posterior.
+if (getRversion() < "4.1.0" || packageVersion("ggplot2") < "3.4.0") {
+  stop("Use R >= 4.1 e ggplot2 >= 3.4.", call. = FALSE)
+}
+
+options(scipen = 6)
+knitr::opts_chunk$set(
+  echo = TRUE, message = FALSE, warning = TRUE,
+  fig.width = 8, fig.height = 4.5, fig.align = "center"
+)
+```
+
+## Escolher os caminhos e as opções
+
+Em geral, basta executar este bloco. Caso o projeto não seja localizado,
+preencha `raiz_projeto` com o caminho da pasta que contém `2_INTI`. No Windows,
+use barras `/`, por exemplo: `C:/Users/ferna/Documents/dev/Tese USP/tese_eco_usp`.
+A configuração de idioma do sistema não precisa ser alterada.
+
+```{r configuracao}
+raiz_projeto <- ""       # Vazio: localizar a raiz automaticamente.
+exportar <- FALSE        # TRUE: salvar tabelas, figuras, dados e conferências.
+abrir_tabelas <- FALSE   # TRUE: abrir as tabelas no visualizador do RStudio/VS Code.
+linhas_previa <- 12L     # Altera apenas a exibição, nunca os cálculos.
+anos_esperados <- 2001:2024
+municipios_esperados <- 141L
+
+localizar_projeto <- function() {
+  candidatos <- getwd()
+  arquivo_rmd <- knitr::current_input(dir = TRUE)
+  if (length(arquivo_rmd) == 1 && nzchar(arquivo_rmd)) {
+    candidatos <- c(candidatos, dirname(arquivo_rmd))
+  }
+  argumento <- grep("^--file=", commandArgs(), value = TRUE)
+  if (length(argumento) > 0) {
+    candidatos <- c(candidatos, dirname(sub("^--file=", "", argumento[1])))
+  }
+  # Permite também source("caminho/arquivo.R") a partir de outra pasta.
+  for (quadro in sys.frames()) {
+    if (!is.null(quadro$ofile)) candidatos <- c(candidatos, dirname(quadro$ofile))
+  }
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    arquivo_editor <- tryCatch(rstudioapi::getSourceEditorContext()$path,
+                              error = function(e) "")
+    if (nzchar(arquivo_editor)) candidatos <- c(candidatos, dirname(arquivo_editor))
+  }
+  for (inicio in unique(candidatos)) {
+    atual <- normalizePath(inicio, winslash = "/", mustWork = FALSE)
+    repeat {
+      if (dir.exists(file.path(atual, "2_INTI"))) return(atual)
+      acima <- dirname(atual)
+      if (identical(acima, atual)) break
+      atual <- acima
+    }
+  }
+  stop("Preencha raiz_projeto com a pasta que contém 2_INTI.", call. = FALSE)
+}
+
+if (!nzchar(raiz_projeto)) raiz_projeto <- localizar_projeto()
+raiz_projeto <- normalizePath(raiz_projeto, winslash = "/", mustWork = TRUE)
+
+pasta_base <- file.path(raiz_projeto, "2_INTI/chapters/chap1/stats/descritiva")
+pasta_saida <- file.path(pasta_base, "resultados_h1_humanizado")
+pasta_auditoria <- file.path(pasta_saida, "auditoria")
+
+# Aceita os nomes sem extensão do original e as versões com extensão .parquet.
+arquivo_parquet <- function(nome) {
+  alternativas <- file.path(pasta_base, c(nome, paste0(nome, ".parquet")))
+  encontrados <- alternativas[file.exists(alternativas)]
+  if (length(encontrados) != 1) {
+    stop("É necessário exatamente um arquivo para ", nome, ":\n",
+         paste(alternativas, collapse = "\n"), call. = FALSE)
+  }
+  encontrados
+}
+
+caminhos <- c(
+  dados = arquivo_parquet("df_h1"),
+  proveniencia = arquivo_parquet("df_h1_proveniencia"),
+  painel = file.path(raiz_projeto,
+    "2_INTI/chapters/chap1/stats/EDA/paineis/painel_tese_chap1_pt.csv"),
+  canonico = file.path(raiz_projeto,
+    "2_INTI/xdata/chap1/processed/harmonizacao/painel_notebook/paineis/painel_tese_chap1_pt.csv"),
+  dicionario = file.path(raiz_projeto,
+    "2_INTI/xdata/chap1/processed/harmonizacao/painel_notebook/dicionario_painel.csv"),
+  municipios = file.path(raiz_projeto,
+    "2_INTI/xdata/chap1/processed/territorio_141/municipios_referencia.json")
+)
+
+ausentes <- caminhos[!file.exists(caminhos)]
+if (length(ausentes) > 0) {
+  stop("Arquivos não encontrados:\n", paste(ausentes, collapse = "\n"), call. = FALSE)
+}
+
+if (exportar) {
+  for (pasta in c(pasta_saida, pasta_auditoria,
+                  file.path(pasta_saida, c("dados", "figuras", "tabelas")))) {
+    dir.create(pasta, recursive = TRUE, showWarnings = FALSE)
+  }
+}
+
+cat("Projeto:", raiz_projeto, "\nExportar:", exportar, "\n")
+```
+
+## Pequenas funções de apoio
+
+Estas funções cuidam da exibição, das conferências e da exportação. Os cálculos
+substantivos aparecem nos blocos seguintes. Se uma condição necessária falhar,
+interrompemos a análise e mostramos o motivo.
+
+```{r apoio}
+registro_verificacoes <- character()
+tabelas <- list()
+diagnosticos <- list()
+
+conferir <- function(condicao, descricao) {
+  if (!isTRUE(condicao)) stop(descricao, call. = FALSE)
+  registro_verificacoes <<- c(registro_verificacoes, paste("OK:", descricao))
+  message("OK: ", descricao)
+}
+
+exigir_colunas <- function(dados, colunas, nome_base) {
+  faltam <- setdiff(colunas, names(dados))
+  if (length(faltam) > 0) {
+    stop(nome_base, ": faltam as colunas ", paste(faltam, collapse = ", "), call. = FALSE)
+  }
+}
+
+mostrar_tabela <- function(tabela, nome, diagnostico = FALSE) {
+  if (diagnostico) {
+    diagnosticos[[nome]] <<- tabela
+  } else {
+    tabelas[[nome]] <<- tabela
+  }
+  cat("\n", nome, ": ", nrow(tabela), " linhas e ", ncol(tabela), " colunas.\n", sep = "")
+  print(as_tibble(tabela), n = linhas_previa, width = 110)
+  if (abrir_tabelas && interactive()) View(as.data.frame(tabela), title = nome)
+  if (exportar) {
+    destino <- if (diagnostico) pasta_auditoria else file.path(pasta_saida, "dados")
+    write_csv(tabela, file.path(destino, paste0(nome, ".csv")), na = "")
+  }
+  invisible(tabela)
+}
+
+# Um grupo sem valores observados recebe NA, não zero, NaN ou infinito.
+resumir_valores <- function(x) {
+  x <- x[!is.na(x)]
+  if (length(x) == 0) {
+    return(tibble(n_validos = 0L, media = NA_real_, mediana = NA_real_,
+                  p25 = NA_real_, p75 = NA_real_, minimo = NA_real_, maximo = NA_real_))
+  }
+  tibble(n_validos = length(x), media = mean(x), mediana = median(x),
+         p25 = unname(quantile(x, 0.25)), p75 = unname(quantile(x, 0.75)),
+         minimo = min(x), maximo = max(x))
+}
+
+salvar_grafico <- function(grafico, nome, altura = 4.5) {
+  if (exportar) {
+    ggsave(file.path(pasta_saida, "figuras", paste0(nome, ".png")),
+           grafico, width = 8, height = altura, dpi = 320, bg = "white")
+    ggsave(file.path(pasta_saida, "figuras", paste0(nome, ".pdf")),
+           grafico, width = 8, height = altura, device = grDevices::pdf,
+           useDingbats = FALSE, encoding = "ISOLatin1.enc")
+  }
+  invisible(grafico)
+}
+
+cores_biomas <- c("Amazônia" = "#0072B2", "Cerrado" = "#D55E00", "Pantanal" = "#009E73")
+rotulo_numero <- function(x) format(x, decimal.mark = ",", trim = TRUE)
+theme_set(theme_bw(base_size = 11) +
+  theme(panel.grid.minor = element_blank(), legend.position = "bottom",
+        legend.title = element_blank(), strip.background = element_rect(fill = "grey95")))
+```
+
+# Ler os dados e recuperar os identificadores
+
+A base `df_h1` do roteiro original foi exportada sem as chaves do índice. Antes
+de recuperar município e ano, precisamos demonstrar que suas linhas coincidem
+com as do painel identificado. Apenas ter o mesmo número de linhas não basta.
+Conferimos tanto os valores quanto a posição das ausências de cada coluna.
+
+```{r leitura}
+hashes_iniciais <- tools::md5sum(caminhos)
+dados_brutos <- as_tibble(read_parquet(caminhos[["dados"]]))
+proveniencia <- as_tibble(read_parquet(caminhos[["proveniencia"]]))
+
+painel_origem <- read_csv(
+  caminhos[["painel"]], col_types = cols(codigo_ibge = col_character()),
+  show_col_types = FALSE, progress = FALSE
+) |> arrange(codigo_ibge, ano)
+
+painel_canonico <- read_csv(
+  caminhos[["canonico"]], col_types = cols(codigo_ibge = col_character()),
+  show_col_types = FALSE, progress = FALSE
+) |> arrange(codigo_ibge, ano)
+
+conferir(nrow(problems(painel_origem)) == 0 && nrow(problems(painel_canonico)) == 0,
+         "Leitura dos painéis CSV sem problemas de conversão de tipos.")
+conferir(isTRUE(all.equal(painel_origem, painel_canonico,
+                         check.attributes = FALSE, tolerance = 1e-12)),
+         "Cópia EDA e painel canônico coincidem após ordenar pelas chaves.")
+conferir(nrow(dados_brutos) == nrow(painel_origem), "As bases têm o mesmo número de linhas.")
+exigir_colunas(painel_origem, names(dados_brutos), "Painel de origem")
+
+reconciliacao <- bind_rows(lapply(names(dados_brutos), function(nome) {
+  original <- dados_brutos[[nome]]
+  referencia <- painel_origem[[nome]]
+  if (is.logical(original)) {
+    conferir(all(is.na(referencia) | referencia %in% c(0, 1, FALSE, TRUE, "FALSE", "TRUE")),
+             paste("Codificação lógica reconhecida:", nome))
+    referencia <- as.logical(referencia)
+  }
+  diferenca <- NA_real_
+  if (is.numeric(original) && is.numeric(referencia)) {
+    validos <- is.finite(original) & is.finite(referencia)
+    if (any(validos)) diferenca <- max(abs(original[validos] - referencia[validos]))
+  }
+  tibble(
+    coluna = nome,
+    ausencias_iguais = identical(is.na(original), is.na(referencia)),
+    valores_iguais = isTRUE(all.equal(original, referencia,
+                                     check.attributes = FALSE, tolerance = 1e-12)),
+    max_diferenca = diferenca
+  )
+}))
+mostrar_tabela(reconciliacao, "reconciliacao_colunas", diagnostico = TRUE)
+conferir(all(reconciliacao$ausencias_iguais & reconciliacao$valores_iguais),
+         paste(ncol(dados_brutos), "colunas reconciliadas; é possível recuperar as chaves."))
+
+chaves <- painel_origem |> select(codigo_ibge, ano)
+conferir(!anyNA(chaves), "As chaves não têm ausências.")
+conferir(!anyDuplicated(chaves), "Cada município-ano aparece uma única vez.")
+conferir(n_distinct(chaves$codigo_ibge) == municipios_esperados &&
+           setequal(unique(chaves$ano), anos_esperados),
+         "A base corresponde aos municípios e aos anos esperados.")
+conferir(all(table(chaves$codigo_ibge) == length(anos_esperados)),
+         "A grade município-ano é balanceada; isso ainda não garante dados completos.")
+
+cadastro <- as_tibble(jsonlite::fromJSON(caminhos[["municipios"]])) |>
+  mutate(codigo_ibge = as.character(codigo_ibge)) |>
+  select(codigo_ibge, municipio)
+conferir(!anyNA(cadastro$codigo_ibge) && !anyDuplicated(cadastro$codigo_ibge),
+         "O cadastro tem um registro por código municipal.")
+
+# Removemos identificadores que eventualmente já existam, evitando nomes duplicados.
+dados <- bind_cols(chaves, dados_brutos |> select(-any_of(c("codigo_ibge", "ano", "municipio")))) |>
+  left_join(cadastro, by = "codigo_ibge") |>
+  relocate(codigo_ibge, municipio, ano)
+conferir(!anyNA(dados$municipio), "Todos os municípios têm nome no cadastro.")
+glimpse(dados)
+```
+
+# Selecionar as variáveis e definir os grupos territoriais
+
+Mantemos os **15 campos analíticos** do código original: áreas e taxas de conversão,
+estoque nativo inicial, três preços, duas medidas de capacidade produtiva,
+três frações de bioma e dois campos relativos às autuações. Os nomes originais
+das colunas são preservados para permitir o vínculo com a documentação.
+
+“Bioma predominante” significa a maior fração da área municipal, sem exigir um
+limiar de 80%. Um município pode conter mais de um bioma. Não multiplicamos a
+conversão municipal pelas frações territoriais para tentar repartir o resultado.
+
+```{r variaveis}
+variaveis_area <- c("conversao_ha__agricultura", "conversao_ha__pastagem")
+variaveis_taxa <- c("taxa_conversao__agricultura", "taxa_conversao__pastagem")
+variaveis_preco <- paste0(
+  "preco_real_usd2024_media_anual_lag1__", c("soja", "milho", "carne_bovina")
+)
+variaveis_capacidade <- c(
+  "capacidade_valor__soja__gaez_yxHr0_soy", "capacidade_valor__milho__gaez_yxHr0_mze"
+)
+variaveis_bioma <- c("biome_amazonia_share_i", "biome_cerrado_share_i", "biome_pantanal_share_i")
+variavel_autos <- "n_autos_flora__ibama_espacial"
+variavel_parcial <- "flag_contagem_flora_parcial__ibama_espacial"
+nomes_biomas <- c("Amazônia", "Cerrado", "Pantanal")
+
+variaveis_selecionadas <- c(
+  variaveis_area, variaveis_taxa, "y_nativa_inicial_ha", variaveis_preco,
+  variaveis_capacidade, variaveis_bioma, variavel_autos, variavel_parcial
+)
+exigir_colunas(dados, variaveis_selecionadas, "df_h1")
+exigir_colunas(painel_origem,
+              c("y_cobertura_completa", "y_fracao_area_valida_par", "y_area_total_ha"),
+              "Painel de origem")
+conferir(length(variaveis_selecionadas) == 15L, "Selecionados os mesmos 15 campos analíticos.")
+conferir(all(vapply(dados[setdiff(variaveis_selecionadas, variavel_parcial)],
+                   is.numeric, logical(1))), "As variáveis de medida são numéricas.")
+conferir(all(vapply(dados_brutos, function(x) {
+  !is.numeric(x) || !any(is.infinite(x))
+}, logical(1))), "Não há valores infinitos na base de entrada.")
+
+fracoes <- as.matrix(dados[variaveis_bioma])
+conferir(!anyNA(fracoes) && all(fracoes >= -1e-8 & fracoes <= 1 + 1e-8),
+         "As frações de bioma estão entre zero e um, com tolerância geométrica de 1e-8.")
+conferir(all(rowSums(fracoes) > 0.99 & rowSums(fracoes) <= 1 + 1e-8),
+         "As frações não apresentam sobreposição ou lacuna territorial grande.")
+conferir(all(rowSums(fracoes == apply(fracoes, 1, max)) == 1),
+         "Não há empate na maior fração de bioma.")
+
+# Aceitamos flags lógicas ou 0/1, sem transformar outros valores em TRUE.
+para_logico <- function(x, nome) {
+  conferir(is.logical(x) || (is.numeric(x) && all(is.na(x) | x %in% c(0, 1))),
+           paste("Flag lógica ou 0/1:", nome))
+  as.logical(x)
+}
+dados[[variavel_parcial]] <- para_logico(dados[[variavel_parcial]], variavel_parcial)
+dados$y_completo <- para_logico(painel_origem$y_cobertura_completa, "y_cobertura_completa")
+conferir(!anyNA(dados$y_completo), "A flag de cobertura de Y não tem ausências.")
+
+dados <- dados |>
+  mutate(
+    bioma_predominante = factor(nomes_biomas[max.col(fracoes, ties.method = "first")], levels = nomes_biomas),
+    multibioma = rowSums(fracoes > 1e-6) > 1,
+    fracao_y = painel_origem$y_fracao_area_valida_par,
+    area_y = painel_origem$y_area_total_ha
+  )
+
+dados_h1 <- dados |>
+  select(codigo_ibge, municipio, ano, bioma_predominante, all_of(variaveis_selecionadas))
+mostrar_tabela(dados_h1, "df_h1_selecionado")
+```
+
+## Conferir áreas, taxas e denominadores
+
+A taxa usa como denominador a vegetação nativa inicial na máscara espacial
+compatível com o par de mapas. Uma conversão não observada permanece `NA`.
+O estoque preenchido em uma observação incompleta não permite reconstruir
+uma conversão ausente.
+
+```{r conferir-medidas}
+conferir(all(complete.cases(dados[variaveis_area]) == dados$y_completo),
+         "A disponibilidade conjunta das conversões coincide com a cobertura completa.")
+conferir(all(is.finite(dados$y_nativa_inicial_ha) & dados$y_nativa_inicial_ha > 0),
+         "O estoque nativo inicial é finito e positivo.")
+
+for (j in seq_along(variaveis_taxa)) {
+  area <- dados[[variaveis_area[j]]]
+  taxa <- dados[[variaveis_taxa[j]]]
+  validos <- dados$y_completo
+  conferir(identical(!is.na(area), validos) && identical(!is.na(taxa), validos),
+           paste("Área e taxa têm a máscara esperada:", variaveis_taxa[j]))
+  conferir(any(validos), "Existe ao menos uma observação válida de conversão.")
+  conferir(all(area[validos] >= 0 & taxa[validos] >= 0 & taxa[validos] <= 1),
+           paste("Área não negativa e taxa entre zero e um:", variaveis_taxa[j]))
+  conferir(max(abs(taxa[validos] - area[validos] / dados$y_nativa_inicial_ha[validos])) < 1e-12,
+           paste("Taxa = área convertida / estoque nativo inicial:", variaveis_taxa[j]))
+}
+conferir(all(rowSums(dados[variaveis_area])[dados$y_completo] <=
+               dados$y_nativa_inicial_ha[dados$y_completo] + 1e-4),
+         "A soma dos destinos não excede o estoque nativo inicial.")
+
+for (nome in c(variaveis_bioma, variaveis_capacidade)) {
+  conferir(all(tapply(dados[[nome]], dados$codigo_ibge, n_distinct) == 1),
+           paste("Variável constante em cada município:", nome))
+}
+for (nome in variaveis_preco) {
+  conferir(all(tapply(dados[[nome]], dados$ano, n_distinct) == 1),
+           paste("Preço comum aos municípios em cada ano:", nome))
+}
+```
+
+# Examinar a cobertura da amostra
+
+Uma grade com 141 territórios e 24 anos não significa que todos os resultados
+estejam observados. Comparamos a **amostra disponível em cada ano** com uma
+**amostra de municípios fixos**, observados em todos os anos. A segunda reduz
+mudanças de composição, mas não elimina possível seleção dos municípios.
+
+```{r cobertura}
+municipios_fixos <- dados |>
+  group_by(codigo_ibge) |>
+  summarise(fixo = all(y_completo), .groups = "drop")
+dados <- dados |> left_join(municipios_fixos, by = "codigo_ibge")
+municipios <- dados |> filter(ano == min(anos_esperados))
+conferir(any(municipios$fixo), "Existe ao menos um município observado em todos os anos.")
+
+cobertura_bioma <- dados |>
+  group_by(bioma_predominante, .drop = FALSE) |>
+  summarise(
+    municipios = n_distinct(codigo_ibge),
+    municipios_multibioma = n_distinct(codigo_ibge[multibioma]),
+    n_grade = n(), n_y = sum(y_completo),
+    pct_y = if (n() > 0) 100 * mean(y_completo) else NA_real_,
+    municipios_fixos = n_distinct(codigo_ibge[fixo]),
+    .groups = "drop"
+  )
+mostrar_tabela(cobertura_bioma, "tabela_cobertura")
+knitr::kable(cobertura_bioma, digits = 1, caption = "Cobertura por predominância territorial")
+```
+
+```{r cobertura-detalhada}
+cobertura_ano_bioma <- dados |>
+  group_by(ano, bioma_predominante) |>
+  summarise(
+    n_grade = n(), n_y = sum(y_completo), n_fixo = sum(fixo),
+    n_ibama_observado = sum(!is.na(.data[[variavel_autos]])),
+    n_ibama_classificado = sum(!is.na(.data[[variavel_autos]]) &
+                                .data[[variavel_parcial]] %in% FALSE),
+    .groups = "drop"
+  )
+mostrar_tabela(cobertura_ano_bioma, "cobertura_ano_bioma", diagnostico = TRUE)
+
+cobertura_espacial <- dados |>
+  group_by(y_completo) |>
+  summarise(pares = n(), resumir_valores(fracao_y), .groups = "drop")
+mostrar_tabela(cobertura_espacial, "cobertura_espacial_pares", diagnostico = TRUE)
+mostrar_tabela(
+  dados |> select(codigo_ibge, municipio, ano, bioma_predominante,
+                   y_completo, fracao_y, area_y, fixo, multibioma),
+  "suporte_observacoes", diagnostico = TRUE
+)
+```
+
+# Como a conversão evoluiu no tempo?
+
+Calculamos duas medidas diferentes. A **taxa agregada** divide a soma das áreas
+convertidas pela soma dos estoques nativos iniciais; a **média das taxas** dá
+peso igual a cada município. A primeira equivale a ponderar as taxas municipais
+pelo estoque nativo inicial. Não devemos interpretar uma como se fosse a outra.
+
+$$\text{Taxa agregada}_t = 100\,\frac{\sum_i \text{área convertida}_{it}}
+{\sum_i \text{vegetação nativa inicial}_{it}}.$$
+
+As somas usam exclusivamente observações com cobertura completa. Nas tabelas
+e nos gráficos, as taxas estão em porcentagem; as colunas originais continuam
+em proporção.
+
+```{r conversao-anual}
+# Uma linha por município, ano e destino facilita ler os agrupamentos.
+conversao <- bind_rows(
+  dados |> transmute(codigo_ibge, municipio, ano, bioma_predominante,
+    y_completo, fixo, destino = "Agricultura",
+    area_convertida_ha = conversao_ha__agricultura,
+    taxa = taxa_conversao__agricultura, estoque_nativo_ha = y_nativa_inicial_ha),
+  dados |> transmute(codigo_ibge, municipio, ano, bioma_predominante,
+    y_completo, fixo, destino = "Pastagem",
+    area_convertida_ha = conversao_ha__pastagem,
+    taxa = taxa_conversao__pastagem, estoque_nativo_ha = y_nativa_inicial_ha)
+) |> filter(y_completo)
+
+amostras <- bind_rows(
+  conversao |> mutate(amostra = "Disponível no ano"),
+  conversao |> filter(fixo) |> mutate(amostra = "Municípios fixos")
+)
+conversao_anual <- amostras |>
+  group_by(amostra, destino, ano) |>
+  summarise(
+    n = n(), area_ha = sum(area_convertida_ha),
+    nativa_inicial_ha = sum(estoque_nativo_ha),
+    taxa_agregada_pct = 100 * area_ha / nativa_inicial_ha,
+    media_taxas_pct = 100 * mean(taxa), mediana_taxas_pct = 100 * median(taxa),
+    .groups = "drop"
+  )
+mostrar_tabela(conversao_anual, "conversao_anual")
+
+grafico_conversao <- ggplot(conversao_anual,
+  aes(ano, taxa_agregada_pct, color = amostra, linetype = amostra)) +
+  geom_line(linewidth = 0.65) +
+  facet_wrap(~ destino, ncol = 1) +
+  scale_color_manual(values = c("Disponível no ano" = "#777777", "Municípios fixos" = "#0072B2")) +
+  scale_linetype_manual(values = c("Disponível no ano" = "dashed", "Municípios fixos" = "solid")) +
+  scale_x_continuous(breaks = c(2001, 2005, 2010, 2015, 2020, 2024)) +
+  scale_y_continuous(limits = c(0, NA), labels = rotulo_numero) +
+  labs(x = "Ano final da transição", y = "Conversão / vegetação inicial (%)")
+print(grafico_conversao)
+salvar_grafico(grafico_conversao, "fig01_conversao", altura = 5)
+```
+
+**Como ler:** diferenças entre as duas linhas podem refletir a composição da
+amostra. A evolução temporal, isoladamente, não demonstra o efeito dos preços
+ou da fiscalização sobre a conversão.
+
+# Como as taxas diferem entre municípios?
+
+Calculamos a média temporal de cada município da amostra fixa. Assim, todos
+os pontos do gráfico resumem o mesmo número de anos e cada município aparece
+uma vez por destino. Os valores extremos são identificados, sem exclusão
+automática ou winsorização.
+
+```{r distribuicao-municipal}
+taxas_municipais <- conversao |>
+  filter(fixo) |>
+  group_by(codigo_ibge, municipio, bioma_predominante, destino) |>
+  summarise(n_anos = n(), media_temporal_pct = 100 * mean(taxa), .groups = "drop")
+mostrar_tabela(taxas_municipais, "distribuicao_municipal")
+
+contagem_fixa <- table(factor(municipios$bioma_predominante[municipios$fixo], levels = nomes_biomas))
+rotulos_biomas <- setNames(paste0(nomes_biomas, "\n(n = ", as.integer(contagem_fixa), ")"), nomes_biomas)
+
+grafico_distribuicao <- ggplot(taxas_municipais,
+  aes(bioma_predominante, media_temporal_pct, color = bioma_predominante,
+      shape = bioma_predominante)) +
+  geom_point(position = position_jitter(width = 0.12, height = 0, seed = 2026),
+             size = 1.8, alpha = 0.8) +
+  facet_wrap(~ destino) +
+  scale_color_manual(values = cores_biomas, drop = FALSE) +
+  scale_shape_manual(values = c("Amazônia" = 16, "Cerrado" = 17, "Pantanal" = 15), drop = FALSE) +
+  scale_x_discrete(labels = rotulos_biomas, drop = FALSE) +
+  scale_y_continuous(limits = c(0, NA), labels = rotulo_numero) +
+  labs(x = "Predominância territorial do município", y = "Média municipal da taxa anual (%)") +
+  theme(legend.position = "none")
+print(grafico_distribuicao)
+salvar_grafico(grafico_distribuicao, "fig02_distribuicao", altura = 4)
+
+# Diagnósticos complementares usam todos os pares válidos.
+conversao_grupos <- conversao |>
+  group_by(ano, bioma_predominante, destino) |>
+  summarise(n = n(), area_ha = sum(area_convertida_ha),
+            nativa_ha = sum(estoque_nativo_ha),
+            taxa_agregada_pct = 100 * area_ha / nativa_ha, .groups = "drop")
+mostrar_tabela(conversao_grupos, "conversao_ano_grupo", diagnostico = TRUE)
+
+extremos <- conversao |>
+  group_by(destino) |>
+  arrange(desc(taxa), codigo_ibge, ano, .by_group = TRUE) |>
+  slice_head(n = 10) |>
+  ungroup() |>
+  select(codigo_ibge, municipio, ano, bioma_predominante, destino,
+         area_convertida_ha, estoque_nativo_ha, taxa)
+mostrar_tabela(extremos, "extremos_taxas_sem_exclusao", diagnostico = TRUE)
+```
+
+**Como ler:** observe a dispersão e o número de municípios de cada grupo.
+Um grupo pequeno, especialmente no Pantanal, não sustenta automaticamente
+conclusões gerais sobre todo o bioma. O deslocamento horizontal dos pontos
+serve apenas para facilitar a leitura; a altura de cada ponto é preservada.
+
+# Como os preços reais se comportaram?
+
+Os preços são comuns aos municípios em cada ano. Por isso, usamos uma
+observação por ano e produto. Repetir um mesmo preço 141 vezes não acrescenta
+informação sobre seu comportamento. O preço associado ao ano `t` refere-se
+a `t − 1`; o índice usa 2000 como base 100.
+
+```{r precos}
+precos <- dados |>
+  select(ano, all_of(variaveis_preco)) |>
+  distinct() |>
+  pivot_longer(all_of(variaveis_preco), names_to = "variavel", values_to = "preco") |>
+  mutate(produto = c("Soja", "Milho", "Carne bovina")[match(variavel, variaveis_preco)],
+         ano_preco = ano - 1,
+         unidade = if_else(produto == "Carne bovina", "USD de 2024/kg", "USD de 2024/t"))
+conferir(nrow(precos) == length(anos_esperados) * 3L,
+         "Os preços aparecem uma única vez por ano e produto.")
+conferir(all(is.finite(precos$preco) & precos$preco > 0),
+         "Os preços reais estão observados e são positivos.")
+conferir(all(table(precos$produto[precos$ano_preco == 2000]) == 1L) &&
+           sum(precos$ano_preco == 2000) == 3L, "Há um preço de referência por produto em 2000.")
+
+precos <- precos |>
+  group_by(produto) |>
+  arrange(ano_preco, .by_group = TRUE) |>
+  mutate(indice = 100 * preco / preco[ano_preco == 2000]) |>
+  ungroup()
+mostrar_tabela(precos, "precos_anuais")
+
+grafico_precos <- ggplot(precos, aes(ano_preco, indice, color = produto, linetype = produto)) +
+  geom_line(linewidth = 0.7) +
+  scale_color_manual(values = c("Soja" = "#0072B2", "Milho" = "#D55E00", "Carne bovina" = "#333333")) +
+  scale_linetype_manual(values = c("Soja" = "solid", "Milho" = "dashed", "Carne bovina" = "dotdash")) +
+  scale_x_continuous(breaks = c(2000, 2005, 2010, 2015, 2020, 2023)) +
+  scale_y_continuous(limits = c(0, NA)) +
+  labs(x = "Ano do preço (t - 1 na base)", y = "Índice do preço real (2000 = 100)")
+print(grafico_precos)
+salvar_grafico(grafico_precos, "fig03_precos", altura = 4)
+```
+
+**Como ler:** o índice permite comparar trajetórias de produtos com unidades
+diferentes. Estes preços em dólares constantes não são preços locais em reais,
+lucros ou medidas diretamente observadas de retorno esperado.
+
+# Como a capacidade produtiva varia no território?
+
+As medidas GAEZ são constantes no tempo nesta base. Cada município entra uma
+única vez no resumo. Mantemos o cenário de alto insumo e sequeiro do código
+original. Rendimento potencial e produtividade efetivamente realizada são
+conceitos diferentes.
+
+```{r capacidade}
+capacidade_municipal <- municipios |>
+  select(codigo_ibge, municipio, bioma_predominante, all_of(variaveis_capacidade)) |>
+  pivot_longer(all_of(variaveis_capacidade), names_to = "variavel", values_to = "kg_ms_ha") |>
+  mutate(produto = c("Soja", "Milho")[match(variavel, variaveis_capacidade)])
+
+resumo_capacidade <- capacidade_municipal |>
+  group_by(produto, bioma_predominante) |>
+  summarise(n = n(), resumir_valores(kg_ms_ha), .groups = "drop")
+mostrar_tabela(capacidade_municipal, "capacidade_municipal")
+mostrar_tabela(resumo_capacidade, "tabela_capacidade")
+knitr::kable(resumo_capacidade, digits = 1,
+             caption = "Rendimento potencial: kg de matéria seca por hectare")
+```
+
+# O que as autuações do IBAMA mostram?
+
+Primeiro examinamos a cobertura; depois calculamos as estatísticas das
+contagens observadas com classificação temática completa. Uma contagem
+parcial, uma ausência e um zero classificado não são a mesma coisa.
+
+A flag de classificação completa se refere aos registros utilizados. Ela não
+certifica que todas as infrações ou ações de fiscalização foram registradas.
+
+```{r ibama}
+ibama_anual <- dados |>
+  group_by(ano) |>
+  summarise(
+    n_grade = n(),
+    n_observado = sum(!is.na(.data[[variavel_autos]])),
+    n_parcial = sum(!is.na(.data[[variavel_autos]]) & .data[[variavel_parcial]] %in% TRUE),
+    n_classificado = sum(!is.na(.data[[variavel_autos]]) & .data[[variavel_parcial]] %in% FALSE),
+    n_flag_ausente = sum(!is.na(.data[[variavel_autos]]) & is.na(.data[[variavel_parcial]])),
+    n_zero_classificado = sum(.data[[variavel_autos]] == 0 &
+                               .data[[variavel_parcial]] %in% FALSE, na.rm = TRUE),
+    resumir_valores(.data[[variavel_autos]][.data[[variavel_parcial]] %in% FALSE]),
+    .groups = "drop"
+  )
+mostrar_tabela(ibama_anual, "ibama_anual")
+
+ibama_grafico <- bind_rows(
+  ibama_anual |> transmute(ano, painel = "A. Cobertura das contagens de Flora",
+    serie = "Contagem observada", valor = n_observado),
+  ibama_anual |> transmute(ano, painel = "A. Cobertura das contagens de Flora",
+    serie = "Classificação completa nos registros", valor = n_classificado),
+  ibama_anual |> transmute(ano, painel = "B. Autos por município com classificação completa",
+    serie = "Média", valor = media),
+  ibama_anual |> transmute(ano, painel = "B. Autos por município com classificação completa",
+    serie = "Mediana", valor = mediana)
+)
+
+grafico_ibama <- ggplot(ibama_grafico, aes(ano, valor, color = serie, linetype = serie)) +
+  geom_line(linewidth = 0.7) +
+  facet_wrap(~ painel, ncol = 1, scales = "free_y") +
+  scale_x_continuous(breaks = c(2001, 2005, 2010, 2015, 2020, 2024)) +
+  scale_y_continuous(limits = c(0, NA)) +
+  scale_color_manual(values = c("Contagem observada" = "#777777",
+    "Classificação completa nos registros" = "#0072B2", "Média" = "#D55E00", "Mediana" = "#333333")) +
+  scale_linetype_manual(values = c("Contagem observada" = "solid",
+    "Classificação completa nos registros" = "dashed", "Média" = "solid", "Mediana" = "dotdash")) +
+  labs(x = "Ano de lavratura", y = "Municípios (A) / autos por município (B)") +
+  guides(color = guide_legend(nrow = 2), linetype = guide_legend(nrow = 2))
+print(grafico_ibama)
+salvar_grafico(grafico_ibama, "fig04_ibama", altura = 5.5)
+```
+
+**Como ler:** mais autos podem decorrer de mais infrações, mais fiscalização,
+melhor registro ou uma combinação desses fatores. A contagem não identifica,
+por si só, a efetividade institucional nem o efeito causal da fiscalização.
+
+# Diagnósticos e documentação das variáveis
+
+Os blocos seguintes preservam a rastreabilidade do roteiro original. As
+estatísticas numéricas são calculadas apenas para colunas numéricas ou
+lógicas. Campos textuais continuam no perfil, com os respectivos tipos e
+contagens de ausências.
+
+```{r perfil}
+perfil_base <- bind_rows(lapply(names(dados_brutos), function(nome) {
+  x <- dados_brutos[[nome]]
+  z <- x[!is.na(x)]
+  numerico <- is.numeric(x) || is.logical(x)
+  tibble(
+    coluna = nome, tipo = class(x)[1], n = length(x), validos = length(z),
+    ausentes = sum(is.na(x)), proporcao_ausente = mean(is.na(x)),
+    zeros = if (numerico) sum(z == 0) else NA_integer_,
+    min = if (numerico && length(z) > 0) min(z) else NA_real_,
+    mediana = if (numerico && length(z) > 0) median(as.numeric(z)) else NA_real_,
+    p99 = if (numerico && length(z) > 0) unname(quantile(as.numeric(z), 0.99)) else NA_real_,
+    max = if (numerico && length(z) > 0) max(z) else NA_real_,
+    constante_municipal = all(tapply(x, dados$codigo_ibge, function(v) n_distinct(v, na.rm = TRUE)) <= 1),
+    comum_anual = all(tapply(x, dados$ano, function(v) n_distinct(v, na.rm = TRUE)) <= 1)
+  )
+}))
+mostrar_tabela(perfil_base, "perfil_base_completa", diagnostico = TRUE)
+
+# Estes campos são complementares; sua ausência não impede a análise principal.
+colunas_baixo_insumo <- c("capacidade_valor__soja__gaez_yxLr0_soy",
+                          "capacidade_valor__milho__gaez_yxLr0_mze")
+colunas_ibama <- c("flag_sem_registro_identificado__ibama_espacial",
+                   "n_autos_observados__ibama_espacial", "n_autos_flora__ibama_informada",
+                   "flag_contagem_flora_parcial__ibama_informada")
+complementares <- c(colunas_baixo_insumo, colunas_ibama)
+mostrar_tabela(tibble(coluna = complementares, disponivel = complementares %in% names(dados)),
+               "disponibilidade_diagnosticos", diagnostico = TRUE)
+mostrar_tabela(municipios |> select(codigo_ibge, bioma_predominante,
+  all_of(variaveis_capacidade), any_of(colunas_baixo_insumo)),
+  "capacidade_cenarios", diagnostico = TRUE)
+mostrar_tabela(dados |> select(codigo_ibge, municipio, ano, all_of(c(variavel_autos, variavel_parcial)),
+                               any_of(colunas_ibama)),
+               "ibama_qualidade_e_associacao", diagnostico = TRUE)
+```
+
+## Dicionário e variáveis deixadas para etapas posteriores
+
+As fontes, unidades, fórmulas e limitações abaixo foram **herdadas do código
+fornecido** e combinadas com os arquivos de metadados do projeto. Os caminhos
+indicados são pistas para conferência, não uma nova certificação dos scripts
+ou das fontes primárias. As regras principais de cálculo foram preservadas.
+
+As variáveis excluídas desta seleção não são descartadas da tese; elas podem
+ser úteis nas especificações e análises posteriores.
+
+```{r dicionario}
+metadados <- read_csv(caminhos[["dicionario"]], show_col_types = FALSE, progress = FALSE)
+exigir_colunas(metadados,
+              c("coluna_painel", "unidade", "regra", "tabelas_origem", "coluna_origem"), "Dicionário")
+exigir_colunas(proveniencia, c("coluna", "definicao_dicio"), "Proveniência")
+conferir(all(variaveis_selecionadas %in% metadados$coluna_painel),
+         "Todas as variáveis selecionadas constam do dicionário local.")
+conferir(!anyDuplicated(metadados$coluna_painel[metadados$coluna_painel %in% variaveis_selecionadas]),
+         "Metadados únicos para cada variável selecionada.")
+conferir(!anyDuplicated(proveniencia$coluna[proveniencia$coluna %in% variaveis_selecionadas]),
+         "Proveniência única para cada variável selecionada.")
+
+rotulos <- c("Conversão para agricultura","Conversão para pastagem","Taxa de conversão para agricultura",
+  "Taxa de conversão para pastagem","Vegetação nativa inicial compatível",
+  "Preço real anterior da soja","Preço real anterior do milho","Preço real anterior da carne bovina",
+  "Rendimento potencial da soja (alto insumo)","Rendimento potencial do milho (alto insumo)",
+  "Fração municipal na Amazônia","Fração municipal no Cerrado","Fração municipal no Pantanal",
+  "Autos de Flora espacialmente localizados","Classificação temática parcial de autos")
+fontes <- c(rep("MapBiomas Brasil, Coleção 10.1, coverage_v1; IBGE malha MT 2023",5),
+  rep("Banco Mundial, Pink Sheet; CPI-U BLS/FRED CPIAUCNS",3),
+  rep("FAO/IIASA, GAEZ v4, clima 1961-1990, terras 2010",2),
+  rep("IBGE biomas 2019 e malha municipal MT 2023",3),rep("IBAMA, autos de infração",2))
+evidencias <- paste0("2_INTI/chapters/chap1/stats/AED/pt/",
+  c(rep("harmonizacao_terra.py; obter_transicoes_mapbiomas.py",5),
+    rep("harmonizacao_economia.py; painel_anual_fontes.py",3),
+    rep("harmonizacao_economia.py; reconstruir_141_estaticas.py",5),
+    rep("harmonizacao_instituicoes.py; reconstruir_141_ibama.py",2)))
+papeis <- c(rep("Resultado central H1, por destino",4),"Denominador da taxa",
+  rep("Incentivo de mercado; não retorno líquido",3),rep("Heterogeneidade da capacidade produtiva",2),
+  rep("Classificação territorial e identificação de municípios mistos",3),
+  "Dimensão observada da atuação administrativa","Qualidade indispensável à interpretação de autuações")
+limitacoes <- c(rep("NA se qualquer área do par não é observada; mudança entre mapas não identifica causa nem legalidade.",4),
+  "Preenchido inclusive nos pares incompletos: nesses casos é estoque apenas na máscara observada, não denominador válido para recuperar Y ausente.",
+  rep("Ano civil t-1; poder de compra em USD, não preço local em BRL, lucro ou expectativa observada.",3),
+  rep("Cenário alto insumo e sequeiro; matéria seca; terras 2010 impedem presumir predeterminação completa.",2),
+  rep("Município pode cruzar biomas; não ratear conversões pela fração; pequenas lacunas geométricas preservadas.",3),
+  "Contagem depende de infrações, fiscalização e localização; ausência não é zero; Flora inclui transporte florestal.",
+  "False certifica classificação nos registros usados, não completude da fiscalização ou da fonte.")
+formulas <- c(
+  "Soma da área dos pixels com classe nativa em t-1 e agrícola em t; NA se par incompleto.",
+  "Soma da área dos pixels com classe nativa em t-1 e pastagem em t; NA se par incompleto.",
+  "conversao_ha__agricultura / y_nativa_inicial_ha; exige denominador positivo e par completo.",
+  "conversao_ha__pastagem / y_nativa_inicial_ha; exige denominador positivo e par completo.",
+  "Soma das áreas das transições com origem nativa em t-1 na máscara válida do par, incluindo permanências.",
+  rep("Média dos 12 preços mensais de t-1 × média(CPI-U em 2024) / CPI-U do respectivo mês; deflação antes da média.",3),
+  rep("Média dos pixels GAEZ yxHr0 válidos dentro do município, ponderada por cos(latitude); sem padronização z.",2),
+  paste0("Área da interseção do município com ",nomes_biomas," / área municipal inteira em EPSG:5880; sem renormalização."),
+  "Número de IDs de autos classificados em TIPO_INFRACAO=Flora, por ano de lavratura e município espacial; NA se nenhum registro identificado ou tema indeterminado sem positivo.",
+  "True se existe registro sem ID ou tema Flora indeterminado no grupo; False se classificação completa nos registros; NA se grupo sem registro identificado.")
+dicionario <- tibble(nome_original=variaveis_selecionadas,nome_final=variaveis_selecionadas,rotulo=rotulos,papel=papeis,
+  fonte_primaria=fontes,evidencia_original=evidencias,limitacao_adicional=limitacoes,
+  formula=formulas,
+  justificativa=c(rep("Separar magnitude, intensidade e destinos conforme objetivo i da introdução.",5),
+    rep("Representar preços das lavouras e da pecuária sem repetir logs e interações.",3),
+    rep("Descrever cenário físico em unidade legível; alto insumo é ilustração, não escolha econométrica.",2),
+    rep("Preservar heterogeneidade territorial sem atribuir todo município a um bioma puro.",3),
+    "Flora tem vínculo ambiental e classificação explícita; associação espacial usa a malha comum.",
+    "Preservar distinção entre contagem integralmente classificada e parcial.")) |>
+  left_join(metadados |> select(nome_original=coluna_painel,unidade,regra_bloco_origem=regra,
+                           tabelas_origem,coluna_origem),by="nome_original") |>
+  left_join(proveniencia |> select(nome_original=coluna,definicao=definicao_dicio),by="nome_original") |>
+  left_join(perfil_base |> select(nome_original=coluna,validos,ausentes,proporcao_ausente),by="nome_original")
+dicionario$cobertura <- c(rep("2001-2024: município-ano",5),
+  rep("2000-2023: 24 preços anuais, repetidos na grade 2001-2024",3),
+  rep(paste0(municipios_esperados, " municípios; constante nos ", length(anos_esperados), " anos"), 5),rep("2001-2024: município-ano, cobertura desigual",2))
+conferir(nrow(dicionario)==15 && !anyNA(dicionario$definicao),"Dicionário completo e único")
+mostrar_tabela(dicionario |> select(rotulo, unidade, validos, ausentes, proporcao_ausente),
+               "dicionario_cobertura", diagnostico = TRUE)
+# Para ler definições, fontes e fórmulas completas: View(dicionario)
+if (exportar) write_csv(dicionario,file.path(pasta_saida,"dicionario_variaveis.csv"),na="")
+candidatas_excluidas <- tibble(candidatas=c("Logs, variações de preços e interações","PAM contemporânea e defasada",
+  "PAM 1991-2000 (mínimo sete anos)","GAEZ baixo insumo e índices sx",
+  "Multas e autos por código informado","Autos Desmatamento/Desmatamento e Queimada",
+  "Rebanho e lotação","Estoques legados e participações de uso","Chuva e relevo"),
+  motivo=c("Redundância para descritiva; pertencem à especificação futura.",
+  "Rendimento realizado é endógeno ao manejo e à seleção das áreas; não é aptidão predeterminada.",
+  "Cobertura seletiva e harmonização histórica pendente; não excluir municípios por essa medida.",
+  "Cenários alternativos; baixo insumo exportado no diagnóstico; sx não é rendimento.",
+  "Multas não medem pagamentos; associação informada pode divergir da malha comum; contraste em diagnóstico.",
+  "Tema mais estreito com maior ausência; não somar com Flora, pois os temas se sobrepõem.",
+  "Não são produtividade de carne; datas e território da PPM ainda demandam compatibilização.",
+  "Não substituem denominador na máscara de Y; diferença de estoque não é conversão bruta.",
+  "Controles potenciais, secundários para as perguntas descritivas desta seção."))
+mostrar_tabela(candidatas_excluidas, "candidatas_excluidas")
+if (abrir_tabelas && interactive()) View(candidatas_excluidas)
+if (exportar) write_csv(candidatas_excluidas,file.path(pasta_saida,"candidatas_excluidas.csv"))
+```
+
+# Preparar os produtos para o artigo
+
+As duas tabelas abaixo também podem ser exportadas em LaTeX. Os números para
+o texto são calculados a partir dos mesmos objetos. Mantemos os nomes das
+macros do roteiro original para facilitar seu reaproveitamento no artigo.
+
+A soma das conversões ao longo do período representa eventos anuais de
+conversão; não deve ser chamada automaticamente de área única desmatada.
+
+```{r produtos-artigo}
+formatar <- function(x, casas = 0) {
+  saida <- rep("NA", length(x))
+  validos <- is.finite(x)
+  saida[validos] <- formatC(x[validos], format = "f", digits = casas,
+                          big.mark = ".", decimal.mark = ",")
+  saida
+}
+
+tabela_cobertura_artigo <- cobertura_bioma |>
+  transmute(Grupo = as.character(bioma_predominante), Municipios = municipios,
+            Mistos = municipios_multibioma, `Pares válidos` = n_y,
+            `% da grade` = pct_y, Fixos = municipios_fixos)
+tabela_capacidade_artigo <- resumo_capacidade |>
+  transmute(Cultura = produto, Predominancia = as.character(bioma_predominante),
+            Municipios = n, `N válido` = n_validos, Mediana = mediana,
+            `P25--P75` = paste0(formatar(p25), "--", formatar(p75)))
+
+tabelas_latex <- list(
+  tab01_cobertura = knitr::kable(tabela_cobertura_artigo, format = "latex", digits = 1,
+    caption = "Cobertura da conversão por predominância territorial, 2001--2024",
+    label = "h1-cobertura", row.names = FALSE),
+  tab02_capacidade = knitr::kable(tabela_capacidade_artigo, format = "latex", digits = 0,
+    caption = "Rendimento potencial municipal no cenário de alto insumo e sequeiro",
+    label = "h1-capacidade", row.names = FALSE)
+)
+notas_tabelas <- c(
+  tab01_cobertura = paste("Fonte: elaboração própria com as bases identificadas no dicionário.",
+    "Pares válidos têm cobertura completa do par de mapas; fixos são municípios observados em todos os anos.",
+    "Mistos têm mais de um bioma com fração superior a $10^{-6}$; predominância é a maior fração municipal."),
+  tab02_capacidade = paste("Fonte: elaboração própria com GAEZ v4, conforme o dicionário fornecido.",
+    "Unidade: kg de matéria seca por hectare; cada município tem peso igual.",
+    "N válido informa a cobertura de cada resumo. O cenário não é rendimento realizado",
+    "e não garante capacidade predeterminada em relação a todo o painel.")
+)
+for (nome in names(tabelas_latex)) {
+  tabelas_latex[[nome]] <- paste0(as.character(tabelas_latex[[nome]]),
+    "\n\\par\\smallskip{\\footnotesize ", notas_tabelas[[nome]], "\\par}\n")
+}
+
+primeiro_ano <- conversao_anual |> filter(ano == min(anos_esperados), amostra == "Municípios fixos")
+ultimo_ano <- conversao_anual |> filter(ano == max(anos_esperados), amostra == "Municípios fixos")
+totais <- conversao |> summarise(
+  agricultura = sum(area_convertida_ha[destino == "Agricultura"]),
+  pastagem = sum(area_convertida_ha[destino == "Pastagem"])
+)
+fracao_excluida <- dados$fracao_y[!dados$y_completo & !is.na(dados$fracao_y)]
+min_fracao_excluida <- if (length(fracao_excluida) > 0) min(fracao_excluida) else NA_real_
+participacao_pastagem <- if (totais$agricultura + totais$pastagem > 0) {
+  100 * totais$pastagem / (totais$agricultura + totais$pastagem)
+} else NA_real_
+contagem_anual <- dados |> group_by(ano) |> summarise(n_validos = sum(y_completo), .groups = "drop")
+
+macros <- c(
+  Hobs = formatar(nrow(dados)), Hvalid = formatar(sum(dados$y_completo)),
+  Hmissing = formatar(sum(!dados$y_completo)), HmissingPct = formatar(100 * mean(!dados$y_completo), 1),
+  Hfixed = formatar(sum(municipios$fixo)), HminFracExcl = formatar(100 * min_fracao_excluida, 4),
+  HfixedObs = formatar(sum(dados$fixo)), Hmixed = formatar(sum(municipios$multibioma)),
+  HnMin = formatar(min(contagem_anual$n_validos)), HnMax = formatar(max(contagem_anual$n_validos)),
+  HpastShare = formatar(participacao_pastagem, 1),
+  HagFirst = formatar(primeiro_ano$taxa_agregada_pct[primeiro_ano$destino == "Agricultura"], 2),
+  HagLast = formatar(ultimo_ano$taxa_agregada_pct[ultimo_ano$destino == "Agricultura"], 2),
+  HpaFirst = formatar(primeiro_ano$taxa_agregada_pct[primeiro_ano$destino == "Pastagem"], 2),
+  HpaLast = formatar(ultimo_ano$taxa_agregada_pct[ultimo_ano$destino == "Pastagem"], 2),
+  HibValid = formatar(sum(!is.na(dados[[variavel_autos]]))),
+  HibComplete = formatar(sum(!is.na(dados[[variavel_autos]]) & dados[[variavel_parcial]] %in% FALSE)),
+  HibMin = formatar(min(ibama_anual$n_classificado)), HibMax = formatar(max(ibama_anual$n_classificado)),
+  HmaxAg = formatar(100 * max(dados$taxa_conversao__agricultura, na.rm = TRUE), 2),
+  HmaxPa = formatar(100 * max(dados$taxa_conversao__pastagem, na.rm = TRUE), 2)
+)
+macros_latex <- paste0("\\newcommand{\\", names(macros), "}{", macros, "}")
+mostrar_tabela(tibble(macro = names(macros), valor = unname(macros)), "numeros_texto")
+```
+
+# Conferir a preservação das entradas e encerrar
+
+Ao final, comparamos os hashes dos arquivos de entrada. Se a exportação
+estiver ativada, os produtos ficam em `resultados_h1_humanizado`, dentro de
+`stats/descritiva`. O registro da sessão e as verificações ficam em `auditoria`.
+Os arquivos de entrada são apenas lidos.
+
+```{r encerramento}
+conferir(identical(hashes_iniciais, tools::md5sum(caminhos)),
+         "Os arquivos de entrada permanecem idênticos byte a byte (MD5).")
+manifesto_entradas <- tibble(arquivo = names(hashes_iniciais), md5 = unname(hashes_iniciais))
+mostrar_tabela(manifesto_entradas, "manifesto_entradas", diagnostico = TRUE)
+
+if (exportar) {
+  saveRDS(dados_h1, file.path(pasta_saida, "dados", "df_h1_selecionado.rds"), version = 3)
+  write_parquet(dados_h1, file.path(pasta_saida, "dados", "df_h1_selecionado.parquet"), compression = "zstd")
+  for (nome in names(tabelas_latex)) {
+    writeLines(as.character(tabelas_latex[[nome]]),
+               file.path(pasta_saida, "tabelas", paste0(nome, ".tex")), useBytes = TRUE)
+  }
+  writeLines(macros_latex, file.path(pasta_saida, "tabelas", "numeros.tex"), useBytes = TRUE)
+  writeLines(registro_verificacoes, file.path(pasta_auditoria, "verificacoes_R.txt"), useBytes = TRUE)
+  capture.output(sessionInfo(), file = file.path(pasta_auditoria, "sessionInfo.txt"))
+  write_csv(tibble(pacote = pacotes,
+    versao = vapply(pacotes, function(p) as.character(packageVersion(p)), character(1))),
+    file.path(pasta_auditoria, "dependencias.csv"))
+}
+
+cat("\nAnálise concluída.\n")
+cat("Base selecionada: dados_h1. Tabelas: tabelas. Diagnósticos: diagnosticos.\n")
+cat("Gráficos: grafico_conversao, grafico_distribuicao, grafico_precos e grafico_ibama.\n")
+cat("Exportação:", if (exportar) pasta_saida else "desativada", "\n")
+sessionInfo()
+```
+
+A etapa descritiva permite avaliar cobertura, distribuição e heterogeneidade.
+Ela não confirma nem rejeita causalmente H1. A investigação dos efeitos dos
+incentivos econômicos e das condições institucionais exige a etapa econométrica
+com suas hipóteses de identificação.
+
+Para reabrir um gráfico na sessão R, use, por exemplo,
+`print(grafico_conversao)`. Para consultar toda a base, use `View(dados_h1)`.
+Para gerar o HTML pelo console, com o pacote `rmarkdown` e o Pandoc instalados:
+
+```r
+rmarkdown::render("analise_descritiva_h1.Rmd", encoding = "UTF-8")
+```
+
+O arquivo `.R` acompanhante contém os mesmos blocos de código e pode ser
+executado independentemente do `.Rmd`.
+
