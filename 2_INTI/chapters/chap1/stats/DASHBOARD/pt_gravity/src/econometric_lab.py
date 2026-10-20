@@ -7,16 +7,6 @@ from typing import Dict, List, Optional, Sequence, Tuple
 
 import numpy as np
 import pandas as pd
-from scipy import stats
-
-try:
-    from linearmodels.panel import PanelOLS
-    HAS_LINEARMODELS = True
-except ImportError:
-    HAS_LINEARMODELS = False
-
-import statsmodels.api as sm
-from .panel_metrics import transform_within
 
 
 @dataclass
@@ -75,10 +65,16 @@ def estimate_twoway_fe(
     """Estima modelo de Efeitos Fixos (Two-Way FE: Município + Ano) com erros-padrão
     clusterizados ao nível de município (`codigo_ibge`).
 
-    Utiliza `linearmodels.panel.PanelOLS` como motor primário e dispõe de fallback
-    analítico exato via transformação Double-Demeaned + `statsmodels.OLS` com correção
-    exata dos graus de liberdade dos efeitos fixos absorvidos.
+    Requer `linearmodels.panel.PanelOLS`; não troca o modelo quando a dependência falta.
     """
+    try:
+        from linearmodels.panel import PanelOLS
+    except ImportError as exc:
+        raise ImportError(
+            "A estimação requer linearmodels. Instale as dependências de "
+            "pt_gravity/requirements.txt no ambiente que executa o dashboard."
+        ) from exc
+
     exog_unique = list(dict.fromkeys([c for c in exog_vars if c in df.columns and c != dep_var]))
     if dep_var not in df.columns:
         raise ValueError(f"Variável dependente '{dep_var}' não encontrada no DataFrame.")
@@ -102,136 +98,63 @@ def estimate_twoway_fe(
             f"(N={n_obs}, Municípios={n_entities})."
         )
 
-    if HAS_LINEARMODELS:
-        panel_df = sub.set_index([entity_col, time_col])
-        y_s = panel_df[dep_var]
-        X_df = panel_df[exog_unique]
+    panel_df = sub.set_index([entity_col, time_col])
+    y_s = panel_df[dep_var]
+    X_df = panel_df[exog_unique]
 
-        model = PanelOLS(
-            dependent=y_s,
-            exog=X_df,
-            entity_effects=entity_effects,
-            time_effects=time_effects,
-            drop_absorbed=True,
-            check_rank=False,
-        )
-        res = model.fit(cov_type="clustered", cluster_entity=True)
-
-        params = res.params
-        std_errors = res.std_errors
-        tstats = res.tstats
-        pvalues = res.pvalues
-        ci = res.conf_int(level=0.95)
-
-        kept_vars = list(params.index)
-        absorbed_vars = [c for c in exog_unique if c not in kept_vars]
-
-        coef_rows = []
-        for var in kept_vars:
-            coef_rows.append({
-                "Especificação": spec_name,
-                "Variável Dependente": dep_var,
-                "Variável": var,
-                "Coeficiente": float(params[var]),
-                "Erro-Padrão (Cluster)": float(std_errors[var]),
-                "Estatística t": float(tstats[var]),
-                "p-valor": float(pvalues[var]),
-                "IC 95% Inf": float(ci.loc[var, "lower"]),
-                "IC 95% Sup": float(ci.loc[var, "upper"]),
-                "N": int(res.nobs),
-                "Municípios (Clusters)": n_entities,
-                "Anos": n_times,
-                "R² Within": float(res.rsquared_within),
-                "R² Overall": float(res.rsquared_overall),
-                "R² Between": float(res.rsquared_between),
-                "F-Stat": float(res.f_statistic.stat) if res.f_statistic is not None else np.nan,
-                "F p-valor": float(res.f_statistic.pval) if res.f_statistic is not None else np.nan,
-            })
-
-        return {
-            "spec_name": spec_name,
-            "dep_var": dep_var,
-            "coef_df": pd.DataFrame(coef_rows),
-            "nobs": int(res.nobs),
-            "n_entities": n_entities,
-            "n_times": n_times,
-            "r2_within": float(res.rsquared_within),
-            "r2_overall": float(res.rsquared_overall),
-            "r2_between": float(res.rsquared_between),
-            "f_stat": float(res.f_statistic.stat) if res.f_statistic is not None else np.nan,
-            "f_pval": float(res.f_statistic.pval) if res.f_statistic is not None else np.nan,
-            "entity_effects": entity_effects,
-            "time_effects": time_effects,
-            "absorbed_vars": absorbed_vars,
-        }
-
-    # Fallback via Double-Demeaned + statsmodels.OLS com ajuste exato de graus de liberdade
-    mode = (
-        "double_demeaned"
-        if (entity_effects and time_effects)
-        else ("within_entity" if entity_effects else "pooled")
+    model = PanelOLS(
+        dependent=y_s,
+        exog=X_df,
+        entity_effects=entity_effects,
+        time_effects=time_effects,
+        drop_absorbed=True,
+        check_rank=False,
     )
-    dm = transform_within(sub, [dep_var] + exog_unique, mode=mode, entity_col=entity_col, time_col=time_col)
+    res = model.fit(cov_type="clustered", cluster_entity=True)
 
-    stds = dm[exog_unique].std(ddof=1)
-    kept_vars = [c for c in exog_unique if stds[c] > 1e-10]
+    params = res.params
+    std_errors = res.std_errors
+    tstats = res.tstats
+    pvalues = res.pvalues
+    ci = res.conf_int(level=0.95)
+
+    kept_vars = list(params.index)
     absorbed_vars = [c for c in exog_unique if c not in kept_vars]
 
-    y_dm = dm[dep_var].to_numpy(dtype="float64")
-    X_dm = dm[kept_vars].to_numpy(dtype="float64")
-
-    ols_mod = sm.OLS(y_dm, X_dm)
-    # Ajuste de graus de liberdade para os efeitos fixos absorvidos
-    n_fe = (n_entities if entity_effects else 0) + (n_times - 1 if time_effects else 0)
-    ols_Mod_df_resid = max(1, n_obs - len(kept_vars) - n_fe)
-    ols_mod.df_resid = ols_Mod_df_resid
-
-    res = ols_mod.fit(cov_type="cluster", cov_kwds={"groups": sub[entity_col].to_numpy()})
-
-    # Cálculo manual de R² Within
-    tss_w = float(np.sum((y_dm - np.mean(y_dm)) ** 2))
-    rss_w = float(np.sum(res.resid ** 2))
-    r2_within = 1.0 - (rss_w / tss_w) if tss_w > 0 else np.nan
-
-    t_crit = stats.t.ppf(0.975, df=max(1, n_entities - 1))
     coef_rows = []
-    for idx, var in enumerate(kept_vars):
-        b = float(res.params[idx])
-        se = float(res.bse[idx])
-        t_val = float(res.tvalues[idx])
-        p_val = float(res.pvalues[idx])
+    for var in kept_vars:
         coef_rows.append({
             "Especificação": spec_name,
             "Variável Dependente": dep_var,
             "Variável": var,
-            "Coeficiente": b,
-            "Erro-Padrão (Cluster)": se,
-            "Estatística t": t_val,
-            "p-valor": p_val,
-            "IC 95% Inf": b - t_crit * se,
-            "IC 95% Sup": b + t_crit * se,
-            "N": n_obs,
+            "Coeficiente": float(params[var]),
+            "Erro-Padrão (Cluster)": float(std_errors[var]),
+            "Estatística t": float(tstats[var]),
+            "p-valor": float(pvalues[var]),
+            "IC 95% Inf": float(ci.loc[var, "lower"]),
+            "IC 95% Sup": float(ci.loc[var, "upper"]),
+            "N": int(res.nobs),
             "Municípios (Clusters)": n_entities,
             "Anos": n_times,
-            "R² Within": r2_within,
-            "R² Overall": np.nan,
-            "R² Between": np.nan,
-            "F-Stat": np.nan,
-            "F p-valor": np.nan,
+            "R² Within": float(res.rsquared_within),
+            "R² Overall": float(res.rsquared_overall),
+            "R² Between": float(res.rsquared_between),
+            "F-Stat": float(res.f_statistic.stat) if res.f_statistic is not None else np.nan,
+            "F p-valor": float(res.f_statistic.pval) if res.f_statistic is not None else np.nan,
         })
 
     return {
         "spec_name": spec_name,
         "dep_var": dep_var,
         "coef_df": pd.DataFrame(coef_rows),
-        "nobs": n_obs,
+        "nobs": int(res.nobs),
         "n_entities": n_entities,
         "n_times": n_times,
-        "r2_within": r2_within,
-        "r2_overall": np.nan,
-        "r2_between": np.nan,
-        "f_stat": np.nan,
-        "f_pval": np.nan,
+        "r2_within": float(res.rsquared_within),
+        "r2_overall": float(res.rsquared_overall),
+        "r2_between": float(res.rsquared_between),
+        "f_stat": float(res.f_statistic.stat) if res.f_statistic is not None else np.nan,
+        "f_pval": float(res.f_statistic.pval) if res.f_statistic is not None else np.nan,
         "entity_effects": entity_effects,
         "time_effects": time_effects,
         "absorbed_vars": absorbed_vars,
