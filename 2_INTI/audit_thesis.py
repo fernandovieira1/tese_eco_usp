@@ -300,8 +300,13 @@ def compile_article(chapter, report_dir, executable, timeout, findings):
         shutil.copytree(chapter_root, target,
                         ignore=shutil.ignore_patterns('stats', 'code', '.venv', 'venv', '__pycache__',
                                                       '.pytest_cache', '.ipynb_checkpoints',
-                                                      '*.aux', '*.bbl', '*.blg', '*.log', '*.pdf',
+                                                      '*.aux', '*.bbl', '*.blg', '*.log', 'main.pdf',
                                                       '*.fls', '*.fdb_latexmk', '*.synctex.gz', '*.out', '*.toc'))
+        # A seção descritiva inclui estes produtos; dados e dashboards ficam fora.
+        for folder in ('tabelas', 'figuras'):
+            relative = Path('stats/descritiva/resultados_h1') / folder
+            if (chapter_root / relative).is_dir():
+                shutil.copytree(chapter_root / relative, target / relative)
         workdir = target / directory.relative_to(chapter_root)
         command = [executable, '-norc', '-pdf', '-g', '-interaction=nonstopmode',
                    '-halt-on-error', '-file-line-error', '-no-shell-escape', 'main.tex']
