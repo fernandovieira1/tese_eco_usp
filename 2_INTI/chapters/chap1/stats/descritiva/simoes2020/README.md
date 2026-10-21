@@ -110,4 +110,3 @@ Rscript run_all.R
    * **Total das culturas:** $r = 0{,}977$ (área plantada) e $r = 0{,}980$ (área colhida) contra IBGE (artigo: $0{,}98$).
    * **Floresta (PRODES):** o WFS público do TerraBrasilis (`prodes-legal-amz:yearly_deforestation`) disponibiliza incrementos anuais desagregados a partir de 2008 (o período 1988–2007 encontra-se consolidado na máscara `accumulated_deforestation_2007`). Por padrão, `10_fig5_area_comparison.R` ancora a série derivada do PRODES na área florestal de 2007 e subtrai os incrementos anuais de 2008 a 2017; caso o usuário adicione `data/raw/ancillary/prodes_mt_rates_km2.csv` (`year,increment_km2`) com as taxas pré-2008, a série passa automaticamente a cobrir 2001–2017.
 4. **Legenda oficial da Figura 6 (`11_fig6_maps.R`):** As 13 classes e códigos hexadecimais são validados diretamente contra o arquivo `QGIS_style_mt_v3.qml` do PANGAEA antes da plotagem.
-
