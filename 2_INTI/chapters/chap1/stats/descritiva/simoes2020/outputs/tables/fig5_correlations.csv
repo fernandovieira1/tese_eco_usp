@@ -1,0 +1,11 @@
+"item","reference","n_years","pearson_r","paper_r","diff_vs_paper"
+"soybean","IBGE area_planted",17,0.9722690601057,0.97,0.002
+"corn","IBGE area_planted",17,0.975297898084359,0.98,-0.005
+"cotton","IBGE area_planted",17,0.853194997548203,0.85,0.003
+"sunflower","IBGE area_planted",13,0.781514542451904,0.8,-0.018
+"all_crops","IBGE area_planted",13,0.977469272447533,0.98,-0.003
+"soybean","IBGE area_harvested",17,0.972988324264556,0.97,0.003
+"corn","IBGE area_harvested",17,0.976993416675867,0.98,-0.003
+"cotton","IBGE area_harvested",17,0.85372408273527,0.85,0.004
+"sunflower","IBGE area_harvested",13,0.781235878172239,0.8,-0.019
+"all_crops","IBGE area_harvested",13,0.979556364692017,0.98,0

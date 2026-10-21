@@ -1,0 +1,5 @@
+"original_label","n_samples","mean_match_freq","n_pass_80pct","pct_pass_80pct","n_sits_clean","n_sits_analyze","n_sits_remove"
+"Cerrado",379,0.8055,264,69.7,215,55,109
+"Forest",131,0.9412,120,91.6,118,7,6
+"Pasture",344,0.7294,208,60.5,123,132,89
+"Soy_Corn",364,0.9786,351,96.4,354,3,7

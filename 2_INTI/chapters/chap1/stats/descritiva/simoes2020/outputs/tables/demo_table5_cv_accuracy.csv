@@ -1,0 +1,5 @@
+"class","user_acc","prod_acc","overall_acc","bands_used","paper_user_acc","paper_prod_acc"
+"Cerrado",0.7568,0.7309,0.8227,"NDVI",0.98,0.99
+"Forest",0.9058,0.9542,0.8227,"NDVI",0.99,0.98
+"Pasture",0.711,0.7297,0.8227,"NDVI",0.97,0.98
+"Soy_Corn",0.9668,0.9588,0.8227,"NDVI",0.91,0.93

@@ -1,0 +1,19 @@
+# Dados baixados/processados: grandes, reconstruiveis pelos scripts (ver MANIFEST.csv).
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+# Se SIMOES_DATA_ROOT apontar para dentro do projeto, tambem fica fora do Git.
+
+# Rasters de saida (reconstruiveis); tabelas e figuras pequenas sao versionadas.
+outputs/maps/*.tif
+outputs/maps/*.tif.aux.xml
+outputs/maps/*.rds
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.part
+*.part.tif
+
