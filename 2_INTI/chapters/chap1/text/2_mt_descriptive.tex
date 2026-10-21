@@ -1,93 +1,134 @@
 \section{Mato Grosso: Contexto e Dados}
 \label{sec:dados}
 
+\begingroup
+\clubpenalty=10000
+\widowpenalty=10000
 \input{../stats/descritiva/resultados_h1/tabelas/numeros}
 
-\subsection{Recorte territorial, observação e cobertura}
+O recorte descritivo reúne informações de 2001 a 2024 para uma grade de 141 municípios de Mato Grosso, definida pela malha do IBGE de 2023. Transições de cobertura vegetal, produção agropecuária, preços, capacidade produtiva e registros de autuação permitem examinar dimensões distintas do problema. A cobertura efetivamente observada varia entre fontes, por isso, a grade de \Hobs{} pares município-ano não constitui uma amostra completa para todas as medidas.
 
-A análise descritiva organiza as dimensões observáveis da hipótese H1: a conversão da vegetação nativa para agricultura e pastagem, os preços agropecuários, a capacidade produtiva local e uma dimensão da atuação administrativa ambiental. Seu propósito é estabelecer a magnitude e a heterogeneidade desses indicadores, bem como esclarecer o suporte empírico disponível. A coexistência de preços, autuações e conversão não permite, por si só, identificar como os incentivos econômicos e o ambiente institucional condicionam as decisões de uso da terra.
+\subsection{Expansão agropecuária e transformação da cobertura vegetal}
+\label{subsec:mt-expansao}
 
-A base contém \Hobs{} observações potenciais, correspondentes a 141 territórios municipais de Mato Grosso e aos 24 anos de 2001 a 2024. A referência espacial é a malha municipal do IBGE de 2023, mantida constante ao longo do painel. Trata-se, portanto, de uma grade territorial de referência, e não da reprodução da divisão administrativa vigente em cada ano. Os rasters de cobertura e capacidade produtiva e a localização dos autos foram associados a essa malha; isso não certifica a compatibilidade histórica de todas as séries administrativas candidatas.
+A expansão agropecuária e a transformação da cobertura vegetal constituem duas dimensões relacionadas, mas não equivalentes, da alocação econômica da terra. A discussão sobre retornos privados e custos públicos, desenvolvida na Seção~\ref{sec:literatura}, situa a conversão na comparação entre rendas agropecuárias e benefícios da vegetação que nem sempre são apropriados por quem decide seu uso \cite{Angelsen2010}. Para Mato Grosso, cabe estabelecer quanto cresceu a atividade produtiva e como evoluiu a conversão observada, sem deduzir da primeira a magnitude da segunda.
 
-A conversão é obtida das transições anuais do MapBiomas, Coleção 10.1, entre vegetação nativa em $t-1$ e agricultura ou pastagem em $t$. A taxa divide a área convertida pelo estoque nativo inicial na mesma máscara espacial. Essa construção distingue a abertura de áreas da substituição entre usos já agropecuários: o aumento líquido da área agrícola, por exemplo, não informa quanto de vegetação nativa foi convertido. Tampouco a transição entre mapas informa, isoladamente, a data da decisão, sua causa ou sua regularidade jurídica.
+A Figura~\ref{fig:h1-lavouras} apresenta área plantada, área colhida e produção de soja e milho segundo a Produção Agrícola Municipal (PAM/IBGE). A amostra disponível reúne os municípios com as três medidas observadas em cada ano; a fixa exige essa informação nos 24 anos, separadamente por cultura. Nos 66 municípios fixos da soja, a produção passou de 9,51 para 30,67 milhões de toneladas entre 2001 e 2024, enquanto a área colhida aumentou de 3,11 para 9,88 milhões de hectares. Nos 121 municípios fixos do milho, a produção passou de 1,72 para 45,03 milhões de toneladas, e a área colhida, de 0,53 para 6,70 milhões de hectares. São totais amostrais, distintos dos totais estaduais e do intervalo 2000--2024 apresentados na revisão.
 
-Os dois resultados de conversão estão disponíveis em \Hvalid{} pares município-ano. Os \Hmissing{} pares restantes, equivalentes a \HmissingPct{}\% da grade, permanecem ausentes porque o par de mapas não possui cobertura integral segundo o protocolo de construção. A regra é estrita: qualquer área não observada impede o cálculo de conversão para aquele par. Mesmo entre os pares excluídos, a menor fração espacial válida é \HminFracExcl{}\%; portanto, a proporção de pares ausentes não equivale à proporção de área sem observação. A regra original foi mantida, e ausência não foi substituída por zero. A disponibilidade anual varia entre \HnMin{} e \HnMax{} municípios, enquanto \Hfixed{} possuem informação em todos os anos, totalizando \HfixedObs{} observações na amostra fixa. A grade é balanceada, mas a amostra efetivamente observada de conversão não o é.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{../stats/figuras/fig05_lavouras.pdf}
+    \caption{Expansão das lavouras de soja e milho nas amostras disponível e fixa}
+    \label{fig:h1-lavouras}
+    \begin{minipage}{\textwidth}\footnotesize
+    Fonte: elaboração própria com IBGE/PAM. Área plantada e colhida em milhões de hectares; produção em milhões de toneladas. A amostra fixa contém 66 municípios para soja e 121 para milho, com plantio, colheita e produção observados em todos os anos. Ausências não são zeros. As somas de áreas de culturas diferentes não representam necessariamente hectares fisicamente distintos. A geografia municipal histórica das séries administrativas não foi reconstituída.
+    \end{minipage}
+\end{figure}
 
-\input{../stats/descritiva/resultados_h1/tabelas/tab01_cobertura}
+O crescimento da produção combina mudanças de área e de rendimento, com diferenças entre atividades. Calculado pela razão entre produção total e área colhida total dos mesmos municípios, o rendimento do milho passou de 3,26 para 6,72 toneladas por hectare; o da soja, de 3,06 para 3,10. Essa comparação de pontas não resume as oscilações intermediárias nem permite concluir que a soja não tenha incorporado mudanças tecnológicas. A possibilidade de duas safras na mesma área, examinada por \citeonline{VanWeyEtAl2013}, ajuda a compreender por que o avanço das áreas declaradas de soja e milho não pode ser somado como expansão física da fronteira. A PAM não identifica as parcelas com cultivos sucessivos ou abertas sobre vegetação nativa.
 
-A Tabela~\ref{tab:h1-cobertura} mostra que a cobertura também difere territorialmente. Para tornar a comparação legível, cada município é agrupado pelo bioma com a maior fração de sua área, calculada pela interseção da malha municipal com os biomas do IBGE de 2019. As três frações são preservadas na base: \Hmixed{} municípios têm presença de mais de um bioma. Assim, ``predominância amazônica'' designa um grupo de municípios, não a área exata do bioma Amazônia. As conversões municipais não foram repartidas proporcionalmente entre biomas, pois esse procedimento presumiria uma localização das transições que o agregado municipal não informa. O grupo de predominância pantaneira contém apenas quatro municípios e somente um na amostra fixa, o que impede tratá-lo como retrato representativo do Pantanal.
+A escala da pecuária e da comercialização externa complementa esse quadro (Tabela~\ref{tab:h1-oferta-contexto}). O rebanho dos 139 municípios com observação em todo o período cresceu 64,5\%, enquanto o número estadual de bovinos abatidos sob inspeção aumentou 246,9\%. A diferença reforça a necessidade de distinguir estoque de animais e fluxo de abate: nenhum deles mede diretamente a extensão das pastagens. O peso das carcaças descreve outra dimensão da oferta, sem equivaler ao volume de carne desossada. Os valores exportados indicam ampliação das operações registradas por domicílio fiscal, mas seu crescimento nominal combina mudanças de quantidade e preço e não mede o lucro dos produtores. A base inicial muito pequena das exportações de milho recomenda cautela adicional na leitura de sua expansão.
 
-\subsection{Magnitude, evolução e heterogeneidade da conversão}
+\input{../stats/tabelas/tab_contexto_oferta_h1}
+\FloatBarrier
 
-Nos pares com observação válida, a pastagem responde por \HpastShare{}\% da soma das conversões para os dois destinos ao longo do período. Essa participação descreve fluxos brutos observados na amostra disponível; não é a participação na área total do estado nem uma estimativa do total estadual de conversão. A soma de fluxos anuais também não representa necessariamente hectares distintos ao longo de todo o período.
+Para observar a transformação da cobertura vegetal, utilizam-se as transições anuais do MapBiomas, Coleção 10.1: vegetação nativa em $t-1$ convertida para agricultura ou pastagem em $t$. A taxa divide a área convertida pelo estoque nativo inicial na mesma máscara espacial. Trata-se de conversão bruta por destino, distinta da perda líquida de cobertura ou da diferença entre estoques de área agrícola. O indicador não registra como nova conversão a passagem de pastagem já existente para lavoura, nem identifica isoladamente a causa ou a regularidade jurídica da mudança entre mapas.
+
+Essa medida está disponível em \Hvalid{} pares município-ano. Os \Hmissing{} restantes, ou \HmissingPct{}\% da grade, permanecem ausentes pela exigência de cobertura integral do par de mapas; essa proporção de pares não equivale à proporção de área territorial sem observação. A Figura~\ref{fig:h1-conversao} compara os municípios disponíveis em cada ano com os \Hfixed{} observados em todo o período. Na amostra fixa, a taxa agregada para agricultura passou de \HagFirst{}\% em 2001 para \HagLast{}\% em 2024; para pastagem, de \HpaFirst{}\% para \HpaLast{}\%. A trajetória não foi monotônica, sobretudo para pastagem. Considerando a soma das conversões observadas nos dois destinos em todos os pares válidos, a pastagem respondeu por \HpastShare{}\%; essa participação não é uma estimativa da composição da conversão total do estado.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{../stats/descritiva/resultados_h1/figuras/fig01_conversao.pdf}
-    \caption{Taxas agregadas de conversão: amostra disponível e municípios fixos}
+    \caption{Taxas agregadas de conversão da vegetação nativa para agricultura e pastagem}
     \label{fig:h1-conversao}
     \begin{minipage}{\textwidth}\footnotesize
-    Fonte: elaboração própria com MapBiomas 10.1 e malha IBGE 2023. Cada ponto é a soma da conversão dividida pela soma da vegetação inicial dos mesmos municípios, multiplicada por 100. A amostra disponível reúne \Hvalid{} pares e entre \HnMin{} e \HnMax{} municípios por ano; a fixa reúne \Hfixed{} municípios em cada um dos 24 anos. As escalas verticais são iguais entre destinos. Áreas de pares incompletos não entram no numerador nem no denominador.
+    Fonte: elaboração própria com MapBiomas 10.1 e malha IBGE 2023. Cada ponto corresponde à soma da conversão dividida pela soma da vegetação nativa inicial dos mesmos municípios, multiplicada por 100. A amostra disponível varia entre \HnMin{} e \HnMax{} municípios por ano; a fixa contém \Hfixed{}. Pares incompletos não entram no numerador nem no denominador. A razão entre somas atribui maior peso aos municípios com maior estoque nativo inicial; não é a média simples das taxas municipais.
     \end{minipage}
 \end{figure}
-
-A Figura~\ref{fig:h1-conversao} compara a taxa agregada na amostra disponível em cada ano com a de um conjunto constante de municípios. Na amostra fixa, a taxa para agricultura passa de \HagFirst{}\% em 2001 para \HagLast{}\% em 2024; para pastagem, de \HpaFirst{}\% para \HpaLast{}\%. A comparação entre os extremos do período não pressupõe trajetória monotônica. A série fixa permite observar mudanças que não decorrem da entrada ou saída de municípios, embora permaneça uma amostra selecionada pela disponibilidade de informação. As diferenças entre as duas séries não devem ser interpretadas como estimativa do viés causado pelas ausências.
-
-A razão entre somas atribui maior peso aos municípios com maior estoque nativo inicial: responde à pergunta sobre qual parcela da vegetação disponível no conjunto observado foi convertida. Já a média simples das taxas municipais descreve a experiência de um município com peso igual aos demais. Essas medidas não são intercambiáveis. Para examinar a heterogeneidade entre municípios, a Figura~\ref{fig:h1-distribuicao} utiliza uma terceira perspectiva: calcula a média das 24 taxas anuais de cada município da amostra fixa, dando o mesmo peso a cada ano.
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=\textwidth]{../stats/descritiva/resultados_h1/figuras/fig02_distribuicao.pdf}
-    \caption{Distribuição das taxas médias municipais de conversão, 2001--2024}
-    \label{fig:h1-distribuicao}
-    \begin{minipage}{\textwidth}\footnotesize
-    Fonte: elaboração própria com MapBiomas 10.1 e IBGE. Cada ponto corresponde a um município com 24 observações válidas; a posição horizontal dentro do grupo apenas separa os pontos. Os eixos verticais são iguais e todos os municípios da amostra fixa são mostrados, sem corte de extremos. Os grupos são definidos pela predominância territorial; o ponto pantaneiro não constitui uma distribuição representativa do bioma.
-    \end{minipage}
-\end{figure}
-
-A dispersão dentro dos grupos evidencia que a predominância territorial não resume as trajetórias municipais. Além disso, as médias temporais suavizam episódios anuais de conversão: considerando todos os pares válidos, as maiores taxas anuais são \HmaxAg{}\% para agricultura e \HmaxPa{}\% para pastagem. Esses extremos foram preservados e tiveram seus denominadores conferidos; sua magnitude, isoladamente, não caracteriza erro. A comparação descritiva situa a heterogeneidade que a análise posterior deverá examinar, sem atribuí-la exclusivamente às diferenças de bioma.
 
 \FloatBarrier
-\subsection{Preços e capacidade produtiva local}
+O crescimento produtivo e as taxas menores de conversão nos extremos do período qualificam uma leitura que vincule automaticamente aumento da oferta à abertura de novas áreas. O contraste dialoga com \citeonline{MacedoEtAl2012}, que documentaram crescimento da soja e redução do desmatamento na porção florestal de Mato Grosso, com expansão em terras anteriormente abertas. Os resultados aqui descritos abrangem outro período e amostras distintas; não identificam quanto da produção adicional decorreu da substituição de pastagens, da intensificação ou de novas conversões. Tampouco quantificam lucros privados, serviços ecossistêmicos perdidos ou perdas de bem-estar. Acrescentam à discussão sobre custos públicos a identificação dos fluxos que transformam a vegetação, mantendo em aberto as condições econômicas e institucionais que os orientaram.
 
-Os preços representam uma dimensão observável dos incentivos de mercado, sem medir o retorno líquido esperado. Utilizam-se séries da \textit{Pink Sheet}, do Banco Mundial, deflacionadas mês a mês pelo CPI-U dos Estados Unidos, disponibilizado pelo BLS/FRED, e expressas em dólares de poder de compra médio de 2024. A média anual exige os doze meses. A base associa a cada ano $t$ o preço médio do ano civil anterior; por isso, a janela de preços efetivamente descrita é 2000--2023. Soja e milho são cotados por tonelada, e carne bovina, por quilograma.
+\FloatBarrier
+\subsection{Preços agropecuários e incentivos à conversão}
+\label{subsec:mt-precos}
+
+Os preços agropecuários representam uma dimensão observável dos incentivos à conversão discutidos na subseção correspondente da revisão. Mantidas as demais condições, preços mais altos podem elevar a receita esperada por hectare, com intensidade dependente da capacidade produtiva local. A evidência de \citeonline{BermanEtAl2023}, que combinaram preços internacionais e aptidão agrícola para examinar o desmatamento tropical, torna pertinente investigar essa exposição diferenciada. A previsão, entretanto, depende de custos, alternativas de uso e instituições; a cotação do produto não constitui medida completa de rentabilidade.
+
+As séries da Figura~\ref{fig:h1-precos} provêm da \textit{Pink Sheet} do Banco Mundial e foram deflacionadas mês a mês pelo CPI-U dos Estados Unidos, disponibilizado pelo BLS/FRED, para dólares de poder de compra médio de 2024. Soja e milho são cotados por tonelada, e carne bovina, por quilograma. Cada média anual exige doze meses; o preço do ano civil anterior é associado à conversão em $t$, de modo que a janela representada é 2000--2023. O índice com base 100 em 2000 permite comparar movimentos proporcionais entre produtos, sem equiparar suas unidades ou receitas por hectare.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{../stats/descritiva/resultados_h1/figuras/fig03_precos.pdf}
-    \caption{Evolução dos preços reais internacionais usados na base}
+    \caption{Trajetórias dos preços reais internacionais de soja, milho e carne bovina}
     \label{fig:h1-precos}
     \begin{minipage}{\textwidth}\footnotesize
-    Fonte: elaboração própria com Banco Mundial e CPI-U BLS/FRED. Índice de cada preço real: valor anual dividido pelo de 2000, multiplicado por 100. São 24 observações anuais distintas por produto; a repetição do preço na grade municipal não aumenta esse número. O índice compara trajetórias proporcionais, não níveis de preços entre produtos nem receitas por hectare.
+    Fonte: elaboração própria com Banco Mundial e CPI-U BLS/FRED. Índice do preço real anual de cada produto, com 2000 = 100. São 24 valores anuais distintos por produto, repetidos na grade municipal; a repetição não amplia a informação temporal. Preços de $t-1$ são associados às transições de $t$. Dólares constantes não equivalem a preços locais em reais.
     \end{minipage}
 \end{figure}
 
-A Figura~\ref{fig:h1-precos} permite comparar os movimentos proporcionais dos preços sem confundir suas unidades originais. As altas de soja e milho em torno de 2011--2012 são mais acentuadas do que a da carne bovina, cuja trajetória também difere nos anos seguintes. Essa diferença é pertinente à distinção entre expansão agrícola, abertura de pastagens e substituição de usos em áreas já convertidas. Preços internacionais em dólares constantes, contudo, não incorporam diretamente câmbio, custos locais, crédito ou expectativas individuais. Sua defasagem organiza a informação temporal, mas não assegura exogeneidade.
+Em 2012, os índices alcançaram 210,7 para soja e 252,6 para milho, ante 163,8 para carne bovina. A valorização dos grãos não foi acompanhada de maneira proporcional pela carne, cuja trajetória diferiu nos anos seguintes. Essa distinção aproxima a leitura dos dados da questão examinada por \citeonline{Braganca2018}: no Tapajós, aumentos do preço relativo de lavouras em relação à carne estiveram associados à substituição de pastagens por cultivos e à redução do desmatamento local. Aqui, as séries de preços evidenciam movimentos relativos, mas as medidas de conversão selecionadas não observam a substituição entre usos já agropecuários. Não permitem, portanto, atribuir a trajetória de Mato Grosso ao mecanismo estimado naquele estudo.
 
-\input{../stats/descritiva/resultados_h1/tabelas/tab02_capacidade}
-
-Para descrever diferenças físicas de capacidade produtiva, a Tabela~\ref{tab:h1-capacidade} apresenta o rendimento potencial municipal de soja e milho do GAEZ v4, no cenário de alto insumo e sequeiro. Trata-se de uma ilustração em unidade agronômica legível, não da escolha definitiva de uma medida para a especificação econométrica; o cenário de baixo insumo permanece nos diagnósticos. O valor de cada município agrega os pixels válidos com ponderação pelo cosseno da latitude, para aproximar suas diferenças de área. Na comparação entre municípios, cada um entra uma única vez e recebe peso igual, pois essa variável é constante ao longo do painel. A mediana da soja é maior no grupo de predominância Cerrado do que no amazônico, mas essa diferença entre cenários potenciais não mede a produção efetivamente obtida.
-
-Essa distinção é necessária para o argumento da pesquisa: o rendimento realizado em áreas colhidas responde ao manejo e à seleção das parcelas cultivadas, enquanto o GAEZ representa possibilidades sob um cenário definido. Ainda assim, sua referência combina clima de 1961--1990 e informações de terras de 2010, de modo que não se pode presumir sua predeterminação integral em relação a 2001--2024. Ademais, o rendimento em matéria seca não deve ser convertido diretamente em receita pela multiplicação com preços comerciais sem compatibilizar as unidades. O conjunto selecionado também não oferece uma medida validada de capacidade produtiva pecuária: os rendimentos potenciais de soja e milho não suprem essa lacuna para a análise das conversões em pastagem.
+Há outro contraste relevante: em 2023, os preços reais dos três produtos permaneciam acima dos valores de 2000, enquanto as taxas de conversão de 2024 eram inferiores às de 2001 na amostra fixa. Essa coexistência afasta uma leitura mecânica segundo a qual preços mais altos deveriam acompanhar taxas agregadas sempre maiores. Não constitui rejeição de H1, cuja formulação é condicional à capacidade produtiva e ao ambiente institucional, nem teste comparável aos desenhos empíricos da literatura. As séries internacionais não incorporam diretamente câmbio, custos locais, crédito ou expectativas individuais; sua defasagem organiza a informação, mas não assegura exogeneidade. A questão passa a ser em quais condições territoriais e institucionais esses movimentos se associam à conversão, e não se duas tendências agregadas coincidem.
 
 \FloatBarrier
-\subsection{Autuações ambientais e limites para a análise posterior}
+\subsection{Instituições ambientais e respostas aos incentivos}
+\label{subsec:mt-instituicoes}
 
-A dimensão administrativa é descrita pelo número de autos do IBAMA classificados como Flora, por ano de lavratura e município atribuído pelas coordenadas na malha de referência. Essa categoria inclui infrações além da conversão, como transporte de produtos florestais. Foram mantidos os registros disponíveis, sem inferir pagamento das multas, confirmação definitiva da infração ou intensidade de fiscalização a partir da contagem.
+As instituições ambientais podem modificar os custos e os riscos associados às respostas aos incentivos de mercado. Na discussão sobre instituições e respostas aos incentivos da Seção~\ref{sec:literatura}, a distinção entre regras e condições de implementação impede tomar a existência de uma norma como medida de seu cumprimento. A evidência de \citeonline{AssuncaoEtAl2023}, baseada nas limitações de detecção por nuvens do DETER, identificou contenção do desmatamento pelo monitoramento e pela fiscalização na Amazônia. Para dialogar com esse resultado, os registros de Mato Grosso precisam ser examinados como evidência administrativa, sem lhes atribuir automaticamente a capacidade de medir efetividade.
+
+O indicador disponível é o número de autos de infração do IBAMA classificados como Flora, por ano de lavratura e município atribuído pelas coordenadas à malha de referência. A categoria abrange infrações além da conversão, como transporte de produtos florestais. A contagem não representa o valor de multas aplicadas, o montante pago ou a confirmação definitiva de cada infração. A Figura~\ref{fig:h1-ibama} apresenta conjuntamente sua cobertura e as estatísticas das contagens com classificação temática completa nos registros utilizados.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{../stats/descritiva/resultados_h1/figuras/fig04_ibama.pdf}
-    \caption{Cobertura e distribuição das autuações de Flora espacialmente localizadas}
+    \caption{Cobertura e distribuição das autuações do IBAMA classificadas como Flora}
     \label{fig:h1-ibama}
     \begin{minipage}{\textwidth}\footnotesize
-    Fonte: elaboração própria com registros do IBAMA e malha IBGE 2023. Painel A: número de municípios com contagem observada e com classificação temática completa nos registros utilizados. Painel B: média e mediana entre municípios do segundo conjunto, de composição variável. São \HibValid{} contagens observadas e \HibComplete{} com classificação completa no período. As escalas diferem porque os painéis medem objetos distintos. Ausências não são zeros; classificação completa não certifica completude da fonte.
+    Fonte: elaboração própria com registros do IBAMA e malha IBGE 2023. Painel A: municípios com contagem observada e com classificação temática completa nos registros. Painel B: média e mediana entre os municípios do segundo conjunto, de composição variável. O período contém \HibValid{} contagens observadas e \HibComplete{} com classificação completa. Ausência não é zero; classificação completa não certifica a completude da fonte ou da fiscalização. Os painéis possuem unidades e escalas distintas.
     \end{minipage}
 \end{figure}
 
-A Figura~\ref{fig:h1-ibama} mostra por que a trajetória das autuações precisa ser lida junto com sua cobertura. O número anual de municípios com contagens e classificação temática completa varia entre \HibMin{} e \HibMax{}. A média e a mediana do painel inferior são condicionais a esse conjunto, cuja composição muda ao longo do tempo; não representam a média entre os 141 municípios do estado. Quando há zero, ele significa que nenhum auto de Flora foi identificado entre os registros integralmente classificados daquele município-ano. Não significa ausência comprovada de infrações ou de atuação fiscalizatória.
+O número de municípios com classificação completa variou entre \HibMin{} e \HibMax{} por ano, o que limita a comparação direta dos níveis das contagens. Em 2018, a média foi de 18,77 autos e a mediana, de 5,5; em 2024, foram 4,41 e 3, respectivamente. Nos dois anos havia 82 municípios com classificação completa, mas a igualdade de tamanho não assegura a mesma composição. A distância entre média e mediana indica que as contagens mais elevadas em parte dos municípios influenciam o resumo agregado. Os zeros identificam ausência de autos de Flora entre os registros integralmente classificados daquele município-ano; não comprovam ausência de infrações ou de atuação fiscalizatória.
 
-As autuações podem responder simultaneamente à ocorrência de infrações, ao monitoramento, à capacidade administrativa e à qualidade do registro e da localização. Por essa razão, a descritiva não lhes atribui uma direção inequívoca de qualidade institucional. Tampouco se apresenta uma correlação agregada como teste de H1: tendências comuns, heterogeneidade territorial, repetição de observações e resposta da fiscalização à conversão limitariam essa leitura.
+A redução da média entre esses anos não permite concluir que a fiscalização se tornou mais eficaz ou menos presente. As autuações podem aumentar por maior incidência de infrações, maior esforço de fiscalização ou melhor registro e localização, e esses processos podem ocorrer simultaneamente. Pela mesma razão, eventual associação positiva com conversão não demonstraria ineficácia institucional. O contraste com o estudo de \citeonline{AssuncaoEtAl2023} reside justamente no alcance da evidência: suas condições de identificação não são reproduzidas pela descrição de contagens. Os dados observam uma dimensão da atuação administrativa federal, deixando fora medidas abrangentes de cumprimento, normas informais, ação de outras organizações e governança territorial. Para H1, permanece necessário justificar em que sentido o indicador escolhido pode representar o condicionamento institucional da resposta aos incentivos.
 
-Em conjunto, os resultados estabelecem o suporte disponível para distinguir destinos de conversão e situar a variação dos incentivos, da capacidade produtiva e dos registros institucionais. A análise econométrica posterior deverá justificar a amostra, a ordenação temporal e a mensuração dessas dimensões, além das condições necessárias à interpretação das interações propostas. As lacunas de cobertura, o suporte restrito do grupo pantaneiro e a temporalidade das medidas de capacidade permanecem limites substantivos, e não são resolvidos pela inclusão de efeitos fixos.
 \FloatBarrier
+\subsection{Heterogeneidade econômica e ambiental de Mato Grosso}
+\label{subsec:mt-heterogeneidade}
+
+A heterogeneidade econômica e ambiental de Mato Grosso qualifica as tendências agregadas discutidas até aqui. Na subseção \emph{Situação econômica e ambiental de Mato Grosso}, a revisão destacou a diversidade de trajetórias documentada pelos mapas de \citeonline{SimoesEtAl2020}. O recorte municipal desta análise permite examinar como se distribuem conversão e capacidade produtiva, mas não reproduz a observação espacialmente explícita de transições dentro de cada bioma. Essa diferença de escala precisa anteceder a comparação territorial.
+
+Cada município foi agrupado pelo bioma com a maior fração de sua área, obtida pela interseção da malha municipal de 2023 com os biomas do IBGE de 2019. As frações originais foram preservadas, e \Hmixed{} municípios apresentam mais de um bioma. A Tabela~\ref{tab:h1-cobertura} mostra que a cobertura da conversão também é desigual: 71,6\% dos pares potenciais no grupo amazônico, 96,4\% no Cerrado e 56,2\% no Pantanal. Dos quatro municípios de predominância pantaneira, somente um possui conversão observada em todos os anos. A amostra fixa reduz mudanças de composição temporal, mas essa seleção não produz grupos igualmente informativos nem resolve a compatibilidade histórica de todas as séries administrativas.
+
+\input{../stats/descritiva/resultados_h1/tabelas/tab01_cobertura}
+
+A Figura~\ref{fig:h1-distribuicao} dá peso igual aos anos ao calcular a média temporal das 24 taxas de cada município fixo, distinguindo esse objeto da razão entre somas apresentada na Figura~\ref{fig:h1-conversao}. Para pastagem, a mediana dessas médias foi de 1,42\% nos 39 municípios de predominância amazônica e de 0,73\% nos 55 de predominância Cerrado. Dentro dos dois grupos há dispersão expressiva e valores superiores aos resumos centrais. Para agricultura, as taxas médias são menores, mas igualmente heterogêneas. O único ponto pantaneiro não oferece base para caracterizar uma distribuição ou hierarquizar o bioma em relação aos demais.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{../stats/descritiva/resultados_h1/figuras/fig02_distribuicao.pdf}
+    \caption{Heterogeneidade das taxas médias municipais de conversão, 2001--2024}
+    \label{fig:h1-distribuicao}
+    \begin{minipage}{\textwidth}\footnotesize
+    Fonte: elaboração própria com MapBiomas 10.1 e IBGE. Cada ponto é a média aritmética das 24 taxas anuais de um município da amostra fixa. A posição horizontal dentro do grupo apenas separa os pontos; não representa localização geográfica. Grupos definidos pelo bioma predominante na área municipal, sem rateio da conversão pelas frações de bioma. Todos os municípios fixos são mostrados; o grupo pantaneiro contém uma única observação municipal.
+    \end{minipage}
+\end{figure}
+
+Essas diferenças não isolam um efeito do bioma. Os municípios agrupados compartilham apenas um critério de predominância e podem diferir em vegetação disponível, estrutura produtiva, acesso a mercados e condições institucionais. Os fluxos não foram repartidos proporcionalmente pelas frações de bioma, pois isso atribuiria às transições uma localização que o agregado não informa. A evidência complementa a caracterização territorial da literatura ao mostrar que a variação dentro dos grupos também precisa ser considerada na investigação de respostas aos incentivos.
+
+Outra dimensão dessa heterogeneidade aparece no rendimento potencial do GAEZ v4, apresentado na Tabela~\ref{tab:h1-capacidade}. No cenário de alto insumo e sequeiro, a mediana municipal da soja foi de 2.701 kg de matéria seca por hectare no grupo amazônico e de 3.261 no Cerrado; para milho, de 3.002 e 3.320, respectivamente. Os intervalos interquartis mostram que as possibilidades produtivas não se resumem à posição dessas medianas. A tabela abrange os 141 municípios, cada um considerado uma única vez, e não apenas os 95 da comparação de conversão. As posições relativas dos grupos nos dois resumos não constituem, assim, uma estimativa da relação entre capacidade e conversão.
+
+\input{../stats/descritiva/resultados_h1/tabelas/tab02_capacidade}
+\FloatBarrier
+
+O rendimento potencial difere do rendimento efetivamente obtido nas áreas colhidas da PAM: este responde ao manejo, aos insumos e à seleção das parcelas cultivadas. No GAEZ, os pixels válidos foram agregados por município com ponderação pelo cosseno da latitude, aproximando diferenças de área; os resumos entre municípios lhes atribuem peso igual. A referência combina clima de 1961--1990 e informações de terras de 2010, não garantindo predeterminação integral em relação ao painel. Além disso, matéria seca e unidades comerciais precisam ser compatibilizadas antes de qualquer combinação com preços, e não há medida validada de capacidade pecuária neste conjunto. A heterogeneidade descrita torna pertinente o exame proposto em H1, mas a escolha de medidas predeterminadas e o suporte das comparações permanecem questões da etapa econométrica.
+
+\subsection{Síntese e articulação com a estratégia econométrica}
+\label{subsec:mt-sintese}
+
+A descrição de Mato Grosso reúne crescimento agropecuário, taxas de conversão menores entre os extremos do período, predominância da pastagem nos fluxos observados, movimentos distintos de preços e registros institucionais de cobertura desigual. A dispersão municipal e as diferenças de capacidade produtiva mostram por que médias estaduais não esgotam o problema de como os retornos econômicos esperados e o ambiente institucional condicionam a taxa de conversão, nem como essa relação varia entre atividades e biomas. A construção de medidas brutas por destino atende ao primeiro objetivo específico e delimita o suporte dos objetivos de examinar preços em interação com capacidade predeterminada, condicionamento institucional e heterogeneidade. Mantém-se a formulação de H1: \emph{Elevações nos retornos econômicos esperados dos usos agropecuários aumentam a taxa de conversão da vegetação nativa, sendo essa resposta, \textit{ceteris paribus}, amplificada pela capacidade produtiva local da terra e modulada pela efetividade do ambiente institucional.} Os resultados reconhecem a coexistência dessas dimensões, sem confirmar ou rejeitar a hipótese; permanece em aberto se e em que intensidade os incentivos se associam à conversão sob diferentes condições locais.
+
+Responder a essa questão requer distinguir a variação dos incentivos de tendências comuns, diferenças persistentes entre territórios, seleção amostral e respostas da fiscalização às próprias infrações. A passagem à Seção~\ref{sec:estrategia} envolve desenvolver o desenho geral anunciado na introdução: dados em painel, ordenação temporal entre preços e conversão, interações com capacidade produtiva e condições institucionais, efeitos fixos territoriais e temporais e controles compatíveis com a investigação. A especificação deverá justificar a mensuração, a amostra e o suporte de cada comparação, especialmente diante da cobertura restrita do Pantanal e das limitações temporais do GAEZ. Esses procedimentos não asseguram identificação causal; quando suas condições não puderem ser sustentadas, os resultados deverão ser interpretados como associações condicionais. A descrição estabelece, portanto, os objetos e os limites a partir dos quais a investigação econométrica de H1 poderá avançar.
+
+\endgroup

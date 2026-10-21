@@ -1,6 +1,6 @@
 ---
 title: "H1 — Análise descritiva da conversão de vegetação nativa"
-subtitle: "Roteiro comentado: dados, cobertura, conversão, preços e autuações"
+subtitle: "Roteiro comentado: conversão, preços, autuações e oferta agropecuária"
 output:
   html_document:
     toc: true
@@ -19,15 +19,19 @@ fornecido. Não estimamos diferenças em diferenças ou controle sintético.
 
 Queremos descrever a conversão da vegetação nativa para agricultura e pastagem,
 os preços dos produtos agropecuários, a capacidade produtiva e as autuações
-ambientais. As comparações territoriais usam a maior fração de bioma em cada
+ambientais, além de plantio, produção, rendimento, rebanho, abate e exportações.
+As comparações territoriais usam a maior fração de bioma em cada
 município. Elas não isolam a conversão ocorrida dentro dos polígonos de cada bioma.
 
 **Antes de executar:** mantenha as bases na estrutura original do projeto e
 execute os blocos em ordem. O roteiro procura a pasta `2_INTI` a partir do
 arquivo ou do diretório de trabalho. Se necessário, informe `raiz_projeto`
-no bloco de configuração. A exportação começa desativada. O botão **Knit**
-gera o HTML; as tabelas, figuras e bases adicionais só são gravadas quando
-`exportar <- TRUE`.
+no bloco de configuração. A exportação começa ativada (`exportar <- TRUE`):
+figuras em `stats/figuras`, tabelas em `stats/tabelas` e CSVs/bases em `stats/dados`.
+Use `exportar <- FALSE` para explorar sem gravar. O botão **Knit** gera o HTML. Antes da primeira execução com oferta, execute
+`python 2_INTI/chapters/chap1/stats/descritiva/obter_oferta_h1.py` da raiz.
+O R lê as fontes locais sem acessar a rede. Variação percentual exige valor
+positivo no ano anterior; ausências não são convertidas em zero.
 
 # Preparar a sessão
 
@@ -73,7 +77,7 @@ A configuração de idioma do sistema não precisa ser alterada.
 
 ```{r configuracao}
 raiz_projeto <- ""       # Vazio: localizar a raiz automaticamente.
-exportar <- FALSE        # TRUE: salvar tabelas, figuras, dados e conferências.
+exportar <- TRUE         # FALSE: apenas explorar, sem gravar os resultados.
 abrir_tabelas <- FALSE   # TRUE: abrir as tabelas no visualizador do RStudio/VS Code.
 linhas_previa <- 12L     # Altera apenas a exibição, nunca os cálculos.
 anos_esperados <- 2001:2024
@@ -114,8 +118,8 @@ if (!nzchar(raiz_projeto)) raiz_projeto <- localizar_projeto()
 raiz_projeto <- normalizePath(raiz_projeto, winslash = "/", mustWork = TRUE)
 
 pasta_base <- file.path(raiz_projeto, "2_INTI/chapters/chap1/stats/descritiva")
-pasta_saida <- file.path(pasta_base, "resultados_h1_humanizado")
-pasta_auditoria <- file.path(pasta_saida, "auditoria")
+pasta_saida <- file.path(raiz_projeto, "2_INTI/chapters/chap1/stats")
+pasta_auditoria <- file.path(raiz_projeto, "2_INTI/audit/descritiva_chap1_20261020/v3")
 
 # Aceita os nomes sem extensão do original e as versões com extensão .parquet.
 arquivo_parquet <- function(nome) {
@@ -138,7 +142,15 @@ caminhos <- c(
   dicionario = file.path(raiz_projeto,
     "2_INTI/xdata/chap1/processed/harmonizacao/painel_notebook/dicionario_painel.csv"),
   municipios = file.path(raiz_projeto,
-    "2_INTI/xdata/chap1/processed/territorio_141/municipios_referencia.json")
+    "2_INTI/xdata/chap1/processed/territorio_141/municipios_referencia.json"),
+  pam = file.path(raiz_projeto,
+    "2_INTI/xdata/chap1/processed/tabular/h1_h2__pam_soja_milho__ibge__municipio_anual.csv"),
+  ppm = file.path(raiz_projeto,
+    "2_INTI/xdata/chap1/processed/tabular/h1_h2__ppm_bovinos__ibge__municipio_anual.csv"),
+  abate = file.path(raiz_projeto,
+    "2_INTI/xdata/chap1/processed/harmonizacao/oferta_descritiva/abate_mt_anual.csv"),
+  exportacoes = file.path(raiz_projeto,
+    "2_INTI/xdata/chap1/processed/harmonizacao/oferta_descritiva/exportacoes_municipais_anual.csv")
 )
 
 ausentes <- caminhos[!file.exists(caminhos)]
@@ -310,6 +322,9 @@ Mantemos os **15 campos analíticos** do código original: áreas e taxas de con
 estoque nativo inicial, três preços, duas medidas de capacidade produtiva,
 três frações de bioma e dois campos relativos às autuações. Os nomes originais
 das colunas são preservados para permitir o vínculo com a documentação.
+Acrescentamos plantio, produção, rendimento realizado, rebanho, abate e exportações,
+com variações anuais. Abate estadual e exportações por domicílio fiscal ficam
+identificados; essas medidas não são tratadas como produção municipal de carne.
 
 “Bioma predominante” significa a maior fração da área municipal, sem exigir um
 limiar de 80%. Um município pode conter mais de um bioma. Não multiplicamos a
@@ -337,7 +352,7 @@ exigir_colunas(dados, variaveis_selecionadas, "df_h1")
 exigir_colunas(painel_origem,
               c("y_cobertura_completa", "y_fracao_area_valida_par", "y_area_total_ha"),
               "Painel de origem")
-conferir(length(variaveis_selecionadas) == 15L, "Selecionados os mesmos 15 campos analíticos.")
+conferir(length(variaveis_selecionadas) == 15L, "Preservados os 15 campos analíticos originais; oferta sera acrescentada.")
 conferir(all(vapply(dados[setdiff(variaveis_selecionadas, variavel_parcial)],
                    is.numeric, logical(1))), "As variáveis de medida são numéricas.")
 conferir(all(vapply(dados_brutos, function(x) {
@@ -370,9 +385,140 @@ dados <- dados |>
     area_y = painel_origem$y_area_total_ha
   )
 
+# Oferta observada complementa os 15 campos originais; nao muda os graficos anteriores.
+# PAM/PPM preservam as ausencias da fonte, inclusive simbolos SIDRA ja tratados como NA.
+pam_oferta <- read_csv(caminhos[["pam"]], col_types = cols(codigo_ibge = col_character()),
+                       show_col_types = FALSE, progress = FALSE) |>
+  filter(ano %in% c(min(anos_esperados) - 1L, anos_esperados)) |>
+  semi_join(cadastro, by = "codigo_ibge")
+ppm_oferta <- read_csv(caminhos[["ppm"]], col_types = cols(codigo_ibge = col_character()),
+                       show_col_types = FALSE, progress = FALSE) |>
+  filter(ano %in% c(min(anos_esperados) - 1L, anos_esperados)) |>
+  semi_join(cadastro, by = "codigo_ibge")
+exportacoes_oferta <- read_csv(caminhos[["exportacoes"]],
+  col_types = cols(codigo_ibge = col_character()), show_col_types = FALSE, progress = FALSE)
+abate_oferta <- read_csv(caminhos[["abate"]], show_col_types = FALSE, progress = FALSE)
+conferir(all(vapply(list(pam_oferta, ppm_oferta, exportacoes_oferta, abate_oferta),
+                   function(x) nrow(problems(x)) == 0L, logical(1))),
+         "Fontes de oferta lidas sem problemas de conversao de tipos.")
+variaveis_pam <- c("area_plantada_ha", "area_colhida_ha", "producao_t", "rendimento_medio_kg_ha")
+variaveis_exportacao <- c("exportacao_fob_usd_nominal_domicilio", "exportacao_kg_liquido_domicilio")
+exigir_colunas(pam_oferta, c("codigo_ibge", "ano", "produto", variaveis_pam), "PAM")
+exigir_colunas(ppm_oferta, c("codigo_ibge", "ano", "produto", "efetivo_bovino"), "PPM")
+exigir_colunas(exportacoes_oferta, c("codigo_ibge", "ano", "produto", variaveis_exportacao), "Comex")
+exigir_colunas(abate_oferta, c("ano", "abate_bovinos_cabecas_mt", "peso_carcacas_bovinas_kg_mt"), "Abate MT")
+conferir(!anyDuplicated(pam_oferta[c("codigo_ibge", "ano", "produto")]) &&
+           !anyDuplicated(ppm_oferta[c("codigo_ibge", "ano")]) &&
+           !anyDuplicated(exportacoes_oferta[c("codigo_ibge", "ano", "produto")]) &&
+           !anyDuplicated(abate_oferta$ano), "Chaves de oferta unicas antes das juncoes.")
+conferir(setequal(pam_oferta$produto, c("Soja (em gr\u00e3o)", "Milho (em gr\u00e3o)")) &&
+           all(ppm_oferta$produto == "Bovino") &&
+           setequal(exportacoes_oferta$produto, c("soja", "milho", "carne_bovina")),
+         "Produtos das fontes de oferta correspondem aos produtos selecionados.")
+conferir(all(exportacoes_oferta$codigo_ibge %in% cadastro$codigo_ibge),
+         "Municipios Comex identificados pelo cadastro oficial da propria API.")
+
+pam_larga <- pam_oferta |>
+  mutate(produto = if_else(startsWith(produto, "Soja "), "soja", "milho")) |>
+  select(codigo_ibge, ano, produto, all_of(variaveis_pam)) |>
+  pivot_wider(names_from = produto, values_from = all_of(variaveis_pam), names_sep = "__")
+exportacoes_largas <- exportacoes_oferta |>
+  pivot_wider(names_from = produto, values_from = all_of(variaveis_exportacao), names_sep = "__")
+oferta_niveis <- expand_grid(codigo_ibge = cadastro$codigo_ibge,
+                             ano = c(min(anos_esperados) - 1L, anos_esperados)) |>
+  left_join(pam_larga, by = c("codigo_ibge", "ano")) |>
+  left_join(ppm_oferta |> select(codigo_ibge, ano, efetivo_bovino), by = c("codigo_ibge", "ano")) |>
+  left_join(exportacoes_largas, by = c("codigo_ibge", "ano")) |>
+  left_join(abate_oferta, by = "ano") |>
+  arrange(codigo_ibge, ano)
+variaveis_oferta_nivel <- c(
+  unlist(lapply(c("soja", "milho"), function(p) paste0(variaveis_pam, "__", p))),
+  "efetivo_bovino",
+  unlist(lapply(c("soja", "milho", "carne_bovina"), function(p) paste0(variaveis_exportacao, "__", p))),
+  "abate_bovinos_cabecas_mt", "peso_carcacas_bovinas_kg_mt")
+conferir(all(vapply(oferta_niveis[variaveis_oferta_nivel], function(x) {
+  is.numeric(x) && all(is.na(x) | (is.finite(x) & x >= 0))
+}, logical(1))), "Niveis de oferta sao numericos, nao negativos ou ausentes.")
+conferir(nrow(oferta_niveis) == municipios_esperados * (length(anos_esperados) + 1L),
+         "Grade de oferta inclui 2000 para comparar 2001 com o ano anterior.")
+conferir(all(oferta_niveis$ano %in% anos_esperados | oferta_niveis$ano == min(anos_esperados) - 1L) &&
+           !anyDuplicated(oferta_niveis[c("codigo_ibge", "ano")]),
+         "Grade de oferta tem anos consecutivos e chaves unicas.")
+
+crescimento_pct <- function(atual, anterior) {
+  100 * (atual / if_else(anterior > 0, anterior, NA_real_) - 1)
+}
+oferta_municipal <- oferta_niveis |>
+  group_by(codigo_ibge) |>
+  mutate(across(all_of(variaveis_oferta_nivel), list(
+    variacao_anual = ~ .x - lag(.x),
+    variacao_anual_pct = ~ crescimento_pct(.x, lag(.x))
+  ), .names = "{.col}__{.fn}")) |>
+  ungroup() |>
+  filter(ano %in% anos_esperados)
+variaveis_oferta <- setdiff(names(oferta_municipal), c("codigo_ibge", "ano"))
 dados_h1 <- dados |>
-  select(codigo_ibge, municipio, ano, bioma_predominante, all_of(variaveis_selecionadas))
+  select(codigo_ibge, municipio, ano, bioma_predominante, all_of(variaveis_selecionadas)) |>
+  left_join(oferta_municipal, by = c("codigo_ibge", "ano"))
+conferir(nrow(dados_h1) == nrow(dados) && !anyDuplicated(dados_h1[c("codigo_ibge", "ano")]),
+         "Inclusao de oferta preserva todas as linhas e chaves de dados_h1.")
+conferir(isTRUE(all.equal(dados_h1$efetivo_bovino, dados$efetivo_bovino, tolerance = 1e-12)),
+         "Rebanho PPM coincide com o rebanho ja existente no painel reconciliado.")
 mostrar_tabela(dados_h1, "df_h1_selecionado")
+
+# Os valores estaduais se repetem entre municipios: nunca soma-los nessa dimensao.
+# Exportacoes sao por domicilio fiscal; ausencia de registro nao e imputada como zero.
+metadados_oferta <- tibble(
+  nome_original = variaveis_oferta_nivel,
+  rotulo = c(paste(rep(c("Area plantada", "Area colhida", "Producao", "Rendimento realizado"), 2),
+                  rep(c("de soja", "de milho"), each = 4)),
+             "Rebanho bovino municipal",
+             paste(rep(c("Exportacao FOB nominal", "Peso liquido exportado"), 3),
+                   rep(c("de soja", "de milho", "de carne bovina"), each = 2)),
+             "Bovinos abatidos sob inspecao em MT", "Peso das carcacas bovinas sob inspecao em MT"),
+  fonte_primaria = c(rep("IBGE/PAM, tabela SIDRA 1612", 8), "IBGE/PPM, tabela SIDRA 3939",
+                     rep("MDIC/SECEX, Comex Stat, modulo municipios", 6),
+                     rep("IBGE, Pesquisa Trimestral do Abate, tabela SIDRA 1092", 2)),
+  unidade = c(rep(c("ha", "ha", "t", "kg/ha"), 2), "cabecas",
+              rep(c("USD correntes FOB", "kg liquidos"), 3), "cabecas (UF MT)", "kg de carcacas (UF MT)"),
+  formula = c(rep("Valor anual publicado na PAM, sem imputacao ou rateio territorial.", 8),
+              "Estoque bovino anual publicado na PPM; nao somar estoques entre anos.",
+              rep("Soma anual Comex por domicilio fiscal: SH4 1201 soja, 1005 milho, 0201+0202 carne bovina.", 6),
+              rep("Soma dos quatro trimestres de MT, total do rebanho e total de inspecoes; sem somar meses aos trimestres.", 2)),
+  limitacao_adicional = c(rep(paste("Geografia municipal historica nao reconstituida; simbolos SIDRA preservados como NA.",
+    "Area plantada e colhida nao sao conversao de vegetacao; safras podem usar a mesma terra.",
+    "Rendimento realizado nao e aptidao predeterminada."), 8),
+    "Rebanho e estoque de cabecas, nao abate ou kg de carne; limites municipais historicos exigem atencao.",
+    rep(paste("Domicilio fiscal nao identifica origem municipal da producao; FOB e nominal.",
+              "Sem farelo/oleo de soja, miudos, bovinos vivos ou preparacoes de carne.",
+              "Ausencia de registro mantida NA, nao zero."), 6),
+    rep("Dado estadual repetido nos municipios: nao somar entre municipios nem tratar como variacao municipal. Estabelecimentos sob inspecao; peso de carcaca nao e carne desossada.", 2))
+)
+metadados_oferta <- bind_rows(
+  metadados_oferta,
+  metadados_oferta |>
+    mutate(formula = paste0(nome_original, "(t) - ", nome_original, "(t-1); NA se algum valor faltar."),
+           nome_original = paste0(nome_original, "__variacao_anual"),
+           rotulo = paste("Variacao anual absoluta:", rotulo)),
+  metadados_oferta |>
+    mutate(formula = paste0("100 * (", nome_original, "(t) / ", nome_original,
+                            "(t-1) - 1); exige anterior positivo e ambos observados."),
+           nome_original = paste0(nome_original, "__variacao_anual_pct"), unidade = "%",
+           rotulo = paste("Variacao anual percentual:", rotulo))
+) |>
+  mutate(nome_final = nome_original, papel = "Descricao da escala e variacao da oferta; nao implica exogeneidade",
+         definicao = paste(rotulo, "|", unidade, "|", formula), cobertura = "2001-2024; variacao usa t-1 desde 2000",
+         evidencia_original = paste("2_INTI/xdata/chap1/processed/tabular/ (PAM/PPM);",
+           "2_INTI/xdata/chap1/processed/harmonizacao/oferta_descritiva/manifesto.json (abate/Comex)"),
+         justificativa = "Descrever plantio, producao, rebanho, abate e exportacoes sem retirar as variaveis anteriores.")
+conferir(setequal(metadados_oferta$nome_original, variaveis_oferta) &&
+           !anyDuplicated(metadados_oferta$nome_original), "Metadados unicos para todas as novas colunas.")
+cobertura_oferta <- bind_rows(lapply(variaveis_oferta, function(nome) {
+  x <- dados_h1[[nome]]
+  tibble(nome_original = nome, validos = sum(!is.na(x)), ausentes = sum(is.na(x)),
+         proporcao_ausente = mean(is.na(x)))
+}))
+mostrar_tabela(metadados_oferta |> left_join(cobertura_oferta, by = "nome_original"), "dicionario_oferta")
 ```
 
 ## Conferir áreas, taxas e denominadores
@@ -701,6 +847,188 @@ salvar_grafico(grafico_ibama, "fig04_ibama", altura = 5.5)
 melhor registro ou uma combinação desses fatores. A contagem não identifica,
 por si só, a efetividade institucional nem o efeito causal da fiscalização.
 
+# Como evoluíram as lavouras, a pecuária e as exportações?
+
+A amostra fixa é definida por produto, com dados em todos os anos de 2001 a 2024.
+Para lavouras, plantio, colheita e produção usam os mesmos municípios em cada ano.
+Os totais disponíveis não imputam ausências; não são automaticamente totais de MT.
+A geografia municipal histórica não foi reconstituída. Áreas de safras distintas
+podem ocupar a mesma terra; área plantada não mede conversão de vegetação nativa.
+
+```{r oferta-agregacao}
+soma_observada <- function(x) if (all(is.na(x))) NA_real_ else sum(x, na.rm = TRUE)
+rotulos_produtos <- c(soja = "Soja", milho = "Milho", carne_bovina = "Carne bovina")
+amostras_oferta <- c("Disponível no ano", "Municípios fixos")
+
+agricultura_municipal <- dados_h1 |>
+  select(codigo_ibge, ano, matches("^(area_plantada_ha|area_colhida_ha|producao_t)__(soja|milho)$")) |>
+  pivot_longer(-c(codigo_ibge, ano), names_to = c(".value", "produto"),
+               names_pattern = "^(area_plantada_ha|area_colhida_ha|producao_t)__(soja|milho)$") |>
+  mutate(observado = complete.cases(area_plantada_ha, area_colhida_ha, producao_t)) |>
+  group_by(codigo_ibge, produto) |>
+  mutate(fixo = all(observado) && n_distinct(ano) == length(anos_esperados)) |>
+  ungroup()
+rebanho_municipal <- dados_h1 |>
+  select(codigo_ibge, ano, efetivo_bovino) |>
+  mutate(observado = !is.na(efetivo_bovino)) |>
+  group_by(codigo_ibge) |>
+  mutate(fixo = all(observado) && n_distinct(ano) == length(anos_esperados)) |>
+  ungroup()
+oferta_cobertura_municipal <- bind_rows(
+  agricultura_municipal |> select(codigo_ibge, ano, produto, observado, fixo),
+  rebanho_municipal |> transmute(codigo_ibge, ano, produto = "bovinos", observado, fixo)
+) |>
+  group_by(codigo_ibge, produto, fixo) |>
+  summarise(anos_observados = sum(observado), .groups = "drop")
+mostrar_tabela(oferta_cobertura_municipal, "oferta_cobertura_municipal")
+
+oferta_agricultura_anual <- bind_rows(
+  agricultura_municipal |> filter(observado) |> mutate(amostra = amostras_oferta[1]),
+  agricultura_municipal |> filter(fixo) |> mutate(amostra = amostras_oferta[2])
+) |>
+  group_by(ano, produto, amostra) |>
+  summarise(n_municipios = n_distinct(codigo_ibge),
+    across(c(area_plantada_ha, area_colhida_ha, producao_t), soma_observada), .groups = "drop") |>
+  mutate(rendimento_kg_ha = 1000 * producao_t / if_else(area_colhida_ha > 0, area_colhida_ha, NA_real_)) |>
+  pivot_longer(c(area_plantada_ha, area_colhida_ha, producao_t, rendimento_kg_ha),
+               names_to = "indicador", values_to = "valor") |>
+  mutate(unidade = case_when(indicador == "producao_t" ~ "t",
+    indicador == "rendimento_kg_ha" ~ "kg/ha", TRUE ~ "ha"))
+oferta_rebanho_anual <- bind_rows(
+  rebanho_municipal |> filter(observado) |> mutate(amostra = amostras_oferta[1]),
+  rebanho_municipal |> filter(fixo) |> mutate(amostra = amostras_oferta[2])
+) |>
+  group_by(ano, amostra) |>
+  summarise(n_municipios = n_distinct(codigo_ibge), valor = soma_observada(efetivo_bovino), .groups = "drop") |>
+  mutate(produto = "bovinos", indicador = "efetivo_bovino", unidade = "cabeças")
+
+# Abate é estadual: usar a fonte com uma linha por ano, sem somar a grade municipal.
+oferta_abate_anual <- abate_oferta |>
+  filter(ano %in% anos_esperados) |>
+  pivot_longer(c(abate_bovinos_cabecas_mt, peso_carcacas_bovinas_kg_mt),
+               names_to = "indicador", values_to = "valor") |>
+  mutate(produto = "bovinos", amostra = "MT: abate sob inspeção", n_municipios = NA_integer_,
+    unidade = if_else(indicador == "abate_bovinos_cabecas_mt", "cabeças", "kg de carcaças"))
+oferta_exportacoes_anual <- exportacoes_oferta |>
+  filter(ano %in% anos_esperados) |>
+  pivot_longer(all_of(variaveis_exportacao), names_to = "indicador", values_to = "valor") |>
+  group_by(ano, produto, indicador) |>
+  summarise(n_municipios = n_distinct(codigo_ibge[!is.na(valor)]),
+            valor = soma_observada(valor), .groups = "drop") |>
+  mutate(amostra = "Registros por domicílio fiscal em MT",
+    unidade = if_else(indicador == variaveis_exportacao[1], "USD correntes FOB", "kg líquidos"))
+
+# As variações são calculadas sobre os agregados; nunca somamos percentuais municipais.
+oferta_series_anuais <- bind_rows(oferta_agricultura_anual, oferta_rebanho_anual,
+                                oferta_abate_anual, oferta_exportacoes_anual) |>
+  group_by(produto, indicador, amostra) |>
+  arrange(ano, .by_group = TRUE) |>
+  mutate(variacao_anual = valor - lag(valor),
+         variacao_anual_pct = crescimento_pct(valor, lag(valor))) |>
+  ungroup()
+conferir(all(count(oferta_series_anuais, produto, indicador, amostra)$n == length(anos_esperados)),
+         "Cada serie de oferta tem os 24 anos; lacunas anuais nao sao ligadas silenciosamente.")
+conferir(all((oferta_series_anuais |> filter(amostra == amostras_oferta[2]) |>
+  summarise(n = n_distinct(n_municipios), .by = c(produto, indicador)))$n == 1L),
+  "Amostras fixas de oferta tem cobertura municipal constante.")
+conferir(!anyDuplicated(oferta_abate_anual[c("ano", "indicador")]),
+         "Abate estadual entra uma unica vez por ano e indicador.")
+conferir(is.na(soma_observada(c(NA_real_, NA_real_))) && soma_observada(c(NA, 0)) == 0,
+         "Somas preservam a distincao entre ausencia e zero observado.")
+mostrar_tabela(oferta_agricultura_anual, "oferta_agricultura_anual")
+mostrar_tabela(oferta_rebanho_anual, "oferta_rebanho_anual")
+mostrar_tabela(oferta_abate_anual, "oferta_abate_anual")
+mostrar_tabela(oferta_exportacoes_anual, "oferta_exportacoes_anual")
+mostrar_tabela(oferta_series_anuais, "oferta_series_anuais")
+
+```
+
+```{r oferta-graficos}
+escala_amostras_oferta <- list(
+  scale_color_manual(values = setNames(c("#888888", "#0072B2"), amostras_oferta)),
+  scale_linetype_manual(values = setNames(c("dashed", "solid"), amostras_oferta)),
+  scale_x_continuous(breaks = c(2001, 2010, 2020, 2024)),
+  scale_y_continuous(limits = c(0, NA), labels = rotulo_numero),
+  theme(plot.caption = element_text(hjust = 0, size = 8))
+)
+lavouras_grafico <- oferta_agricultura_anual |>
+  filter(indicador != "rendimento_kg_ha") |>
+  mutate(produto = factor(rotulos_produtos[produto], levels = c("Soja", "Milho")),
+    painel = factor(indicador, levels = c("area_plantada_ha", "area_colhida_ha", "producao_t"),
+      labels = c("Área plantada\n(milhões de ha)", "Área colhida\n(milhões de ha)", "Produção\n(milhões de t)")))
+grafico_lavouras <- ggplot(lavouras_grafico, aes(ano, valor / 1e6, color = amostra, linetype = amostra)) +
+  geom_line(linewidth = 0.7) + facet_grid(painel ~ produto, scales = "free_y") +
+  escala_amostras_oferta +
+  labs(x = "Ano", y = NULL, title = "Área e produção de soja e milho",
+    caption = paste("Fonte: IBGE/PAM. Disponível: municípios com plantio, colheita e produção observados no ano.",
+      "Fixos: mesma condição em todos os anos, por cultura. Ausências não são zeros.", sep = "\n"))
+print(grafico_lavouras)
+salvar_grafico(grafico_lavouras, "fig05_lavouras", altura = 7)
+
+rendimento_grafico <- oferta_agricultura_anual |>
+  filter(indicador == "rendimento_kg_ha") |>
+  mutate(produto = factor(rotulos_produtos[produto], levels = c("Soja", "Milho")))
+grafico_rendimento <- ggplot(rendimento_grafico, aes(ano, valor / 1000, color = amostra, linetype = amostra)) +
+  geom_line(linewidth = 0.7) + facet_wrap(~ produto) + escala_amostras_oferta +
+  labs(x = "Ano", y = "Toneladas por hectare colhido", title = "Rendimento agrícola realizado",
+    caption = paste("Fonte: IBGE/PAM. Rendimento agregado = soma da produção / soma da área colhida.",
+      "Mesma cobertura das lavouras. O rendimento realizado difere do potencial GAEZ.", sep = "\n"))
+print(grafico_rendimento)
+salvar_grafico(grafico_rendimento, "fig06_rendimento_agricola")
+
+grafico_rebanho <- ggplot(oferta_rebanho_anual, aes(ano, valor / 1e6, color = amostra, linetype = amostra)) +
+  geom_line(linewidth = 0.7) + escala_amostras_oferta +
+  labs(x = "Ano", y = "Milhões de cabeças", title = "Rebanho bovino nos municípios da amostra",
+    caption = paste("Fonte: IBGE/PPM. Estoque anual; não corresponde ao abate ou à produção de carne.",
+      "Fixos: municípios com rebanho observado em todos os anos de 2001 a 2024.", sep = "\n"))
+print(grafico_rebanho)
+salvar_grafico(grafico_rebanho, "fig07_rebanho")
+
+abate_grafico <- oferta_abate_anual |>
+  mutate(painel = if_else(indicador == "abate_bovinos_cabecas_mt", "Bovinos abatidos\n(milhões de cabeças)",
+                         "Peso de carcaças\n(milhões de t)"),
+         valor_plot = valor / if_else(indicador == "abate_bovinos_cabecas_mt", 1e6, 1e9))
+grafico_abate <- ggplot(abate_grafico, aes(ano, valor_plot)) +
+  geom_line(linewidth = 0.7, color = "#0072B2") + facet_wrap(~ painel, scales = "free_y") +
+  scale_x_continuous(breaks = c(2001, 2010, 2020, 2024)) +
+  scale_y_continuous(limits = c(0, NA), labels = rotulo_numero) +
+  labs(x = "Ano", y = NULL, title = "Abate bovino sob inspeção em Mato Grosso",
+    caption = paste("Fonte: IBGE, Pesquisa Trimestral do Abate. Soma dos quatro trimestres; total estadual.",
+      "Peso de carcaça não equivale a carne desossada. Valores estaduais não são somados por município.", sep = "\n")) +
+  theme(plot.caption = element_text(hjust = 0, size = 8))
+print(grafico_abate)
+salvar_grafico(grafico_abate, "fig08_abate_mt")
+
+exportacoes_grafico <- oferta_exportacoes_anual |>
+  mutate(produto = factor(rotulos_produtos[produto], levels = unname(rotulos_produtos)),
+    painel = factor(indicador, levels = variaveis_exportacao,
+      labels = c("Valor FOB\n(US$ bilhões correntes)", "Peso líquido\n(milhões de t)")))
+grafico_exportacoes <- ggplot(exportacoes_grafico, aes(ano, valor / 1e9)) +
+  geom_line(linewidth = 0.7, color = "#0072B2") +
+  facet_wrap(vars(painel, produto), ncol = 3, scales = "free_y") +
+  scale_x_continuous(breaks = c(2001, 2010, 2024)) +
+  scale_y_continuous(limits = c(0, NA), labels = rotulo_numero) +
+  labs(x = "Ano", y = NULL, title = "Exportações registradas por domicílio fiscal em MT",
+    caption = paste("Fonte: MDIC/SECEX, Comex Stat. SH4: 1201 (soja), 1005 (milho), 0201 e 0202 (carne bovina).",
+      "FOB em dólares nominais. Domicílio fiscal não identifica a origem municipal da produção.",
+      "Escalas verticais próprias a cada painel.", sep = "\n")) +
+  theme(plot.caption = element_text(hjust = 0, size = 8), axis.text.x = element_text(size = 8))
+print(grafico_exportacoes)
+salvar_grafico(grafico_exportacoes, "fig09_exportacoes", altura = 6.5)
+
+```
+
+```{r oferta-tabelas}
+# Comparação de pontas: a variação 2001-2024 não é uma taxa média anual.
+resumo_oferta <- oferta_series_anuais |>
+  filter(amostra != amostras_oferta[1], ano %in% range(anos_esperados)) |>
+  select(produto, indicador, unidade, amostra, ano, valor, n_municipios) |>
+  pivot_wider(names_from = ano, values_from = c(valor, n_municipios)) |>
+  mutate(variacao_2001_2024 = valor_2024 - valor_2001,
+         variacao_2001_2024_pct = crescimento_pct(valor_2024, valor_2001))
+mostrar_tabela(resumo_oferta, "oferta_resumo_2001_2024")
+```
+
 # Diagnósticos e documentação das variáveis
 
 Os blocos seguintes preservam a rastreabilidade do roteiro original. As
@@ -819,27 +1147,30 @@ dicionario <- tibble(nome_original=variaveis_selecionadas,nome_final=variaveis_s
 dicionario$cobertura <- c(rep("2001-2024: município-ano",5),
   rep("2000-2023: 24 preços anuais, repetidos na grade 2001-2024",3),
   rep(paste0(municipios_esperados, " municípios; constante nos ", length(anos_esperados), " anos"), 5),rep("2001-2024: município-ano, cobertura desigual",2))
-conferir(nrow(dicionario)==15 && !anyNA(dicionario$definicao),"Dicionário completo e único")
+dicionario <- bind_rows(dicionario,
+  metadados_oferta |> left_join(cobertura_oferta, by = "nome_original"))
+conferir(nrow(dicionario) == length(variaveis_selecionadas) + length(variaveis_oferta) &&
+           !anyDuplicated(dicionario$nome_original) && !anyNA(dicionario$definicao),
+         "Dicionario completo e unico para os campos originais e a oferta.")
 mostrar_tabela(dicionario |> select(rotulo, unidade, validos, ausentes, proporcao_ausente),
                "dicionario_cobertura", diagnostico = TRUE)
 # Para ler definições, fontes e fórmulas completas: View(dicionario)
-if (exportar) write_csv(dicionario,file.path(pasta_saida,"dicionario_variaveis.csv"),na="")
-candidatas_excluidas <- tibble(candidatas=c("Logs, variações de preços e interações","PAM contemporânea e defasada",
+if (exportar) write_csv(dicionario,file.path(pasta_saida,"dados","dicionario_variaveis.csv"),na="")
+candidatas_excluidas <- tibble(candidatas=c("Logs, variações de preços e interações","PAM como capacidade predeterminada",
   "PAM 1991-2000 (mínimo sete anos)","GAEZ baixo insumo e índices sx",
   "Multas e autos por código informado","Autos Desmatamento/Desmatamento e Queimada",
-  "Rebanho e lotação","Estoques legados e participações de uso","Chuva e relevo"),
+  "Lotação como produtividade de carne","Estoques legados e participações de uso","Chuva e relevo"),
   motivo=c("Redundância para descritiva; pertencem à especificação futura.",
-  "Rendimento realizado é endógeno ao manejo e à seleção das áreas; não é aptidão predeterminada.",
+  "PAM realizada incluída como descritiva de oferta; não é aptidão predeterminada.",
   "Cobertura seletiva e harmonização histórica pendente; não excluir municípios por essa medida.",
   "Cenários alternativos; baixo insumo exportado no diagnóstico; sx não é rendimento.",
   "Multas não medem pagamentos; associação informada pode divergir da malha comum; contraste em diagnóstico.",
   "Tema mais estreito com maior ausência; não somar com Flora, pois os temas se sobrepõem.",
-  "Não são produtividade de carne; datas e território da PPM ainda demandam compatibilização.",
+  "Rebanho incluído como estoque descritivo; lotação não mede kg de carne e exige compatibilização.",
   "Não substituem denominador na máscara de Y; diferença de estoque não é conversão bruta.",
   "Controles potenciais, secundários para as perguntas descritivas desta seção."))
 mostrar_tabela(candidatas_excluidas, "candidatas_excluidas")
 if (abrir_tabelas && interactive()) View(candidatas_excluidas)
-if (exportar) write_csv(candidatas_excluidas,file.path(pasta_saida,"candidatas_excluidas.csv"))
 ```
 
 # Preparar os produtos para o artigo
@@ -869,6 +1200,39 @@ tabela_capacidade_artigo <- resumo_capacidade |>
             Municipios = n, `N válido` = n_validos, Mediana = mediana,
             `P25--P75` = paste0(formatar(p25), "--", formatar(p75)))
 
+rotulos_oferta <- tibble(
+  indicador = c("area_plantada_ha", "area_colhida_ha", "producao_t", "rendimento_kg_ha",
+    "efetivo_bovino", "abate_bovinos_cabecas_mt", "peso_carcacas_bovinas_kg_mt", variaveis_exportacao),
+  Indicador = c("Área plantada", "Área colhida", "Produção", "Rendimento realizado",
+    "Rebanho", "Abate sob inspeção (MT)", "Peso de carcaças (MT)", "Exportação FOB nominal", "Peso líquido exportado"),
+  Unidade = c("milhões de ha", "milhões de ha", "milhões de t", "t/ha", "milhões de cabeças",
+    "milhões de cabeças", "milhões de t", "US$ milhões correntes", "mil t"),
+  divisor = c(1e6, 1e6, 1e6, 1000, 1e6, 1e6, 1e9, 1e6, 1e6))
+resumo_oferta_apresentacao <- resumo_oferta |>
+  left_join(rotulos_oferta, by = "indicador") |>
+  arrange(match(produto, c("soja", "milho", "bovinos", "carne_bovina")),
+          match(indicador, rotulos_oferta$indicador)) |>
+  transmute(indicador, Produto = if_else(produto == "bovinos", "Bovinos", unname(rotulos_produtos[produto])),
+    Indicador, Unidade, `N 2001` = n_municipios_2001, `N 2024` = n_municipios_2024,
+    `2001` = valor_2001 / divisor, `2024` = valor_2024 / divisor,
+    `Variação` = variacao_2001_2024 / divisor, `Variação (%)` = variacao_2001_2024_pct)
+tabela_lavouras_artigo <- resumo_oferta_apresentacao |>
+  filter(indicador %in% oferta_agricultura_anual$indicador) |>
+  select(-indicador, -`N 2024`) |> rename(`Municípios` = `N 2001`)
+tabela_pecuaria_artigo <- resumo_oferta_apresentacao |>
+  filter(Produto == "Bovinos") |>
+  select(-indicador, -`N 2024`) |> rename(`Municípios` = `N 2001`)
+tabela_exportacoes_artigo <- resumo_oferta_apresentacao |>
+  filter(indicador %in% variaveis_exportacao) |> select(-indicador)
+tabelas_artigo <- list(tab01_cobertura = tabela_cobertura_artigo,
+  tab02_capacidade = tabela_capacidade_artigo, tab03_lavouras = tabela_lavouras_artigo,
+  tab04_pecuaria = tabela_pecuaria_artigo, tab05_exportacoes = tabela_exportacoes_artigo)
+titulos_tabelas <- c(tab01_cobertura = "Cobertura da conversão por predominância territorial, 2001-2024",
+  tab02_capacidade = "Rendimento potencial municipal: alto insumo e sequeiro",
+  tab03_lavouras = "Lavouras: comparação de 2001 e 2024 na amostra fixa por cultura",
+  tab04_pecuaria = "Pecuária: rebanho na amostra fixa e abate estadual, 2001 e 2024",
+  tab05_exportacoes = "Exportações por domicílio fiscal em MT, 2001 e 2024")
+
 tabelas_latex <- list(
   tab01_cobertura = knitr::kable(tabela_cobertura_artigo, format = "latex", digits = 1,
     caption = "Cobertura da conversão por predominância territorial, 2001--2024",
@@ -884,11 +1248,36 @@ notas_tabelas <- c(
   tab02_capacidade = paste("Fonte: elaboração própria com GAEZ v4, conforme o dicionário fornecido.",
     "Unidade: kg de matéria seca por hectare; cada município tem peso igual.",
     "N válido informa a cobertura de cada resumo. O cenário não é rendimento realizado",
-    "e não garante capacidade predeterminada em relação a todo o painel.")
+    "e não garante capacidade predeterminada em relação a todo o painel."),
+  tab03_lavouras = paste("Fonte: IBGE/PAM. Amostra fixa por cultura: plantio, colheita e produção observados em todos os anos.",
+    "Rendimento = produção total / área colhida total, nos mesmos municípios. Ausências não são imputadas.",
+    "Variação = 2024 menos 2001; percentual = 100 vezes (2024/2001 - 1), não é taxa média anual.",
+    "Safras podem ocupar a mesma terra; área plantada não é conversão. Geografia histórica não reconstituída."),
+  tab04_pecuaria = paste("Fontes: IBGE/PPM e Pesquisa Trimestral do Abate.",
+    "Rebanho: estoque nos municípios com dados em todos os anos. Abate: soma dos quatro trimestres de MT sob inspeção,",
+    "contada uma única vez por ano, sem cobertura municipal identificada (NA). Carcaças não equivalem a carne desossada.",
+    "Variação compara 2024 com 2001; não é taxa média anual."),
+  tab05_exportacoes = paste("Fonte: MDIC/SECEX, Comex Stat. SH4 1201: soja; 1005: milho; 0201 e 0202: carne bovina.",
+    "Dólares correntes FOB, sem deflação. N: municípios com registro no ano; ausência não imputada como zero.",
+    "Domicílio fiscal não identifica origem municipal da produção. Variação compara 2024 com 2001, não é taxa média anual.")
 )
 for (nome in names(tabelas_latex)) {
   tabelas_latex[[nome]] <- paste0(as.character(tabelas_latex[[nome]]),
     "\n\\par\\smallskip{\\footnotesize ", notas_tabelas[[nome]], "\\par}\n")
+}
+for (nome in names(tabelas_artigo)) {
+  mostrar_tabela(tabelas_artigo[[nome]], nome)
+  if (exportar) {
+    html_tabela <- knitr::kable(tabelas_artigo[[nome]], format = "html", digits = 2,
+      caption = titulos_tabelas[[nome]], row.names = FALSE,
+      format.args = list(big.mark = ".", decimal.mark = ","))
+    nota_html <- gsub("$10^{-6}$", "0,000001", notas_tabelas[[nome]], fixed = TRUE)
+    writeLines(c('<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">',
+      paste0("<title>", titulos_tabelas[[nome]], "</title>"),
+      "<style>body{font:16px Arial,sans-serif;margin:32px;color:#222}table{border-collapse:collapse;width:100%;max-width:1200px}caption{text-align:left;font-size:20px;font-weight:bold;margin-bottom:18px}th,td{padding:10px;border-bottom:1px solid #ddd}thead{background:#eef3f6}p{max-width:1200px;line-height:1.5;font-size:14px}</style></head><body>",
+      as.character(html_tabela), paste0("<p>", nota_html, "</p></body></html>")),
+      file.path(pasta_saida, "tabelas", paste0(nome, ".html")), useBytes = TRUE)
+  }
 }
 
 primeiro_ano <- conversao_anual |> filter(ano == min(anos_esperados), amostra == "Municípios fixos")
@@ -928,8 +1317,9 @@ mostrar_tabela(tibble(macro = names(macros), valor = unname(macros)), "numeros_t
 # Conferir a preservação das entradas e encerrar
 
 Ao final, comparamos os hashes dos arquivos de entrada. Se a exportação
-estiver ativada, os produtos ficam em `resultados_h1_humanizado`, dentro de
-`stats/descritiva`. O registro da sessão e as verificações ficam em `auditoria`.
+estiver ativada, os produtos ficam em `stats/figuras`, `stats/tabelas` e
+`stats/dados`. Os registros e verificações ficam em
+`2_INTI/audit/descritiva_chap1_20261020/v3/`.
 Os arquivos de entrada são apenas lidos.
 
 ```{r encerramento}
@@ -955,7 +1345,8 @@ if (exportar) {
 
 cat("\nAnálise concluída.\n")
 cat("Base selecionada: dados_h1. Tabelas: tabelas. Diagnósticos: diagnosticos.\n")
-cat("Gráficos: grafico_conversao, grafico_distribuicao, grafico_precos e grafico_ibama.\n")
+cat("Gráficos: grafico_conversao, grafico_distribuicao, grafico_precos, grafico_ibama,\n",
+    "grafico_lavouras, grafico_rendimento, grafico_rebanho, grafico_abate e grafico_exportacoes.\n")
 cat("Exportação:", if (exportar) pasta_saida else "desativada", "\n")
 sessionInfo()
 ```
@@ -970,7 +1361,7 @@ Para reabrir um gráfico na sessão R, use, por exemplo,
 Para gerar o HTML pelo console, com o pacote `rmarkdown` e o Pandoc instalados:
 
 ```r
-rmarkdown::render("analise_descritiva_h1.Rmd", encoding = "UTF-8")
+rmarkdown::render("analise_descritiva_h1v3.Rmd", encoding = "UTF-8")
 ```
 
 O arquivo `.R` acompanhante contém os mesmos blocos de código e pode ser
