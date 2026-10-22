@@ -303,8 +303,9 @@ def compile_article(chapter, report_dir, executable, timeout, findings):
                                                       '*.aux', '*.bbl', '*.blg', '*.log', 'main.pdf',
                                                       '*.fls', '*.fdb_latexmk', '*.synctex.gz', '*.out', '*.toc'))
         # A seção descritiva inclui estes produtos; dados e dashboards ficam fora.
-        for folder in ('tabelas', 'figuras'):
-            relative = Path('stats/descritiva/resultados_h1') / folder
+        for relative in ('stats/descritiva/resultados_h1/tabelas',
+                         'stats/descritiva/resultados_h1/figuras',
+                         'stats/tabelas', 'stats/figuras'):
             if (chapter_root / relative).is_dir():
                 shutil.copytree(chapter_root / relative, target / relative)
         workdir = target / directory.relative_to(chapter_root)

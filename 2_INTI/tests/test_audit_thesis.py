@@ -28,7 +28,9 @@ class CompilationCopyTests(unittest.TestCase):
                 }
                 if with_assets:
                     files.update({results / 'tabelas/numeros.tex': b'latex macros',
-                                  results / 'figuras/fig01_conversao.pdf': b'descriptive figure'})
+                                  results / 'figuras/fig01_conversao.pdf': b'descriptive figure',
+                                  Path('stats/tabelas/tab_contexto_oferta_h1.tex'): b'context table',
+                                  Path('stats/figuras/fig05_lavouras.pdf'): b'crop figure'})
                 for relative, content in files.items():
                     path = chapter / relative
                     path.parent.mkdir(parents=True, exist_ok=True)
@@ -44,7 +46,9 @@ class CompilationCopyTests(unittest.TestCase):
                     self.assertFalse((copied_chapter / 'stats/descritiva/df_h1').exists())
                     self.assertFalse((copied_chapter / 'stats/DASHBOARD').exists())
                     if with_assets:
-                        for relative in (results / 'tabelas/numeros.tex', results / 'figuras/fig01_conversao.pdf'):
+                        for relative in (results / 'tabelas/numeros.tex', results / 'figuras/fig01_conversao.pdf',
+                                         Path('stats/tabelas/tab_contexto_oferta_h1.tex'),
+                                         Path('stats/figuras/fig05_lavouras.pdf')):
                             self.assertEqual((copied_chapter / relative).read_bytes(), files[relative])
                     (cwd / 'main.pdf').write_bytes(b'new compiled PDF')
                     return SimpleNamespace(stdout=b'compiled', returncode=0)
