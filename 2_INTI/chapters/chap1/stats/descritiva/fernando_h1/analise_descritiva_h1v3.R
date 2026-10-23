@@ -932,18 +932,29 @@ escala_amostras_oferta <- list(
   theme(plot.caption = element_text(hjust = 0, size = 8))
 )
 lavouras_grafico <- oferta_agricultura_anual |>
-  filter(indicador != "rendimento_kg_ha") |>
   mutate(produto = factor(rotulos_produtos[produto], levels = c("Soja", "Milho")),
-    painel = factor(indicador, levels = c("area_plantada_ha", "area_colhida_ha", "producao_t"),
-      labels = c("Área plantada\n(milhões de ha)", "Área colhida\n(milhões de ha)", "Produção\n(milhões de t)")))
-grafico_lavouras <- ggplot(lavouras_grafico, aes(ano, valor / 1e6, color = amostra, linetype = amostra)) +
+    valor_grafico = if_else(indicador == "rendimento_kg_ha", valor / 1000, valor / 1e6),
+    painel = factor(indicador,
+      levels = c("area_plantada_ha", "area_colhida_ha", "producao_t", "rendimento_kg_ha"),
+      labels = c("Área plantada\n(milhões de ha)", "Área colhida\n(milhões de ha)",
+                 "Produção\n(milhões de t)", "Rendimento\n(t por ha colhido)")))
+lavouras_rendimento_extremos <- lavouras_grafico |>
+  filter(indicador == "rendimento_kg_ha", amostra == amostras_oferta[2],
+         ano %in% range(ano)) |>
+  mutate(rotulo = formatC(valor_grafico, format = "f", digits = 2, decimal.mark = ","),
+         alinhamento = if_else(ano == min(ano), 0, 1))
+
+grafico_lavouras <- ggplot(lavouras_grafico, aes(ano, valor_grafico, color = amostra, linetype = amostra)) +
   geom_line(linewidth = 0.7) + facet_grid(painel ~ produto, scales = "free_y") +
+  geom_point(data = lavouras_rendimento_extremos, size = 1.8, show.legend = FALSE) +
+  geom_label(data = lavouras_rendimento_extremos,
+            aes(label = rotulo, hjust = alinhamento), vjust = 1.4,
+            fill = "white", linewidth = 0, label.padding = grid::unit(0.1, "lines"),
+            size = 3.4, fontface = "bold", show.legend = FALSE) +
   escala_amostras_oferta +
-  labs(x = "Ano", y = NULL, title = "Área e produção de soja e milho",
-    caption = paste("Fonte: IBGE/PAM. Disponível: municípios com plantio, colheita e produção observados no ano.",
-      "Fixos: mesma condição em todos os anos, por cultura. Ausências não são zeros.", sep = "\n"))
+  labs(x = "Ano", y = NULL, title = "Área, produção e rendimento de soja e milho")
 print(grafico_lavouras)
-salvar_grafico(grafico_lavouras, "fig05_lavouras", altura = 7)
+salvar_grafico(grafico_lavouras, "fig05_lavouras", altura = 9)
 
 rendimento_grafico <- oferta_agricultura_anual |>
   filter(indicador == "rendimento_kg_ha") |>
@@ -989,9 +1000,7 @@ grafico_exportacoes <- ggplot(exportacoes_grafico, aes(ano, valor / 1e9)) +
   scale_x_continuous(breaks = c(2001, 2010, 2024)) +
   scale_y_continuous(limits = c(0, NA), labels = rotulo_numero) +
   labs(x = "Ano", y = NULL, title = "Exportações registradas por domicílio fiscal em MT",
-    caption = paste("Fonte: MDIC/SECEX, Comex Stat. SH4: 1201 (soja), 1005 (milho), 0201 e 0202 (carne bovina).",
-      "FOB em dólares nominais. Domicílio fiscal não identifica a origem municipal da produção.",
-      "Escalas verticais próprias a cada painel.", sep = "\n")) +
+    caption = "Fonte: MDIC/SECEX, Comex Stat.") +
   theme(plot.caption = element_text(hjust = 0, size = 8), axis.text.x = element_text(size = 8))
 print(grafico_exportacoes)
 salvar_grafico(grafico_exportacoes, "fig09_exportacoes", altura = 6.5)
@@ -1304,13 +1313,8 @@ tabelas_latex <- list(
     label = "h1-capacidade", row.names = FALSE)
 )
 notas_tabelas <- c(
-  tab01_cobertura = paste("Fonte: elaboração própria com as bases identificadas no dicionário.",
-    "Pares válidos têm cobertura completa do par de mapas; fixos são municípios observados em todos os anos.",
-    "Mistos têm mais de um bioma com fração superior a $10^{-6}$; predominância é a maior fração municipal."),
-  tab02_capacidade = paste("Fonte: elaboração própria com GAEZ v4, conforme o dicionário fornecido.",
-    "Unidade: kg de matéria seca por hectare; cada município tem peso igual.",
-    "N válido informa a cobertura de cada resumo. O cenário não é rendimento realizado",
-    "e não garante capacidade predeterminada em relação a todo o painel."),
+  tab01_cobertura = "Fonte: elaboração própria com MapBiomas 10.1 e IBGE.",
+  tab02_capacidade = "Fonte: elaboração própria com FAO/IIASA, GAEZ v4, e IBGE.",
   tab03_lavouras = paste("Fonte: IBGE/PAM. Amostra fixa por cultura: plantio, colheita e produção observados em todos os anos.",
     "Rendimento = produção total / área colhida total, nos mesmos municípios. Ausências não são imputadas.",
     "Variação = 2024 menos 2001; percentual = 100 vezes (2024/2001 - 1), não é taxa média anual.",

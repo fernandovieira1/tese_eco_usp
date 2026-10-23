@@ -253,6 +253,8 @@ Se uma melhoria textual exigir mudança substantiva do argumento, indique-a sepa
 
 Consulte e siga `2_INTI/STYLE_GUIDE.md`.
 
+Aplicar o guia vigente completo, incluindo as referências de escrita aprovadas e as diretrizes de continuidade argumentativa, função da evidência, diálogo com a literatura, clareza visual, voz impessoal, concisão e pontuação. Ler o contexto anterior e posterior ao trecho. Essas diretrizes também se aplicam quando `/fernando` for combinado com Writing Style. A organização deve acompanhar o argumento da subseção, sem produzir comentários autônomos por gráfico ou repetir H1 a cada parágrafo.
+
 Na revisão da literatura, aplicar também a convenção de tempos verbais da seção 7.1 do guia de estilo: passado para procedimentos e resultados dos estudos revisados; presente para conceitos, interpretações e argumentação do próprio trabalho, conforme a função da passagem.
 
 ### Princípio de intervenção mínima
@@ -278,9 +280,9 @@ O objetivo é aperfeiçoar a expressão de uma decisão intelectual já tomada p
 
 ### Fontes de estilo
 
-A principal referência operacional é `2_INTI/STYLE_GUIDE.md`.
+A principal referência operacional para `/fernando` e Writing Style neste projeto é `2_INTI/STYLE_GUIDE.md`, lido em sua versão vigente. As determinações explícitas do autor prevalecem sobre padrões inferidos dos exemplos e sobre orientações genéricas de ferramentas de estilo.
 
-Exemplos reais da escrita do autor podem complementar o guia quando disponíveis por meio das fontes de estilo conectadas ao ChatGPT, mas devem ser tratados somente como evidência de estilo, nunca como fonte factual ou científica.
+Os arquivos e trechos indicados na seção 1.1 do guia são referências selecionadas pelo autor. Ao aplicar Writing Style, utilizar esses modelos para esta tarefa, sem buscar exemplos externos para substituí-los. Outros exemplos reais da escrita do autor podem complementar o guia quando solicitados, mas devem ser tratados somente como evidência de estilo, nunca como fonte factual ou científica.
 
 ---
 
@@ -730,7 +732,7 @@ Contém, entre outros:
 
 Fonte operacional estável para preservar a voz autoral.
 
-Complementa, mas não substitui, exemplos reais de escrita recuperados por ferramentas de Writing Style.
+Deve ser aplicado integralmente por Writing Style e `/fernando`. Articula as determinações explícitas do autor aos exemplos de escrita por ele selecionados. Exemplos recuperados por ferramentas podem complementá-lo, mas não substituir suas diretrizes nem prevalecer sobre as instruções do autor.
 
 ### Dados
 

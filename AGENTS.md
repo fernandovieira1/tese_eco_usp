@@ -7,6 +7,7 @@ Este repositório contém a tese de doutorado de Fernando Souza de Vieira.
 - A fase ativa do projeto é `2_INTI/`.
 - `1_SUYANA/` é material histórico/legado e não deve ser alterado salvo instrução explícita.
 - Antes de executar tarefas no projeto, leia e cumpra `2_INTI/RESEARCH_PROTOCOL.md`.
+- Em tarefas de escrita e revisão, inclusive com Writing Style ou `/fernando`, leia e aplique integralmente `2_INTI/STYLE_GUIDE.md`, incluindo as referências aprovadas e as diretrizes de organização lógica e textual. As determinações explícitas do autor prevalecem sobre padrões inferidos por ferramentas.
 
 ## Regras gerais
 

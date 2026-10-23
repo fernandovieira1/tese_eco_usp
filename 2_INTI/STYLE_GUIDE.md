@@ -20,11 +20,23 @@ A revisão deve melhorar clareza, precisão, fluidez e coesão preservando, tant
 
 Não transformar o texto em prosa genérica de IA.
 
+### 1.1. Referências de escrita aprovadas
+
+Para o capítulo 1, tomar como referências de voz, raciocínio, cadência e organização as versões vigentes de:
+
+- [Introdução](chapters/chap1/text/0_introduction.tex);
+- [Revisão da literatura](chapters/chap1/text/1_literature_review.tex);
+- [Mato Grosso: Contexto e Dados](chapters/chap1/text/2_mt_descriptive.tex), até o final da subseção “Expansão agropecuária e transformação da cobertura vegetal”.
+
+Essa subseção foi indicada pelo autor como modelo para as próximas. Ler também os parágrafos anteriores e posteriores ao trecho em revisão. Considerar as edições manuais mais recentes do autor, sem restaurar versões anteriores mais extensas. A referência é a forma de construir o argumento, não a reprodução literal de frases, dados ou da sequência temática. Repetições acidentais, lapsos de digitação e problemas técnicos locais não constituem normas de estilo.
+
 ---
 
 ## 2. Registro
 
 Preferir português acadêmico formal, argumentativo e natural.
+
+Usar predominantemente terceira pessoa e construções impessoais. Empregar a voz passiva quando natural, sem torná-la obrigatória ou prejudicar a clareza. Evitar primeira pessoa e intervenções como “aqui chamamos a atenção”.
 
 O texto pode ter densidade conceitual, desde que a relação lógica entre as proposições permaneça clara.
 
@@ -41,17 +53,41 @@ Evitar:
 
 ## 3. Estrutura argumentativa
 
-Os parágrafos tendem a seguir uma progressão lógica, por exemplo:
+A unidade de organização é o argumento da subseção. Cada parágrafo desenvolve uma etapa desse argumento, retoma o ponto anterior e prepara o seguinte. A prosa deve avançar de forma contínua e cumulativa.
 
-fenômeno ou proposição
-→ qualificação
+Na análise descritiva, um percurso possível é:
+
+questão ou argumento da literatura
 → evidência
-→ contraste ou limite
-→ implicação para o argumento.
+→ interpretação econômica e comparação
+→ alcance da conclusão
+→ implicação para o problema do artigo.
 
-Preservar essa progressão quando já estiver presente.
+Esse percurso pode se distribuir por vários parágrafos. Não exigir que cada parágrafo apresente sozinho literatura, dado, ressalva e H1. Evitar comentários autônomos que reiniciem a discussão a cada gráfico ou tabela.
 
 Não reorganizar integralmente um parágrafo apenas para torná-lo estilisticamente mais convencional.
+
+### 3.1. Continuidade entre os blocos
+
+A transição deve decorrer da relação entre os conteúdos. Um conector não resolve a falta dessa relação. Não antecipar um mecanismo que o próximo gráfico ou tabela não permite examinar, nem interromper uma discussão para retomá-la sem necessidade adiante.
+
+Na subseção aprovada, a caracterização das lavouras é ampliada pela escala pecuária e comercial. Esse quadro é então confrontado com a conversão da vegetação, conduzindo à questão de H1. Essa ordem cumpre funções específicas nesse argumento. Nas próximas subseções, preservar a progressão lógica e adaptar a sequência ao conteúdo disponível.
+
+### 3.2. Função da evidência e diálogo com a literatura
+
+Selecionar os achados que acrescentam algo à discussão. O comentário deve explicar o que se aprende com a evidência, como ela se relaciona com um argumento ou resultado específico da revisão e por que essa relação importa para a pergunta investigada. Evitar inventários de valores e repetições do que o leitor percebe diretamente no elemento visual.
+
+A literatura deve participar da interpretação. Explicitar se os dados convergem, contrastam, qualificam ou contextualizam os estudos discutidos, respeitando diferenças de período, território, amostra e medida. Não inserir uma referência apenas para encerrar o parágrafo.
+
+Construir a ligação com problema, objetivos e H1 ao longo da subseção. Retomá-la onde o argumento exigir, sem repetir a hipótese ou uma conclusão genérica após cada resultado. As ressalvas devem delimitar a interpretação no ponto pertinente, sem se transformar em um encerramento padronizado de todos os comentários.
+
+### 3.3. Clareza para quem lê o gráfico ou a tabela
+
+O leitor deve conseguir passar do texto ao elemento citado e reconhecer a evidência interpretada. Explicar painéis, posição, linhas, grupos e unidades quando necessário. Dizer concretamente o que é somado, dividido ou comparado e quais observações entram no cálculo. Evitar definições que exijam reconstruir mentalmente o procedimento.
+
+Valores e relações apresentados como leitura de um gráfico devem estar representados nele. Não atribuir ao gráfico uma medida calculada fora dele. Quando essa medida for indispensável, compatibilizar sua apresentação com o resultado citado ou identificá-la em outro elemento apropriado.
+
+As definições e informações metodológicas devem servir à compreensão da evidência. Incluir no contexto apenas o necessário, aproveitando explicações já dadas. Não converter rodapés extensos em novos inventários no corpo do texto.
 
 ---
 
@@ -73,6 +109,8 @@ São compatíveis com a voz do autor, quando usados naturalmente:
 Não inserir conectores apenas por ornamentação.
 
 Evitar repetição próxima do mesmo conector.
+
+Conservar os conectivos característicos do autor quando exprimirem a relação efetiva entre as ideias. Não adicioná-los mecanicamente para simular sua voz.
 
 ---
 
@@ -155,13 +193,21 @@ Não alterar citekeys.
 
 Não converter automaticamente o texto para outro formato.
 
+Nos gráficos e tabelas, manter apenas título e fontes como texto de acompanhamento. Explicações sobre amostra, cobertura, unidades, agregação e limitações devem integrar a prosa junto à discussão do respectivo elemento, sem notas metodológicas no rodapé. Preservar eixos, legendas, rótulos e unidades necessários à leitura dos dados.
+
+Manter sequências próprias para Gráfico, Figura e Tabela. Mapas, fluxogramas e outros elementos que não sejam gráficos ou tabelas recebem a nomenclatura Figura. Usar referências cruzadas, sem numeração manual. Na formatação, respeitar a centralização de título e fontes já adotada no elemento de referência.
+
 ---
 
 ## 9. Extensão das frases
 
+Preferir pontos finais a pontos e vírgulas. Reservar o ponto e vírgula para articular elementos já enumerados, quando essa organização o exigir.
+
 Frases relativamente longas são aceitáveis quando preservam encadeamento lógico claro.
 
 Não fragmentar mecanicamente períodos apenas para produzir frases curtas.
+
+Buscar concisão pela retirada de redundâncias, explicações óbvias e retomadas desnecessárias. Preservar definições e qualificações indispensáveis, com frases encadeadas e sem sucessão de afirmações isoladas.
 
 Quando um período estiver excessivamente carregado, preferir:
 
@@ -193,6 +239,8 @@ A revisão não deve "reescrever Fernando"; deve aperfeiçoar o texto que Fernan
 
 ## 12. Protocolo /fernando
 
+Aplicar este guia integralmente, incluindo as referências da seção 1.1 e as diretrizes de organização e continuidade das seções 2–4, de interpretação e precisão das seções 5–7 e de apresentação e pontuação das seções 8–9. Ler os parágrafos anteriores e posteriores ao trecho antes de propor a revisão. A intervenção deve preservar a progressão do argumento no conjunto da subseção.
+
 Entrada esperada:
 
 PARÁGRAFO ORIGINAL
@@ -211,11 +259,19 @@ este STYLE_GUIDE
 
 *Preserve meu argumento, minha voz, a estrutura sempre que possível, o LaTeX, as citekeys e o significado científico.*
 
+*Aplique as diretrizes vigentes deste guia para continuidade entre parágrafos, interpretação dos dados em diálogo com a literatura, clareza, voz impessoal, concisão e preferência por pontos finais. Construa a ligação com problema, objetivos e H1 ao longo do argumento.*
+
 *Não acrescente evidências, referências ou argumentos novos.*
 
 *Não aumente silenciosamente a força causal ou a generalidade das conclusões.*
 
 *Se uma melhoria exigir mudança substantiva do argumento, indique-a separadamente em vez de implementá-la."*
+
+### 12.1. Integração com Writing Style
+
+Ao acionar Writing Style neste projeto, aplicar também este guia completo. Utilizar as referências da seção 1.1, selecionadas pelo autor, para observar sua forma de raciocinar, organizar a exposição e encadear os parágrafos. A tarefa envolve organização lógica e textual, além de escolhas de vocabulário e tom.
+
+As determinações explícitas do autor e as diretrizes vigentes prevalecem sobre padrões inferidos de exemplos e recomendações genéricas da ferramenta. Quando combinado com `/fernando`, Writing Style deve seguir as mesmas autorizações e limites científicos. Sua utilização não autoriza, por si só, revisar outras subseções.
 
 ---
 
@@ -231,7 +287,7 @@ Exemplo de transição mecanismo → implicação:
 
 Exemplo de ressalva:
 
-"Mesmo assim -- e aqui chamamos a atenção --, esse enquadramento não supõe efeitos uniformes."
+"Mesmo assim, esse enquadramento não supõe efeitos uniformes."
 
 Estes exemplos servem como referência de voz, não como fórmulas a serem repetidas mecanicamente.
 

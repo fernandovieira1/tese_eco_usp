@@ -58,9 +58,11 @@
 }
 
 % Numeração das seções sem o prefixo do capítulo
-\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesection}{\arabic{section}}
 \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+% O ponto pertence ao título da seção, não ao número recuperado por \ref.
+\setsecnumformat{\csname the#1\endcsname\ifstrequal{#1}{section}{.}{}\quad}
 
 \hypersetup{
     colorlinks=true,
