@@ -30,6 +30,33 @@ Para o capítulo 1, tomar como referências de voz, raciocínio, cadência e org
 
 Essa subseção foi indicada pelo autor como modelo para as próximas. Ler também os parágrafos anteriores e posteriores ao trecho em revisão. Considerar as edições manuais mais recentes do autor, sem restaurar versões anteriores mais extensas. A referência é a forma de construir o argumento, não a reprodução literal de frases, dados ou da sequência temática. Repetições acidentais, lapsos de digitação e problemas técnicos locais não constituem normas de estilo.
 
+### 1.2. Vinte regras de escrita acadêmica
+
+Por determinação do autor em 23/10/2026, as vinte regras da imagem “20 Rules of Academic Writing”, com crédito exibido a Emmanuel Tsekleves, passam a servir de parâmetro para o planejamento, a redação e a revisão de toda a tese. A adaptação abaixo preserva a numeração da imagem e deve ser aplicada em conjunto com as demais diretrizes deste guia e com o protocolo de pesquisa.
+
+1. **Partir do argumento.** Explicitar o argumento central e a função de cada capítulo em seu desenvolvimento. Distinguir pergunta, hipótese e resultado. O exemplo causal da imagem não autoriza tratar associação como causalidade.
+2. **Dar uma função principal a cada parágrafo.** Desenvolver um ponto ou uma etapa do argumento. Separar ideias que exijam desenvolvimento próprio, preservando juntas as explicações e ressalvas necessárias à compreensão desse ponto.
+3. **Apresentar o ponto principal primeiro.** Preferir uma abertura que explicite o ponto do parágrafo e, em seguida, desenvolver explicações e evidências. Preservar a retomada do parágrafo anterior quando ela sustentar a continuidade.
+4. **Construir pontes entre as partes.** Tornar clara a relação entre o argumento estabelecido e o próximo passo. Conectar parágrafos, subseções e capítulos pelo conteúdo, sem apenas justapô-los ou inserir conectores.
+5. **Orientar o percurso do leitor.** Usar frases de orientação quando ajudarem a compreender o objetivo e a sequência da discussão. Evitar roteiros repetitivos e anúncios que substituam o desenvolvimento do argumento.
+6. **Usar títulos informativos.** Indicar o ponto ou a questão específica da seção. Enunciar um resultado no título somente quando estiver verificado e desenvolvido no texto. Respeitar os títulos e a estrutura já aprovados, salvo autorização para alterá-los.
+7. **Antecipar a informação central.** Colocar cedo na frase a informação necessária à compreensão, evitando preâmbulos e intercalações que a ocultem. Não impor que toda frase comece com autor e ano.
+8. **Escrever conclusões que concluam.** Responder à pergunta investigada com os achados disponíveis, explicar sua contribuição e delimitar seu alcance. Evitar encerrar apenas com pedidos genéricos de mais pesquisa ou introduzir resultados novos.
+9. **Mostrar com evidências.** Sustentar afirmações de relevância com fatos, magnitudes, comparações ou argumentos verificáveis pertinentes. Não substituir demonstração por adjetivos nem inventar números para tornar a exposição mais concreta.
+10. **Dar crédito suficiente e preciso.** Vincular cada afirmação às fontes que efetivamente a sustentam e explicitar convergências, divergências e limites pertinentes. Citar generosamente significa reconhecer as contribuições necessárias, sem acumular referências decorativas. Na revisão textual, usar somente fontes conferidas e autorizadas, preservando as citekeys.
+11. **Cortar excessos acadêmicos.** Preferir palavras diretas e retirar redundâncias, preâmbulos e fórmulas vazias. Manter termos técnicos, definições e qualificações indispensáveis à precisão científica.
+12. **Preferir voz ativa quando trouxer clareza.** Tornar sujeitos e ações reconhecíveis, preservando a terceira pessoa e a escrita impessoal da tese. Voz ativa não exige primeira pessoa. Manter a passiva quando natural ou quando o agente não for relevante.
+13. **Definir antes de usar.** Apresentar conceitos, siglas, variáveis e símbolos antes ou no primeiro uso relevante. Explicar o sentido adotado e evitar que o leitor precise inferi-lo de passagens posteriores.
+14. **Manter um termo para cada conceito.** Usar a mesma denominação para o mesmo objeto ao longo do trabalho. Não alternar sinônimos por ornamentação nem tratar conceitos distintos como equivalentes.
+15. **Variar a extensão das frases.** Combinar períodos curtos e longos conforme a função e a complexidade da ideia. Evitar tanto a cadência uniforme quanto a fragmentação mecânica do raciocínio.
+16. **Retirar passagens sem função.** Cortar frases ou trechos que não contribuam para o argumento, mesmo quando sua formulação parecer elegante. Preservar conteúdo substantivo, evidências e ressalvas necessárias. Mudanças substantivas permanecem sujeitas à decisão do autor.
+17. **Começar a escrever com o que já se sabe.** Usar o rascunho para desenvolver o argumento e revelar lacunas, sem esperar uma leitura exaustiva. Marcar dúvidas e fontes pendentes, sem apresentar formulações provisórias como fatos conferidos nem dispensar a crítica científica.
+18. **Ler em voz alta.** Usar essa leitura para identificar ambiguidades, períodos carregados e construções pouco naturais. Ajustar a fluidez sem apagar a cadência autoral ou reduzir a precisão.
+19. **Revisar com algum distanciamento.** Quando possível, separar redação e revisão por um intervalo e reler o conjunto com atenção renovada. Evitar ciclos imediatos de mudanças que não melhorem clareza, coerência ou precisão.
+20. **Concluir uma versão adequada ao seu propósito.** Encerrar a revisão quando a versão atender aos critérios científicos, textuais e técnicos do marco previsto. Não prolongar mudanças cosméticas indefinidamente. Registrar pendências e cumprir as validações pertinentes, sem tratar problemas científicos não resolvidos como detalhes de estilo.
+
+Na revisão, começar pelas regras 1–4: verificar se o leitor consegue acompanhar o argumento, a função dos parágrafos, seus pontos principais e as ligações entre eles. Depois, conferir as demais conforme o trecho e a etapa do trabalho. Esses parâmetros não autorizam reescrita geral dos capítulos nem mudanças científicas silenciosas.
+
 ---
 
 ## 2. Registro
