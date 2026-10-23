@@ -1,0 +1,5 @@
+id,termo,se_HAC_lag2
+T01_pastagem,Intercept,0.26660082754906217
+T01_pastagem,tempo,0.06197753904962535
+T01_pastagem,pos,0.3001595109898601
+T01_pastagem,tempo_pos,0.06036544431401514

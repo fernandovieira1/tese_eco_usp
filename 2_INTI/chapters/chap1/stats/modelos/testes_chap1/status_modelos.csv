@@ -1,0 +1,25 @@
+id,titulo,estimador,N,status
+F01_agricultura,Taxa com logit fracional,Fracional,2772,estimado
+F01_pastagem,Taxa com logit fracional,Fracional,2772,estimado
+M01C_agricultura,Mesma equação na amostra com fiscalização,OLS,1140,estimado
+M01C_pastagem,Mesma equação na amostra com fiscalização,OLS,1140,estimado
+M01_agricultura,Preços e diferenças territoriais,OLS,2772,estimado
+M01_pastagem,Preços e diferenças territoriais,OLS,2772,estimado
+M02_agricultura,Adição de autuações anteriores,OLS,1140,estimado
+M02_pastagem,Adição de autuações anteriores,OLS,1140,estimado
+P01_agricultura,Preços dentro dos municípios,PainelOLS,1140,estimado
+P01_pastagem,Preços dentro dos municípios,PainelOLS,1140,estimado
+P02_agricultura,Resposta diferencial conforme aptidão,PainelOLS,1140,estimado
+P02_pastagem,Resposta diferencial conforme aptidão,PainelOLS,1140,estimado
+P03_agricultura,Modulação associativa pela fiscalização,PainelOLS,1140,estimado
+P03_pastagem,Modulação associativa pela fiscalização,PainelOLS,1140,estimado
+Q01_agricultura,Conversão em hectares com PPML,PPML,2772,estimado
+Q01_pastagem,Conversão em hectares com PPML,PPML,2772,estimado
+S01_agricultura,Preço associado ao destino,OLS,2772,estimado
+S01_pastagem,Preço associado ao destino,OLS,2772,estimado
+T01_agricultura,Quebra descritiva 2007,ITS,23,estimado
+T01_pastagem,Quebra descritiva 2007,ITS,23,estimado
+T02_agricultura,Quebra descritiva 2013,ITS,23,estimado
+T02_pastagem,Quebra descritiva 2013,ITS,23,estimado
+T03_agricultura,Quebra descritiva 2010,ITS,24,estimado
+T03_pastagem,Quebra descritiva 2010,ITS,24,estimado

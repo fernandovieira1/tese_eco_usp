@@ -1,0 +1,25 @@
+id,titulo,vd,vi,estimador,fe
+F01_agricultura,Taxa com logit fracional,taxa_agricultura,taxa_agricultura ~ expo_soja + expo_milho + z_a_soja + z_a_milho + C(bioma) + C(ano),Fracional,ano+bioma
+F01_pastagem,Taxa com logit fracional,taxa_pastagem,taxa_pastagem ~ expo_soja + expo_milho + z_a_soja + z_a_milho + C(bioma) + C(ano),Fracional,ano+bioma
+M01C_agricultura,Mesma equação na amostra com fiscalização,pp_agricultura,pp_agricultura ~ z_p_soja + z_p_milho + z_p_boi + z_a_soja + z_a_milho + C(bioma),OLS,bioma
+M01C_pastagem,Mesma equação na amostra com fiscalização,pp_pastagem,pp_pastagem ~ z_p_soja + z_p_milho + z_p_boi + z_a_soja + z_a_milho + C(bioma),OLS,bioma
+M01_agricultura,Preços e diferenças territoriais,pp_agricultura,pp_agricultura ~ z_p_soja + z_p_milho + z_p_boi + z_a_soja + z_a_milho + C(bioma),OLS,bioma
+M01_pastagem,Preços e diferenças territoriais,pp_pastagem,pp_pastagem ~ z_p_soja + z_p_milho + z_p_boi + z_a_soja + z_a_milho + C(bioma),OLS,bioma
+M02_agricultura,Adição de autuações anteriores,pp_agricultura,pp_agricultura ~ z_p_soja + z_p_milho + z_p_boi + z_a_soja + z_a_milho + C(bioma) + fiscal,OLS,bioma
+M02_pastagem,Adição de autuações anteriores,pp_pastagem,pp_pastagem ~ z_p_soja + z_p_milho + z_p_boi + z_a_soja + z_a_milho + C(bioma) + fiscal,OLS,bioma
+P01_agricultura,Preços dentro dos municípios,pp_agricultura,pp_agricultura ~ z_p_soja + z_p_milho + z_p_boi + fiscal + EntityEffects,PainelOLS,municipio
+P01_pastagem,Preços dentro dos municípios,pp_pastagem,pp_pastagem ~ z_p_soja + z_p_milho + z_p_boi + fiscal + EntityEffects,PainelOLS,municipio
+P02_agricultura,Resposta diferencial conforme aptidão,pp_agricultura,pp_agricultura ~ expo_soja + expo_milho + fiscal + EntityEffects + TimeEffects,PainelOLS,municipio+ano
+P02_pastagem,Resposta diferencial conforme aptidão,pp_pastagem,pp_pastagem ~ expo_soja + expo_milho + fiscal + EntityEffects + TimeEffects,PainelOLS,municipio+ano
+P03_agricultura,Modulação associativa pela fiscalização,pp_agricultura,pp_agricultura ~ expo_soja + expo_milho + fiscal + preco_fiscal + EntityEffects + TimeEffects,PainelOLS,municipio+ano
+P03_pastagem,Modulação associativa pela fiscalização,pp_pastagem,pp_pastagem ~ expo_soja + expo_milho + fiscal + preco_fiscal + EntityEffects + TimeEffects,PainelOLS,municipio+ano
+Q01_agricultura,Conversão em hectares com PPML,ha_agricultura,ha_agricultura ~ expo_soja + expo_milho + z_a_soja + z_a_milho + C(bioma) + C(ano),PPML,ano+bioma
+Q01_pastagem,Conversão em hectares com PPML,ha_pastagem,ha_pastagem ~ expo_soja + expo_milho + z_a_soja + z_a_milho + C(bioma) + C(ano),PPML,ano+bioma
+S01_agricultura,Preço associado ao destino,pp_agricultura,pp_agricultura ~ z_p_soja,OLS,nenhum
+S01_pastagem,Preço associado ao destino,pp_pastagem,pp_pastagem ~ z_p_boi,OLS,nenhum
+T01_agricultura,Quebra descritiva 2007,taxa_pp_agricultura,taxa_pp ~ tempo + pos + tempo_pos,ITS,nenhum
+T01_pastagem,Quebra descritiva 2007,taxa_pp_pastagem,taxa_pp ~ tempo + pos + tempo_pos,ITS,nenhum
+T02_agricultura,Quebra descritiva 2013,taxa_pp_agricultura,taxa_pp ~ tempo + pos + tempo_pos,ITS,nenhum
+T02_pastagem,Quebra descritiva 2013,taxa_pp_pastagem,taxa_pp ~ tempo + pos + tempo_pos,ITS,nenhum
+T03_agricultura,Quebra descritiva 2010,taxa_pp_agricultura,taxa_pp ~ tempo + pos + tempo_pos,ITS,nenhum
+T03_pastagem,Quebra descritiva 2010,taxa_pp_pastagem,taxa_pp ~ tempo + pos + tempo_pos,ITS,nenhum

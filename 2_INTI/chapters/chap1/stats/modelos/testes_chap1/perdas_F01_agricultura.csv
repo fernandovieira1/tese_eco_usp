@@ -1,0 +1,7 @@
+id_modelo,criterio,antes,excluidos,restantes
+F01_agricultura,taxa_agricultura,3384,612,2772
+F01_agricultura,expo_soja,2772,0,2772
+F01_agricultura,expo_milho,2772,0,2772
+F01_agricultura,z_a_soja,2772,0,2772
+F01_agricultura,z_a_milho,2772,0,2772
+F01_agricultura,bioma,2772,0,2772

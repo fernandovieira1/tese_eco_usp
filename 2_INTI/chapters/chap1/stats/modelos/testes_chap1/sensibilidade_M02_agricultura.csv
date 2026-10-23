@@ -1,0 +1,10 @@
+id,termo,se_cluster_municipio
+M02_agricultura,Intercept,0.02839877445286391
+M02_agricultura,C(bioma)[T.Cerrado],0.023085664969444152
+M02_agricultura,C(bioma)[T.Pantanal],0.04009078745736954
+M02_agricultura,z_p_soja,0.041119862872214315
+M02_agricultura,z_p_milho,0.034452429687029926
+M02_agricultura,z_p_boi,0.016442498892901294
+M02_agricultura,z_a_soja,0.013529906133465225
+M02_agricultura,z_a_milho,0.008666421508830473
+M02_agricultura,fiscal,0.004741582974156883

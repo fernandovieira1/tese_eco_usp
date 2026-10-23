@@ -1,0 +1,8 @@
+id_modelo,criterio,antes,excluidos,restantes
+M01_pastagem,pp_pastagem,3384,612,2772
+M01_pastagem,z_p_soja,2772,0,2772
+M01_pastagem,z_p_milho,2772,0,2772
+M01_pastagem,z_p_boi,2772,0,2772
+M01_pastagem,z_a_soja,2772,0,2772
+M01_pastagem,z_a_milho,2772,0,2772
+M01_pastagem,bioma,2772,0,2772

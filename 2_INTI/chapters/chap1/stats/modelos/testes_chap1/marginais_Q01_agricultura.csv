@@ -1,0 +1,3 @@
+id,preco,ame,se,ic95_inf,ic95_sup,unidade,limite
+Q01_agricultura,soja,-10.586138598579488,7.512400092259441,-26.126722221944746,4.954445024785768,ha por 1 DP preço,componente diferencial preço×aptidão; efeito comum anual não identificado
+Q01_agricultura,milho,-9.673250472525392,7.545898865698312,-25.283131588504673,5.9366306434538885,ha por 1 DP preço,componente diferencial preço×aptidão; efeito comum anual não identificado

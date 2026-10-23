@@ -1,0 +1,10 @@
+variavel,desvio_residual_twfe,absorvida
+z_p_soja,1.0473007901772237e-14,True
+z_p_milho,1.1137427387160823e-14,True
+z_p_boi,2.7329460942190472e-14,True
+z_a_soja,4.995620810463826e-31,True
+z_a_milho,2.84724622654436e-30,True
+expo_soja,0.8170899719393017,False
+expo_milho,0.7644732871867763,False
+fiscal,1.3141943197588641,False
+preco_fiscal,1.365386924537159,False

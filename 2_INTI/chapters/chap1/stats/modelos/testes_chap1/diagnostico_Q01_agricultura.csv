@@ -1,0 +1,2 @@
+id,min_pred,max_pred,media_observada,media_predita,rmse,zeros,max_abs_coef,iteracoes,convergiu
+Q01_agricultura,1.779063224432368,9033.919182011172,297.697312390022,297.6973123900233,942.235145616548,265,5.977047868179788,8,True

@@ -1,0 +1,9 @@
+id,termo,se_cluster_municipio
+M01_pastagem,Intercept,0.1254442502636547
+M01_pastagem,C(bioma)[T.Cerrado],0.16019888229429236
+M01_pastagem,C(bioma)[T.Pantanal],0.5203769266442039
+M01_pastagem,z_p_soja,0.04872216302119428
+M01_pastagem,z_p_milho,0.050477148885770075
+M01_pastagem,z_p_boi,0.037182800934282494
+M01_pastagem,z_a_soja,0.07135972482275865
+M01_pastagem,z_a_milho,0.09700016032667196

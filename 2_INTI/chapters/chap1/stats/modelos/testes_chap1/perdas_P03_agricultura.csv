@@ -1,0 +1,9 @@
+id_modelo,criterio,antes,excluidos,restantes
+P03_agricultura,pp_agricultura,3384,612,2772
+P03_agricultura,z_p_soja,2772,0,2772
+P03_agricultura,z_p_milho,2772,0,2772
+P03_agricultura,z_p_boi,2772,0,2772
+P03_agricultura,expo_soja,2772,0,2772
+P03_agricultura,expo_milho,2772,0,2772
+P03_agricultura,fiscal,2772,1632,1140
+P03_agricultura,preco_fiscal,1140,0,1140

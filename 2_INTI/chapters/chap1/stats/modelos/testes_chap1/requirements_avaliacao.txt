@@ -1,0 +1,2 @@
+# A avaliação agora compartilha a leitura e auditoria do painel.
+-r requirements.txt

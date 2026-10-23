@@ -1,0 +1,2 @@
+id,min_pred,max_pred,media_observada,media_predita,rmse,zeros,max_abs_coef,iteracoes,convergiu
+Q01_pastagem,644.7696115626703,27186.092968966124,3257.5881324827533,3257.5881324827396,4065.6453609860923,0,8.474896893082615,6,True

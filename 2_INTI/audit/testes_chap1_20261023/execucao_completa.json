@@ -1,0 +1,44 @@
+[
+  {
+    "notebook": "auditoria",
+    "celulas": 4,
+    "erros": 0,
+    "segundos": 6.09
+  },
+  {
+    "notebook": "ols_simples",
+    "celulas": 2,
+    "erros": 0,
+    "segundos": 5.68
+  },
+  {
+    "notebook": "ols_multiplo",
+    "celulas": 4,
+    "erros": 0,
+    "segundos": 6.28
+  },
+  {
+    "notebook": "painel",
+    "celulas": 4,
+    "erros": 0,
+    "segundos": 9.31
+  },
+  {
+    "notebook": "alternativas",
+    "celulas": 3,
+    "erros": 0,
+    "segundos": 7.28
+  },
+  {
+    "notebook": "quebras_temporais",
+    "celulas": 3,
+    "erros": 0,
+    "segundos": 7.06
+  },
+  {
+    "notebook": "avaliacao_desenho",
+    "celulas": 3,
+    "erros": 0,
+    "segundos": 4.49
+  }
+]

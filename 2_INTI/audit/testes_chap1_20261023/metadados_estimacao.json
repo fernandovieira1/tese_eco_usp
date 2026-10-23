@@ -1,0 +1,20 @@
+{
+  "git_head": "7714c75e77fd2bb20b3666feaa0e0ccac0b924a3",
+  "csv_sha256": "bc396a4f394ae60d6883205f2ca6e8d33b59a4fb419fc5d667591374c8f1c730",
+  "dimensoes": [
+    3384,
+    70
+  ],
+  "semente": 20261023,
+  "python": "3.12.14",
+  "hashes_textos": {
+    "0_introduction.tex": "ba8bef915702dd3a021f172afa7a5c20a97288be0a781ed93cf3049e482c228a",
+    "1_literature_review.tex": "4817a4f14317b1ba33f0217c63b78dbd6417d38f844cfd1a9769916938b4ff86",
+    "2_mt_descriptive.tex": "70b96a740a75f095efef4a3fb94db1f32c626d08c6329e1414ccd7d01c3cd167",
+    "3_econometrics_strategy.tex": "24aa4f68f23189116054fda806e4fe3767d561f018f2d56e641cc440dc71732c",
+    "4_discussion.tex": "58ed9ce34505ee73db520bcbb5c535dbc94d10f0fe3026e233075e23901bf39d",
+    "5_Final_Remarks.tex": "71f27429b0db8eba3ff66f1d5dd5b0e724f1413c8d490cbc16e5ef1d496bd682",
+    "_abstract.tex": "fa0a34ea7cbd82b68db77f3a5905313c051364e106d23108f71f0c41f79657f1",
+    "main.tex": "88cb0811e34f65ae20f7b8117168603000f010672777c23a22cc385768dfd247"
+  }
+}

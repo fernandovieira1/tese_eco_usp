@@ -1,0 +1,3 @@
+id,preco,ame,se,ic95_inf,ic95_sup,unidade,limite
+Q01_pastagem,soja,-78.95716286739537,31.43164299233589,-143.97847035146557,-13.935855383325162,ha por 1 DP preço,componente diferencial preço×aptidão; efeito comum anual não identificado
+Q01_pastagem,milho,-13.05982786702341,15.116822224758746,-44.3313572076224,18.21170147357558,ha por 1 DP preço,componente diferencial preço×aptidão; efeito comum anual não identificado

@@ -1,0 +1,14 @@
+{
+  "modelos": 24,
+  "coeficientes": 220,
+  "csv_preservado": true,
+  "textos_preservados": true,
+  "perdas_consistentes": true,
+  "amostras_comparaveis": true,
+  "coeficientes_finitos": true,
+  "se_ausentes": 0,
+  "git_status": "",
+  "se_ic_p_reconciliados": true,
+  "modelos_com_psd": 5,
+  "se_brutos_ausentes": 90
+}
