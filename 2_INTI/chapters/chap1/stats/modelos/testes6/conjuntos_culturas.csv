@@ -1,0 +1,5 @@
+id,termos,F,df1,df2,p,status,familia
+C61_agricultura,x_soja;x_milho,2.067225028463454,2,23,0.14940954323994873,estimado,conjuntos
+C61_pastagem,x_soja;x_milho,15.128727350525756,2,23,6.404650535243163e-05,estimado,conjuntos
+C62_agricultura,x_soja;x_milho,2.1556583587467952,2,23,0.1386531594909557,estimado,conjuntos
+C62_pastagem,x_soja;x_milho,19.524504447820714,2,23,1.1051452246752259e-05,estimado,conjuntos

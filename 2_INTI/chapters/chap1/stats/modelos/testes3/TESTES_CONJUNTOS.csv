@@ -1,0 +1,16 @@
+id,termos,F,df1,df2,p,status,familia,p_holm,n_familia
+B01_agricultura,expo_soja_l1;expo_milho_l1,0.8765302624259611,2,21,0.4309079065972572,estimado,conjuntos,0.5610238213558665,15
+B01_pastagem,expo_soja_l1;expo_milho_l1,10.405154545793039,2,21,0.0007241476470075532,estimado,conjuntos,0.007241476470075532,15
+B02_agricultura,expo_soja_l1;expo_soja_l2;expo_soja_l3;expo_milho_l1;expo_milho_l2;expo_milho_l3,4.207404359713385,6,21,0.006212806827249188,estimado,conjuntos,0.049702454617993504,15
+B02_pastagem,expo_soja_l1;expo_soja_l2;expo_soja_l3;expo_milho_l1;expo_milho_l2;expo_milho_l3,13.527790836332686,6,21,2.8958011370993316e-06,estimado,conjuntos,3.474961364519198e-05,15
+D02_diferenca,expo_soja_l1;expo_soja_l2;expo_soja_l3;expo_milho_l1;expo_milho_l2;expo_milho_l3,22.49201414614043,6,21,3.977308215033093e-08,estimado,conjuntos,5.965962322549639e-07,15
+B03_agricultura,expo_soja;expo_milho,1.5791741240917916,2,23,0.22769393651812458,estimado,conjuntos,0.5610238213558665,15
+B03_pastagem,expo_soja;expo_milho,29.36030393959873,2,23,4.6564704015795333e-07,estimado,conjuntos,6.519058562211347e-06,15
+B04_agricultura,expo_soja;expo_milho,2.0453186547453464,2,23,0.1522120592818481,estimado,conjuntos,0.5610238213558665,15
+B04_pastagem,expo_soja;expo_milho,3.0072084778091117,2,23,0.06915297428951961,estimado,conjuntos,0.41491784573711765,15
+B05_agricultura,expo_soja;expo_milho,11.13495575937838,2,13,0.0015223109944649824,estimado,conjuntos,0.01370079895018484,15
+B05_pastagem,expo_soja;expo_milho,25.216678038327935,2,13,3.3540289717936505e-05,estimado,conjuntos,0.00036894318689730156,15
+B06_agricultura,delta_expo_soja;delta_expo_milho,2.150591678542841,2,22,0.14025595533896662,estimado,conjuntos,0.5610238213558665,15
+B06_pastagem,delta_expo_soja;delta_expo_milho,2.6260512319249485,2,22,0.09489631414051403,estimado,conjuntos,0.47448157070257013,15
+D03_diferenca,expo_soja;expo_milho,28.525561983641612,2,23,5.903976531699883e-07,estimado,conjuntos,7.675169491209848e-06,15
+D04_diferenca,expo_soja;expo_milho,3.419099076295133,2,23,0.050117025388576486,estimado,conjuntos,0.3508191777200354,15

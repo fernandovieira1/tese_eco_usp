@@ -1,0 +1,26 @@
+[
+  {
+    "notebook": "auditoria",
+    "celulas": 3,
+    "erros": 0,
+    "segundos": 10.12
+  },
+  {
+    "notebook": "culturas",
+    "celulas": 3,
+    "erros": 0,
+    "segundos": 4.43
+  },
+  {
+    "notebook": "biomas",
+    "celulas": 4,
+    "erros": 0,
+    "segundos": 4.64
+  },
+  {
+    "notebook": "interfaces",
+    "celulas": 5,
+    "erros": 0,
+    "segundos": 5.31
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "rodadas": [
+    {
+      "rodada": 2,
+      "modelos": 19,
+      "coeficientes": 44,
+      "notebooks": 4,
+      "familias": {
+        "diferenca_atividades": 2,
+        "primaria": 4,
+        "sensibilidade": 38
+      },
+      "dados_textos_rodada1_preservados": true,
+      "estrategia_preservada": true,
+      "SE_IC_p_Holm_reconciliados": true,
+      "reexecucao_estavel": true
+    },
+    {
+      "rodada": 3,
+      "modelos": 15,
+      "coeficientes": 42,
+      "notebooks": 3,
+      "familias": {
+        "diferencas": 10,
+        "dinamica": 12,
+        "robustez_temporal": 20
+      },
+      "dados_textos_rodada1_preservados": true,
+      "estrategia_preservada": true,
+      "SE_IC_p_Holm_reconciliados": true,
+      "reexecucao_estavel": true
+    },
+    {
+      "rodada": 4,
+      "modelos": 346,
+      "coeficientes": 728,
+      "notebooks": 6,
+      "familias": {
+        "denominador": 12,
+        "diagnostico_influencia": 648,
+        "dinamica": 36,
+        "heterogeneidade": 20,
+        "naolinear_zeros": 12
+      },
+      "dados_textos_rodada1_preservados": true,
+      "estrategia_preservada": true,
+      "SE_IC_p_Holm_reconciliados": true,
+      "reexecucao_estavel": true
+    },
+    {
+      "rodada": 5,
+      "modelos": 8,
+      "coeficientes": 40,
+      "notebooks": 1,
+      "familias": {
+        "referencias_inferencia": 40
+      },
+      "dados_textos_rodada1_preservados": true,
+      "estrategia_preservada": true,
+      "SE_IC_p_Holm_reconciliados": true,
+      "reexecucao_estavel": true
+    }
+  ],
+  "bootstrap_exercicios": 32,
+  "bootstrap_padroes": 36480,
+  "bootstrap_p_reconciliados": true,
+  "FE_tendencias_bioma_conferidos_dummies": true,
+  "git_head": "df0a238d4ccb729fb3177b443251fbbaa0cabc93",
+  "git_status": "",
+  "publicacao": "n\u00e3o realizada; autoriza\u00e7\u00e3o pendente"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "notebook": "auditoria_suporte",
+    "celulas": 2,
+    "erros": 0,
+    "segundos": 25.81
+  },
+  {
+    "notebook": "dinamica_controles",
+    "celulas": 6,
+    "erros": 0,
+    "segundos": 10.79
+  },
+  {
+    "notebook": "influencia",
+    "celulas": 3,
+    "erros": 0,
+    "segundos": 40.45
+  },
+  {
+    "notebook": "heterogeneidade",
+    "celulas": 6,
+    "erros": 0,
+    "segundos": 5.75
+  },
+  {
+    "notebook": "naolinear_zeros",
+    "celulas": 4,
+    "erros": 0,
+    "segundos": 5.08
+  },
+  {
+    "notebook": "denominador",
+    "celulas": 3,
+    "erros": 0,
+    "segundos": 7.06
+  }
+]

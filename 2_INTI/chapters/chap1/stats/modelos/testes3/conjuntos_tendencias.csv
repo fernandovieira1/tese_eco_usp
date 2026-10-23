@@ -1,0 +1,11 @@
+id,termos,F,df1,df2,p,status,familia
+B03_agricultura,expo_soja;expo_milho,1.5791741240917916,2,23,0.22769393651812458,estimado,conjuntos
+B03_pastagem,expo_soja;expo_milho,29.36030393959873,2,23,4.6564704015795333e-07,estimado,conjuntos
+B04_agricultura,expo_soja;expo_milho,2.0453186547453464,2,23,0.1522120592818481,estimado,conjuntos
+B04_pastagem,expo_soja;expo_milho,3.0072084778091117,2,23,0.06915297428951961,estimado,conjuntos
+B05_agricultura,expo_soja;expo_milho,11.13495575937838,2,13,0.0015223109944649824,estimado,conjuntos
+B05_pastagem,expo_soja;expo_milho,25.216678038327935,2,13,3.3540289717936505e-05,estimado,conjuntos
+B06_agricultura,delta_expo_soja;delta_expo_milho,2.150591678542841,2,22,0.14025595533896662,estimado,conjuntos
+B06_pastagem,delta_expo_soja;delta_expo_milho,2.6260512319249485,2,22,0.09489631414051403,estimado,conjuntos
+D03_diferenca,expo_soja;expo_milho,28.525561983641612,2,23,5.903976531699883e-07,estimado,conjuntos
+D04_diferenca,expo_soja;expo_milho,3.419099076295133,2,23,0.050117025388576486,estimado,conjuntos

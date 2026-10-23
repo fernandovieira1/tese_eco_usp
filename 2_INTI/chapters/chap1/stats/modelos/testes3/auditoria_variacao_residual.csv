@@ -1,0 +1,7 @@
+controle,variavel,variancia_residual,fracao_variancia_vs_TWFE,rank_FE,iteracoes
+municipio+ano,expo_soja,1.0480391242584906,1.0,160,11
+municipio+ano,expo_milho,0.7286325995322782,1.0,160,11
+tendencias,expo_soja,0.8395122905929303,0.801031441633348,293,11
+tendencias,expo_milho,0.6302400617794518,0.8649627565168149,293,11
+bioma×ano,expo_soja,0.7027337545693532,0.6705224435839185,206,20
+bioma×ano,expo_milho,0.4456161713873564,0.6115786909251728,206,20

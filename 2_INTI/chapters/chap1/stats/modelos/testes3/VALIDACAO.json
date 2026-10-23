@@ -1,0 +1,9 @@
+{
+  "notebooks": 3,
+  "modelos": 15,
+  "coeficientes": 42,
+  "preservacao": true,
+  "estrategia_inalterada": true,
+  "coeficientes_finitos": true,
+  "publicacao": "proibida nesta rodada"
+}

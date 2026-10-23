@@ -1,0 +1,49 @@
+{
+  "rodadas": [
+    {
+      "rodada": 2,
+      "notebooks": 4,
+      "modelos": 19
+    },
+    {
+      "rodada": 3,
+      "notebooks": 3,
+      "modelos": 15
+    },
+    {
+      "rodada": 4,
+      "notebooks": 6,
+      "modelos": 346
+    },
+    {
+      "rodada": 5,
+      "notebooks": 1,
+      "modelos": 8
+    },
+    {
+      "rodada": 6,
+      "notebooks": 4,
+      "modelos": 16
+    },
+    {
+      "rodada": 7,
+      "notebooks": 2,
+      "modelos": 12
+    }
+  ],
+  "total_notebooks": 20,
+  "total_ajustes": 416,
+  "ajustes_influencia": 322,
+  "ajustes_substantivos_referencia": 94,
+  "csv_sha256": "bc396a4f394ae60d6883205f2ca6e8d33b59a4fb419fc5d667591374c8f1c730",
+  "csv_dimensoes": [
+    3384,
+    70
+  ],
+  "git_head": "df0a238d4ccb729fb3177b443251fbbaa0cabc93",
+  "git_status": "",
+  "notebooks_sem_erros": true,
+  "rodadas_anteriores_preservadas": true,
+  "validacoes_numericas": "testes5/VALIDACAO_INTEGRADA.json; testes6/VALIDACAO_FINAL.json; testes7/VALIDACAO_FINAL.json",
+  "publicacao": "não tentada; bloqueio anterior e autorização específica pendente"
+}

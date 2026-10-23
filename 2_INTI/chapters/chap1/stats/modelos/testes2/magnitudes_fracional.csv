@@ -1,0 +1,5 @@
+id,contraste,estimativa,se,ic95_inf,ic95_sup,p,unidade,familia
+F01_agricultura,+10% preço médio soja; só componente diferencial,-1.29427932336391e-05,1.2569677271727212e-05,-3.8945151782308944e-05,1.3059565315030742e-05,0.3138657333259807,fração,sensibilidade
+F01_agricultura,+10% preço médio milho; só componente diferencial,-2.173045994885709e-05,9.046739256645654e-06,-4.044506596159389e-05,-3.015853936120292e-06,0.02477603331066529,fração,sensibilidade
+F01_pastagem,+10% preço médio soja; só componente diferencial,1.5941769876405267e-05,1.7307066557269216e-05,-1.98606250713187e-05,5.174416482412924e-05,0.3665525891822156,fração,sensibilidade
+F01_pastagem,+10% preço médio milho; só componente diferencial,-1.4718104461517585e-05,8.592678641137877e-06,-3.2493414526392665e-05,3.0572056033574947e-06,0.10018781026298644,fração,sensibilidade

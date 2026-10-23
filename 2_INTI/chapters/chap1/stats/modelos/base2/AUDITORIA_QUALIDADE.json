@@ -1,0 +1,27 @@
+{
+  "linhas_mestre": 3384,
+  "colunas_mestre": 108,
+  "colunas_originais": 70,
+  "colunas_adicionadas": 38,
+  "linhas_quarentena": 3384,
+  "colunas_candidatas": 128,
+  "municipios": 141,
+  "anos": [
+    2001,
+    2024
+  ],
+  "join": "one_to_one, todas as3384chaves em ambos",
+  "colunas_comuns_conferidas": 16,
+  "colunas_originais_preservadas": true,
+  "fontes_rodadas_preservadas": true,
+  "imputacao_nos_dados": false,
+  "regressoes": false,
+  "parquet": "não disponível; nenhum pacote instalado",
+  "plano_sha256": "4ee81b8731a902287025f4ae6bef91d3e53fc3453f3eb9e2952f12cfaa7e03de",
+  "csv_original_sha256": "bc396a4f394ae60d6883205f2ca6e8d33b59a4fb419fc5d667591374c8f1c730",
+  "pt_sha256": "72a0136434cbadf80b70a271f5afd7f9fb9232458b5d6861517221564828ec6b",
+  "git_head": "df0a238d4ccb729fb3177b443251fbbaa0cabc93",
+  "origin_main": "df0a238d4ccb729fb3177b443251fbbaa0cabc93",
+  "custos": "fontes CONAB referenciadas ausentes localmente e em origin/main",
+  "limitacao": "Validação interna/documental; fonte bruta não reconstituída; origem estrutural dos zeros não certificada."
+}

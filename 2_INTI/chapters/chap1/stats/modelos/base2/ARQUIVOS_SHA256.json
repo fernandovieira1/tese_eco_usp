@@ -1,0 +1,110 @@
+{
+  "construir.py": {
+    "sha256": "5dc1756ead3186ef3c9a0854abdf66f6701ba5548276e166a947e332fcdd4cf5",
+    "bytes": 17117
+  },
+  "painel_h1_v2.csv": {
+    "sha256": "9c68a0b66006a06c7369dcc331877b2ccc45f6bf5790303e0497ba726cf5838d",
+    "bytes": 3311795
+  },
+  "mascaras_quarentena.csv.gz": {
+    "sha256": "bd02826a3429977ac2a1ac682fdfce2a7750aaefa767180aa6c9dabee5faa2f8",
+    "bytes": 28211
+  },
+  "missing_zeros_por_codigo_ibge.csv.gz": {
+    "sha256": "850f6da48d02faffb3aa2394385701a218255aedf655112e3a6716973ed25951",
+    "bytes": 142306
+  },
+  "LEIA_ME.md": {
+    "sha256": "e8e7b7db12b4066d7408c8b0153674ec364790170d13e4e614dbef49463db1ef",
+    "bytes": 5997
+  },
+  "mascaras_mestre.csv.gz": {
+    "sha256": "d95e3d37f8bbb7d6a6722148f73939232295e8bb33db090c3aac1c8431dee386",
+    "bytes": 32567
+  },
+  "PLANO_DECISOES.md": {
+    "sha256": "4ee81b8731a902287025f4ae6bef91d3e53fc3453f3eb9e2952f12cfaa7e03de",
+    "bytes": 3922
+  },
+  "amostras_elegibilidade.csv": {
+    "sha256": "44c95c6e2bcb1f084613b7d9cf475b6bfd6cb24b48f5bb6a74a2b458874f0a0d",
+    "bytes": 544
+  },
+  "VALIDACAO_FINAL.json": {
+    "sha256": "95b073ef22b4a351cc47fb1efae5f0644eed6f0b70f4b6c86e1569ddf8c95649",
+    "bytes": 413
+  },
+  "REPRODUCAO_ESTAVEL.json": {
+    "sha256": "208e556e28b263c19d8c81b03cc36dd0fa088cae4acdb00b569327fb15df884e",
+    "bytes": 596
+  },
+  "missing_zeros_por_variavel.csv": {
+    "sha256": "4fc859812023a9f6dabd7b233e68ef8f485c1c4891eca3775766190cc342947a",
+    "bytes": 21974
+  },
+  "AUDITORIA_QUALIDADE.json": {
+    "sha256": "89b2ec3622259fa0468fdb2677e31b8e69a3150b826384d1f820d26120484373",
+    "bytes": 1092
+  },
+  "validar.py": {
+    "sha256": "e938dfea4bc6aec9c37f4939f80181d1f9964fe8a1ac509f17267a8125267898",
+    "bytes": 4449
+  },
+  "SENSIBILIDADE_FUTURA.md": {
+    "sha256": "ddebca908d8c88c8526d6b68e8ec96795fc94590f874925bca9e2b491c546f6e",
+    "bytes": 4029
+  },
+  "auditoria_chaves.csv": {
+    "sha256": "3ea53da19d1563544ff88faf655d017c5e7b221f2154a720d668ad286348197e",
+    "bytes": 60935
+  },
+  "missing_zeros_por_ano.csv.gz": {
+    "sha256": "5deef2a8c2f6cf121ca3870d51a5763edff073ae31ced2a87ec7ba1612a262f2",
+    "bytes": 25826
+  },
+  "comparacao_original_v2.csv": {
+    "sha256": "d35b29ccb1e385ef31a03f8294aeed5e57561ebff2328c9cfddc0e5d72399ccd",
+    "bytes": 3783
+  },
+  "TRATAMENTO_RODADAS1_7.md": {
+    "sha256": "b058193bba74fd10b19cf650452e8155146165a9769a71e2527e400aa46e9387",
+    "bytes": 3549
+  },
+  "dicionario_variaveis.csv": {
+    "sha256": "843f64c07213cd023af2bea9a742f1954611cdc2f16fe49314bed546729b6fe9",
+    "bytes": 142833
+  },
+  "PENDENCIAS.csv": {
+    "sha256": "4968534395f3b1ee83004d806fa22daa50e5776f28f3639d7534afb34fafe4c0",
+    "bytes": 646
+  },
+  "candidatos_quarentena.csv": {
+    "sha256": "15ad25f851faa8404f24bfa879f011c68ae03a81ca1d2be95eaee1b6376cb904",
+    "bytes": 2935199
+  },
+  "comparacao_principal_PT.csv": {
+    "sha256": "b7afddbd6e6ccfeb256ba8e4b456e8ab1a50b79971c94de61d004d9dafd1e925",
+    "bytes": 598
+  },
+  "requirements.txt": {
+    "sha256": "d603b347e3c59487fd79307e1454274860df824b72efe739894eee8579ab1a6b",
+    "bytes": 27
+  },
+  "missing_zeros_por_bioma_predominante.csv.gz": {
+    "sha256": "fb31594e917eb476f2e36c2327f6e66a05d51d6d8eee334b225ae820fdd84cf6",
+    "bytes": 4950
+  },
+  "FONTES_PROTEGIDAS_SHA256.json": {
+    "sha256": "b9a93d1157ba84831f9e212316757951c19335fb8afa943418c809329407a103",
+    "bytes": 138404
+  },
+  "VERSOES.json": {
+    "sha256": "7546febacdca46b8ff9af41e6da507eb97fb7d090c1fbdee74d6db729dc3f3dd",
+    "bytes": 131
+  },
+  "reproduzir.py": {
+    "sha256": "7a8810ccc36059351c5d160c7f54cd6d4b6666266b5859c5e6b0ae868dc73fe6",
+    "bytes": 179
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "notebook": "auditoria",
+    "celulas": 3,
+    "erros": 0,
+    "segundos": 6.08
+  },
+  {
+    "notebook": "painel",
+    "celulas": 8,
+    "erros": 0,
+    "segundos": 5.43
+  },
+  {
+    "notebook": "ppml",
+    "celulas": 5,
+    "erros": 0,
+    "segundos": 14.33
+  },
+  {
+    "notebook": "fracional",
+    "celulas": 3,
+    "erros": 0,
+    "segundos": 7.25
+  }
+]

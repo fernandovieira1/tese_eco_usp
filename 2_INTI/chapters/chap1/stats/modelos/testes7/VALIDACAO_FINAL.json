@@ -1,0 +1,12 @@
+{
+  "notebooks_executados": 2,
+  "modelos": 12,
+  "coeficientes": 72,
+  "contrastes_formais": 36,
+  "magnitudes": 24,
+  "SE_IC_p_Holm_conferidos": true,
+  "FEbioma_PanelOLS_e_tendencias_dummies": true,
+  "rodadas2_a6_preservadas": true,
+  "estrategia_preservada": true,
+  "publicacao": "não realizada; pendente autorização"
+}

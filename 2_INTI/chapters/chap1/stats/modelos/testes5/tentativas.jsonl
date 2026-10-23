@@ -1,0 +1,16 @@
+{"id": "W01_agricultura", "status": "iniciado", "hora": 1792784509.6176138}
+{"id": "W01_agricultura", "status": "concluido", "hora": 1792784509.7268665}
+{"id": "W01_pastagem", "status": "iniciado", "hora": 1792784511.6597588}
+{"id": "W01_pastagem", "status": "concluido", "hora": 1792784511.7956767}
+{"id": "W02_agricultura", "status": "iniciado", "hora": 1792784513.7578962}
+{"id": "W02_agricultura", "status": "concluido", "hora": 1792784513.9478526}
+{"id": "W02_pastagem", "status": "iniciado", "hora": 1792784515.5868504}
+{"id": "W02_pastagem", "status": "concluido", "hora": 1792784515.7644343}
+{"id": "W03_agricultura", "status": "iniciado", "hora": 1792784517.6254098}
+{"id": "W03_agricultura", "status": "concluido", "hora": 1792784517.8947551}
+{"id": "W03_pastagem", "status": "iniciado", "hora": 1792784520.582416}
+{"id": "W03_pastagem", "status": "concluido", "hora": 1792784520.8498335}
+{"id": "W04_agricultura", "status": "iniciado", "hora": 1792784522.6379058}
+{"id": "W04_agricultura", "status": "concluido", "hora": 1792784522.7248259}
+{"id": "W04_pastagem", "status": "iniciado", "hora": 1792784523.5210714}
+{"id": "W04_pastagem", "status": "concluido", "hora": 1792784523.6170142}

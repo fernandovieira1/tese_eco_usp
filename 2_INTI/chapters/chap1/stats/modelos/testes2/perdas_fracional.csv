@@ -1,0 +1,13 @@
+id,criterio,antes,excluidos,restantes,N_candidato
+F01_agricultura,taxa_agricultura,2769,0,2769,2769
+F01_agricultura,expo_soja,2769,0,2769,2769
+F01_agricultura,expo_milho,2769,0,2769,2769
+F01_agricultura,estoque,2769,0,2769,2769
+F01_agricultura,id,2769,0,2769,2769
+F01_agricultura,ano,2769,0,2769,2769
+F01_pastagem,taxa_pastagem,2769,0,2769,2769
+F01_pastagem,expo_soja,2769,0,2769,2769
+F01_pastagem,expo_milho,2769,0,2769,2769
+F01_pastagem,estoque,2769,0,2769,2769
+F01_pastagem,id,2769,0,2769,2769
+F01_pastagem,ano,2769,0,2769,2769

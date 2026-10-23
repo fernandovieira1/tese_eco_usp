@@ -1,0 +1,18 @@
+{
+  "notebooks_executados": 4,
+  "modelos": 16,
+  "coeficientes": 76,
+  "contrastes_formais": 52,
+  "magnitudes": 32,
+  "familias_coef": {
+    "biomas": 32,
+    "culturas": 8,
+    "interfaces": 36
+  },
+  "SE_IC_p_Holm_conferidos": true,
+  "contrastes_matriz_completa": true,
+  "seis_modelos_verificados_PanelOLS": true,
+  "rodadas2_a5_preservadas": true,
+  "estrategia_preservada": true,
+  "publicacao": "não realizada; pendente autorização"
+}

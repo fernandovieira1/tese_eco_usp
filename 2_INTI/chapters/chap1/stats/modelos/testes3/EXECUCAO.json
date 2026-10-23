@@ -1,0 +1,20 @@
+[
+  {
+    "notebook": "auditoria_temporal",
+    "celulas": 2,
+    "erros": 0,
+    "segundos": 4.42
+  },
+  {
+    "notebook": "dinamica",
+    "celulas": 4,
+    "erros": 0,
+    "segundos": 4.81
+  },
+  {
+    "notebook": "tendencias",
+    "celulas": 7,
+    "erros": 0,
+    "segundos": 6.32
+  }
+]

@@ -1,0 +1,12 @@
+flag,elegiveis,nao_elegiveis
+v2__flag_conversao_valida__agricultura,2772,612
+v2__flag_zero_conversao_registrado__agricultura,265,3119
+v2__flag_conversao_valida__pastagem,2772,612
+v2__flag_zero_conversao_registrado__pastagem,0,3384
+v2__flag_desfecho_ausente_cobertura_par,612,2772
+v2__flag_amostra_conversao_ambos,2772,612
+v2__flag_autos_flora_elegivel_t,1526,1858
+v2__flag_autos_flora_elegivel_lag1,1444,1940
+v2__flag_amostra_fiscal_lag1,1140,2244
+v2__flag_amostra_conversao_chuva,2772,612
+v2__flag_amostra_conversao_rendimentos_lag1,2016,1368

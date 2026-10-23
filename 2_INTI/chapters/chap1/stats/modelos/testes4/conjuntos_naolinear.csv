@@ -1,0 +1,5 @@
+id,termos,F,df1,df2,p,status,familia
+N01_agricultura,quadrado_soja;quadrado_milho,4.991834554294475,2,23,0.01582821777338696,estimado,conjuntos
+N01_pastagem,quadrado_soja;quadrado_milho,0.6455409930742154,2,23,0.5336189284337821,estimado,conjuntos
+Z01_agricultura,expo_soja;expo_milho,0.022646058642398225,2,23,0.9776302085579652,estimado,conjuntos
+Z02_agricultura,expo_soja;expo_milho,0.7947709211984747,2,23,0.46370319611444166,estimado,conjuntos

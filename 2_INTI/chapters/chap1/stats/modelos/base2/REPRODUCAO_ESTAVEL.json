@@ -1,0 +1,18 @@
+{
+  "duas_execucoes_tabelas_identicas": true,
+  "tabelas": {
+    "painel_h1_v2.csv": true,
+    "mascaras_quarentena.csv.gz": true,
+    "missing_zeros_por_codigo_ibge.csv.gz": true,
+    "mascaras_mestre.csv.gz": true,
+    "amostras_elegibilidade.csv": true,
+    "missing_zeros_por_variavel.csv": true,
+    "auditoria_chaves.csv": true,
+    "missing_zeros_por_ano.csv.gz": true,
+    "comparacao_original_v2.csv": true,
+    "dicionario_variaveis.csv": true,
+    "candidatos_quarentena.csv": true,
+    "comparacao_principal_PT.csv": true,
+    "missing_zeros_por_bioma_predominante.csv.gz": true
+  }
+}

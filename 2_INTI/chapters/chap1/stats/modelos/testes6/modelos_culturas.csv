@@ -1,0 +1,5 @@
+id,vd,vi,estimador,fe,N,N_grade,perdas_grade,municipios,anos,ano_min,ano_max,K_total,rank_regressores,condicao,iteracoes,convergiu,ajuste,ajuste_tipo,familia,singletons,informativos
+C61_agricultura,pp_agricultura,x_soja + x_milho,TWFE linear,municipio + ano,2772,3384,612,137,24,2001,2024,162,2,1.8964790211005307,11,True,0.01311386067027398,R2 within,culturas,3,134
+C61_pastagem,pp_pastagem,x_soja + x_milho,TWFE linear,municipio + ano,2772,3384,612,137,24,2001,2024,162,2,1.8964790211005307,11,True,0.017159904730280617,R2 within,culturas,3,134
+C62_agricultura,pp_agricultura,x_soja + x_milho,TWFE linear,municipio + ano,2623,3384,761,126,24,2001,2024,151,2,2.1079192305836134,11,True,0.012851352959773577,R2 within,culturas,0,126
+C62_pastagem,pp_pastagem,x_soja + x_milho,TWFE linear,municipio + ano,2623,3384,761,126,24,2001,2024,151,2,2.1079192305836134,11,True,0.01884692248851294,R2 within,culturas,0,126

@@ -1,0 +1,17 @@
+{
+  "linhas": 3384,
+  "colunas_origem": 70,
+  "municipios": 141,
+  "duplicatas": 0,
+  "sha256_csv": "bc396a4f394ae60d6883205f2ca6e8d33b59a4fb419fc5d667591374c8f1c730",
+  "sha256_aux_apenas_inventario": "72a0136434cbadf80b70a271f5afd7f9fb9232458b5d6861517221564828ec6b",
+  "algodao_colunas": [],
+  "fracao_soma_erro_max": 0.001254790389649707,
+  "fracao_faltantes": 0,
+  "fracao_invariante": true,
+  "fracao_min": 0.0,
+  "fracao_max": 1.0000000000000084,
+  "conversao_cultura_disponivel": false,
+  "geometria_json_municipios": false,
+  "arquivos_geograficos_stats": []
+}

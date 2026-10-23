@@ -1,0 +1,14 @@
+{
+  "aprovado": true,
+  "linhas": 3384,
+  "colunas": 108,
+  "candidatos_separados": 128,
+  "original_tokens_e_valores_exatos": true,
+  "chaves141_e_join_um_para_um": true,
+  "defasagens_conferidas_join_e_lacunas": true,
+  "zeros_faltantes_mascaras_relatorios_reconciliados": true,
+  "fontes_rodadas1_7_preservadas": true,
+  "dicionario_completo": true,
+  "regressoes_executadas": 0,
+  "imputacoes_executadas": 0
+}
