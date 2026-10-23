@@ -26,9 +26,10 @@ Para o capítulo 1, tomar como referências de voz, raciocínio, cadência e org
 
 - [Introdução](chapters/chap1/text/0_introduction.tex);
 - [Revisão da literatura](chapters/chap1/text/1_literature_review.tex);
-- [Mato Grosso: Contexto e Dados](chapters/chap1/text/2_mt_descriptive.tex), até o final da subseção “Expansão agropecuária e transformação da cobertura vegetal”.
+- [Mato Grosso: Contexto e Dados](chapters/chap1/text/2_mt_descriptive.tex), até o final da subseção “Expansão agropecuária e transformação da cobertura vegetal”;
+- O primeiro parágrafo da subseção “Preços agropecuários e incentivos à conversão”, no mesmo arquivo, aprovado pelo autor em 23/10/2026 como padrão para seções descritivas. O trecho está após `\label{subsec:mt-precos}` e começa com “A abertura de novas áreas depende de como seu retorno esperado se compara...”. Essa aprovação se refere especificamente ao primeiro parágrafo.
 
-Essa subseção foi indicada pelo autor como modelo para as próximas. Ler também os parágrafos anteriores e posteriores ao trecho em revisão. Considerar as edições manuais mais recentes do autor, sem restaurar versões anteriores mais extensas. A referência é a forma de construir o argumento, não a reprodução literal de frases, dados ou da sequência temática. Repetições acidentais, lapsos de digitação e problemas técnicos locais não constituem normas de estilo.
+A subseção “Expansão agropecuária e transformação da cobertura vegetal” foi indicada pelo autor como modelo para as próximas. Ler também os parágrafos anteriores e posteriores ao trecho em revisão. Considerar as edições manuais mais recentes do autor, sem restaurar versões anteriores mais extensas. A referência é a forma de construir o argumento, não a reprodução literal de frases, dados ou da sequência temática. Repetições acidentais, lapsos de digitação e problemas técnicos locais não constituem normas de estilo.
 
 ### 1.2. Vinte regras de escrita acadêmica
 
@@ -82,27 +83,27 @@ Evitar:
 
 A unidade de organização é o argumento da subseção. Cada parágrafo desenvolve uma etapa desse argumento, retoma o ponto anterior e prepara o seguinte. A prosa deve avançar de forma contínua e cumulativa.
 
-Na análise descritiva, um percurso possível é:
+Nas seções descritivas, conduzir o leitor pela relação econômica que importa compreender, pelos mecanismos envolvidos e pelas condições em que ela pode ocorrer. Os dados entram como evidência que sustenta, qualifica ou questiona essa explicação, em diálogo com a literatura e com o contexto da pesquisa.
 
-questão ou argumento da literatura
-→ evidência
-→ interpretação econômica e comparação
-→ alcance da conclusão
-→ implicação para o problema do artigo.
+Para o capítulo 1, o percurso solicitado pelo autor é:
 
-Esse percurso pode se distribuir por vários parágrafos. Não exigir que cada parágrafo apresente sozinho literatura, dado, ressalva e H1. Evitar comentários autônomos que reiniciem a discussão a cada gráfico ou tabela.
+dados → literatura → Mato Grosso → problema ou H1.
+
+Esse percurso orienta a construção do argumento, sem impor uma ordem fixa de exposição ou exigir que a primeira frase anuncie um dado. O parágrafo pode começar pela relação econômica, como no modelo aprovado da subseção de preços, e apresentar as medidas onde elas ajudam a demonstrar ou delimitar essa relação. A progressão pode se distribuir por vários parágrafos. Não exigir que cada um apresente sozinho dado, literatura, contexto, ressalva e H1. Evitar comentários autônomos que reiniciem a discussão a cada gráfico ou tabela.
 
 Não reorganizar integralmente um parágrafo apenas para torná-lo estilisticamente mais convencional.
 
 ### 3.1. Continuidade entre os blocos
 
-A transição deve decorrer da relação entre os conteúdos. Um conector não resolve a falta dessa relação. Não antecipar um mecanismo que o próximo gráfico ou tabela não permite examinar, nem interromper uma discussão para retomá-la sem necessidade adiante.
+A transição deve decorrer da relação entre os conteúdos. Um conector não resolve a falta dessa relação. Não atribuir ao próximo gráfico ou tabela a demonstração de um mecanismo que seus dados não permitem examinar, nem interromper uma discussão para retomá-la sem necessidade adiante.
 
-Na subseção aprovada, a caracterização das lavouras é ampliada pela escala pecuária e comercial. Esse quadro é então confrontado com a conversão da vegetação, conduzindo à questão de H1. Essa ordem cumpre funções específicas nesse argumento. Nas próximas subseções, preservar a progressão lógica e adaptar a sequência ao conteúdo disponível.
+Na subseção “Expansão agropecuária e transformação da cobertura vegetal”, a caracterização das lavouras é ampliada pela escala pecuária e comercial. Esse quadro é então confrontado com a conversão da vegetação, conduzindo à questão de H1. Essa ordem cumpre funções específicas nesse argumento. Nas próximas subseções, preservar a progressão lógica e adaptar a sequência ao conteúdo disponível.
 
 ### 3.2. Função da evidência e diálogo com a literatura
 
 Selecionar os achados que acrescentam algo à discussão. O comentário deve explicar o que se aprende com a evidência, como ela se relaciona com um argumento ou resultado específico da revisão e por que essa relação importa para a pergunta investigada. Evitar inventários de valores e repetições do que o leitor percebe diretamente no elemento visual.
+
+A afirmação central de cada passagem deve desenvolver a relação investigada. Evitar que o comentário se limite a informar que um indicador subiu ou desceu, a anunciar o conteúdo de um gráfico ou a justificar genericamente por que uma variável é examinada. As medidas devem ajudar o leitor a compreender um mecanismo, a dimensão de um fenômeno, um contraste ou os limites da interpretação. As informações técnicas necessárias à leitura dos elementos visuais continuam previstas na seção 3.3.
 
 A literatura deve participar da interpretação. Explicitar se os dados convergem, contrastam, qualificam ou contextualizam os estudos discutidos, respeitando diferenças de período, território, amostra e medida. Não inserir uma referência apenas para encerrar o parágrafo.
 
