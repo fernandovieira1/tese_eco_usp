@@ -24,6 +24,21 @@ def csvout(name,rows):
         w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
 def js(name,data):(P/name).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
+def mapa_colunas():
+    rows=ler(P/'mapeamento_colunas_v2.csv')
+    assert len(rows)==46 and [int(r['posicao']) for r in rows]==list(range(1,47))
+    mapa={r['nome_anterior']:r['nome_novo'] for r in rows}
+    assert len(mapa)==46 and len(set(mapa.values()))==46
+    assert all(r['grupo'] in '01234' and r['nome_novo']==r['grupo']+'_'+r['nome_anterior'] for r in rows)
+    return mapa
+
+def renomear_finais(rows):
+    # Aceita somente schema original ou já renomeado; nunca aplica prefixo duplo.
+    mapa=mapa_colunas();keys=list(rows[0])
+    if keys==list(mapa.values()):return rows
+    assert keys==list(mapa),'Schema inesperado: revisar mapeamento explícito'
+    return [{mapa[k]:v for k,v in r.items()} for r in rows]
+
 def planilha_xml(path):
     # Leitor independente de openpyxl: resolve aba, strings e coordenadas OOXML.
     with zipfile.ZipFile(path) as z:
@@ -129,8 +144,8 @@ def juntar():
     for r in original:
         a=lookup[int(r['ano'])];result.append({**r,**{c:a[c] for c in NOVAS}})
     assert len(result)==3384 and len({(r['codigo_ibge'],r['ano']) for r in result})==3384
-    csvout('painel_h1_base3_v2.csv',result)
-    js('manifesto_v2.json',{'versao':'base3_v2_parcial' if audit['meses_selic_no_recorte']<288 else 'base3_v2','linhas':3384,'colunas':46,'municipios':141,'fonte_v1_sha256':HASH_V1,'auditoria_previa_sha256':hashfile(P/'auditoria_pre_join_v2.json'),'sha256_painel':hashfile(P/'painel_h1_base3_v2.csv'),'fontes':audit['hashes_fontes'],'sem_modelos':True})
+    csvout('painel_h1_base3_v2.csv',renomear_finais(result))
+    js('manifesto_v2.json',{'versao':'base3_v2_parcial' if audit['meses_selic_no_recorte']<288 else 'base3_v2','linhas':3384,'colunas':46,'municipios':141,'fonte_v1_sha256':HASH_V1,'auditoria_previa_sha256':hashfile(P/'auditoria_pre_join_v2.json'),'sha256_painel':hashfile(P/'painel_h1_base3_v2.csv'),'fontes':audit['hashes_fontes'],'sem_modelos':True,'schema':'prefixos_grupos_0_4','mapeamento_sha256':hashfile(P/'mapeamento_colunas_v2.csv'),'dicionario_sha256':hashfile(P/'dicionario_variaveis_v2.csv')})
     print(json.dumps({'status':audit['status'],'linhas':3384,'colunas':46,'sha256':hashfile(P/'painel_h1_base3_v2.csv')}))
 
 if __name__=='__main__':

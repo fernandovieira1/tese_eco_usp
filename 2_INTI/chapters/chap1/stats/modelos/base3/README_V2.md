@@ -2,12 +2,12 @@
 
 ## Estado da entrega
 
-**Completa:** 3384 linhas,141 municípios,2001–2024,46 colunas. As 42 colunas da v1 permanecem idênticas. Os quatro campos novos estão preenchidos, cada um com 24 valores anuais repetidos por município:
+**Completa:** 3384 linhas,141 municípios,2001–2024,46 colunas. Os valores das 42 colunas da v1 permanecem idênticos, com nomes mapeados. Os quatro campos novos estão preenchidos, cada um com 24 valores anuais repetidos por município:
 
-- `preco_real_usd2024_media_anual_lag1__dap`: média de 12 preços mensais deflacionados do ano anterior, USD2024/t.
-- `razao_medias_reais_lag1__soja_dap`: média anual real soja / DAP, adimensional.
-- `razao_medias_reais_lag1__milho_dap`: média anual real milho / DAP, adimensional.
-- `selic_efetiva_anualizada_media_anual_lag1_pct_aa`: média temporal de 12 níveis mensais anualizados SGS4189, %a.a., ano anterior.
+- `2_preco_real_usd2024_media_anual_lag1__dap`: média de 12 preços mensais deflacionados do ano anterior, USD2024/t.
+- `2_razao_medias_reais_lag1__soja_dap`: média anual real soja / DAP, adimensional.
+- `2_razao_medias_reais_lag1__milho_dap`: média anual real milho / DAP, adimensional.
+- `2_selic_efetiva_anualizada_media_anual_lag1_pct_aa`: média temporal de 12 níveis mensais anualizados SGS4189, %a.a., ano anterior.
 
 Sem imputação, modelos ou seleção por p-valores. A versão provisória foi preservada em `historico_v2_parcial`; seus documentos de bloqueio descrevem o estado anterior, não a entrega atual. As contagens/flags anuais em `economia_anual_v2.csv` mostram 12 meses para WB/CPI e Selic em todos os 24 anos; nenhuma incompletude.
 
@@ -48,3 +48,23 @@ Fontes: [World Bank Commodity Markets](https://www.worldbank.org/en/research/com
 Publicação da v2 autorizada separadamente. O lote inclui somente a v2 completa e seus insumos/scripts/documentação; o histórico provisório e os demais trabalhos locais ficam fora do commit. A reprodução não depende deles.
 
 O extrator `fontes_v2/extrair_sgs4189_html.py` registra o método recebido do coletor. O HTML bruto não está incluído; o script foi compilado localmente, mas não reexecutado contra esse bruto nesta sessão. Os CSVs incluídos e seus hashes são suficientes para reproduzir o painel.
+
+## Prefixos por grupo — atualização de nomenclatura
+
+Todas as 46 colunas do painel final recebem `grupo_nome_anterior`, sem mudar qualquer caractere do nome anterior. A ordem original permanece: o painel não foi reordenado por grupo. A v1 e os dados de origem mantêm os nomes originais. A publicação desta alteração de nomes foi autorizada separadamente; o escopo limita-se à renomeação e aos arquivos de apoio da base3 v2.
+
+| Grupo | Conteúdo | Colunas |
+|---|---|---:|
+| 0 | Identificação e classificação territorial | 7 |
+| 1 | Ambiental e qualidade específica | 22 |
+| 2 | Econômico/produtivo, incluindo GAEZ | 9 |
+| 3 | Institucional e qualidade específica dos autos | 5 |
+| 4 | Máscaras amostrais combinadas | 3 |
+
+O [mapeamento explícito](mapeamento_colunas_v2.csv) registra posição, grupo, nome anterior, nome novo e justificativa para todas as colunas. O [dicionário completo v2](dicionario_variaveis_v2.csv) contém as 46 definições e suas origens; o adendo descreve os quatro campos econômicos acrescentados. `v2__` preexistente foi preservado: por exemplo, `1_v2__precip_mm_anual`. Aptidão GAEZ ficou no grupo 2 por seu papel produtivo; biomas/frações, no grupo 0 como classificação territorial. Elegibilidade específica de autos acompanha o grupo 3; máscaras que combinam desfechos/covariáveis ficam no grupo 4.
+
+O construtor calcula com nomes originais e aplica o mapa apenas ao painel final. Executá-lo novamente não duplica prefixos. As tabelas auxiliares mensais/anuais e a auditoria pré-join mantêm nomes de origem; não são o schema do painel final. A tabela de qualidade do incremento usa os nomes finais.
+
+**Compatibilidade:** referências antigas de fórmulas precisam seguir o mapa. Nomes iniciados por dígito exigem acesso por string, como `df['0_codigo_ibge']`; em fórmulas Patsy, use `Q("1_taxa_conversao__agricultura")`. Nenhum modelo foi ajustado nesta mudança.
+
+Os testes invertem o mapa para comparar com v1 e com a v2 publicada antes da renomeação. Além de células e ordem, verificam que todos os bytes após o cabeçalho do CSV permanecem iguais, incluindo ausências e zeros. Os dez arquivos da v1 continuam intactos.

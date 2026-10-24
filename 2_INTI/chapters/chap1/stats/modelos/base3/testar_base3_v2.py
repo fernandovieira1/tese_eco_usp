@@ -1,5 +1,7 @@
 """Testes da extensão; não executa modelos nem altera v1."""
 import json
+import csv
+import io
 import math
 import statistics
 import subprocess
@@ -9,7 +11,9 @@ import construir_base3_v2 as b
 class Incremento(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.v1=b.ler(b.V1);cls.v2=b.ler(b.P/'painel_h1_base3_v2.csv')
+        cls.v1=b.ler(b.V1);cls.final=b.ler(b.P/'painel_h1_base3_v2.csv')
+        inverse={v:k for k,v in b.mapa_colunas().items()}
+        cls.v2=[{inverse[k]:v for k,v in r.items()} for r in cls.final]
         cls.anual=b.ler(b.P/'economia_anual_v2.csv');cls.mensal=b.ler(b.P/'auditoria_mensal_v2.csv')
 
     def test_preservacao(self):
@@ -24,6 +28,19 @@ class Incremento(unittest.TestCase):
             path='2_INTI/chapters/chap1/stats/modelos/base3/'+nome
             blob=subprocess.check_output(['git','show','5c0247fb00248828daa37a49b96e077c0db70bfd:'+path],cwd=b.P)
             self.assertEqual(blob,(b.P/nome).read_bytes(),nome)
+
+    def test_renomeacao_integral_idempotente(self):
+        mapa=b.mapa_colunas()
+        self.assertEqual(list(self.final[0]),list(mapa.values()))
+        self.assertEqual(b.renomear_finais(self.final),self.final)
+        self.assertEqual(b.renomear_finais(self.v2),self.final)
+        path='2_INTI/chapters/chap1/stats/modelos/base3/painel_h1_base3_v2.csv'
+        raw=subprocess.check_output(['git','show','332fc3c3e48acf57695b40bf0b74b0d908e61950:'+path],cwd=b.P)
+        before=list(csv.DictReader(io.StringIO(raw.decode())))
+        self.assertEqual(self.v2,before)  # Todas as células e ordem, incluindo NA e zeros.
+        self.assertEqual((b.P/'painel_h1_base3_v2.csv').read_bytes().split(b'\n',1)[1],raw.split(b'\n',1)[1])
+        metadata=b.ler(b.P/'dicionario_variaveis_v2.csv')
+        self.assertEqual([r['variavel'] for r in metadata],list(mapa.values()))
 
     def test_calendario_unidades(self):
         self.assertEqual(len(self.mensal),288)
@@ -61,6 +78,8 @@ class Incremento(unittest.TestCase):
 
     def test_manifesto(self):
         m=json.loads((b.P/'manifesto_v2.json').read_text())
+        self.assertEqual(m['mapeamento_sha256'],b.hashfile(b.P/'mapeamento_colunas_v2.csv'))
+        self.assertEqual(m['dicionario_sha256'],b.hashfile(b.P/'dicionario_variaveis_v2.csv'))
         self.assertEqual(m['sha256_painel'],b.hashfile(b.P/'painel_h1_base3_v2.csv'))
         self.assertEqual(m['auditoria_previa_sha256'],b.hashfile(b.P/'auditoria_pre_join_v2.json'))
         for name,value in m['fontes'].items():self.assertEqual(value,b.hashfile(b.F/name))
