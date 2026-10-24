@@ -1,0 +1,32 @@
+{
+  "fonte_sha256": "a98dbe320efc784543cf43372a5903de32434be5871304178f2f9d49daaf1c3b",
+  "dicionario_sha256": "8e8a22d3d75742aaa355cfacbbe4d0eb1d16bc14c77fd4459d4db1daa620c4e5",
+  "linhas": 3384,
+  "colunas": 70,
+  "grupos": {
+    "GRUPO_1_AMBIENTAIS.csv": {
+      "linhas": 3384,
+      "colunas": 29,
+      "indices": 7,
+      "sha256": "64622b72eba7833a44501dfa0fc712b8b3751cd077e8b82b619ea892ce34b26e"
+    },
+    "GRUPO_2_ECONOMICOS.csv": {
+      "linhas": 3384,
+      "colunas": 40,
+      "indices": 7,
+      "sha256": "e8ee44febb89b5d92320dbbf22f4d614df08e89a3489b6327f6c07cb1eef4c3c"
+    },
+    "GRUPO_3_INSTITUCIONAIS.csv": {
+      "linhas": 3384,
+      "colunas": 12,
+      "indices": 7,
+      "sha256": "0b9e650bd855e1d20191a0a50386b2ee18f962f8c30fad12e6ae4c9bde16e742"
+    },
+    "GRUPO_4_OUTROS.csv": {
+      "linhas": 3384,
+      "colunas": 10,
+      "indices": 7,
+      "sha256": "312d756817fcfd7d5be2ee1e9c058e9f200e214f42dc061406b3b503e1fc4059"
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # Base3 v4 — receitas brutas estimadas e defasagens
 
+**Ponto de entrada para trabalho manual:** [FERNANDO/grupos_h1](../../FERNANDO/grupos_h1/LEIA_ME.md), com a base completa v4, os quatro grupos e o dicionário. A pasta BASES_PARA_USO abaixo preserva a entrega publicada anterior; para trabalhar, use o ponto de entrada indicado.
+
 Entrega: **3.384 linhas, 141 municípios, 2001–2024 e 70 colunas**. As 54 colunas da v3 publicada permanecem com valores, nomes e ordem idênticos. Acrescentamos 16 campos do grupo 2: duas culturas × duas medidas × quatro versões. Nenhuma regressão, imputação, nova cultura ou custo. A publicação deste lote v4 foi autorizada separadamente; outros trabalhos locais não integram a entrega.
 
 ## Estratégia, fórmulas e nomes
