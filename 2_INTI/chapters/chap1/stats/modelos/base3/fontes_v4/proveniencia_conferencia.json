@@ -1,0 +1,15 @@
+{
+  "arquivo_pt": "2_INTI/chapters/chap1/stats/EDA/paineis/painel_tese_chap1_pt.csv",
+  "sha256_pt": "72a0136434cbadf80b70a271f5afd7f9fb9232458b5d6861517221564828ec6b",
+  "sha256_extrato": "db433027785e79e600fa3fe90f1da01fd2f6191345adf55b950bd0d411ef69af",
+  "papel": "Conferência local derivada; não fonte independente de preços mundiais nem autenticação de vintage oficial2024.",
+  "comparacao_leitores": {
+    "leitores": [
+      "OOXML/ElementTree",
+      "openpyxl 3.1.5"
+    ],
+    "celulas_identicas": 576,
+    "janela": "2001-01 a 2024-12"
+  },
+  "limite_2024": "Confronto externo oficial anterior cobre2000–2023; 2024 conferido localmente em dois leitores e PT, não novo download oficial."
+}

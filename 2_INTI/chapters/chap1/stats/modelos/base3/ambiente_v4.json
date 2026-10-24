@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "construtor": "Somente biblioteca padr\u00e3o; sem aleatoriedade",
+  "notebook": {
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0"
+  },
+  "instalacao": "Ambiente tempor\u00e1rio /tmp/base3-v4-notebook-env; registry https://pypi.org/simple; nenhuma depend\u00eancia versionada"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "APROVADO_LOCAL",
+  "reproducoes_isoladas_identicas": 2,
+  "inputs_isolados": [
+    "construir_base3_v4.py",
+    "construir_base3_v2.py",
+    "painel_h1_base3_v3.csv",
+    "dicionario_variaveis_v3.csv",
+    "fontes_v2/pink_sheet_monthly_20260930.xlsx",
+    "fontes_v2/bls_fred_CPIAUCNS_1960_2024.csv",
+    "fontes_v4/precos_contemporaneos_pt_conferencia.csv"
+  ],
+  "hashes": {
+    "painel_h1_base3_v4.csv": "a98dbe320efc784543cf43372a5903de32434be5871304178f2f9d49daaf1c3b",
+    "manifesto_v4.json": "6683050524c26739676de5daa84cf3a6d704e2769e9be96fb32949d0af87d649",
+    "rastreamento_anos_receitas_v4.csv": "5ea42ea2ffb0705ce91e62e99ca6b568136a1d5b0718ef86c03a7db2e2f9b49a",
+    "auditoria_pre_construcao_v4.json": "03ea779ed1e8253e81dc3c8cab312cef2e38cb2084ebee1f6a6527e40e27f981",
+    "precos_mensais_receitas_v4.csv": "d826f290a13a3c20b7f751a04fa6b96d18f45218ce77b4c673570d6c7154c074",
+    "precos_anuais_receitas_v4.csv": "c0a63f5f342d4e39f98b181285c03a67c0d4650d3fe09c9ea6133932b40e6200",
+    "identidades_receitas_v4.csv": "bff58c04f4befef0b8f8583878a9b7291e14ef59b9d9205255362461146806d0",
+    "cobertura_receitas_v4.csv": "f21ce382c512d48d559f00d2b75ded33a9d2b9308e82725b90fb45e75fc426f3",
+    "dicionario_variaveis_v4.csv": "8e8a22d3d75742aaa355cfacbbe4d0eb1d16bc14c77fd4459d4db1daa620c4e5",
+    "dicionario_adendo_v4.csv": "fc91c4f79170fde0f3cc4c059ba747f49f24cf746faf0063d6a8e87f66aecd38"
+  },
+  "testes": "test_anos_origem_preco_quantidade (__main__.Receitas.test_anos_origem_preco_quantidade) ... ok\ntest_cobertura_metadados (__main__.Receitas.test_cobertura_metadados) ... ok\ntest_identidades_e_precos_contemporaneos (__main__.Receitas.test_identidades_e_precos_contemporaneos) ... ok\ntest_preservacao_publicados_e_chaves (__main__.Receitas.test_preservacao_publicados_e_chaves) ... ok\ntest_temporalidade_e_media_estrita (__main__.Receitas.test_temporalidade_e_media_estrita) ... ok\ntest_zeros_lacunas_sem_vazamento (__main__.Receitas.test_zeros_lacunas_sem_vazamento) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 1.067s\n\nOK\n",
+  "notebook": {
+    "arquivo": "construcao_receitas_v4.ipynb",
+    "celulas_executadas": 6,
+    "erros": 0,
+    "sha256": "5a4c71ae3cad87757ffd7d390d77c135c66f3a6c57faae09a5014b38aa8ed7b0"
+  }
+}

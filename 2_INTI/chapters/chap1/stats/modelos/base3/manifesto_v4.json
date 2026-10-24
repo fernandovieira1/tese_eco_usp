@@ -1,0 +1,37 @@
+{
+  "versao": "base3_v4",
+  "linhas": 3384,
+  "colunas": 70,
+  "campos_acrescentados": [
+    "2_receita_bruta_estimada_usd2024_total__soja",
+    "2_receita_bruta_estimada_usd2024_total_lag1__soja",
+    "2_receita_bruta_estimada_usd2024_total_lag2__soja",
+    "2_receita_bruta_estimada_usd2024_total_media_lag1_lag2__soja",
+    "2_receita_bruta_estimada_usd2024_por_ha_colhido__soja",
+    "2_receita_bruta_estimada_usd2024_por_ha_colhido_lag1__soja",
+    "2_receita_bruta_estimada_usd2024_por_ha_colhido_lag2__soja",
+    "2_receita_bruta_estimada_usd2024_por_ha_colhido_media_lag1_lag2__soja",
+    "2_receita_bruta_estimada_usd2024_total__milho",
+    "2_receita_bruta_estimada_usd2024_total_lag1__milho",
+    "2_receita_bruta_estimada_usd2024_total_lag2__milho",
+    "2_receita_bruta_estimada_usd2024_total_media_lag1_lag2__milho",
+    "2_receita_bruta_estimada_usd2024_por_ha_colhido__milho",
+    "2_receita_bruta_estimada_usd2024_por_ha_colhido_lag1__milho",
+    "2_receita_bruta_estimada_usd2024_por_ha_colhido_lag2__milho",
+    "2_receita_bruta_estimada_usd2024_por_ha_colhido_media_lag1_lag2__milho"
+  ],
+  "fonte_v3_sha256": "3012731110295b43967e1aaf5765a44f4946f05e09be91b9172e959aa9a7eaf5",
+  "fonte_v3_commit": "0a2cd309ab6b724ccd9266a54deb0f086843e3b9",
+  "hashes_fontes": {
+    "fontes_v2/pink_sheet_monthly_20260930.xlsx": "9fdcfa8a2aed9a1bb545a10c1a5ce036c6a0acd4766f450424ca800b4b5a0225",
+    "fontes_v2/bls_fred_CPIAUCNS_1960_2024.csv": "ba0db2b6b08846707e78e79dc8035548477ffbb141ff1687341d0f1a2f7d7a24",
+    "fontes_v4/precos_contemporaneos_pt_conferencia.csv": "db433027785e79e600fa3fe90f1da01fd2f6191345adf55b950bd0d411ef69af"
+  },
+  "sha256_painel": "a98dbe320efc784543cf43372a5903de32434be5871304178f2f9d49daaf1c3b",
+  "auditoria_sha256": "03ea779ed1e8253e81dc3c8cab312cef2e38cb2084ebee1f6a6527e40e27f981",
+  "dicionario_sha256": "8e8a22d3d75742aaa355cfacbbe4d0eb1d16bc14c77fd4459d4db1daa620c4e5",
+  "rastreamento_anos_sha256": "5ea42ea2ffb0705ce91e62e99ca6b568136a1d5b0718ef86c03a7db2e2f9b49a",
+  "dependencias": "Python>=3.9 stdlib; leitor OOXML construir_base3_v2.py publicado",
+  "aleatoriedade": "nenhuma",
+  "sem_modelos": true
+}
