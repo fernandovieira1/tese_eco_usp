@@ -1,0 +1,13 @@
+{
+  "status": "APROVADO",
+  "reproducoes_identicas": 2,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "testes": "test_faltas_zeros_mascaras_lag (__main__.Base3.test_faltas_zeros_mascaras_lag) ... ok\ntest_integridade (__main__.Base3.test_integridade) ... ok\ntest_lacunas_parcialidade_zero (__main__.Base3.test_lacunas_parcialidade_zero) ... ok\ntest_unidades_e_dominios (__main__.Base3.test_unidades_e_dominios) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.426s\n\nOK\n",
+  "hashes_reproduzidos": {
+    "amostras.csv": "0f0e7a09326a129ad1e5ba52a20300e0844724d6b43462755376cc95fb25fe53",
+    "dicionario_variaveis.csv": "bc5456ec8c86de33803c7ce7ba7f3a8970d07a5a36835980823f6898a4c722d5",
+    "manifesto.json": "dbfc6a62959314bf430968473de023f377f69394251a1c948aadcbbf7d09eaa7",
+    "painel_h1_base3_v1.csv": "3192b5ff1f8c8040eea1b2e47c4410d62dd62928a4932aa1823324da7d2abc79",
+    "qualidade_variaveis.csv": "043c9703126b57492e16b8644993f20215f0d3295c3fe247d9c03fbd3a4b9e92"
+  }
+}

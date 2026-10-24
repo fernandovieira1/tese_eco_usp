@@ -1,0 +1,16 @@
+{
+  "versao": "base3_v1",
+  "fonte": "../base2/painel_h1_v2.csv",
+  "commit_fonte": "1cbab8246114ecef0d2a80b55a068ea1cf4cf1c3",
+  "sha256_fonte": "9c68a0b66006a06c7369dcc331877b2ccc45f6bf5790303e0497ba726cf5838d",
+  "linhas": 3384,
+  "colunas": 42,
+  "dependencias": "Python >=3.9; somente biblioteca padrão",
+  "aleatoriedade": "Nenhuma; semente não aplicável",
+  "hashes": {
+    "amostras.csv": "0f0e7a09326a129ad1e5ba52a20300e0844724d6b43462755376cc95fb25fe53",
+    "dicionario_variaveis.csv": "bc5456ec8c86de33803c7ce7ba7f3a8970d07a5a36835980823f6898a4c722d5",
+    "painel_h1_base3_v1.csv": "3192b5ff1f8c8040eea1b2e47c4410d62dd62928a4932aa1823324da7d2abc79",
+    "qualidade_variaveis.csv": "043c9703126b57492e16b8644993f20215f0d3295c3fe247d9c03fbd3a4b9e92"
+  }
+}

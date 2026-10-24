@@ -1,0 +1,12 @@
+flag,N,municipios,anos
+v2__flag_ano_incompleto,0,0,0
+v2__flag_conversao_valida__agricultura,2772,137,24
+v2__flag_zero_conversao_registrado__agricultura,265,45,24
+v2__flag_conversao_valida__pastagem,2772,137,24
+v2__flag_zero_conversao_registrado__pastagem,0,0,0
+v2__flag_desfecho_ausente_cobertura_par,612,46,24
+v2__flag_amostra_conversao_ambos,2772,137,24
+v2__flag_autos_flora_elegivel_t,1526,134,24
+v2__flag_autos_flora_elegivel_lag1,1444,134,23
+v2__flag_amostra_fiscal_lag1,1140,128,23
+v2__flag_amostra_conversao_chuva,2772,137,24
