@@ -1,0 +1,39 @@
+{
+  "regra": "abs(componentes-oficial)/abs(oficial) > 0.10; zero tratado separadamente",
+  "agricultura": {
+    "total_referencias": 383,
+    "recorte_2001_2024": 248,
+    "fora_recorte": 135,
+    "conceitos_presentes_recorte": 1841,
+    "conceitos_elegiveis_recorte": 1841,
+    "referencias_sem_custos": 17,
+    "linhas_principais_sem_duplicatas": 247
+  },
+  "pecuaria": {
+    "total_referencias": 196,
+    "recorte_2001_2024": 124,
+    "fora_recorte": 72,
+    "conceitos_presentes_recorte": 279,
+    "conceitos_elegiveis_recorte": 279,
+    "referencias_sem_custos": 31
+  },
+  "nao_reestimado": true,
+  "duplicatas_consolidadas": [
+    {
+      "id_mantido": "b622ffb932346f2b",
+      "id_copia": "ce710ff2093a555b",
+      "motivo": "metadados_de_referencia_e_todos_valores_monetarios_identicos;conflito_aba_preservado"
+    }
+  ],
+  "comparacoes_excludentes": [],
+  "recuperados_por_fonte": {
+    "CONAB": {
+      "conceitos": 790,
+      "referencias": 79
+    },
+    "IMEA": {
+      "conceitos": 6,
+      "referencias": 2
+    }
+  }
+}

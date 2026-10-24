@@ -1,0 +1,13 @@
+{
+  "historico": "v1_publicada",
+  "outputs": {
+    "BASE_PARA_USO/CUSTOS_AGRICULTURA.csv": "39138428473bdd860cb8841bf9e0a2bd972e87d8ead13aaa07d0865079f6a260",
+    "BASE_PARA_USO/CUSTOS_PECUARIA.csv": "079a3e2626aabb6690eda16507aa0f7e6b9cae7b63963a4a1538e1730bd4cbd8",
+    "BASE_PARA_USO/DICIONARIO.csv": "19034f2b5b09f14d771d02311243a0300a8c56aa285a2a92335af876e96d4af2",
+    "resultados/agricultura_todos_periodos.csv": "6dc8b8301297b6b14057751be991fac1248b125b485c8ea6c8dbfb50f32fe06a",
+    "resultados/pecuaria_todos_periodos.csv": "1cd1b564e463cd51449932a392053826cd5294af8f2640d317075df2aaf664e9",
+    "auditoria/comparacoes_por_conceito.csv": "48912dcf8802370caecc8d2c242ae65215b6263fd0f267aefe927f4c70f44e59",
+    "auditoria/diferencas_elegibilidade.csv": "033864960f85894cb1d6c510caa009deee54f3397b142aa3d0c2cd5b38104d49",
+    "auditoria/duplicatas_consolidadas.csv": "fa055bfbe80aa94b7fbd49fb6f2093dcd93a7fae872e8ee7da9599ad63d9195a"
+  }
+}

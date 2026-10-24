@@ -1,0 +1,19 @@
+# Revisão de seleção e organização
+
+A regra é aplicada a cada conceito: `abs(soma dos componentes equivalentes − agregado oficial)/abs(agregado oficial)`. O limite é estritamente maior que10%, com Decimal para preservar a fronteira. Ambos zero concordam; agregado zero com componentes positivos recebe incompatibilidade, percentual NA. Soma desconhecida/hierarquia ambígua não gera percentual nem exclusão automática. Só se somam folhas mutuamente exclusivas; D/G/H/J não são adicionados às suas próprias folhas.
+
+A reconciliação compara folhas corretamente extraídas e, separadamente, identidades entre agregados publicados e equivalência de unidades usando produtividade modal da própria planilha. A maior divergência entre ha/saca é aproximadamente7,47%, abaixo do limite. Não se usa produtividade modal como covariável municipal. Uma incongruência de participação percentual não exclui custo porha se não compromete esse valor. Não foi encontrada evidência de mistura de cultura/unidade ou dupla contagem no agregado oficial que justificasse excluir conceitos monetários adicionais. Problemas de identidade geográfica continuam flags e impedem atribuição regional segura, sem apagar o custo da referência original.
+
+CONAB: de85 planilhas estritas/850 conceitos para164 referências no recorte/1.640 conceitos mantidos antes de deduplicação. Recuperam-se79 referências e790 conceitos. Com uma duplicata documental consolidada, ficam163 linhas e1.630 conceitos CONAB no arquivo de uso (78 linhas líquidas adicionais). A duplicata envolve b622ffb932346f2b e ce710ff2093a555b, abas Primavera/Sorriso2014, com cabeçalho de Primavera e valores idênticos. Ambos IDs e abas permanecem; a localização fica alertada e sem código regional. Isso evita contar duas observações monetárias independentes, sem resolver por inferência qual aba deveria prevalecer.
+
+Primavera soja OGM2011,6a58c6f0f5837c30: soma937,66 contra oficial976,78, divergência39,12/976,78 ≈4,005%. O custeio oficial976,78 é mantido. Sorriso soja OGM2011,f121da66bd98194b: hierarquia sementes/royalties ambígua, sem evidência de dupla contagem no total; mantém-se o valor oficial876,14 com comparação de folhas indisponível. A mesma cautela vale para as duas hierarquias de2012.
+
+IMEA agrícola: recuperam-se dois registros/seis conceitos com asteriscos ambíguos; os marcadores permanecem alertas. Há84 registros no recorte,67 com custos e17 ausentes,201 conceitos presentes. Não se fundem seus conceitos com CONAB. Agricultura principal totaliza247 linhas,230 com algum custo e17 sem custo,1.831 campos monetários nominais presentes. O conjunto completo tem383 registros antes de deduplicar,135 fora do recorte; nenhum dos135 é rotulado erro quantitativo apenas por período.
+
+Pecuária:124 referências no recorte,93 com custos e31 ausentes;279 conceitos numéricos. Outras72 referências ficam fora do recorte. Geografias conflitantes e períodos incompletos são preservados. Não há conversão paraha/USD ou modelagem nova.
+
+Nenhuma comparação válida ultrapassa10% nos dados atuais. Portanto, zero conceitos excluídos por esse critério e zero exclusões monetárias qualitativas demonstradas; uma duplicata documental consolidada. Isso não transforma comparações não disponíveis em verificações aprovadas. Fonte estadual, painel modal, quebra metodológica e limites territoriais permanecem restrições de interpretação.
+
+O mapa antes→depois registra caminhos e hashes de todos os arquivos anteriores, inclusive notebooks/resultados. O histórico é imutável. O build atual usa os extratos preservados, sem executar as regressões antigas. Para reproduzir o pacote antigo com seu layout original, consultar processamento/reproduzir_historico.py; não executar seus notebooks diretamente no novo nível de diretório.
+
+A distinção entre 158 candidatas e 164 referências no mesmo recorte está detalhada em [RECONCILIACAO_158_164.md](RECONCILIACAO_158_164.md): seis conflitos geográficos, sem ampliação temporal.

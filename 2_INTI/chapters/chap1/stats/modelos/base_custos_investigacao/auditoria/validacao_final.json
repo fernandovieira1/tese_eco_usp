@@ -1,0 +1,18 @@
+{
+  "tests": {
+    "result": "PASS",
+    "count": 6,
+    "clean_reproductions": 2,
+    "duration_seconds": 1.319
+  },
+  "notebook": {
+    "executed_cells": 3,
+    "errors": 0
+  },
+  "historical_files_preserved": 164,
+  "base3_v4_sha256": "a98dbe320efc784543cf43372a5903de32434be5871304178f2f9d49daaf1c3b",
+  "all_tracked_changes_within_parallel_cost_folder": true,
+  "staged_files": 0,
+  "commit_push": false,
+  "models_reestimated": false
+}
