@@ -1,0 +1,13 @@
+{
+  "leitores": [
+    "OOXML zipfile/ElementTree independente",
+    "openpyxl 3.1.5"
+  ],
+  "celulas_identicas": 864,
+  "janela": "2000-01 a 2023-12",
+  "series": [
+    "Soybeans",
+    "Maize",
+    "DAP"
+  ]
+}

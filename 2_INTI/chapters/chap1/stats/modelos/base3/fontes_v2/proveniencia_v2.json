@@ -1,0 +1,26 @@
+{
+  "data_auditoria": "2026-10-24",
+  "origens": {
+    "pink_sheet_monthly_20260930.xlsx": "https://drive.google.com/file/d/17mTzvQ0BhERZ1TGBc1IpdFXUYLibuzrD/view",
+    "bls_fred_CPIAUCNS_1960_2024.csv": "https://drive.google.com/file/d/1n0iAaxxc5tFD2KChwqQFCyX80AQ38vEP/view",
+    "manifesto_deflatores.json": "https://drive.google.com/file/d/1Au-zhFs_D1ffOAcUPoKgc-ZXawLipkMe/view"
+  },
+  "hashes": {
+    "pink_sheet_monthly_20260930.xlsx": "9fdcfa8a2aed9a1bb545a10c1a5ce036c6a0acd4766f450424ca800b4b5a0225",
+    "bls_fred_CPIAUCNS_1960_2024.csv": "ba0db2b6b08846707e78e79dc8035548477ffbb141ff1687341d0f1a2f7d7a24",
+    "manifesto_deflatores.json": "3b9b3c53a54bbb3c19e900e46ca94c4ee9ad3baf48460d27dc92c67bad70097d",
+    "dap_official_2000_2023.csv": "de4a4e3fea8114a0f8ee74ccf1bb7c828aa4a0cfeef797dd2720fd9d6de96d13",
+    "sgs4189_2000_2024.csv": "8a1c93cbc676d37b5a400e655e1ead878884657541d53b2cd51a3f1c434ef72b",
+    "sgs4189_annual_lag_panel2001_2024.csv": "3aad5c5bda59f84db0bf8af0799053d6088061444dd17443211f3441dcd9f239",
+    "sgs4189_provenance.json": "3d3207c4748bdb464cd8e83dfeaf49b037d321b123005d80e7be3e18b041a92d",
+    "wb_confronto_summary.json": "a895e117489b67e1d9d6357e5ded5c2df2c9f0bd03cc45176dd2723f5c9c8f2c"
+  },
+  "aquisicao": "Cópias integrais locais anteriormente obtidas pelo conector Drive. Originais preservados.",
+  "bloqueios": [
+    "WB oficial XLSX: proxy Tunnel403, inclusive execução ampliada",
+    "SGS4189 JSON: proxy Tunnel403; web não acessível"
+  ],
+  "url_wb_oficial": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+  "url_selic": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4189/dados?formato=json&dataInicial=01/01/2000&dataFinal=31/12/2024",
+  "resolucao": "Dados e evidências oficiais recebidos do agente pai; hashes SGS mensal/anual exatos; XLSX oficial e HTML bruto somente no ambiente pai. Ver CONFRONTO_OFICIAL.md."
+}

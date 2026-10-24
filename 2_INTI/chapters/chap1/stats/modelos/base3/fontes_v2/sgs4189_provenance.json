@@ -1,0 +1,35 @@
+{
+  "source_url": "https://www3.bcb.gov.br/sgspub/consultarvalores/consultarValoresSeries.do?method=consultarValores",
+  "method": "POST",
+  "parameters": {
+    "hdOidSeriesSelecionadas": "4189",
+    "dataInicio": "01/01/2000",
+    "dataFim": "31/12/2024",
+    "selFuncao": "0",
+    "selTipoArqDownload": "1",
+    "hdPaginar": "false",
+    "graficoEstatico": "true"
+  },
+  "raw_file_mtime_utc": "2026-10-24T02:48:06.318964+00:00",
+  "audited_utc": "2026-10-24T02:48:27.887189+00:00",
+  "n_rows": 300,
+  "unique_months": 300,
+  "months2000_2023": 288,
+  "numeric_finite": true,
+  "complete_monthly_sequence": true,
+  "missing": 0,
+  "first": [
+    "2000-01-01",
+    "18.94"
+  ],
+  "last": [
+    "2024-12-01",
+    "11.77"
+  ],
+  "note": "Parsed values from original SGS4189 HTML. Month mapped to first day only as monthly key. Annual lag = arithmetic mean of12monthly annualized rates; not cumulative annual yield. New raw HTML hash is not expected to equal prior unavailable JSON hash.",
+  "sha256": {
+    "sgs_values_response.html": "a6aabd4242c1abb8fa27c4b56cdcbc0b11947956f0110dcfb91b2f1d15c7258b",
+    "sgs4189_2000_2024.csv": "8a1c93cbc676d37b5a400e655e1ead878884657541d53b2cd51a3f1c434ef72b",
+    "sgs4189_annual_lag_panel2001_2024.csv": "3aad5c5bda59f84db0bf8af0799053d6088061444dd17443211f3441dcd9f239"
+  }
+}

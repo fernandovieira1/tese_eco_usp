@@ -1,0 +1,29 @@
+{
+  "obtido_em_utc": "2026-10-14T14:48:23.100995+00:00",
+  "fontes": {
+    "cpi": {
+      "arquivo": "bls_fred_CPIAUCNS_1960_2024.csv",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS&cosd=1960-01-01&coed=2024-12-31",
+      "documentacao": "https://fred.stlouisfed.org/series/CPIAUCNS",
+      "descricao": "BLS CPI-U, todos os itens, média urbana EUA, mensal, sem ajuste sazonal; 1982-84=100.",
+      "moeda": "USD",
+      "sha256": "ba0db2b6b08846707e78e79dc8035548477ffbb141ff1687341d0f1a2f7d7a24",
+      "linhas": 780,
+      "inicio": "1960-01-01",
+      "fim": "2024-12-01",
+      "cache_preexistente": false
+    },
+    "ipca": {
+      "arquivo": "ibge_sidra_1737_ipca_2266_1994_2024.json",
+      "url": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2266/p/199401-202412?formato=json",
+      "documentacao": "https://sidra.ibge.gov.br/tabela/1737",
+      "descricao": "IBGE IPCA Brasil, número-índice mensal, variável 2266; dezembro de 1993=100.",
+      "moeda": "BRL",
+      "sha256": "9cb373a755a5ce193b70324b6aac3df3124a0676f24d49601686b1e65923d76e",
+      "linhas": 372,
+      "inicio": "1994-01-01",
+      "fim": "2024-12-01",
+      "cache_preexistente": false
+    }
+  }
+}

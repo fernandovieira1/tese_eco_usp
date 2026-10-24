@@ -1,0 +1,16 @@
+{
+  "reproducoes_identicas": 2,
+  "reproducao_isolada": "Somente arquivos deste lote + painel v1 já publicado; sem base2/complementos/histórico provisório/rede.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "resultado_testes": "test_calendario_unidades (__main__.Incremento.test_calendario_unidades) ... ok\ntest_join_many_to_one_e_razoes (__main__.Incremento.test_join_many_to_one_e_razoes) ... ok\ntest_manifesto (__main__.Incremento.test_manifesto) ... ok\ntest_preservacao (__main__.Incremento.test_preservacao) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.359s\n\nOK\n",
+  "hashes": {
+    "painel_h1_base3_v2.csv": "575b31ddb145e97940203a6f0b2a9e278047a22a24dbe05732c195c1e1a4eb0b",
+    "auditoria_mensal_v2.csv": "1c0726247e8c6cb2560adbbda17210d751bbab80c517e5cb635229d9f88664f4",
+    "economia_anual_v2.csv": "60959bc36d2f7614a84cf4e27f7cadd31319890edc3a2673ebda68d78971a70e",
+    "coerencia_precos_v1_v2.csv": "666a8bfcfd70d51e1ce33be1641176846f2c6cba86b0b13ef026d195199aec4c",
+    "auditoria_pre_join_v2.json": "5cda9c929dec1701f19b304bd2d0650693f69e6f564d426a80e7d6b27fab45d9",
+    "AUDITORIA_PRE_JOIN_V2.md": "e7d4181db56eff46a1826f77fa57e103eb62a6f79b5abefd5a7192170eaf18f0",
+    "manifesto_v2.json": "0a24d031de5ecd24da9d1b90156abd99671667ca70d72b628f0f1b56b3f788a9"
+  },
+  "status": "COMPLETA: quatro campos preenchidos; 42 originais intactos; fonte oficial confrontada no recorte"
+}

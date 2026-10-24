@@ -1,0 +1,20 @@
+{
+  "versao": "base3_v2",
+  "linhas": 3384,
+  "colunas": 46,
+  "municipios": 141,
+  "fonte_v1_sha256": "3192b5ff1f8c8040eea1b2e47c4410d62dd62928a4932aa1823324da7d2abc79",
+  "auditoria_previa_sha256": "5cda9c929dec1701f19b304bd2d0650693f69e6f564d426a80e7d6b27fab45d9",
+  "sha256_painel": "575b31ddb145e97940203a6f0b2a9e278047a22a24dbe05732c195c1e1a4eb0b",
+  "fontes": {
+    "pink_sheet_monthly_20260930.xlsx": "9fdcfa8a2aed9a1bb545a10c1a5ce036c6a0acd4766f450424ca800b4b5a0225",
+    "bls_fred_CPIAUCNS_1960_2024.csv": "ba0db2b6b08846707e78e79dc8035548477ffbb141ff1687341d0f1a2f7d7a24",
+    "manifesto_deflatores.json": "3b9b3c53a54bbb3c19e900e46ca94c4ee9ad3baf48460d27dc92c67bad70097d",
+    "dap_official_2000_2023.csv": "de4a4e3fea8114a0f8ee74ccf1bb7c828aa4a0cfeef797dd2720fd9d6de96d13",
+    "sgs4189_2000_2024.csv": "8a1c93cbc676d37b5a400e655e1ead878884657541d53b2cd51a3f1c434ef72b",
+    "sgs4189_annual_lag_panel2001_2024.csv": "3aad5c5bda59f84db0bf8af0799053d6088061444dd17443211f3441dcd9f239",
+    "sgs4189_provenance.json": "3d3207c4748bdb464cd8e83dfeaf49b037d321b123005d80e7be3e18b041a92d",
+    "wb_confronto_summary.json": "a895e117489b67e1d9d6357e5ded5c2df2c9f0bd03cc45176dd2723f5c9c8f2c"
+  },
+  "sem_modelos": true
+}
