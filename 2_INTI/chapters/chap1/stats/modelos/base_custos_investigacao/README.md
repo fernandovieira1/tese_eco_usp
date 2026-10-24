@@ -2,7 +2,7 @@
 
 Reprodução em checkout limpo e dependências publicadas: [PUBLICACAO.md](PUBLICACAO.md). Resultados posteriores: [avaliação agrícola](avaliacao_preditiva/README.md), [pecuária](pecuaria/README.md) e [regionalização](regionalizacao/README.md).
 
-Construída localmente em 24/10/2026. Nenhuma regressão, imputação, atribuição municipal ou publicação. Base3 v1–v4 e complementos anteriores preservados.
+Construída em 24/10/2026 e publicada em main após autorização. Este README descreve o núcleo de referências; a avaliação preditiva posterior está na pasta vinculada acima. Não houve regressão de H1, imputação ou atribuição municipal. Base3 v1–v4 e complementos anteriores permanecem preservados.
 
 ## O que está utilizável
 
