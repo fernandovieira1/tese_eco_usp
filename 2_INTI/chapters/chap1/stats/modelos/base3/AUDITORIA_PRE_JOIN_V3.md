@@ -1,0 +1,9 @@
+# Auditoria anterior ao apensamento produtivo
+
+Fonte: base2 publicada no commit1cbab8246114ecef0d2a80b55a068ea1cf4cf1c3, conferida por hash; oito campos idênticos aos do painel original. Fonte primária documentada: IBGE/PAM SIDRA1612. Área plantada e colhida em ha, produção em t, rendimento em kg/ha. Mesmos3384pares código/ano e141códigos; nomes municipais coincidem comv2. Sem perda no join, sem remapeamento de142unidades ou dadosGM. Isso não resolve alterações históricas de limites municipais.
+
+Tolerância de consistência do rendimento:1kg/ha +1e-9 numérico, compatível com apresentação em unidades inteiras (arredondamento/truncamento), não prova documental da regra de arredondamento da fonte. Compare rendimento observado com1000×produção(t)/área colhida(ha), somente denominador positivo. Não corrigir os valores publicados. Casos fora da tolerância ou área colhida superior à plantada seriam preservados e listados em inconsistencias_produtivas_v3.csv.
+
+Resultado: soja2615observações por campo (769NA,136municípios); milho3318 (66NA,141municípios). Nenhum zero numérico ou inválido observado. Sem área colhida maior que plantada; nenhuma diferença de rendimento acima da tolerância. Faltas não viramzero. As colunas atuais não retêm os símbolos brutos por célula: motivo específico da ausência e preenchimentos herdados não são integralmente certificados. Não declarar ausência de produção apenas porNA.
+
+Decisão: apensar oito campos como candidatos/descritivos contemporâneos, sem truncar painel. Produção/área/rendimento podem responder a preços, clima e conversão; não são controles exógenos automáticos. Área de culturas não é conversão nativa; soja e milho podem ocupar a mesma terra em safras sucessivas. Não somar áreas como área física única. Não acrescentar culturas, pecuária, crédito ou defasagens.

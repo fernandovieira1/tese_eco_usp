@@ -1,0 +1,33 @@
+{
+  "status": "APTO_COM_LIMITACOES",
+  "fonte": "base2/painel_h1_v2.csv",
+  "commit_fonte": "1cbab8246114ecef0d2a80b55a068ea1cf4cf1c3",
+  "hash_fonte": "9c68a0b66006a06c7369dcc331877b2ccc45f6bf5790303e0497ba726cf5838d",
+  "hash_original": "bc396a4f394ae60d6883205f2ca6e8d33b59a4fb419fc5d667591374c8f1c730",
+  "hash_v2": "a12d0a47e9dda01542467b546325f9bb2e088b82ede60647eb88511f27340391",
+  "chaves_comuns": 3384,
+  "perda_join": 0,
+  "diagnosticos": [
+    {
+      "cultura": "milho",
+      "comparaveis": 3318,
+      "max_diferenca_abs_kg_ha": 0.9987937273826901,
+      "diferencas_acima_1": 0,
+      "area_colhida_maior_plantada": 0,
+      "blocos_parciais": 0,
+      "tolerancia_kg_ha": 1.000000001
+    },
+    {
+      "cultura": "soja",
+      "comparaveis": 2615,
+      "max_diferenca_abs_kg_ha": 0.9996953232111991,
+      "diferencas_acima_1": 0,
+      "area_colhida_maior_plantada": 0,
+      "blocos_parciais": 0,
+      "tolerancia_kg_ha": 1.000000001
+    }
+  ],
+  "inconsistencias": 0,
+  "limite_territorial": "Compatibilidade por códigos do painel141; não é reconstrução retrospectiva das fronteiras históricas PAM. Não usa GM ou tabela142.",
+  "limite_simbolos": "Fonte publicada contém NA; símbolos SIDRA originais não estão individualizados nestes oito campos. Não é possível distinguir aqui cada razão de ausência. Nenhum NA convertido em zero."
+}

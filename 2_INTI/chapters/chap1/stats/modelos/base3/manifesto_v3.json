@@ -1,0 +1,28 @@
+{
+  "versao": "base3_v3",
+  "linhas": 3384,
+  "colunas": 54,
+  "municipios": 141,
+  "anos": [
+    2001,
+    2024
+  ],
+  "campos_acrescentados": [
+    "2_area_plantada_ha__milho",
+    "2_area_plantada_ha__soja",
+    "2_area_colhida_ha__milho",
+    "2_area_colhida_ha__soja",
+    "2_producao_t__milho",
+    "2_producao_t__soja",
+    "2_rendimento_medio_kg_ha__milho",
+    "2_rendimento_medio_kg_ha__soja"
+  ],
+  "hash_v2_preservada": "a12d0a47e9dda01542467b546325f9bb2e088b82ede60647eb88511f27340391",
+  "hash_fonte_base2": "9c68a0b66006a06c7369dcc331877b2ccc45f6bf5790303e0497ba726cf5838d",
+  "hash_original": "bc396a4f394ae60d6883205f2ca6e8d33b59a4fb419fc5d667591374c8f1c730",
+  "sha256_painel": "3012731110295b43967e1aaf5765a44f4946f05e09be91b9172e959aa9a7eaf5",
+  "auditoria_pre_join_sha256": "7ff1b8d4c6b7999bc6db63c99dd741e69188e47490663e5f69e915df0e67de53",
+  "dependencias": "Python>=3.9 biblioteca padrão; base3v2 e base2/original publicados",
+  "semente": "Não aplicável; determinístico",
+  "sem_modelos": true
+}

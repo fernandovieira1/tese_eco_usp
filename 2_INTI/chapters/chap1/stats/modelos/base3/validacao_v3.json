@@ -1,0 +1,20 @@
+{
+  "status": "APROVADO",
+  "reproducoes_identicas": 2,
+  "reproducao_isolada": "Somente lote v3 e quatro inputs conferidos com Git publicado; sem rede ou complementos locais.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "testes": "test_bases_publicadas_intactas (__main__.Oferta.test_bases_publicadas_intactas) ... ok\ntest_chaves_e_preservacao (__main__.Oferta.test_chaves_e_preservacao) ... ok\ntest_cobertura_e_diagnosticos (__main__.Oferta.test_cobertura_e_diagnosticos) ... ok\ntest_metadados (__main__.Oferta.test_metadados) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 2.153s\n\nOK\n",
+  "hashes": {
+    "auditoria_pre_join_v3.json": "7ff1b8d4c6b7999bc6db63c99dd741e69188e47490663e5f69e915df0e67de53",
+    "diagnosticos_produtivos_v3.csv": "31437366eb7bc22bdd1da503ca95cfe514fe0cfa82ac47303ed2d255c349007c",
+    "dicionario_adendo_v3.csv": "6ae546bbc6f8ff1f36e817984a77fb58cc10c2a7de025232fe67c012cb3b3332",
+    "dicionario_variaveis_v3.csv": "edd14123680123bdc0133d2c71f491be7cbfe5a7ed76f1729772f9b6ea8953bc",
+    "inconsistencias_produtivas_v3.csv": "4b9ddc68864764aa6d22913e37a6b77e73fb5d06238c9d3dd336d78ee127271e",
+    "manifesto_v3.json": "417afc9765c57c89921372c942e19f2a84c756d72f728f5348318eba6e266dac",
+    "painel_h1_base3_v3.csv": "3012731110295b43967e1aaf5765a44f4946f05e09be91b9172e959aa9a7eaf5",
+    "qualidade_produtiva_v3.csv": "28edc09ee3b1898e47fcea36d00c9734912934e3fc9036f2883f73fe0391e61b",
+    "suporte_produtivo_v3.csv": "3da454cdd4e2fd1f0be9e0fc627bd49a45bf14c6beaa5ac5933a0b018136365f"
+  },
+  "sem_imputacao": true,
+  "sem_modelos": true
+}
