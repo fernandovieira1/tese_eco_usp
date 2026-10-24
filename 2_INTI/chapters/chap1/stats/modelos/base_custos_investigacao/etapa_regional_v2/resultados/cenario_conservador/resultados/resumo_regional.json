@@ -1,0 +1,12 @@
+{
+  "referencias_regionais": 183,
+  "linhas_painel": 3384,
+  "colunas_painel": 34,
+  "series_regionais": 11,
+  "variaveis_custo": 27,
+  "variaveis_com_suporte": 22,
+  "nao_regionalizados": 48,
+  "ids_H1_mapeados": 141,
+  "municipal_validado": false,
+  "incorporacao_aprovada": false
+}

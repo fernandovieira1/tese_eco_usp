@@ -979,3 +979,9 @@ flowchart TD
     AJ -->|Decisão científica ou metodológica| P0
     P8 -. "Blocos orientam novos ciclos" .-> P0
 ```
+
+## Incorporações futuras à base H1 de Fernando
+
+Por decisão explícita do autor em 24/10/2026, a base de uso está em `2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1`. Uma incorporação aprovada deve atualizar simultaneamente `BASE_COMPLETA_H1.csv`, o arquivo do grupo correspondente e o dicionário. Os sete campos de índice `0_`, chaves únicas e ordem de linhas devem permanecer consistentes. A união das colunas dos grupos 1–4 pela chave identificadora, incluindo o grupo 0 apenas uma vez, deve reconstruir exatamente a base completa, preservando valores e NA. Não se trata de somar numericamente colunas ou empilhar linhas.
+
+Variáveis de custos só serão incorporadas após aprovação específica do autor. Até essa aprovação, avaliação, referências regionais e atribuições municipais candidatas permanecem na base paralela; a base principal e os grupos ficam somente em leitura.

@@ -1,0 +1,24 @@
+{
+  "selecao": "reconstruída pelo construir_uso.py publicado, regra >10%, mesma amostra247/124; não restaurada pasta removida pelo usuário",
+  "hash_builder": "f837cf52edda4845eb837e83e5424381fafabe7176e141213155dbc0c0f45474",
+  "inputs": {
+    "CUSTOS_PECUARIA.csv": "079a3e2626aabb6690eda16507aa0f7e6b9cae7b63963a4a1538e1730bd4cbd8",
+    "CUSTOS_AGRICULTURA.csv": "39138428473bdd860cb8841bf9e0a2bd972e87d8ead13aaa07d0865079f6a260",
+    "indices_h1.csv": "0b41d934a64dfede807d063e2f80c3015ed74e8870a4e7a4eb9ec6639372ad4f",
+    "cpi.csv": "ba0db2b6b08846707e78e79dc8035548477ffbb141ff1687341d0f1a2f7d7a24",
+    "regioes.csv": "9c125980a292bba5e8d899155b048a4521250c15d40f564d1f8806912d37c1b1",
+    "dap.csv": "de4a4e3fea8114a0f8ee74ccf1bb7c828aa4a0cfeef797dd2720fd9d6de96d13"
+  },
+  "indices_derivados_de": "FERNANDO/grupos_h1/BASE_COMPLETA_H1.csv",
+  "regioes": "IBGE DTB2016v2; nomes IMEA2017 separados, não utilizados para imputação",
+  "principal_hash": {
+    "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/DICIONARIO.csv": "8e8a22d3d75742aaa355cfacbbe4d0eb1d16bc14c77fd4459d4db1daa620c4e5",
+    "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/LEIA_ME.md": "6fc371db38cdced638689051f5818823c8f5278441d46c19f01978c24c858d17",
+    "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/BASE_COMPLETA_H1.csv": "a98dbe320efc784543cf43372a5903de32434be5871304178f2f9d49daaf1c3b",
+    "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/GRUPO_3_INSTITUCIONAIS.csv": "0b9e650bd855e1d20191a0a50386b2ee18f962f8c30fad12e6ae4c9bde16e742",
+    "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/GRUPO_1_AMBIENTAIS.csv": "64622b72eba7833a44501dfa0fc712b8b3751cd077e8b82b619ea892ce34b26e",
+    "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/GRUPO_4_OUTROS.csv": "312d756817fcfd7d5be2ee1e9c058e9f200e214f42dc061406b3b503e1fc4059",
+    "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/GRUPO_2_ECONOMICOS.csv": "e8ee44febb89b5d92320dbbf22f4d614df08e89a3489b6327f6c07cb1eef4c3c"
+  },
+  "estrategia_sha256": "0ecb33ac313a2e0277f8b03667e8f58b12e3b61e2e2485d0c6dc280309ac6e2b"
+}

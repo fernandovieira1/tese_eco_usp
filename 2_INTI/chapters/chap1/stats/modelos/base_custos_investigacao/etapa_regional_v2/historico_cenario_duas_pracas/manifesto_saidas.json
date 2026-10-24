@@ -1,0 +1,19 @@
+{
+  "USO_CANDIDATOS/DICIONARIO.csv": "438fad46e1f0ca4f6b3c1f32bea45c8d4f3d24ee76381c078fce3e0492bea9ee",
+  "USO_CANDIDATOS/PAINEL_MUNICIPAL_CANDIDATO.csv": "8af2804a706cc110ccb71532cb7a1aabbada3a77357a51d725db1d32ac0d1694",
+  "USO_CANDIDATOS/REFERENCIAS_REGIONAIS.csv": "72992d19a2233eed964eccb45a4edd11616cda4faa41bcb6df851dfa7a661ea5",
+  "resultados/avaliacao/amostra.csv": "22d1c9f77ea58b4138f094f5bdd144881de1b384ebd30498e93f838b51a8dc67",
+  "resultados/avaliacao/folds.csv": "ceeac6ce075ea10e1d1b1965d00c0e2ae7f5dab92556ad391fc8b85ea0d07fdc",
+  "resultados/avaliacao/gates.csv": "26c9ac11b99dce3993cca352e216897cb380e0b10bb3900e25222ac77afe9e54",
+  "resultados/avaliacao/membros.csv": "d32bb66ec274ed51473de6fe5c5d38e3f038bfb1221facbafdc85047c1a2432a",
+  "resultados/avaliacao/metricas.csv": "4ca6d7430ff72be3d71532ea9f9117720b25d26290df06e216e897e4f119281c",
+  "resultados/avaliacao/parametros.csv": "a6e3f41e63eb1aad707f127fdc2fd32917a23c4462e2c6ef0cd83a32e73e4075",
+  "resultados/avaliacao/pecuaria_suporte.csv": "b1dd80cf268e14af73a21eec7757da4a814249a2d7ca615eb91967dbac56098c",
+  "resultados/avaliacao/perdas.csv": "b953a2c893969dcfd0615cc1fdeed4cb2a231d3cd6362d1a7e45378b5dfceead",
+  "resultados/avaliacao/previsoes.csv": "6c7ab6ce26e03f62006f0a4f655b4869522f4475199aed27ba545d9eddb6f361",
+  "resultados/avaliacao/resumo.csv": "526cddd8303e113157f7266859b8f6be203aa86b69f673bdd459462641bfecc0",
+  "resultados/cobertura_regiao_atividade_ano.csv": "d72aab97141880419c430a26d00ab252c311c53a41f5c9dca0da2cd94682a2f7",
+  "resultados/linhagem_regional.csv": "eeb3b2131d78239328724ff2914ccf3cd79a6d2e45736b22adf011f524c804ce",
+  "resultados/lista_candidatas.csv": "832257eab158eff75e217137a2a6de3c9c4380851c98bbbfa23e0bad2e519bf2",
+  "resultados/nao_regionalizados.csv": "1de2354344844859d3bd9a197cceb46afce3319663927404fc3c55242d1ad25a"
+}

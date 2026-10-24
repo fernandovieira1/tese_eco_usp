@@ -1,0 +1,13 @@
+analise,n,pracas,anos,suporte,aprovados,municipal_validado,decisao
+soja__ampliada_comparativa_pooled,82,3,23,True,M1_ols;M2_ridge,False,gate_passou_somente_polos
+soja__estrita_robustez_pooled,32,3,18,True,,False,gate_nao_passou
+soja__ampliada_sistema_OGM,44,3,17,True,,False,gate_nao_passou
+soja__ampliada_sistema_convencional explícita,3,3,1,False,,False,suporte_insuficiente
+soja__ampliada_sistema_não declarada,35,3,17,True,,False,gate_nao_passou
+milho_1a__ampliada_comparativa_pooled,13,1,13,False,,False,suporte_insuficiente
+milho_1a__estrita_robustez_pooled,9,1,9,False,,False,suporte_insuficiente
+milho_1a__ampliada_sistema_não declarada,13,1,13,False,,False,suporte_insuficiente
+milho_2a__ampliada_comparativa_pooled,62,4,24,True,M1_ols;M2_ridge,False,gate_passou_somente_polos
+milho_2a__estrita_robustez_pooled,43,4,21,True,M1_ols;M2_ridge,False,gate_passou_somente_polos
+milho_2a__ampliada_sistema_OGM,41,4,12,True,M1_ols;M2_ridge,False,gate_passou_somente_polos
+milho_2a__ampliada_sistema_não declarada,21,4,15,False,,False,suporte_insuficiente

@@ -1,14 +1,14 @@
-# Custos: comece pela base para uso
+# Custos: avaliação ampliada e candidatas regionais
 
-Abra **[BASE_PARA_USO](BASE_PARA_USO/LEIA_ME.md)**. Ela contém somente os dois datasets largos, um dicionário e instruções curtas. Agricultura e pecuária ficam separadas por unidade. Não são custos municipais observados.
+O ponto de entrada atual é **[USO_CANDIDATOS](etapa_regional_v2/USO_CANDIDATOS/LEIA_ME.md)**: CUSTOS_MUNICIPAIS_CANDIDATOS.csv, dicionário e instruções. O dataframe usa referências regionais e, na ausência, estaduais publicadas compatíveis. A base principal H1 não foi alterada; incorporação depende de aprovação explícita.
 
-A seleção atual mantém o valor oficial e exclui um conceito apenas quando há divergência quantitativa estritamente acima de 10% em comparação válida, ou incompatibilidade qualitativa demonstrada que comprometa esse conceito. Ambiguidade, falta de conferência, diferença de até 10% e indisponibilidade de moeda geram flags, não exclusão automática da planilha.
+[Resultados e limites](etapa_regional_v2/README.md): avaliação refeita com a seleção ampliada, referências por fonte/atividade/sistema/período e atribuições regionais somente onde há suporte. Pecuária permanece R$/arroba vendida. Replicar referências não cria observações municipais independentes.
 
-- [Processamento e testes](processamento): construção da seleção atual, notebook e reprodução.
-- [Auditoria](auditoria): diferenças por conceito, comparações, mapa de reorganização e hashes.
-- [Resultados completos](resultados): todas as referências e períodos, inclusive fora de 2001–2024.
-- [Histórico v1](historico/v1_publicada): cópia integral e imutável do pacote anterior, incluindo fontes, critérios estritos e resultados preditivos. Fontes permanecem nessa cópia, sem duplicação.
+A seleção mantém valores oficiais e exclui um conceito apenas com divergência estritamente acima de10% em comparação válida, ou incompatibilidade qualitativa demonstrada que o comprometa. Ambiguidade contábil e diferenças até10% permanecem flags. Conflitos de localização impedem atribuição regional, sem apagar o custo de origem.
 
-**Os modelos anteriores são condicionais à amostra estrita antiga. Não foram reestimados nem validados na seleção atual.** A base3 v4 permanece intacta. Publicação desta revisão autorizada em 24/10/2026.
+- [Etapa atual e reprodução](etapa_regional_v2/README.md).
+- [Builder da seleção revisada](processamento): preservado; os extratos usados estão congelados na etapa atual. A pasta BASE_PARA_USO removida pelo usuário não foi restaurada.
+- [Auditoria da revisão](auditoria) e [universo completo de fontes/períodos](resultados).
+- [Histórico v1](historico/v1_publicada): fontes e avaliações estritas anteriores intactas. Os modelos antigos continuam condicionais àquela seleção; a reavaliação atual está separada.
 
-Reproduzir: `python processamento/construir_uso.py`; testar: `python processamento/testar_uso.py`. Notebook atual: `processamento/construcao_base_para_uso.ipynb`. Python padrão basta para scripts; Jupyter exige nbformat/nbclient/ipykernel. Todas as entradas estão preservadas no histórico dentro desta pasta. Não há dependência de complementos locais externos nem coleta de rede para o build atual.
+Não execute builders antigos sobre diretórios de trabalho manual. Para a etapa atual, use sempre `python etapa_regional_v2/executar.py --out /diretorio/novo`.

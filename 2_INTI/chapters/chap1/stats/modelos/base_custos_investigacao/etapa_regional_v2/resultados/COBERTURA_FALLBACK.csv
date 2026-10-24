@@ -1,0 +1,28 @@
+variavel,fonte,atividade,sistema,conceito,moeda,n_regional,n_estadual,n_vazio,total,antes_pct,depois_pct,referencias_regionais_distintas,referencias_estaduais_distintas,referencias_originais_regionais_distintas,pracas_regionais_distintas
+2_custo_conab_soja_nao_declarada_safra1_conab_h_nominal,CONAB,soja,não declarada,conab_h,nominal,979,0,2405,3384,28.930260047281322,28.930260047281322,28,0,35,3
+2_custo_conab_soja_nao_declarada_safra1_conab_h_usd2024,CONAB,soja,não declarada,conab_h,usd2024,979,0,2405,3384,28.930260047281322,28.930260047281322,28,0,35,3
+2_custo_imea_pecuaria_pecuaria_recria_engorda_safra0_coe_nominal,IMEA_pecuaria,pecuaria,recria_engorda,coe,nominal,495,210,2679,3384,14.627659574468085,20.833333333333332,15,5,21,5
+2_custo_imea_pecuaria_pecuaria_recria_engorda_safra0_cot_nominal,IMEA_pecuaria,pecuaria,recria_engorda,cot,nominal,495,210,2679,3384,14.627659574468085,20.833333333333332,15,5,21,5
+2_custo_imea_pecuaria_pecuaria_recria_engorda_safra0_ct_nominal,IMEA_pecuaria,pecuaria,recria_engorda,ct,nominal,495,210,2679,3384,14.627659574468085,20.833333333333332,15,5,21,5
+2_custo_conab_milho_2a_ogm_safra0_conab_h_nominal,CONAB,milho_2a,OGM,conab_h,nominal,869,0,2515,3384,25.67966903073286,25.67966903073286,23,0,41,4
+2_custo_conab_milho_2a_ogm_safra0_conab_h_usd2024,CONAB,milho_2a,OGM,conab_h,usd2024,869,0,2515,3384,25.67966903073286,25.67966903073286,23,0,41,4
+2_custo_imea_agricola_soja_soja_gmo_safra1_imea_coe_nominal,IMEA_agricola,soja,SOJA GMO,imea_coe,nominal,372,51,2961,3384,10.99290780141844,12.5,12,3,31,11
+2_custo_imea_agricola_soja_soja_gmo_safra1_imea_cot_nominal,IMEA_agricola,soja,SOJA GMO,imea_cot,nominal,372,51,2961,3384,10.99290780141844,12.5,12,3,31,11
+2_custo_imea_agricola_soja_soja_gmo_safra1_imea_ct_nominal,IMEA_agricola,soja,SOJA GMO,imea_ct,nominal,372,51,2961,3384,10.99290780141844,12.5,12,3,31,11
+2_custo_imea_pecuaria_pecuaria_ciclo_completo_safra0_coe_nominal,IMEA_pecuaria,pecuaria,ciclo_completo,coe,nominal,110,595,2679,3384,3.2505910165484635,20.833333333333332,5,5,5,1
+2_custo_imea_pecuaria_pecuaria_ciclo_completo_safra0_cot_nominal,IMEA_pecuaria,pecuaria,ciclo_completo,cot,nominal,110,595,2679,3384,3.2505910165484635,20.833333333333332,5,5,5,1
+2_custo_imea_pecuaria_pecuaria_ciclo_completo_safra0_ct_nominal,IMEA_pecuaria,pecuaria,ciclo_completo,ct,nominal,110,595,2679,3384,3.2505910165484635,20.833333333333332,5,5,5,1
+2_custo_conab_soja_ogm_safra1_conab_h_nominal,CONAB,soja,OGM,conab_h,nominal,1309,0,2075,3384,38.682033096926716,38.682033096926716,34,0,44,3
+2_custo_conab_soja_ogm_safra1_conab_h_usd2024,CONAB,soja,OGM,conab_h,usd2024,1309,0,2075,3384,38.682033096926716,38.682033096926716,34,0,44,3
+2_custo_imea_agricola_milho_safra_nao_harmonizada_milho_alta_tecnologia_safra1_imea_coe_nominal,IMEA_agricola,milho_safra_nao_harmonizada,MILHO ALTA TECNOLOGIA,imea_coe,nominal,372,51,2961,3384,10.99290780141844,12.5,12,3,28,11
+2_custo_imea_agricola_milho_safra_nao_harmonizada_milho_alta_tecnologia_safra1_imea_cot_nominal,IMEA_agricola,milho_safra_nao_harmonizada,MILHO ALTA TECNOLOGIA,imea_cot,nominal,372,51,2961,3384,10.99290780141844,12.5,12,3,28,11
+2_custo_imea_agricola_milho_safra_nao_harmonizada_milho_alta_tecnologia_safra1_imea_ct_nominal,IMEA_agricola,milho_safra_nao_harmonizada,MILHO ALTA TECNOLOGIA,imea_ct,nominal,372,51,2961,3384,10.99290780141844,12.5,12,3,28,11
+2_custo_conab_soja_convencional_explicita_safra1_conab_h_nominal,CONAB,soja,convencional explícita,conab_h,nominal,77,0,3307,3384,2.275413711583924,2.275413711583924,2,0,3,3
+2_custo_conab_soja_convencional_explicita_safra1_conab_h_usd2024,CONAB,soja,convencional explícita,conab_h,usd2024,77,0,3307,3384,2.275413711583924,2.275413711583924,2,0,3,3
+2_custo_conab_milho_1a_nao_declarada_safra1_conab_h_nominal,CONAB,milho_1a,não declarada,conab_h,nominal,286,0,3098,3384,8.451536643026005,8.451536643026005,13,0,13,1
+2_custo_conab_milho_1a_nao_declarada_safra1_conab_h_usd2024,CONAB,milho_1a,não declarada,conab_h,usd2024,286,0,3098,3384,8.451536643026005,8.451536643026005,13,0,13,1
+2_custo_conab_milho_2a_nao_declarada_safra0_conab_h_nominal,CONAB,milho_2a,não declarada,conab_h,nominal,561,0,2823,3384,16.578014184397162,16.578014184397162,18,0,21,4
+2_custo_conab_milho_2a_nao_declarada_safra0_conab_h_usd2024,CONAB,milho_2a,não declarada,conab_h,usd2024,561,0,2823,3384,16.578014184397162,16.578014184397162,18,0,21,4
+2_custo_imea_pecuaria_pecuaria_cria_safra0_coe_nominal,IMEA_pecuaria,pecuaria,cria,coe,nominal,507,198,2679,3384,14.9822695035461,20.833333333333332,16,5,52,12
+2_custo_imea_pecuaria_pecuaria_cria_safra0_cot_nominal,IMEA_pecuaria,pecuaria,cria,cot,nominal,507,198,2679,3384,14.9822695035461,20.833333333333332,16,5,52,12
+2_custo_imea_pecuaria_pecuaria_cria_safra0_ct_nominal,IMEA_pecuaria,pecuaria,cria,ct,nominal,507,198,2679,3384,14.9822695035461,20.833333333333332,16,5,52,12
