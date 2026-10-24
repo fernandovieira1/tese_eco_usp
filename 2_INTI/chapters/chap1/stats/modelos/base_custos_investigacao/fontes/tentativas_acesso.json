@@ -1,0 +1,30 @@
+[
+  {
+    "arquivo": "imea_soja.xlsx",
+    "url": "https://imea.com.br/imea-site/arquivo-externo?categoria=relatorio-de-mercado&arquivo=cup-soja&numeropublicacao=8",
+    "consulta_utc": "2026-10-24T14:31:40.030484+00:00",
+    "status": "bloqueado_nao_obtido",
+    "erro": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "arquivo": "imea_milho.xlsx",
+    "url": "https://imea.com.br/imea-site/arquivo-externo?categoria=relatorio-de-mercado&arquivo=cup-milho&numeropublicacao=6",
+    "consulta_utc": "2026-10-24T14:31:40.072152+00:00",
+    "status": "bloqueado_nao_obtido",
+    "erro": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "arquivo": "imea_metodologia.pdf",
+    "url": "https://www.imea.com.br/imea-site/view/uploads/metodologia/custos/CustosCustoProducao2020.pdf",
+    "consulta_utc": "2026-10-24T14:31:40.081094+00:00",
+    "status": "bloqueado_nao_obtido",
+    "erro": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "arquivo": "sgs3698_cambio.json",
+    "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.3698/dados?formato=json&dataInicial=01/01/1997&dataFinal=31/12/2024",
+    "consulta_utc": "2026-10-24T14:31:40.088952+00:00",
+    "status": "bloqueado_nao_obtido",
+    "erro": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

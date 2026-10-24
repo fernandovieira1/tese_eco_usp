@@ -1,0 +1,536 @@
+fonte,atividade,ano_rotulo,mesocodigo,mesonome,vintage,n_referencias_periodo,n_referencias_com_custos,n_pracas_com_custos,pracas,modelo_regional_validado
+CONAB_estrita,milho_1a,2001,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2001,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2001,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2001,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2001,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_1a,2002,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2002,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2002,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2002,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2002,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_1a,2003,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2003,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2003,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2003,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2003,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_1a,2004,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2004,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2004,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2004,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2004,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_1a,2005,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2005,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2005,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2005,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2005,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_1a,2006,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2006,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2006,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2006,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2006,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_1a,2007,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2007,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2007,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2007,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2007,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_1a,2008,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2008,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2008,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2008,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2008,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_1a,2009,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2009,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2009,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2009,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2009,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_1a,2010,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2010,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2010,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2010,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2010,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2011,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2011,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2011,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2011,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2011,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2012,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2012,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2012,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2012,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2012,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2013,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2013,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2013,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2013,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2013,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2014,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2014,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2014,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2014,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2014,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2015,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2015,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2015,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2015,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2015,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2016,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2016,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2016,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2016,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2016,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2017,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2017,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2017,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2017,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2017,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2018,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2018,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2018,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2018,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2018,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2019,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2019,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2019,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2019,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2019,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2020,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2020,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2020,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2020,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2020,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2021,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2021,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2021,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2021,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2021,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2022,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2022,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2022,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2022,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2022,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2023,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2023,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2023,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2023,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2023,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2024,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2024,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2024,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2024,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_1a,2024,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2001,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2001,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2001,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2001,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2001,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_2a,2002,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2002,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2002,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2002,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2002,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_2a,2003,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2003,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2003,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2003,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2003,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_2a,2004,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2004,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2004,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2004,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2004,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2005,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2005,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2005,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2005,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2005,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_2a,2006,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2006,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2006,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2006,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2006,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_2a,2007,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2007,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2007,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2007,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2007,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_2a,2008,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2008,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2008,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2008,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2008,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2009,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2009,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2009,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2009,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2009,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_2a,2010,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2010,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2010,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2010,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2010,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,milho_2a,2011,5101,Norte Mato-grossense,DTB_2016_v2,1,1,1,Sorriso,False
+CONAB_estrita,milho_2a,2011,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2011,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2011,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2011,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Campo Verde,False
+CONAB_estrita,milho_2a,2012,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,milho_2a,2012,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2012,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2012,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2012,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Campo Verde,False
+CONAB_estrita,milho_2a,2013,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,milho_2a,2013,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2013,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2013,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2013,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2014,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2014,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2014,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2014,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2014,5105,Sudeste Mato-grossense,DTB_2016_v2,2,2,2,Campo Verde;Primavera do Leste,False
+CONAB_estrita,milho_2a,2015,5101,Norte Mato-grossense,DTB_2016_v2,1,1,1,Campo Novo do Parecis,False
+CONAB_estrita,milho_2a,2015,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2015,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2015,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2015,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2016,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,milho_2a,2016,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2016,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2016,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2016,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2017,5101,Norte Mato-grossense,DTB_2016_v2,1,1,1,Sorriso,False
+CONAB_estrita,milho_2a,2017,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2017,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2017,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2017,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2018,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2018,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2018,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2018,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2018,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2019,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,milho_2a,2019,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2019,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2019,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2019,5105,Sudeste Mato-grossense,DTB_2016_v2,2,2,2,Campo Verde;Primavera do Leste,False
+CONAB_estrita,milho_2a,2020,5101,Norte Mato-grossense,DTB_2016_v2,1,1,1,Campo Novo do Parecis,False
+CONAB_estrita,milho_2a,2020,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2020,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2020,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2020,5105,Sudeste Mato-grossense,DTB_2016_v2,2,2,2,Campo Verde;Primavera do Leste,False
+CONAB_estrita,milho_2a,2021,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,milho_2a,2021,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2021,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2021,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2021,5105,Sudeste Mato-grossense,DTB_2016_v2,2,2,2,Campo Verde;Primavera do Leste,False
+CONAB_estrita,milho_2a,2022,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,milho_2a,2022,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2022,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2022,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2022,5105,Sudeste Mato-grossense,DTB_2016_v2,2,2,2,Campo Verde;Primavera do Leste,False
+CONAB_estrita,milho_2a,2023,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,milho_2a,2023,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2023,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2023,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2023,5105,Sudeste Mato-grossense,DTB_2016_v2,2,2,2,Campo Verde;Primavera do Leste,False
+CONAB_estrita,milho_2a,2024,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,milho_2a,2024,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2024,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2024,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,milho_2a,2024,5105,Sudeste Mato-grossense,DTB_2016_v2,2,2,2,Campo Verde;Primavera do Leste,False
+CONAB_estrita,soja,2001,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2001,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2001,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2001,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2001,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2002,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2002,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2002,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2002,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2002,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2003,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2003,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2003,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2003,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2003,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2004,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2004,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2004,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2004,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2004,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2005,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2005,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2005,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2005,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2005,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2006,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2006,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2006,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2006,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2006,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2007,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2007,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2007,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2007,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2007,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2008,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2008,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2008,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2008,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2008,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2009,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2009,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2009,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2009,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2009,5105,Sudeste Mato-grossense,DTB_2016_v2,2,2,1,Primavera do Leste,False
+CONAB_estrita,soja,2010,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2010,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2010,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2010,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2010,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2011,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2011,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2011,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2011,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2011,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2012,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2012,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2012,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2012,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2012,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2013,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,soja,2013,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2013,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2013,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2013,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2014,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2014,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2014,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2014,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2014,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2015,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2015,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2015,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2015,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2015,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2016,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,soja,2016,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2016,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2016,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2016,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2017,5101,Norte Mato-grossense,DTB_2016_v2,1,1,1,Campo Novo do Parecis,False
+CONAB_estrita,soja,2017,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2017,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2017,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2017,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2018,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2018,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2018,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2018,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2018,5105,Sudeste Mato-grossense,DTB_2016_v2,2,2,1,Primavera do Leste,False
+CONAB_estrita,soja,2019,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,soja,2019,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2019,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2019,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2019,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2020,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,soja,2020,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2020,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2020,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2020,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2021,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,soja,2021,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2021,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2021,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2021,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2022,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,soja,2022,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2022,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2022,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2022,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2023,5101,Norte Mato-grossense,DTB_2016_v2,2,2,2,Campo Novo do Parecis;Sorriso,False
+CONAB_estrita,soja,2023,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2023,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2023,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2023,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Primavera do Leste,False
+CONAB_estrita,soja,2024,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2024,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2024,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2024,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+CONAB_estrita,soja,2024,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2020,5101,Norte Mato-grossense,DTB_2016_v2,2,0,0,,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2020,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2020,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2020,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2020,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,5101,Norte Mato-grossense,DTB_2016_v2,8,5,5,CAMPO NOVO DO PARECIS;MATUPÁ;SAPEZAL;SINOP;SORRISO,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,5102,Nordeste Mato-grossense,DTB_2016_v2,1,1,1,QUERÊNCIA,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,TANGARÁ DA SERRA,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,PRIMAVERA DO LESTE,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,5101,Norte Mato-grossense,DTB_2016_v2,8,6,6,CAMPO NOVO DO PARECIS;MARCELÂNDIA;MATUPÁ;SAPEZAL;SINOP;SORRISO,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,5102,Nordeste Mato-grossense,DTB_2016_v2,1,1,1,QUERÊNCIA,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,TANGARÁ DA SERRA,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,PRIMAVERA DO LESTE,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,5101,Norte Mato-grossense,DTB_2016_v2,9,8,8,CAMPO NOVO DO PARECIS;DIAMANTINO;MARCELÂNDIA;MATUPÁ;NOVA MUTUM;SAPEZAL;SINOP;SORRISO,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,5102,Nordeste Mato-grossense,DTB_2016_v2,1,1,1,QUERÊNCIA,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,TANGARÁ DA SERRA,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,PRIMAVERA DO LESTE,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,5101,Norte Mato-grossense,DTB_2016_v2,8,8,8,CAMPO NOVO DO PARECIS;DIAMANTINO;MARCELÂNDIA;MATUPÁ;NOVA MUTUM;SAPEZAL;SINOP;SORRISO,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,5102,Nordeste Mato-grossense,DTB_2016_v2,1,1,1,QUERÊNCIA,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,TANGARÁ DA SERRA,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,PRIMAVERA DO LESTE,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,5101,Norte Mato-grossense,DTB_2016_v2,9,9,9,ALTA FLORESTA;CAMPO NOVO DO PARECIS;DIAMANTINO;MARCELÂNDIA;MATUPÁ;NOVA MUTUM;SAPEZAL;SINOP;SORRISO,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,5102,Nordeste Mato-grossense,DTB_2016_v2,1,1,1,QUERÊNCIA,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,TANGARÁ DA SERRA,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,PRIMAVERA DO LESTE,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,5101,Norte Mato-grossense,DTB_2016_v2,18,16,8,ALTA FLORESTA;CAMPO NOVO DO PARECIS;DIAMANTINO;MARCELÂNDIA;MATUPÁ;SAPEZAL;SINOP;SORRISO,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,5102,Nordeste Mato-grossense,DTB_2016_v2,2,2,1,QUERÊNCIA,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,5103,Sudoeste Mato-grossense,DTB_2016_v2,2,2,1,TANGARÁ DA SERRA,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,5105,Sudeste Mato-grossense,DTB_2016_v2,2,2,1,PRIMAVERA DO LESTE,False
+IMEA_agricola,soja_GMO,2021,5101,Norte Mato-grossense,DTB_2016_v2,10,6,6,CAMPO NOVO DO PARECIS;DIAMANTINO;MATUPÁ;SAPEZAL;SINOP;SORRISO,False
+IMEA_agricola,soja_GMO,2021,5102,Nordeste Mato-grossense,DTB_2016_v2,2,2,2,CANARANA;QUERÊNCIA,False
+IMEA_agricola,soja_GMO,2021,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,TANGARÁ DA SERRA,False
+IMEA_agricola,soja_GMO,2021,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,soja_GMO,2021,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,PRIMAVERA DO LESTE,False
+IMEA_agricola,soja_GMO,2022,5101,Norte Mato-grossense,DTB_2016_v2,10,7,7,CAMPO NOVO DO PARECIS;DIAMANTINO;MARCELÂNDIA;MATUPÁ;SAPEZAL;SINOP;SORRISO,False
+IMEA_agricola,soja_GMO,2022,5102,Nordeste Mato-grossense,DTB_2016_v2,2,2,2,CANARANA;QUERÊNCIA,False
+IMEA_agricola,soja_GMO,2022,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,TANGARÁ DA SERRA,False
+IMEA_agricola,soja_GMO,2022,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,soja_GMO,2022,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,PRIMAVERA DO LESTE,False
+IMEA_agricola,soja_GMO,2023,5101,Norte Mato-grossense,DTB_2016_v2,10,8,8,BRASNORTE;CAMPO NOVO DO PARECIS;DIAMANTINO;MARCELÂNDIA;MATUPÁ;SAPEZAL;SINOP;SORRISO,False
+IMEA_agricola,soja_GMO,2023,5102,Nordeste Mato-grossense,DTB_2016_v2,2,2,2,CANARANA;QUERÊNCIA,False
+IMEA_agricola,soja_GMO,2023,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,TANGARÁ DA SERRA,False
+IMEA_agricola,soja_GMO,2023,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,soja_GMO,2023,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,PRIMAVERA DO LESTE,False
+IMEA_agricola,soja_GMO,2024,5101,Norte Mato-grossense,DTB_2016_v2,10,9,9,BRASNORTE;CAMPO NOVO DO PARECIS;DIAMANTINO;MARCELÂNDIA;MATUPÁ;PORTO DOS GAÚCHOS;SAPEZAL;SINOP;SORRISO,False
+IMEA_agricola,soja_GMO,2024,5102,Nordeste Mato-grossense,DTB_2016_v2,2,2,2,CANARANA;QUERÊNCIA,False
+IMEA_agricola,soja_GMO,2024,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,TANGARÁ DA SERRA,False
+IMEA_agricola,soja_GMO,2024,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,soja_GMO,2024,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,PRIMAVERA DO LESTE,False
+IMEA_agricola,soja_GMO,2025,5101,Norte Mato-grossense,DTB_2016_v2,10,10,10,ALTA FLORESTA;BRASNORTE;CAMPO NOVO DO PARECIS;DIAMANTINO;MARCELÂNDIA;MATUPÁ;PORTO DOS GAÚCHOS;SAPEZAL;SINOP;SORRISO,False
+IMEA_agricola,soja_GMO,2025,5102,Nordeste Mato-grossense,DTB_2016_v2,2,2,2,CANARANA;QUERÊNCIA,False
+IMEA_agricola,soja_GMO,2025,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,TANGARÁ DA SERRA,False
+IMEA_agricola,soja_GMO,2025,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,soja_GMO,2025,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,PRIMAVERA DO LESTE,False
+IMEA_agricola,soja_GMO,2026,5101,Norte Mato-grossense,DTB_2016_v2,20,20,10,ALTA FLORESTA;BRASNORTE;CAMPO NOVO DO PARECIS;DIAMANTINO;MARCELÂNDIA;MATUPÁ;PORTO DOS GAÚCHOS;SAPEZAL;SINOP;SORRISO,False
+IMEA_agricola,soja_GMO,2026,5102,Nordeste Mato-grossense,DTB_2016_v2,4,4,2,CANARANA;QUERÊNCIA,False
+IMEA_agricola,soja_GMO,2026,5103,Sudoeste Mato-grossense,DTB_2016_v2,2,2,1,TANGARÁ DA SERRA,False
+IMEA_agricola,soja_GMO,2026,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_agricola,soja_GMO,2026,5105,Sudeste Mato-grossense,DTB_2016_v2,2,2,1,PRIMAVERA DO LESTE,False
+IMEA_pecuaria,ciclo_completo,2020,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2020,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2020,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,Vila Bela da Santíssima Trindade,False
+IMEA_pecuaria,ciclo_completo,2020,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2020,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2021,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2021,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2021,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,Vila Bela da Santíssima Trindade,False
+IMEA_pecuaria,ciclo_completo,2021,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2021,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2022,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2022,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2022,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,Vila Bela da Santíssima Trindade,False
+IMEA_pecuaria,ciclo_completo,2022,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2022,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2023,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2023,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2023,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,Vila Bela da Santíssima Trindade,False
+IMEA_pecuaria,ciclo_completo,2023,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2023,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2024,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2024,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2024,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,Vila Bela da Santíssima Trindade,False
+IMEA_pecuaria,ciclo_completo,2024,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2024,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2025,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2025,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2025,5103,Sudoeste Mato-grossense,DTB_2016_v2,1,1,1,Vila Bela da Santíssima Trindade,False
+IMEA_pecuaria,ciclo_completo,2025,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2025,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2026,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2026,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2026,5103,Sudoeste Mato-grossense,DTB_2016_v2,2,2,1,Vila Bela da Santíssima Trindade,False
+IMEA_pecuaria,ciclo_completo,2026,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,ciclo_completo,2026,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2019,5101,Norte Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2019,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2019,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2019,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2019,5105,Sudeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2020,5101,Norte Mato-grossense,DTB_2016_v2,5,4,4,Alta Floresta;Juara;Paranatinga;Paranaíta,False
+IMEA_pecuaria,cria,2020,5102,Nordeste Mato-grossense,DTB_2016_v2,4,3,3,Nova Xavantina;Vila Rica;Água Boa,False
+IMEA_pecuaria,cria,2020,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2020,5104,Centro-Sul Mato-grossense,DTB_2016_v2,2,2,2,Cáceres;Poconé,False
+IMEA_pecuaria,cria,2020,5105,Sudeste Mato-grossense,DTB_2016_v2,1,0,0,,False
+IMEA_pecuaria,cria,2021,5101,Norte Mato-grossense,DTB_2016_v2,5,4,4,Alta Floresta;Juara;Paranatinga;Paranaíta,False
+IMEA_pecuaria,cria,2021,5102,Nordeste Mato-grossense,DTB_2016_v2,5,3,3,Nova Xavantina;Vila Rica;Água Boa,False
+IMEA_pecuaria,cria,2021,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2021,5104,Centro-Sul Mato-grossense,DTB_2016_v2,2,2,2,Cáceres;Poconé,False
+IMEA_pecuaria,cria,2021,5105,Sudeste Mato-grossense,DTB_2016_v2,2,0,0,,False
+IMEA_pecuaria,cria,2022,5101,Norte Mato-grossense,DTB_2016_v2,5,5,5,Alta Floresta;Aripuanã;Juara;Paranatinga;Paranaíta,False
+IMEA_pecuaria,cria,2022,5102,Nordeste Mato-grossense,DTB_2016_v2,5,4,4,Barra do Garças;Nova Xavantina;Vila Rica;Água Boa,False
+IMEA_pecuaria,cria,2022,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2022,5104,Centro-Sul Mato-grossense,DTB_2016_v2,2,2,2,Cáceres;Poconé,False
+IMEA_pecuaria,cria,2022,5105,Sudeste Mato-grossense,DTB_2016_v2,2,0,0,,False
+IMEA_pecuaria,cria,2023,5101,Norte Mato-grossense,DTB_2016_v2,5,5,5,Alta Floresta;Aripuanã;Juara;Paranatinga;Paranaíta,False
+IMEA_pecuaria,cria,2023,5102,Nordeste Mato-grossense,DTB_2016_v2,5,4,4,Barra do Garças;Nova Xavantina;Vila Rica;Água Boa,False
+IMEA_pecuaria,cria,2023,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2023,5104,Centro-Sul Mato-grossense,DTB_2016_v2,2,2,2,Cáceres;Poconé,False
+IMEA_pecuaria,cria,2023,5105,Sudeste Mato-grossense,DTB_2016_v2,2,0,0,,False
+IMEA_pecuaria,cria,2024,5101,Norte Mato-grossense,DTB_2016_v2,5,5,5,Alta Floresta;Aripuanã;Juara;Paranatinga;Paranaíta,False
+IMEA_pecuaria,cria,2024,5102,Nordeste Mato-grossense,DTB_2016_v2,5,4,4,Barra do Garças;Nova Xavantina;Vila Rica;Água Boa,False
+IMEA_pecuaria,cria,2024,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2024,5104,Centro-Sul Mato-grossense,DTB_2016_v2,2,2,2,Cáceres;Poconé,False
+IMEA_pecuaria,cria,2024,5105,Sudeste Mato-grossense,DTB_2016_v2,2,1,1,Pedra Preta,False
+IMEA_pecuaria,cria,2025,5101,Norte Mato-grossense,DTB_2016_v2,5,5,5,Alta Floresta;Aripuanã;Juara;Paranatinga;Paranaíta,False
+IMEA_pecuaria,cria,2025,5102,Nordeste Mato-grossense,DTB_2016_v2,5,4,4,Barra do Garças;Nova Xavantina;Vila Rica;Água Boa,False
+IMEA_pecuaria,cria,2025,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2025,5104,Centro-Sul Mato-grossense,DTB_2016_v2,2,2,2,Cáceres;Poconé,False
+IMEA_pecuaria,cria,2025,5105,Sudeste Mato-grossense,DTB_2016_v2,2,1,1,Pedra Preta,False
+IMEA_pecuaria,cria,2026,5101,Norte Mato-grossense,DTB_2016_v2,10,8,4,Alta Floresta;Aripuanã;Juara;Paranaíta,False
+IMEA_pecuaria,cria,2026,5102,Nordeste Mato-grossense,DTB_2016_v2,10,8,4,Nova Xavantina;Santo Antônio do Leste;Vila Rica;Água Boa,False
+IMEA_pecuaria,cria,2026,5103,Sudoeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,cria,2026,5104,Centro-Sul Mato-grossense,DTB_2016_v2,4,4,2,Cáceres;Poconé,False
+IMEA_pecuaria,cria,2026,5105,Sudeste Mato-grossense,DTB_2016_v2,4,2,1,Poxoréu,False
+IMEA_pecuaria,recria_engorda,2020,5101,Norte Mato-grossense,DTB_2016_v2,1,1,1,Nova Mutum,False
+IMEA_pecuaria,recria_engorda,2020,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2020,5103,Sudoeste Mato-grossense,DTB_2016_v2,3,2,2,Araputanga;Tangará da Serra,False
+IMEA_pecuaria,recria_engorda,2020,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2020,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Rondonópolis,False
+IMEA_pecuaria,recria_engorda,2021,5101,Norte Mato-grossense,DTB_2016_v2,1,1,1,Nova Mutum,False
+IMEA_pecuaria,recria_engorda,2021,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2021,5103,Sudoeste Mato-grossense,DTB_2016_v2,3,2,2,Araputanga;Tangará da Serra,False
+IMEA_pecuaria,recria_engorda,2021,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2021,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Rondonópolis,False
+IMEA_pecuaria,recria_engorda,2022,5101,Norte Mato-grossense,DTB_2016_v2,1,1,1,Nova Mutum,False
+IMEA_pecuaria,recria_engorda,2022,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2022,5103,Sudoeste Mato-grossense,DTB_2016_v2,3,2,2,Araputanga;Tangará da Serra,False
+IMEA_pecuaria,recria_engorda,2022,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2022,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Rondonópolis,False
+IMEA_pecuaria,recria_engorda,2023,5101,Norte Mato-grossense,DTB_2016_v2,1,1,1,Nova Mutum,False
+IMEA_pecuaria,recria_engorda,2023,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2023,5103,Sudoeste Mato-grossense,DTB_2016_v2,3,2,2,Araputanga;Tangará da Serra,False
+IMEA_pecuaria,recria_engorda,2023,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2023,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Rondonópolis,False
+IMEA_pecuaria,recria_engorda,2024,5101,Norte Mato-grossense,DTB_2016_v2,1,1,1,Nova Mutum,False
+IMEA_pecuaria,recria_engorda,2024,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2024,5103,Sudoeste Mato-grossense,DTB_2016_v2,3,3,3,Araputanga;Pontes e Lacerda;Tangará da Serra,False
+IMEA_pecuaria,recria_engorda,2024,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2024,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Rondonópolis,False
+IMEA_pecuaria,recria_engorda,2025,5101,Norte Mato-grossense,DTB_2016_v2,1,1,1,Nova Mutum,False
+IMEA_pecuaria,recria_engorda,2025,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2025,5103,Sudoeste Mato-grossense,DTB_2016_v2,3,3,3,Araputanga;Pontes e Lacerda;Tangará da Serra,False
+IMEA_pecuaria,recria_engorda,2025,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2025,5105,Sudeste Mato-grossense,DTB_2016_v2,1,1,1,Rondonópolis,False
+IMEA_pecuaria,recria_engorda,2026,5101,Norte Mato-grossense,DTB_2016_v2,2,2,1,Nova Mutum,False
+IMEA_pecuaria,recria_engorda,2026,5102,Nordeste Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2026,5103,Sudoeste Mato-grossense,DTB_2016_v2,6,6,3,Araputanga;Pontes e Lacerda;Tangará da Serra,False
+IMEA_pecuaria,recria_engorda,2026,5104,Centro-Sul Mato-grossense,DTB_2016_v2,0,0,0,,False
+IMEA_pecuaria,recria_engorda,2026,5105,Sudeste Mato-grossense,DTB_2016_v2,2,2,1,Rondonópolis,False

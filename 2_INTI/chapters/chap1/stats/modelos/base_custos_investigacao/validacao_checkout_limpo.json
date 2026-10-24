@@ -1,0 +1,68 @@
+{
+  "checkout": "/tmp/custos_checkout_0r556nai",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "construir.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"series_estritas_auditoria_anterior\": 87, \"series\": 188, \"agregados_ha\": 1880, \"series_estritas\": 85, \"agregados_estritos\": 850, \"componentes\": 7027, \"componentes_elegiveis\": 2938, \"blocos_componentes\": 1128, \"blocos_aprovados\": 1124, \"identidades_aprovadas\": 752, \"identidades\": 752, \"celulas_fontes\": 45360, \"cpi_base_media2024\": 313.6888333333333, \"usd2024_preenchidos\": 1790, \"usd2024_estritos\": 850, \"imea_linhas\": 585, \"imea_candidatos_descritivos\": 195, \"sem_regressoes\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "verificar_reproducao.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"execucoes_isoladas\": [{\"hashes_iguais\": true, \"numero_csv\": 16, \"resumo\": {\"series_estritas_auditoria_anterior\": 87, \"series\": 188, \"agregados_ha\": 1880, \"series_estritas\": 85, \"agregados_estritos\": 850, \"componentes\": 7027, \"componentes_elegiveis\": 2938, \"blocos_componentes\": 1128, \"blocos_aprovados\": 1124, \"identidades_aprovadas\": 752, \"identidades\": 752, \"celulas_fontes\": 45360, \"cpi_base_media2024\": 313.6888333333333, \"usd2024_preenchidos\": 1790, \"usd2024_estritos\": 850, \"imea_linhas\": 585, \"imea_candidatos_descritivos\": 195, \"sem_regressoes\": true}}, {\"hashes_iguais\": true, \"numero_csv\": 16, \"resumo\": {\"series_estritas_auditoria_anterior\": 87, \"series\": 188, \"agregados_ha\": 1880, \"series_estritas\": 85, \"agregados_estritos\": 850, \"componentes\": 7027, \"componentes_elegiveis\": 2938, \"blocos_componentes\": 1128, \"blocos_aprovados\": 1124, \"identidades_aprovadas\": 752, \"identidades\": 752, \"celulas_fontes\": 45360, \"cpi_base_media2024\": 313.6888333333333, \"usd2024_preenchidos\": 1790, \"usd2024_estritos\": 850, \"imea_linhas\": 585, \"imea_candidatos_descritivos\": 195, \"sem_regressoes\": true}}], \"hashes_csv\": {\"auditoria_componentes.csv\": \"8a876c5d82489a57ca3600569b3f50b30f6e9883bdf4774f6fda799d9adef3ce\", \"auditoria_identidades.csv\": \"19c4b06b365ba384fe3979072cbdb70a86e577b1ec2840f4fcfcb4e8aea9dd00\", \"auditoria_imea.csv\": \"b0ef14117cb4980a501dc8c9cf8b7a161bdc99f69001b4d1c9a68d7b5c263997\", \"candidatos_incorporacao.csv\": \"9943ac7027864bf5e3033cc1b0459638fab171e2c9cb7326e552f233e3f469a0\", \"cobertura.csv\": \"9e5129571aeb191015d8a0188f3c9eb6979289567566bfab74b224f90474774a\", \"cobertura_imea.csv\": \"f13ebc74c5843a62a3b58319662a6a42c2893be36501685930375b660b45b011\", \"componentes_nominais.csv\": \"b835544e03485986ee2491d03348eed9f58526cbeecee788c49266f6d7eebea9\", \"custos_imea_candidatos_descritivos.csv\": \"151c45a04e4cf538a2b2041f5098f1e005b551d21cfb796de0fe51b0bd51bfd2\", \"custos_imea_quarentena.csv\": \"40357d01c21bd8f7b54bce8ed451b1a73c87b4b1d713530bfbf40a545fe83d1a\", \"custos_imea_referencia.csv\": \"40357d01c21bd8f7b54bce8ed451b1a73c87b4b1d713530bfbf40a545fe83d1a\", \"custos_quarentena.csv\": \"154ea5608acfcf33a495f8ba05a7c95fc33609be7be19b556ef6d140e42e24b1\", \"custos_referencia_completos.csv\": \"3d9392bf1b1a6c06547ae5f194402a9e3496151b327af42b4979c3f7a48846f7\", \"custos_referencia_estritos.csv\": \"5e5b4d066e81deed1a59abda42f122dd5da270b51567ea744cf7b361b8f2156a\", \"dicionario_variaveis.csv\": \"342afac91c93b6915ca0258535f8338368e19a28754cecb0b89a1a0dbc1016af\", \"qualidade_variaveis.csv\": \"168f72d09d2fc846039911de2554e1176affa0c44bd5e1dc96ae555b81353e3c\", \"series_referencia.csv\": \"af2df10bfce42fcfcef1f9c1227ad8941e6e48208ee70f48e0631e8023c5b4b8\"}, \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\", \"sem_coleta_rede\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "test_base_custos.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.353s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "avaliacao_preditiva/testar.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.793s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "pecuaria/integrar.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"inputs\": {\n    \"retrieve_extract_imea_pecuaria.py\": \"7823d7c0ddf1b590deef60f8cc49c23e9efe71fd9d6af1c1556d51f67d25512e\",\n    \"imea_pecuaria_costs_cria.csv\": \"e8da99d1f3c64c2385caaa03a400b7bdcf831f1e3f66d04b3c57cf0bbf25ad65\",\n    \"imea_pecuaria_costs_recria_engorda.csv\": \"ab7cf8b79cbb91339b398a0f08a03709126074ec943bafb2338750002bf14a2c\",\n    \"imea_pecuaria_costs_ciclo_completo.csv\": \"9eb8c280f8fabd0e84490b847f7a5934f164d0a0b8cb52d0530ec7d7bb2b036a\",\n    \"imea_pecuaria_sheets.csv\": \"d2521f9c396ce61b2523103f62579a7976c5df35f734210ab3bac7929cdb6043\",\n    \"imea_pecuaria_headers_notes.csv\": \"85586a9424433e0eb3b32ddeda79d1ba6e4228b6c7fed0fde4bb3675c00069fa\",\n    \"validation_report.json\": \"b35d7f06edc8e8042f5b22a22a54da4877fc4526b3b527ad7bf50747bddb268f\",\n    \"PROVENIENCIA_PECUARIA.md\": \"0ebf2b900c1b0f6bc4d21d2319e12bad99e9707e1a95a083ebc20e8c2c88343d\"\n  },\n  \"registros_periodo\": 196,\n  \"registros_custos_numericos\": 156,\n  \"metricas_long\": 588,\n  \"valores_monetarios_numericos\": 468,\n  \"notas_celulas\": 752,\n  \"validacao_raw\": \"Realizada no pai; relatório original transferido e hash verificado. XLSX não disponível neste executor.\",\n  \"outputs\": {\n    \"custos_referencia.csv\": \"b8f31703fdda9263de26e83363386eaac8669c944bcf0e821768acadf131b9e2\",\n    \"registros_periodo.csv\": \"5030067d365275bb9da51cbb3c03fec695460db371f8bbc992de9ba2153cba43\",\n    \"cobertura_sistema_ano.csv\": \"3219c6b4d6bd10c0f5fd96c4485f4c18174f90443770a33cdf3993ac631aaad8\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "regionalizacao/integrar.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"inputs\": {\n    \"/tmp/custos_checkout_0r556nai/2_INTI/chapters/chap1/stats/modelos/base_custos_investigacao/regionalizacao/fontes/mt_regioes_141_compacto.csv\": \"9c125980a292bba5e8d899155b048a4521250c15d40f564d1f8806912d37c1b1\",\n    \"/tmp/custos_checkout_0r556nai/2_INTI/chapters/chap1/stats/modelos/base3/painel_h1_base3_v4.csv\": \"a98dbe320efc784543cf43372a5903de32434be5871304178f2f9d49daaf1c3b\",\n    \"/tmp/custos_checkout_0r556nai/2_INTI/chapters/chap1/stats/modelos/base_custos_investigacao/avaliacao_preditiva/soja/amostra.csv\": \"ea53e42f20b19096c6830ac4734500f218a137570704dfb671ec3671518ddae1\",\n    \"/tmp/custos_checkout_0r556nai/2_INTI/chapters/chap1/stats/modelos/base_custos_investigacao/avaliacao_preditiva/milho_1a/amostra.csv\": \"4a74f06f6127443d5b122d41d03beb0571938e75f4cb3630fdf76ffcb316e8e6\",\n    \"/tmp/custos_checkout_0r556nai/2_INTI/chapters/chap1/stats/modelos/base_custos_investigacao/avaliacao_preditiva/milho_2a/amostra.csv\": \"a0073c3f7a0c3ad8f4a3bb004887d1447582ec2a7edad8b7ffeff189b400f176\",\n    \"/tmp/custos_checkout_0r556nai/2_INTI/chapters/chap1/stats/modelos/base_custos_investigacao/fontes/imea/imea_regional_key_costs.csv\": \"808695e768d80ac8bcfa14ea66c880bebb29883b7b8ae59c04e3549dad05b6b9\",\n    \"/tmp/custos_checkout_0r556nai/2_INTI/chapters/chap1/stats/modelos/base_custos_investigacao/pecuaria/registros_periodo.csv\": \"5030067d365275bb9da51cbb3c03fec695460db371f8bbc992de9ba2153cba43\"\n  },\n  \"chaves_painel\": 141,\n  \"mesorregioes\": 5,\n  \"match_imea\": 140,\n  \"divergencias_nome_painel\": 1,\n  \"referencias_total\": 476,\n  \"referencias_com_mesorregiao\": 424,\n  \"custos_atribuidos\": 0,\n  \"limites_territoriais_nao_validados\": true,\n  \"outputs\": {\n    \"cobertura_mesorregiao_atividade_ano.csv\": \"e6d2f93781e35c24edd4dfae48239f5191d68ea6e6d425098a0df4b1c861de83\",\n    \"identificacao_regional.csv\": \"1dcc6e27322130038c0f14b0dca8d820948fe35a8528d2a9f466644479c807df\",\n    \"referencias_identificadas.csv\": \"5b69c29a368dc8de834aefc39bac61728d447a0dec4f057ef0a627c93f26f570\",\n    \"referencias_sem_mesorregiao.csv\": \"6fc5c77e71c2b57feb79de1993774e955665ea5e3a6b41d2973e09d1e4eae7a9\",\n    \"resumo_cobertura.csv\": \"fda817fd2c9f04ee4dd0f64f7ad2fcd9d17b4e72a8410a303f4b02bf71c3a362\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "testar_integracao_final.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"result\": \"PASS\",\n  \"checks\": [\n    \"pecuaria: duas reproduções isoladas idênticas\",\n    \"regionalizacao: duas reproduções isoladas idênticas\",\n    \"588 valores/células reconciliados; 120 ausências, nenhuma conversão; 752 notas\",\n    \"141 chaves, cinco mesorregiões, cobertura reconciliada; conflitos não resolvidos por inferência\",\n    \"110 arquivos anteriores preservados por hash\"\n  ],\n  \"agricultura\": \"resultados anteriores preservados; nenhuma reestimação regional\",\n  \"raw_access\": \"apenas pai; integração CSV reproduzida localmente\"\n}\n",
+      "stderr": ""
+    }
+  ]
+}

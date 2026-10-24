@@ -1,0 +1,72 @@
+{
+  "execucoes_isoladas": [
+    {
+      "hashes_iguais": true,
+      "numero_csv": 16,
+      "resumo": {
+        "series_estritas_auditoria_anterior": 87,
+        "series": 188,
+        "agregados_ha": 1880,
+        "series_estritas": 85,
+        "agregados_estritos": 850,
+        "componentes": 7027,
+        "componentes_elegiveis": 2938,
+        "blocos_componentes": 1128,
+        "blocos_aprovados": 1124,
+        "identidades_aprovadas": 752,
+        "identidades": 752,
+        "celulas_fontes": 45360,
+        "cpi_base_media2024": 313.6888333333333,
+        "usd2024_preenchidos": 1790,
+        "usd2024_estritos": 850,
+        "imea_linhas": 585,
+        "imea_candidatos_descritivos": 195,
+        "sem_regressoes": true
+      }
+    },
+    {
+      "hashes_iguais": true,
+      "numero_csv": 16,
+      "resumo": {
+        "series_estritas_auditoria_anterior": 87,
+        "series": 188,
+        "agregados_ha": 1880,
+        "series_estritas": 85,
+        "agregados_estritos": 850,
+        "componentes": 7027,
+        "componentes_elegiveis": 2938,
+        "blocos_componentes": 1128,
+        "blocos_aprovados": 1124,
+        "identidades_aprovadas": 752,
+        "identidades": 752,
+        "celulas_fontes": 45360,
+        "cpi_base_media2024": 313.6888333333333,
+        "usd2024_preenchidos": 1790,
+        "usd2024_estritos": 850,
+        "imea_linhas": 585,
+        "imea_candidatos_descritivos": 195,
+        "sem_regressoes": true
+      }
+    }
+  ],
+  "hashes_csv": {
+    "auditoria_componentes.csv": "8a876c5d82489a57ca3600569b3f50b30f6e9883bdf4774f6fda799d9adef3ce",
+    "auditoria_identidades.csv": "19c4b06b365ba384fe3979072cbdb70a86e577b1ec2840f4fcfcb4e8aea9dd00",
+    "auditoria_imea.csv": "b0ef14117cb4980a501dc8c9cf8b7a161bdc99f69001b4d1c9a68d7b5c263997",
+    "candidatos_incorporacao.csv": "9943ac7027864bf5e3033cc1b0459638fab171e2c9cb7326e552f233e3f469a0",
+    "cobertura.csv": "9e5129571aeb191015d8a0188f3c9eb6979289567566bfab74b224f90474774a",
+    "cobertura_imea.csv": "f13ebc74c5843a62a3b58319662a6a42c2893be36501685930375b660b45b011",
+    "componentes_nominais.csv": "b835544e03485986ee2491d03348eed9f58526cbeecee788c49266f6d7eebea9",
+    "custos_imea_candidatos_descritivos.csv": "151c45a04e4cf538a2b2041f5098f1e005b551d21cfb796de0fe51b0bd51bfd2",
+    "custos_imea_quarentena.csv": "40357d01c21bd8f7b54bce8ed451b1a73c87b4b1d713530bfbf40a545fe83d1a",
+    "custos_imea_referencia.csv": "40357d01c21bd8f7b54bce8ed451b1a73c87b4b1d713530bfbf40a545fe83d1a",
+    "custos_quarentena.csv": "154ea5608acfcf33a495f8ba05a7c95fc33609be7be19b556ef6d140e42e24b1",
+    "custos_referencia_completos.csv": "3d9392bf1b1a6c06547ae5f194402a9e3496151b327af42b4979c3f7a48846f7",
+    "custos_referencia_estritos.csv": "5e5b4d066e81deed1a59abda42f122dd5da270b51567ea744cf7b361b8f2156a",
+    "dicionario_variaveis.csv": "342afac91c93b6915ca0258535f8338368e19a28754cecb0b89a1a0dbc1016af",
+    "qualidade_variaveis.csv": "168f72d09d2fc846039911de2554e1176affa0c44bd5e1dc96ae555b81353e3c",
+    "series_referencia.csv": "af2df10bfce42fcfcef1f9c1227ad8941e6e48208ee70f48e0631e8023c5b4b8"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "sem_coleta_rede": true
+}

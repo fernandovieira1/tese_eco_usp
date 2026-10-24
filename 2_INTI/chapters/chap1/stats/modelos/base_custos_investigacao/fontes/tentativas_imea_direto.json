@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://publicacoes.imea.com.br/relatorio-de-mercado/cup-soja/8",
+    "erro": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://publicacoes.imea.com.br/relatorio-de-mercado/cup-milho/6",
+    "erro": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

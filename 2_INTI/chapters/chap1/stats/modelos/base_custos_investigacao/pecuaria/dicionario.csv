@@ -1,0 +1,22 @@
+coluna,grupo,descricao
+0_id_referencia,0,sheet_id + coluna; unidade da contagem; COE/COT/CT não independentes
+0_sistema,0,Campo literal de origem ou indicador explícito; regras em integrar.py
+0_aba,0,Campo literal de origem ou indicador explícito; regras em integrar.py
+0_geografia_literal,0,Campo literal de origem ou indicador explícito; regras em integrar.py
+0_escala,0,Campo literal de origem ou indicador explícito; regras em integrar.py
+0_ano_rotulo,0,Campo literal de origem ou indicador explícito; regras em integrar.py
+0_trimestre_rotulo,0,Campo literal de origem ou indicador explícito; regras em integrar.py
+0_periodo,0,Campo literal de origem ou indicador explícito; regras em integrar.py
+0_conceito,0,Campo literal de origem ou indicador explícito; regras em integrar.py
+0_unidade,0,Campo literal de origem ou indicador explícito; regras em integrar.py
+2_custo_nominal,2,"String decimal original; vazio é ausência, não zero; R$/@ vendida"
+2_produtividade_modal,2,String original @vendida/ha; nunca usada para conversão
+0_unidade_produtividade,0,Campo literal de origem ou indicador explícito; regras em integrar.py
+2_custo_usd2024,2,Vazio: conversão não validada
+4_celula,4,Campo literal de origem ou indicador explícito; regras em integrar.py
+4_tipo_origem,4,Campo literal de origem ou indicador explícito; regras em integrar.py
+4_referencia_descritiva_2001_2024,4,"Valor presente, período explícito, geografia sem conflito e ano até2024; não é elegibilidade preditiva"
+4_motivos,4,Campo literal de origem ou indicador explícito; regras em integrar.py
+4_uso_preditivo,4,Campo literal de origem ou indicador explícito; regras em integrar.py
+4_conversion_motivo,4,Campo literal de origem ou indicador explícito; regras em integrar.py
+4_custo_municipal_observado,4,Campo literal de origem ou indicador explícito; regras em integrar.py

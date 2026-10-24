@@ -1,0 +1,10 @@
+{
+  "fonte": "Banco Central do Brasil, SGS3698",
+  "conceito_informado_parent": "Taxa de câmbio mensal média de venda, BRL por USD",
+  "endpoint": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.3698/dados?formato=json&dataInicial=01/01/1997&dataFinal=30/09/2026",
+  "coleta": "2026-10-24; ambiente pai, HTTP200; transferido por mensagem delegada e hashes conferidos",
+  "cobertura": "1997-01 a2026-09,357meses",
+  "metadados_complementares": "Concluídos:identidade confirmada no gráfico SGS;ver PROVENIENCIA_OFICIAL.md",
+  "nota": "Requisições locais anteriores403 preservadas; não foram a fonte dos valores usados.",
+  "coleta_utc": "2026-10-24T14:41:52.113660+00:00"
+}

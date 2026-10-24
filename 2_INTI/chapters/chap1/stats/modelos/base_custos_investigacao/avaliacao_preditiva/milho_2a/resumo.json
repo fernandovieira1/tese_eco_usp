@@ -1,0 +1,45 @@
+{
+  "cultura": "milho_2a",
+  "conceito": "H operacional D+G",
+  "unidade": "USD2024/ha",
+  "n_estrito": 44,
+  "n_modelavel": 44,
+  "perdas": 0,
+  "pracas": [
+    "Campo Novo do Parecis",
+    "Campo Verde",
+    "Primavera do Leste",
+    "Sorriso"
+  ],
+  "anos_data_base": [
+    2001,
+    2002,
+    2003,
+    2005,
+    2006,
+    2007,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "n_anos": 21,
+  "suporte_teste": true,
+  "gate_municipal": false,
+  "modelos_aprovados_dois_eixos": [
+    "M1_ols",
+    "M2_ridge"
+  ],
+  "decisao": "gate_exploratorio_passou_sem_validacao_municipal"
+}

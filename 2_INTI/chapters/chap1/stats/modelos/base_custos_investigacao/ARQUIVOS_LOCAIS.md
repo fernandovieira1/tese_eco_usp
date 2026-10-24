@@ -1,0 +1,62 @@
+# Arquivos locais da base paralela
+
+Todos os arquivos desta pasta são novos neste lote local, sem commit/push. Lista completa de entregáveis e fontes (excluídos somente caches de execução):
+
+- `ESTRATEGIA.md`
+- `EXCLUSOES_CONAB_E_PILOTO.md`
+- `INVENTARIO_FONTES.md`
+- `README.md`
+- `ambiente.json`
+- `auditoria_cambio_pre_integracao.json`
+- `auditoria_componentes.csv`
+- `auditoria_identidades.csv`
+- `auditoria_imea.csv`
+- `candidatos_incorporacao.csv`
+- `cobertura.csv`
+- `cobertura_imea.csv`
+- `componentes_nominais.csv`
+- `construcao_auditoria.ipynb`
+- `construir.py`
+- `construir_imea.py`
+- `custos_imea_candidatos_descritivos.csv`
+- `custos_imea_quarentena.csv`
+- `custos_imea_referencia.csv`
+- `custos_quarentena.csv`
+- `custos_referencia_completos.csv`
+- `custos_referencia_estritos.csv`
+- `dicionario_variaveis.csv`
+- `fontes/CONAB_DICIONARIO.md`
+- `fontes/CONAB_README.md`
+- `fontes/FONTES_DRIVE.json`
+- `fontes/PROVENIENCIA_OFICIAL.md`
+- `fontes/bcb_sgs3698_1997_2026.json`
+- `fontes/bcb_sgs3698_monthly_brl_per_usd_1997_2026.csv`
+- `fontes/bls_fred_CPIAUCNS_1960_2024.csv`
+- `fontes/conab_celulas/h1__costs_conab__milho_1a_safra_serie_historica_1997-2025__MT_celulas.csv`
+- `fontes/conab_celulas/h1__costs_conab__milho_2a_safra_serie_historica_2005-2025__MT_celulas.csv`
+- `fontes/conab_celulas/h1__costs_conab__serie-historica-custos-soja-1997-a-2026__MT_celulas.csv`
+- `fontes/custos_agregados_longos.csv`
+- `fontes/custos_ha_estritos.csv`
+- `fontes/imea/imea_regional_audit.json`
+- `fontes/imea/imea_regional_key_costs.csv`
+- `fontes/imea/imea_regional_source_notes.csv`
+- `fontes/manifesto_entradas.json`
+- `fontes/metadados_series.csv`
+- `fontes/proveniencia_bcb3698.json`
+- `fontes/qualidade_por_serie.csv`
+- `fontes/tentativas_acesso.json`
+- `fontes/tentativas_imea_direto.json`
+- `fontes/validacoes.csv`
+- `fontes/validacoes_participacoes.csv`
+- `manifesto.json`
+- `qualidade_variaveis.csv`
+- `relatorio_qualidade.md`
+- `resumo.json`
+- `resumo_imea.json`
+- `series_referencia.csv`
+- `test_base_custos.py`
+- `validacao_reproducao.json`
+- `verificar_reproducao.py`
+- `ARQUIVOS_LOCAIS.md`
+
+Fora da pasta, somente o registro de auditoria autorizado: `2_INTI/audit/base_custos_investigacao_20261024.md`.

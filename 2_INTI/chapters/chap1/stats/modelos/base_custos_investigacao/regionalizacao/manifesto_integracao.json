@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "/workspace/tese_eco_usp/2_INTI/chapters/chap1/stats/modelos/base_custos_investigacao/regionalizacao/fontes/mt_regioes_141_compacto.csv": "9c125980a292bba5e8d899155b048a4521250c15d40f564d1f8806912d37c1b1",
+    "/workspace/tese_eco_usp/2_INTI/chapters/chap1/stats/modelos/base3/painel_h1_base3_v4.csv": "a98dbe320efc784543cf43372a5903de32434be5871304178f2f9d49daaf1c3b",
+    "/workspace/tese_eco_usp/2_INTI/chapters/chap1/stats/modelos/base_custos_investigacao/avaliacao_preditiva/soja/amostra.csv": "ea53e42f20b19096c6830ac4734500f218a137570704dfb671ec3671518ddae1",
+    "/workspace/tese_eco_usp/2_INTI/chapters/chap1/stats/modelos/base_custos_investigacao/avaliacao_preditiva/milho_1a/amostra.csv": "4a74f06f6127443d5b122d41d03beb0571938e75f4cb3630fdf76ffcb316e8e6",
+    "/workspace/tese_eco_usp/2_INTI/chapters/chap1/stats/modelos/base_custos_investigacao/avaliacao_preditiva/milho_2a/amostra.csv": "a0073c3f7a0c3ad8f4a3bb004887d1447582ec2a7edad8b7ffeff189b400f176",
+    "/workspace/tese_eco_usp/2_INTI/chapters/chap1/stats/modelos/base_custos_investigacao/fontes/imea/imea_regional_key_costs.csv": "808695e768d80ac8bcfa14ea66c880bebb29883b7b8ae59c04e3549dad05b6b9",
+    "/workspace/tese_eco_usp/2_INTI/chapters/chap1/stats/modelos/base_custos_investigacao/pecuaria/registros_periodo.csv": "5030067d365275bb9da51cbb3c03fec695460db371f8bbc992de9ba2153cba43"
+  },
+  "chaves_painel": 141,
+  "mesorregioes": 5,
+  "match_imea": 140,
+  "divergencias_nome_painel": 1,
+  "referencias_total": 476,
+  "referencias_com_mesorregiao": 424,
+  "custos_atribuidos": 0,
+  "limites_territoriais_nao_validados": true,
+  "outputs": {
+    "cobertura_mesorregiao_atividade_ano.csv": "e6d2f93781e35c24edd4dfae48239f5191d68ea6e6d425098a0df4b1c861de83",
+    "identificacao_regional.csv": "1dcc6e27322130038c0f14b0dca8d820948fe35a8528d2a9f466644479c807df",
+    "referencias_identificadas.csv": "5b69c29a368dc8de834aefc39bac61728d447a0dec4f057ef0a627c93f26f570",
+    "referencias_sem_mesorregiao.csv": "6fc5c77e71c2b57feb79de1993774e955665ea5e3a6b41d2973e09d1e4eae7a9"
+  }
+}

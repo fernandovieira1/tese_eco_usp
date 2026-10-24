@@ -1,0 +1,773 @@
+sheet_id,cell,source_value,xlsx_cell_type
+s01,A2,CUSTO DE PRODUÇÃO,s
+s01,A3,Bovinocultura - Cria,s
+s01,A4,MATO GROSSO,s
+s01,A6,Ano,s
+s01,B6,2020,n
+s01,C6,2021,n
+s01,D6,2022,n
+s01,E6,2023,n
+s01,F6,2024,n
+s01,G6,2025,n
+s01,H6,2026,n
+s01,I6,2026,n
+s01,J6,3ºtri.26/2ºtri.26,s
+s01,A7,Trimestre,s
+s01,B7,Consolidado,s
+s01,C7,Consolidado,s
+s01,D7,Consolidado,s
+s01,E7,Consolidado,s
+s01,F7,Consolidaddo,s
+s01,G7,Consolidaddo,s
+s01,H7,2ºtri.,s
+s01,I7,3ºtri.,s
+s01,J7,Trimeste,s
+s01,A71,COE (A + B + ... + G),s
+s01,A80,COT (COE + I + J),s
+s01,A89,CT (COT + K),s
+s01,A91,Produtividade Modal (@vendida/ha),s
+s01,A92,Unidade da tabela: R$/@ vendida.,s
+s01,A93,Fonte: Imea.,s
+s01,A95,"Foram feitos ajustes técnicos do pacote tecnológico praticado na atividade no 1º, 2º e 3º Tri/2026",s
+s02,A2,CUSTO DE PRODUÇÃO,s
+s02,A3,Bovinocultura - Cria ,s
+s02,A4,Água Boa,s
+s02,A6,Ano,s
+s02,B6,2020,n
+s02,C6,2021,n
+s02,D6,2022,n
+s02,E6,2023,n
+s02,F6,2024,n
+s02,G6,2025,n
+s02,H6,2026,n
+s02,I6,2026,n
+s02,J6,3ºtri.26/2ºtri.26,s
+s02,A7,Trimestre,s
+s02,B7,Consolidado,s
+s02,C7,Consolidado,s
+s02,D7,Consolidado,s
+s02,E7,Consolidado,s
+s02,F7,Consolidaddo,s
+s02,G7,Consolidaddo,s
+s02,H7,2ºtri.,s
+s02,I7,3ºtri.,s
+s02,J7,Trimeste,s
+s02,A71,COE (A + B + ... + G),s
+s02,A80,COT (COE + I + J),s
+s02,A89,CT (COT + K),s
+s02,A91,Produtividade Modal (@vendida/ha),s
+s02,A92,Unidade da tabela: R$/@ vendida.,s
+s02,A93,Fonte: Imea.,s
+s02,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s02,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s03,A2,CUSTO DE PRODUÇÃO,s
+s03,A3,Bovinocultura - Cria ,s
+s03,A4,Alta Floresta,s
+s03,A6,Ano,s
+s03,B6,2020,n
+s03,C6,2021,n
+s03,D6,2022,n
+s03,E6,2023,n
+s03,F6,2024,n
+s03,G6,2025,n
+s03,H6,2026,n
+s03,I6,2026,n
+s03,J6,3ºtri.26/2ºtri.26,s
+s03,A7,Trimestre,s
+s03,B7,Consolidado,s
+s03,C7,Consolidado,s
+s03,D7,Consolidado,s
+s03,E7,Consolidado,s
+s03,F7,Consolidaddo,s
+s03,G7,Consolidaddo,s
+s03,H7,2ºtri.,s
+s03,I7,3ºtri.,s
+s03,J7,Trimeste,s
+s03,A71,COE (A + B + ... + G),s
+s03,A80,COT (COE + I + J),s
+s03,A89,CT (COT + K),s
+s03,A91,Produtividade Modal (@vendida/ha),s
+s03,A92,Unidade da tabela: R$/@ vendida.,s
+s03,A93,Fonte: Imea.,s
+s03,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s03,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s04,A2,CUSTO DE PRODUÇÃO,s
+s04,A3,Bovinocultura - Cria ,s
+s04,A4,Aripuanã,s
+s04,A6,Ano,s
+s04,B6,2020,n
+s04,C6,2021,n
+s04,D6,2022,n
+s04,E6,2023,n
+s04,F6,2024,n
+s04,G6,2025,n
+s04,H6,2026,n
+s04,I6,2026,n
+s04,J6,3ºtri.26/2ºtri.26,s
+s04,A7,Trimestre,s
+s04,B7,Consolidado,s
+s04,C7,Consolidado,s
+s04,D7,Consolidado,s
+s04,E7,Consolidado,s
+s04,F7,Consolidaddo,s
+s04,G7,Consolidaddo,s
+s04,H7,2ºtri.,s
+s04,I7,3ºtri.,s
+s04,J7,Trimeste,s
+s04,A71,COE (A + B + ... + G),s
+s04,A80,COT (COE + I + J),s
+s04,A89,CT (COT + K),s
+s04,A91,Produtividade Modal (@vendida/ha),s
+s04,A92,Unidade da tabela: R$/@ vendida.,s
+s04,A93,Fonte: Imea.,s
+s04,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s04,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s05,A2,CUSTO DE PRODUÇÃO,s
+s05,A3,Bovinocultura - Cria ,s
+s05,A4,Barra do Garças,s
+s05,A6,Ano,s
+s05,B6,2020,n
+s05,C6,2021,n
+s05,D6,2022,n
+s05,E6,2023,n
+s05,F6,2024,n
+s05,G6,2025,n
+s05,H6,2026,n
+s05,I6,2026,n
+s05,J6,2ºtri.26/1ºtri.26,s
+s05,A7,Trimestre,s
+s05,B7,Consolidado,s
+s05,C7,Consolidado,s
+s05,D7,Consolidado,s
+s05,E7,Consolidado,s
+s05,F7,Consolidaddo,s
+s05,G7,Consolidaddo,s
+s05,H7,1ºtri.,s
+s05,I7,2ºtri.,s
+s05,J7,Trimeste,s
+s05,A71,COE (A + B + ... + G),s
+s05,A80,COT (COE + I + J),s
+s05,A89,CT (COT + K),s
+s05,A91,Produtividade Modal (@vendida/ha),s
+s05,A92,Unidade da tabela: R$/@ vendida.,s
+s05,A93,Fonte: Imea.,s
+s05,A94,Nota: A partir de 2026 esse município não contempla mais a rota de painéis do CPA,s
+s05,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s06,A2,CUSTO DE PRODUÇÃO,s
+s06,A3,Bovinocultura - Cria ,s
+s06,A4,Cáceres,s
+s06,A6,Ano,s
+s06,B6,2020,n
+s06,C6,2021,n
+s06,D6,2022,n
+s06,E6,2023,n
+s06,F6,2024,n
+s06,G6,2025,n
+s06,H6,2026,n
+s06,I6,2026,n
+s06,J6,3ºtri.26/2ºtri.26,s
+s06,A7,Trimestre,s
+s06,B7,Consolidado,s
+s06,C7,Consolidado,s
+s06,D7,Consolidado,s
+s06,E7,Consolidado,s
+s06,F7,Consolidaddo,s
+s06,G7,Consolidaddo,s
+s06,H7,2ºtri.,s
+s06,I7,3ºtri.,s
+s06,J7,Trimeste,s
+s06,A71,COE (A + B + ... + G),s
+s06,A80,COT (COE + I + J),s
+s06,A89,CT (COT + K),s
+s06,A91,Produtividade Modal (@vendida/ha),s
+s06,A92,Unidade da tabela: R$/@ vendida.,s
+s06,A93,Fonte: Imea.,s
+s06,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s06,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s07,A2,CUSTO DE PRODUÇÃO,s
+s07,A3,Bovinocultura - Cria ,s
+s07,A4,Juara,s
+s07,A6,Ano,s
+s07,B6,2020,n
+s07,C6,2021,n
+s07,D6,2022,n
+s07,E6,2023,n
+s07,F6,2024,n
+s07,G6,2025,n
+s07,H6,2026,n
+s07,I6,2026,n
+s07,J6,3ºtri.26/2ºtri.26,s
+s07,A7,Trimestre,s
+s07,B7,Consolidado,s
+s07,C7,Consolidado,s
+s07,D7,Consolidado,s
+s07,E7,Consolidado,s
+s07,F7,Consolidaddo,s
+s07,G7,Consolidaddo,s
+s07,H7,2ºtri.,s
+s07,I7,3ºtri.,s
+s07,J7,Trimeste,s
+s07,A71,COE (A + B + ... + G),s
+s07,A80,COT (COE + I + J),s
+s07,A89,CT (COT + K),s
+s07,A91,Produtividade Modal (@vendida/ha),s
+s07,A92,Unidade da tabela: R$/@ vendida.,s
+s07,A93,Fonte: Imea.,s
+s07,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s07,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s08,A2,CUSTO DE PRODUÇÃO,s
+s08,A3,Bovinocultura - Cria ,s
+s08,A4,Nova Xavantina,s
+s08,A6,Ano,s
+s08,B6,2020,n
+s08,C6,2021,n
+s08,D6,2022,n
+s08,E6,2023,n
+s08,F6,2024,n
+s08,G6,2025,n
+s08,H6,2026,n
+s08,I6,2026,n
+s08,J6,3ºtri.26/2ºtri.26,s
+s08,A7,Trimestre,s
+s08,B7,Consolidado,s
+s08,C7,Consolidado,s
+s08,D7,Consolidado,s
+s08,E7,Consolidado,s
+s08,F7,Consolidaddo,s
+s08,G7,Consolidaddo,s
+s08,H7,2ºtri.,s
+s08,I7,3ºtri.,s
+s08,J7,Trimeste,s
+s08,A71,COE (A + B + ... + G),s
+s08,A80,COT (COE + I + J),s
+s08,A89,CT (COT + K),s
+s08,A91,Produtividade Modal (@vendida/ha),s
+s08,A92,Unidade da tabela: R$/@ vendida.,s
+s08,A93,Fonte: Imea.,s
+s08,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s08,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s09,A2,CUSTO DE PRODUÇÃO,s
+s09,A3,Bovinocultura - Cria ,s
+s09,A4,Paranaíta,s
+s09,A6,Ano,s
+s09,B6,2020,n
+s09,C6,2021,n
+s09,D6,2022,n
+s09,E6,2023,n
+s09,F6,2024,n
+s09,G6,2025,n
+s09,H6,2026,n
+s09,I6,2026,n
+s09,J6,3ºtri.26/2ºtri.26,s
+s09,A7,Trimestre,s
+s09,B7,Consolidado,s
+s09,C7,Consolidado,s
+s09,D7,Consolidado,s
+s09,E7,Consolidado,s
+s09,F7,Consolidaddo,s
+s09,G7,Consolidaddo,s
+s09,H7,2ºtri.,s
+s09,I7,3ºtri.,s
+s09,J7,Trimeste,s
+s09,A71,COE (A + B + ... + G),s
+s09,A80,COT (COE + I + J),s
+s09,A89,CT (COT + K),s
+s09,A91,Produtividade Modal (@vendida/ha),s
+s09,A92,Unidade da tabela: R$/@ vendida.,s
+s09,A93,Fonte: Imea.,s
+s09,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s09,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s10,A2,CUSTO DE PRODUÇÃO,s
+s10,A3,Bovinocultura - Cria ,s
+s10,A4,Paranatinga,s
+s10,A6,Ano,s
+s10,B6,2020,n
+s10,C6,2021,n
+s10,D6,2022,n
+s10,E6,2023,n
+s10,F6,2024,n
+s10,G6,2025,n
+s10,H6,2026,n
+s10,I6,2026,n
+s10,J6,2ºtri.26/1ºtri.26,s
+s10,A7,Trimestre,s
+s10,B7,Consolidado,s
+s10,C7,Consolidado,s
+s10,D7,Consolidado,s
+s10,E7,Consolidado,s
+s10,F7,Consolidaddo,s
+s10,G7,Consolidaddo,s
+s10,H7,1ºtri.,s
+s10,I7,2ºtri.,s
+s10,J7,Trimeste,s
+s10,A71,COE (A + B + ... + G),s
+s10,A80,COT (COE + I + J),s
+s10,A89,CT (COT + K),s
+s10,A91,Produtividade Modal (@vendida/ha),s
+s10,A92,Unidade da tabela: R$/@ vendida.,s
+s10,A93,Fonte: Imea.,s
+s10,A94,Nota: A partir de 2026 esse município não contempla mais a rota de painéis do CPA,s
+s10,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s11,A2,CUSTO DE PRODUÇÃO,s
+s11,A3,Bovinocultura - Cria ,s
+s11,A4,Pedra Preta,s
+s11,A6,Ano,s
+s11,B6,2020,n
+s11,C6,2021,n
+s11,D6,2022,n
+s11,E6,2023,n
+s11,F6,2024,n
+s11,G6,2025,n
+s11,H6,2026,n
+s11,I6,2026,n
+s11,J6,2ºtri.26/1ºtri.26,s
+s11,A7,Trimestre,s
+s11,B7,Consolidado,s
+s11,C7,Consolidado,s
+s11,D7,Consolidado,s
+s11,E7,Consolidado,s
+s11,F7,Consolidaddo,s
+s11,G7,Consolidaddo,s
+s11,H7,1ºtri.,s
+s11,I7,2ºtri.,s
+s11,J7,Trimeste,s
+s11,A71,COE (A + B + ... + G),s
+s11,A80,COT (COE + I + J),s
+s11,A89,CT (COT + K),s
+s11,A91,Produtividade Modal (@vendida/ha),s
+s11,A92,Unidade da tabela: R$/@ vendida.,s
+s11,A93,Fonte: Imea.,s
+s11,A94,Nota: A partir de 2026 esse município não contempla mais a rota de painéis do CPA,s
+s11,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s12,A2,CUSTO DE PRODUÇÃO,s
+s12,A3,Bovinocultura - Cria ,s
+s12,A4,Poconé,s
+s12,A6,Ano,s
+s12,B6,2020,n
+s12,C6,2021,n
+s12,D6,2022,n
+s12,E6,2023,n
+s12,F6,2024,n
+s12,G6,2025,n
+s12,H6,2026,n
+s12,I6,2026,n
+s12,J6,3ºtri.26/2ºtri.26,s
+s12,A7,Trimestre,s
+s12,B7,Consolidado,s
+s12,C7,Consolidado,s
+s12,D7,Consolidado,s
+s12,E7,Consolidado,s
+s12,F7,Consolidaddo,s
+s12,G7,Consolidaddo,s
+s12,H7,2ºtri.,s
+s12,I7,3ºtri.,s
+s12,J7,Trimeste,s
+s12,A71,COE (A + B + ... + G),s
+s12,A80,COT (COE + I + J),s
+s12,A89,CT (COT + K),s
+s12,A91,Produtividade Modal (@vendida/ha),s
+s12,A92,Unidade da tabela: R$/@ vendida.,s
+s12,A93,Fonte: Imea.,s
+s12,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s12,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s13,A2,CUSTO DE PRODUÇÃO,s
+s13,A3,Bovinocultura - Cria ,s
+s13,A4,Vila Rica,s
+s13,A6,Ano,s
+s13,B6,2020,n
+s13,C6,2021,n
+s13,D6,2022,n
+s13,E6,2023,n
+s13,F6,2024,n
+s13,G6,2025,n
+s13,H6,2026,n
+s13,I6,2026,n
+s13,J6,3ºtri.26/2ºtri.26,s
+s13,A7,Trimestre,s
+s13,B7,Consolidado,s
+s13,C7,Consolidado,s
+s13,D7,Consolidado,s
+s13,E7,Consolidado,s
+s13,F7,Consolidaddo,s
+s13,G7,Consolidaddo,s
+s13,H7,2ºtri.,s
+s13,I7,3ºtri.,s
+s13,J7,Trimeste,s
+s13,A71,COE (A + B + ... + G),s
+s13,A80,COT (COE + I + J),s
+s13,A89,CT (COT + K),s
+s13,A91,Produtividade Modal (@vendida/ha),s
+s13,A92,Unidade da tabela: R$/@ vendida.,s
+s13,A93,Fonte: Imea.,s
+s13,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s13,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s14,A2,CUSTO DE PRODUÇÃO,s
+s14,A3,Bovinocultura - Cria ,s
+s14,A4,MATO GROSSO,s
+s14,A6,Ano,s
+s14,B6,2019,n
+s14,C6,2020,n
+s14,D6,2021,n
+s14,E6,2022,n
+s14,F6,2023,n
+s14,G6,2023,n
+s14,H6,2023,n
+s14,I6,3ºtri.23/4ºtri.23,s
+s14,A7,Trimestre,s
+s14,B7,Consolidado,s
+s14,C7,Consolidado,s
+s14,D7,Consolidado,s
+s14,E7,Consolidado,s
+s14,F7,Consolidado,s
+s14,G7,3ºtri.,s
+s14,H7,4ºtri.,s
+s14,I7,Trimeste,s
+s14,A71,COE (A + B + ... + G),s
+s14,A80,COT (COE + I + J),s
+s14,A89,CT (COT + K),s
+s14,A91,Produtividade Modal (@vendida/ha),s
+s14,A92,Unidade da tabela: R$/@ vendida.,s
+s14,A93,Fonte: Imea.,s
+s15,A2,CUSTO DE PRODUÇÃO,s
+s15,A3,Bovinocultura - Cria ,s
+s15,A4,Santo Antônio do Leste,s
+s15,A6,Ano,s
+s15,B6,2021,n
+s15,C6,2022,n
+s15,D6,2023,n
+s15,E6,2024,n
+s15,F6,2025,n
+s15,G6,2026,n
+s15,H6,2026,n
+s15,I6,3ºtri.26/2ºtri.26,s
+s15,J6,3ºtri.26/2ºtri.26,s
+s15,A7,Trimestre,s
+s15,G7,2ºtri.,s
+s15,H7,3ºtri.,s
+s15,I7,Trimeste,s
+s15,A71,COE (A + B + ... + G),s
+s15,A80,COT (COE + I + J),s
+s15,A89,CT (COT + K),s
+s15,A91,Produtividade Modal (@vendida/ha),s
+s15,A92,Unidade da tabela: R$/@ vendida.,s
+s15,A93,Fonte: Imea.,s
+s15,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s15,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s16,A2,CUSTO DE PRODUÇÃO,s
+s16,A3,Bovinocultura - Cria ,s
+s16,A4,Poxoréu,s
+s16,A6,Ano,s
+s16,B6,2021,n
+s16,C6,2022,n
+s16,D6,2023,n
+s16,E6,2024,n
+s16,F6,2025,n
+s16,G6,2026,n
+s16,H6,2026,n
+s16,I6,3ºtri.26/2ºtri.26,s
+s16,J6,3ºtri.26/2ºtri.26,s
+s16,A7,Trimestre,s
+s16,G7,2ºtri.,s
+s16,H7,3ºtri.,s
+s16,I7,Trimeste,s
+s16,A71,COE (A + B + ... + G),s
+s16,A80,COT (COE + I + J),s
+s16,A89,CT (COT + K),s
+s16,A91,Produtividade Modal (@vendida/ha),s
+s16,A92,Unidade da tabela: R$/@ vendida.,s
+s16,A93,Fonte: Imea.,s
+s16,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s16,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s17,A2,CUSTO DE PRODUÇÃO,s
+s17,A3,Bovinocultura - Cria ,s
+s17,A4,CUSTO DE PRODUÇÃO,s
+s17,A6,Ano,s
+s17,B6,2021,n
+s17,C6,2022,n
+s17,D6,2023,n
+s17,E6,2024,n
+s17,F6,2025,n
+s17,G6,2026,n
+s17,H6,2026,n
+s17,I6,3ºtri.26/2ºtri.26,s
+s17,J6,3ºtri.26/2ºtri.26,s
+s17,A7,Trimestre,s
+s17,G7,2ºtri.,s
+s17,H7,3ºtri.,s
+s17,I7,Trimeste,s
+s17,A71,COE (A + B + ... + G),s
+s17,A80,COT (COE + I + J),s
+s17,A89,CT (COT + K),s
+s17,A91,Produtividade Modal (@vendida/ha),s
+s17,A92,Unidade da tabela: R$/@ vendida.,s
+s17,A93,Fonte: Imea.,s
+s17,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s17,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s18,A2,CUSTO DE PRODUÇÃO,s
+s18,A3,Bovinocultura - Recria e Engorda,s
+s18,A4,MATO GROSSO,s
+s18,A6,Ano,s
+s18,B6,2020,n
+s18,C6,2021,n
+s18,D6,2022,n
+s18,E6,2023,n
+s18,F6,2024,n
+s18,G6,2025,n
+s18,H6,2026,n
+s18,I6,2026,n
+s18,J6,3ºtri.26/2ºtri.26,s
+s18,A7,Trimestre,s
+s18,B7,Consolidado,str
+s18,C7,Consolidado,s
+s18,D7,Consolidado,s
+s18,E7,Consolidado,s
+s18,F7,Consolidaddo,s
+s18,G7,Consolidaddo,s
+s18,H7,2ºtri.,s
+s18,I7,3ºtri.,s
+s18,J7,Trimeste,s
+s18,A71,COE (A + B + ... + G),s
+s18,A80,COT (COE + I + J),s
+s18,A89,CT (COT + K),s
+s18,A91,Produtividade Modal (@vendida/ha),s
+s18,A92,Unidade da tabela: R$/@ vendida.,s
+s18,A93,Fonte: Imea.,s
+s18,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s18,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s19,A2,CUSTO DE PRODUÇÃO,s
+s19,A3,Bovinocultura - Recria e Engorda,s
+s19,A4,Araputanga,s
+s19,A6,Ano,s
+s19,B6,2020,n
+s19,C6,2021,n
+s19,D6,2022,n
+s19,E6,2023,n
+s19,F6,2024,n
+s19,G6,2025,n
+s19,H6,2026,n
+s19,I6,2026,n
+s19,J6,3ºtri.26/2ºtri.26,s
+s19,A7,Trimestre,s
+s19,B7,Consolidado,str
+s19,C7,Consolidado,s
+s19,D7,Consolidado,s
+s19,E7,Consolidado,s
+s19,F7,Consolidaddo,s
+s19,G7,Consolidaddo,s
+s19,H7,2ºtri.,s
+s19,I7,3ºtri.,s
+s19,J7,Trimeste,s
+s19,A71,COE (A + B + ... + G),s
+s19,A80,COT (COE + I + J),s
+s19,A89,CT (COT + K),s
+s19,A91,Produtividade Modal (@vendida/ha),s
+s19,A92,Unidade da tabela: R$/@ vendida.,s
+s19,A93,Fonte: Imea.,s
+s19,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s19,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s20,A2,CUSTO DE PRODUÇÃO,s
+s20,A3,Bovinocultura - Recria e Engorda,s
+s20,A4,Nova Mutum,s
+s20,A6,Ano,s
+s20,B6,2020,n
+s20,C6,2021,n
+s20,D6,2022,n
+s20,E6,2023,n
+s20,F6,2024,n
+s20,G6,2025,n
+s20,H6,2026,n
+s20,I6,2026,n
+s20,J6,3ºtri.26/2ºtri.26,s
+s20,A7,Trimestre,s
+s20,B7,Consolidado,str
+s20,C7,Consolidado,s
+s20,D7,Consolidado,s
+s20,E7,Consolidado,s
+s20,F7,Consolidaddo,s
+s20,G7,Consolidaddo,s
+s20,H7,2ºtri.,s
+s20,I7,3ºtri.,s
+s20,J7,Trimeste,s
+s20,A71,COE (A + B + ... + G),s
+s20,A80,COT (COE + I + J),s
+s20,A89,CT (COT + K),s
+s20,A91,Produtividade Modal (@vendida/ha),s
+s20,A92,Unidade da tabela: R$/@ vendida.,s
+s20,A93,Fonte: Imea.,s
+s20,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s20,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s21,A2,CUSTO DE PRODUÇÃO,s
+s21,A3,Bovinocultura - Recria e Engorda,s
+s21,A4,Pontes e Lacerda,s
+s21,A6,Ano,s
+s21,B6,2020,n
+s21,C6,2021,n
+s21,D6,2022,n
+s21,E6,2023,n
+s21,F6,2024,n
+s21,G6,2025,n
+s21,H6,2026,n
+s21,I6,2026,n
+s21,J6,3ºtri.26/2ºtri.26,s
+s21,A7,Trimestre,s
+s21,B7,Consolidado,s
+s21,C7,Consolidado,s
+s21,D7,Consolidado,s
+s21,E7,Consolidado,s
+s21,F7,Consolidaddo,s
+s21,G7,Consolidaddo,s
+s21,H7,2ºtri.,s
+s21,I7,3ºtri.,s
+s21,J7,Trimeste,s
+s21,A71,COE (A + B + ... + G),s
+s21,A80,COT (COE + I + J),s
+s21,A89,CT (COT + K),s
+s21,A91,Produtividade Modal (@vendida/ha),s
+s21,A92,Unidade da tabela: R$/@ vendida.,s
+s21,A93,Fonte: Imea.,s
+s21,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s21,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s22,A2,CUSTO DE PRODUÇÃO,s
+s22,A3,Bovinocultura - Recria e Engorda,s
+s22,A4,Rondonópolis,s
+s22,A6,Ano,s
+s22,B6,2020,n
+s22,C6,2021,n
+s22,D6,2022,n
+s22,E6,2023,n
+s22,F6,2024,n
+s22,G6,2025,n
+s22,H6,2026,n
+s22,I6,2026,n
+s22,J6,3ºtri.26/2ºtri.26,s
+s22,A7,Trimestre,s
+s22,B7,Consolidado,str
+s22,C7,Consolidado,s
+s22,D7,Consolidado,s
+s22,E7,Consolidado,s
+s22,F7,Consolidaddo,s
+s22,G7,Consolidaddo,s
+s22,H7,2ºtri.,s
+s22,I7,3ºtri.,s
+s22,J7,Trimeste,s
+s22,A71,COE (A + B + ... + G),s
+s22,A80,COT (COE + I + J),s
+s22,A89,CT (COT + K),s
+s22,A91,Produtividade Modal (@vendida/ha),s
+s22,A92,Unidade da tabela: R$/@ vendida.,s
+s22,A93,Fonte: Imea.,s
+s22,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s22,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s23,A2,CUSTO DE PRODUÇÃO,s
+s23,A3,Bovinocultura - Recria e Engorda,s
+s23,A4,Tangará da Serra,s
+s23,A6,Ano,s
+s23,B6,2020,n
+s23,C6,2021,n
+s23,D6,2022,n
+s23,E6,2023,n
+s23,F6,2024,n
+s23,G6,2025,n
+s23,H6,2026,n
+s23,I6,2026,n
+s23,J6,3ºtri.26/2ºtri.26,s
+s23,A7,Trimestre,s
+s23,B7,Consolidado,str
+s23,C7,Consolidado,s
+s23,D7,Consolidado,s
+s23,E7,Consolidado,s
+s23,F7,Consolidaddo,s
+s23,G7,Consolidaddo,s
+s23,H7,2ºtri.,s
+s23,I7,3ºtri.,s
+s23,J7,Trimeste,s
+s23,A71,COE (A + B + ... + G),s
+s23,A80,COT (COE + I + J),s
+s23,A89,CT (COT + K),s
+s23,A91,Produtividade Modal (@vendida/ha),s
+s23,A92,Unidade da tabela: R$/@ vendida.,s
+s23,A93,Fonte: Imea.,s
+s23,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s23,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s24,A2,CUSTO DE PRODUÇÃO,s
+s24,A3,Bovinocultura - Ciclo Completo,s
+s24,A4,MATO GROSSO,s
+s24,A6,Ano,s
+s24,B6,2020,n
+s24,C6,2021,n
+s24,D6,2022,n
+s24,E6,2023,n
+s24,F6,2024,n
+s24,G6,2025,n
+s24,H6,2026,n
+s24,I6,2026,n
+s24,J6,3ºtri.26/2ºtri.26,s
+s24,A7,Trimestre,s
+s24,B7,Consolidado,str
+s24,C7,Consolidado,s
+s24,D7,Consolidado,s
+s24,E7,Consolidado,s
+s24,F7,Consolidaddo,s
+s24,G7,Consolidaddo,s
+s24,H7,2ºtri.,s
+s24,I7,3ºtri.,s
+s24,J7,Trimeste,s
+s24,A71,COE (A + B + ... + G),s
+s24,A80,COT (COE + I + J),s
+s24,A89,CT (COT + K),s
+s24,A91,Produtividade Modal (@vendida/ha),s
+s24,A92,Unidade da tabela: R$/@ vendida.,s
+s24,A93,Fonte: Imea.,s
+s24,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s24,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s
+s25,A2,CUSTO DE PRODUÇÃO,s
+s25,A3,Bovinocultura - Ciclo Completo,s
+s25,A4,Vila Bela da Santíssima Trindade,s
+s25,A6,Ano,s
+s25,B6,2020,n
+s25,C6,2021,n
+s25,D6,2022,n
+s25,E6,2023,n
+s25,F6,2024,n
+s25,G6,2025,n
+s25,H6,2026,n
+s25,I6,2026,n
+s25,J6,3ºtri.26/2ºtri.26,s
+s25,A7,Trimestre,s
+s25,B7,Consolidado,str
+s25,C7,Consolidado,s
+s25,D7,Consolidado,s
+s25,E7,Consolidado,s
+s25,F7,Consolidaddo,s
+s25,G7,Consolidaddo,s
+s25,H7,2ºtri.,s
+s25,I7,3ºtri.,s
+s25,J7,Trimeste,s
+s25,A71,COE (A + B + ... + G),s
+s25,A80,COT (COE + I + J),s
+s25,A89,CT (COT + K),s
+s25,A91,Produtividade Modal (@vendida/ha),s
+s25,A92,Unidade da tabela: R$/@ vendida.,s
+s25,A93,Fonte: Imea.,s
+s25,A94,"¹ SEGUNDA ESTIMATIVA DE PECUÁRIA
+Dado o primeiro trismestre de pecuária de 2026, o custeio da produção apresentou variações devido à suplementação que aumentou no periodo.",s
+s25,A95,"Dado o início da safra 2025/26 de algodão, o custeio da produção apresentou variações devido à modificação no pacote tecnológico aplicados.",s

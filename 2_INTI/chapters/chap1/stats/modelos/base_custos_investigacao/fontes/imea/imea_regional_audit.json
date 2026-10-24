@@ -1,0 +1,314 @@
+{
+  "records": 195,
+  "sheets": [
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_GMO_MT",
+      "geography": "MATO GROSSO",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_bra",
+      "geography": "BRASNORTE",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_port",
+      "geography": "PORTO DOS GAÚCHOS",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_dia",
+      "geography": "DIAMANTINO",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_tan",
+      "geography": "TANGARÁ DA SERRA",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_sor",
+      "geography": "SORRISO",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_sin",
+      "geography": "SINOP",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_can",
+      "geography": "CANARANA",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_que",
+      "geography": "QUERÊNCIA",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_pri",
+      "geography": "PRIMAVERA DO LESTE",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_afl",
+      "geography": "ALTA FLORESTA",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_mar",
+      "geography": "MARCELÂNDIA",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_mat",
+      "geography": "MATUPÁ",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_sap",
+      "geography": "SAPEZAL",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_soja_8.xlsx",
+      "sheet": "Soja_Safra_GMO_cnp",
+      "geography": "CAMPO NOVO DO PARECIS",
+      "records": 7,
+      "metric_rows": {
+        "coe": 58,
+        "cot": 67,
+        "ct": 73
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_MT",
+      "geography": "MATO GROSSO",
+      "records": 7,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_Safra_ALTA_dia",
+      "geography": "DIAMANTINO",
+      "records": 7,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_Safra_ALTA_tan",
+      "geography": "TANGARÁ DA SERRA",
+      "records": 7,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_Safra_ALTA_sor",
+      "geography": "SORRISO",
+      "records": 7,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_Safra_ALTA_sin",
+      "geography": "SINOP",
+      "records": 7,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_Safra_ALTA_que",
+      "geography": "QUERÊNCIA",
+      "records": 7,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_Safra_ALTA_pri",
+      "geography": "PRIMAVERA DO LESTE",
+      "records": 7,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_Safra_ALTA_afl",
+      "geography": "ALTA FLORESTA",
+      "records": 7,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_Safra_ALTA_mar",
+      "geography": "MARCELÂNDIA",
+      "records": 6,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_Safra_ALTA_mat",
+      "geography": "MATUPÁ",
+      "records": 7,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_Safra_ALTA_sap",
+      "geography": "SAPEZAL",
+      "records": 7,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_Safra_ALTA_cnp",
+      "geography": "CAMPO NOVO DO PARECIS",
+      "records": 7,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    },
+    {
+      "source_file": "imea_cup_milho_6.xlsx",
+      "sheet": "Milho_Safra_ALTA_nmt",
+      "geography": "NOVA MUTUM",
+      "records": 7,
+      "metric_rows": {
+        "coe": 56,
+        "cot": 65,
+        "ct": 71
+      }
+    }
+  ],
+  "warning": "Reference months only derived where source year/month labels explicitly identify a month. Consolidado has no imputed month. Asterisk source markers preserved; no blanket estimate classification or year harmonization."
+}

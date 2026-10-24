@@ -1,0 +1,32 @@
+[
+  {
+    "notebook": "avaliacao_preditiva/01_soja_custo_e_validacao.ipynb",
+    "code_cells": 3,
+    "status": "PASS"
+  },
+  {
+    "notebook": "avaliacao_preditiva/02_milho_1a_custo_e_validacao.ipynb",
+    "code_cells": 3,
+    "status": "PASS"
+  },
+  {
+    "notebook": "avaliacao_preditiva/03_milho_2a_custo_e_validacao.ipynb",
+    "code_cells": 3,
+    "status": "PASS"
+  },
+  {
+    "notebook": "construcao_auditoria.ipynb",
+    "code_cells": 8,
+    "status": "PASS"
+  },
+  {
+    "notebook": "pecuaria/04_pecuaria_fontes_e_lacunas.ipynb",
+    "code_cells": 3,
+    "status": "PASS"
+  },
+  {
+    "notebook": "regionalizacao/05_regioes_cobertura_e_limites.ipynb",
+    "code_cells": 3,
+    "status": "PASS"
+  }
+]

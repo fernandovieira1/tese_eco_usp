@@ -1,0 +1,12 @@
+test_holdout_nao_altera_parametros (testar.Test.test_holdout_nao_altera_parametros) ... ok
+test_linhagem_e_moeda (testar.Test.test_linhagem_e_moeda) ... ok
+test_ols_e_ridge_analiticos (testar.Test.test_ols_e_ridge_analiticos) ... ok
+test_preservacao (testar.Test.test_preservacao) ... ok
+test_recusa_primeira_safra (testar.Test.test_recusa_primeira_safra) ... ok
+test_reproducao_dupla (testar.Test.test_reproducao_dupla) ... ok
+test_separacao_folds (testar.Test.test_separacao_folds) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.393s
+
+OK

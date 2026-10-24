@@ -1,0 +1,119 @@
+{
+  "entradas": [
+    {
+      "arquivo": "fontes/custos_agregados_longos.csv",
+      "origem_local": "2_INTI/chapters/chap1/stats/modelos/base2/complemento_conab/custos_agregados_longos.csv",
+      "sha256": "f8c5e9a37131006f61f4340d5825638c1f69c5faa0fc725c7d2c46e944492543"
+    },
+    {
+      "arquivo": "fontes/metadados_series.csv",
+      "origem_local": "2_INTI/chapters/chap1/stats/modelos/base2/complemento_conab/metadados_series.csv",
+      "sha256": "f8580ca1f77b973e18c4638a734ce6ff905fd010dfe3192ed5c4d84e6bc1ab94"
+    },
+    {
+      "arquivo": "fontes/qualidade_por_serie.csv",
+      "origem_local": "2_INTI/chapters/chap1/stats/modelos/base2/complemento_conab/qualidade_por_serie.csv",
+      "sha256": "3fd1760f2036fdc0e138a76006f7dc2c5a72a5139d1fdd741676ca680ff993c0"
+    },
+    {
+      "arquivo": "fontes/custos_ha_estritos.csv",
+      "origem_local": "2_INTI/chapters/chap1/stats/modelos/base2/complemento_conab/custos_ha_estritos.csv",
+      "sha256": "20d61f7521972e1a3ed1f9ad07ad96feae525840ae6c002551ae8f364f840000"
+    },
+    {
+      "arquivo": "fontes/validacoes.csv",
+      "origem_local": "2_INTI/chapters/chap1/stats/modelos/base2/complemento_conab/validacoes.csv",
+      "sha256": "de9ebb43831631ba95e55094f12601b8391c3e0fbe8d559f49fe1ab1454fbc81"
+    },
+    {
+      "arquivo": "fontes/validacoes_participacoes.csv",
+      "origem_local": "2_INTI/chapters/chap1/stats/modelos/base2/complemento_conab/validacoes_participacoes.csv",
+      "sha256": "d7080e459588ef3f69330df52e459793dec9fb1040e9dc941aa12e23d54f55e4"
+    },
+    {
+      "arquivo": "fontes/FONTES_DRIVE.json",
+      "origem_local": "2_INTI/chapters/chap1/stats/modelos/base2/complemento_conab/FONTES_DRIVE.json",
+      "sha256": "1008bad3a236b18d9c03ff5d31c76a389e14f13b8974632069d0884fd72b0be1"
+    },
+    {
+      "arquivo": "fontes/CONAB_README.md",
+      "origem_local": "2_INTI/chapters/chap1/stats/modelos/base2/complemento_conab/README.md",
+      "sha256": "b6d30fa277d1f488789ef2e40cfcefd7b0901c1d59a42bef2c8afd1dda363efd"
+    },
+    {
+      "arquivo": "fontes/CONAB_DICIONARIO.md",
+      "origem_local": "2_INTI/chapters/chap1/stats/modelos/base2/complemento_conab/DICIONARIO.md",
+      "sha256": "878e8229d832c6e114a90f8687da8b8b8a72c0ccd21f013f8426ee37db28bd02"
+    },
+    {
+      "arquivo": "fontes/conab_celulas/h1__costs_conab__serie-historica-custos-soja-1997-a-2026__MT_celulas.csv",
+      "origem": "https://drive.google.com/file/d/103Rz4-7wD19ENt9wTTT3VTFuXQCkfNiD/view",
+      "sha256": "14ea160742226c143c69955aafdb818aa01249acef9069ddc31c4250d8fa38b1"
+    },
+    {
+      "arquivo": "fontes/conab_celulas/h1__costs_conab__milho_1a_safra_serie_historica_1997-2025__MT_celulas.csv",
+      "origem": "https://drive.google.com/file/d/1UxT436m-cDIMhXVHxF_LvMRxXGGJ9YhX/view",
+      "sha256": "b93d54a5e7bbaa7c4042fd2195c3967679af2b2b8235ad9a4fda11a0a4d30294"
+    },
+    {
+      "arquivo": "fontes/conab_celulas/h1__costs_conab__milho_2a_safra_serie_historica_2005-2025__MT_celulas.csv",
+      "origem": "https://drive.google.com/file/d/1bYKL-_L7NB-8dmUzNIGZgBwK49DZZevJ/view",
+      "sha256": "85b014a2195713bfb9831fdf12ffe852159e3a8f720523366d28c716cef5f581"
+    },
+    {
+      "arquivo": "fontes/bls_fred_CPIAUCNS_1960_2024.csv",
+      "origem_local": "2_INTI/chapters/chap1/stats/modelos/base3/fontes_v2/bls_fred_CPIAUCNS_1960_2024.csv",
+      "sha256": "ba0db2b6b08846707e78e79dc8035548477ffbb141ff1687341d0f1a2f7d7a24"
+    },
+    {
+      "arquivo": "fontes/bcb_sgs3698_1997_2026.json",
+      "origem": "SGS3698 oficial; transferência parent, ver proveniencia_bcb3698.json",
+      "sha256": "dd618f8c7dc2e74f3be8bae947b72b9ea2a523ea35884c05427722c9511f90b9"
+    },
+    {
+      "arquivo": "fontes/bcb_sgs3698_monthly_brl_per_usd_1997_2026.csv",
+      "origem": "SGS3698 oficial; transferência parent, ver proveniencia_bcb3698.json",
+      "sha256": "1d1d250a3c4026bd5dfcfe7911852541e3e08c24ca2d3ed640113bfa38c7e906"
+    },
+    {
+      "arquivo": "fontes/proveniencia_bcb3698.json",
+      "origem": "SGS3698 oficial; transferência parent, ver proveniencia_bcb3698.json",
+      "sha256": "7a2356cec7d6efbc4214b8277e76e4f34a3ababdffdd5c3ce4b90b234549fda0"
+    },
+    {
+      "arquivo": "fontes/imea/imea_regional_key_costs.csv",
+      "origem": "Extrato XLSX oficial recebido pelo parent;ver fontes/PROVENIENCIA_OFICIAL.md",
+      "sha256": "808695e768d80ac8bcfa14ea66c880bebb29883b7b8ae59c04e3549dad05b6b9"
+    },
+    {
+      "arquivo": "fontes/imea/imea_regional_source_notes.csv",
+      "sha256": "47279d149db8ea36054f269f95b902c7ca0c19d0b83c341d3c63fb0d06934d7b",
+      "origem": "Extrato oficial IMEA transferido pelo ambiente principal; identidade binária confirmada com SHA256 informado."
+    },
+    {
+      "arquivo": "fontes/imea/imea_regional_audit.json",
+      "sha256": "a611b3ef9ab1f1ad6e1be7f880f738f5ffb49efcb7a46fd6941085e39bc70fc8",
+      "origem": "Extrato oficial IMEA transferido pelo ambiente principal; identidade binária confirmada com SHA256 informado."
+    }
+  ],
+  "hashes_saidas": {
+    "auditoria_componentes.csv": "8a876c5d82489a57ca3600569b3f50b30f6e9883bdf4774f6fda799d9adef3ce",
+    "auditoria_identidades.csv": "19c4b06b365ba384fe3979072cbdb70a86e577b1ec2840f4fcfcb4e8aea9dd00",
+    "auditoria_imea.csv": "b0ef14117cb4980a501dc8c9cf8b7a161bdc99f69001b4d1c9a68d7b5c263997",
+    "candidatos_incorporacao.csv": "9943ac7027864bf5e3033cc1b0459638fab171e2c9cb7326e552f233e3f469a0",
+    "cobertura.csv": "9e5129571aeb191015d8a0188f3c9eb6979289567566bfab74b224f90474774a",
+    "cobertura_imea.csv": "f13ebc74c5843a62a3b58319662a6a42c2893be36501685930375b660b45b011",
+    "componentes_nominais.csv": "b835544e03485986ee2491d03348eed9f58526cbeecee788c49266f6d7eebea9",
+    "custos_imea_candidatos_descritivos.csv": "151c45a04e4cf538a2b2041f5098f1e005b551d21cfb796de0fe51b0bd51bfd2",
+    "custos_imea_quarentena.csv": "40357d01c21bd8f7b54bce8ed451b1a73c87b4b1d713530bfbf40a545fe83d1a",
+    "custos_imea_referencia.csv": "40357d01c21bd8f7b54bce8ed451b1a73c87b4b1d713530bfbf40a545fe83d1a",
+    "custos_quarentena.csv": "154ea5608acfcf33a495f8ba05a7c95fc33609be7be19b556ef6d140e42e24b1",
+    "custos_referencia_completos.csv": "3d9392bf1b1a6c06547ae5f194402a9e3496151b327af42b4979c3f7a48846f7",
+    "custos_referencia_estritos.csv": "5e5b4d066e81deed1a59abda42f122dd5da270b51567ea744cf7b361b8f2156a",
+    "dicionario_variaveis.csv": "342afac91c93b6915ca0258535f8338368e19a28754cecb0b89a1a0dbc1016af",
+    "qualidade_variaveis.csv": "168f72d09d2fc846039911de2554e1176affa0c44bd5e1dc96ae555b81353e3c",
+    "series_referencia.csv": "af2df10bfce42fcfcef1f9c1227ad8941e6e48208ee70f48e0631e8023c5b4b8"
+  },
+  "sem_aleatoriedade": true,
+  "python_dependencias": "biblioteca padrão; nenhuma dependência em complemento local externo após cópia de fontes"
+}

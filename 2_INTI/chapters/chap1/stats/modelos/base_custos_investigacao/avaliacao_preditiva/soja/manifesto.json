@@ -1,0 +1,21 @@
+{
+  "protocolo_sha256": "898cb874ee89339e73b9a0563cf6d4dc9d1de204b9145038fc84221a9ccd3140",
+  "inputs": {
+    "base_custos_investigacao/custos_referencia_estritos.csv": "5e5b4d066e81deed1a59abda42f122dd5da270b51567ea744cf7b361b8f2156a",
+    "base_custos_investigacao/componentes_nominais.csv": "b835544e03485986ee2491d03348eed9f58526cbeecee788c49266f6d7eebea9",
+    "base_custos_investigacao/fontes/bls_fred_CPIAUCNS_1960_2024.csv": "ba0db2b6b08846707e78e79dc8035548477ffbb141ff1687341d0f1a2f7d7a24",
+    "base3/fontes_v2/dap_official_2000_2023.csv": "de4a4e3fea8114a0f8ee74ccf1bb7c828aa4a0cfeef797dd2720fd9d6de96d13"
+  },
+  "outputs": {
+    "amostra.csv": "ea53e42f20b19096c6830ac4734500f218a137570704dfb671ec3671518ddae1",
+    "cobertura.csv": "5d979e278200bc4a2ec9bf0172a63588b001bef219415a2ccb51014408162062",
+    "componentes_suporte.csv": "8d6cf3aecf003029b8f2a392900bcc91ee66b353799400dafc7d7879f41699c0",
+    "folds.csv": "44678b812539c4782d2d8c4bfa6ee92efaaf799e329607ee0c43e527824325ac",
+    "gates.csv": "4ed989522e1df7326646337b284732a76ee786db3e6dd255c5a5e5394f4ed607",
+    "membros_folds.csv": "6e5ed1f15e2e5f57d7fb8efa71682791ea55de732fe6dc67994b0d664151a57f",
+    "metricas.csv": "daa35ae08fdb48e56ed073c46817705287b738fe1cfd5d9638aebabbb0e909f9",
+    "parametros_treino.csv": "f5278f300c1bf3ffebeceacacb5ac79e5ec9dffc35d381f38b9307d99c34f60e",
+    "perdas.csv": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "previsoes_holdout.csv": "c2a16c4d795f030764d8df44138f806585beb9a202d31741a96f136e909a82ac"
+  }
+}

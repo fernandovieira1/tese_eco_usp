@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "checks": [
+    "pecuaria: duas reproduções isoladas idênticas",
+    "regionalizacao: duas reproduções isoladas idênticas",
+    "588 valores/células reconciliados; 120 ausências, nenhuma conversão; 752 notas",
+    "141 chaves, cinco mesorregiões, cobertura reconciliada; conflitos não resolvidos por inferência",
+    "110 arquivos anteriores preservados por hash"
+  ],
+  "agricultura": "resultados anteriores preservados; nenhuma reestimação regional",
+  "raw_access": "apenas pai; integração CSV reproduzida localmente"
+}

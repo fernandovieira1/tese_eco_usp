@@ -1,0 +1,4 @@
+cultura,n,pracas,status_referencia,status_predicao,status_municipal,proximo_passo
+soja,32,3,apto_referencia_modal_no_suporte,nao_passou_gate_preditivo,insuficiente_nao_incorporar,Exposições municipais de custos e validação independente necessárias; sem extrapolação
+milho_1a,9,1,apto_referencia_modal_no_suporte,insuficiente_para_teste,insuficiente_nao_incorporar,Exposições municipais de custos e validação independente necessárias; sem extrapolação
+milho_2a,44,4,apto_referencia_modal_no_suporte,gate_exploratorio_passou_sem_validacao_municipal,insuficiente_nao_incorporar,Exposições municipais de custos e validação independente necessárias; sem extrapolação

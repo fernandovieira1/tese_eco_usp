@@ -1,0 +1,5 @@
+modelo,eixo,passou,motivo
+M1_ols,espacial,True,
+M1_ols,temporal,False,pior_fold125pct
+M2_ridge,espacial,True,
+M2_ridge,temporal,False,pior_fold125pct

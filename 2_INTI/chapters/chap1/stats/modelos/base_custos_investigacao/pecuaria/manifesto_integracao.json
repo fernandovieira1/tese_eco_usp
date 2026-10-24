@@ -1,0 +1,23 @@
+{
+  "inputs": {
+    "retrieve_extract_imea_pecuaria.py": "7823d7c0ddf1b590deef60f8cc49c23e9efe71fd9d6af1c1556d51f67d25512e",
+    "imea_pecuaria_costs_cria.csv": "e8da99d1f3c64c2385caaa03a400b7bdcf831f1e3f66d04b3c57cf0bbf25ad65",
+    "imea_pecuaria_costs_recria_engorda.csv": "ab7cf8b79cbb91339b398a0f08a03709126074ec943bafb2338750002bf14a2c",
+    "imea_pecuaria_costs_ciclo_completo.csv": "9eb8c280f8fabd0e84490b847f7a5934f164d0a0b8cb52d0530ec7d7bb2b036a",
+    "imea_pecuaria_sheets.csv": "d2521f9c396ce61b2523103f62579a7976c5df35f734210ab3bac7929cdb6043",
+    "imea_pecuaria_headers_notes.csv": "85586a9424433e0eb3b32ddeda79d1ba6e4228b6c7fed0fde4bb3675c00069fa",
+    "validation_report.json": "b35d7f06edc8e8042f5b22a22a54da4877fc4526b3b527ad7bf50747bddb268f",
+    "PROVENIENCIA_PECUARIA.md": "0ebf2b900c1b0f6bc4d21d2319e12bad99e9707e1a95a083ebc20e8c2c88343d"
+  },
+  "registros_periodo": 196,
+  "registros_custos_numericos": 156,
+  "metricas_long": 588,
+  "valores_monetarios_numericos": 468,
+  "notas_celulas": 752,
+  "validacao_raw": "Realizada no pai; relatório original transferido e hash verificado. XLSX não disponível neste executor.",
+  "outputs": {
+    "custos_referencia.csv": "b8f31703fdda9263de26e83363386eaac8669c944bcf0e821768acadf131b9e2",
+    "registros_periodo.csv": "5030067d365275bb9da51cbb3c03fec695460db371f8bbc992de9ba2153cba43",
+    "cobertura_sistema_ano.csv": "3219c6b4d6bd10c0f5fd96c4485f4c18174f90443770a33cdf3993ac631aaad8"
+  }
+}

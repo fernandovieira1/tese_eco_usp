@@ -1,0 +1,1 @@
+Validação atual em ../validacao_integracao_final.json; estágio pendente foi superado.

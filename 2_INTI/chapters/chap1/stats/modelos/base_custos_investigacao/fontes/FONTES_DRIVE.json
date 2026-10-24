@@ -1,0 +1,38 @@
+[
+  {
+    "id_drive": "103Rz4-7wD19ENt9wTTT3VTFuXQCkfNiD",
+    "arquivo": "h1__costs_conab__serie-historica-custos-soja-1997-a-2026__MT_celulas.csv",
+    "url_drive": "https://drive.google.com/file/d/103Rz4-7wD19ENt9wTTT3VTFuXQCkfNiD/view",
+    "bytes_esperados": 2044155,
+    "modified_time": "2026-09-30T04:08:49.206Z",
+    "transferencia": "texto integral do conector; conferir tamanho contra metadata raw",
+    "sha256": "14ea160742226c143c69955aafdb818aa01249acef9069ddc31c4250d8fa38b1",
+    "bytes": 2044155,
+    "celulas": 24156,
+    "abas": 99
+  },
+  {
+    "id_drive": "1UxT436m-cDIMhXVHxF_LvMRxXGGJ9YhX",
+    "arquivo": "h1__costs_conab__milho_1a_safra_serie_historica_1997-2025__MT_celulas.csv",
+    "url_drive": "https://drive.google.com/file/d/1UxT436m-cDIMhXVHxF_LvMRxXGGJ9YhX/view",
+    "bytes_esperados": 253671,
+    "modified_time": "2026-09-30T04:08:47.941Z",
+    "transferencia": "texto integral do conector; conferir tamanho contra metadata raw",
+    "sha256": "b93d54a5e7bbaa7c4042fd2195c3967679af2b2b8235ad9a4fda11a0a4d30294",
+    "bytes": 253671,
+    "celulas": 2975,
+    "abas": 17
+  },
+  {
+    "id_drive": "1bYKL-_L7NB-8dmUzNIGZgBwK49DZZevJ",
+    "arquivo": "h1__costs_conab__milho_2a_safra_serie_historica_2005-2025__MT_celulas.csv",
+    "url_drive": "https://drive.google.com/file/d/1bYKL-_L7NB-8dmUzNIGZgBwK49DZZevJ/view",
+    "bytes_esperados": 1514245,
+    "modified_time": "2026-09-30T04:08:48.398Z",
+    "transferencia": "texto integral do conector; conferir tamanho contra metadata raw",
+    "sha256": "85b014a2195713bfb9831fdf12ffe852159e3a8f720523366d28c716cef5f581",
+    "bytes": 1514245,
+    "celulas": 18229,
+    "abas": 72
+  }
+]

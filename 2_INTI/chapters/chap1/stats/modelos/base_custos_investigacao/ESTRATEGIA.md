@@ -1,0 +1,19 @@
+# Estratégia — base paralela de custos de referência
+
+Antes da construção: usar nominal CONAB já auditado; não importar custos IPCA2024 do piloto. Manter todas as 188 planilhas e seus dez conceitos, separando subconjunto estrito (consistência interna + filtro temporal/territorial já definido) e quarentena. A unidade é praça × cultura/sistema × tecnologia × safra × data-base × conceito, não município-ano. Soja, milho primeira e segunda safra são distintos. Nenhuma regressão ou alteração na base3.
+
+1. Copiar insumos auditados e extratos de células para a pasta própria, conferindo hashes. Revalidar chaves, unidades, coordenadas/valores, identidades D=A+B+C, G=E+F, H=D+G e J=H+I e composição estrita. Qualidade não é representatividade ou gasto municipal observado.
+2. Construir tabela longa em BRL nominal/ha com conceitos preservados. Extrair componentes numerados somente quando rótulo, célula e bloco são identificáveis; conferir soma por bloco contra agregado com tolerância de 0,05 BRL/ha, igual à conferência contábil anterior. Falhas ou itens ausentes ficam sinalizados, sem ajuste ou preenchimento. Não somar agregados aninhados, nem somar transporte/frete ou juros novamente.
+3. Harmonização restrita: códigos CONAB A–J têm rótulos semânticos internos; não igualar automaticamente H a COT/COE do IMEA. IMEA tem ruptura em setembro2020. Os arquivos atuais e a metodologia foram solicitados aos endpoints oficiais; proxy403 impediu obtenção (PDF também404 no leitor web). Preservar esse bloqueio no inventário, sem fabricar linhas IMEA. Fontes recentes/projeções não serão retroprojetadas a2001.
+4. Unidade alvo: USD2024/ha = BRL_nominal/ha ÷ câmbio(BRL/USD,mês da data-base) × média(CPI-U2024)/CPI-U(mês). Para data diária, uma média mensal é aproximação temporal explicitamente rotulada, não cotação do dia. Não usar custo IPCA2024 como nominal. Datas/índices insuficientes geram NA. Câmbio oficial BCB solicitado mas bloqueado; série candidata deve ter código/conceito confirmado antes de uso. Entregar núcleo nominal mesmo sem conversão, marcando moeda alvo como pendente.
+5. Guardar datas, custos fora de2001–2024, ambiguidades e projeções/Ex-Ant no conjunto completo. Nenhuma extrapolação, imputação espacial, ponderação tecnológica inventada ou ajuste com rendimento municipal realizado. Não construir141×24. Crédito não é custo, e não haverá coleta ampla de crédito nesta etapa.
+6. Produtos: referência completa/estrita/quarentena, componentes e sua auditoria, dicionário prefixos0–4, suporte, candidatos para incorporação futura, notebook executado, testes e duas reproduções isoladas. Base3 e complementos anteriores intactos. Sem commit/push.
+
+## Decisão após auditoria detalhada
+O critério adicional de reconciliação de componentes reduziu87 para85 séries estritas. Preservamos o indicador anterior e todos os valores. Diferença contábil e hierarquia sementes/royalties não foram corrigidas nem flexibilizadas. Ver README e auditoria_componentes.csv.
+
+## Continuação: câmbio recebido
+O parent obteve SGS3698 oficial (média mensal de venda BRL/USD), com357 meses consecutivos e hashes JSON/CSV verificados. Mantida a fórmula previamente definida,1.790 valores têm moeda calculável (850 estritos);90 ficam NA por CPI posterior a2024 ausente. Nenhum mês imputado. Pacote IMEA inicial truncado não foi incorporado.
+
+## Decisão de integração IMEA delimitada
+Extrato regional íntegro de195 registros recebido e hash conferido. ManterCOE/COT/CT originais em tabelas separadas;nenhuma equivalência aH/J CONAB. Pré-condições para descrição no alvo:valor finito não negativo,ordemCOE<=COT<=CT,safra com início>=2001/fim<=2024,sem***. Isso não aprova componente,data nominal ou transporte municipal;quarentena integral para esses usos. Milho alta tecnologia não vira segunda safra por suposição. Nenhuma conversãoUSD sem data nominal e CPI aplicáveis.

@@ -1,0 +1,38 @@
+{
+  "cultura": "soja",
+  "conceito": "H operacional D+G",
+  "unidade": "USD2024/ha",
+  "n_estrito": 32,
+  "n_modelavel": 32,
+  "perdas": 0,
+  "pracas": [
+    "Campo Novo do Parecis",
+    "Primavera do Leste",
+    "Sorriso"
+  ],
+  "anos_data_base": [
+    2001,
+    2002,
+    2004,
+    2005,
+    2006,
+    2007,
+    2009,
+    2011,
+    2013,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "n_anos": 18,
+  "suporte_teste": true,
+  "gate_municipal": false,
+  "modelos_aprovados_dois_eixos": [],
+  "decisao": "nao_passou_gate_preditivo"
+}

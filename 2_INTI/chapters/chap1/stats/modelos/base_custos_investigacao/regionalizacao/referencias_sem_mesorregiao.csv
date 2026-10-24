@@ -1,0 +1,53 @@
+fonte,atividade,ano_rotulo,periodo_literal,id_referencia,praca_literal,codigo_ibge_referencia,mesocodigo,mesonome,regiao_imea,status_geografia,custos_numericos,qualificacao,representatividade_regional_validada
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_GMO_MT_B,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_GMO_MT_C,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_GMO_MT_D,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_GMO_MT_E,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_GMO_MT_F,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_GMO_MT_G,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_GMO_MT_H,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_MT_B,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_MT_C,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_MT_D,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_MT_E,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_MT_F,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_MT_G,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_MT_H,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_pecuaria,cria,2020,2020,s01_B,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s01_C,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s01_D,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s01_E,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s01_F,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s01_G,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s01_H,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s01_I,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2019,2019,s14_B,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s14_C,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s14_D,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s14_E,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s14_F,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023-Q3,s14_G,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023-Q4,s14_H,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,,s17_B,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,,s17_C,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,,s17_D,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,,s17_E,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,,s17_F,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s17_G,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s17_H,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2020,2020,s18_B,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2021,2021,s18_C,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2022,2022,s18_D,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2023,2023,s18_E,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2024,2024,s18_F,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2025,2025,s18_G,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q2,s18_H,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q3,s18_I,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2020,2020,s24_B,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2021,2021,s24_C,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2022,2022,s24_D,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2023,2023,s24_E,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2024,2024,s24_F,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2025,2025,s24_G,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2026,2026-Q2,s24_H,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2026,2026-Q3,s24_I,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False

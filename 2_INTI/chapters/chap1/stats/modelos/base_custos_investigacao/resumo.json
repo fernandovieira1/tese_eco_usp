@@ -1,0 +1,20 @@
+{
+  "series_estritas_auditoria_anterior": 87,
+  "series": 188,
+  "agregados_ha": 1880,
+  "series_estritas": 85,
+  "agregados_estritos": 850,
+  "componentes": 7027,
+  "componentes_elegiveis": 2938,
+  "blocos_componentes": 1128,
+  "blocos_aprovados": 1124,
+  "identidades_aprovadas": 752,
+  "identidades": 752,
+  "celulas_fontes": 45360,
+  "cpi_base_media2024": 313.6888333333333,
+  "usd2024_preenchidos": 1790,
+  "usd2024_estritos": 850,
+  "imea_linhas": 585,
+  "imea_candidatos_descritivos": 195,
+  "sem_regressoes": true
+}

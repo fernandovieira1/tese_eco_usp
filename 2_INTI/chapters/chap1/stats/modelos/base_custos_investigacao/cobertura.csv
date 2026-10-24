@@ -1,0 +1,10 @@
+0_cultura,0_conjunto,0_series,0_pracas,0_safra_inicio_min,0_safra_fim_max,0_tecnologias
+milho_1a,todas,17,1,1997,2014,não declarada
+milho_1a,estritas,9,1,2001,2010,não declarada
+milho_1a,quarentena,8,1,1997,2014,não declarada
+milho_2a,todas,72,4,1997,2025,OGM;não declarada
+milho_2a,estritas,44,4,2001,2024,OGM;não declarada
+milho_2a,quarentena,28,4,1997,2025,OGM;não declarada
+soja,todas,99,3,1997,2027,OGM;convencional explícita;não declarada
+soja,estritas,32,3,2001,2024,OGM;convencional explícita;não declarada
+soja,quarentena,67,3,1997,2027,OGM;convencional explícita;não declarada

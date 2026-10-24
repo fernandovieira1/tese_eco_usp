@@ -1,0 +1,17 @@
+{
+  "meses": 357,
+  "inicio": "1997-01",
+  "fim": "2026-09",
+  "duplicatas": 0,
+  "ausentes": 0,
+  "positivos": 357,
+  "valores_json_csv_iguais": true,
+  "series_conab": 188,
+  "series_com_mes_cambio": 188,
+  "series_com_cpi": 179,
+  "status": "PASS: valores, meses e hashes; conversão implementada pela média mensal de venda SGS3698. Identidade confirmada pelo gráfico oficial no ambiente principal; proveniência complementar recebida e registrada em fontes/PROVENIENCIA_OFICIAL.md.",
+  "sha256": {
+    "bcb_sgs3698_1997_2026.json": "dd618f8c7dc2e74f3be8bae947b72b9ea2a523ea35884c05427722c9511f90b9",
+    "bcb_sgs3698_monthly_brl_per_usd_1997_2026.csv": "1d1d250a3c4026bd5dfcfe7911852541e3e08c24ca2d3ed640113bfa38c7e906"
+  }
+}

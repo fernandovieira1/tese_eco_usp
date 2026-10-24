@@ -1,0 +1,8 @@
+variavel,status,uso,pendencia
+CONAB_H_operacional_nominal,apto_referencia,85 referências de cultura/safra/praça/tecnologia,Não transferível automaticamente ao município
+CONAB_J_total_nominal,apto_referencia,Retorno incluindo renda dos fatores; distinto de H,Não somar novamente juros/frete já incluídos
+CONAB_componentes,apto_referencia,2938 componentes elegíveis; preservar rubricas,Harmonização entre fontes não validada
+USD2024_ha,apto_referencia,850 valores estritos em USD2024/ha,IMEA sem data nominal suficiente ou CPI2026;nenhum custo municipal
+IMEA_COE_COT_CT,apenas_descricao_sensibilidade_condicional,195 valores de65 registros com safra-alvo/valor/rótulo coerentes,"Data nominal consolidada,componentes e comparabilidade não confirmados;585 células em quarentena"
+custos_municipais,insuficiente,Nenhuma previsão nem atribuição,Transportabilidade espacial/temporal não demonstrada
+credito,fora_escopo,Financiamento não é custo,Não coletado nesta etapa
