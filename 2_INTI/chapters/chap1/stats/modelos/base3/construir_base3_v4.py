@@ -7,6 +7,9 @@ import statistics as st
 from pathlib import Path
 from construir_base3_v2 import planilha_xml
 P=Path(__file__).resolve().parent
+USO=P/'BASES_PARA_USO'
+PAINEL=USO/'BASE_COMPLETA_H1.csv'
+DICIONARIO=USO/'DICIONARIO.csv'
 V3=P/'painel_h1_base3_v3.csv'
 HASH_V3='3012731110295b43967e1aaf5765a44f4946f05e09be91b9172e959aa9a7eaf5'
 CULTURAS=['soja','milho'];MEDIDAS=['total','por_ha_colhido'];VERSOES=['','lag1','lag2','media_lag1_lag2']
@@ -17,7 +20,14 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def ler(p):
     with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 def escrever(name,rows):
-    with (P/name).open('w',encoding='utf-8',newline='') as f:
+    target=P/name
+    if target.parent==USO:
+        import io
+        buf=io.StringIO(newline='');writer=csv.DictWriter(buf,fieldnames=list(rows[0]),lineterminator='\n');writer.writeheader();writer.writerows(rows)
+        payload=buf.getvalue().encode('utf-8')
+        if target.exists() and target.read_bytes()!=payload:raise RuntimeError(f'Edição manual ou conteúdo diferente: {target}. Preserve sua cópia; reconstrua em checkout separado.')
+    target.parent.mkdir(parents=True,exist_ok=True)
+    with target.open('w',encoding='utf-8',newline='') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
 def js(name,x):(P/name).write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 def numero(x):
@@ -62,6 +72,8 @@ def precos():
     return lookup,files
 
 def construir():
+    from separar_grupos_v4 import verificar_publicados, separar
+    verificar_publicados()
     assert sha(V3)==HASH_V3
     original=ler(V3);assert len(original)==3384 and len(original[0])==54
     assert len({(r['0_codigo_ibge'],r['0_ano']) for r in original})==3384
@@ -89,7 +101,7 @@ def construir():
                 for version,value in zip(VERSOES,[current,*anteriores(values[crop,measure],mun,year)]):
                     new[campo(crop,measure,version)]='' if value is None else value
         output.append({**r,**new})
-    escrever('painel_h1_base3_v4.csv',output)
+    escrever('BASES_PARA_USO/BASE_COMPLETA_H1.csv',output)
     lineage=[]
     for crop in CULTURAS:
         for measure in MEDIDAS:
@@ -119,7 +131,8 @@ def construir():
                 name=campo(crop,measure,version);d={k:'' for k in dic[0]}
                 d.update(posicao=55+len(extra),grupo=2,nome_anterior=name[2:],nome_novo=name,justificativa='Derivada econômica; receita internacional de referência.',papel='Receita estimada contemporânea' if not version else 'Proxy retrospectiva, não expectativa observada',definicao=f'Receita {measure} de {crop}; versão {version or "contemporânea"}',unidade='USD2024' if measure=='total' else 'USD2024/ha colhido',fonte='PAM na v3; World Bank Pink Sheet/CPI-U auditados',campo_origem=f'2_producao_t__{crop}; 2_area_colhida_ha__{crop}; preço contemporâneo em precos_anuais_receitas_v4.csv; 0_codigo_ibge; 0_ano',transformacao='R(t)=P(t)×Q(t); Rha(t)=R(t)/área colhida(t)>0; '+('t contemporâneo' if not version else ('média estrita de R(t−1) e R(t−2)' if version=='media_lag1_lag2' else 'receita em t−'+version[-1]+' por chave consecutiva')),limitacoes='Não receita recebida ou lucro; preços internacionais; vintages retrospectivos; endogeneidade permanece; 1999/2000 indisponíveis; NA preservado; receita/ha depende de rendimento.',variavel=name)
                 extra.append(d)
-    escrever('dicionario_variaveis_v4.csv',dic+extra);escrever('dicionario_adendo_v4.csv',extra)
-    js('manifesto_v4.json',{'versao':'base3_v4','linhas':3384,'colunas':70,'campos_acrescentados':NOVAS,'fonte_v3_sha256':HASH_V3,'fonte_v3_commit':'0a2cd309ab6b724ccd9266a54deb0f086843e3b9','hashes_fontes':files,'sha256_painel':sha(P/'painel_h1_base3_v4.csv'),'auditoria_sha256':sha(P/'auditoria_pre_construcao_v4.json'),'dicionario_sha256':sha(P/'dicionario_variaveis_v4.csv'),'rastreamento_anos_sha256':sha(P/'rastreamento_anos_receitas_v4.csv'),'dependencias':'Python>=3.9 stdlib; leitor OOXML construir_base3_v2.py publicado','aleatoriedade':'nenhuma','sem_modelos':True})
-    print(json.dumps({'linhas':3384,'colunas':70,'sha256':sha(P/'painel_h1_base3_v4.csv')}))
+    escrever('BASES_PARA_USO/DICIONARIO.csv',dic+extra);escrever('dicionario_adendo_v4.csv',extra)
+    js('manifesto_v4.json',{'versao':'base3_v4','linhas':3384,'colunas':70,'campos_acrescentados':NOVAS,'fonte_v3_sha256':HASH_V3,'fonte_v3_commit':'0a2cd309ab6b724ccd9266a54deb0f086843e3b9','hashes_fontes':files,'sha256_painel':sha(PAINEL),'auditoria_sha256':sha(P/'auditoria_pre_construcao_v4.json'),'dicionario_sha256':sha(DICIONARIO),'rastreamento_anos_sha256':sha(P/'rastreamento_anos_receitas_v4.csv'),'dependencias':'Python>=3.9 stdlib; leitor OOXML construir_base3_v2.py publicado','aleatoriedade':'nenhuma','sem_modelos':True})
+    separar()
+    print(json.dumps({'linhas':3384,'colunas':70,'sha256':sha(PAINEL)}))
 if __name__=='__main__':construir()

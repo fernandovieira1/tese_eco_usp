@@ -20,7 +20,7 @@ Padrão dos nomes, com `cultura = soja ou milho`:
 | Total | `2_receita_bruta_estimada_usd2024_total__cultura` | `_total_lag1__cultura`, `_total_lag2__cultura`, `_total_media_lag1_lag2__cultura` |
 | Por hectare | `2_receita_bruta_estimada_usd2024_por_ha_colhido__cultura` | `_por_ha_colhido_lag1__cultura`, `_por_ha_colhido_lag2__cultura`, `_por_ha_colhido_media_lag1_lag2__cultura` |
 
-As terminações na terceira coluna complementam o mesmo prefixo `2_receita_bruta_estimada_usd2024`. O [dicionário completo](dicionario_variaveis_v4.csv) registra todos os 70 nomes e o [adendo](dicionario_adendo_v4.csv), os 16 novos, fórmulas e origens. Nenhuma coluna anterior foi renomeada.
+As terminações na terceira coluna complementam o mesmo prefixo `2_receita_bruta_estimada_usd2024`. O [dicionário completo](BASES_PARA_USO/DICIONARIO.csv) registra todos os 70 nomes e o [adendo](dicionario_adendo_v4.csv), os 16 novos, fórmulas e origens. Nenhuma coluna anterior foi renomeada.
 
 ## Auditoria das fontes e do calendário
 
@@ -71,3 +71,7 @@ Duas reproduções isoladas e hashes em [validacao_v4.json](validacao_v4.json). 
 ## Verificação explícita contra dupla defasagem
 
 A [tabela de rastreabilidade](rastreamento_anos_receitas_v4.csv) registra 384 combinações de variável/ano, com o ano do preço e da quantidade de cada componente. Receita t usa P(t) e Q(t); lag1 usa P(t−1)×Q(t−1); lag2 usa P(t−2)×Q(t−2); a média usa esses dois produtos completos. Nenhuma versão trata o preço lag1 da base como contemporâneo. Os testes conferem os anos, a igualdade dos preços recuperados com o lag1 no outcome seguinte e NA nas bordas sem produção. As colunas de rastreabilidade são metadados auxiliares, não novos regressores.
+
+## Pasta central para uso manual
+
+A base completa foi movida, sem alteração de bytes, para [BASES_PARA_USO/BASE_COMPLETA_H1.csv](BASES_PARA_USO/BASE_COMPLETA_H1.csv). Os grupos 1–4 repetem todas as sete colunas de índice do grupo 0. Veja [LEIA_ME](BASES_PARA_USO/LEIA_ME.md). `separar_grupos_v4.py` gera os recortes sem inferência de tipos e recusa sobrescrever conteúdo divergente. O builder v4 usa os novos caminhos e faz a mesma proteção; trabalhe em cópias para edições manuais. Versões v1–v3 não foram movidas.

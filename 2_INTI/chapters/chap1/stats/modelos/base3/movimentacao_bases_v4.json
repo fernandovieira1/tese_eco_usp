@@ -1,0 +1,14 @@
+[
+  {
+    "antes": "painel_h1_base3_v4.csv",
+    "depois": "BASES_PARA_USO/BASE_COMPLETA_H1.csv",
+    "sha256": "a98dbe320efc784543cf43372a5903de32434be5871304178f2f9d49daaf1c3b",
+    "bytes_inalterados": true
+  },
+  {
+    "antes": "dicionario_variaveis_v4.csv",
+    "depois": "BASES_PARA_USO/DICIONARIO.csv",
+    "sha256": "8e8a22d3d75742aaa355cfacbbe4d0eb1d16bc14c77fd4459d4db1daa620c4e5",
+    "bytes_inalterados": true
+  }
+]

@@ -8,7 +8,7 @@ import construir_base3_v4 as b
 class Receitas(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.original=b.ler(b.V3);cls.data=b.ler(b.P/'painel_h1_base3_v4.csv')
+        cls.original=b.ler(b.V3);cls.data=b.ler(b.PAINEL)
         cls.lookup={(r['0_codigo_ibge'],int(r['0_ano'])):r for r in cls.data}
         cls.prices={(int(r['ano']),r['cultura']):float(r['preco_contemporaneo_usd2024_t']) for r in b.ler(b.P/'precos_anuais_receitas_v4.csv')}
     def test_preservacao_publicados_e_chaves(self):
@@ -75,7 +75,7 @@ class Receitas(unittest.TestCase):
         for c in b.NOVAS:
             rows=[r for r in coverage if r['variavel']==c];total=next(r for r in rows if r['ano']=='TODOS')
             self.assertEqual(sum(int(r['validos']) for r in rows if r['ano']!='TODOS'),int(total['validos']))
-        dic=b.ler(b.P/'dicionario_variaveis_v4.csv');self.assertEqual([r['variavel'] for r in dic],list(self.data[0]))
+        dic=b.ler(b.DICIONARIO);self.assertEqual([r['variavel'] for r in dic],list(self.data[0]))
         self.assertTrue(all(r['grupo']=='2' for r in dic[-16:]))
-        m=json.loads((b.P/'manifesto_v4.json').read_text());self.assertEqual(m['sha256_painel'],b.sha(b.P/'painel_h1_base3_v4.csv'))
+        m=json.loads((b.P/'manifesto_v4.json').read_text());self.assertEqual(m['sha256_painel'],b.sha(b.PAINEL))
 if __name__=='__main__':unittest.main(verbosity=2)
