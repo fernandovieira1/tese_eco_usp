@@ -1,0 +1,8 @@
+test_dicionario_e_pasta (__main__.GruposH1.test_dicionario_e_pasta) ... ok
+test_publicacao_e_reconstrucao_por_chave (__main__.GruposH1.test_publicacao_e_reconstrucao_por_chave) ... ok
+test_reproducao_duas_vezes_e_edicao_manual (__main__.GruposH1.test_reproducao_duas_vezes_e_edicao_manual) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 2.444s
+
+OK

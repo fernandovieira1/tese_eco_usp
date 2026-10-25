@@ -1,11 +1,12 @@
-"""Recortes literais e seguros por prefixo, parametrizados; padrão congelado base3 v4."""
+"""Recortes literais e seguros por prefixo, parametrizados; padrão ativo H1 com receitas e custos aprovados."""
 import argparse,csv,hashlib,io,json
 from pathlib import Path
 STATS=Path(__file__).resolve().parents[2]
-BASE=STATS/'modelos/base3/BASES_PARA_USO'
+HISTORICA=STATS/'modelos/base3/BASES_PARA_USO'
+BASE=STATS/'FERNANDO/grupos_h1'
 DESTINO=STATS/'FERNANDO/grupos_h1'
-HASH_BASE='a98dbe320efc784543cf43372a5903de32434be5871304178f2f9d49daaf1c3b'
-HASH_DIC='8e8a22d3d75742aaa355cfacbbe4d0eb1d16bc14c77fd4459d4db1daa620c4e5'
+HASH_BASE='c781d8599191dc62e2863ff6ba2436b2e6c632a12e792d60d80aeae352d4ca9d'
+HASH_DIC='e0c17d2124f461b7ce25fdd40c3040b53cf4e8a07b1f48ed9acae32f786a80b4'
 NOMES={1:'GRUPO_1_AMBIENTAIS.csv',2:'GRUPO_2_ECONOMICOS.csv',3:'GRUPO_3_INSTITUCIONAIS.csv',4:'GRUPO_4_OUTROS.csv'}
 def sha(data):return hashlib.sha256(data).hexdigest()
 def ler(path):

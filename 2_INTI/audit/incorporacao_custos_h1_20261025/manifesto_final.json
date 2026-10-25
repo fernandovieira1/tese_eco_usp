@@ -1,0 +1,13 @@
+{
+  "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/DICIONARIO.csv": "e0c17d2124f461b7ce25fdd40c3040b53cf4e8a07b1f48ed9acae32f786a80b4",
+  "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/LEIA_ME.md": "6abde6161a8b857949a389db7303c2aca7dade59a9250e83a04cb9546e9f3e8f",
+  "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/BASE_COMPLETA_H1.csv": "c781d8599191dc62e2863ff6ba2436b2e6c632a12e792d60d80aeae352d4ca9d",
+  "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/GRUPO_3_INSTITUCIONAIS.csv": "0b9e650bd855e1d20191a0a50386b2ee18f962f8c30fad12e6ae4c9bde16e742",
+  "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/GRUPO_1_AMBIENTAIS.csv": "64622b72eba7833a44501dfa0fc712b8b3751cd077e8b82b619ea892ce34b26e",
+  "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/GRUPO_4_OUTROS.csv": "312d756817fcfd7d5be2ee1e9c058e9f200e214f42dc061406b3b503e1fc4059",
+  "2_INTI/chapters/chap1/stats/FERNANDO/grupos_h1/GRUPO_2_ECONOMICOS.csv": "5d79772a082abe9e5ffecef904224cf6a6b2c63ddfb3469a5c68ee53ee6dc475",
+  "2_INTI/chapters/chap1/stats/FERNANDO/processamento/separar_grupos_h1.py": "e4f4f3af1d9497fa21b8b83878540b4829e9de1d6e6ffdc36033a89bf12a2895",
+  "2_INTI/chapters/chap1/stats/FERNANDO/processamento/testar_grupos_h1.py": "68e2508abcc1d7a2ddda0e0fefd8ea5f226adca92b4dc9eeba03260588f300d4",
+  "2_INTI/chapters/chap1/stats/FERNANDO/processamento/incorporar_custos_h1.py": "901b4ea32c74038fa4cc42636efc70ecbbb3a85a1ee19b5286fcb50f12c967ff",
+  "2_INTI/chapters/chap1/stats/FERNANDO/processamento/testar_incorporacao_custos_h1.py": "d1eee93cbbff20940ccd1dfc429361dc4e698e4983c79844893de755bac0d12c"
+}

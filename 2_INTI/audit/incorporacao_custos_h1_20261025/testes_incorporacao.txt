@@ -1,0 +1,10 @@
+test_ativa_igual_reproducao (__main__.Incorporacao.test_ativa_igual_reproducao) ... ok
+test_chaves_e_indices_invalidos (__main__.Incorporacao.test_chaves_e_indices_invalidos) ... ok
+test_colisao_custo_nao_escreve (__main__.Incorporacao.test_colisao_custo_nao_escreve) ... ok
+test_duas_reproducoes_preservacao_recomposicao (__main__.Incorporacao.test_duas_reproducoes_preservacao_recomposicao) ... ok
+test_edicao_manual_coerente_preservada (__main__.Incorporacao.test_edicao_manual_coerente_preservada) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 8.978s
+
+OK

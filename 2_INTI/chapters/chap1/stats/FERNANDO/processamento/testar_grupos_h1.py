@@ -4,10 +4,10 @@ import separar_grupos_h1 as s
 class GruposH1(unittest.TestCase):
     def test_publicacao_e_reconstrucao_por_chave(self):
         p=s.BASE/'BASE_COMPLETA_H1.csv';cols,rows=s.ler(p)
-        self.assertEqual((len(rows),len(cols)),(3384,70))
+        self.assertEqual((len(rows),len(cols)),(3384,97))
         root=s.STATS.parents[3]
         for name in ('BASE_COMPLETA_H1.csv','DICIONARIO.csv'):
-            f=s.BASE/name;rel=f.relative_to(root)
+            f=s.HISTORICA/name;rel=f.relative_to(root)
             self.assertEqual(f.read_bytes(),subprocess.check_output(['git','show','668b099becfe82ec7fc341ec6b9dc391146a57a5:'+str(rel)],cwd=root))
         original=[dict(zip(cols,r)) for r in rows];key=lambda r:(r['0_codigo_ibge'],r['0_ano'])
         idx=[c for c in cols if c.startswith('0_')];self.assertEqual(len(idx),7)
