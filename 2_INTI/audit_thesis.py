@@ -305,6 +305,7 @@ def compile_article(chapter, report_dir, executable, timeout, findings):
         # A seção descritiva inclui estes produtos; dados e dashboards ficam fora.
         for relative in ('stats/descritiva/resultados_h1/tabelas',
                          'stats/descritiva/resultados_h1/figuras',
+                         'stats/descritiva/simoes2020/fernando/outputs',
                          'stats/tabelas', 'stats/figuras'):
             if (chapter_root / relative).is_dir():
                 shutil.copytree(chapter_root / relative, target / relative)

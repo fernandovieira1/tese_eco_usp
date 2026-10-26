@@ -29,6 +29,7 @@ class CompilationCopyTests(unittest.TestCase):
                 if with_assets:
                     files.update({results / 'tabelas/numeros.tex': b'latex macros',
                                   results / 'figuras/fig01_conversao.pdf': b'descriptive figure',
+                                  Path('stats/descritiva/simoes2020/fernando/outputs/fig6_uso_solo_mt_2001_2024.pdf'): b'simoes figure',
                                   Path('stats/tabelas/tab_contexto_oferta_h1.tex'): b'context table',
                                   Path('stats/figuras/fig05_lavouras.pdf'): b'crop figure'})
                 for relative, content in files.items():
@@ -47,6 +48,7 @@ class CompilationCopyTests(unittest.TestCase):
                     self.assertFalse((copied_chapter / 'stats/DASHBOARD').exists())
                     if with_assets:
                         for relative in (results / 'tabelas/numeros.tex', results / 'figuras/fig01_conversao.pdf',
+                                         Path('stats/descritiva/simoes2020/fernando/outputs/fig6_uso_solo_mt_2001_2024.pdf'),
                                          Path('stats/tabelas/tab_contexto_oferta_h1.tex'),
                                          Path('stats/figuras/fig05_lavouras.pdf')):
                             self.assertEqual((copied_chapter / relative).read_bytes(), files[relative])

@@ -18,6 +18,7 @@
 
 % Gráficos têm numeração própria, independente de figuras e tabelas.
 \newfloat{grafico}{logr}{Gráfico}
+\AddToHook{env/grafico/begin}{\normalcaption\captionstyle{\centering}}
 
 \geometry{
     top=3cm,
@@ -29,6 +30,7 @@
 \setlength{\parindent}{1.25cm}
 \setlength{\parskip}{0pt}
 \OnehalfSpacing
+\raggedbottom
 
 % Citações indiretas: \cite{chave} ou \citeonline{chave}.
 % Citações diretas curtas: ``trecho'' com \cite[p.~45]{chave},
