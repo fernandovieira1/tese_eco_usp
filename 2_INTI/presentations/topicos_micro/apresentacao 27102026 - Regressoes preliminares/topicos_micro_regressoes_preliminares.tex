@@ -166,6 +166,11 @@ Agricultura e pastagem são estimadas separadamente.
 % \fonte{testes\_chap1, ols\_simples.ipynb, ols\_multiplo.ipynb e utilitarios.py.}
 \end{frame}
 %% COMENTÁRIO:
+% (1) A lógica aqui é começar com uma relação simples e ir acrescentando variáveis. No S01 apresentado, eu relaciono o preço da soja à conversão para agricultura.
+% (2) No M01, eu incluo preços, aptidões e bioma, preservando o controle adicional de preço da estimação original. No M02, acrescento os autos de flora do IBAMA do ano anterior.
+% (3) Para M01 e M02, eu faço uma regressão para agricultura e outra para pastagem. O que muda é a taxa que estou tentando explicar. Dentro de cada especificação, as variáveis explicativas são as mesmas para os dois destinos, mas os coeficientes são estimados separadamente.
+% (4) Ao incluir fiscalização, também diminui a amostra. Então, uma mudança no coeficiente entre M01 e M02 pode vir tanto da nova variável quanto da mudança nas observações que entram na regressão. Vou separar essas duas coisas mais adiante.
+% (5) Por enquanto, eu uso modelos sem efeitos fixos municipais ou anuais e sem interações. Os erros-padrão consideram a dependência dentro dos municípios e dos anos. A leitura dos coeficientes continua sendo de associação.
 
 % ================================================
 % #6 -- Fonte numerica: coef_S01_agricultura, coef_M01_agricultura, coef_M02_agricultura.
@@ -200,6 +205,13 @@ Nenhum preço ou aptidão rejeita zero a 5\%. Em S01, soja tem $p=0{,}053$: o si
 % \fonte{testes\_chap1, modelos\_coeficientes.csv e modelos\_resumo.csv.}
 \end{frame}
 %% COMENTÁRIO:
+% (1) Aqui eu mostro os resultados para a conversão em agricultura. Os coeficientes estão em pontos percentuais, e os erros-padrão, entre parênteses, indicam a incerteza. Vou traduzir os valores mantendo as demais variáveis constantes. Os preços estão em dólares de 2024.
+% (2) No S01, a associação com o preço da soja é negativa, com p igual a 0,053, próximo do corte de 5%. Isso não torna o coeficiente inválido, mas a interpretação continua sendo de associação, sem afirmar que o preço causou uma redução da conversão.
+% (3) No M01, para cada US$ 132,44 por tonelada a mais no preço da soja do ano anterior, a taxa estimada de conversão é 0,0674 ponto percentual menor. Para cada US$ 73,57 por tonelada a mais no preço do milho do ano anterior, a taxa estimada é 0,0481 ponto percentual maior.
+% (4) Para a aptidão, eu comparo municípios. Um município com rendimento potencial de soja 379,58 kg por hectare maior tem uma taxa estimada 0,0367 ponto percentual menor. Para o milho, uma aptidão 778,52 kg por hectare maior está associada a uma taxa 0,0241 ponto percentual menor. Esses rendimentos são medidos em peso seco dos grãos.
+% (5) Essas diferenças de preço e aptidão equivalem a um desvio-padrão. Num exemplo hipotético de M01, se a taxa prevista fosse de 1%, um preço da soja US$ 132,44 por tonelada maior corresponderia a uma taxa prevista de aproximadamente 0,9326%.
+% (6) No M02, cada dez autos de flora adicionais no ano anterior estão associados a uma taxa estimada 0,0040 ponto percentual menor. Essa estimativa também é incerta e não permite concluir se a fiscalização foi eficaz.
+% (7) Os intervalos de confiança de 95% dos coeficientes que eu comentei incluem zero: as magnitudes são incertas. Mesmo um p-valor menor não bastaria para estabelecer causalidade nestes modelos. O R quadrado fica entre cerca de 2% e 6%: os modelos explicam pouca variação da conversão, mas isso, sozinho, não invalida a OLS.
 
 % ================================================
 % #7 -- Recorte dos coeficientes originais M01/M02; S01 nao e apresentado para este destino.
@@ -235,78 +247,16 @@ Em M02, os intervalos dos coeficientes exibidos incluem zero.
 % \fonte{testes\_chap1, modelos\_coeficientes.csv e modelos\_resumo.csv.}
 \end{frame}
 %% COMENTÁRIO:
+% (1) Agora eu faço a mesma leitura para a conversão de vegetação nativa em pastagem. Mantenho as demais variáveis constantes, com preços em dólares de 2024 e diferenças de um desvio-padrão, como no slide anterior.
+% (2) No M01, para cada US$ 132,44 por tonelada a mais no preço da soja do ano anterior, a taxa estimada de conversão para pastagem é 0,4809 ponto percentual menor. Para cada US$ 73,57 por tonelada a mais no preço do milho do ano anterior, a taxa estimada é 0,4308 ponto percentual maior.
+% (3) Entre municípios, uma aptidão para soja 379,58 kg por hectare maior está associada a uma taxa estimada 0,1773 ponto percentual maior. Para o milho, uma aptidão 778,52 kg por hectare maior está associada a uma taxa 0,1527 ponto percentual maior. São rendimentos potenciais agrícolas em peso seco dos grãos, não medidas da produtividade da pastagem.
+% (4) Num exemplo hipotético de M01, se a taxa prevista fosse de 1%, essa diferença de aptidão para soja corresponderia a uma taxa de aproximadamente 1,1773%. A aptidão da soja é o único coeficiente exibido em M01 com p abaixo de 5%: p igual a 0,022, sem correção por múltiplos testes. Há evidência de associação positiva nesse modelo, mas isso não identifica uma relação causal.
+% (5) No M02, a mesma diferença de aptidão para soja está associada a uma taxa 0,1179 ponto percentual maior. O p-valor passa para 0,067, e o intervalo de confiança de 95% inclui zero. Isso também acontece com os intervalos dos demais coeficientes exibidos em M02, mostrando a incerteza dessas estimativas.
+% (6) Para a fiscalização, cada dez autos de flora adicionais no ano anterior estão associados a uma taxa estimada de conversão para pastagem 0,0355 ponto percentual menor. Essa associação é incerta e não permite concluir se a fiscalização foi eficaz.
+% (7) O R quadrado passa de 12,72% em M01 para 6,81% em M02, mas a amostra também cai de 2.772 para 1.140 observações. Por isso, eu não atribuo a mudança dos coeficientes ou do ajuste apenas à inclusão da fiscalização: também mudou o conjunto de observações usado na regressão.
 
 % ================================================
-% #8 -- M01C isola a composicao; estimativas/SE preservados.
-\begin{frame}{Fiscalização e mudança de amostra}
-Incluir autuações exige excluir \textbf{1.632 observações}, ou 58,9\% da amostra válida. A comparação direta M01--M02 mistura duas alterações.
-\par\medskip
-\small
-\textbf{Preço da soja e conversão para pastagem}\par\smallskip
-\begin{tabularx}{\textwidth}{L c c c}
-\toprule
- & \textbf{M01} & \textbf{M01C} & \textbf{M02}\\
-\midrule
-Amostra & Ampla & Fiscal & Fiscal\\
-Autuações como regressor & Não & Não & Sim\\
-Coeficiente (erro-padrão) & \est{-0{,}4809}{0,2845} & \est{-0{,}2082}{0,2554} & \est{-0{,}2063}{0,2507}\\
-Observações & 2.772 & 1.140 & 1.140\\
-\bottomrule
-\end{tabularx}
-\par\smallskip
-A maior parte da atenuação ocorre \textbf{antes de acrescentar autuações}, quando se restringe a amostra. M01C repete exatamente a fórmula de M01 na amostra de M02.
-\tpar
-Os autos têm associação negativa e imprecisa nos dois destinos. Isso não demonstra eficácia nem ineficácia da fiscalização, que pode responder à própria conversão.
-% \fonte{testes\_chap1, coef\_M01\_pastagem, coef\_M01C\_pastagem e coef\_M02\_pastagem.}
-\end{frame}
-%% COMENTÁRIO:
-
-% ================================================
-% #9 -- Rodada2 A01 e rodada4 C01/C02; unidades/objetos nao equivalem ao pooled.
-\begin{frame}{O que os modelos com efeitos fixos acrescentam}
-\small
-Efeitos fixos municipais e anuais permitem examinar \textbf{preço $\times$ aptidão}.
-Preços isolados são absorvidos pelo ano e aptidões isoladas pelo município.
-\par\smallskip
-\textbf{Conversão para pastagem: exposição soja $\times$ aptidão}\par\smallskip
-\begin{tabularx}{\textwidth}{L r c}
-\toprule
-\textbf{Especificação} & \textbf{Coeficiente} & \textbf{IC 95\%}\\
-\midrule
-Estática, FE município + ano (rodada 2) & 0,1038 & [0,0385; 0,1691]\\
-Soma dinâmica, tendências municipais (rodada 4) & 0,1637 & [0,0985; 0,2290]\\
-Soma dinâmica, FE bioma $\times$ ano (rodada 4) & 0,0102 & [$-$0,0436; 0,0640]\\
-\bottomrule
-\end{tabularx}
-\par\smallskip
-Coeficientes em pp, com preço e aptidão padronizados. Estática: 2.772 observações em 24 anos. Dinâmicas: 2.539 em 22 anos, somando as defasagens. IC pontuais Driscoll--Kraay, defasagem 2.
-\par\smallskip
-A associação depende do controle de choques territoriais. Exclusões individuais de municípios ou anos preservam o sinal estático, mas não eliminam esse problema.
-\tpar
-São associações diferenciais, não diretamente comparáveis aos preços isolados das OLS anteriores.
-% \fonte{testes2/RESULTADOS.md; testes4/RESULTADOS.md.}
-\end{frame}
-%% COMENTÁRIO:
-
-% ================================================
-% #10 -- Rodada5 CONCLUSAO e rodada7 CONCLUSAO_GERAL.
-\begin{frame}{Limites revelados pelas demais rodadas}
-\small
-\begin{itemize}
-\setlength{\itemsep}{3.5mm}
-\item \textbf{Pouca variação temporal independente.} A grade contém 24 anos e as defasagens reduzem essa janela. Na soma dinâmica soja/pastagem, com 22 anos, o $p$ ajustado por Holm foi 0,031 com blocos de 2 anos e 0,125 com blocos de 3 anos.
-\item \textbf{Resolução da inferência.} Com oito blocos de 3 anos, o menor $p$ bilateral é 0,0078, superior ao primeiro limiar de Holm para 16 testes. A não rejeição também reflete essa limitação.
-\item \textbf{Forma funcional e território.} PPML e logit fracional não validaram uniformemente os resultados. As rodadas 6--7 encontraram heterogeneidade associativa, sem identificar um mecanismo causal.
-\item \textbf{Alcance dos dados.} Não há conversão específica por cultura nem localização da conversão dentro de cada município. O suporte do Pantanal é restrito.
-\end{itemize}
-\medskip
-As rodadas são exploratórias. As correções dentro de cada família não controlam toda a busca adaptativa entre rodadas.
-% \fonte{testes2/RESULTADOS.md; testes5/RESULTADOS.md; testes7/CONCLUSAO\_GERAL.md.}
-\end{frame}
-%% COMENTÁRIO:
-
-% ================================================
-% #11 -- Avaliacao solicitada: utilidade associativa e insuficiencia causal.
+% #8 -- Avaliacao solicitada: utilidade associativa e insuficiencia causal.
 \begin{frame}{A OLS serve para esta análise?}
 \begin{block}{Serve como referência descritiva e associativa}
 Permite medir associações em pontos percentuais, comparar ajustes e mostrar a sensibilidade à amostra. O baixo $R^2$, por si só, não invalida o estimador.
@@ -325,9 +275,14 @@ Não há diagnóstico documentado de resíduos que permita declarar uma reprova�
 % \fonte{testes\_chap1/LEIA\_ME.md; testes7/CONCLUSAO\_GERAL.md; \href{https://cameron.econ.ucdavis.edu/research/Cameron_Miller_JHR_2015_February.pdf}{Cameron e Miller (2015)}.}
 \end{frame}
 %% COMENTÁRIO:
+% (1) A resposta é que a OLS serve como ponto de partida. Ela me ajuda a medir as associações e a ver como os resultados mudam quando acrescento variáveis ou altero a amostra. Um R quadrado baixo, sozinho, não torna essas estimativas inválidas.
+% (2) Para interpretar um coeficiente como efeito causal, eu preciso justificar a condição escrita no slide. Em termos simples, os fatores que ficaram de fora e afetam a conversão não podem estar relacionados às variáveis explicativas de modo a distorcer a comparação.
+% (3) A fiscalização mostra bem o problema. Pode haver mais autos justamente onde houve mais infrações. Então, a quantidade de autos também pode estar respondendo ao processo que eu quero explicar. Usar a informação do ano anterior não elimina essa relação automaticamente.
+% (4) Os erros-padrão agrupados levam em conta parte da dependência entre as observações, mas não corrigem esses problemas de causalidade. E, nestas OLS, eu tenho só 23 ou 24 anos para a inferência, o que também exige cautela.
+% (5) Então, o limite principal está no que foi medido e na forma como a comparação foi construída. Preços não são retorno líquido e contar autos não mede diretamente a efetividade institucional. É por isso que eu uso essas regressões como evidência associativa.
 
 % ================================================
-% #12
+% #9
 \begin{frame}{Conclusões preliminares}
 \begin{enumerate}
 \setlength{\itemsep}{4mm}
@@ -340,5 +295,9 @@ Não há diagnóstico documentado de resíduos que permita declarar uma reprova�
 % \fonte{Síntese de testes\_chap1 e das rodadas testes2--testes7.}
 \end{frame}
 %% COMENTÁRIO:
+% (1) Para fechar, eu vejo essas regressões como um diagnóstico inicial. Várias associações são imprecisas, e a comparação entre M01 e M02 mostra que preciso olhar com cuidado para a composição da amostra.
+% (2) O sinal negativo do preço da soja é um resultado que eu preciso investigar. Ele não basta para refutar a hipótese, porque estas regressões não isolam o efeito causal do retorno esperado nem testam todas as interações previstas em H1.
+% (3) Além destas tabelas, os testes complementares com efeitos fixos e interações sugerem que a associação entre preços e conversão varia com a aptidão e com o território, principalmente para pastagem. Mas esses resultados também mudam quando considero choques específicos de cada bioma ao longo do tempo.
+% (4) Então, a hipótese completa continua em aberto. O próximo passo é melhorar as medidas de retorno esperado e de efetividade institucional e construir uma comparação que permita separar seus efeitos dos demais fatores. A OLS ajuda a organizar essa investigação, mas os resultados apresentados ainda não identificam efeitos causais.
 
 \end{document}
