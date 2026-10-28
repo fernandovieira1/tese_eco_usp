@@ -175,84 +175,89 @@ Agricultura e pastagem são estimadas separadamente.
 % ================================================
 % #6 -- Fonte numerica: coef_S01_agricultura, coef_M01_agricultura, coef_M02_agricultura.
 \begin{frame}{OLS: conversão para agricultura}
-\small Coeficientes (erros-padrão), em pp. Preços e aptidões em desvios-padrão.
+\small\textbf{Leitura:} diferença comparada $\rightarrow$ mudança na taxa, em pontos percentuais (pp).
 \par\smallskip
 \begingroup
 \fontsize{9.5}{11.4}\selectfont
 \renewcommand{\arraystretch}{1.00}
-\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\textwidth}{L c c c}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{L l c c c}
 \toprule
- & \textbf{S01: simples} & \textbf{M01: múltipla} & \textbf{M02: fiscalização}\\
+\textbf{Variável} & \shortstack[l]{\textbf{Diferença}\\\textbf{comparada}} & \shortstack{\textbf{S01}\\simples} & \shortstack{\textbf{M01}\\múltipla} & \shortstack{\textbf{M02}\\fiscalização}\\
 \midrule
-Preço da soja & \est{-0{,}0512}{0,0251} & \est{-0{,}0674}{0,0667} & \est{-0{,}0821}{0,0773}\\
-Preço do milho & -- & \est{0{,}0481}{0,0602} & \est{0{,}0703}{0,0664}\\
-Aptidão da soja & -- & \est{-0{,}0367}{0,0222} & \est{-0{,}0197}{0,0137}\\
-Aptidão do milho & -- & \est{-0{,}0241}{0,0170} & \est{-0{,}0096}{0,0077}\\
-Autos de flora / 10 & -- & -- & \est{-0{,}0040}{0,0058}\\
+Preço da soja & \textcolor{verde}{+US\$ 132,44/t} & \est{-0{,}0512}{0,0251} & \textcolor{verde}{\est{-0{,}0674}{0,0667}} & \est{-0{,}0821}{0,0773}\\
+Preço do milho & +US\$ 73,57/t & -- & \est{0{,}0481}{0,0602} & \est{0{,}0703}{0,0664}\\
+Aptidão da soja & +379,58 kg/ha & -- & \est{-0{,}0367}{0,0222} & \est{-0{,}0197}{0,0137}\\
+Aptidão do milho & +778,52 kg/ha & -- & \est{-0{,}0241}{0,0170} & \est{-0{,}0096}{0,0077}\\
+Autos de flora & +10 autos & -- & -- & \est{-0{,}0040}{0,0058}\\
 \midrule
-Controles de bioma & Não & Sim & Sim\\
-Observações & 2.772 & 2.772 & 1.140\\
-Municípios / anos & 137 / 24 & 137 / 24 & 128 / 23\\
-$R^2$ & 0,0185 & 0,0562 & 0,0404\\
+\multicolumn{2}{l}{Observações / municípios / anos} & 2.772 / 137 / 24 & 2.772 / 137 / 24 & 1.140 / 128 / 23\\
+\multicolumn{2}{l}{$R^2$} & 0,0185 & 0,0562 & 0,0404\\
 \bottomrule
 \end{tabularx}
 \endgroup
 \par\smallskip
-\footnotesize Constante nos três modelos. M01/M02 mantêm bioma e controle adicional de preço, cujos coeficientes não são exibidos.
-\par\smallskip\small
-Nenhum preço ou aptidão rejeita zero a 5\%. Em S01, soja tem $p=0{,}053$: o sinal negativo não permite concluir que preços reduzam a conversão.
+{\fontsize{9}{10.6}\selectfont\textbf{Preços médios (US\$ de 2024/t): soja 561,61; milho 243,98.} Referência: 24 valores anuais.\par}
+{\fontsize{8}{9.4}\selectfont
+\textbf{1 desvio-padrão} em preços e aptidões. Aptidão em grãos secos (kg/ha). Preços e autos: ano anterior.\par
+Erros-padrão entre parênteses. Constante nos três modelos; bioma e preço adicional em M01/M02, não exibidos.\par}
+\par\smallskip
+\small\textcolor{verde}{\textbf{Exemplo M01:}} soja US\$ 132,44/t mais cara associa-se a \textbf{0,0674 pp a menos}.\par
+\footnotesize Taxa hipotética: 1\% $\rightarrow$ 0,9326\%, mantendo as demais variáveis constantes.\par
+\footnotesize\textbf{Limite:} os intervalos de 95\% dos coeficientes acima incluem zero; as associações são incertas.
 % \fonte{testes\_chap1, modelos\_coeficientes.csv e modelos\_resumo.csv.}
 \end{frame}
 %% COMENTÁRIO:
-% (1) Aqui eu mostro os resultados para a conversão em agricultura. Os coeficientes estão em pontos percentuais, e os erros-padrão, entre parênteses, indicam a incerteza. Vou traduzir os valores mantendo as demais variáveis constantes. Os preços estão em dólares de 2024.
-% (2) No S01, a associação com o preço da soja é negativa, com p igual a 0,053, próximo do corte de 5%. Isso não torna o coeficiente inválido, mas a interpretação continua sendo de associação, sem afirmar que o preço causou uma redução da conversão.
-% (3) No M01, para cada US$ 132,44 por tonelada a mais no preço da soja do ano anterior, a taxa estimada de conversão é 0,0674 ponto percentual menor. Para cada US$ 73,57 por tonelada a mais no preço do milho do ano anterior, a taxa estimada é 0,0481 ponto percentual maior.
-% (4) Para a aptidão, eu comparo municípios. Um município com rendimento potencial de soja 379,58 kg por hectare maior tem uma taxa estimada 0,0367 ponto percentual menor. Para o milho, uma aptidão 778,52 kg por hectare maior está associada a uma taxa 0,0241 ponto percentual menor. Esses rendimentos são medidos em peso seco dos grãos.
-% (5) Essas diferenças de preço e aptidão equivalem a um desvio-padrão. Num exemplo hipotético de M01, se a taxa prevista fosse de 1%, um preço da soja US$ 132,44 por tonelada maior corresponderia a uma taxa prevista de aproximadamente 0,9326%.
-% (6) No M02, cada dez autos de flora adicionais no ano anterior estão associados a uma taxa estimada 0,0040 ponto percentual menor. Essa estimativa também é incerta e não permite concluir se a fiscalização foi eficaz.
-% (7) Os intervalos de confiança de 95% dos coeficientes que eu comentei incluem zero: as magnitudes são incertas. Mesmo um p-valor menor não bastaria para estabelecer causalidade nestes modelos. O R quadrado fica entre cerca de 2% e 6%: os modelos explicam pouca variação da conversão, mas isso, sozinho, não invalida a OLS.
+% (1) Aqui eu leio a tabela da esquerda para a direita. Escolho a variável, vejo a diferença comparada e, depois, a mudança estimada na taxa de conversão para agricultura. Mantenho as demais variáveis constantes. Os números entre parênteses são os erros-padrão, que indicam a incerteza da estimativa.
+% (2) Abaixo da tabela, eu mostro os preços médios para dar uma referência: US$ 561,61 por tonelada de soja e US$ 243,98 por tonelada de milho, em dólares de 2024. São médias dos 24 preços anuais defasados usados na padronização, mantidas iguais entre os modelos. Já a coluna Diferença comparada mostra quanto um desvio-padrão representa na unidade original de cada preço ou aptidão.
+% (3) Vou pegar a primeira linha e a coluna M01. Num exemplo, sair do preço médio da soja de US$ 561,61 por tonelada para US$ 694,05 corresponde aos US$ 132,44 a mais da tabela. Essa diferença no preço do ano anterior está associada a 0,0674 ponto percentual a menos na conversão. Se a taxa prevista fosse de 1%, passaria para cerca de 0,9326%. Para o milho, US$ 73,57 por tonelada a mais se associam a 0,0481 ponto percentual a mais.
+% (4) Nas linhas de aptidão, comparo municípios com rendimentos potenciais diferentes. No M01, 379,58 kg por hectare a mais para soja se associam a 0,0367 ponto percentual a menos na conversão. Para milho, 778,52 kg por hectare a mais se associam a 0,0241 ponto percentual a menos. Esses quilos são o peso seco dos grãos que a terra poderia produzir, não a produção observada.
+% (5) Na última linha de variáveis, a leitura é por dez autos de flora adicionais no ano anterior. No M02, essa diferença está associada a 0,0040 ponto percentual a menos na conversão. A unidade é dez autos porque a contagem entrou dividida por dez, não porque foi padronizada como os preços e as aptidões.
+% (6) Esses números mostram as associações estimadas, mas os intervalos de 95% dos coeficientes exibidos incluem zero. No S01, o p do preço da soja é 0,053, perto do corte de 5%. Isso não invalida o coeficiente, mas também não sustenta a conclusão de que o preço causou uma redução da conversão.
+% (7) O R quadrado fica entre cerca de 2% e 6%, indicando que os modelos explicam pouca variação da conversão. Isso, sozinho, não invalida a OLS. Ao comparar M01 e M02, também preciso lembrar que a amostra diminui: as diferenças não podem ser atribuídas apenas à fiscalização.
 
 % ================================================
 % #7 -- Recorte dos coeficientes originais M01/M02; S01 nao e apresentado para este destino.
 \begin{frame}{OLS: conversão para pastagem}
-\small Coeficientes (erros-padrão), em pp. Preços e aptidões em desvios-padrão.
+\small\textbf{Leitura:} diferença comparada $\rightarrow$ mudança na taxa, em pontos percentuais (pp).
 \par\smallskip
 \begingroup
 \fontsize{9.5}{11.4}\selectfont
 \renewcommand{\arraystretch}{1.00}
-\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\textwidth}{L c c}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{L l c c}
 \toprule
- & \textbf{M01: múltipla} & \textbf{M02: fiscalização}\\
+\textbf{Variável} & \shortstack[l]{\textbf{Diferença}\\\textbf{comparada}} & \shortstack{\textbf{M01}\\múltipla} & \shortstack{\textbf{M02}\\fiscalização}\\
 \midrule
-Preço da soja & \est{-0{,}4809}{0,2845} & \est{-0{,}2063}{0,2507}\\
-Preço do milho & \est{0{,}4308}{0,2710} & \est{0{,}1934}{0,2340}\\
-Aptidão da soja & \est{0{,}1773}{0,0722} & \est{0{,}1179}{0,0613}\\
-Aptidão do milho & \est{0{,}1527}{0,1001} & \est{0{,}2105}{0,1273}\\
-Autos de flora / 10 & -- & \est{-0{,}0355}{0,0279}\\
+Preço da soja & +US\$ 132,44/t & \est{-0{,}4809}{0,2845} & \est{-0{,}2063}{0,2507}\\
+Preço do milho & +US\$ 73,57/t & \est{0{,}4308}{0,2710} & \est{0{,}1934}{0,2340}\\
+Aptidão da soja & \textcolor{verde}{+379,58 kg/ha} & \textcolor{verde}{\est{0{,}1773}{0,0722}} & \est{0{,}1179}{0,0613}\\
+Aptidão do milho & +778,52 kg/ha & \est{0{,}1527}{0,1001} & \est{0{,}2105}{0,1273}\\
+Autos de flora & +10 autos & -- & \est{-0{,}0355}{0,0279}\\
 \midrule
-Controles de bioma & Sim & Sim\\
-Observações & 2.772 & 1.140\\
-Municípios / anos & 137 / 24 & 128 / 23\\
-$R^2$ & 0,1272 & 0,0681\\
+\multicolumn{2}{l}{Observações / municípios / anos} & 2.772 / 137 / 24 & 1.140 / 128 / 23\\
+\multicolumn{2}{l}{$R^2$} & 0,1272 & 0,0681\\
 \bottomrule
 \end{tabularx}
 \endgroup
 \par\smallskip
-\footnotesize Modelos originais, com constante, bioma e controle adicional de preço. Apenas parte dos coeficientes é exibida.
-\par\smallskip\small
-M01: aptidão da soja positiva ($p=0{,}022$).
-Em M02, os intervalos dos coeficientes exibidos incluem zero.
+{\fontsize{9}{10.6}\selectfont\textbf{Preços médios (US\$ de 2024/t): soja 561,61; milho 243,98.} Referência: 24 valores anuais.\par}
+{\fontsize{8}{9.4}\selectfont
+\textbf{1 desvio-padrão} em preços e aptidões. Aptidão em grãos secos (kg/ha). Preços e autos: ano anterior.\par
+Erros-padrão entre parênteses. Constante, bioma e preço adicional mantidos nos modelos, não exibidos.\par}
+\par\smallskip
+\small\textcolor{verde}{\textbf{Exemplo M01:}} aptidão da soja 379,58 kg/ha maior associa-se a \textbf{0,1773 pp a mais}.\par
+\footnotesize Taxa hipotética: 1\% $\rightarrow$ 1,1773\%, mantendo as demais variáveis constantes.\par
+\footnotesize\textbf{M01:} aptidão da soja, $p=0{,}022$. \textbf{M02:} intervalos de 95\% dos coeficientes acima incluem zero.
 % \fonte{testes\_chap1, modelos\_coeficientes.csv e modelos\_resumo.csv.}
 \end{frame}
 %% COMENTÁRIO:
-% (1) Agora eu faço a mesma leitura para a conversão de vegetação nativa em pastagem. Mantenho as demais variáveis constantes, com preços em dólares de 2024 e diferenças de um desvio-padrão, como no slide anterior.
-% (2) No M01, para cada US$ 132,44 por tonelada a mais no preço da soja do ano anterior, a taxa estimada de conversão para pastagem é 0,4809 ponto percentual menor. Para cada US$ 73,57 por tonelada a mais no preço do milho do ano anterior, a taxa estimada é 0,4308 ponto percentual maior.
-% (3) Entre municípios, uma aptidão para soja 379,58 kg por hectare maior está associada a uma taxa estimada 0,1773 ponto percentual maior. Para o milho, uma aptidão 778,52 kg por hectare maior está associada a uma taxa 0,1527 ponto percentual maior. São rendimentos potenciais agrícolas em peso seco dos grãos, não medidas da produtividade da pastagem.
-% (4) Num exemplo hipotético de M01, se a taxa prevista fosse de 1%, essa diferença de aptidão para soja corresponderia a uma taxa de aproximadamente 1,1773%. A aptidão da soja é o único coeficiente exibido em M01 com p abaixo de 5%: p igual a 0,022, sem correção por múltiplos testes. Há evidência de associação positiva nesse modelo, mas isso não identifica uma relação causal.
-% (5) No M02, a mesma diferença de aptidão para soja está associada a uma taxa 0,1179 ponto percentual maior. O p-valor passa para 0,067, e o intervalo de confiança de 95% inclui zero. Isso também acontece com os intervalos dos demais coeficientes exibidos em M02, mostrando a incerteza dessas estimativas.
-% (6) Para a fiscalização, cada dez autos de flora adicionais no ano anterior estão associados a uma taxa estimada de conversão para pastagem 0,0355 ponto percentual menor. Essa associação é incerta e não permite concluir se a fiscalização foi eficaz.
+% (1) Agora o destino da conversão é a pastagem. A leitura é a mesma: pego a diferença na segunda coluna e vejo a associação estimada em M01 ou M02, mantendo as demais variáveis constantes. Repito as referências de preço médio: US$ 561,61 por tonelada de soja e US$ 243,98 de milho, em dólares de 2024. Essas médias são fixas, calculadas sobre os mesmos 24 preços anuais defasados. A coluna Diferença comparada continua mostrando um desvio-padrão, não a média.
+% (2) Vou começar pelo exemplo destacado, na linha da aptidão da soja e na coluna M01. Um município com rendimento potencial de soja 379,58 kg por hectare maior tem uma taxa estimada de conversão para pastagem 0,1773 ponto percentual maior. Se a taxa prevista fosse de 1%, essa diferença corresponderia a 1,1773%. Estou comparando municípios com aptidões diferentes.
+% (3) Para o milho, uma aptidão 778,52 kg por hectare maior está associada a 0,1527 ponto percentual a mais no M01. Nas duas linhas, a aptidão mede o rendimento potencial agrícola em peso seco dos grãos. Ela não mede a produtividade da pastagem, embora aqui a variável que estou explicando seja a conversão para pastagem.
+% (4) Voltando às duas primeiras linhas, no M01, US$ 132,44 por tonelada a mais no preço da soja se associam a 0,4809 ponto percentual a menos. Para o milho, US$ 73,57 por tonelada a mais se associam a 0,4308 ponto percentual a mais. São preços do ano anterior, em dólares de 2024, e essas duas estimativas têm intervalos de 95% que incluem zero.
+% (5) A aptidão da soja é o único coeficiente exibido em M01 com p abaixo de 5%: 0,022, sem correção por múltiplos testes. Em M02, a mesma diferença de aptidão se associa a 0,1179 ponto percentual a mais, mas o p passa para 0,067 e o intervalo de 95% inclui zero. A associação positiva em M01 não identifica causalidade.
+% (6) Na linha da fiscalização, dez autos de flora adicionais no ano anterior se associam a 0,0355 ponto percentual a menos na conversão para pastagem. Essa estimativa também é incerta. No M02, todos os intervalos de 95% dos coeficientes exibidos incluem zero.
 % (7) O R quadrado passa de 12,72% em M01 para 6,81% em M02, mas a amostra também cai de 2.772 para 1.140 observações. Por isso, eu não atribuo a mudança dos coeficientes ou do ajuste apenas à inclusão da fiscalização: também mudou o conjunto de observações usado na regressão.
 
 % ================================================
