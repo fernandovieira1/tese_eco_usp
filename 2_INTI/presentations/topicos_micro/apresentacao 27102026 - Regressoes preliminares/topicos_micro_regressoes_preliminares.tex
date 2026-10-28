@@ -1,0 +1,344 @@
+% !TEX program = pdflatex
+% Modelo visual: Apresentacao 15102026 - dados preliminares.
+% Fontes e validacao: 2_INTI/audit/apresentacao_27102026/RELATORIO.md.
+% Resultados existentes: testes_chap1 (S01, M01, M02 e comparacao M01C).
+% Sintese complementar: testes2, testes4, testes5 e testes7.
+\documentclass[aspectratio=169,11pt]{beamer}
+\usetheme{Madrid}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs,array,tabularx}
+\usepackage{amsmath}
+\definecolor{verde}{HTML}{24574D}
+\definecolor{azul}{HTML}{1769A5}
+\definecolor{grafite}{HTML}{253A40}
+\setbeamercolor{structure}{fg=verde}
+\setbeamercolor{title}{bg=verde,fg=white}
+\setbeamercolor{frametitle}{bg=verde,fg=white}
+\setbeamercolor{normal text}{fg=grafite}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{\leavevmode\hbox{\begin{beamercolorbox}[wd=.86\paperwidth,ht=2.7ex,dp=1.2ex,leftskip=1em]{author in head/foot}Retornos, instituições e conversão da vegetação nativa\end{beamercolorbox}\begin{beamercolorbox}[wd=.14\paperwidth,ht=2.7ex,dp=1.2ex,center]{date in head/foot}\insertframenumber\,/\,\inserttotalframenumber\end{beamercolorbox}}}
+\setbeamersize{text margin left=8mm,text margin right=8mm}
+\setbeamertemplate{itemize items}[circle]
+\newcommand{\fonte}[1]{\par\vfill{\fontsize{7.5}{9}\selectfont\color{gray}Fonte: #1\par}}
+\newcommand{\tpar}{\par\vspace{2mm}}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcommand{\est}[2]{\ensuremath{#1}\;{\color{gray}(#2)}}
+\renewcommand{\arraystretch}{1.15}
+\title[Retornos, instituições e conversão]{Retornos Econômicos, Instituições e Conversão da Vegetação Nativa em Mato Grosso}
+\subtitle{Regressões preliminares: OLS e limites da inferência}
+\author{Fernando Souza de Vieira}
+\institute{Tópicos em Microeconomia}
+\date{27 de outubro de 2026}
+\begin{document}
+
+% ================================================
+% #1
+\begin{frame}
+\titlepage
+\end{frame}
+%% COMENTÁRIO: 
+% (1) Bom, hoje eu vou mostrar as primeiras regressões do meu trabalho sobre a conversão da vegetação nativa em Mato Grosso.
+% (2) A ideia é investigar como os incentivos econômicos, a capacidade produtiva da terra e a fiscalização se relacionam com a abertura de áreas para agricultura e pastagem.
+% (3) Vou apresentar a hipótese, explicar as variáveis e comparar os resultados, discutindo o que a OLS permite dizer nesta etapa e o que ainda precisa ser investigado.
+
+% ================================================
+% #2 -- H1 vigente: 0_introduction.tex, REF7. Funcao conceitual ja existente.
+\begin{frame}{Hipótese e função}
+\begin{block}{H1: retornos, instituições e conversão}
+Elevações nos retornos econômicos esperados dos usos agropecuários aumentam a taxa de conversão da vegetação nativa, sendo essa resposta, \textit{ceteris paribus}, amplificada pela capacidade produtiva local da terra e modulada pela efetividade do ambiente institucional.
+\end{block}
+\medskip
+\[
+\begin{aligned}
+\text{Conversão}=f\bigl(&\text{preços agropecuários},\\
+&\text{produtividade da terra},\\ &\text{ambiente institucional}\bigr)
+\end{aligned}
+\]
+% \small
+% A função organiza o mecanismo proposto. Nos testes, preços, aptidão potencial e autuações representam dimensões observáveis desse mecanismo.
+% \tpar
+% \textbf{Alcance preliminar:} os três modelos OLS são aditivos e ainda não testam a amplificação ou a modulação previstas em H1.
+% \fonte{Capítulo 1, Introdução, REF7--REF9; apresentação de 15/10/2026.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) A hipótese que eu quero testar é que, quando aumenta o retorno esperado da atividade agropecuária, cresce o incentivo para abrir novas áreas e, com isso, a conversão de vegetação nativa.
+% (2) Espero que essa resposta seja maior onde a terra tem mais capacidade de produzir. Já as regras ambientais e a forma como são aplicadas podem mudar esse incentivo, porque entram no custo e no risco de abrir uma nova área.
+% (3) Essa função resume as três dimensões que eu vou observar: preços, capacidade produtiva da terra e ambiente institucional. Os preços ajudam a representar os incentivos econômicos, embora não mostrem, sozinhos, quanto o produtor espera ganhar.
+% (4) Nessas primeiras regressões, eu começo olhando as associações de cada variável com a conversão. Para ver se a associação entre preços e conversão muda conforme a aptidão ou a fiscalização, eu preciso olhar os modelos com interações.
+
+% ================================================
+% #3 -- LEIA_ME.md, auditoria_cobertura.csv e modelos_resumo.    csv.
+\begin{frame}{Y: Qual parcela da vegetação nativa foi convertida?}
+Uma taxa por município e ano, calculada separadamente para \textbf{agricultura} e \textbf{pastagem}.
+\medskip
+\[
+\text{Taxa de conversão (\%)}=
+\frac{\text{hectares nativos convertidos}}{\text{hectares nativos no início do ano}}\times100
+\]
+\par\medskip
+\textbf{Exemplo ilustrativo:} 10 ha convertidos de 1.000 ha nativos = \textbf{1\%}.
+\par\bigskip
+\small
+\textbf{Amostras usadas nas regressões}\par\smallskip
+\begin{tabularx}{\textwidth}{L r r l}
+\toprule
+\textbf{Modelos} & \textbf{Municípios} & \textbf{Município--ano} & \textbf{Período}\\
+\midrule
+S01 (OLS simples) e\newline M01 (OLS múltipla) & 137 & 2.772 & 2001--2024\\
+M02 (OLS com fiscalização) & 128 & 1.140 & 2002--2024\\
+\bottomrule
+\end{tabularx}
+\par\medskip
+\textbf{Painel desbalanceado:} entram os anos com dados completos nas variáveis do modelo. Cada município pode contribuir com uma quantidade diferente de anos.
+% \fonte{MapBiomas 10.1; testes\_chap1, LEIA\_ME e modelos\_resumo.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Aqui eu defino o que estou tentando explicar: a parcela da vegetação nativa de cada município que foi convertida em um ano. Faço essa conta separadamente para agricultura e para pastagem.
+% (2) Eu divido a área convertida pela vegetação nativa que existia no início do ano e multiplico por cem. No exemplo, converter 10 dos 1.000 hectares dá uma taxa de 1%.
+% (3) Cada observação é um município em um determinado ano. Nas regressões simples e múltipla, eu uso 2.772 observações de 137 municípios. Com a fiscalização, são 1.140 observações de 128 municípios, porque também preciso da informação válida do ano anterior.
+% (4) Eu aproveito os anos em que as variáveis daquele modelo estão completas, sem exigir que o município tenha dados para o período inteiro. Por isso, cada município pode contribuir com uma quantidade diferente de anos: é o que eu chamo aqui de painel desbalanceado.
+
+% ================================================
+% #4 -- utilitarios.py, MAPA/ler; escalas.csv.
+\begin{frame}{X: Variáveis explicativas}
+\small
+\begin{tabularx}{\textwidth}{P{1.7cm} L}
+\toprule
+\textbf{Símbolo} & \textbf{Medida utilizada}\\
+\midrule
+$P^k_{t-1}$ & Preços apresentados: soja ($s$) e milho ($m$). $P$ indica o preço do produto $k$ no ano anterior ($t-1$), em dólares de 2024 por tonelada.\\[1.5mm]
+$A_i^c$ & Aptidão ($A$) ou potencial capacidade produtiva em cada cidade ($i$), medida pelo rendimento potencial da cultura ($c$) para soja e milho, em kg/ha.\\[1.5mm]
+$F_{i,t-1}$ & Autos/Multas ($F$) do IBAMA em cada cidade ($i$) no ano anterior ($t-1$), divididos por 10.\\[1.5mm]
+$B_i$ & Indicadores do bioma ($B$) -- Amazônia (referência), Cerrado ou Pantanal -- predominante no município ($i$).\\
+\bottomrule
+\end{tabularx}
+\smallskip
+\textbf{Padronização:} apenas preços e aptidões. $z(X)=(X-\bar X)/\sigma_X$ permite comparar coeficientes por \textbf{1 desvio-padrão}, apesar das unidades diferentes.
+\par\smallskip
+Médias e desvios usam \textbf{24 anos} (preços) e \textbf{141 municípios} (aptidões). Ficam fixos entre amostras para \textbf{manter a mesma unidade de comparação entre modelos}.
+\tpar
+Preços e aptidão não medem o retorno líquido esperado. Autuações não medem diretamente a efetividade institucional.
+% \fonte{Banco Mundial, GAEZ e IBAMA; testes\_chap1, utilitarios.py e escalas.csv.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Aqui eu mostro as variáveis que entram para explicar a conversão. Os preços apresentados são os de soja e milho no ano anterior, em dólares de 2024 por tonelada. O k só identifica qual produto eu estou olhando.
+% (2) Para representar a aptidão da terra, eu uso o rendimento potencial do GAEZ, uma base da FAO e do IIASA. É uma estimativa de quanto a terra poderia produzir de soja ou milho por hectare, em peso seco dos grãos.
+% (3) A fiscalização entra pela contagem de autos de infração de flora do IBAMA no ano anterior. Eu divido por dez para ler o coeficiente a cada dez autos adicionais. Essa divisão só muda a unidade de medida.
+% (4) O B representa o bioma predominante do município. Eu incluo indicadores para Cerrado e Pantanal, usando a Amazônia como referência, para considerar diferenças médias de conversão entre os biomas.
+% (5) Só preços e aptidão foram padronizados. Assim, eu leio seus coeficientes para uma variação de um desvio-padrão. Uso os 24 anos para preços e os 141 municípios para aptidão, mantendo médias e desvios fixos entre amostras para comparar os modelos na mesma escala.
+% (6) O cuidado é que preço e aptidão, sozinhos, não mostram o retorno líquido que o produtor espera ter. Da mesma forma, contar autuações não me diz, por si só, quanto a fiscalização consegue evitar de conversão.
+
+% ================================================
+% #5 -- Formulas literais dos notebooks ols_simples e ols_multiplo.
+\begin{frame}{O que entra em cada modelo}
+\small
+\textbf{Variável dependente:} taxa de conversão da vegetação nativa.
+\par\medskip
+\begin{tabularx}{\textwidth}{P{2.8cm} L P{2.5cm}}
+\toprule
+\textbf{Modelo} & \textbf{Variáveis incluídas} & \textbf{Destino apresentado}\\
+\midrule
+\textbf{S01} (simples) & Preço da soja & Agricultura\\[2mm]
+\textbf{M01} (múltipla) & Preços de soja e milho + aptidões + bioma & Agricultura e pastagem\\[2mm]
+\textbf{M02} (fiscalização) & \textbf{M01 + autos de flora do IBAMA} no ano anterior & Agricultura e pastagem\\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+Agricultura e pastagem são estimadas separadamente.
+\tpar
+{\footnotesize M01/M02 mantêm o controle adicional de preço da especificação original. As tabelas exibem coeficientes selecionados, \textbf{sem reestimação}.\par}
+\tpar
+\textbf{Em comum:} constante, sem efeitos fixos municipais/anuais e sem interações.
+\tpar
+\textbf{Erros-padrão:} agrupados por município e ano. Sem correção por múltiplos testes.
+% Equações originais preservadas como referência; nenhuma especificação foi alterada.
+% L^d_{it}=\alpha_d+\sum_{k\in\{s,m\}}\beta_{kd}z(P^k_{t-1})+\sum_{c\in\{s,m\}}\theta_{cd}z(A_i^c)+\delta_d'B_i+\lambda_d Z_{t-1}.
+% S01: y^{\mathrm{ag}}_{it}=\alpha+\beta_s z(P^s_{t-1})+u^{\mathrm{ag}}_{it}.
+% M01: y^d_{it}=L^d_{it}+u^d_{it}.
+% M02: y^d_{it}=L^d_{it}+\gamma_d F_{i,t-1}+u^d_{it}.
+% Z_{t-1}: controle adicional de preço padronizado, mantido na especificação original e não exibido nas tabelas.
+% d indica agricultura ou pastagem; u^d_{it} reúne os fatores não observados.
+% Inferência: referência t com 23 ou 22 graus de liberdade.
+% \fonte{testes\_chap1, ols\_simples.ipynb, ols\_multiplo.ipynb e utilitarios.py.}
+\end{frame}
+%% COMENTÁRIO:
+
+% ================================================
+% #6 -- Fonte numerica: coef_S01_agricultura, coef_M01_agricultura, coef_M02_agricultura.
+\begin{frame}{OLS: conversão para agricultura}
+\small Coeficientes (erros-padrão), em pp. Preços e aptidões em desvios-padrão.
+\par\smallskip
+\begingroup
+\fontsize{9.5}{11.4}\selectfont
+\renewcommand{\arraystretch}{1.00}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{L c c c}
+\toprule
+ & \textbf{S01: simples} & \textbf{M01: múltipla} & \textbf{M02: fiscalização}\\
+\midrule
+Preço da soja & \est{-0{,}0512}{0,0251} & \est{-0{,}0674}{0,0667} & \est{-0{,}0821}{0,0773}\\
+Preço do milho & -- & \est{0{,}0481}{0,0602} & \est{0{,}0703}{0,0664}\\
+Aptidão da soja & -- & \est{-0{,}0367}{0,0222} & \est{-0{,}0197}{0,0137}\\
+Aptidão do milho & -- & \est{-0{,}0241}{0,0170} & \est{-0{,}0096}{0,0077}\\
+Autos de flora / 10 & -- & -- & \est{-0{,}0040}{0,0058}\\
+\midrule
+Controles de bioma & Não & Sim & Sim\\
+Observações & 2.772 & 2.772 & 1.140\\
+Municípios / anos & 137 / 24 & 137 / 24 & 128 / 23\\
+$R^2$ & 0,0185 & 0,0562 & 0,0404\\
+\bottomrule
+\end{tabularx}
+\endgroup
+\par\smallskip
+\footnotesize Constante nos três modelos. M01/M02 mantêm bioma e controle adicional de preço, cujos coeficientes não são exibidos.
+\par\smallskip\small
+Nenhum preço ou aptidão rejeita zero a 5\%. Em S01, soja tem $p=0{,}053$: o sinal negativo não permite concluir que preços reduzam a conversão.
+% \fonte{testes\_chap1, modelos\_coeficientes.csv e modelos\_resumo.csv.}
+\end{frame}
+%% COMENTÁRIO:
+
+% ================================================
+% #7 -- Recorte dos coeficientes originais M01/M02; S01 nao e apresentado para este destino.
+\begin{frame}{OLS: conversão para pastagem}
+\small Coeficientes (erros-padrão), em pp. Preços e aptidões em desvios-padrão.
+\par\smallskip
+\begingroup
+\fontsize{9.5}{11.4}\selectfont
+\renewcommand{\arraystretch}{1.00}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{L c c}
+\toprule
+ & \textbf{M01: múltipla} & \textbf{M02: fiscalização}\\
+\midrule
+Preço da soja & \est{-0{,}4809}{0,2845} & \est{-0{,}2063}{0,2507}\\
+Preço do milho & \est{0{,}4308}{0,2710} & \est{0{,}1934}{0,2340}\\
+Aptidão da soja & \est{0{,}1773}{0,0722} & \est{0{,}1179}{0,0613}\\
+Aptidão do milho & \est{0{,}1527}{0,1001} & \est{0{,}2105}{0,1273}\\
+Autos de flora / 10 & -- & \est{-0{,}0355}{0,0279}\\
+\midrule
+Controles de bioma & Sim & Sim\\
+Observações & 2.772 & 1.140\\
+Municípios / anos & 137 / 24 & 128 / 23\\
+$R^2$ & 0,1272 & 0,0681\\
+\bottomrule
+\end{tabularx}
+\endgroup
+\par\smallskip
+\footnotesize Modelos originais, com constante, bioma e controle adicional de preço. Apenas parte dos coeficientes é exibida.
+\par\smallskip\small
+M01: aptidão da soja positiva ($p=0{,}022$).
+Em M02, os intervalos dos coeficientes exibidos incluem zero.
+% \fonte{testes\_chap1, modelos\_coeficientes.csv e modelos\_resumo.csv.}
+\end{frame}
+%% COMENTÁRIO:
+
+% ================================================
+% #8 -- M01C isola a composicao; estimativas/SE preservados.
+\begin{frame}{Fiscalização e mudança de amostra}
+Incluir autuações exige excluir \textbf{1.632 observações}, ou 58,9\% da amostra válida. A comparação direta M01--M02 mistura duas alterações.
+\par\medskip
+\small
+\textbf{Preço da soja e conversão para pastagem}\par\smallskip
+\begin{tabularx}{\textwidth}{L c c c}
+\toprule
+ & \textbf{M01} & \textbf{M01C} & \textbf{M02}\\
+\midrule
+Amostra & Ampla & Fiscal & Fiscal\\
+Autuações como regressor & Não & Não & Sim\\
+Coeficiente (erro-padrão) & \est{-0{,}4809}{0,2845} & \est{-0{,}2082}{0,2554} & \est{-0{,}2063}{0,2507}\\
+Observações & 2.772 & 1.140 & 1.140\\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+A maior parte da atenuação ocorre \textbf{antes de acrescentar autuações}, quando se restringe a amostra. M01C repete exatamente a fórmula de M01 na amostra de M02.
+\tpar
+Os autos têm associação negativa e imprecisa nos dois destinos. Isso não demonstra eficácia nem ineficácia da fiscalização, que pode responder à própria conversão.
+% \fonte{testes\_chap1, coef\_M01\_pastagem, coef\_M01C\_pastagem e coef\_M02\_pastagem.}
+\end{frame}
+%% COMENTÁRIO:
+
+% ================================================
+% #9 -- Rodada2 A01 e rodada4 C01/C02; unidades/objetos nao equivalem ao pooled.
+\begin{frame}{O que os modelos com efeitos fixos acrescentam}
+\small
+Efeitos fixos municipais e anuais permitem examinar \textbf{preço $\times$ aptidão}.
+Preços isolados são absorvidos pelo ano e aptidões isoladas pelo município.
+\par\smallskip
+\textbf{Conversão para pastagem: exposição soja $\times$ aptidão}\par\smallskip
+\begin{tabularx}{\textwidth}{L r c}
+\toprule
+\textbf{Especificação} & \textbf{Coeficiente} & \textbf{IC 95\%}\\
+\midrule
+Estática, FE município + ano (rodada 2) & 0,1038 & [0,0385; 0,1691]\\
+Soma dinâmica, tendências municipais (rodada 4) & 0,1637 & [0,0985; 0,2290]\\
+Soma dinâmica, FE bioma $\times$ ano (rodada 4) & 0,0102 & [$-$0,0436; 0,0640]\\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+Coeficientes em pp, com preço e aptidão padronizados. Estática: 2.772 observações em 24 anos. Dinâmicas: 2.539 em 22 anos, somando as defasagens. IC pontuais Driscoll--Kraay, defasagem 2.
+\par\smallskip
+A associação depende do controle de choques territoriais. Exclusões individuais de municípios ou anos preservam o sinal estático, mas não eliminam esse problema.
+\tpar
+São associações diferenciais, não diretamente comparáveis aos preços isolados das OLS anteriores.
+% \fonte{testes2/RESULTADOS.md; testes4/RESULTADOS.md.}
+\end{frame}
+%% COMENTÁRIO:
+
+% ================================================
+% #10 -- Rodada5 CONCLUSAO e rodada7 CONCLUSAO_GERAL.
+\begin{frame}{Limites revelados pelas demais rodadas}
+\small
+\begin{itemize}
+\setlength{\itemsep}{3.5mm}
+\item \textbf{Pouca variação temporal independente.} A grade contém 24 anos e as defasagens reduzem essa janela. Na soma dinâmica soja/pastagem, com 22 anos, o $p$ ajustado por Holm foi 0,031 com blocos de 2 anos e 0,125 com blocos de 3 anos.
+\item \textbf{Resolução da inferência.} Com oito blocos de 3 anos, o menor $p$ bilateral é 0,0078, superior ao primeiro limiar de Holm para 16 testes. A não rejeição também reflete essa limitação.
+\item \textbf{Forma funcional e território.} PPML e logit fracional não validaram uniformemente os resultados. As rodadas 6--7 encontraram heterogeneidade associativa, sem identificar um mecanismo causal.
+\item \textbf{Alcance dos dados.} Não há conversão específica por cultura nem localização da conversão dentro de cada município. O suporte do Pantanal é restrito.
+\end{itemize}
+\medskip
+As rodadas são exploratórias. As correções dentro de cada família não controlam toda a busca adaptativa entre rodadas.
+% \fonte{testes2/RESULTADOS.md; testes5/RESULTADOS.md; testes7/CONCLUSAO\_GERAL.md.}
+\end{frame}
+%% COMENTÁRIO:
+
+% ================================================
+% #11 -- Avaliacao solicitada: utilidade associativa e insuficiencia causal.
+\begin{frame}{A OLS serve para esta análise?}
+\begin{block}{Serve como referência descritiva e associativa}
+Permite medir associações em pontos percentuais, comparar ajustes e mostrar a sensibilidade à amostra. O baixo $R^2$, por si só, não invalida o estimador.
+\end{block}
+\medskip
+\textbf{As três OLS não bastam para testar causalmente H1.}
+\small
+\begin{itemize}
+\setlength{\itemsep}{2mm}
+\item A interpretação causal exige justificar a exogeneidade dos regressores $X$: $E[u^d_{it}\mid X]=0$. As defasagens, sozinhas, não a asseguram.
+\item Omissões municipais e temporais, autuações endógenas e medidas incompletas de retorno comprometem essa interpretação.
+\item Erros-padrão agrupados tratam parte da dependência dos erros, mas não corrigem endogeneidade. Poucos anos limitam a inferência.
+\end{itemize}
+\medskip
+Não há diagnóstico documentado de resíduos que permita declarar uma reprovação geral da OLS. A limitação central é o desenho e o alcance das medidas.
+% \fonte{testes\_chap1/LEIA\_ME.md; testes7/CONCLUSAO\_GERAL.md; \href{https://cameron.econ.ucdavis.edu/research/Cameron_Miller_JHR_2015_February.pdf}{Cameron e Miller (2015)}.}
+\end{frame}
+%% COMENTÁRIO:
+
+% ================================================
+% #12
+\begin{frame}{Conclusões preliminares}
+\begin{enumerate}
+\setlength{\itemsep}{4mm}
+\item As OLS mostram \textbf{associações brutas ou condicionais}, com sinais e precisão sensíveis à composição amostral. O sinal negativo dos preços não refuta H1.
+\item Os modelos com efeitos fixos e interações oferecem evidência parcial de \textbf{heterogeneidade da resposta aos incentivos}, sobretudo na pastagem, mas permanecem sensíveis aos controles territoriais.
+\item A hipótese completa \textbf{permanece em aberto}. Testá-la requer medidas defensáveis de retorno e efetividade institucional, além de uma estratégia de identificação compatível com as interações propostas.
+\end{enumerate}
+\medskip
+\centering\color{verde}\textbf{OLS é um ponto de partida útil. Estes resultados não identificam efeitos causais.}
+% \fonte{Síntese de testes\_chap1 e das rodadas testes2--testes7.}
+\end{frame}
+%% COMENTÁRIO:
+
+\end{document}
