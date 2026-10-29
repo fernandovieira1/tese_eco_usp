@@ -303,6 +303,27 @@ As determinações explícitas do autor e as diretrizes vigentes prevalecem sobr
 
 ---
 
+## 12.2. Revisão de artificialidade e integração com /fernando
+
+Incluir a revisão de artificialidade na etapa de aperfeiçoamento textual já autorizada. Não criar uma etapa científica paralela nem dispensar a crítica e a decisão do autor previstas no protocolo. Usar `/fernando` como entrada única quando a skill estiver disponível; este guia e as referências locais aprovadas devem ser suficientes quando a skill ou Writing Style não estiverem acessíveis.
+
+Aplicar o fluxo: ler o contexto e as referências aprovadas → aperfeiçoar somente a prosa autorizada → examinar artificialidade → comparar com o original para verificar fidelidade científica e textual. Entregar a versão solicitada e indicar separadamente pendências substantivas. Não exigir versões intermediárias, instalação do Humanizer ou consultas externas a cada revisão.
+
+Os critérios a seguir foram selecionados e adaptados a partir do Humanizer (https://github.com/blader/humanizer), por autorização do autor em 29/10/2026. São critérios editoriais contextuais, não testes de autoria nem proibições automáticas. Atualizações externas não modificam este guia automaticamente.
+
+- Retirar preâmbulos vazios, frases de efeito, adjetivação inflada e encerramentos que apenas repetem o argumento. Preservar frases de orientação quando necessárias à compreensão.
+- Examinar contrastes artificiais, objeções sem função, enumerações forçadas, aberturas repetidas e estruturas padronizadas por gráfico ou tabela. Preservar essas construções quando cumprirem função analítica real.
+- Ajustar ritmo e formatação pelo argumento. Não impor frases curtas, voz ativa, variação de sinônimos ou supressão de conectivos como sinais obrigatórios de naturalidade. Preservar a voz impessoal, a terminologia estável e os períodos elaborados quando claros.
+- Preservar conectivos que exprimam relações efetivas e ligar os parágrafos pelo conteúdo. Não acrescentar transições ornamentais nem retirar as que conduzem o leitor.
+- Manter ressalvas, condições de validade, heterogeneidades e incerteza relevante. Não converter associação em causalidade, resultado não significativo em inexistência de relação, ou mecanismo proposto em mecanismo demonstrado.
+- Não suprir vagueza com fatos, experiências, números, opiniões ou fontes inventadas. Encaminhar lacunas científicas à crítica e à decisão do autor, sem resolvê-las silenciosamente na revisão de estilo.
+- Preservar dados, equações, citekeys, citações diretas, comandos LaTeX, labels, referências cruzadas e significado científico. Conferir na comparação final se nenhuma negação, condição, magnitude, referência ou qualificação foi perdida.
+- Aplicar os critérios ao idioma do texto, sem importar mecanicamente regras de vocabulário ou pontuação do inglês. Não introduzir erros, coloquialismo ou imperfeições para simular autoria humana, nem avaliar qualidade pela classificação de detectores de IA.
+
+Em caso de conflito, respeitar as determinações explícitas do autor e os limites científicos e operacionais deste projeto. Usar preferências gerais da skill e padrões inferidos das amostras somente quando compatíveis. A revisão de artificialidade não autoriza reescrita geral: manter a intervenção mínima e encerrar quando não houver ganho concreto de clareza, precisão ou fluidez.
+
+---
+
 ## 13. Exemplos de construções compatíveis
 
 Exemplo de progressão argumentativa:
