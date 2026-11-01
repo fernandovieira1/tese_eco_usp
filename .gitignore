@@ -5,12 +5,14 @@
 !2_INTI/chapters/chap1/stats/DASHBOARD
 !2_INTI/chapters/chap1/stats/HIPOTESES TESE - CHAP1.txt
 !2_INTI/chapters/chap1/stats/descritiva
-!2_INTI\chapters\chap1\stats\modelos
+!2_INTI/chapters/chap1/stats/modelos
 
 # Materiais auxiliares locais
 2_INTI/audit
 2_INTI/auxiliary
 2_INTI/xlegado
+2_INTI/tests
+2_INTI/thread
 
 # Python
 __pycache__/
