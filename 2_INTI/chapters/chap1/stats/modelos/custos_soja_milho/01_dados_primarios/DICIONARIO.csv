@@ -1,0 +1,38 @@
+campo,descricao
+id_registro,Chave técnica fonte + série + conceito + unidade; não é código municipal.
+fonte,Instituição responsável: CONAB ou IMEA.
+cultura,soja ou milho; sistema/safra preservados em cultura_sistema_origem.
+cultura_sistema_origem,Categoria preexistente; milho_1a/milho_2a CONAB; IMEA não harmonizado em safras.
+sistema_tecnologia,"Classificação ou rótulo preservado do extrato, sem inferência tecnológica nova."
+localidade_aba,Localidade extraída da aba CONAB; vazio quando não disponível.
+localidade_cabecalho,"Localidade do cabeçalho CONAB, inclusive conflito; vazio para IMEA."
+localidade_rotulo_original,"Rótulo geográfico IMEA; vazio para CONAB, cujas duas identificações ficam separadas."
+abrangencia_origem,"IMEA: nível publicado; CONAB: referência de praça, com ambiguidades nas flags."
+safra_rotulo_original,"Texto da safra preservado, inclusive asteriscos."
+safra_inicio,Ano inicial identificado no extrato; não é data da informação.
+safra_fim,Ano final identificado no extrato; não implica correspondência com PAM anual.
+ano_rotulo_original,Ano da aba CONAB ou rótulo IMEA; não substitui data-base.
+data_base,Data-base CONAB existente; IMEA vazio por falta de data nominal suficiente.
+precisao_data_base,dia/mês quando disponível no extrato.
+periodo_rotulo_original,Texto original da data CONAB ou período IMEA.
+mes_referencia_rotulo,Mês extraído dos rótulos IMEA quando disponível; não presume mês nominal de consolidado.
+natureza,CONAB modal/estimado; IMEA consolidado/mensal/estimativa conforme fonte.
+flag_ex_ant,Presença literal Ex-Ant CONAB; vazio para IMEA. Não valida informação ex ante.
+conceito_codigo_extrato,A–J classificados pelo extrator CONAB; COE/COT/CT IMEA. Não harmonizados entre fontes.
+conceito_rotulo_original,Rótulo literal CONAB; código de custo IMEA preservado do extrato.
+valor,"Número em representação decimal copiado do extrato, sem cálculo; vazio significa NA."
+valor_texto_extrato,Texto preservado da célula CONAB ou representação armazenada no extrato IMEA.
+unidade_original,"BRL_nominal/ha, BRL_nominal/60kg ou R$/ha, preservadas; não somar unidades."
+moeda,BRL. Não há conversão cambial ou deflação nesta entrega.
+arquivo_extrato,Caminho relativo à raiz Git do extrato que contém o valor.
+registro_extrato,"Número da linha de dados, base 1 sem cabeçalho, no arquivo_extrato."
+id_serie_origem,Identificador preservado da série; não é unidade independente de cada conceito.
+arquivo_planilha_origem,Nome da planilha indicado pela origem; bruto não reextraído nesta etapa.
+sha256_planilha_origem,Hash documentado do XLSX IMEA; ausente se não disponível.
+arquivo_celulas_origem,"Extrato de células CONAB, caminho relativo à raiz Git."
+aba_origem,Aba da planilha de origem.
+celula_origem,Coordenada A1 IMEA quando disponível.
+linha_excel,"Linha 1-based CONAB; vazio para IMEA, cuja coordenada está em celula_origem."
+coluna_excel,Coluna 1-based CONAB; vazio para IMEA.
+alertas_extrato_json,"Flags históricas preservadas (qualidade, ambiguidades, seleção), não nova aprovação."
+notas_origem_json,"Notas originais IMEA da aba/índice, ou cabeçalho CONAB preservado."
