@@ -1,9 +1,9 @@
 {
     "files.encoding": "utf8",
     "files.autoGuessEncoding": true,
-    "r.rpath.windows": "C:\\Program Files\\R\\R-4.6.1\\bin\\R.exe",
-    "r.rterm.windows": "C:\\Program Files\\R\\R-4.6.1\\bin\\R.exe",
-    "r.rterm.option": [
+    "r.executablePath": "C:\\Program Files\\R\\R-4.6.2\\bin\\R.exe",
+    "r.consolePath": "C:\\Program Files\\R\\R-4.6.2\\bin\\R.exe",
+    "r.consoleArgs": [
         "--no-save",
         "--no-restore"
     ],
