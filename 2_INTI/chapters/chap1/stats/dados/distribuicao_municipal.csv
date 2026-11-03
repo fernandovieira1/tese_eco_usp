@@ -1,0 +1,191 @@
+codigo_ibge,municipio,bioma_predominante,destino,n_anos,media_temporal_pct
+5100102,Acorizal,Cerrado,Agricultura,24,0.008401879164751816
+5100102,Acorizal,Cerrado,Pastagem,24,1.360560749408939
+5100201,Água Boa,Cerrado,Agricultura,24,0.015692420152313057
+5100201,Água Boa,Cerrado,Pastagem,24,1.2182947004246263
+5100300,Alto Araguaia,Cerrado,Agricultura,24,0.023798671432531948
+5100300,Alto Araguaia,Cerrado,Pastagem,24,1.0189666811826037
+5100359,Alto Boa Vista,Amazônia,Agricultura,24,0.12646721052644944
+5100359,Alto Boa Vista,Amazônia,Pastagem,24,2.829346154288187
+5100409,Alto Garças,Cerrado,Agricultura,24,0.16831929289339018
+5100409,Alto Garças,Cerrado,Pastagem,24,0.9747459579297975
+5100508,Alto Paraguai,Cerrado,Agricultura,24,0.01286265483603196
+5100508,Alto Paraguai,Cerrado,Pastagem,24,1.1533009428162766
+5100607,Alto Taquari,Cerrado,Agricultura,24,0.07029789512224384
+5100607,Alto Taquari,Cerrado,Pastagem,24,0.4367468080490454
+5100805,Apiacás,Amazônia,Agricultura,24,8.999790816057406e-4
+5100805,Apiacás,Amazônia,Pastagem,24,0.4123930619467737
+5101001,Araguaiana,Cerrado,Agricultura,24,0.021709298456672212
+5101001,Araguaiana,Cerrado,Pastagem,24,0.6251570963425354
+5101209,Araguainha,Cerrado,Agricultura,24,0.003121694723497039
+5101209,Araguainha,Cerrado,Pastagem,24,1.0746684737263645
+5101258,Araputanga,Amazônia,Agricultura,24,6.161521254863902e-4
+5101258,Araputanga,Amazônia,Pastagem,24,0.6072695191810946
+5101308,Arenápolis,Amazônia,Agricultura,24,0.4789874726981125
+5101308,Arenápolis,Amazônia,Pastagem,24,1.6414160323655076
+5101803,Barra do Garças,Cerrado,Agricultura,24,0.004449204785346104
+5101803,Barra do Garças,Cerrado,Pastagem,24,0.4799149760293121
+5102603,Campinápolis,Cerrado,Agricultura,24,0.019629653187597403
+5102603,Campinápolis,Cerrado,Pastagem,24,0.7355429549607045
+5102637,Campo Novo do Parecis,Cerrado,Agricultura,24,0.10150846145529142
+5102637,Campo Novo do Parecis,Cerrado,Pastagem,24,0.09507614638246807
+5102678,Campo Verde,Cerrado,Agricultura,24,0.4341988453824586
+5102678,Campo Verde,Cerrado,Pastagem,24,0.7222268833880929
+5102686,Campos de Júlio,Cerrado,Agricultura,24,0.24246241678552138
+5102686,Campos de Júlio,Cerrado,Pastagem,24,0.26680269107228544
+5102694,Canabrava do Norte,Amazônia,Agricultura,24,0.05104168042951571
+5102694,Canabrava do Norte,Amazônia,Pastagem,24,1.92030072738795
+5102793,Carlinda,Amazônia,Agricultura,24,0.003951268960679363
+5102793,Carlinda,Amazônia,Pastagem,24,1.356834937098578
+5102850,Castanheira,Amazônia,Agricultura,24,0.0014553328475431693
+5102850,Castanheira,Amazônia,Pastagem,24,2.00400926493191
+5103007,Chapada dos Guimarães,Cerrado,Agricultura,24,0.024352236908446068
+5103007,Chapada dos Guimarães,Cerrado,Pastagem,24,1.0637708707891576
+5103056,Cláudia,Amazônia,Agricultura,24,0.2284704487663079
+5103056,Cláudia,Amazônia,Pastagem,24,1.4205995155119167
+5103106,Cocalinho,Cerrado,Agricultura,24,0.00758996838201198
+5103106,Cocalinho,Cerrado,Pastagem,24,0.42283501912920957
+5103254,Colniza,Amazônia,Agricultura,24,5.464212938917718e-4
+5103254,Colniza,Amazônia,Pastagem,24,0.9949316658563934
+5103361,Conquista D'Oeste,Amazônia,Agricultura,24,0.018499101200954972
+5103361,Conquista D'Oeste,Amazônia,Pastagem,24,0.34372413459282625
+5103379,Cotriguaçu,Amazônia,Agricultura,24,4.711626446532024e-4
+5103379,Cotriguaçu,Amazônia,Pastagem,24,1.0690683865148403
+5103403,Cuiabá,Cerrado,Agricultura,24,0.01735383917731542
+5103403,Cuiabá,Cerrado,Pastagem,24,1.4753356796226733
+5103452,Denise,Amazônia,Agricultura,24,0.5171059949604679
+5103452,Denise,Amazônia,Pastagem,24,1.0688446594375083
+5103502,Diamantino,Cerrado,Agricultura,24,0.2356766469912105
+5103502,Diamantino,Cerrado,Pastagem,24,0.5757052892450537
+5103601,Dom Aquino,Cerrado,Agricultura,24,0.01733574421828099
+5103601,Dom Aquino,Cerrado,Pastagem,24,0.6081286091955171
+5103700,Feliz Natal,Amazônia,Agricultura,24,0.15875209680776922
+5103700,Feliz Natal,Amazônia,Pastagem,24,0.8105403160949688
+5103809,Figueirópolis D'Oeste,Amazônia,Agricultura,24,0.00965560866907444
+5103809,Figueirópolis D'Oeste,Amazônia,Pastagem,24,4.111216152987657
+5103908,General Carneiro,Cerrado,Agricultura,24,0.0294539671798027
+5103908,General Carneiro,Cerrado,Pastagem,24,0.9555117028398638
+5104104,Guarantã do Norte,Amazônia,Agricultura,24,0.010795997516834868
+5104104,Guarantã do Norte,Amazônia,Pastagem,24,1.5874357972175825
+5104203,Guiratinga,Cerrado,Agricultura,24,0.01153199128608254
+5104203,Guiratinga,Cerrado,Pastagem,24,0.7298501806119958
+5104500,Indiavaí,Amazônia,Agricultura,24,4.4324080902229736e-4
+5104500,Indiavaí,Amazônia,Pastagem,24,2.1562040757460714
+5104526,Ipiranga do Norte,Amazônia,Agricultura,24,1.237678103319405
+5104526,Ipiranga do Norte,Amazônia,Pastagem,24,1.3447819208387095
+5104609,Itiquira,Cerrado,Agricultura,24,0.02881827970144143
+5104609,Itiquira,Cerrado,Pastagem,24,0.9339882945483763
+5104807,Jaciara,Cerrado,Agricultura,24,0.11826323532740396
+5104807,Jaciara,Cerrado,Pastagem,24,0.4585148289630704
+5104906,Jangada,Cerrado,Agricultura,24,0.025556272329963447
+5104906,Jangada,Cerrado,Pastagem,24,1.4226918937460344
+5105002,Jauru,Amazônia,Agricultura,24,0.003245649437973843
+5105002,Jauru,Amazônia,Pastagem,24,1.7881941096398088
+5105150,Juína,Amazônia,Agricultura,24,0.0029869689135728493
+5105150,Juína,Amazônia,Pastagem,24,0.3865164577828875
+5105176,Juruena,Amazônia,Agricultura,24,0.0014318210728698276
+5105176,Juruena,Amazônia,Pastagem,24,1.734500145104025
+5105200,Juscimeira,Cerrado,Agricultura,24,0.1635629610157598
+5105200,Juscimeira,Cerrado,Pastagem,24,0.5774620210745863
+5105259,Lucas do Rio Verde,Cerrado,Agricultura,24,0.4064235835619225
+5105259,Lucas do Rio Verde,Cerrado,Pastagem,24,0.46791945316295
+5105309,Luciara,Cerrado,Agricultura,24,0.001578285542958937
+5105309,Luciara,Cerrado,Pastagem,24,0.13230810587682415
+5105903,Nobres,Cerrado,Agricultura,24,0.09200863207416876
+5105903,Nobres,Cerrado,Pastagem,24,1.0282798092088088
+5106000,Nortelândia,Amazônia,Agricultura,24,0.2163376514816304
+5106000,Nortelândia,Amazônia,Pastagem,24,0.6371075267509866
+5106174,Nova Nazaré,Cerrado,Agricultura,24,0.01652577773504674
+5106174,Nova Nazaré,Cerrado,Pastagem,24,0.5199329136082884
+5106182,Nova Lacerda,Amazônia,Agricultura,24,0.05486093090001225
+5106182,Nova Lacerda,Amazônia,Pastagem,24,1.136301854495404
+5106190,Nova Santa Helena,Amazônia,Agricultura,24,0.04322631826779876
+5106190,Nova Santa Helena,Amazônia,Pastagem,24,1.560302807474336
+5106208,Nova Brasilândia,Cerrado,Agricultura,24,0.0392204272216692
+5106208,Nova Brasilândia,Cerrado,Pastagem,24,1.3799780787736173
+5106257,Nova Xavantina,Cerrado,Agricultura,24,0.01301244612121548
+5106257,Nova Xavantina,Cerrado,Pastagem,24,1.5348517350580693
+5106273,Novo Horizonte do Norte,Amazônia,Agricultura,24,0.02280192365200717
+5106273,Novo Horizonte do Norte,Amazônia,Pastagem,24,1.7081236021834603
+5106281,Novo São Joaquim,Cerrado,Agricultura,24,0.05585907493440241
+5106281,Novo São Joaquim,Cerrado,Pastagem,24,1.24916674171315
+5106315,Novo Santo Antônio,Cerrado,Agricultura,24,0.006425206896841852
+5106315,Novo Santo Antônio,Cerrado,Pastagem,24,0.35610722834541503
+5106372,Pedra Preta,Cerrado,Agricultura,24,0.007707364190243264
+5106372,Pedra Preta,Cerrado,Pastagem,24,0.37248744859030336
+5106455,Planalto da Serra,Cerrado,Agricultura,24,0.09346677107556449
+5106455,Planalto da Serra,Cerrado,Pastagem,24,1.2813749614354137
+5106653,Pontal do Araguaia,Cerrado,Agricultura,24,0.008272142775552467
+5106653,Pontal do Araguaia,Cerrado,Pastagem,24,1.4583164594464109
+5106703,Ponte Branca,Cerrado,Agricultura,24,0.0020107844484884532
+5106703,Ponte Branca,Cerrado,Pastagem,24,1.4151395335065537
+5106802,Porto dos Gaúchos,Amazônia,Agricultura,24,0.28922744731118377
+5106802,Porto dos Gaúchos,Amazônia,Pastagem,24,1.6812202238708676
+5106851,Porto Estrela,Cerrado,Agricultura,24,0.008651625648775762
+5106851,Porto Estrela,Cerrado,Pastagem,24,0.8707734530307009
+5107008,Poxoréu,Cerrado,Agricultura,24,0.030847572430272727
+5107008,Poxoréu,Cerrado,Pastagem,24,0.6653280977139733
+5107040,Primavera do Leste,Cerrado,Agricultura,24,0.1801031532924858
+5107040,Primavera do Leste,Cerrado,Pastagem,24,0.8553982961293283
+5107107,São José dos Quatro Marcos,Amazônia,Agricultura,24,0.012074390349392066
+5107107,São José dos Quatro Marcos,Amazônia,Pastagem,24,4.388737015860484
+5107156,Reserva do Cabaçal,Cerrado,Agricultura,24,0.005748915211868783
+5107156,Reserva do Cabaçal,Cerrado,Pastagem,24,0.43984578490772797
+5107180,Ribeirão Cascalheira,Cerrado,Agricultura,24,0.035072697564511805
+5107180,Ribeirão Cascalheira,Cerrado,Pastagem,24,0.6874188337600509
+5107198,Ribeirãozinho,Cerrado,Agricultura,24,0.03307610831580581
+5107198,Ribeirãozinho,Cerrado,Pastagem,24,1.4081339342339758
+5107248,Santa Carmem,Amazônia,Agricultura,24,0.34843676656258915
+5107248,Santa Carmem,Amazônia,Pastagem,24,1.1413160359976786
+5107263,Santo Afonso,Amazônia,Agricultura,24,0.1149810384615129
+5107263,Santo Afonso,Amazônia,Pastagem,24,1.9760038651932197
+5107297,São José do Povo,Cerrado,Agricultura,24,0.007741768811058847
+5107297,São José do Povo,Cerrado,Pastagem,24,0.6977085714196213
+5107305,São José do Rio Claro,Amazônia,Agricultura,24,0.3317078780035375
+5107305,São José do Rio Claro,Amazônia,Pastagem,24,1.342241036594
+5107404,São Pedro da Cipa,Cerrado,Agricultura,24,0.06122140892234994
+5107404,São Pedro da Cipa,Cerrado,Pastagem,24,0.7022582837720149
+5107602,Rondonópolis,Cerrado,Agricultura,24,0.023636872101088825
+5107602,Rondonópolis,Cerrado,Pastagem,24,0.5205158091481787
+5107701,Rosário Oeste,Cerrado,Agricultura,24,0.042985660980427845
+5107701,Rosário Oeste,Cerrado,Pastagem,24,1.3334295673713639
+5107743,Santa Cruz do Xingu,Amazônia,Agricultura,24,0.17234898742908417
+5107743,Santa Cruz do Xingu,Amazônia,Pastagem,24,0.6539207344189983
+5107750,Salto do Céu,Amazônia,Agricultura,24,0.03735810611121203
+5107750,Salto do Céu,Amazônia,Pastagem,24,0.7343328078471308
+5107768,Santa Rita do Trivelato,Cerrado,Agricultura,24,0.2554875279084352
+5107768,Santa Rita do Trivelato,Cerrado,Pastagem,24,0.4602430477497646
+5107776,Santa Terezinha,Amazônia,Agricultura,24,0.027821569990446056
+5107776,Santa Terezinha,Amazônia,Pastagem,24,1.4704196132800071
+5107792,Santo Antônio do Leste,Cerrado,Agricultura,24,0.07024250557036212
+5107792,Santo Antônio do Leste,Cerrado,Pastagem,24,0.692018764354827
+5107800,Santo Antônio de Leverger,Pantanal,Agricultura,24,0.0018952098572631226
+5107800,Santo Antônio de Leverger,Pantanal,Pastagem,24,1.2397805751777466
+5107875,Sapezal,Cerrado,Agricultura,24,0.14431817103473257
+5107875,Sapezal,Cerrado,Pastagem,24,0.2063166446046275
+5107883,Serra Nova Dourada,Cerrado,Agricultura,24,0.053313793915326715
+5107883,Serra Nova Dourada,Cerrado,Pastagem,24,2.3295391078768124
+5107925,Sorriso,Cerrado,Agricultura,24,0.5561071603601834
+5107925,Sorriso,Cerrado,Pastagem,24,0.5693086184797296
+5108006,Tapurah,Amazônia,Agricultura,24,0.47925339482837753
+5108006,Tapurah,Amazônia,Pastagem,24,1.2248872664702621
+5108055,Terra Nova do Norte,Amazônia,Agricultura,24,0.021981347280348968
+5108055,Terra Nova do Norte,Amazônia,Pastagem,24,3.1624543477655163
+5108105,Tesouro,Cerrado,Agricultura,24,0.037143262583495845
+5108105,Tesouro,Cerrado,Pastagem,24,1.1211706322713875
+5108204,Torixoréu,Cerrado,Agricultura,24,0.006544550835548961
+5108204,Torixoréu,Cerrado,Pastagem,24,1.1274735849374709
+5108303,União do Sul,Amazônia,Agricultura,24,0.13315633884276198
+5108303,União do Sul,Amazônia,Pastagem,24,1.3003684619454017
+5108352,Vale de São Domingos,Cerrado,Agricultura,24,0.164355605590851
+5108352,Vale de São Domingos,Cerrado,Pastagem,24,0.24430219119960084
+5108402,Várzea Grande,Cerrado,Agricultura,24,0.010813849113280365
+5108402,Várzea Grande,Cerrado,Pastagem,24,3.18968269177039
+5108501,Vera,Amazônia,Agricultura,24,0.8570753764862991
+5108501,Vera,Amazônia,Pastagem,24,1.7737717724934665
+5108808,Nova Guarita,Amazônia,Agricultura,24,0.05552100647928641
+5108808,Nova Guarita,Amazônia,Pastagem,24,2.4676348931550973
+5108857,Nova Marilândia,Amazônia,Agricultura,24,0.1205870498546465
+5108857,Nova Marilândia,Amazônia,Pastagem,24,1.2720102379325553
+5108956,Nova Monte Verde,Amazônia,Agricultura,24,0.0023627372225728817
+5108956,Nova Monte Verde,Amazônia,Pastagem,24,1.440031461906527

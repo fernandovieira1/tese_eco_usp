@@ -1,0 +1,80 @@
+================================================================================
+GUIA RÁPIDO DO AMBIENTE VIRTUAL (VENV) - CAPÍTULO 1 (AED GEMINI & GPT)
+Tese USP - Fernando Souza de Vieira
+================================================================================
+
+1. ESPECIFICAÇÕES DO AMBIENTE
+--------------------------------------------------------------------------------
+- Versão do Python: Python 3.12 (64-bit)
+- Local do venv: .venv/ (na raiz do repositório)
+  Caminho relativo (a partir da raiz): .\.venv
+  Executável Python: .\.venv\Scripts\python.exe
+- Kernel Jupyter registrado: "Python 3.12 (venv-tese-chap1)"
+- Compatibilidade: Executa perfeitamente todos os 25 notebooks de:
+  * 2_INTI\chapters\chap1\stats\AED\gm\
+  * 2_INTI\chapters\chap1\stats\AED\pt\
+  Inclui todas as dependências analíticas (pandas, numpy, matplotlib, seaborn,
+  openpyxl, ipykernel) e espaciais (geopandas, rasterio, shapely, pyogrio, pyproj).
+
+
+2. COMO SELECIONAR E USAR NO VS CODE (JUPYTER NOTEBOOKS)
+--------------------------------------------------------------------------------
+Passo a passo no VS Code:
+1. Abra o arquivo .ipynb desejado (seja da pasta 'gm' ou 'pt').
+2. Olhe no canto superior direito do editor do notebook e clique no botão:
+   [ Select Kernel ] ou [ Selecionar Kernel ]
+3. Você pode selecionar o kernel de duas formas equivalentes:
+   - Modo 1 (Recomendado): Clique em "Python Environments..." e escolha:
+     ".venv (Python 3.12.10)" (localizado em .\.venv\Scripts\python.exe)
+   - Modo 2: Clique em "Jupyter Kernel..." e escolha:
+     "Python 3.12 (venv-tese-chap1)"
+4. Execute as células normalmente clicando em "Run All" ou Shift+Enter.
+
+
+3. ATIVAÇÃO VIA TERMINAL (POWERSHELL / CMD)
+--------------------------------------------------------------------------------
+Se preferir rodar comandos ou scripts pelo terminal:
+
+No PowerShell:
+  .\.venv\Scripts\Activate.ps1
+
+  Dica: Se o Windows bloquear a execução de scripts no PowerShell, execute
+  antes na mesma janela:
+  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+No Prompt de Comando (cmd.exe):
+  .\.venv\Scripts\activate.bat
+
+Dica prática:
+  Você NÃO precisa necessariamente ativar o venv para executar um script.
+  Basta chamar o python do venv diretamente:
+  .\.venv\Scripts\python.exe caminho\do\script.py
+
+
+4. COMANDOS ÚTEIS PARA VALIDAÇÃO E REPRODUÇÃO
+--------------------------------------------------------------------------------
+Executar a partir da raiz do repositório:
+
+a) Rodar os testes unitários da AED:
+   .\.venv\Scripts\python.exe "2_INTI\chapters\chap1\stats\AED\pt\test_aed.py"
+
+b) Validar a sintaxe e integridade de todos os notebooks da AED:
+   .\.venv\Scripts\python.exe "2_INTI\chapters\chap1\stats\AED\pt\validar_notebooks.py"
+
+c) Executar em lote todos os notebooks e verificar saídas:
+   .\.venv\Scripts\python.exe "2_INTI\chapters\chap1\stats\AED\pt\validar_notebooks.py" --executar
+
+d) Reconstruir derivados da referência territorial de 141 municípios:
+   .\.venv\Scripts\python.exe "2_INTI\chapters\chap1\stats\AED\pt\reconstruir_territorio141.py"
+
+
+5. INSTALAÇÃO OU ATUALIZAÇÃO DE NOVOS PACOTES
+--------------------------------------------------------------------------------
+Para instalar novos pacotes dentro deste venv sem afetar o sistema global:
+   .\.venv\Scripts\python.exe -m pip install nome_do_pacote
+
+Para reinstalar a partir dos requisitos documentados:
+   .\.venv\Scripts\python.exe -m pip install -r "2_INTI\chapters\chap1\stats\AED\pt\requirements-territorio.txt"
+
+================================================================================
+

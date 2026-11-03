@@ -1,0 +1,3 @@
+-r requirements-territorio.txt
+# Apenas a aquisição de Y no Earth Engine usa esta dependência adicional.
+earthengine-api>=1.6,<2

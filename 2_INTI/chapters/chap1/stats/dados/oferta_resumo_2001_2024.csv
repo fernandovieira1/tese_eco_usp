@@ -1,0 +1,18 @@
+produto,indicador,unidade,amostra,valor_2001,valor_2024,n_municipios_2001,n_municipios_2024,variacao_2001_2024,variacao_2001_2024_pct
+bovinos,abate_bovinos_cabecas_mt,cabeças,MT: abate sob inspeção,2058068,7138747,,,5080679,246.866430069366
+bovinos,efetivo_bovino,cabeças,Municípios fixos,19921615,32770089,139,139,12848474,64.4951425875864
+bovinos,peso_carcacas_bovinas_kg_mt,kg de carcaças,MT: abate sob inspeção,505800010,1958870817,,,1453070807,287.28168807272266
+carne_bovina,exportacao_fob_usd_nominal_domicilio,USD correntes FOB,Registros por domicílio fiscal em MT,5670458,2308258210,6,20,2302587752,40606.73321273167
+carne_bovina,exportacao_kg_liquido_domicilio,kg líquidos,Registros por domicílio fiscal em MT,2996271,508271963,6,20,505275692,16863.48437774821
+milho,area_colhida_ha,ha,Municípios fixos,528946,6703067,121,121,6174121,1167.2497759695696
+milho,area_plantada_ha,ha,Municípios fixos,532611,6703167,121,121,6170556,1158.5483589336309
+milho,exportacao_fob_usd_nominal_domicilio,USD correntes FOB,Registros por domicílio fiscal em MT,213464,5092683857,2,53,5092470393,2385634.295712626
+milho,exportacao_kg_liquido_domicilio,kg líquidos,Registros por domicílio fiscal em MT,2546457,25276671349,2,53,25274124892,992521.1732222456
+milho,producao_t,t,Municípios fixos,1724358,45032652,121,121,43308294,2511.5604764207897
+milho,rendimento_kg_ha,kg/ha,Municípios fixos,3259.9887323091584,6718.216004703519,121,121,3458.22727239436,106.08095783032914
+soja,area_colhida_ha,ha,Municípios fixos,3110713,9878787,66,66,6768074,217.57307729771279
+soja,area_plantada_ha,ha,Municípios fixos,3110768,9905197,66,66,6794429,218.41644892836754
+soja,exportacao_fob_usd_nominal_domicilio,USD correntes FOB,Registros por domicílio fiscal em MT,503669806,9879091329,8,53,9375421523,1861.4221879720938
+soja,exportacao_kg_liquido_domicilio,kg líquidos,Registros por domicílio fiscal em MT,2783687463,22791833307,8,53,20008145844,718.7640893578289
+soja,producao_t,t,Municípios fixos,9505767,30669563,66,66,21163796,222.6416448036229
+soja,rendimento_kg_ha,kg/ha,Municípios fixos,3055.8161424728028,3104.5879418191726,66,66,48.77179934636979,1.5960318642372018

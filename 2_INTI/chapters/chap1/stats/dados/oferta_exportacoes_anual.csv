@@ -1,0 +1,145 @@
+ano,produto,indicador,n_municipios,valor,amostra,unidade
+2001,carne_bovina,exportacao_fob_usd_nominal_domicilio,6,5670458,Registros por domicílio fiscal em MT,USD correntes FOB
+2001,carne_bovina,exportacao_kg_liquido_domicilio,6,2996271,Registros por domicílio fiscal em MT,kg líquidos
+2001,milho,exportacao_fob_usd_nominal_domicilio,2,213464,Registros por domicílio fiscal em MT,USD correntes FOB
+2001,milho,exportacao_kg_liquido_domicilio,2,2546457,Registros por domicílio fiscal em MT,kg líquidos
+2001,soja,exportacao_fob_usd_nominal_domicilio,8,503669806,Registros por domicílio fiscal em MT,USD correntes FOB
+2001,soja,exportacao_kg_liquido_domicilio,8,2783687463,Registros por domicílio fiscal em MT,kg líquidos
+2002,carne_bovina,exportacao_fob_usd_nominal_domicilio,6,39809402,Registros por domicílio fiscal em MT,USD correntes FOB
+2002,carne_bovina,exportacao_kg_liquido_domicilio,6,24289647,Registros por domicílio fiscal em MT,kg líquidos
+2002,milho,exportacao_fob_usd_nominal_domicilio,3,6038518,Registros por domicílio fiscal em MT,USD correntes FOB
+2002,milho,exportacao_kg_liquido_domicilio,3,64091212,Registros por domicílio fiscal em MT,kg líquidos
+2002,soja,exportacao_fob_usd_nominal_domicilio,9,412042364,Registros por domicílio fiscal em MT,USD correntes FOB
+2002,soja,exportacao_kg_liquido_domicilio,9,2212139428,Registros por domicílio fiscal em MT,kg líquidos
+2003,carne_bovina,exportacao_fob_usd_nominal_domicilio,5,70092560,Registros por domicílio fiscal em MT,USD correntes FOB
+2003,carne_bovina,exportacao_kg_liquido_domicilio,5,38923932,Registros por domicílio fiscal em MT,kg líquidos
+2003,milho,exportacao_fob_usd_nominal_domicilio,5,17272278,Registros por domicílio fiscal em MT,USD correntes FOB
+2003,milho,exportacao_kg_liquido_domicilio,5,170263532,Registros por domicílio fiscal em MT,kg líquidos
+2003,soja,exportacao_fob_usd_nominal_domicilio,12,441854886,Registros por domicílio fiscal em MT,USD correntes FOB
+2003,soja,exportacao_kg_liquido_domicilio,12,2139161731,Registros por domicílio fiscal em MT,kg líquidos
+2004,carne_bovina,exportacao_fob_usd_nominal_domicilio,6,80339137,Registros por domicílio fiscal em MT,USD correntes FOB
+2004,carne_bovina,exportacao_kg_liquido_domicilio,6,37447357,Registros por domicílio fiscal em MT,kg líquidos
+2004,milho,exportacao_fob_usd_nominal_domicilio,10,35035696,Registros por domicílio fiscal em MT,USD correntes FOB
+2004,milho,exportacao_kg_liquido_domicilio,10,317957336,Registros por domicílio fiscal em MT,kg líquidos
+2004,soja,exportacao_fob_usd_nominal_domicilio,27,738544077,Registros por domicílio fiscal em MT,USD correntes FOB
+2004,soja,exportacao_kg_liquido_domicilio,27,2854726567,Registros por domicílio fiscal em MT,kg líquidos
+2005,carne_bovina,exportacao_fob_usd_nominal_domicilio,14,99461099,Registros por domicílio fiscal em MT,USD correntes FOB
+2005,carne_bovina,exportacao_kg_liquido_domicilio,14,42294398,Registros por domicílio fiscal em MT,kg líquidos
+2005,milho,exportacao_fob_usd_nominal_domicilio,10,26098807,Registros por domicílio fiscal em MT,USD correntes FOB
+2005,milho,exportacao_kg_liquido_domicilio,10,285331862,Registros por domicílio fiscal em MT,kg líquidos
+2005,soja,exportacao_fob_usd_nominal_domicilio,37,1531171173,Registros por domicílio fiscal em MT,USD correntes FOB
+2005,soja,exportacao_kg_liquido_domicilio,37,6516577338,Registros por domicílio fiscal em MT,kg líquidos
+2006,carne_bovina,exportacao_fob_usd_nominal_domicilio,11,244113763,Registros por domicílio fiscal em MT,USD correntes FOB
+2006,carne_bovina,exportacao_kg_liquido_domicilio,11,89981867,Registros por domicílio fiscal em MT,kg líquidos
+2006,milho,exportacao_fob_usd_nominal_domicilio,8,41118992,Registros por domicílio fiscal em MT,USD correntes FOB
+2006,milho,exportacao_kg_liquido_domicilio,8,348739468,Registros por domicílio fiscal em MT,kg líquidos
+2006,soja,exportacao_fob_usd_nominal_domicilio,37,1525958058,Registros por domicílio fiscal em MT,USD correntes FOB
+2006,soja,exportacao_kg_liquido_domicilio,37,6706889127,Registros por domicílio fiscal em MT,kg líquidos
+2007,carne_bovina,exportacao_fob_usd_nominal_domicilio,10,235704576,Registros por domicílio fiscal em MT,USD correntes FOB
+2007,carne_bovina,exportacao_kg_liquido_domicilio,10,84804616,Registros por domicílio fiscal em MT,kg líquidos
+2007,milho,exportacao_fob_usd_nominal_domicilio,22,403603574,Registros por domicílio fiscal em MT,USD correntes FOB
+2007,milho,exportacao_kg_liquido_domicilio,22,2349039006,Registros por domicílio fiscal em MT,kg líquidos
+2007,soja,exportacao_fob_usd_nominal_domicilio,38,1240356504,Registros por domicílio fiscal em MT,USD correntes FOB
+2007,soja,exportacao_kg_liquido_domicilio,38,4408057447,Registros por domicílio fiscal em MT,kg líquidos
+2008,carne_bovina,exportacao_fob_usd_nominal_domicilio,15,235089683,Registros por domicílio fiscal em MT,USD correntes FOB
+2008,carne_bovina,exportacao_kg_liquido_domicilio,15,61926186,Registros por domicílio fiscal em MT,kg líquidos
+2008,milho,exportacao_fob_usd_nominal_domicilio,23,380650868,Registros por domicílio fiscal em MT,USD correntes FOB
+2008,milho,exportacao_kg_liquido_domicilio,23,1952797347,Registros por domicílio fiscal em MT,kg líquidos
+2008,soja,exportacao_fob_usd_nominal_domicilio,36,2388470825,Registros por domicílio fiscal em MT,USD correntes FOB
+2008,soja,exportacao_kg_liquido_domicilio,36,5549002735,Registros por domicílio fiscal em MT,kg líquidos
+2009,carne_bovina,exportacao_fob_usd_nominal_domicilio,16,239489474,Registros por domicílio fiscal em MT,USD correntes FOB
+2009,carne_bovina,exportacao_kg_liquido_domicilio,16,75158558,Registros por domicílio fiscal em MT,kg líquidos
+2009,milho,exportacao_fob_usd_nominal_domicilio,25,709086076,Registros por domicílio fiscal em MT,USD correntes FOB
+2009,milho,exportacao_kg_liquido_domicilio,25,4381477801,Registros por domicílio fiscal em MT,kg líquidos
+2009,soja,exportacao_fob_usd_nominal_domicilio,37,2893864990,Registros por domicílio fiscal em MT,USD correntes FOB
+2009,soja,exportacao_kg_liquido_domicilio,37,7335189691,Registros por domicílio fiscal em MT,kg líquidos
+2010,carne_bovina,exportacao_fob_usd_nominal_domicilio,15,393335320,Registros por domicílio fiscal em MT,USD correntes FOB
+2010,carne_bovina,exportacao_kg_liquido_domicilio,15,101511366,Registros por domicílio fiscal em MT,kg líquidos
+2010,milho,exportacao_fob_usd_nominal_domicilio,28,985644261,Registros por domicílio fiscal em MT,USD correntes FOB
+2010,milho,exportacao_kg_liquido_domicilio,28,5114942243,Registros por domicílio fiscal em MT,kg líquidos
+2010,soja,exportacao_fob_usd_nominal_domicilio,37,2341973811,Registros por domicílio fiscal em MT,USD correntes FOB
+2010,soja,exportacao_kg_liquido_domicilio,37,6101845911,Registros por domicílio fiscal em MT,kg líquidos
+2011,carne_bovina,exportacao_fob_usd_nominal_domicilio,16,471507932,Registros por domicílio fiscal em MT,USD correntes FOB
+2011,carne_bovina,exportacao_kg_liquido_domicilio,16,94075768,Registros por domicílio fiscal em MT,kg líquidos
+2011,milho,exportacao_fob_usd_nominal_domicilio,35,1351419405,Registros por domicílio fiscal em MT,USD correntes FOB
+2011,milho,exportacao_kg_liquido_domicilio,35,4917704554,Registros por domicílio fiscal em MT,kg líquidos
+2011,soja,exportacao_fob_usd_nominal_domicilio,43,3718317641,Registros por domicílio fiscal em MT,USD correntes FOB
+2011,soja,exportacao_kg_liquido_domicilio,43,7535014966,Registros por domicílio fiscal em MT,kg líquidos
+2012,carne_bovina,exportacao_fob_usd_nominal_domicilio,16,608061316,Registros por domicílio fiscal em MT,USD correntes FOB
+2012,carne_bovina,exportacao_kg_liquido_domicilio,16,125743811,Registros por domicílio fiscal em MT,kg líquidos
+2012,milho,exportacao_fob_usd_nominal_domicilio,43,2054839011,Registros por domicílio fiscal em MT,USD correntes FOB
+2012,milho,exportacao_kg_liquido_domicilio,43,7656309532,Registros por domicílio fiscal em MT,kg líquidos
+2012,soja,exportacao_fob_usd_nominal_domicilio,48,4565053200,Registros por domicílio fiscal em MT,USD correntes FOB
+2012,soja,exportacao_kg_liquido_domicilio,48,8739590331,Registros por domicílio fiscal em MT,kg líquidos
+2013,carne_bovina,exportacao_fob_usd_nominal_domicilio,18,815217389,Registros por domicílio fiscal em MT,USD correntes FOB
+2013,carne_bovina,exportacao_kg_liquido_domicilio,18,178577165,Registros por domicílio fiscal em MT,kg líquidos
+2013,milho,exportacao_fob_usd_nominal_domicilio,49,2985013058,Registros por domicílio fiscal em MT,USD correntes FOB
+2013,milho,exportacao_kg_liquido_domicilio,49,12848169380,Registros por domicílio fiscal em MT,kg líquidos
+2013,soja,exportacao_fob_usd_nominal_domicilio,49,4795779771,Registros por domicílio fiscal em MT,USD correntes FOB
+2013,soja,exportacao_kg_liquido_domicilio,49,8989821897,Registros por domicílio fiscal em MT,kg líquidos
+2014,carne_bovina,exportacao_fob_usd_nominal_domicilio,20,1052195784,Registros por domicílio fiscal em MT,USD correntes FOB
+2014,carne_bovina,exportacao_kg_liquido_domicilio,20,215672788,Registros por domicílio fiscal em MT,kg líquidos
+2014,milho,exportacao_fob_usd_nominal_domicilio,46,1806728136,Registros por domicílio fiscal em MT,USD correntes FOB
+2014,milho,exportacao_kg_liquido_domicilio,46,9619500142,Registros por domicílio fiscal em MT,kg líquidos
+2014,soja,exportacao_fob_usd_nominal_domicilio,52,5414571039,Registros por domicílio fiscal em MT,USD correntes FOB
+2014,soja,exportacao_kg_liquido_domicilio,52,10678781146,Registros por domicílio fiscal em MT,kg líquidos
+2015,carne_bovina,exportacao_fob_usd_nominal_domicilio,20,929589195,Registros por domicílio fiscal em MT,USD correntes FOB
+2015,carne_bovina,exportacao_kg_liquido_domicilio,20,209081922,Registros por domicílio fiscal em MT,kg líquidos
+2015,milho,exportacao_fob_usd_nominal_domicilio,49,2302308847,Registros por domicílio fiscal em MT,USD correntes FOB
+2015,milho,exportacao_kg_liquido_domicilio,49,13234892544,Registros por domicílio fiscal em MT,kg líquidos
+2015,soja,exportacao_fob_usd_nominal_domicilio,52,4996599089,Registros por domicílio fiscal em MT,USD correntes FOB
+2015,soja,exportacao_kg_liquido_domicilio,52,12858756489,Registros por domicílio fiscal em MT,kg líquidos
+2016,carne_bovina,exportacao_fob_usd_nominal_domicilio,19,852043626,Registros por domicílio fiscal em MT,USD correntes FOB
+2016,carne_bovina,exportacao_kg_liquido_domicilio,19,205614934,Registros por domicílio fiscal em MT,kg líquidos
+2016,milho,exportacao_fob_usd_nominal_domicilio,49,2111712662,Registros por domicílio fiscal em MT,USD correntes FOB
+2016,milho,exportacao_kg_liquido_domicilio,49,12560749561,Registros por domicílio fiscal em MT,kg líquidos
+2016,soja,exportacao_fob_usd_nominal_domicilio,49,4442461004,Registros por domicílio fiscal em MT,USD correntes FOB
+2016,soja,exportacao_kg_liquido_domicilio,49,12040228331,Registros por domicílio fiscal em MT,kg líquidos
+2017,carne_bovina,exportacao_fob_usd_nominal_domicilio,19,1070116626,Registros por domicílio fiscal em MT,USD correntes FOB
+2017,carne_bovina,exportacao_kg_liquido_domicilio,19,244417525,Registros por domicílio fiscal em MT,kg líquidos
+2017,milho,exportacao_fob_usd_nominal_domicilio,46,2488332978,Registros por domicílio fiscal em MT,USD correntes FOB
+2017,milho,exportacao_kg_liquido_domicilio,46,16010724199,Registros por domicílio fiscal em MT,kg líquidos
+2017,soja,exportacao_fob_usd_nominal_domicilio,50,5600300054,Registros por domicílio fiscal em MT,USD correntes FOB
+2017,soja,exportacao_kg_liquido_domicilio,50,14792529056,Registros por domicílio fiscal em MT,kg líquidos
+2018,carne_bovina,exportacao_fob_usd_nominal_domicilio,21,1094720038,Registros por domicílio fiscal em MT,USD correntes FOB
+2018,carne_bovina,exportacao_kg_liquido_domicilio,21,265310903,Registros por domicílio fiscal em MT,kg líquidos
+2018,milho,exportacao_fob_usd_nominal_domicilio,48,1936676806,Registros por domicílio fiscal em MT,USD correntes FOB
+2018,milho,exportacao_kg_liquido_domicilio,48,11494289933,Registros por domicílio fiscal em MT,kg líquidos
+2018,soja,exportacao_fob_usd_nominal_domicilio,50,4385154223,Registros por domicílio fiscal em MT,USD correntes FOB
+2018,soja,exportacao_kg_liquido_domicilio,50,11227640447,Registros por domicílio fiscal em MT,kg líquidos
+2019,carne_bovina,exportacao_fob_usd_nominal_domicilio,22,1326210606,Registros por domicílio fiscal em MT,USD correntes FOB
+2019,carne_bovina,exportacao_kg_liquido_domicilio,22,322652666,Registros por domicílio fiscal em MT,kg líquidos
+2019,milho,exportacao_fob_usd_nominal_domicilio,47,4014393519,Registros por domicílio fiscal em MT,USD correntes FOB
+2019,milho,exportacao_kg_liquido_domicilio,47,23994145331,Registros por domicílio fiscal em MT,kg líquidos
+2019,soja,exportacao_fob_usd_nominal_domicilio,52,6666044350,Registros por domicílio fiscal em MT,USD correntes FOB
+2019,soja,exportacao_kg_liquido_domicilio,52,19108381146,Registros por domicílio fiscal em MT,kg líquidos
+2020,carne_bovina,exportacao_fob_usd_nominal_domicilio,20,1510764928,Registros por domicílio fiscal em MT,USD correntes FOB
+2020,carne_bovina,exportacao_kg_liquido_domicilio,20,353594495,Registros por domicílio fiscal em MT,kg líquidos
+2020,milho,exportacao_fob_usd_nominal_domicilio,49,3498416259,Registros por domicílio fiscal em MT,USD correntes FOB
+2020,milho,exportacao_kg_liquido_domicilio,49,21036160848,Registros por domicílio fiscal em MT,kg líquidos
+2020,soja,exportacao_fob_usd_nominal_domicilio,50,7271575538,Registros por domicílio fiscal em MT,USD correntes FOB
+2020,soja,exportacao_kg_liquido_domicilio,50,21230187850,Registros por domicílio fiscal em MT,kg líquidos
+2021,carne_bovina,exportacao_fob_usd_nominal_domicilio,21,1630078978,Registros por domicílio fiscal em MT,USD correntes FOB
+2021,carne_bovina,exportacao_kg_liquido_domicilio,21,323219779,Registros por domicílio fiscal em MT,kg líquidos
+2021,milho,exportacao_fob_usd_nominal_domicilio,50,2914212345,Registros por domicílio fiscal em MT,USD correntes FOB
+2021,milho,exportacao_kg_liquido_domicilio,50,14466323262,Registros por domicílio fiscal em MT,kg líquidos
+2021,soja,exportacao_fob_usd_nominal_domicilio,51,10101545647,Registros por domicílio fiscal em MT,USD correntes FOB
+2021,soja,exportacao_kg_liquido_domicilio,51,22967786968,Registros por domicílio fiscal em MT,kg líquidos
+2022,carne_bovina,exportacao_fob_usd_nominal_domicilio,21,2617333551,Registros por domicílio fiscal em MT,USD correntes FOB
+2022,carne_bovina,exportacao_kg_liquido_domicilio,21,444312934,Registros por domicílio fiscal em MT,kg líquidos
+2022,milho,exportacao_fob_usd_nominal_domicilio,52,6527818357,Registros por domicílio fiscal em MT,USD correntes FOB
+2022,milho,exportacao_kg_liquido_domicilio,52,23840152757,Registros por domicílio fiscal em MT,kg líquidos
+2022,soja,exportacao_fob_usd_nominal_domicilio,53,13743761340,Registros por domicílio fiscal em MT,USD correntes FOB
+2022,soja,exportacao_kg_liquido_domicilio,53,23661736413,Registros por domicílio fiscal em MT,kg líquidos
+2023,carne_bovina,exportacao_fob_usd_nominal_domicilio,19,1982530007,Registros por domicílio fiscal em MT,USD correntes FOB
+2023,carne_bovina,exportacao_kg_liquido_domicilio,19,426155659,Registros por domicílio fiscal em MT,kg líquidos
+2023,milho,exportacao_fob_usd_nominal_domicilio,53,6557358884,Registros por domicílio fiscal em MT,USD correntes FOB
+2023,milho,exportacao_kg_liquido_domicilio,53,27287589065,Registros por domicílio fiscal em MT,kg líquidos
+2023,soja,exportacao_fob_usd_nominal_domicilio,53,13753721008,Registros por domicílio fiscal em MT,USD correntes FOB
+2023,soja,exportacao_kg_liquido_domicilio,53,26089375963,Registros por domicílio fiscal em MT,kg líquidos
+2024,carne_bovina,exportacao_fob_usd_nominal_domicilio,20,2308258210,Registros por domicílio fiscal em MT,USD correntes FOB
+2024,carne_bovina,exportacao_kg_liquido_domicilio,20,508271963,Registros por domicílio fiscal em MT,kg líquidos
+2024,milho,exportacao_fob_usd_nominal_domicilio,53,5092683857,Registros por domicílio fiscal em MT,USD correntes FOB
+2024,milho,exportacao_kg_liquido_domicilio,53,25276671349,Registros por domicílio fiscal em MT,kg líquidos
+2024,soja,exportacao_fob_usd_nominal_domicilio,53,9879091329,Registros por domicílio fiscal em MT,USD correntes FOB
+2024,soja,exportacao_kg_liquido_domicilio,53,22791833307,Registros por domicílio fiscal em MT,kg líquidos

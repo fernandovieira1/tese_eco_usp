@@ -1,0 +1,385 @@
+ano,produto,amostra,n_municipios,indicador,valor,unidade
+2001,milho,Disponível no ano,138,area_plantada_ha,540085,ha
+2001,milho,Disponível no ano,138,area_colhida_ha,536420,ha
+2001,milho,Disponível no ano,138,producao_t,1743043,t
+2001,milho,Disponível no ano,138,rendimento_kg_ha,3249.3997240967897,kg/ha
+2001,milho,Municípios fixos,121,area_plantada_ha,532611,ha
+2001,milho,Municípios fixos,121,area_colhida_ha,528946,ha
+2001,milho,Municípios fixos,121,producao_t,1724358,t
+2001,milho,Municípios fixos,121,rendimento_kg_ha,3259.9887323091584,kg/ha
+2001,soja,Disponível no ano,77,area_plantada_ha,3121408,ha
+2001,soja,Disponível no ano,77,area_colhida_ha,3121353,ha
+2001,soja,Disponível no ano,77,producao_t,9533286,t
+2001,soja,Disponível no ano,77,rendimento_kg_ha,3054.2159121381014,kg/ha
+2001,soja,Municípios fixos,66,area_plantada_ha,3110768,ha
+2001,soja,Municípios fixos,66,area_colhida_ha,3110713,ha
+2001,soja,Municípios fixos,66,producao_t,9505767,t
+2001,soja,Municípios fixos,66,rendimento_kg_ha,3055.8161424728028,kg/ha
+2002,milho,Disponível no ano,137,area_plantada_ha,723135,ha
+2002,milho,Disponível no ano,137,area_colhida_ha,719945,ha
+2002,milho,Disponível no ano,137,producao_t,2311368,t
+2002,milho,Disponível no ano,137,rendimento_kg_ha,3210.4785782247254,kg/ha
+2002,milho,Municípios fixos,121,area_plantada_ha,716592,ha
+2002,milho,Municípios fixos,121,area_colhida_ha,713422,ha
+2002,milho,Municípios fixos,121,producao_t,2294414,t
+2002,milho,Municípios fixos,121,rendimento_kg_ha,3216.0684699939166,kg/ha
+2002,soja,Disponível no ano,80,area_plantada_ha,3818231,ha
+2002,soja,Disponível no ano,80,area_colhida_ha,3818231,ha
+2002,soja,Disponível no ano,80,producao_t,11684885,t
+2002,soja,Disponível no ano,80,rendimento_kg_ha,3060.2876043906194,kg/ha
+2002,soja,Municípios fixos,66,area_plantada_ha,3807788,ha
+2002,soja,Municípios fixos,66,area_colhida_ha,3807788,ha
+2002,soja,Municípios fixos,66,producao_t,11654146,t
+2002,soja,Municípios fixos,66,rendimento_kg_ha,3060.607890985528,kg/ha
+2003,milho,Disponível no ano,138,area_plantada_ha,882658,ha
+2003,milho,Disponível no ano,138,area_colhida_ha,880623,ha
+2003,milho,Disponível no ano,138,producao_t,3192813,t
+2003,milho,Disponível no ano,138,rendimento_kg_ha,3625.629809805104,kg/ha
+2003,milho,Municípios fixos,121,area_plantada_ha,877458,ha
+2003,milho,Municípios fixos,121,area_colhida_ha,875423,ha
+2003,milho,Municípios fixos,121,producao_t,3178969,t
+2003,milho,Municípios fixos,121,rendimento_kg_ha,3631.3519292958945,kg/ha
+2003,soja,Disponível no ano,95,area_plantada_ha,4414496,ha
+2003,soja,Disponível no ano,95,area_colhida_ha,4413271,ha
+2003,soja,Disponível no ano,95,producao_t,12965983,t
+2003,soja,Disponível no ano,95,rendimento_kg_ha,2937.9530511495896,kg/ha
+2003,soja,Municípios fixos,66,area_plantada_ha,4374340,ha
+2003,soja,Municípios fixos,66,area_colhida_ha,4373115,ha
+2003,soja,Municípios fixos,66,producao_t,12856759,t
+2003,soja,Municípios fixos,66,rendimento_kg_ha,2939.9544718124266,kg/ha
+2004,milho,Disponível no ano,139,area_plantada_ha,941125,ha
+2004,milho,Disponível no ano,139,area_colhida_ha,941092,ha
+2004,milho,Disponível no ano,139,producao_t,3408968,t
+2004,milho,Disponível no ano,139,rendimento_kg_ha,3622.3536062361595,kg/ha
+2004,milho,Municípios fixos,121,area_plantada_ha,934070,ha
+2004,milho,Municípios fixos,121,area_colhida_ha,934037,ha
+2004,milho,Municípios fixos,121,producao_t,3387644,t
+2004,milho,Municípios fixos,121,rendimento_kg_ha,3626.88415983521,kg/ha
+2004,soja,Disponível no ano,106,area_plantada_ha,5279928,ha
+2004,soja,Disponível no ano,106,area_colhida_ha,5263428,ha
+2004,soja,Disponível no ano,106,producao_t,14517912,t
+2004,soja,Disponível no ano,106,rendimento_kg_ha,2758.261726008221,kg/ha
+2004,soja,Municípios fixos,66,area_plantada_ha,5191712,ha
+2004,soja,Municípios fixos,66,area_colhida_ha,5176212,ha
+2004,soja,Municípios fixos,66,producao_t,14294365,t
+2004,soja,Municípios fixos,66,rendimento_kg_ha,2761.549372398194,kg/ha
+2005,milho,Disponível no ano,141,area_plantada_ha,1073146,ha
+2005,milho,Disponível no ano,141,area_colhida_ha,1043815,ha
+2005,milho,Disponível no ano,141,producao_t,3483266,t
+2005,milho,Disponível no ano,141,rendimento_kg_ha,3337.053021847741,kg/ha
+2005,milho,Municípios fixos,121,area_plantada_ha,1012438,ha
+2005,milho,Municípios fixos,121,area_colhida_ha,983107,ha
+2005,milho,Municípios fixos,121,producao_t,3301234,t
+2005,milho,Municípios fixos,121,rendimento_kg_ha,3357.9600185941104,kg/ha
+2005,soja,Disponível no ano,111,area_plantada_ha,6121724,ha
+2005,soja,Disponível no ano,111,area_colhida_ha,6106654,ha
+2005,soja,Disponível no ano,111,producao_t,17761444,t
+2005,soja,Disponível no ano,111,rendimento_kg_ha,2908.5394391101904,kg/ha
+2005,soja,Municípios fixos,66,area_plantada_ha,5790818,ha
+2005,soja,Municípios fixos,66,area_colhida_ha,5775748,ha
+2005,soja,Municípios fixos,66,producao_t,16746571,t
+2005,soja,Municípios fixos,66,rendimento_kg_ha,2899.4635846300775,kg/ha
+2006,milho,Disponível no ano,141,area_plantada_ha,1079980,ha
+2006,milho,Disponível no ano,141,area_colhida_ha,1079970,ha
+2006,milho,Disponível no ano,141,producao_t,4228423,t
+2006,milho,Disponível no ano,141,rendimento_kg_ha,3915.3152402381547,kg/ha
+2006,milho,Municípios fixos,121,area_plantada_ha,1032706,ha
+2006,milho,Municípios fixos,121,area_colhida_ha,1032696,ha
+2006,milho,Municípios fixos,121,producao_t,4050539,t
+2006,milho,Municípios fixos,121,rendimento_kg_ha,3922.295622332226,kg/ha
+2006,soja,Disponível no ano,105,area_plantada_ha,5822867,ha
+2006,soja,Disponível no ano,105,area_colhida_ha,5811907,ha
+2006,soja,Disponível no ano,105,producao_t,15594221,t
+2006,soja,Disponível no ano,105,rendimento_kg_ha,2683.1504702329203,kg/ha
+2006,soja,Municípios fixos,66,area_plantada_ha,5511939,ha
+2006,soja,Municípios fixos,66,area_colhida_ha,5501279,ha
+2006,soja,Municípios fixos,66,producao_t,14714892,t
+2006,soja,Municípios fixos,66,rendimento_kg_ha,2674.8128935107634,kg/ha
+2007,milho,Disponível no ano,141,area_plantada_ha,1650471,ha
+2007,milho,Disponível no ano,141,area_colhida_ha,1648671,ha
+2007,milho,Disponível no ano,141,producao_t,6130082,t
+2007,milho,Disponível no ano,141,rendimento_kg_ha,3718.1960500306004,kg/ha
+2007,milho,Municípios fixos,121,area_plantada_ha,1578114,ha
+2007,milho,Municípios fixos,121,area_colhida_ha,1577614,ha
+2007,milho,Municípios fixos,121,producao_t,5867843,t
+2007,milho,Municípios fixos,121,rendimento_kg_ha,3719.4415110413574,kg/ha
+2007,soja,Disponível no ano,96,area_plantada_ha,5075079,ha
+2007,soja,Disponível no ano,96,area_colhida_ha,5075079,ha
+2007,soja,Disponível no ano,96,producao_t,15275087,t
+2007,soja,Disponível no ano,96,rendimento_kg_ha,3009.82250719644,kg/ha
+2007,soja,Municípios fixos,66,area_plantada_ha,4813989,ha
+2007,soja,Municípios fixos,66,area_colhida_ha,4813989,ha
+2007,soja,Municípios fixos,66,producao_t,14470647,t
+2007,soja,Municípios fixos,66,rendimento_kg_ha,3005.957637211053,kg/ha
+2008,milho,Disponível no ano,141,area_plantada_ha,1832687,ha
+2008,milho,Disponível no ano,141,area_colhida_ha,1830447,ha
+2008,milho,Disponível no ano,141,producao_t,7799413,t
+2008,milho,Disponível no ano,141,rendimento_kg_ha,4260.933531536286,kg/ha
+2008,milho,Municípios fixos,121,area_plantada_ha,1742347,ha
+2008,milho,Municípios fixos,121,area_colhida_ha,1740757,ha
+2008,milho,Municípios fixos,121,producao_t,7473071,t
+2008,milho,Municípios fixos,121,rendimento_kg_ha,4293.0006887808,kg/ha
+2008,soja,Disponível no ano,97,area_plantada_ha,5659149,ha
+2008,soja,Disponível no ano,97,area_colhida_ha,5659149,ha
+2008,soja,Disponível no ano,97,producao_t,17802976,t
+2008,soja,Disponível no ano,97,rendimento_kg_ha,3145.8751130249443,kg/ha
+2008,soja,Municípios fixos,66,area_plantada_ha,5340884,ha
+2008,soja,Municípios fixos,66,area_colhida_ha,5340884,ha
+2008,soja,Municípios fixos,66,producao_t,16794280,t
+2008,soja,Municípios fixos,66,rendimento_kg_ha,3144.475708515669,kg/ha
+2009,milho,Disponível no ano,141,area_plantada_ha,1665470,ha
+2009,milho,Disponível no ano,141,area_colhida_ha,1662920,ha
+2009,milho,Disponível no ano,141,producao_t,8181984,t
+2009,milho,Disponível no ano,141,rendimento_kg_ha,4920.251124527938,kg/ha
+2009,milho,Municípios fixos,121,area_plantada_ha,1579428,ha
+2009,milho,Municípios fixos,121,area_colhida_ha,1576878,ha
+2009,milho,Municípios fixos,121,producao_t,7780020,t
+2009,milho,Municípios fixos,121,rendimento_kg_ha,4933.812254340539,kg/ha
+2009,soja,Disponível no ano,97,area_plantada_ha,5831468,ha
+2009,soja,Disponível no ano,97,area_colhida_ha,5831468,ha
+2009,soja,Disponível no ano,97,producao_t,17962819,t
+2009,soja,Disponível no ano,97,rendimento_kg_ha,3080.32540005364,kg/ha
+2009,soja,Municípios fixos,66,area_plantada_ha,5462377,ha
+2009,soja,Municípios fixos,66,area_colhida_ha,5462377,ha
+2009,soja,Municípios fixos,66,producao_t,16842623,t
+2009,soja,Municípios fixos,66,rendimento_kg_ha,3083.387140799692,kg/ha
+2010,milho,Disponível no ano,137,area_plantada_ha,2014192,ha
+2010,milho,Disponível no ano,137,area_colhida_ha,2011742,ha
+2010,milho,Disponível no ano,137,producao_t,8164273,t
+2010,milho,Disponível no ano,137,rendimento_kg_ha,4058.310161044508,kg/ha
+2010,milho,Municípios fixos,121,area_plantada_ha,1913057,ha
+2010,milho,Municípios fixos,121,area_colhida_ha,1910607,ha
+2010,milho,Municípios fixos,121,producao_t,7802693,t
+2010,milho,Municípios fixos,121,rendimento_kg_ha,4083.881719265134,kg/ha
+2010,soja,Disponível no ano,96,area_plantada_ha,6227044,ha
+2010,soja,Disponível no ano,96,area_colhida_ha,6226452,ha
+2010,soja,Disponível no ano,96,producao_t,18787783,t
+2010,soja,Disponível no ano,96,rendimento_kg_ha,3017.4139301162204,kg/ha
+2010,soja,Municípios fixos,66,area_plantada_ha,5805404,ha
+2010,soja,Municípios fixos,66,area_colhida_ha,5805404,ha
+2010,soja,Municípios fixos,66,producao_t,17502238,t
+2010,soja,Municípios fixos,66,rendimento_kg_ha,3014.8182624327264,kg/ha
+2011,milho,Disponível no ano,137,area_plantada_ha,1922621,ha
+2011,milho,Disponível no ano,137,area_colhida_ha,1921101,ha
+2011,milho,Disponível no ano,137,producao_t,7763942,t
+2011,milho,Disponível no ano,137,rendimento_kg_ha,4041.4023000352404,kg/ha
+2011,milho,Municípios fixos,121,area_plantada_ha,1829452,ha
+2011,milho,Municípios fixos,121,area_colhida_ha,1827932,ha
+2011,milho,Municípios fixos,121,producao_t,7373465,t
+2011,milho,Municípios fixos,121,rendimento_kg_ha,4033.774232301858,kg/ha
+2011,soja,Disponível no ano,95,area_plantada_ha,6455871,ha
+2011,soja,Disponível no ano,95,area_colhida_ha,6454331,ha
+2011,soja,Disponível no ano,95,producao_t,20800544,t
+2011,soja,Disponível no ano,95,rendimento_kg_ha,3222.7265691827706,kg/ha
+2011,soja,Municípios fixos,66,area_plantada_ha,6030708,ha
+2011,soja,Municípios fixos,66,area_colhida_ha,6029168,ha
+2011,soja,Municípios fixos,66,producao_t,19435592,t
+2011,soja,Municípios fixos,66,rendimento_kg_ha,3223.5943665859036,kg/ha
+2012,milho,Disponível no ano,138,area_plantada_ha,2740833,ha
+2012,milho,Disponível no ano,138,area_colhida_ha,2740553,ha
+2012,milho,Disponível no ano,138,producao_t,15646716,t
+2012,milho,Disponível no ano,138,rendimento_kg_ha,5709.3280078874595,kg/ha
+2012,milho,Municípios fixos,121,area_plantada_ha,2623264,ha
+2012,milho,Municípios fixos,121,area_colhida_ha,2622984,ha
+2012,milho,Municípios fixos,121,producao_t,15049647,t
+2012,milho,Municípios fixos,121,rendimento_kg_ha,5737.605338042474,kg/ha
+2012,soja,Disponível no ano,99,area_plantada_ha,6980690,ha
+2012,soja,Disponível no ano,99,area_colhida_ha,6980690,ha
+2012,soja,Disponível no ano,99,producao_t,21841292,t
+2012,soja,Disponível no ano,99,rendimento_kg_ha,3128.8156328385876,kg/ha
+2012,soja,Municípios fixos,66,area_plantada_ha,6406208,ha
+2012,soja,Municípios fixos,66,area_colhida_ha,6406208,ha
+2012,soja,Municípios fixos,66,producao_t,20030930,t
+2012,soja,Municípios fixos,66,rendimento_kg_ha,3126.7998166778225,kg/ha
+2013,milho,Disponível no ano,136,area_plantada_ha,3416701,ha
+2013,milho,Disponível no ano,136,area_colhida_ha,3416701,ha
+2013,milho,Disponível no ano,136,producao_t,20186020,t
+2013,milho,Disponível no ano,136,rendimento_kg_ha,5908.044045996416,kg/ha
+2013,milho,Municípios fixos,121,area_plantada_ha,3290181,ha
+2013,milho,Municípios fixos,121,area_colhida_ha,3290181,ha
+2013,milho,Municípios fixos,121,producao_t,19469669,t
+2013,milho,Municípios fixos,121,rendimento_kg_ha,5917.506969981287,kg/ha
+2013,soja,Disponível no ano,110,area_plantada_ha,7931905,ha
+2013,soja,Disponível no ano,110,area_colhida_ha,7913687,ha
+2013,soja,Disponível no ano,110,producao_t,23416774,t
+2013,soja,Disponível no ano,110,rendimento_kg_ha,2959.022008325576,kg/ha
+2013,soja,Municípios fixos,66,area_plantada_ha,7173650,ha
+2013,soja,Municípios fixos,66,area_colhida_ha,7156025,ha
+2013,soja,Municípios fixos,66,producao_t,21148039,t
+2013,soja,Municípios fixos,66,rendimento_kg_ha,2955.2774061018513,kg/ha
+2014,milho,Disponível no ano,137,area_plantada_ha,3349650,ha
+2014,milho,Disponível no ano,137,area_colhida_ha,3330803,ha
+2014,milho,Disponível no ano,137,producao_t,18071316,t
+2014,milho,Disponível no ano,137,rendimento_kg_ha,5425.513307151458,kg/ha
+2014,milho,Municípios fixos,121,area_plantada_ha,3229460,ha
+2014,milho,Municípios fixos,121,area_colhida_ha,3210763,ha
+2014,milho,Municípios fixos,121,producao_t,17535592,t
+2014,milho,Municípios fixos,121,rendimento_kg_ha,5461.503075748662,kg/ha
+2014,soja,Disponível no ano,113,area_plantada_ha,8628608,ha
+2014,soja,Disponível no ano,113,area_colhida_ha,8613593,ha
+2014,soja,Disponível no ano,113,producao_t,26495884,t
+2014,soja,Disponível no ano,113,rendimento_kg_ha,3076.0547892151394,kg/ha
+2014,soja,Municípios fixos,66,area_plantada_ha,7639549,ha
+2014,soja,Municípios fixos,66,area_colhida_ha,7624674,ha
+2014,soja,Municípios fixos,66,producao_t,23453623,t
+2014,soja,Municípios fixos,66,rendimento_kg_ha,3076.016495918383,kg/ha
+2015,milho,Disponível no ano,135,area_plantada_ha,3570606,ha
+2015,milho,Disponível no ano,135,area_colhida_ha,3570606,ha
+2015,milho,Disponível no ano,135,producao_t,21353295,t
+2015,milho,Disponível no ano,135,rendimento_kg_ha,5980.299982692014,kg/ha
+2015,milho,Municípios fixos,121,area_plantada_ha,3437588,ha
+2015,milho,Municípios fixos,121,area_colhida_ha,3437588,ha
+2015,milho,Municípios fixos,121,producao_t,20653863,t
+2015,milho,Municípios fixos,121,rendimento_kg_ha,6008.242698077838,kg/ha
+2015,soja,Disponível no ano,117,area_plantada_ha,8983683,ha
+2015,soja,Disponível no ano,117,area_colhida_ha,8966679,ha
+2015,soja,Disponível no ano,117,producao_t,27850954,t
+2015,soja,Disponível no ano,117,rendimento_kg_ha,3106.0500771801912,kg/ha
+2015,soja,Municípios fixos,66,area_plantada_ha,7797249,ha
+2015,soja,Municípios fixos,66,area_colhida_ha,7780249,ha
+2015,soja,Municípios fixos,66,producao_t,24084130,t
+2015,soja,Municípios fixos,66,rendimento_kg_ha,3095.5474561289748,kg/ha
+2016,milho,Disponível no ano,137,area_plantada_ha,3900268,ha
+2016,milho,Disponível no ano,137,area_colhida_ha,3736321,ha
+2016,milho,Disponível no ano,137,producao_t,15339785,t
+2016,milho,Disponível no ano,137,rendimento_kg_ha,4105.585414101198,kg/ha
+2016,milho,Municípios fixos,121,area_plantada_ha,3755201,ha
+2016,milho,Municípios fixos,121,area_colhida_ha,3601929,ha
+2016,milho,Municípios fixos,121,producao_t,14846189,t
+2016,milho,Municípios fixos,121,rendimento_kg_ha,4121.732827049062,kg/ha
+2016,soja,Disponível no ano,119,area_plantada_ha,9147863,ha
+2016,soja,Disponível no ano,119,area_colhida_ha,9102722,ha
+2016,soja,Disponível no ano,119,producao_t,26277303,t
+2016,soja,Disponível no ano,119,rendimento_kg_ha,2886.752226421943,kg/ha
+2016,soja,Municípios fixos,66,area_plantada_ha,7876285,ha
+2016,soja,Municípios fixos,66,area_colhida_ha,7845513,ha
+2016,soja,Municípios fixos,66,producao_t,22913787,t
+2016,soja,Municípios fixos,66,rendimento_kg_ha,2920.6231638389995,kg/ha
+2017,milho,Disponível no ano,139,area_plantada_ha,4784837,ha
+2017,milho,Disponível no ano,139,area_colhida_ha,4784797,ha
+2017,milho,Disponível no ano,139,producao_t,29942322,t
+2017,milho,Disponível no ano,139,rendimento_kg_ha,6257.804040589392,kg/ha
+2017,milho,Municípios fixos,121,area_plantada_ha,4579998,ha
+2017,milho,Municípios fixos,121,area_colhida_ha,4579958,ha
+2017,milho,Municípios fixos,121,producao_t,28805568,t
+2017,milho,Municípios fixos,121,rendimento_kg_ha,6289.483003992613,kg/ha
+2017,soja,Disponível no ano,119,area_plantada_ha,9287302,ha
+2017,soja,Disponível no ano,119,area_colhida_ha,9264356,ha
+2017,soja,Disponível no ano,119,producao_t,30479870,t
+2017,soja,Disponível no ano,119,rendimento_kg_ha,3290.0149778354803,kg/ha
+2017,soja,Municípios fixos,66,area_plantada_ha,7933884,ha
+2017,soja,Municípios fixos,66,area_colhida_ha,7910938,ha
+2017,soja,Municípios fixos,66,producao_t,26146047,t
+2017,soja,Municípios fixos,66,rendimento_kg_ha,3305.050172305737,kg/ha
+2018,milho,Disponível no ano,139,area_plantada_ha,4418507,ha
+2018,milho,Disponível no ano,139,area_colhida_ha,4417207,ha
+2018,milho,Disponível no ano,139,producao_t,26172540,t
+2018,milho,Disponível no ano,139,rendimento_kg_ha,5925.13323464352,kg/ha
+2018,milho,Municípios fixos,121,area_plantada_ha,4236251,ha
+2018,milho,Municípios fixos,121,area_colhida_ha,4234951,ha
+2018,milho,Municípios fixos,121,producao_t,25246154,t
+2018,milho,Municípios fixos,121,rendimento_kg_ha,5961.380426833746,kg/ha
+2018,soja,Disponível no ano,122,area_plantada_ha,9437888,ha
+2018,soja,Disponível no ano,122,area_colhida_ha,9437849,ha
+2018,soja,Disponível no ano,122,producao_t,31608562,t
+2018,soja,Disponível no ano,122,rendimento_kg_ha,3349.1277514611647,kg/ha
+2018,soja,Municípios fixos,66,area_plantada_ha,8007105,ha
+2018,soja,Municípios fixos,66,area_colhida_ha,8007105,ha
+2018,soja,Municípios fixos,66,producao_t,26923224,t
+2018,soja,Municípios fixos,66,rendimento_kg_ha,3362.4167536206905,kg/ha
+2019,milho,Disponível no ano,138,area_plantada_ha,5026449,ha
+2019,milho,Disponível no ano,138,area_colhida_ha,5026279,ha
+2019,milho,Disponível no ano,138,producao_t,31504274,t
+2019,milho,Disponível no ano,138,rendimento_kg_ha,6267.911908590829,kg/ha
+2019,milho,Municípios fixos,121,area_plantada_ha,4727236,ha
+2019,milho,Municípios fixos,121,area_colhida_ha,4727066,ha
+2019,milho,Municípios fixos,121,producao_t,29841729,t
+2019,milho,Municípios fixos,121,rendimento_kg_ha,6312.949512445986,kg/ha
+2019,soja,Disponível no ano,121,area_plantada_ha,9724213,ha
+2019,soja,Disponível no ano,121,area_colhida_ha,9724149,ha
+2019,soja,Disponível no ano,121,producao_t,32242463,t
+2019,soja,Disponível no ano,121,rendimento_kg_ha,3315.7105058756297,kg/ha
+2019,soja,Municípios fixos,66,area_plantada_ha,8202153,ha
+2019,soja,Municípios fixos,66,area_colhida_ha,8202153,ha
+2019,soja,Municípios fixos,66,producao_t,27135568,t
+2019,soja,Municípios fixos,66,rendimento_kg_ha,3308.3469669488,kg/ha
+2020,milho,Disponível no ano,135,area_plantada_ha,5318762,ha
+2020,milho,Disponível no ano,135,area_colhida_ha,5318762,ha
+2020,milho,Disponível no ano,135,producao_t,33650671,t
+2020,milho,Disponível no ano,135,rendimento_kg_ha,6326.786383748699,kg/ha
+2020,milho,Municípios fixos,121,area_plantada_ha,4996448,ha
+2020,milho,Municípios fixos,121,area_colhida_ha,4996448,ha
+2020,milho,Municípios fixos,121,producao_t,31678303,t
+2020,milho,Municípios fixos,121,rendimento_kg_ha,6340.16465296947,kg/ha
+2020,soja,Disponível no ano,121,area_plantada_ha,9989649,ha
+2020,soja,Disponível no ano,121,area_colhida_ha,9989649,ha
+2020,soja,Disponível no ano,121,producao_t,35070044,t
+2020,soja,Disponível no ano,121,rendimento_kg_ha,3510.6382616646492,kg/ha
+2020,soja,Municípios fixos,66,area_plantada_ha,8377373,ha
+2020,soja,Municípios fixos,66,area_colhida_ha,8377373,ha
+2020,soja,Municípios fixos,66,producao_t,29462702,t
+2020,soja,Municípios fixos,66,rendimento_kg_ha,3516.938066384295,kg/ha
+2021,milho,Disponível no ano,137,area_plantada_ha,5808096,ha
+2021,milho,Disponível no ano,137,area_colhida_ha,5808096,ha
+2021,milho,Disponível no ano,137,producao_t,32051305,t
+2021,milho,Disponível no ano,137,rendimento_kg_ha,5518.38416582646,kg/ha
+2021,milho,Municípios fixos,121,area_plantada_ha,5477077,ha
+2021,milho,Municípios fixos,121,area_colhida_ha,5477077,ha
+2021,milho,Municípios fixos,121,producao_t,30346736,t
+2021,milho,Municípios fixos,121,rendimento_kg_ha,5540.680914290597,kg/ha
+2021,soja,Disponível no ano,129,area_plantada_ha,10366601,ha
+2021,soja,Disponível no ano,129,area_colhida_ha,10355101,ha
+2021,soja,Disponível no ano,129,producao_t,35005968,t
+2021,soja,Disponível no ano,129,rendimento_kg_ha,3380.5530240603157,kg/ha
+2021,soja,Municípios fixos,66,area_plantada_ha,8652973,ha
+2021,soja,Municípios fixos,66,area_colhida_ha,8641473,ha
+2021,soja,Municípios fixos,66,producao_t,29352726,t
+2021,soja,Municípios fixos,66,rendimento_kg_ha,3396.727155196805,kg/ha
+2022,milho,Disponível no ano,138,area_plantada_ha,6416967,ha
+2022,milho,Disponível no ano,138,area_colhida_ha,6414777,ha
+2022,milho,Disponível no ano,138,producao_t,38331222,t
+2022,milho,Disponível no ano,138,rendimento_kg_ha,5975.456668252069,kg/ha
+2022,milho,Municípios fixos,121,area_plantada_ha,6056156,ha
+2022,milho,Municípios fixos,121,area_colhida_ha,6054156,ha
+2022,milho,Municípios fixos,121,producao_t,36162069,t
+2022,milho,Municípios fixos,121,rendimento_kg_ha,5973.098314612309,kg/ha
+2022,soja,Disponível no ano,131,area_plantada_ha,10925226,ha
+2022,soja,Disponível no ano,131,area_colhida_ha,10924622,ha
+2022,soja,Disponível no ano,131,producao_t,38025387,t
+2022,soja,Disponível no ano,131,rendimento_kg_ha,3480.705053227471,kg/ha
+2022,soja,Municípios fixos,66,area_plantada_ha,9025343,ha
+2022,soja,Municípios fixos,66,area_colhida_ha,9024739,ha
+2022,soja,Municípios fixos,66,producao_t,31367323,t
+2022,soja,Municípios fixos,66,rendimento_kg_ha,3475.7041727190117,kg/ha
+2023,milho,Disponível no ano,138,area_plantada_ha,7429526,ha
+2023,milho,Disponível no ano,138,area_colhida_ha,7429526,ha
+2023,milho,Disponível no ano,138,producao_t,50241972,t
+2023,milho,Disponível no ano,138,rendimento_kg_ha,6762.473406782613,kg/ha
+2023,milho,Municípios fixos,121,area_plantada_ha,6996282,ha
+2023,milho,Municípios fixos,121,area_colhida_ha,6996282,ha
+2023,milho,Municípios fixos,121,producao_t,47451319,t
+2023,milho,Municípios fixos,121,rendimento_kg_ha,6782.36226041203,kg/ha
+2023,soja,Disponível no ano,128,area_plantada_ha,11981285,ha
+2023,soja,Disponível no ano,128,area_colhida_ha,11981285,ha
+2023,soja,Disponível no ano,128,producao_t,44425783,t
+2023,soja,Disponível no ano,128,rendimento_kg_ha,3707.931411363639,kg/ha
+2023,soja,Municípios fixos,66,area_plantada_ha,9679730,ha
+2023,soja,Municípios fixos,66,area_colhida_ha,9679730,ha
+2023,soja,Municípios fixos,66,producao_t,35894877,t
+2023,soja,Municípios fixos,66,rendimento_kg_ha,3708.251883058722,kg/ha
+2024,milho,Disponível no ano,140,area_plantada_ha,7078785,ha
+2024,milho,Disponível no ano,140,area_colhida_ha,7078685,ha
+2024,milho,Disponível no ano,140,producao_t,47414131,t
+2024,milho,Disponível no ano,140,rendimento_kg_ha,6698.155236459879,kg/ha
+2024,milho,Municípios fixos,121,area_plantada_ha,6703167,ha
+2024,milho,Municípios fixos,121,area_colhida_ha,6703067,ha
+2024,milho,Municípios fixos,121,producao_t,45032652,t
+2024,milho,Municípios fixos,121,rendimento_kg_ha,6718.216004703519,kg/ha
+2024,soja,Disponível no ano,131,area_plantada_ha,12383077,ha
+2024,soja,Disponível no ano,131,area_colhida_ha,12351963,ha
+2024,soja,Disponível no ano,131,producao_t,38396410,t
+2024,soja,Disponível no ano,131,rendimento_kg_ha,3108.5269604515493,kg/ha
+2024,soja,Municípios fixos,66,area_plantada_ha,9905197,ha
+2024,soja,Municípios fixos,66,area_colhida_ha,9878787,ha
+2024,soja,Municípios fixos,66,producao_t,30669563,t
+2024,soja,Municípios fixos,66,rendimento_kg_ha,3104.5879418191726,kg/ha

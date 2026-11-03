@@ -1,0 +1,77 @@
+0_ Identificação/territórios
+1_ Ambientais
+2_ Econômicas/produtivas
+3_ Institucionais
+4_ Outros
+
+
+***
+Grupo 0 — Índices
+Identifica municípios, anos e biomas. É a estrutura comum para relacionar os grupos (7 colunas), não um bloco de explicações econômicas por si só.
+
+Grupo 1 — Ambiental
+Temos boas candidatas: conversão para agricultura e pastagem, taxas de conversão, estoque de vegetação e precipitação. A construção foi auditada, mas há lacunas de cobertura. Conversão e suas taxas são as principais candidatas a variável dependente de H1. O grupo está organizado em 4 subgrupos:
+- 1a_conversao: desfechos de fluxo em hectares e taxas (agricultura e pastagem).
+- 1b_estoque: estoque inicial de vegetação nativa do par (ha).
+- 1c_clima: precipitação anual, anomalia e baseline histórico (CHIRPS).
+- 1d_qualidade: auditoria da grade CHIRPS, suporte cartográfico MapBiomas e flags amostrais/zeros.
+
+Grupo 2 — Econômico
+O grupo reúne 60 variáveis econômicas estruturadas em 4 subgrupos:
+- 2a_mercado_precos: referências de preços mundiais de soja, milho e carne bovina; fertilizante DAP e razões de troca produto/insumo; e taxa Selic.
+- 2b_producao_aptidao: potencial produtivo biofísico GAEZ (soja e milho) confrontado com a oferta física municipal do PAM (áreas plantada e colhida, produção e produtividade).
+- 2c_receitas: receita bruta estimada total e por hectare (soja e milho), com defasagens (t, lag1, lag2 e média). Validada como construção, mas usa preços de referência; não é receita individual realizada pelo produtor.
+- 2d_custos: 27 aproximações regionais/estaduais de custos da CONAB e do IMEA (lavoura e pecuária; COE, COT e CT; nominal e USD2024), já incorporadas à base principal e mantidas sem imputação artificial de ausências.
+Não temos uma medida direta de demanda. Preços refletem condições de oferta e demanda, mas não permitem separar essas duas forças sozinhos.
+
+Grupo 3 — Institucional
+Temos um bloco ainda estreito, centrado em autos de infração, suas defasagens e indicadores de qualidade. Autos não equivalem automaticamente a multas pagas ou fiscalização efetiva. Os testes anteriores foram inconclusivos e sensíveis à amostra; isso limita a interpretação, mas não torna os registros necessariamente inválidos. Também existe causalidade reversa: mais conversão pode provocar mais fiscalização.
+
+Grupo 4 — Outros
+Reúne principalmente indicadores auxiliares de elegibilidade e seleção da amostra (máscaras combinadas). Ajuda a organizar os testes e filtros de balanceamento, mas não constitui, por enquanto, um bloco substantivo de explicações para H1.
+
+
+***
+O que falta
+
+1. Margem estimada / Rentabilidade:
+   Compatibilizar receitas e custos por cultura/atividade (soja, milho e pecuária), alinhando conceitos, moedas (R$ e USD) e unidades (ha e arroba). O resultado será uma margem operacional estimada, não lucro econômico completo.
+
+2. Seleção e tratamento dos custos nos modelos:
+   Definir quais séries de custos entrarão nas especificações principais (COE, COT ou CT do IMEA vs. CONAB; nominal vs. real deflacionado), estabelecendo como lidar com a cobertura regional desigual e os dados ausentes sem criar viés de imputação.
+
+3. Estratégia de identificação para fiscalização (Grupo 3):
+   Estruturar o uso dos autos de infração do IBAMA na modelagem (defasagem t-1, uso das máscaras de elegibilidade para expurgar contagens parciais e mitigação da causalidade reversa).
+
+4. Amostra de estimação e especificação econométrica:
+   Fixar a máscara amostral principal (como v2__flag_amostra_conversao_ambos, N=2.772) para as regressões em painel, definindo a estrutura de efeitos fixos (município e ano) e clusterização de erros.
+
+5. Articulação entre incentivos de produto e insumo:
+   Decidir se nos modelos principais o choque econômico será capturado pela receita/margem estimada ou por interações entre preços mundiais, termos de troca (produto/DAP) e aptidão GAEZ.
+
+******
+
+- GAEZ: rendimento potencial da terra conforme a cultura
+- PAM: rendimento efetivo
+
+**A justificativa para usar o GAEZ está na pergunta da tese: compreender como as possibilidades produtivas da terra condicionam a resposta da conversão aos preços.** Para isso, o rendimento observado e o potencial oferecem informações diferentes.
+
+Há três argumentos principais:
+
+1. **O rendimento observado descreve terras que já foram selecionadas para produzir.** A PAM informa produção, área colhida e rendimento das lavouras existentes. Uma área ainda coberta por vegetação não apresenta rendimento agrícola observado, mas pode oferecer condições favoráveis ao cultivo. Usar a média das lavouras municipais para representar essa área pressupõe que as terras cultivadas sejam representativas das que ainda poderiam ser convertidas. Essa equivalência precisa ser demonstrada. [IBGE — PAM](https://www.ibge.gov.br/estatisticas/economicas/agricultura-e-pecuaria/9119-producao-agricola-municipal-cereais-leguminosas-e-oleaginosas.html)
+
+2. **O rendimento realizado pode responder aos próprios incentivos investigados.** Uma alta de preços pode estimular maior aplicação de insumos, mudanças de manejo e entrada de novas parcelas na produção. Portanto, interagir preços com rendimento contemporâneo pode misturar a capacidade produtiva anterior à decisão com respostas dos produtores ao próprio preço. Esse é um problema de interpretação e possível endogeneidade.
+
+3. **O GAEZ permite comparar possibilidades produtivas sob condições padronizadas.** Seus resultados são calculados a partir das condições agroecológicas e de hipóteses sobre manejo, insumos e disponibilidade de água. Isso favorece a comparação entre territórios sem depender diretamente do desempenho das lavouras existentes em cada ano. [FAO — GAEZ v4](https://www.fao.org/gaez/gaezv4/en)
+
+Uma resposta oral poderia ser:
+
+> “O rendimento observado é relevante, mas incorpora as decisões de manejo e a seleção das áreas que já entraram em produção. Como a pesquisa investiga a conversão de vegetação nativa, interessa representar também as possibilidades produtivas anteriores ao cultivo. O GAEZ oferece uma aproximação dessas possibilidades sob um cenário comum. Sua função é medir diferenças de capacidade produtiva que podem modificar os incentivos associados aos preços, sem pressupor que o rendimento potencial será integralmente realizado.”
+
+**Essa defesa exige reconhecer os limites da medida.** Seu texto utiliza alto insumo e sequeiro: portanto, o indicador depende desse cenário tecnológico. Também utiliza uma média municipal, que pode diferir da capacidade produtiva da vegetação remanescente. E o uso do GAEZ, isoladamente, não garante exogeneidade nem identificação causal.
+
+O rendimento observado pode complementar a análise: uma média da PAM **anterior ao período estudado** poderia servir como medida alternativa, compatibilizando unidades e cobertura. Isso reconheceria que a experiência produtiva local também informa expectativas, embora a seleção das terras cultivadas continue presente.
+
+Não alterei arquivos nem estimei essa comparação; a justificativa conceitual ainda precisa ser acompanhada de evidência sobre a adequação da medida.
+
+******

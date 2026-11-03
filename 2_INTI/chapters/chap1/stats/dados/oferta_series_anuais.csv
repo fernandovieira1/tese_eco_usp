@@ -1,0 +1,625 @@
+ano,produto,amostra,n_municipios,indicador,valor,unidade,variacao_anual,variacao_anual_pct
+2001,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,2058068,cabeças,,
+2002,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,2444180,cabeças,386112,18.76089614142973
+2003,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,2761603,cabeças,317423,12.986891309150717
+2004,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,3535133,cabeças,773530,28.01018104340125
+2005,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,4081659,cabeças,546526,15.459842670700086
+2006,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,4780290,cabeças,698631,17.116349013967124
+2007,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,4638485,cabeças,-141805,-2.966451826144434
+2008,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,3824386,cabeças,-814099,-17.550967611192014
+2009,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,4067769,cabeças,243383,6.363975812065004
+2010,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,4082705,cabeças,14936,0.36717915889521446
+2011,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,4475152,cabeças,392447,9.612426075359348
+2012,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,5015717,cabeças,540565,12.079254514706994
+2013,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,5837857,cabeças,822140,16.391275664077543
+2014,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,5352226,cabeças,-485631,-8.318651861462179
+2015,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,4540805,cabeças,-811421,-15.160439787109137
+2016,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,4577459,cabeças,36654,0.807213698892606
+2017,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,4804617,cabeças,227158,4.962534891082582
+2018,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,5219350,cabeças,414733,8.63196795915262
+2019,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,5649896,cabeças,430546,8.249034841503256
+2020,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,5090505,cabeças,-559391,-9.900907910517287
+2021,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,4617444,cabeças,-473061,-9.293007275309616
+2022,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,4709980,cabeças,92536,2.004052458459693
+2023,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,5948665,cabeças,1238685,26.299156259686885
+2024,bovinos,MT: abate sob inspeção,,abate_bovinos_cabecas_mt,7138747,cabeças,1190082,20.005866862564957
+2001,bovinos,Disponível no ano,139,efetivo_bovino,19921615,cabeças,,
+2002,bovinos,Disponível no ano,139,efetivo_bovino,22183695,cabeças,2262080,11.354902702416435
+2003,bovinos,Disponível no ano,139,efetivo_bovino,24613718,cabeças,2430023,10.954094888159972
+2004,bovinos,Disponível no ano,139,efetivo_bovino,25918998,cabeças,1305280,5.303059050241821
+2005,bovinos,Disponível no ano,141,efetivo_bovino,26651500,cabeças,732502,2.826120052943404
+2006,bovinos,Disponível no ano,141,efetivo_bovino,26064332,cabeças,-587168,-2.203133031911897
+2007,bovinos,Disponível no ano,141,efetivo_bovino,25683031,cabeças,-381301,-1.4629225870818385
+2008,bovinos,Disponível no ano,141,efetivo_bovino,26018216,cabeças,335185,1.3050835004637884
+2009,bovinos,Disponível no ano,141,efetivo_bovino,27357089,cabeças,1338873,5.145906237383846
+2010,bovinos,Disponível no ano,141,efetivo_bovino,28757438,cabeças,1400349,5.11877926777955
+2011,bovinos,Disponível no ano,141,efetivo_bovino,29265718,cabeças,508280,1.7674731664204524
+2012,bovinos,Disponível no ano,141,efetivo_bovino,28740802,cabeças,-524916,-1.793620781830807
+2013,bovinos,Disponível no ano,141,efetivo_bovino,28395205,cabeças,-345597,-1.2024612256818723
+2014,bovinos,Disponível no ano,141,efetivo_bovino,28592183,cabeças,196978,0.6937016302576371
+2015,bovinos,Disponível no ano,141,efetivo_bovino,29364042,cabeças,771859,2.699545536624459
+2016,bovinos,Disponível no ano,141,efetivo_bovino,30296096,cabeças,932054,3.174133860726669
+2017,bovinos,Disponível no ano,141,efetivo_bovino,29725378,cabeças,-570718,-1.883800473830033
+2018,bovinos,Disponível no ano,141,efetivo_bovino,30199598,cabeças,474220,1.5953371560152974
+2019,bovinos,Disponível no ano,141,efetivo_bovino,31654882,cabeças,1455284,4.8188853374803164
+2020,bovinos,Disponível no ano,141,efetivo_bovino,32338031,cabeças,683149,2.158115768683011
+2021,bovinos,Disponível no ano,141,efetivo_bovino,32424958,cabeças,86927,0.26880733709482296
+2022,bovinos,Disponível no ano,141,efetivo_bovino,34246313,cabeças,1821355,5.6171391185765085
+2023,bovinos,Disponível no ano,141,efetivo_bovino,34075004,cabeças,-171309,-0.5002261119321116
+2024,bovinos,Disponível no ano,141,efetivo_bovino,32853368,cabeças,-1221636,-3.5851382438575774
+2001,bovinos,Municípios fixos,139,efetivo_bovino,19921615,cabeças,,
+2002,bovinos,Municípios fixos,139,efetivo_bovino,22183695,cabeças,2262080,11.354902702416435
+2003,bovinos,Municípios fixos,139,efetivo_bovino,24613718,cabeças,2430023,10.954094888159972
+2004,bovinos,Municípios fixos,139,efetivo_bovino,25918998,cabeças,1305280,5.303059050241821
+2005,bovinos,Municípios fixos,139,efetivo_bovino,26612500,cabeças,693502,2.6756512732475146
+2006,bovinos,Municípios fixos,139,efetivo_bovino,26036627,cabeças,-575873,-2.163919210897136
+2007,bovinos,Municípios fixos,139,efetivo_bovino,25633255,cabeças,-403372,-1.5492482954877373
+2008,bovinos,Municípios fixos,139,efetivo_bovino,25965114,cabeças,331859,1.2946424478670338
+2009,bovinos,Municípios fixos,139,efetivo_bovino,27302623,cabeças,1337509,5.1511770755175545
+2010,bovinos,Municípios fixos,139,efetivo_bovino,28701337,cabeças,1398714,5.123002284432521
+2011,bovinos,Municípios fixos,139,efetivo_bovino,29210054,cabeças,508717,1.7724505307888716
+2012,bovinos,Municípios fixos,139,efetivo_bovino,28690021,cabeças,-520033,-1.7803219398361936
+2013,bovinos,Municípios fixos,139,efetivo_bovino,28354614,cabeças,-335407,-1.1690719919654313
+2014,bovinos,Municípios fixos,139,efetivo_bovino,28549038,cabeças,194424,0.6856873452764978
+2015,bovinos,Municípios fixos,139,efetivo_bovino,29324923,cabeças,775885,2.7177273013542447
+2016,bovinos,Municípios fixos,139,efetivo_bovino,30250148,cabeças,925225,3.155080748208605
+2017,bovinos,Municípios fixos,139,efetivo_bovino,29673807,cabeças,-576341,-1.9052501825776225
+2018,bovinos,Municípios fixos,139,efetivo_bovino,30143690,cabeças,469883,1.583494156984977
+2019,bovinos,Municípios fixos,139,efetivo_bovino,31590433,cabeças,1446743,4.799488715548761
+2020,bovinos,Municípios fixos,139,efetivo_bovino,32266688,cabeças,676255,2.140695570712814
+2021,bovinos,Municípios fixos,139,efetivo_bovino,32354200,cabeças,87512,0.2712146967175588
+2022,bovinos,Municípios fixos,139,efetivo_bovino,34165537,cabeças,1811337,5.598460169004338
+2023,bovinos,Municípios fixos,139,efetivo_bovino,33993375,cabeças,-172162,-0.5039054413223498
+2024,bovinos,Municípios fixos,139,efetivo_bovino,32770089,cabeças,-1223286,-3.5986011980275623
+2001,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,505800010,kg de carcaças,,
+2002,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,591999111,kg de carcaças,86199101,17.04213113795707
+2003,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,645158600,kg de carcaças,53159489,8.979656896815857
+2004,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,814195774,kg de carcaças,169037174,26.200871227633016
+2005,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,930797063,kg de carcaças,116601289,14.321038345256753
+2006,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1082805129,kg de carcaças,152008066,16.330956772690207
+2007,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1094831279,kg de carcaças,12026150,1.1106476759217498
+2008,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,924877748,kg de carcaças,-169953531,-15.52326228341162
+2009,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1010482777,kg de carcaças,85605029,9.255821019060772
+2010,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1030711870,kg de carcaças,20229093,2.0019235815238456
+2011,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1085217724,kg de carcaças,54505854,5.28817563729036
+2012,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1220217278,kg de carcaças,134999554,12.439858934703496
+2013,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1445056659,kg de carcaças,224839381,18.426175817516977
+2014,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1325781623,kg de carcaças,-119275036,-8.2540041082223
+2015,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1171522222,kg de carcaças,-154259401,-11.635355199066598
+2016,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1213790359,kg de carcaças,42268137,3.6079671564266835
+2017,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1281704165,kg de carcaças,67913806,5.595184168042966
+2018,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1393786622,kg de carcaças,112082457,8.744799311781914
+2019,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1519965312,kg de carcaças,126178690,9.052941677610683
+2020,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1419369199,kg de carcaças,-100596113,-6.6183163658934845
+2021,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1322019945,kg de carcaças,-97349254,-6.858628048895687
+2022,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1350519756,kg de carcaças,28499811,2.1557776876051538
+2023,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1649141565,kg de carcaças,298621809,22.111620927668984
+2024,bovinos,MT: abate sob inspeção,,peso_carcacas_bovinas_kg_mt,1958870817,kg de carcaças,309729252,18.781241014927662
+2001,carne_bovina,Registros por domicílio fiscal em MT,6,exportacao_fob_usd_nominal_domicilio,5670458,USD correntes FOB,,
+2002,carne_bovina,Registros por domicílio fiscal em MT,6,exportacao_fob_usd_nominal_domicilio,39809402,USD correntes FOB,34138944,602.0491466474136
+2003,carne_bovina,Registros por domicílio fiscal em MT,5,exportacao_fob_usd_nominal_domicilio,70092560,USD correntes FOB,30283158,76.07036649281996
+2004,carne_bovina,Registros por domicílio fiscal em MT,6,exportacao_fob_usd_nominal_domicilio,80339137,USD correntes FOB,10246577,14.6186371278207
+2005,carne_bovina,Registros por domicílio fiscal em MT,14,exportacao_fob_usd_nominal_domicilio,99461099,USD correntes FOB,19121962,23.80155266044244
+2006,carne_bovina,Registros por domicílio fiscal em MT,11,exportacao_fob_usd_nominal_domicilio,244113763,USD correntes FOB,144652664,145.4364223343239
+2007,carne_bovina,Registros por domicílio fiscal em MT,10,exportacao_fob_usd_nominal_domicilio,235704576,USD correntes FOB,-8409187,-3.4447820133762797
+2008,carne_bovina,Registros por domicílio fiscal em MT,15,exportacao_fob_usd_nominal_domicilio,235089683,USD correntes FOB,-614893,-0.26087444309947916
+2009,carne_bovina,Registros por domicílio fiscal em MT,16,exportacao_fob_usd_nominal_domicilio,239489474,USD correntes FOB,4399791,1.8715372549972686
+2010,carne_bovina,Registros por domicílio fiscal em MT,15,exportacao_fob_usd_nominal_domicilio,393335320,USD correntes FOB,153845846,64.23908467893666
+2011,carne_bovina,Registros por domicílio fiscal em MT,16,exportacao_fob_usd_nominal_domicilio,471507932,USD correntes FOB,78172612,19.87429249933619
+2012,carne_bovina,Registros por domicílio fiscal em MT,16,exportacao_fob_usd_nominal_domicilio,608061316,USD correntes FOB,136553384,28.960994022047547
+2013,carne_bovina,Registros por domicílio fiscal em MT,18,exportacao_fob_usd_nominal_domicilio,815217389,USD correntes FOB,207156073,34.068286790998556
+2014,carne_bovina,Registros por domicílio fiscal em MT,20,exportacao_fob_usd_nominal_domicilio,1052195784,USD correntes FOB,236978395,29.069349868836024
+2015,carne_bovina,Registros por domicílio fiscal em MT,20,exportacao_fob_usd_nominal_domicilio,929589195,USD correntes FOB,-122606589,-11.652450129946534
+2016,carne_bovina,Registros por domicílio fiscal em MT,19,exportacao_fob_usd_nominal_domicilio,852043626,USD correntes FOB,-77545569,-8.341918066291642
+2017,carne_bovina,Registros por domicílio fiscal em MT,19,exportacao_fob_usd_nominal_domicilio,1070116626,USD correntes FOB,218073000,25.5941120085323
+2018,carne_bovina,Registros por domicílio fiscal em MT,21,exportacao_fob_usd_nominal_domicilio,1094720038,USD correntes FOB,24603412,2.2991337020867864
+2019,carne_bovina,Registros por domicílio fiscal em MT,22,exportacao_fob_usd_nominal_domicilio,1326210606,USD correntes FOB,231490568,21.146097629026862
+2020,carne_bovina,Registros por domicílio fiscal em MT,20,exportacao_fob_usd_nominal_domicilio,1510764928,USD correntes FOB,184554322,13.915913593591034
+2021,carne_bovina,Registros por domicílio fiscal em MT,21,exportacao_fob_usd_nominal_domicilio,1630078978,USD correntes FOB,119314050,7.8975919938750305
+2022,carne_bovina,Registros por domicílio fiscal em MT,21,exportacao_fob_usd_nominal_domicilio,2617333551,USD correntes FOB,987254573,60.56483068147389
+2023,carne_bovina,Registros por domicílio fiscal em MT,19,exportacao_fob_usd_nominal_domicilio,1982530007,USD correntes FOB,-634803544,-24.25382671449964
+2024,carne_bovina,Registros por domicílio fiscal em MT,20,exportacao_fob_usd_nominal_domicilio,2308258210,USD correntes FOB,325728203,16.429925491664953
+2001,carne_bovina,Registros por domicílio fiscal em MT,6,exportacao_kg_liquido_domicilio,2996271,kg líquidos,,
+2002,carne_bovina,Registros por domicílio fiscal em MT,6,exportacao_kg_liquido_domicilio,24289647,kg líquidos,21293376,710.6625535540678
+2003,carne_bovina,Registros por domicílio fiscal em MT,5,exportacao_kg_liquido_domicilio,38923932,kg líquidos,14634285,60.24906413831375
+2004,carne_bovina,Registros por domicílio fiscal em MT,6,exportacao_kg_liquido_domicilio,37447357,kg líquidos,-1476575,-3.79348879758602
+2005,carne_bovina,Registros por domicílio fiscal em MT,14,exportacao_kg_liquido_domicilio,42294398,kg líquidos,4847041,12.943613083294503
+2006,carne_bovina,Registros por domicílio fiscal em MT,11,exportacao_kg_liquido_domicilio,89981867,kg líquidos,47687469,112.75126554585313
+2007,carne_bovina,Registros por domicílio fiscal em MT,10,exportacao_kg_liquido_domicilio,84804616,kg líquidos,-5177251,-5.753660345811673
+2008,carne_bovina,Registros por domicílio fiscal em MT,15,exportacao_kg_liquido_domicilio,61926186,kg líquidos,-22878430,-26.977812151168756
+2009,carne_bovina,Registros por domicílio fiscal em MT,16,exportacao_kg_liquido_domicilio,75158558,kg líquidos,13232372,21.36797509215245
+2010,carne_bovina,Registros por domicílio fiscal em MT,15,exportacao_kg_liquido_domicilio,101511366,kg líquidos,26352808,35.06295051589468
+2011,carne_bovina,Registros por domicílio fiscal em MT,16,exportacao_kg_liquido_domicilio,94075768,kg líquidos,-7435598,-7.324892071691758
+2012,carne_bovina,Registros por domicílio fiscal em MT,16,exportacao_kg_liquido_domicilio,125743811,kg líquidos,31668043,33.66227422134891
+2013,carne_bovina,Registros por domicílio fiscal em MT,18,exportacao_kg_liquido_domicilio,178577165,kg líquidos,52833354,42.016663547759016
+2014,carne_bovina,Registros por domicílio fiscal em MT,20,exportacao_kg_liquido_domicilio,215672788,kg líquidos,37095623,20.772881571952382
+2015,carne_bovina,Registros por domicílio fiscal em MT,20,exportacao_kg_liquido_domicilio,209081922,kg líquidos,-6590866,-3.0559562293969167
+2016,carne_bovina,Registros por domicílio fiscal em MT,19,exportacao_kg_liquido_domicilio,205614934,kg líquidos,-3466988,-1.6581959677986924
+2017,carne_bovina,Registros por domicílio fiscal em MT,19,exportacao_kg_liquido_domicilio,244417525,kg líquidos,38802591,18.871484792053096
+2018,carne_bovina,Registros por domicílio fiscal em MT,21,exportacao_kg_liquido_domicilio,265310903,kg líquidos,20893378,8.548232374090192
+2019,carne_bovina,Registros por domicílio fiscal em MT,22,exportacao_kg_liquido_domicilio,322652666,kg líquidos,57341763,21.613044300708584
+2020,carne_bovina,Registros por domicílio fiscal em MT,20,exportacao_kg_liquido_domicilio,353594495,kg líquidos,30941829,9.589825921351602
+2021,carne_bovina,Registros por domicílio fiscal em MT,21,exportacao_kg_liquido_domicilio,323219779,kg líquidos,-30374716,-8.590268352452712
+2022,carne_bovina,Registros por domicílio fiscal em MT,21,exportacao_kg_liquido_domicilio,444312934,kg líquidos,121093155,37.464648783142685
+2023,carne_bovina,Registros por domicílio fiscal em MT,19,exportacao_kg_liquido_domicilio,426155659,kg líquidos,-18157275,-4.086596092653927
+2024,carne_bovina,Registros por domicílio fiscal em MT,20,exportacao_kg_liquido_domicilio,508271963,kg líquidos,82116304,19.26908683852535
+2001,milho,Disponível no ano,138,area_colhida_ha,536420,ha,,
+2002,milho,Disponível no ano,137,area_colhida_ha,719945,ha,183525,34.21293016666045
+2003,milho,Disponível no ano,138,area_colhida_ha,880623,ha,160678,22.31809374327205
+2004,milho,Disponível no ano,139,area_colhida_ha,941092,ha,60469,6.866616020703531
+2005,milho,Disponível no ano,141,area_colhida_ha,1043815,ha,102723,10.915298398031226
+2006,milho,Disponível no ano,141,area_colhida_ha,1079970,ha,36155,3.4637363900691165
+2007,milho,Disponível no ano,141,area_colhida_ha,1648671,ha,568701,52.658962748965244
+2008,milho,Disponível no ano,141,area_colhida_ha,1830447,ha,181776,11.02560789872571
+2009,milho,Disponível no ano,141,area_colhida_ha,1662920,ha,-167527,-9.152245325868492
+2010,milho,Disponível no ano,137,area_colhida_ha,2011742,ha,348822,20.97647511606091
+2011,milho,Disponível no ano,137,area_colhida_ha,1921101,ha,-90641,-4.505597636277415
+2012,milho,Disponível no ano,138,area_colhida_ha,2740553,ha,819452,42.655331500009616
+2013,milho,Disponível no ano,136,area_colhida_ha,3416701,ha,676148,24.671954893775094
+2014,milho,Disponível no ano,137,area_colhida_ha,3330803,ha,-85898,-2.514062541615436
+2015,milho,Disponível no ano,135,area_colhida_ha,3570606,ha,239803,7.199555182338924
+2016,milho,Disponível no ano,137,area_colhida_ha,3736321,ha,165715,4.641088935603643
+2017,milho,Disponível no ano,139,area_colhida_ha,4784797,ha,1048476,28.06172167755394
+2018,milho,Disponível no ano,139,area_colhida_ha,4417207,ha,-367590,-7.682457583884961
+2019,milho,Disponível no ano,138,area_colhida_ha,5026279,ha,609072,13.788622539084084
+2020,milho,Disponível no ano,135,area_colhida_ha,5318762,ha,292483,5.819076099834497
+2021,milho,Disponível no ano,137,area_colhida_ha,5808096,ha,489334,9.200148455599244
+2022,milho,Disponível no ano,138,area_colhida_ha,6414777,ha,606681,10.445436852283429
+2023,milho,Disponível no ano,138,area_colhida_ha,7429526,ha,1014749,15.818928701652446
+2024,milho,Disponível no ano,140,area_colhida_ha,7078685,ha,-350841,-4.722252805899052
+2001,milho,Municípios fixos,121,area_colhida_ha,528946,ha,,
+2002,milho,Municípios fixos,121,area_colhida_ha,713422,ha,184476,34.87614992834806
+2003,milho,Municípios fixos,121,area_colhida_ha,875423,ha,162001,22.707598027534903
+2004,milho,Municípios fixos,121,area_colhida_ha,934037,ha,58614,6.69550605821414
+2005,milho,Municípios fixos,121,area_colhida_ha,983107,ha,49070,5.25353920669096
+2006,milho,Municípios fixos,121,area_colhida_ha,1032696,ha,49589,5.044110152811454
+2007,milho,Municípios fixos,121,area_colhida_ha,1577614,ha,544918,52.76654504326539
+2008,milho,Municípios fixos,121,area_colhida_ha,1740757,ha,163143,10.341122733444298
+2009,milho,Municípios fixos,121,area_colhida_ha,1576878,ha,-163879,-9.414237598929665
+2010,milho,Municípios fixos,121,area_colhida_ha,1910607,ha,333729,21.163907417060802
+2011,milho,Municípios fixos,121,area_colhida_ha,1827932,ha,-82675,-4.327158855798185
+2012,milho,Municípios fixos,121,area_colhida_ha,2622984,ha,795052,43.49461577345328
+2013,milho,Municípios fixos,121,area_colhida_ha,3290181,ha,667197,25.436563852467266
+2014,milho,Municípios fixos,121,area_colhida_ha,3210763,ha,-79418,-2.4137881776108983
+2015,milho,Municípios fixos,121,area_colhida_ha,3437588,ha,226825,7.064520177914102
+2016,milho,Municípios fixos,121,area_colhida_ha,3601929,ha,164341,4.78070670481745
+2017,milho,Municípios fixos,121,area_colhida_ha,4579958,ha,978029,27.152922781098688
+2018,milho,Municípios fixos,121,area_colhida_ha,4234951,ha,-345007,-7.532973009796162
+2019,milho,Municípios fixos,121,area_colhida_ha,4727066,ha,492115,11.620323352029338
+2020,milho,Municípios fixos,121,area_colhida_ha,4996448,ha,269382,5.69871459378819
+2021,milho,Municípios fixos,121,area_colhida_ha,5477077,ha,480629,9.619413631443784
+2022,milho,Municípios fixos,121,area_colhida_ha,6054156,ha,577079,10.536258664977694
+2023,milho,Municípios fixos,121,area_colhida_ha,6996282,ha,942126,15.561640631658658
+2024,milho,Municípios fixos,121,area_colhida_ha,6703067,ha,-293215,-4.191011740235739
+2001,milho,Disponível no ano,138,area_plantada_ha,540085,ha,,
+2002,milho,Disponível no ano,137,area_plantada_ha,723135,ha,183050,33.89281316829758
+2003,milho,Disponível no ano,138,area_plantada_ha,882658,ha,159523,22.059919655389383
+2004,milho,Disponível no ano,139,area_plantada_ha,941125,ha,58467,6.623969872815971
+2005,milho,Disponível no ano,141,area_plantada_ha,1073146,ha,132021,14.027998406162844
+2006,milho,Disponível no ano,141,area_plantada_ha,1079980,ha,6834,0.636819221242968
+2007,milho,Disponível no ano,141,area_plantada_ha,1650471,ha,570491,52.8242189670179
+2008,milho,Disponível no ano,141,area_plantada_ha,1832687,ha,182216,11.040242452003103
+2009,milho,Disponível no ano,141,area_plantada_ha,1665470,ha,-167217,-9.124143948202834
+2010,milho,Disponível no ano,137,area_plantada_ha,2014192,ha,348722,20.938353737983874
+2011,milho,Disponível no ano,137,area_plantada_ha,1922621,ha,-91571,-4.546289529498681
+2012,milho,Disponível no ano,138,area_plantada_ha,2740833,ha,818212,42.55711344045445
+2013,milho,Disponível no ano,136,area_plantada_ha,3416701,ha,675868,24.65921856603448
+2014,milho,Disponível no ano,137,area_plantada_ha,3349650,ha,-67051,-1.9624485724680008
+2015,milho,Disponível no ano,135,area_plantada_ha,3570606,ha,220956,6.596390667681695
+2016,milho,Disponível no ano,137,area_plantada_ha,3900268,ha,329662,9.232662466819352
+2017,milho,Disponível no ano,139,area_plantada_ha,4784837,ha,884569,22.679697907938625
+2018,milho,Disponível no ano,139,area_plantada_ha,4418507,ha,-366330,-7.656060175090607
+2019,milho,Disponível no ano,138,area_plantada_ha,5026449,ha,607942,13.75899144213193
+2020,milho,Disponível no ano,135,area_plantada_ha,5318762,ha,292313,5.815497183001361
+2021,milho,Disponível no ano,137,area_plantada_ha,5808096,ha,489334,9.200148455599244
+2022,milho,Disponível no ano,138,area_plantada_ha,6416967,ha,608871,10.483142840614201
+2023,milho,Disponível no ano,138,area_plantada_ha,7429526,ha,1012559,15.779401701769702
+2024,milho,Disponível no ano,140,area_plantada_ha,7078785,ha,-350741,-4.7209068250114505
+2001,milho,Municípios fixos,121,area_plantada_ha,532611,ha,,
+2002,milho,Municípios fixos,121,area_plantada_ha,716592,ha,183981,34.54322197626409
+2003,milho,Municípios fixos,121,area_plantada_ha,877458,ha,160866,22.448757451939173
+2004,milho,Municípios fixos,121,area_plantada_ha,934070,ha,56612,6.451818776511242
+2005,milho,Municípios fixos,121,area_plantada_ha,1012438,ha,78368,8.389949361396898
+2006,milho,Municípios fixos,121,area_plantada_ha,1032706,ha,20268,2.0019003632814947
+2007,milho,Municípios fixos,121,area_plantada_ha,1578114,ha,545408,52.81348224954634
+2008,milho,Municípios fixos,121,area_plantada_ha,1742347,ha,164233,10.406916103652852
+2009,milho,Municípios fixos,121,area_plantada_ha,1579428,ha,-162919,-9.350548426920701
+2010,milho,Municípios fixos,121,area_plantada_ha,1913057,ha,333629,21.12340670166668
+2011,milho,Municípios fixos,121,area_plantada_ha,1829452,ha,-83605,-4.370230474052783
+2012,milho,Municípios fixos,121,area_plantada_ha,2623264,ha,793812,43.39069841679366
+2013,milho,Municípios fixos,121,area_plantada_ha,3290181,ha,666917,25.423175097893314
+2014,milho,Municípios fixos,121,area_plantada_ha,3229460,ha,-60721,-1.8455215685702409
+2015,milho,Municípios fixos,121,area_plantada_ha,3437588,ha,208128,6.4446687681531944
+2016,milho,Municípios fixos,121,area_plantada_ha,3755201,ha,317613,9.239414380082778
+2017,milho,Municípios fixos,121,area_plantada_ha,4579998,ha,824797,21.964123891104627
+2018,milho,Municípios fixos,121,area_plantada_ha,4236251,ha,-343747,-7.505396290566068
+2019,milho,Municípios fixos,121,area_plantada_ha,4727236,ha,490985,11.590082835035043
+2020,milho,Municípios fixos,121,area_plantada_ha,4996448,ha,269212,5.694913475866237
+2021,milho,Municípios fixos,121,area_plantada_ha,5477077,ha,480629,9.619413631443784
+2022,milho,Municípios fixos,121,area_plantada_ha,6056156,ha,579079,10.572774492671911
+2023,milho,Municípios fixos,121,area_plantada_ha,6996282,ha,940126,15.523477268419118
+2024,milho,Municípios fixos,121,area_plantada_ha,6703167,ha,-293115,-4.189582409628423
+2001,milho,Registros por domicílio fiscal em MT,2,exportacao_fob_usd_nominal_domicilio,213464,USD correntes FOB,,
+2002,milho,Registros por domicílio fiscal em MT,3,exportacao_fob_usd_nominal_domicilio,6038518,USD correntes FOB,5825054,2728.822658621594
+2003,milho,Registros por domicílio fiscal em MT,5,exportacao_fob_usd_nominal_domicilio,17272278,USD correntes FOB,11233760,186.03505032194985
+2004,milho,Registros por domicílio fiscal em MT,10,exportacao_fob_usd_nominal_domicilio,35035696,USD correntes FOB,17763418,102.84351606661262
+2005,milho,Registros por domicílio fiscal em MT,10,exportacao_fob_usd_nominal_domicilio,26098807,USD correntes FOB,-8936889,-25.50795337418158
+2006,milho,Registros por domicílio fiscal em MT,8,exportacao_fob_usd_nominal_domicilio,41118992,USD correntes FOB,15020185,57.55123213103188
+2007,milho,Registros por domicílio fiscal em MT,22,exportacao_fob_usd_nominal_domicilio,403603574,USD correntes FOB,362484582,881.5502627107202
+2008,milho,Registros por domicílio fiscal em MT,23,exportacao_fob_usd_nominal_domicilio,380650868,USD correntes FOB,-22952706,-5.686943198377126
+2009,milho,Registros por domicílio fiscal em MT,25,exportacao_fob_usd_nominal_domicilio,709086076,USD correntes FOB,328435208,86.28253226523577
+2010,milho,Registros por domicílio fiscal em MT,28,exportacao_fob_usd_nominal_domicilio,985644261,USD correntes FOB,276558185,39.00206115456144
+2011,milho,Registros por domicílio fiscal em MT,35,exportacao_fob_usd_nominal_domicilio,1351419405,USD correntes FOB,365775144,37.110259601054985
+2012,milho,Registros por domicílio fiscal em MT,43,exportacao_fob_usd_nominal_domicilio,2054839011,USD correntes FOB,703419606,52.050429599980475
+2013,milho,Registros por domicílio fiscal em MT,49,exportacao_fob_usd_nominal_domicilio,2985013058,USD correntes FOB,930174047,45.26749015473115
+2014,milho,Registros por domicílio fiscal em MT,46,exportacao_fob_usd_nominal_domicilio,1806728136,USD correntes FOB,-1178284922,-39.47335904753017
+2015,milho,Registros por domicílio fiscal em MT,49,exportacao_fob_usd_nominal_domicilio,2302308847,USD correntes FOB,495580711,27.42973340179389
+2016,milho,Registros por domicílio fiscal em MT,49,exportacao_fob_usd_nominal_domicilio,2111712662,USD correntes FOB,-190596185,-8.278480328490867
+2017,milho,Registros por domicílio fiscal em MT,46,exportacao_fob_usd_nominal_domicilio,2488332978,USD correntes FOB,376620316,17.834827757451777
+2018,milho,Registros por domicílio fiscal em MT,48,exportacao_fob_usd_nominal_domicilio,1936676806,USD correntes FOB,-551656172,-22.169708671521693
+2019,milho,Registros por domicílio fiscal em MT,47,exportacao_fob_usd_nominal_domicilio,4014393519,USD correntes FOB,2077716713,107.2825732493437
+2020,milho,Registros por domicílio fiscal em MT,49,exportacao_fob_usd_nominal_domicilio,3498416259,USD correntes FOB,-515977260,-12.853180874219127
+2021,milho,Registros por domicílio fiscal em MT,50,exportacao_fob_usd_nominal_domicilio,2914212345,USD correntes FOB,-584203914,-16.69909669831545
+2022,milho,Registros por domicílio fiscal em MT,52,exportacao_fob_usd_nominal_domicilio,6527818357,USD correntes FOB,3613606012,123.99940650172492
+2023,milho,Registros por domicílio fiscal em MT,53,exportacao_fob_usd_nominal_domicilio,6557358884,USD correntes FOB,29540527,0.4525329196441774
+2024,milho,Registros por domicílio fiscal em MT,53,exportacao_fob_usd_nominal_domicilio,5092683857,USD correntes FOB,-1464675027,-22.336356037700135
+2001,milho,Registros por domicílio fiscal em MT,2,exportacao_kg_liquido_domicilio,2546457,kg líquidos,,
+2002,milho,Registros por domicílio fiscal em MT,3,exportacao_kg_liquido_domicilio,64091212,kg líquidos,61544755,2416.8778424296975
+2003,milho,Registros por domicílio fiscal em MT,5,exportacao_kg_liquido_domicilio,170263532,kg líquidos,106172320,165.65815606670066
+2004,milho,Registros por domicílio fiscal em MT,10,exportacao_kg_liquido_domicilio,317957336,kg líquidos,147693804,86.7442383375437
+2005,milho,Registros por domicílio fiscal em MT,10,exportacao_kg_liquido_domicilio,285331862,kg líquidos,-32625474,-10.260959665355863
+2006,milho,Registros por domicílio fiscal em MT,8,exportacao_kg_liquido_domicilio,348739468,kg líquidos,63407606,22.222406413203167
+2007,milho,Registros por domicílio fiscal em MT,22,exportacao_kg_liquido_domicilio,2349039006,kg líquidos,2000299538,573.5799132434302
+2008,milho,Registros por domicílio fiscal em MT,23,exportacao_kg_liquido_domicilio,1952797347,kg líquidos,-396241659,-16.86824518400526
+2009,milho,Registros por domicílio fiscal em MT,25,exportacao_kg_liquido_domicilio,4381477801,kg líquidos,2428680454,124.3693032321597
+2010,milho,Registros por domicílio fiscal em MT,28,exportacao_kg_liquido_domicilio,5114942243,kg líquidos,733464442,16.740115443072632
+2011,milho,Registros por domicílio fiscal em MT,35,exportacao_kg_liquido_domicilio,4917704554,kg líquidos,-197237689,-3.856107843053902
+2012,milho,Registros por domicílio fiscal em MT,43,exportacao_kg_liquido_domicilio,7656309532,kg líquidos,2738604978,55.6886845870489
+2013,milho,Registros por domicílio fiscal em MT,49,exportacao_kg_liquido_domicilio,12848169380,kg líquidos,5191859848,67.81151971847943
+2014,milho,Registros por domicílio fiscal em MT,46,exportacao_kg_liquido_domicilio,9619500142,kg líquidos,-3228669238,-25.129410599348745
+2015,milho,Registros por domicílio fiscal em MT,49,exportacao_kg_liquido_domicilio,13234892544,kg líquidos,3615392402,37.58399447612379
+2016,milho,Registros por domicílio fiscal em MT,49,exportacao_kg_liquido_domicilio,12560749561,kg líquidos,-674142983,-5.093679308379584
+2017,milho,Registros por domicílio fiscal em MT,46,exportacao_kg_liquido_domicilio,16010724199,kg líquidos,3449974638,27.466311793301436
+2018,milho,Registros por domicílio fiscal em MT,48,exportacao_kg_liquido_domicilio,11494289933,kg líquidos,-4516434266,-28.208806858855816
+2019,milho,Registros por domicílio fiscal em MT,47,exportacao_kg_liquido_domicilio,23994145331,kg líquidos,12499855398,108.74839133919036
+2020,milho,Registros por domicílio fiscal em MT,49,exportacao_kg_liquido_domicilio,21036160848,kg líquidos,-2957984483,-12.327942680160142
+2021,milho,Registros por domicílio fiscal em MT,50,exportacao_kg_liquido_domicilio,14466323262,kg líquidos,-6569837586,-31.231162537077783
+2022,milho,Registros por domicílio fiscal em MT,52,exportacao_kg_liquido_domicilio,23840152757,kg líquidos,9373829495,64.79759455965626
+2023,milho,Registros por domicílio fiscal em MT,53,exportacao_kg_liquido_domicilio,27287589065,kg líquidos,3447436308,14.460630110634497
+2024,milho,Registros por domicílio fiscal em MT,53,exportacao_kg_liquido_domicilio,25276671349,kg líquidos,-2010917716,-7.369349161664385
+2001,milho,Disponível no ano,138,producao_t,1743043,t,,
+2002,milho,Disponível no ano,137,producao_t,2311368,t,568325,32.60533446392315
+2003,milho,Disponível no ano,138,producao_t,3192813,t,881445,38.135208240314824
+2004,milho,Disponível no ano,139,producao_t,3408968,t,216155,6.770048856603883
+2005,milho,Disponível no ano,141,producao_t,3483266,t,74298,2.1794865777560846
+2006,milho,Disponível no ano,141,producao_t,4228423,t,745157,21.392480505364798
+2007,milho,Disponível no ano,141,producao_t,6130082,t,1901659,44.97324416218529
+2008,milho,Disponível no ano,141,producao_t,7799413,t,1669331,27.231789069053235
+2009,milho,Disponível no ano,141,producao_t,8181984,t,382571,4.905125552397349
+2010,milho,Disponível no ano,137,producao_t,8164273,t,-17711,-0.2164633907863922
+2011,milho,Disponível no ano,137,producao_t,7763942,t,-400331,-4.9034494559405335
+2012,milho,Disponível no ano,138,producao_t,15646716,t,7882774,101.53056269611494
+2013,milho,Disponível no ano,136,producao_t,20186020,t,4539304,29.01122510308234
+2014,milho,Disponível no ano,137,producao_t,18071316,t,-2114704,-10.476081961674467
+2015,milho,Disponível no ano,135,producao_t,21353295,t,3281979,18.161261747622582
+2016,milho,Disponível no ano,137,producao_t,15339785,t,-6013510,-28.161976875231666
+2017,milho,Disponível no ano,139,producao_t,29942322,t,14602537,95.19388309549319
+2018,milho,Disponível no ano,139,producao_t,26172540,t,-3769782,-12.590145814342657
+2019,milho,Disponível no ano,138,producao_t,31504274,t,5331734,20.371480949116894
+2020,milho,Disponível no ano,135,producao_t,33650671,t,2146397,6.813034320359201
+2021,milho,Disponível no ano,137,producao_t,32051305,t,-1599366,-4.75285024777069
+2022,milho,Disponível no ano,138,producao_t,38331222,t,6279917,19.593327011177863
+2023,milho,Disponível no ano,138,producao_t,50241972,t,11910750,31.07323319877462
+2024,milho,Disponível no ano,140,producao_t,47414131,t,-2827841,-5.6284434854587335
+2001,milho,Municípios fixos,121,producao_t,1724358,t,,
+2002,milho,Municípios fixos,121,producao_t,2294414,t,570056,33.059028345621954
+2003,milho,Municípios fixos,121,producao_t,3178969,t,884555,38.55254544297586
+2004,milho,Municípios fixos,121,producao_t,3387644,t,208675,6.564235134095364
+2005,milho,Municípios fixos,121,producao_t,3301234,t,-86410,-2.5507402784944344
+2006,milho,Municípios fixos,121,producao_t,4050539,t,749305,22.697724547850882
+2007,milho,Municípios fixos,121,producao_t,5867843,t,1817304,44.8657326839712
+2008,milho,Municípios fixos,121,producao_t,7473071,t,1605228,27.35635564891563
+2009,milho,Municípios fixos,121,producao_t,7780020,t,306949,4.107401093874263
+2010,milho,Municípios fixos,121,producao_t,7802693,t,22673,0.2914259860514523
+2011,milho,Municípios fixos,121,producao_t,7373465,t,-429228,-5.501023813188599
+2012,milho,Municípios fixos,121,producao_t,15049647,t,7676182,104.10549178710417
+2013,milho,Municípios fixos,121,producao_t,19469669,t,4420022,29.36960581201673
+2014,milho,Municípios fixos,121,producao_t,17535592,t,-1934077,-9.933794971039312
+2015,milho,Municípios fixos,121,producao_t,20653863,t,3118271,17.7825248215173
+2016,milho,Municípios fixos,121,producao_t,14846189,t,-5807674,-28.1190690574446
+2017,milho,Municípios fixos,121,producao_t,28805568,t,13959379,94.02668253785534
+2018,milho,Municípios fixos,121,producao_t,25246154,t,-3559414,-12.356687429319225
+2019,milho,Municípios fixos,121,producao_t,29841729,t,4595575,18.203069663601035
+2020,milho,Municípios fixos,121,producao_t,31678303,t,1836574,6.154382006484949
+2021,milho,Municípios fixos,121,producao_t,30346736,t,-1331567,-4.203403825009189
+2022,milho,Municípios fixos,121,producao_t,36162069,t,5815333,19.162960392181883
+2023,milho,Municípios fixos,121,producao_t,47451319,t,11289250,31.218484760924504
+2024,milho,Municípios fixos,121,producao_t,45032652,t,-2418667,-5.097154412082839
+2001,milho,Disponível no ano,138,rendimento_kg_ha,3249.3997240967897,kg/ha,,
+2002,milho,Disponível no ano,137,rendimento_kg_ha,3210.4785782247254,kg/ha,-38.921145872064244,-1.1977949522009923
+2003,milho,Disponível no ano,138,rendimento_kg_ha,3625.629809805104,kg/ha,415.1512315803784,12.931132274053091
+2004,milho,Disponível no ano,139,rendimento_kg_ha,3622.3536062361595,kg/ha,-3.276203568944311,-0.09036232987946757
+2005,milho,Disponível no ano,141,rendimento_kg_ha,3337.053021847741,kg/ha,-285.30058438841843,-7.876110821904625
+2006,milho,Disponível no ano,141,rendimento_kg_ha,3915.3152402381547,kg/ha,578.2622183904136,17.328529532030856
+2007,milho,Disponível no ano,141,rendimento_kg_ha,3718.1960500306004,kg/ha,-197.1191902075543,-5.034567540864588
+2008,milho,Disponível no ano,141,rendimento_kg_ha,4260.933531536286,kg/ha,542.7374815056855,14.596795709608124
+2009,milho,Disponível no ano,141,rendimento_kg_ha,4920.251124527938,kg/ha,659.3175929916524,15.473547946990251
+2010,milho,Disponível no ano,137,rendimento_kg_ha,4058.310161044508,kg/ha,-861.9409634834306,-17.518231116021088
+2011,milho,Disponível no ano,137,rendimento_kg_ha,4041.4023000352404,kg/ha,-16.907861009267435,-0.4166231839933032
+2012,milho,Disponível no ano,138,rendimento_kg_ha,5709.3280078874595,kg/ha,1667.9257078522191,41.27096448274092
+2013,milho,Disponível no ano,136,rendimento_kg_ha,5908.044045996416,kg/ha,198.71603810895613,3.480550387618808
+2014,milho,Disponível no ano,137,rendimento_kg_ha,5425.513307151458,kg/ha,-482.53073884495734,-8.167351751074781
+2015,milho,Disponível no ano,135,rendimento_kg_ha,5980.299982692014,kg/ha,554.7866755405557,10.225514972183047
+2016,milho,Disponível no ano,137,rendimento_kg_ha,4105.585414101198,kg/ha,-1874.7145685908163,-31.348169389772305
+2017,milho,Disponível no ano,139,rendimento_kg_ha,6257.804040589392,kg/ha,2152.218626488194,52.42172332101782
+2018,milho,Disponível no ano,139,rendimento_kg_ha,5925.13323464352,kg/ha,-332.6708059458715,-5.316094971784047
+2019,milho,Disponível no ano,138,rendimento_kg_ha,6267.911908590829,kg/ha,342.77867394730856,5.7851639848893965
+2020,milho,Disponível no ano,135,rendimento_kg_ha,6326.786383748699,kg/ha,58.87447515787062,0.9392996585861013
+2021,milho,Disponível no ano,137,rendimento_kg_ha,5518.38416582646,kg/ha,-808.4022179222393,-12.7774539693444
+2022,milho,Disponível no ano,138,rendimento_kg_ha,5975.456668252069,kg/ha,457.07250242560895,8.282723505480249
+2023,milho,Disponível no ano,138,rendimento_kg_ha,6762.473406782613,kg/ha,787.016738530544,13.170821616229045
+2024,milho,Disponível no ano,140,rendimento_kg_ha,6698.155236459879,kg/ha,-64.31817032273375,-0.9511042255371249
+2001,milho,Municípios fixos,121,rendimento_kg_ha,3259.9887323091584,kg/ha,,
+2002,milho,Municípios fixos,121,rendimento_kg_ha,3216.0684699939166,kg/ha,-43.92026231524187,-1.3472519668536354
+2003,milho,Municípios fixos,121,rendimento_kg_ha,3631.3519292958945,kg/ha,415.2834593019779,12.912767970476802
+2004,milho,Municípios fixos,121,rendimento_kg_ha,3626.88415983521,kg/ha,-4.467769460684394,-0.12303322695441654
+2005,milho,Municípios fixos,121,rendimento_kg_ha,3357.9600185941104,kg/ha,-268.92414124109973,-7.414743051879514
+2006,milho,Municípios fixos,121,rendimento_kg_ha,3922.295622332226,kg/ha,564.3356037381154,16.805905984979177
+2007,milho,Municípios fixos,121,rendimento_kg_ha,3719.4415110413574,kg/ha,-202.85411129086833,-5.1718210666193976
+2008,milho,Municípios fixos,121,rendimento_kg_ha,4293.0006887808,kg/ha,573.5591777394429,15.420572578888581
+2009,milho,Municípios fixos,121,rendimento_kg_ha,4933.812254340539,kg/ha,640.8115655597385,14.92689174810562
+2010,milho,Municípios fixos,121,rendimento_kg_ha,4083.881719265134,kg/ha,-849.9305350754048,-17.22664931823612
+2011,milho,Municípios fixos,121,rendimento_kg_ha,4033.774232301858,kg/ha,-50.10748696327619,-1.226957351063851
+2012,milho,Municípios fixos,121,rendimento_kg_ha,5737.605338042474,kg/ha,1703.8311057406158,42.23912910386982
+2013,milho,Municípios fixos,121,rendimento_kg_ha,5917.506969981287,kg/ha,179.9016319388129,3.1354828598265216
+2014,milho,Municípios fixos,121,rendimento_kg_ha,5461.503075748662,kg/ha,-456.0038942326246,-7.706013639626796
+2015,milho,Municípios fixos,121,rendimento_kg_ha,6008.242698077838,kg/ha,546.7396223291762,10.010790340060893
+2016,milho,Municípios fixos,121,rendimento_kg_ha,4121.732827049062,kg/ha,-1886.5098710287766,-31.398696188359875
+2017,milho,Municípios fixos,121,rendimento_kg_ha,6289.483003992613,kg/ha,2167.750176943551,52.59317544110551
+2018,milho,Municípios fixos,121,rendimento_kg_ha,5961.380426833746,kg/ha,-328.10257715886655,-5.216685965294521
+2019,milho,Municípios fixos,121,rendimento_kg_ha,6312.949512445986,kg/ha,351.5690856122401,5.897444223316706
+2020,milho,Municípios fixos,121,rendimento_kg_ha,6340.16465296947,kg/ha,27.21514052348357,0.4311002403841302
+2021,milho,Municípios fixos,121,rendimento_kg_ha,5540.680914290597,kg/ha,-799.4837386788731,-12.60982612343401
+2022,milho,Municípios fixos,121,rendimento_kg_ha,5973.098314612309,kg/ha,432.4174003217122,7.804409006958246
+2023,milho,Municípios fixos,121,rendimento_kg_ha,6782.36226041203,kg/ha,809.2639457997211,13.548478581375022
+2024,milho,Municípios fixos,121,rendimento_kg_ha,6718.216004703519,kg/ha,-64.14625570851149,-0.9457804411735271
+2001,soja,Disponível no ano,77,area_colhida_ha,3121353,ha,,
+2002,soja,Disponível no ano,80,area_colhida_ha,3818231,ha,696878,22.32615151186039
+2003,soja,Disponível no ano,95,area_colhida_ha,4413271,ha,595040,15.584180213297728
+2004,soja,Disponível no ano,106,area_colhida_ha,5263428,ha,850157,19.263648210137106
+2005,soja,Disponível no ano,111,area_colhida_ha,6106654,ha,843226,16.020471829385706
+2006,soja,Disponível no ano,105,area_colhida_ha,5811907,ha,-294747,-4.826653024716975
+2007,soja,Disponível no ano,96,area_colhida_ha,5075079,ha,-736828,-12.677904171556776
+2008,soja,Disponível no ano,97,area_colhida_ha,5659149,ha,584070,11.508589324422335
+2009,soja,Disponível no ano,97,area_colhida_ha,5831468,ha,172319,3.0449631207801753
+2010,soja,Disponível no ano,96,area_colhida_ha,6226452,ha,394984,6.773320199990818
+2011,soja,Disponível no ano,95,area_colhida_ha,6454331,ha,227879,3.6598531555370517
+2012,soja,Disponível no ano,99,area_colhida_ha,6980690,ha,526359,8.155128703501568
+2013,soja,Disponível no ano,110,area_colhida_ha,7913687,ha,932997,13.365397976417803
+2014,soja,Disponível no ano,113,area_colhida_ha,8613593,ha,699906,8.844246682993662
+2015,soja,Disponível no ano,117,area_colhida_ha,8966679,ha,353086,4.099172087652625
+2016,soja,Disponível no ano,119,area_colhida_ha,9102722,ha,136043,1.5172060915752628
+2017,soja,Disponível no ano,119,area_colhida_ha,9264356,ha,161634,1.7756666632244622
+2018,soja,Disponível no ano,122,area_colhida_ha,9437849,ha,173493,1.8726935795645216
+2019,soja,Disponível no ano,121,area_colhida_ha,9724149,ha,286300,3.0335302037572287
+2020,soja,Disponível no ano,121,area_colhida_ha,9989649,ha,265500,2.7303160410232286
+2021,soja,Disponível no ano,129,area_colhida_ha,10355101,ha,365452,3.6583067132789138
+2022,soja,Disponível no ano,131,area_colhida_ha,10924622,ha,569521,5.499907726636377
+2023,soja,Disponível no ano,128,area_colhida_ha,11981285,ha,1056663,9.672307197448117
+2024,soja,Disponível no ano,131,area_colhida_ha,12351963,ha,370678,3.0938083853276233
+2001,soja,Municípios fixos,66,area_colhida_ha,3110713,ha,,
+2002,soja,Municípios fixos,66,area_colhida_ha,3807788,ha,697075,22.408849675299525
+2003,soja,Municípios fixos,66,area_colhida_ha,4373115,ha,565327,14.846598602653295
+2004,soja,Municípios fixos,66,area_colhida_ha,5176212,ha,803097,18.364415296647806
+2005,soja,Municípios fixos,66,area_colhida_ha,5775748,ha,599536,11.582524054269804
+2006,soja,Municípios fixos,66,area_colhida_ha,5501279,ha,-274469,-4.752094447333921
+2007,soja,Municípios fixos,66,area_colhida_ha,4813989,ha,-687290,-12.493276563504596
+2008,soja,Municípios fixos,66,area_colhida_ha,5340884,ha,526895,10.945081095947673
+2009,soja,Municípios fixos,66,area_colhida_ha,5462377,ha,121493,2.2747732397857767
+2010,soja,Municípios fixos,66,area_colhida_ha,5805404,ha,343027,6.279811884093678
+2011,soja,Municípios fixos,66,area_colhida_ha,6029168,ha,223764,3.854408754326144
+2012,soja,Municípios fixos,66,area_colhida_ha,6406208,ha,377040,6.253599169902047
+2013,soja,Municípios fixos,66,area_colhida_ha,7156025,ha,749817,11.70453722389282
+2014,soja,Municípios fixos,66,area_colhida_ha,7624674,ha,468649,6.549012894728579
+2015,soja,Municípios fixos,66,area_colhida_ha,7780249,ha,155575,2.040415104960558
+2016,soja,Municípios fixos,66,area_colhida_ha,7845513,ha,65264,0.8388420473432134
+2017,soja,Municípios fixos,66,area_colhida_ha,7910938,ha,65425,0.8339161505436232
+2018,soja,Municípios fixos,66,area_colhida_ha,8007105,ha,96167,1.215620701363096
+2019,soja,Municípios fixos,66,area_colhida_ha,8202153,ha,195048,2.4359365838214853
+2020,soja,Municípios fixos,66,area_colhida_ha,8377373,ha,175220,2.136268367585936
+2021,soja,Municípios fixos,66,area_colhida_ha,8641473,ha,264100,3.152539584903291
+2022,soja,Municípios fixos,66,area_colhida_ha,9024739,ha,383266,4.43519293527852
+2023,soja,Municípios fixos,66,area_colhida_ha,9679730,ha,654991,7.2577278966184045
+2024,soja,Municípios fixos,66,area_colhida_ha,9878787,ha,199057,2.056431326080377
+2001,soja,Disponível no ano,77,area_plantada_ha,3121408,ha,,
+2002,soja,Disponível no ano,80,area_plantada_ha,3818231,ha,696823,22.323996094070363
+2003,soja,Disponível no ano,95,area_plantada_ha,4414496,ha,596265,15.616263133372499
+2004,soja,Disponível no ano,106,area_plantada_ha,5279928,ha,865432,19.604321761759437
+2005,soja,Disponível no ano,111,area_plantada_ha,6121724,ha,841796,15.943323469562465
+2006,soja,Disponível no ano,105,area_plantada_ha,5822867,ha,-298857,-4.881909083127567
+2007,soja,Disponível no ano,96,area_plantada_ha,5075079,ha,-747788,-12.842264815596849
+2008,soja,Disponível no ano,97,area_plantada_ha,5659149,ha,584070,11.508589324422335
+2009,soja,Disponível no ano,97,area_plantada_ha,5831468,ha,172319,3.0449631207801753
+2010,soja,Disponível no ano,96,area_plantada_ha,6227044,ha,395576,6.783472017680636
+2011,soja,Disponível no ano,95,area_plantada_ha,6455871,ha,228827,3.674729133116772
+2012,soja,Disponível no ano,99,area_plantada_ha,6980690,ha,524819,8.129329102145944
+2013,soja,Disponível no ano,110,area_plantada_ha,7931905,ha,951215,13.62637504315476
+2014,soja,Disponível no ano,113,area_plantada_ha,8628608,ha,696703,8.783551996651507
+2015,soja,Disponível no ano,117,area_plantada_ha,8983683,ha,355075,4.115090174452241
+2016,soja,Disponível no ano,119,area_plantada_ha,9147863,ha,164180,1.8275355441637942
+2017,soja,Disponível no ano,119,area_plantada_ha,9287302,ha,139439,1.5242794956592531
+2018,soja,Disponível no ano,122,area_plantada_ha,9437888,ha,150586,1.621418147057141
+2019,soja,Disponível no ano,121,area_plantada_ha,9724213,ha,286325,3.033782558131648
+2020,soja,Disponível no ano,121,area_plantada_ha,9989649,ha,265436,2.729639920474791
+2021,soja,Disponível no ano,129,area_plantada_ha,10366601,ha,376952,3.773425873121261
+2022,soja,Disponível no ano,131,area_plantada_ha,10925226,ha,558625,5.388699729062596
+2023,soja,Disponível no ano,128,area_plantada_ha,11981285,ha,1056059,9.666243975181832
+2024,soja,Disponível no ano,131,area_plantada_ha,12383077,ha,401792,3.353496724266214
+2001,soja,Municípios fixos,66,area_plantada_ha,3110768,ha,,
+2002,soja,Municípios fixos,66,area_plantada_ha,3807788,ha,697020,22.40668542302093
+2003,soja,Municípios fixos,66,area_plantada_ha,4374340,ha,566552,14.878769511327828
+2004,soja,Municípios fixos,66,area_plantada_ha,5191712,ha,817372,18.68560742877783
+2005,soja,Municípios fixos,66,area_plantada_ha,5790818,ha,599106,11.539661676148437
+2006,soja,Municípios fixos,66,area_plantada_ha,5511939,ha,-278879,-4.815882661136994
+2007,soja,Municípios fixos,66,area_plantada_ha,4813989,ha,-697950,-12.662513137391397
+2008,soja,Municípios fixos,66,area_plantada_ha,5340884,ha,526895,10.945081095947673
+2009,soja,Municípios fixos,66,area_plantada_ha,5462377,ha,121493,2.2747732397857767
+2010,soja,Municípios fixos,66,area_plantada_ha,5805404,ha,343027,6.279811884093678
+2011,soja,Municípios fixos,66,area_plantada_ha,6030708,ha,225304,3.8809357626101493
+2012,soja,Municípios fixos,66,area_plantada_ha,6406208,ha,375500,6.2264662789178304
+2013,soja,Municípios fixos,66,area_plantada_ha,7173650,ha,767442,11.979660978850525
+2014,soja,Municípios fixos,66,area_plantada_ha,7639549,ha,465899,6.494587831856857
+2015,soja,Municípios fixos,66,area_plantada_ha,7797249,ha,157700,2.0642579817211626
+2016,soja,Municípios fixos,66,area_plantada_ha,7876285,ha,79036,1.0136395541555654
+2017,soja,Municípios fixos,66,area_plantada_ha,7933884,ha,57599,0.7312965439925101
+2018,soja,Municípios fixos,66,area_plantada_ha,8007105,ha,73221,0.9228897221083665
+2019,soja,Municípios fixos,66,area_plantada_ha,8202153,ha,195048,2.4359365838214853
+2020,soja,Municípios fixos,66,area_plantada_ha,8377373,ha,175220,2.136268367585936
+2021,soja,Municípios fixos,66,area_plantada_ha,8652973,ha,275600,3.289814121921042
+2022,soja,Municípios fixos,66,area_plantada_ha,9025343,ha,372370,4.303376423340288
+2023,soja,Municípios fixos,66,area_plantada_ha,9679730,ha,654387,7.250549923698202
+2024,soja,Municípios fixos,66,area_plantada_ha,9905197,ha,225467,2.329269514748855
+2001,soja,Registros por domicílio fiscal em MT,8,exportacao_fob_usd_nominal_domicilio,503669806,USD correntes FOB,,
+2002,soja,Registros por domicílio fiscal em MT,9,exportacao_fob_usd_nominal_domicilio,412042364,USD correntes FOB,-91627442,-18.191966424924033
+2003,soja,Registros por domicílio fiscal em MT,12,exportacao_fob_usd_nominal_domicilio,441854886,USD correntes FOB,29812522,7.235305057127572
+2004,soja,Registros por domicílio fiscal em MT,27,exportacao_fob_usd_nominal_domicilio,738544077,USD correntes FOB,296689191,67.14629630688297
+2005,soja,Registros por domicílio fiscal em MT,37,exportacao_fob_usd_nominal_domicilio,1531171173,USD correntes FOB,792627096,107.32292366620659
+2006,soja,Registros por domicílio fiscal em MT,37,exportacao_fob_usd_nominal_domicilio,1525958058,USD correntes FOB,-5213115,-0.3404658533236349
+2007,soja,Registros por domicílio fiscal em MT,38,exportacao_fob_usd_nominal_domicilio,1240356504,USD correntes FOB,-285601554,-18.716212578891213
+2008,soja,Registros por domicílio fiscal em MT,36,exportacao_fob_usd_nominal_domicilio,2388470825,USD correntes FOB,1148114321,92.56325236312865
+2009,soja,Registros por domicílio fiscal em MT,37,exportacao_fob_usd_nominal_domicilio,2893864990,USD correntes FOB,505394165,21.159737841888848
+2010,soja,Registros por domicílio fiscal em MT,37,exportacao_fob_usd_nominal_domicilio,2341973811,USD correntes FOB,-551891179,-19.07107556527715
+2011,soja,Registros por domicílio fiscal em MT,43,exportacao_fob_usd_nominal_domicilio,3718317641,USD correntes FOB,1376343830,58.76854060175483
+2012,soja,Registros por domicílio fiscal em MT,48,exportacao_fob_usd_nominal_domicilio,4565053200,USD correntes FOB,846735559,22.772007148164985
+2013,soja,Registros por domicílio fiscal em MT,49,exportacao_fob_usd_nominal_domicilio,4795779771,USD correntes FOB,230726571,5.054192380496247
+2014,soja,Registros por domicílio fiscal em MT,52,exportacao_fob_usd_nominal_domicilio,5414571039,USD correntes FOB,618791268,12.902829102825365
+2015,soja,Registros por domicílio fiscal em MT,52,exportacao_fob_usd_nominal_domicilio,4996599089,USD correntes FOB,-417971950,-7.719391748477156
+2016,soja,Registros por domicílio fiscal em MT,49,exportacao_fob_usd_nominal_domicilio,4442461004,USD correntes FOB,-554138085,-11.09030512814073
+2017,soja,Registros por domicílio fiscal em MT,50,exportacao_fob_usd_nominal_domicilio,5600300054,USD correntes FOB,1157839050,26.06300987127359
+2018,soja,Registros por domicílio fiscal em MT,50,exportacao_fob_usd_nominal_domicilio,4385154223,USD correntes FOB,-1215145831,-21.697870101300833
+2019,soja,Registros por domicílio fiscal em MT,52,exportacao_fob_usd_nominal_domicilio,6666044350,USD correntes FOB,2280890127,52.01390899861173
+2020,soja,Registros por domicílio fiscal em MT,50,exportacao_fob_usd_nominal_domicilio,7271575538,USD correntes FOB,605531188,9.08381577149273
+2021,soja,Registros por domicílio fiscal em MT,51,exportacao_fob_usd_nominal_domicilio,10101545647,USD correntes FOB,2829970109,38.918252230360025
+2022,soja,Registros por domicílio fiscal em MT,53,exportacao_fob_usd_nominal_domicilio,13743761340,USD correntes FOB,3642215693,36.05602370446825
+2023,soja,Registros por domicílio fiscal em MT,53,exportacao_fob_usd_nominal_domicilio,13753721008,USD correntes FOB,9959668,0.07246682879318289
+2024,soja,Registros por domicílio fiscal em MT,53,exportacao_fob_usd_nominal_domicilio,9879091329,USD correntes FOB,-3874629679,-28.17150120135693
+2001,soja,Registros por domicílio fiscal em MT,8,exportacao_kg_liquido_domicilio,2783687463,kg líquidos,,
+2002,soja,Registros por domicílio fiscal em MT,9,exportacao_kg_liquido_domicilio,2212139428,kg líquidos,-571548035,-20.532047602213165
+2003,soja,Registros por domicílio fiscal em MT,12,exportacao_kg_liquido_domicilio,2139161731,kg líquidos,-72977697,-3.2989646166190933
+2004,soja,Registros por domicílio fiscal em MT,27,exportacao_kg_liquido_domicilio,2854726567,kg líquidos,715564836,33.45071228744789
+2005,soja,Registros por domicílio fiscal em MT,37,exportacao_kg_liquido_domicilio,6516577338,kg líquidos,3661850771,128.27325787801098
+2006,soja,Registros por domicílio fiscal em MT,37,exportacao_kg_liquido_domicilio,6706889127,kg líquidos,190311789,2.9204255413380675
+2007,soja,Registros por domicílio fiscal em MT,38,exportacao_kg_liquido_domicilio,4408057447,kg líquidos,-2298831680,-34.27567738887418
+2008,soja,Registros por domicílio fiscal em MT,36,exportacao_kg_liquido_domicilio,5549002735,kg líquidos,1140945288,25.883176472132764
+2009,soja,Registros por domicílio fiscal em MT,37,exportacao_kg_liquido_domicilio,7335189691,kg líquidos,1786186956,32.18933277386464
+2010,soja,Registros por domicílio fiscal em MT,37,exportacao_kg_liquido_domicilio,6101845911,kg líquidos,-1233343780,-16.81406796491256
+2011,soja,Registros por domicílio fiscal em MT,43,exportacao_kg_liquido_domicilio,7535014966,kg líquidos,1433169055,23.48746716819543
+2012,soja,Registros por domicílio fiscal em MT,48,exportacao_kg_liquido_domicilio,8739590331,kg líquidos,1204575365,15.986369906833175
+2013,soja,Registros por domicílio fiscal em MT,49,exportacao_kg_liquido_domicilio,8989821897,kg líquidos,250231566,2.8631956021143212
+2014,soja,Registros por domicílio fiscal em MT,52,exportacao_kg_liquido_domicilio,10678781146,kg líquidos,1688959249,18.78746062325911
+2015,soja,Registros por domicílio fiscal em MT,52,exportacao_kg_liquido_domicilio,12858756489,kg líquidos,2179975343,20.414083903354108
+2016,soja,Registros por domicílio fiscal em MT,49,exportacao_kg_liquido_domicilio,12040228331,kg líquidos,-818528158,-6.365531213692465
+2017,soja,Registros por domicílio fiscal em MT,50,exportacao_kg_liquido_domicilio,14792529056,kg líquidos,2752300725,22.859207062657163
+2018,soja,Registros por domicílio fiscal em MT,50,exportacao_kg_liquido_domicilio,11227640447,kg líquidos,-3564888609,-24.09925034119872
+2019,soja,Registros por domicílio fiscal em MT,52,exportacao_kg_liquido_domicilio,19108381146,kg líquidos,7880740699,70.19053323092224
+2020,soja,Registros por domicílio fiscal em MT,50,exportacao_kg_liquido_domicilio,21230187850,kg líquidos,2121806704,11.104063121768748
+2021,soja,Registros por domicílio fiscal em MT,51,exportacao_kg_liquido_domicilio,22967786968,kg líquidos,1737599118,8.184567796935438
+2022,soja,Registros por domicílio fiscal em MT,53,exportacao_kg_liquido_domicilio,23661736413,kg líquidos,693949445,3.0214031764002725
+2023,soja,Registros por domicílio fiscal em MT,53,exportacao_kg_liquido_domicilio,26089375963,kg líquidos,2427639550,10.259769222457527
+2024,soja,Registros por domicílio fiscal em MT,53,exportacao_kg_liquido_domicilio,22791833307,kg líquidos,-3297542656,-12.639407936305492
+2001,soja,Disponível no ano,77,producao_t,9533286,t,,
+2002,soja,Disponível no ano,80,producao_t,11684885,t,2151599,22.569332337244475
+2003,soja,Disponível no ano,95,producao_t,12965983,t,1281098,10.963719369082359
+2004,soja,Disponível no ano,106,producao_t,14517912,t,1551929,11.969235190266714
+2005,soja,Disponível no ano,111,producao_t,17761444,t,3243532,22.3415874128456
+2006,soja,Disponível no ano,105,producao_t,15594221,t,-2167223,-12.20184012065686
+2007,soja,Disponível no ano,96,producao_t,15275087,t,-319134,-2.046488888415776
+2008,soja,Disponível no ano,97,producao_t,17802976,t,2527889,16.54909723263769
+2009,soja,Disponível no ano,97,producao_t,17962819,t,159843,0.8978442705309453
+2010,soja,Disponível no ano,96,producao_t,18787783,t,824964,4.59261990002795
+2011,soja,Disponível no ano,95,producao_t,20800544,t,2012761,10.713137361656777
+2012,soja,Disponível no ano,99,producao_t,21841292,t,1040748,5.00346529398461
+2013,soja,Disponível no ano,110,producao_t,23416774,t,1575482,7.213318699278415
+2014,soja,Disponível no ano,113,producao_t,26495884,t,3079110,13.14916392838741
+2015,soja,Disponível no ano,117,producao_t,27850954,t,1355070,5.114266049775873
+2016,soja,Disponível no ano,119,producao_t,26277303,t,-1573651,-5.650258874435687
+2017,soja,Disponível no ano,119,producao_t,30479870,t,4202567,15.993144349707421
+2018,soja,Disponível no ano,122,producao_t,31608562,t,1128692,3.703073536730961
+2019,soja,Disponível no ano,121,producao_t,32242463,t,633901,2.005472441296119
+2020,soja,Disponível no ano,121,producao_t,35070044,t,2827581,8.769742559679772
+2021,soja,Disponível no ano,129,producao_t,35005968,t,-64076,-0.18270863874593202
+2022,soja,Disponível no ano,131,producao_t,38025387,t,3019419,8.625440667717
+2023,soja,Disponível no ano,128,producao_t,44425783,t,6400396,16.831902328831006
+2024,soja,Disponível no ano,131,producao_t,38396410,t,-6029373,-13.571787806193536
+2001,soja,Municípios fixos,66,producao_t,9505767,t,,
+2002,soja,Municípios fixos,66,producao_t,11654146,t,2148379,22.600795916836592
+2003,soja,Municípios fixos,66,producao_t,12856759,t,1202613,10.319185978964063
+2004,soja,Municípios fixos,66,producao_t,14294365,t,1437606,11.18171383627864
+2005,soja,Municípios fixos,66,producao_t,16746571,t,2452206,17.155053757197326
+2006,soja,Municípios fixos,66,producao_t,14714892,t,-2031679,-12.131910466924845
+2007,soja,Municípios fixos,66,producao_t,14470647,t,-244245,-1.659849083499898
+2008,soja,Municípios fixos,66,producao_t,16794280,t,2323633,16.057561213399786
+2009,soja,Municípios fixos,66,producao_t,16842623,t,48343,0.28785395980059914
+2010,soja,Municípios fixos,66,producao_t,17502238,t,659615,3.916343671647815
+2011,soja,Municípios fixos,66,producao_t,19435592,t,1933354,11.046324475761327
+2012,soja,Municípios fixos,66,producao_t,20030930,t,595338,3.063132833823645
+2013,soja,Municípios fixos,66,producao_t,21148039,t,1117109,5.57692029276724
+2014,soja,Municípios fixos,66,producao_t,23453623,t,2305584,10.902117212853636
+2015,soja,Municípios fixos,66,producao_t,24084130,t,630507,2.6883138694606012
+2016,soja,Municípios fixos,66,producao_t,22913787,t,-1170343,-4.859394962574937
+2017,soja,Municípios fixos,66,producao_t,26146047,t,3232260,14.106179829637068
+2018,soja,Municípios fixos,66,producao_t,26923224,t,777177,2.972445509640531
+2019,soja,Municípios fixos,66,producao_t,27135568,t,212344,0.7887019771480652
+2020,soja,Municípios fixos,66,producao_t,29462702,t,2327134,8.575954628994676
+2021,soja,Municípios fixos,66,producao_t,29352726,t,-109976,-0.3732719422678832
+2022,soja,Municípios fixos,66,producao_t,31367323,t,2014597,6.863406826337015
+2023,soja,Municípios fixos,66,producao_t,35894877,t,4527554,14.433982778830057
+2024,soja,Municípios fixos,66,producao_t,30669563,t,-5225314,-14.557269551306717
+2001,soja,Disponível no ano,77,rendimento_kg_ha,3054.2159121381014,kg/ha,,
+2002,soja,Disponível no ano,80,rendimento_kg_ha,3060.2876043906194,kg/ha,6.071692252518005,0.19879708662338125
+2003,soja,Disponível no ano,95,rendimento_kg_ha,2937.9530511495896,kg/ha,-122.33455324102988,-3.9974854999090814
+2004,soja,Disponível no ano,106,rendimento_kg_ha,2758.261726008221,kg/ha,-179.69132514136845,-6.116208190292804
+2005,soja,Disponível no ano,111,rendimento_kg_ha,2908.5394391101904,kg/ha,150.2777131019693,5.448276053173995
+2006,soja,Disponível no ano,105,rendimento_kg_ha,2683.1504702329203,kg/ha,-225.38896887727014,-7.749214806804316
+2007,soja,Disponível no ano,96,rendimento_kg_ha,3009.82250719644,kg/ha,326.67203696351953,12.17494287359746
+2008,soja,Disponível no ano,97,rendimento_kg_ha,3145.8751130249443,kg/ha,136.0526058285045,4.520286678141483
+2009,soja,Disponível no ano,97,rendimento_kg_ha,3080.32540005364,kg/ha,-65.54971297130442,-2.0836718120152753
+2010,soja,Disponível no ano,96,rendimento_kg_ha,3017.4139301162204,kg/ha,-62.9114699374195,-2.0423644182632095
+2011,soja,Disponível no ano,95,rendimento_kg_ha,3222.7265691827706,kg/ha,205.31263906655022,6.804258342462233
+2012,soja,Disponível no ano,99,rendimento_kg_ha,3128.8156328385876,kg/ha,-93.91093634418303,-2.9140212279317623
+2013,soja,Disponível no ano,110,rendimento_kg_ha,2959.022008325576,kg/ha,-169.79362451301176,-5.42676988477484
+2014,soja,Disponível no ano,113,rendimento_kg_ha,3076.0547892151394,kg/ha,117.03278088956358,3.955116946081416
+2015,soja,Disponível no ano,117,rendimento_kg_ha,3106.0500771801912,kg/ha,29.99528796505183,0.9751220319682563
+2016,soja,Disponível no ano,119,rendimento_kg_ha,2886.752226421943,kg/ha,-219.2978507582484,-7.060344981859934
+2017,soja,Disponível no ano,119,rendimento_kg_ha,3290.0149778354803,kg/ha,403.26275141353744,13.969427224219078
+2018,soja,Disponível no ano,122,rendimento_kg_ha,3349.1277514611647,kg/ha,59.11277362568444,1.7967326600006883
+2019,soja,Disponível no ano,121,rendimento_kg_ha,3315.7105058756297,kg/ha,-33.417245585535056,-0.997789516119707
+2020,soja,Disponível no ano,121,rendimento_kg_ha,3510.6382616646492,kg/ha,194.92775578901956,5.8789135976616835
+2021,soja,Disponível no ano,129,rendimento_kg_ha,3380.5530240603157,kg/ha,-130.08523760433354,-3.705458321491961
+2022,soja,Disponível no ano,131,rendimento_kg_ha,3480.705053227471,kg/ha,100.15202916715543,2.96259305664921
+2023,soja,Disponível no ano,128,rendimento_kg_ha,3707.931411363639,kg/ha,227.22635813616807,6.5281704327539325
+2024,soja,Disponível no ano,131,rendimento_kg_ha,3108.5269604515493,kg/ha,-599.4044509120899,-16.165467599403392
+2001,soja,Municípios fixos,66,rendimento_kg_ha,3055.8161424728028,kg/ha,,
+2002,soja,Municípios fixos,66,rendimento_kg_ha,3060.607890985528,kg/ha,4.7917485127250075,0.15680748740489747
+2003,soja,Municípios fixos,66,rendimento_kg_ha,2939.9544718124266,kg/ha,-120.65341917310116,-3.9421390609513995
+2004,soja,Municípios fixos,66,rendimento_kg_ha,2761.549372398194,kg/ha,-178.4050994142326,-6.068294632612092
+2005,soja,Municípios fixos,66,rendimento_kg_ha,2899.4635846300775,kg/ha,137.91421223188354,4.9940882321475755
+2006,soja,Municípios fixos,66,rendimento_kg_ha,2674.8128935107634,kg/ha,-224.65069111931416,-7.748008711341548
+2007,soja,Municípios fixos,66,rendimento_kg_ha,3005.957637211053,kg/ha,331.14474370028984,12.380108698580905
+2008,soja,Municípios fixos,66,rendimento_kg_ha,3144.475708515669,kg/ha,138.51807130461566,4.608117878638285
+2009,soja,Municípios fixos,66,rendimento_kg_ha,3083.387140799692,kg/ha,-61.08856771597675,-1.9427266539391752
+2010,soja,Municípios fixos,66,rendimento_kg_ha,3014.8182624327264,kg/ha,-68.56887836696569,-2.223816706622894
+2011,soja,Municípios fixos,66,rendimento_kg_ha,3223.5943665859036,kg/ha,208.77610415317713,6.924997992572557
+2012,soja,Municípios fixos,66,rendimento_kg_ha,3126.7998166778225,kg/ha,-96.79454990808108,-3.00269013097314
+2013,soja,Municípios fixos,66,rendimento_kg_ha,2955.2774061018513,kg/ha,-171.5224105759712,-5.485557778950212
+2014,soja,Municípios fixos,66,rendimento_kg_ha,3076.016495918383,kg/ha,120.73908981653176,4.085541667500925
+2015,soja,Municípios fixos,66,rendimento_kg_ha,3095.5474561289748,kg/ha,19.53096021059173,0.6349432857888582
+2016,soja,Municípios fixos,66,rendimento_kg_ha,2920.6231638389995,kg/ha,-174.92429228997526,-5.650835426335876
+2017,soja,Municípios fixos,66,rendimento_kg_ha,3305.050172305737,kg/ha,384.42700846673733,13.162499470196254
+2018,soja,Municípios fixos,66,rendimento_kg_ha,3362.4167536206905,kg/ha,57.36658131495369,1.7357249761486226
+2019,soja,Municípios fixos,66,rendimento_kg_ha,3308.3469669488,kg/ha,-54.0697866718906,-1.6080632067297262
+2020,soja,Municípios fixos,66,rendimento_kg_ha,3516.938066384295,kg/ha,208.59109943549493,6.304994655015661
+2021,soja,Municípios fixos,66,rendimento_kg_ha,3396.727155196805,kg/ha,-120.21091118748973,-3.4180559599980787
+2022,soja,Municípios fixos,66,rendimento_kg_ha,3475.7041727190117,kg/ha,78.97701752220655,2.3250915929875715
+2023,soja,Municípios fixos,66,rendimento_kg_ha,3708.251883058722,kg/ha,232.5477103397102,6.6906646476126985
+2024,soja,Municípios fixos,66,rendimento_kg_ha,3104.5879418191726,kg/ha,-603.6639412395493,-16.27893574321122
