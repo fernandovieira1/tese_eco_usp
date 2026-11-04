@@ -1,0 +1,10 @@
+sistema,bloco,disponivel,lacuna,status,sem_conversao_ha
+cria,recorrentes,COE/COT/CT agregados em R$/@ vendida,componentes e classificação fixa/variável não extraídos,referencia_agregada_disponivel_componentes_pendentes,True
+cria,fixos_capital,COE/COT/CT agregados em R$/@ vendida,componentes e classificação fixa/variável não extraídos,referencia_agregada_disponivel_componentes_pendentes,True
+cria,implantacao,nenhuma série de investimento inicial,"quantidades, preços, vida útil e recuperabilidade",pendente,True
+recria_engorda,recorrentes,COE/COT/CT agregados em R$/@ vendida,componentes e classificação fixa/variável não extraídos,referencia_agregada_disponivel_componentes_pendentes,True
+recria_engorda,fixos_capital,COE/COT/CT agregados em R$/@ vendida,componentes e classificação fixa/variável não extraídos,referencia_agregada_disponivel_componentes_pendentes,True
+recria_engorda,implantacao,nenhuma série de investimento inicial,"quantidades, preços, vida útil e recuperabilidade",pendente,True
+ciclo_completo,recorrentes,COE/COT/CT agregados em R$/@ vendida,componentes e classificação fixa/variável não extraídos,referencia_agregada_disponivel_componentes_pendentes,True
+ciclo_completo,fixos_capital,COE/COT/CT agregados em R$/@ vendida,componentes e classificação fixa/variável não extraídos,referencia_agregada_disponivel_componentes_pendentes,True
+ciclo_completo,implantacao,nenhuma série de investimento inicial,"quantidades, preços, vida útil e recuperabilidade",pendente,True

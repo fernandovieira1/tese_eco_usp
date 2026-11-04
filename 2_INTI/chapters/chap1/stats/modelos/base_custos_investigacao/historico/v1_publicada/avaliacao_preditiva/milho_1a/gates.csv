@@ -1,5 +1,0 @@
-modelo,eixo,passou,motivo
-M1_ols,espacial,False,suporte_ou_folds_insuficientes
-M1_ols,temporal,False,suporte_ou_folds_insuficientes
-M2_ridge,espacial,False,suporte_ou_folds_insuficientes
-M2_ridge,temporal,False,suporte_ou_folds_insuficientes

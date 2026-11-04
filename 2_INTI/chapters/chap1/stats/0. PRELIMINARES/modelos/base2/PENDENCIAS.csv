@@ -1,0 +1,5 @@
+item,estado,alvo,motivo
+custos_CONAB,fontes referenciadas indisponíveis,2_INTI/xdata/chap1/processed/tabular,Não existe nesta cópia nem no origin/main df0a238d4ccb729fb3177b443251fbbaa0cabc93; nenhum custo/margem inventado
+parquet,opcional não produzido,painel_h1_v2.parquet,pyarrow/fastparquet indisponíveis; nenhuma instalação solicitada
+fontes_brutas,validação externa pendente,xdata; fontes IBAMA/PAM/rasters,Validação interna/documental não certifica cadeia integral de origem
+publicacao,não autorizada; não tentada,base2 e rodadas2–7,Escopo ampliado aguarda autorização específica; bloqueio anterior não contornado

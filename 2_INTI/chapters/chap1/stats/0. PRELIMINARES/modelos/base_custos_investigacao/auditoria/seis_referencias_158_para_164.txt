@@ -1,0 +1,7 @@
+id_serie,aba,cultura,praca_cabecalho,safra_inicio,safra_fim,data_base,ex_ant,conflito_praca,praca_ambigua,identidades_ha_ok
+50293165740cd776,C. Novo do Parecis-MT-2006,soja,Sapezal/Campo Novo do Parecis (ambígua),2006,2007,2006-05-31,False,True,True,True
+6a59ce79df2ccf1e,C. Novo do Parecis-MT-2007,soja,Sapezal/Campo Novo do Parecis (ambígua),2007,2008,2007-05-31,False,True,True,True
+f6d4c28f6be7fe2c,C. Novo do Parecis-MT-2008,soja,Sapezal/Campo Novo do Parecis (ambígua),2008,2009,2008-03-31,False,True,True,True
+50f3228c7ba40f87,C. Novo do Parecis-MT-2009,soja,Sapezal/Campo Novo do Parecis (ambígua),2009,2010,2009-05-31,False,True,True,True
+c097dd0338204e46,C. Novo do Parecis-MT-2010,soja,Sapezal/Campo Novo do Parecis (ambígua),2010,2011,2010-05-31,False,True,True,True
+ce710ff2093a555b,Sorriso-MT-2014,milho_2a,Primavera do Leste,2014,2014,2014-03,True,True,False,True

@@ -1,0 +1,189 @@
+id_serie,cultura,praca,tecnologia,safra_inicio,safra_fim,candidato,flag_identidades_ok,flag_unidades_ok,flag_participacoes_ok,flag_territorio_ok,flag_verificacao_faltante,n_falhas_unidades,n_falhas_participacoes,estrito,motivos_exclusao_estrito
+50293165740cd776,soja,Campo Novo do Parecis,não declarada,2006,2007,False,True,True,True,False,False,0,0,False,fora_filtro_candidato;territorio
+6a59ce79df2ccf1e,soja,Campo Novo do Parecis,não declarada,2007,2008,False,True,True,True,False,False,0,0,False,fora_filtro_candidato;territorio
+f6d4c28f6be7fe2c,soja,Campo Novo do Parecis,não declarada,2008,2009,False,True,True,True,False,False,0,0,False,fora_filtro_candidato;territorio
+50f3228c7ba40f87,soja,Campo Novo do Parecis,não declarada,2009,2010,False,True,True,True,False,False,0,0,False,fora_filtro_candidato;territorio
+c097dd0338204e46,soja,Campo Novo do Parecis,não declarada,2010,2011,False,True,True,True,False,False,0,0,False,fora_filtro_candidato;territorio
+e6b9a86b2da2a575,soja,Campo Novo do Parecis,não declarada,2011,2012,True,True,False,True,True,False,3,0,False,unidades
+1e052ab07267510f,soja,Campo Novo do Parecis,não declarada,2012,2013,True,True,False,True,True,False,4,0,False,unidades
+33a09c95d3d05d8f,soja,Campo Novo do Parecis,não declarada,2013,2014,True,True,True,True,True,False,0,0,True,
+4a621d5586265e00,soja,Campo Novo do Parecis,não declarada,2014,2015,True,True,False,True,True,False,4,0,False,unidades
+99b0cc21667b3359,soja,Campo Novo do Parecis,não declarada,2015,2016,True,True,False,True,True,False,4,0,False,unidades
+4eaf4a05f631fa2f,soja,Campo Novo do Parecis,não declarada,2016,2017,True,True,False,True,True,False,4,0,False,unidades
+9edda70a338ae81c,soja,Campo Novo do Parecis,não declarada,2017,2018,True,True,True,True,True,False,0,0,True,
+e1e132969250d138,soja,Campo Novo do Parecis,convencional explícita,2018,2019,True,True,False,True,True,False,4,0,False,unidades
+cceab33a4b0080bc,soja,Campo Novo do Parecis,OGM,2014,2015,True,True,False,True,True,False,4,0,False,unidades
+0c228423d767fa26,soja,Campo Novo do Parecis,OGM,2015,2016,True,True,False,True,True,False,3,0,False,unidades
+cfac95b036c4d694,soja,Campo Novo do Parecis,OGM,2016,2017,True,True,True,True,True,False,0,0,True,
+73dd193341db5de3,soja,Campo Novo do Parecis,OGM,2017,2018,True,True,False,True,True,False,3,0,False,unidades
+93d17d43d71cc37d,soja,Campo Novo do Parecis,OGM,2018,2019,True,True,False,True,True,False,4,0,False,unidades
+560c5db6045b01a6,soja,Campo Novo do Parecis,OGM,2019,2020,True,True,True,True,True,False,0,0,True,
+9ab2040534d8f5a2,soja,Campo Novo do Parecis,OGM,2020,2021,True,True,True,True,True,False,0,0,True,
+0bb759821123281e,soja,Campo Novo do Parecis,OGM,2021,2022,True,True,True,True,True,False,0,0,True,
+660dba3cd7b9fd75,soja,Campo Novo do Parecis,OGM,2022,2023,True,True,True,True,True,False,0,0,True,
+3637f674eabc6224,soja,Campo Novo do Parecis,OGM,2023,2024,True,True,True,True,True,False,0,0,True,
+ba7ecb607bd5f821,soja,Campo Novo do Parecis,OGM,2024,2025,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+798decd4aefc94a3,soja,Campo Novo do Parecis,OGM,2025,2026,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+c3d33bf00c03a230,soja,Primavera do Leste,não declarada,1997,1998,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+8cb615cff720a79d,soja,Primavera do Leste,não declarada,1998,1999,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+62eb940a06e46ecf,soja,Primavera do Leste,não declarada,1999,2000,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+64a1f36c29a9773c,soja,Primavera do Leste,não declarada,2000,2001,False,True,False,True,True,False,1,0,False,fora_filtro_candidato;unidades
+88d9a2937acd51f6,soja,Primavera do Leste,não declarada,2001,2002,True,True,True,True,True,False,0,0,True,
+e3caedc13f6079bf,soja,Primavera do Leste,não declarada,2002,2003,True,True,True,True,True,False,0,0,True,
+2205f2d3e77d12a4,soja,Primavera do Leste,não declarada,2003,2004,True,True,False,True,True,False,2,0,False,unidades
+682e75fb7982087d,soja,Primavera do Leste,não declarada,2004,2005,True,True,True,True,True,False,0,0,True,
+ecc6047aa3f258bf,soja,Primavera do Leste,não declarada,2005,2006,True,True,True,True,True,False,0,0,True,
+d0fd03a7d61c7424,soja,Primavera do Leste,não declarada,2006,2007,True,True,True,True,True,False,0,0,True,
+6274884a49551b27,soja,Primavera do Leste,não declarada,2007,2008,True,True,True,True,True,False,0,0,True,
+780748809b9b764c,soja,Primavera do Leste,não declarada,2008,2009,True,True,False,True,True,False,2,0,False,unidades
+638640debe921256,soja,Primavera do Leste,não declarada,2009,2010,True,True,True,True,True,False,0,0,True,
+1415c3d26e839b0e,soja,Primavera do Leste,não declarada,2010,2011,True,True,False,True,True,False,4,0,False,unidades
+c5a63595d05dd5cd,soja,Primavera do Leste,não declarada,2011,2012,True,True,True,True,True,False,0,0,True,
+5405b19c453b649d,soja,Primavera do Leste,não declarada,2012,2013,True,True,False,True,True,False,4,0,False,unidades
+257e548a3b5a23f8,soja,Primavera do Leste,não declarada,2013,2014,True,True,False,True,True,False,4,0,False,unidades
+1358ba161438e80a,soja,Primavera do Leste,não declarada,2014,2015,True,True,False,True,True,False,4,0,False,unidades
+ddf4917157b6cdb1,soja,Primavera do Leste,não declarada,2015,2016,True,True,False,True,True,False,3,0,False,unidades
+a38ad220665198de,soja,Primavera do Leste,não declarada,2016,2017,True,True,False,True,True,False,1,0,False,unidades
+6c23c8479b65c35a,soja,Primavera do Leste,não declarada,2017,2018,True,True,False,True,True,False,3,0,False,unidades
+ac51a01dd1d140db,soja,Primavera do Leste,convencional explícita,2018,2019,True,True,True,True,True,False,0,0,True,
+6dc36ac1f020900b,soja,Primavera do Leste,OGM,2007,2008,True,True,False,True,True,False,2,0,False,unidades
+e9116498e4d86564,soja,Primavera do Leste,OGM,2008,2009,True,True,False,True,True,False,4,0,False,unidades
+310885ec54ce9c96,soja,Primavera do Leste,OGM,2009,2010,True,True,True,True,True,False,0,0,True,
+4e994cda3eb02a90,soja,Primavera do Leste,OGM,2010,2011,True,True,False,True,True,False,4,0,False,unidades
+6a58c6f0f5837c30,soja,Primavera do Leste,OGM,2011,2012,True,True,True,True,True,False,0,0,True,
+acc833dcae80ab00,soja,Primavera do Leste,OGM,2012,2013,True,True,False,True,True,False,4,0,False,unidades
+f11a2a52cefe74fa,soja,Primavera do Leste,OGM,2013,2014,True,True,False,True,True,False,2,0,False,unidades
+ab2d4a74fb436df3,soja,Primavera do Leste,OGM,2014,2015,True,True,False,True,True,False,3,0,False,unidades
+0d6c655d942dfbdf,soja,Primavera do Leste,OGM,2015,2016,True,True,True,True,True,False,0,0,True,
+fa411f073bb66067,soja,Primavera do Leste,OGM,2016,2017,True,True,False,True,True,False,4,0,False,unidades
+7259b99feb8c60db,soja,Primavera do Leste,OGM,2017,2018,True,True,False,True,True,False,4,0,False,unidades
+82b50bccaea66d3c,soja,Primavera do Leste,OGM,2018,2019,True,True,True,True,True,False,0,0,True,
+61d23a55e3c56855,soja,Primavera do Leste,OGM,2019,2020,True,True,True,True,True,False,0,0,True,
+3110d6db639ff875,soja,Primavera do Leste,OGM,2020,2021,True,True,True,True,True,False,0,0,True,
+14bd7a6cc0cca414,soja,Primavera do Leste,OGM,2021,2022,True,True,True,True,True,False,0,0,True,
+c6a3f48ae752db50,soja,Primavera do Leste,OGM,2022,2023,True,True,True,True,True,False,0,0,True,
+82dcb24bb90cdf2c,soja,Primavera do Leste,OGM,2023,2024,True,True,True,True,True,False,0,0,True,
+451b75bfdb085916,soja,Primavera do Leste,OGM,2024,2025,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+701c295ff0d4c4ab,soja,Primavera do Leste,OGM,2025,2026,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+f011a1d521c2a757,soja,Primavera do Leste,OGM,2026,2027,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+cc4b2ecec81b37e9,soja,Sorriso,não declarada,2007,2008,True,True,False,True,True,False,4,0,False,unidades
+70722060a4aa5007,soja,Sorriso,não declarada,2008,2009,True,True,False,True,True,False,3,0,False,unidades
+6bca992af2cbb7b5,soja,Sorriso,não declarada,2009,2010,True,True,False,True,True,False,3,0,False,unidades
+f344994f9174ca83,soja,Sorriso,não declarada,2010,2011,True,True,False,True,True,False,1,0,False,unidades
+de4daa408fb7f674,soja,Sorriso,não declarada,2011,2012,True,True,False,False,True,False,4,1,False,unidades;participacoes
+89df4a2af83f1913,soja,Sorriso,não declarada,2012,2013,True,True,False,True,True,False,4,0,False,unidades
+a341f3bf50adff4e,soja,Sorriso,não declarada,2013,2014,True,True,True,True,True,False,0,0,True,
+0b970fedaef296cc,soja,Sorriso,não declarada,2014,2015,True,True,False,True,True,False,2,0,False,unidades
+5448c92bed9ded80,soja,Sorriso,não declarada,2015,2016,True,True,False,True,True,False,4,0,False,unidades
+4e89443083d00332,soja,Sorriso,não declarada,2016,2017,True,True,True,True,True,False,0,0,True,
+74f39ec282601f8a,soja,Sorriso,não declarada,2017,2018,True,True,False,True,True,False,2,0,False,unidades
+c2288ae25d6325b6,soja,Sorriso,convencional explícita,2018,2019,True,True,False,True,True,False,4,0,False,unidades
+d732e271289700c5,soja,Sorriso,OGM,2007,2008,True,True,False,True,True,False,4,0,False,unidades
+6f563f4e36648b29,soja,Sorriso,OGM,2008,2009,True,True,False,True,True,False,3,0,False,unidades
+aa8c93741f094a85,soja,Sorriso,OGM,2009,2010,True,True,False,True,True,False,3,0,False,unidades
+34eb1c9687fb9af2,soja,Sorriso,OGM,2010,2011,True,True,False,True,True,False,3,0,False,unidades
+f121da66bd98194b,soja,Sorriso,OGM,2011,2012,True,True,True,True,True,False,0,0,True,
+aa1f472c7d1d1b87,soja,Sorriso,OGM,2012,2013,True,True,False,False,True,False,4,1,False,unidades;participacoes
+73470c7bd62d9db7,soja,Sorriso,OGM,2013,2014,True,True,False,True,True,False,4,0,False,unidades
+98864be389ca8faa,soja,Sorriso,OGM,2014,2015,True,True,False,True,True,False,4,0,False,unidades
+5bc58a55f039227e,soja,Sorriso,OGM,2015,2016,True,True,False,True,True,False,4,0,False,unidades
+521c13e6469cb747,soja,Sorriso,OGM,2016,2017,True,True,False,True,True,False,4,0,False,unidades
+20ff378c09403b71,soja,Sorriso,OGM,2017,2018,True,True,False,True,True,False,4,0,False,unidades
+e825880e59646dde,soja,Sorriso,OGM,2018,2019,True,True,False,True,True,False,4,0,False,unidades
+96390248115d0d71,soja,Sorriso,OGM,2019,2020,True,True,True,True,True,False,0,0,True,
+f2c57695fe0f2f4e,soja,Sorriso,OGM,2020,2021,True,True,True,True,True,False,0,0,True,
+858296d45296da0b,soja,Sorriso,OGM,2021,2022,True,True,True,True,True,False,0,0,True,
+6393088b1b873645,soja,Sorriso,OGM,2022,2023,True,True,True,True,True,False,0,0,True,
+9d91fb4aadfad3f0,soja,Sorriso,OGM,2023,2024,True,True,True,True,True,False,0,0,True,
+c3c3c510c3ba8aa8,soja,Sorriso,OGM,2024,2025,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+c850649ae25f4ea0,soja,Sorriso,OGM,2025,2026,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+93dc68e571d677c3,soja,Sorriso,OGM,2026,2027,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+a5a1293c5a8c5d1d,milho_1a,Primavera do Leste,não declarada,1997,1998,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+8851440cd0f19762,milho_1a,Primavera do Leste,não declarada,1998,1999,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+f34f93d827370769,milho_1a,Primavera do Leste,não declarada,1999,2000,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+66880cf68a405a47,milho_1a,Primavera do Leste,não declarada,2000,2001,False,True,False,True,True,False,2,0,False,fora_filtro_candidato;unidades
+8a662c16efbc9cd3,milho_1a,Primavera do Leste,não declarada,2001,2002,True,True,True,True,True,False,0,0,True,
+064178499f5872a6,milho_1a,Primavera do Leste,não declarada,2002,2003,True,True,True,True,True,False,0,0,True,
+bb688e4e9dee502f,milho_1a,Primavera do Leste,não declarada,2003,2004,True,True,True,True,True,False,0,0,True,
+fef86ea771958c47,milho_1a,Primavera do Leste,não declarada,2004,2005,True,True,True,True,True,False,0,0,True,
+165a04e07c0001a4,milho_1a,Primavera do Leste,não declarada,2005,2006,True,True,True,True,True,False,0,0,True,
+28016751c7befaf1,milho_1a,Primavera do Leste,não declarada,2006,2007,True,True,True,True,True,False,0,0,True,
+7b03b9e46fb294bf,milho_1a,Primavera do Leste,não declarada,2007,2008,True,True,True,True,True,False,0,0,True,
+7242a695b2494147,milho_1a,Primavera do Leste,não declarada,2008,2009,True,True,True,True,True,False,0,0,True,
+0cbebb8bed8723ce,milho_1a,Primavera do Leste,não declarada,2009,2010,True,True,True,True,True,False,0,0,True,
+39e9ea87f51de133,milho_1a,Primavera do Leste,não declarada,2010,2011,True,True,False,True,True,False,2,0,False,unidades
+46f33d23c2979139,milho_1a,Primavera do Leste,não declarada,2011,2012,True,True,False,True,True,False,2,0,False,unidades
+85a90b362d527af6,milho_1a,Primavera do Leste,não declarada,2012,2013,True,True,False,True,True,False,4,0,False,unidades
+ea61c314712b5fb9,milho_1a,Primavera do Leste,não declarada,2013,2014,True,True,False,True,True,False,4,0,False,unidades
+a5aa0941f3e0c3a6,milho_2a,Primavera do Leste,não declarada,1997,1997,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+a628d7d3a226b865,milho_2a,Primavera do Leste,não declarada,1998,1998,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+8b0f0da544ad0535,milho_2a,Primavera do Leste,não declarada,1999,1999,False,True,False,True,True,False,2,0,False,fora_filtro_candidato;unidades
+44f8732cae85ea0f,milho_2a,Primavera do Leste,não declarada,2000,2000,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+b037426bb254f1ac,milho_2a,Primavera do Leste,não declarada,2001,2001,True,True,True,True,True,False,0,0,True,
+9d700d98fdccfb89,milho_2a,Primavera do Leste,não declarada,2002,2002,True,True,True,True,True,False,0,0,True,
+0f8cc4ed3f2eb525,milho_2a,Primavera do Leste,não declarada,2003,2003,True,True,True,True,True,False,0,0,True,
+4cedd27c5619ccfa,milho_2a,Primavera do Leste,não declarada,2004,2004,True,True,False,True,True,False,2,0,False,unidades
+9f9030fb4218db6b,milho_2a,Primavera do Leste,não declarada,2005,2005,True,True,True,True,True,False,0,0,True,
+6e8661c9f3b6cb2c,milho_2a,Primavera do Leste,não declarada,2006,2006,True,True,True,True,True,False,0,0,True,
+de8535e5c786bec7,milho_2a,Primavera do Leste,não declarada,2007,2007,True,True,True,True,True,False,0,0,True,
+4853bfaf8c735333,milho_2a,Primavera do Leste,não declarada,2008,2008,True,True,False,True,True,False,3,0,False,unidades
+b4f2b51103696a3b,milho_2a,Primavera do Leste,não declarada,2009,2009,True,True,True,True,True,False,0,0,True,
+fb47675a1aad5545,milho_2a,Primavera do Leste,não declarada,2010,2010,True,True,True,True,True,False,0,0,True,
+5f3b77c72c91cda9,milho_2a,Primavera do Leste,OGM,2013,2013,True,True,False,True,True,False,2,0,False,unidades
+b622ffb932346f2b,milho_2a,Primavera do Leste,OGM,2014,2014,True,True,True,True,True,False,0,0,True,
+122ea2f721afe50a,milho_2a,Primavera do Leste,OGM,2015,2015,True,True,False,True,True,False,3,0,False,unidades
+50a3531a9d26689b,milho_2a,Primavera do Leste,OGM,2016,2016,True,True,False,True,True,False,3,0,False,unidades
+dec05b1d36624bec,milho_2a,Primavera do Leste,OGM,2017,2017,True,True,False,True,True,False,2,0,False,unidades
+bef2d3dcf6b41a7e,milho_2a,Primavera do Leste,OGM,2018,2018,True,True,False,True,True,False,3,0,False,unidades
+ace400c5899cd18f,milho_2a,Primavera do Leste,OGM,2019,2019,True,True,True,True,True,False,0,0,True,
+a8203747bd54970d,milho_2a,Primavera do Leste,OGM,2020,2020,True,True,True,True,True,False,0,0,True,
+8a804a0043271732,milho_2a,Primavera do Leste,OGM,2021,2021,True,True,True,True,True,False,0,0,True,
+ffbbe45d19d2d483,milho_2a,Primavera do Leste,OGM,2022,2022,True,True,True,True,True,False,0,0,True,
+4d3b580674a0648b,milho_2a,Primavera do Leste,OGM,2023,2023,True,True,True,True,True,False,0,0,True,
+1ab957f958ffba47,milho_2a,Primavera do Leste,OGM,2024,2024,True,True,True,True,True,False,0,0,True,
+d3aef0fd78a58636,milho_2a,Primavera do Leste,OGM,2025,2025,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+a953cce798bf80d1,milho_2a,Campo Verde,não declarada,2011,2011,True,True,True,True,True,False,0,0,True,
+1e659009e4a2efbb,milho_2a,Campo Verde,não declarada,2012,2012,True,True,True,True,True,False,0,0,True,
+cdd6d1cf1e092687,milho_2a,Campo Verde,não declarada,2013,2013,True,True,False,True,True,False,4,0,False,unidades
+ee613ba304656ef6,milho_2a,Campo Verde,OGM,2014,2014,True,True,True,True,True,False,0,0,True,
+d5b34871d0ad8728,milho_2a,Campo Verde,OGM,2015,2015,True,True,False,True,True,False,4,0,False,unidades
+00adb2316e53c3de,milho_2a,Campo Verde,OGM,2016,2016,True,True,False,True,True,False,2,0,False,unidades
+ec2c857de713d23b,milho_2a,Campo Verde,OGM,2017,2017,True,True,False,True,True,False,4,0,False,unidades
+76e9a6be65250042,milho_2a,Campo Verde,OGM,2018,2018,True,True,False,True,True,False,1,0,False,unidades
+34e94ce6d308a0c9,milho_2a,Campo Verde,OGM,2019,2019,True,True,True,True,True,False,0,0,True,
+d83c906374853d5f,milho_2a,Campo Verde,OGM,2020,2020,True,True,True,True,True,False,0,0,True,
+0809eba15b2bcf92,milho_2a,Campo Verde,OGM,2021,2021,True,True,True,True,True,False,0,0,True,
+8ac99e036cb8fd9d,milho_2a,Campo Verde,OGM,2022,2022,True,True,True,True,True,False,0,0,True,
+b0ebc43b0cc8b405,milho_2a,Campo Verde,OGM,2023,2023,True,True,True,True,True,False,0,0,True,
+20c41db157fa4eae,milho_2a,Campo Verde,OGM,2024,2024,True,True,True,True,True,False,0,0,True,
+d0bc0d83140cde27,milho_2a,Campo Verde,OGM,2025,2025,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+a3cf386e9b883429,milho_2a,Campo Novo do Parecis,não declarada,2011,2011,True,True,False,True,True,False,2,0,False,unidades
+d92b49ddd1512df9,milho_2a,Campo Novo do Parecis,não declarada,2012,2012,True,True,True,True,True,False,0,0,True,
+e85b7c84773e6a03,milho_2a,Campo Novo do Parecis,não declarada,2013,2013,True,True,True,True,True,False,0,0,True,
+ca1db31333b0bfcb,milho_2a,Campo Novo do Parecis,OGM,2014,2014,True,True,False,True,True,False,2,0,False,unidades
+b7a95a9ed4ce27bb,milho_2a,Campo Novo do Parecis,OGM,2015,2015,True,True,True,True,True,False,0,0,True,
+0a52c16109f86519,milho_2a,Campo Novo do Parecis,OGM,2016,2016,True,True,True,True,True,False,0,0,True,
+00470aebad2ae374,milho_2a,Campo Novo do Parecis,OGM,2017,2017,True,True,False,True,True,False,1,0,False,unidades
+7da2213c41912d08,milho_2a,Campo Novo do Parecis,OGM,2018,2018,True,True,False,True,True,False,2,0,False,unidades
+7c73224835288f2f,milho_2a,Campo Novo do Parecis,OGM,2019,2019,True,True,True,True,True,False,0,0,True,
+c0428b197ba7087b,milho_2a,Campo Novo do Parecis,OGM,2020,2020,True,True,True,True,True,False,0,0,True,
+0c7afa8f56ccce07,milho_2a,Campo Novo do Parecis,OGM,2021,2021,True,True,True,True,True,False,0,0,True,
+3da6c7af5dd6a26a,milho_2a,Campo Novo do Parecis,OGM,2022,2022,True,True,True,True,True,False,0,0,True,
+dfe1a5a65ff0158c,milho_2a,Campo Novo do Parecis,OGM,2023,2023,True,True,True,True,True,False,0,0,True,
+d75210d5ded8651a,milho_2a,Campo Novo do Parecis,OGM,2024,2024,True,True,True,True,True,False,0,0,True,
+fe5d2ee567e9fd4a,milho_2a,Campo Novo do Parecis,OGM,2025,2025,False,True,True,True,True,False,0,0,False,fora_filtro_candidato
+3d00c115ed214307,milho_2a,Sorriso,não declarada,2011,2011,True,True,True,True,True,False,0,0,True,
+d1c9cc2963f0c17f,milho_2a,Sorriso,não declarada,2012,2012,True,True,True,True,True,False,0,0,True,
+d2b239926b516508,milho_2a,Sorriso,não declarada,2013,2013,True,True,True,True,True,False,0,0,True,
+ce710ff2093a555b,milho_2a,Sorriso,OGM,2014,2014,False,True,True,True,False,False,0,0,False,fora_filtro_candidato;territorio
+60a60484dd20908f,milho_2a,Sorriso,não declarada,2015,2015,True,True,False,True,True,False,4,0,False,unidades
+a89f81ee6a5d8c65,milho_2a,Sorriso,não declarada,2016,2016,True,True,True,True,True,False,0,0,True,
+a76e0edc9abf88cd,milho_2a,Sorriso,OGM,2017,2017,True,True,True,True,True,False,0,0,True,
+d4147730ffcb644d,milho_2a,Sorriso,OGM,2018,2018,True,True,False,True,True,False,3,0,False,unidades
+d91af668acf5ea20,milho_2a,Sorriso,OGM,2019,2019,True,True,True,True,True,False,0,0,True,
+577a7945c3852a2d,milho_2a,Sorriso,OGM,2020,2020,True,True,True,False,True,True,0,10,False,participacoes;verificacao_faltante
+d9d0bfeec9809a55,milho_2a,Sorriso,OGM,2021,2021,True,True,True,True,True,False,0,0,True,
+247ac5e1de933f90,milho_2a,Sorriso,OGM,2022,2022,True,True,True,True,True,False,0,0,True,
+4fb4ff9c73a3d76c,milho_2a,Sorriso,OGM,2023,2023,True,True,True,True,True,False,0,0,True,
+edbbac376239bddf,milho_2a,Sorriso,OGM,2024,2024,True,True,True,True,True,False,0,0,True,
+33138b64b7e1d2eb,milho_2a,Sorriso,OGM,2025,2025,False,True,True,True,True,False,0,0,False,fora_filtro_candidato

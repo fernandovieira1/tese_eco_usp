@@ -1,0 +1,477 @@
+fonte,atividade,ano_rotulo,periodo_literal,id_referencia,praca_literal,codigo_ibge_referencia,mesocodigo,mesonome,regiao_imea,status_geografia,custos_numericos,qualificacao,representatividade_regional_validada
+CONAB_estrita,soja,2001,2001-04-01,88d9a2937acd51f6,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2002,2002-04-01,e3caedc13f6079bf,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2004,2004-01-30,682e75fb7982087d,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2005,2005-02-28,ecc6047aa3f258bf,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2006,2006-01-31,d0fd03a7d61c7424,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2007,2007-05-31,6274884a49551b27,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2009,2009-05-01,310885ec54ce9c96,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2009,2009-05-31,638640debe921256,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2011,2011-05,c5a63595d05dd5cd,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2013,2013-05,33a09c95d3d05d8f,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2013,2013-05,a341f3bf50adff4e,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2015,2015-07,0d6c655d942dfbdf,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2016,2016-03,cfac95b036c4d694,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2016,2016-03,4e89443083d00332,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2017,2017-03,9edda70a338ae81c,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2018,2018-03,82b50bccaea66d3c,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2018,2018-03,ac51a01dd1d140db,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2019,2019-03,560c5db6045b01a6,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2019,2019-03,61d23a55e3c56855,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2019,2019-03,96390248115d0d71,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2020,2020-03,9ab2040534d8f5a2,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2020,2020-03,3110d6db639ff875,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2020,2020-03,f2c57695fe0f2f4e,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2021,2021-03,0bb759821123281e,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2021,2021-03,14bd7a6cc0cca414,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2021,2021-03,858296d45296da0b,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2022,2022-03,660dba3cd7b9fd75,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2022,2022-03,c6a3f48ae752db50,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2022,2022-03,6393088b1b873645,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2023,2023-03,3637f674eabc6224,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2023,2023-03,82dcb24bb90cdf2c,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,soja,2023,2023-03,9d91fb4aadfad3f0,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_1a,2001,2001-04-01,8a662c16efbc9cd3,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_1a,2002,2002-04-01,064178499f5872a6,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_1a,2003,2003-04-01,bb688e4e9dee502f,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_1a,2004,2004-01-30,fef86ea771958c47,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_1a,2005,2005-02-28,165a04e07c0001a4,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_1a,2006,2006-05-31,28016751c7befaf1,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_1a,2007,2007-05-31,7b03b9e46fb294bf,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_1a,2008,2008-03-31,7242a695b2494147,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_1a,2009,2009-05-31,0cbebb8bed8723ce,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2001,2001-02-23,b037426bb254f1ac,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2002,2002-07-30,9d700d98fdccfb89,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2003,2003-02-23,0f8cc4ed3f2eb525,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2005,2005-10-30,9f9030fb4218db6b,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2006,2006-09-30,6e8661c9f3b6cb2c,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2007,2007-05-31,de8535e5c786bec7,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2009,2009-03-31,b4f2b51103696a3b,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2010,2010-05-31,fb47675a1aad5545,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2011,2011-05,a953cce798bf80d1,Campo Verde,5102678,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2011,2011-05,3d00c115ed214307,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2012,2012-05,d92b49ddd1512df9,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2012,2012-05,1e659009e4a2efbb,Campo Verde,5102678,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2012,2012-05,d1c9cc2963f0c17f,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2013,2013-03,e85b7c84773e6a03,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2013,2013-03,d2b239926b516508,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2014,2014-03,ee613ba304656ef6,Campo Verde,5102678,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2014,2014-03,b622ffb932346f2b,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2015,2015-05,b7a95a9ed4ce27bb,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2016,2016-03,0a52c16109f86519,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2016,2016-03,a89f81ee6a5d8c65,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2017,2017-03,a76e0edc9abf88cd,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2019,2019-03,7c73224835288f2f,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2019,2019-03,34e94ce6d308a0c9,Campo Verde,5102678,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2019,2019-03,ace400c5899cd18f,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2019,2019-03,d91af668acf5ea20,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2020,2020-03,c0428b197ba7087b,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2020,2020-03,d83c906374853d5f,Campo Verde,5102678,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2020,2020-03,a8203747bd54970d,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2021,2021-03,0c7afa8f56ccce07,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2021,2021-03,0809eba15b2bcf92,Campo Verde,5102678,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2021,2021-03,8a804a0043271732,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2021,2021-03,d9d0bfeec9809a55,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2022,2022-03,3da6c7af5dd6a26a,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2022,2022-03,8ac99e036cb8fd9d,Campo Verde,5102678,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2022,2022-03,ffbbe45d19d2d483,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2022,2022-03,247ac5e1de933f90,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2023,2023-03,dfe1a5a65ff0158c,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2023,2023-03,b0ebc43b0cc8b405,Campo Verde,5102678,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2023,2023-03,4d3b580674a0648b,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2023,2023-03,4fb4ff9c73a3d76c,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2024,2024-03,d75210d5ded8651a,Campo Novo do Parecis,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2024,2024-03,20c41db157fa4eae,Campo Verde,5102678,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2024,2024-03,1ab957f958ffba47,Primavera do Leste,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+CONAB_estrita,milho_2a,2024,2024-03,edbbac376239bddf,Sorriso,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,ano_data_base_nao_ano_colheita,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_GMO_MT_B,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_GMO_MT_C,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_GMO_MT_D,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_GMO_MT_E,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_GMO_MT_F,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_GMO_MT_G,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_GMO_MT_H,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_bra_B,BRASNORTE,5101902,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_bra_C,BRASNORTE,5101902,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24***|Consolidado,Soja_Safra_GMO_bra_D,BRASNORTE,5101902,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_bra_E,BRASNORTE,5101902,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_bra_F,BRASNORTE,5101902,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_bra_G,BRASNORTE,5101902,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_bra_H,BRASNORTE,5101902,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_port_B,PORTO DOS GAÚCHOS,5106802,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_port_C,PORTO DOS GAÚCHOS,5106802,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_port_D,PORTO DOS GAÚCHOS,5106802,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_port_E,PORTO DOS GAÚCHOS,5106802,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_port_F,PORTO DOS GAÚCHOS,5106802,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_port_G,PORTO DOS GAÚCHOS,5106802,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_port_H,PORTO DOS GAÚCHOS,5106802,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_dia_B,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_dia_C,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_dia_D,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_dia_E,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_dia_F,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_dia_G,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_dia_H,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_tan_B,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_tan_C,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_tan_D,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_tan_E,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_tan_F,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_tan_G,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_tan_H,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_sor_B,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_sor_C,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_sor_D,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_sor_E,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_sor_F,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_sor_G,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_sor_H,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_sin_B,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_sin_C,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_sin_D,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_sin_E,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_sin_F,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_sin_G,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_sin_H,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_can_B,CANARANA,5102702,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_can_C,CANARANA,5102702,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_can_D,CANARANA,5102702,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_can_E,CANARANA,5102702,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_can_F,CANARANA,5102702,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_can_G,CANARANA,5102702,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_can_H,CANARANA,5102702,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_que_B,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_que_C,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_que_D,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_que_E,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_que_F,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_que_G,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_que_H,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_pri_B,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_pri_C,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_pri_D,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_pri_E,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_pri_F,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_pri_G,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_pri_H,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_afl_B,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_afl_C,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_afl_D,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_afl_E,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_afl_F,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_afl_G,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_afl_H,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_mar_B,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23***|Consolidado,Soja_Safra_GMO_mar_C,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_mar_D,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_mar_E,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_mar_F,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_mar_G,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_mar_H,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_mat_B,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_mat_C,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_mat_D,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_mat_E,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_mat_F,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_mat_G,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_mat_H,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_sap_B,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_sap_C,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_sap_D,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_sap_E,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_sap_F,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_sap_G,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_sap_H,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2021,2021/22|Consolidado,Soja_Safra_GMO_cnp_B,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2022,2022/23|Consolidado,Soja_Safra_GMO_cnp_C,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2023,2023/24|Consolidado,Soja_Safra_GMO_cnp_D,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2024,2024/25|Consolidado,Soja_Safra_GMO_cnp_E,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2025,2025/26|Consolidado,Soja_Safra_GMO_cnp_F,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Agosto,Soja_Safra_GMO_cnp_G,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,soja_GMO,2026,2026/27|Setembro*,Soja_Safra_GMO_cnp_H,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_MT_B,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_MT_C,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_MT_D,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_MT_E,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_MT_F,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_MT_G,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_MT_H,MATO GROSSO,,,,,estado_separado,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_Safra_ALTA_dia_B,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_Safra_ALTA_dia_C,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_Safra_ALTA_dia_D,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_Safra_ALTA_dia_E,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_Safra_ALTA_dia_F,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_Safra_ALTA_dia_G,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_Safra_ALTA_dia_H,DIAMANTINO,5103502,5101,Norte Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_Safra_ALTA_tan_B,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_Safra_ALTA_tan_C,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_Safra_ALTA_tan_D,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_Safra_ALTA_tan_E,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_Safra_ALTA_tan_F,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_Safra_ALTA_tan_G,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_Safra_ALTA_tan_H,TANGARÁ DA SERRA,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_Safra_ALTA_sor_B,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_Safra_ALTA_sor_C,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_Safra_ALTA_sor_D,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_Safra_ALTA_sor_E,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_Safra_ALTA_sor_F,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_Safra_ALTA_sor_G,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_Safra_ALTA_sor_H,SORRISO,5107925,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_Safra_ALTA_sin_B,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_Safra_ALTA_sin_C,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_Safra_ALTA_sin_D,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_Safra_ALTA_sin_E,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_Safra_ALTA_sin_F,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_Safra_ALTA_sin_G,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_Safra_ALTA_sin_H,SINOP,5107909,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_Safra_ALTA_que_B,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_Safra_ALTA_que_C,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_Safra_ALTA_que_D,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_Safra_ALTA_que_E,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_Safra_ALTA_que_F,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_Safra_ALTA_que_G,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_Safra_ALTA_que_H,QUERÊNCIA,5107065,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_Safra_ALTA_pri_B,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_Safra_ALTA_pri_C,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_Safra_ALTA_pri_D,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_Safra_ALTA_pri_E,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_Safra_ALTA_pri_F,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_Safra_ALTA_pri_G,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_Safra_ALTA_pri_H,PRIMAVERA DO LESTE,5107040,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2020,2020/21|Consolidado,Milho_Safra_ALTA_afl_B,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_Safra_ALTA_afl_C,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_Safra_ALTA_afl_D,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_Safra_ALTA_afl_E,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_Safra_ALTA_afl_F,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_Safra_ALTA_afl_G,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_Safra_ALTA_afl_H,ALTA FLORESTA,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_Safra_ALTA_mar_C,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_Safra_ALTA_mar_D,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_Safra_ALTA_mar_E,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_Safra_ALTA_mar_F,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_Safra_ALTA_mar_G,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_Safra_ALTA_mar_H,MARCELÂNDIA,5105580,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_Safra_ALTA_mat_B,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_Safra_ALTA_mat_C,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_Safra_ALTA_mat_D,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_Safra_ALTA_mat_E,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_Safra_ALTA_mat_F,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_Safra_ALTA_mat_G,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_Safra_ALTA_mat_H,MATUPÁ,5105606,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_Safra_ALTA_sap_B,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_Safra_ALTA_sap_C,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_Safra_ALTA_sap_D,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_Safra_ALTA_sap_E,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_Safra_ALTA_sap_F,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_Safra_ALTA_sap_G,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_Safra_ALTA_sap_H,SAPEZAL,5107875,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_Safra_ALTA_cnp_B,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2022,2022/23|Consolidado,Milho_Safra_ALTA_cnp_C,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_Safra_ALTA_cnp_D,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_Safra_ALTA_cnp_E,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_Safra_ALTA_cnp_F,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_Safra_ALTA_cnp_G,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_Safra_ALTA_cnp_H,CAMPO NOVO DO PARECIS,5102637,5101,Norte Mato-grossense,Oeste,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2020,2020/21|Consolidado,Milho_Safra_ALTA_nmt_B,NOVA MUTUM,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2021,2021/22|Consolidado,Milho_Safra_ALTA_nmt_C,NOVA MUTUM,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2023,2023/24|Consolidado,Milho_Safra_ALTA_nmt_D,NOVA MUTUM,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2024,2024/25|Consolidado,Milho_Safra_ALTA_nmt_E,NOVA MUTUM,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2025,2025/26|Consolidado,Milho_Safra_ALTA_nmt_F,NOVA MUTUM,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Agosto,Milho_Safra_ALTA_nmt_G,NOVA MUTUM,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_agricola,milho_alta_tecnologia_safra_nao_harmonizada,2026,2026/27|Setembro*,Milho_Safra_ALTA_nmt_H,NOVA MUTUM,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,False,rotulo_original;quarentena_comparabilidade;marcadores_preservados,False
+IMEA_pecuaria,cria,2020,2020,s01_B,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s01_C,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s01_D,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s01_E,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s01_F,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s01_G,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s01_H,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s01_I,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s02_B,Água Boa,5100201,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s02_C,Água Boa,5100201,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s02_D,Água Boa,5100201,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s02_E,Água Boa,5100201,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s02_F,Água Boa,5100201,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s02_G,Água Boa,5100201,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s02_H,Água Boa,5100201,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s02_I,Água Boa,5100201,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s03_B,Alta Floresta,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s03_C,Alta Floresta,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s03_D,Alta Floresta,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s03_E,Alta Floresta,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s03_F,Alta Floresta,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s03_G,Alta Floresta,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s03_H,Alta Floresta,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s03_I,Alta Floresta,5100250,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s04_B,Aripuanã,5101407,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s04_C,Aripuanã,5101407,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s04_D,Aripuanã,5101407,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s04_E,Aripuanã,5101407,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s04_F,Aripuanã,5101407,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s04_G,Aripuanã,5101407,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s04_H,Aripuanã,5101407,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s04_I,Aripuanã,5101407,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s05_B,Barra do Garças,5101803,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s05_C,Barra do Garças,5101803,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s05_D,Barra do Garças,5101803,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s05_E,Barra do Garças,5101803,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s05_F,Barra do Garças,5101803,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s05_G,Barra do Garças,5101803,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q1,s05_H,Barra do Garças,5101803,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s05_I,Barra do Garças,5101803,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s06_B,Cáceres,5102504,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s06_C,Cáceres,5102504,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s06_D,Cáceres,5102504,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s06_E,Cáceres,5102504,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s06_F,Cáceres,5102504,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s06_G,Cáceres,5102504,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s06_H,Cáceres,5102504,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s06_I,Cáceres,5102504,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s07_B,Juara,5105101,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s07_C,Juara,5105101,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s07_D,Juara,5105101,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s07_E,Juara,5105101,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s07_F,Juara,5105101,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s07_G,Juara,5105101,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s07_H,Juara,5105101,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s07_I,Juara,5105101,5101,Norte Mato-grossense,Noroeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s08_B,Nova Xavantina,5106257,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s08_C,Nova Xavantina,5106257,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s08_D,Nova Xavantina,5106257,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s08_E,Nova Xavantina,5106257,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s08_F,Nova Xavantina,5106257,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s08_G,Nova Xavantina,5106257,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s08_H,Nova Xavantina,5106257,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s08_I,Nova Xavantina,5106257,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s09_B,Paranaíta,5106299,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s09_C,Paranaíta,5106299,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s09_D,Paranaíta,5106299,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s09_E,Paranaíta,5106299,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s09_F,Paranaíta,5106299,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s09_G,Paranaíta,5106299,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s09_H,Paranaíta,5106299,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s09_I,Paranaíta,5106299,5101,Norte Mato-grossense,Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s10_B,Paranatinga,5106307,5101,Norte Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s10_C,Paranatinga,5106307,5101,Norte Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s10_D,Paranatinga,5106307,5101,Norte Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s10_E,Paranatinga,5106307,5101,Norte Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s10_F,Paranatinga,5106307,5101,Norte Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s10_G,Paranatinga,5106307,5101,Norte Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q1,s10_H,Paranatinga,5106307,5101,Norte Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s10_I,Paranatinga,5106307,5101,Norte Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s11_B,Pedra Preta,5106372,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s11_C,Pedra Preta,5106372,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s11_D,Pedra Preta,5106372,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s11_E,Pedra Preta,5106372,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s11_F,Pedra Preta,5106372,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s11_G,Pedra Preta,5106372,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q1,s11_H,Pedra Preta,5106372,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s11_I,Pedra Preta,5106372,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s12_B,Poconé,5106505,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s12_C,Poconé,5106505,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s12_D,Poconé,5106505,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s12_E,Poconé,5106505,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s12_F,Poconé,5106505,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s12_G,Poconé,5106505,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s12_H,Poconé,5106505,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s12_I,Poconé,5106505,5104,Centro-Sul Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s13_B,Vila Rica,5108600,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s13_C,Vila Rica,5108600,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s13_D,Vila Rica,5108600,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s13_E,Vila Rica,5108600,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,2024,s13_F,Vila Rica,5108600,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,2025,s13_G,Vila Rica,5108600,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s13_H,Vila Rica,5108600,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s13_I,Vila Rica,5108600,5102,Nordeste Mato-grossense,Nordeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2019,2019,s14_B,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2020,2020,s14_C,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,2021,s14_D,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,2022,s14_E,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023,s14_F,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023-Q3,s14_G,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,2023-Q4,s14_H,MATO GROSSO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,,s15_B,Santo Antônio do Leste,5107792,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,,s15_C,Santo Antônio do Leste,5107792,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,,s15_D,Santo Antônio do Leste,5107792,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,,s15_E,Santo Antônio do Leste,5107792,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,,s15_F,Santo Antônio do Leste,5107792,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s15_G,Santo Antônio do Leste,5107792,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s15_H,Santo Antônio do Leste,5107792,5102,Nordeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,,s16_B,Poxoréu,5107008,5105,Sudeste Mato-grossense,NA,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,,s16_C,Poxoréu,5107008,5105,Sudeste Mato-grossense,NA,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,,s16_D,Poxoréu,5107008,5105,Sudeste Mato-grossense,NA,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,,s16_E,Poxoréu,5107008,5105,Sudeste Mato-grossense,NA,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,,s16_F,Poxoréu,5107008,5105,Sudeste Mato-grossense,NA,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s16_G,Poxoréu,5107008,5105,Sudeste Mato-grossense,NA,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s16_H,Poxoréu,5107008,5105,Sudeste Mato-grossense,NA,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2021,,s17_B,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2022,,s17_C,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2023,,s17_D,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2024,,s17_E,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2025,,s17_F,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q2,s17_G,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,cria,2026,2026-Q3,s17_H,CUSTO DE PRODUÇÃO,,,,,conflito_na_fonte,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2020,2020,s18_B,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2021,2021,s18_C,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2022,2022,s18_D,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2023,2023,s18_E,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2024,2024,s18_F,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2025,2025,s18_G,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q2,s18_H,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q3,s18_I,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2020,2020,s19_B,Araputanga,5101258,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2021,2021,s19_C,Araputanga,5101258,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2022,2022,s19_D,Araputanga,5101258,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2023,2023,s19_E,Araputanga,5101258,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2024,2024,s19_F,Araputanga,5101258,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2025,2025,s19_G,Araputanga,5101258,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q2,s19_H,Araputanga,5101258,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q3,s19_I,Araputanga,5101258,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2020,2020,s20_B,Nova Mutum,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2021,2021,s20_C,Nova Mutum,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2022,2022,s20_D,Nova Mutum,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2023,2023,s20_E,Nova Mutum,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2024,2024,s20_F,Nova Mutum,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2025,2025,s20_G,Nova Mutum,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q2,s20_H,Nova Mutum,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q3,s20_I,Nova Mutum,5106224,5101,Norte Mato-grossense,Médio-Norte,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2020,2020,s21_B,Pontes e Lacerda,5106752,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2021,2021,s21_C,Pontes e Lacerda,5106752,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2022,2022,s21_D,Pontes e Lacerda,5106752,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2023,2023,s21_E,Pontes e Lacerda,5106752,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,False,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2024,2024,s21_F,Pontes e Lacerda,5106752,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2025,2025,s21_G,Pontes e Lacerda,5106752,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q2,s21_H,Pontes e Lacerda,5106752,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q3,s21_I,Pontes e Lacerda,5106752,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2020,2020,s22_B,Rondonópolis,5107602,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2021,2021,s22_C,Rondonópolis,5107602,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2022,2022,s22_D,Rondonópolis,5107602,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2023,2023,s22_E,Rondonópolis,5107602,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2024,2024,s22_F,Rondonópolis,5107602,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2025,2025,s22_G,Rondonópolis,5107602,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q2,s22_H,Rondonópolis,5107602,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q3,s22_I,Rondonópolis,5107602,5105,Sudeste Mato-grossense,Sudeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2020,2020,s23_B,Tangará da Serra,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2021,2021,s23_C,Tangará da Serra,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2022,2022,s23_D,Tangará da Serra,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2023,2023,s23_E,Tangará da Serra,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2024,2024,s23_F,Tangará da Serra,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2025,2025,s23_G,Tangará da Serra,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q2,s23_H,Tangará da Serra,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,recria_engorda,2026,2026-Q3,s23_I,Tangará da Serra,5107958,5103,Sudoeste Mato-grossense,Centro-Sul,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2020,2020,s24_B,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2021,2021,s24_C,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2022,2022,s24_D,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2023,2023,s24_E,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2024,2024,s24_F,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2025,2025,s24_G,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2026,2026-Q2,s24_H,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2026,2026-Q3,s24_I,MATO GROSSO,,,,,estado_separado,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2020,2020,s25_B,Vila Bela da Santíssima Trindade,5105507,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2021,2021,s25_C,Vila Bela da Santíssima Trindade,5105507,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2022,2022,s25_D,Vila Bela da Santíssima Trindade,5105507,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2023,2023,s25_E,Vila Bela da Santíssima Trindade,5105507,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2024,2024,s25_F,Vila Bela da Santíssima Trindade,5105507,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2025,2025,s25_G,Vila Bela da Santíssima Trindade,5105507,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2026,2026-Q2,s25_H,Vila Bela da Santíssima Trindade,5105507,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False
+IMEA_pecuaria,ciclo_completo,2026,2026-Q3,s25_I,Vila Bela da Santíssima Trindade,5105507,5103,Sudoeste Mato-grossense,Oeste,nome_normalizado_exato,True,R$/@ vendida;sem_conversao_ha,False

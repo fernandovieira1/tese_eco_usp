@@ -1,0 +1,26 @@
+sheet_id,sheet_name_exact,system_label_A3,geography_label_A4,system_key,cost_unit_label_A92,productivity_label_A91,geography_warning,rows_exported,all_three_costs_numeric_rows,source_file
+s01,Bovinocultura - Cria,Bovinocultura - Cria,MATO GROSSO,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s02,Cria_Água_Boa,Bovinocultura - Cria ,Água Boa,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s03,Cria_Alta_Floresta ,Bovinocultura - Cria ,Alta Floresta,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s04,Cria_Aripuanã,Bovinocultura - Cria ,Aripuanã,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,6,imea_cup_bovinoculturadecorte_1.xlsx
+s05,Cria_Barra_do_Garças,Bovinocultura - Cria ,Barra do Garças,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,4,imea_cup_bovinoculturadecorte_1.xlsx
+s06,Cria_Cáceres,Bovinocultura - Cria ,Cáceres,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s07,Cria_Juara,Bovinocultura - Cria ,Juara,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s08,Cria_Nova_Xavantina,Bovinocultura - Cria ,Nova Xavantina,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s09,Cria_Paranaíta,Bovinocultura - Cria ,Paranaíta,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s10,Cria_Paranatinga,Bovinocultura - Cria ,Paranatinga,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,6,imea_cup_bovinoculturadecorte_1.xlsx
+s11,Cria_Pedra_Preta,Bovinocultura - Cria ,Pedra Preta,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,2,imea_cup_bovinoculturadecorte_1.xlsx
+s12,Cria_Poconé,Bovinocultura - Cria ,Poconé,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s13,Cria_Vila_Rica,Bovinocultura - Cria ,Vila Rica,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s14,Cria_Guarantã_do_Norte ,Bovinocultura - Cria ,MATO GROSSO,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),sheet_name_and_A4_conflict_unresolved,7,0,imea_cup_bovinoculturadecorte_1.xlsx
+s15,Cria_Santo_Antônio_do_Leste,Bovinocultura - Cria ,Santo Antônio do Leste,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,7,2,imea_cup_bovinoculturadecorte_1.xlsx
+s16,Cria_Poxoréu,Bovinocultura - Cria ,Poxoréu,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,7,2,imea_cup_bovinoculturadecorte_1.xlsx
+s17,Cria_São_José_dos_Quatro_Marcos,Bovinocultura - Cria ,CUSTO DE PRODUÇÃO,cria,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),sheet_name_and_A4_conflict_unresolved,7,2,imea_cup_bovinoculturadecorte_1.xlsx
+s18,Bovinocultura - Rec. e Eng.,Bovinocultura - Recria e Engorda,MATO GROSSO,recria_engorda,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s19,Rec. e Eng_Araputanga,Bovinocultura - Recria e Engorda,Araputanga,recria_engorda,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s20,Rec. e Eng_Nova_Mutum,Bovinocultura - Recria e Engorda,Nova Mutum,recria_engorda,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s21,Rec e Eng_Pontes_e_Lacerda,Bovinocultura - Recria e Engorda,Pontes e Lacerda,recria_engorda,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,4,imea_cup_bovinoculturadecorte_1.xlsx
+s22,Rec. e Eng_Rondonópolis,Bovinocultura - Recria e Engorda,Rondonópolis,recria_engorda,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s23,Rec. e Eng_Tangará_da_Serra,Bovinocultura - Recria e Engorda,Tangará da Serra,recria_engorda,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s24,Bovinocultura - Ciclo comp.,Bovinocultura - Ciclo Completo,MATO GROSSO,ciclo_completo,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx
+s25, Ciclo comp_VB_da_Sant_Trind ,Bovinocultura - Ciclo Completo,Vila Bela da Santíssima Trindade,ciclo_completo,Unidade da tabela: R$/@ vendida.,Produtividade Modal (@vendida/ha),,8,8,imea_cup_bovinoculturadecorte_1.xlsx

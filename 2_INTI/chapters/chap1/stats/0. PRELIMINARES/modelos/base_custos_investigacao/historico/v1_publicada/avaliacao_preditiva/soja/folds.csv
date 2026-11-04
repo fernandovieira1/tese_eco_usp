@@ -1,0 +1,7 @@
+eixo,bloco,n_treino,n_teste,admissivel,motivo
+espacial,Campo Novo do Parecis,24,8,True,
+espacial,Primavera do Leste,15,17,True,
+espacial,Sorriso,25,7,True,
+temporal,2016-2019,12,8,True,
+temporal,2020-2021,20,6,True,
+temporal,2022-2024,26,6,True,
