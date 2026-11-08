@@ -1,0 +1,279 @@
+
+H1 - NOTAS SOBRE AS VARIÁVEIS
+================================================
+
+# 1_AMBIENTAIS
+###### 2_INTI\chapters\chap1\stats\2. MODELOS\grupos_h1\2_base_completa_h1_precaria\1_AMBIENTAIS\1_ambientais_investigacao.ipynb
+
+#### IDENTIFICADORES
+- 0_codigo_ibge
+- 0_ano
+- 0_municipio
+- 0_microrregiao
+- 0_bioma_predominante
+- 0_biome_amazonia_share_i
+- 0_biome_amazonia_share_i
+- 0_biome_cerrado_share_i
+- 0_biome_pantanal_share_i
+
+#### 1a_conversao
+- 1_taxa_conversao__agricultura
+- 1_conversao_ha__pastagem
+- 1_taxa_conversao__pastagem
+
+#### 1b_estoque
+- Nihil
+
+#### 1c_clima
+- Nihil
+
+#### 1d_qualidade
+- Nihil
+
+# 2_ECONOMICOS
+###### 2_INTI\chapters\chap1\stats\2. MODELOS\grupos_h1\2_base_completa_h1_precaria\2_ECONOMICOS\2_economicos_investigacao.ipynb
+
+#### 2a_mercado_precos
+- 2_preco_real_usd2024_media_anual_lag1__soja
+- 2_preco_real_usd2024_media_anual_lag1__milho
+- 2_preco_real_usd2024_media_anual_lag1__carne_bovina
+
+#### 2b_producao_aptidao
+- 2_capacidade_valor__soja__gaez_yxHr0_soy
+- 2_capacidade_valor__milho__gaez_yxHr0_mze
+- 2_area_plantada_ha__milho
+- 2_area_plantada_ha__soja
+- 2_area_colhida_ha__milho
+- 2_area_colhida_ha__soja
+- 2_producao_t__milho
+- 2_producao_t__soja
+- 2_rendimento_medio_kg_ha__milho
+- 2_rendimento_medio_kg_ha__soja
+
+#### 2c_receitas
+- 2_receita_bruta_estimada_usd2024_total__soja      
+- 2_receita_bruta_estimada_usd2024_total_lag1__soja    
+- 2_receita_bruta_estimada_usd2024_total_lag2__soja   
+- 2_receita_bruta_estimada_usd2024_total_media_lag1_lag2__soja       
+- 2_receita_bruta_estimada_usd2024_por_ha_colhido__soja       
+- 2_receita_bruta_estimada_usd2024_por_ha_colhido_lag1__soja       
+- 2_receita_bruta_estimada_usd2024_por_ha_colhido_lag2__soja       
+- 2_receita_bruta_estimada_usd2024_por_ha_colhido_media_lag1_lag2__soja       
+- 2_receita_bruta_estimada_usd2024_total__milho       
+- 2_receita_bruta_estimada_usd2024_total_lag1__milho       
+- 2_receita_bruta_estimada_usd2024_total_lag2__milho       
+- 2_receita_bruta_estimada_usd2024_total_media_lag1_lag2__milho 
+- 2_receita_estimada__soja
+- 2_lucro_precario__soja
+- 2_receita_estimada__milho
+- 2_lucro_precario__milho
+- 2_receita_estimada__pecuaria
+- 2_lucro_precario__pecuaria
+
+#### 2d_custos
+- 2_custo_conab_soja_nao_declarada_safra1_conab_h_nominal
+- 2_custo_conab_soja_nao_declarada_safra1_conab_h_usd2024
+- 2_custo_imea_pecuaria_pecuaria_recria_engorda_safra0_coe_nominal
+- 2_custo_imea_pecuaria_pecuaria_recria_engorda_safra0_cot_nominal
+- 2_custo_imea_pecuaria_pecuaria_recria_engorda_safra0_ct_nominal
+- 2_custo_conab_milho_2a_ogm_safra0_conab_h_nominal
+- 2_custo_conab_milho_2a_ogm_safra0_conab_h_usd2024
+- 2_custo_imea_agricola_soja_soja_gmo_safra1_imea_coe_nominal
+- 2_custo_imea_agricola_soja_soja_gmo_safra1_imea_cot_nominal
+- 2_custo_imea_agricola_soja_soja_gmo_safra1_imea_ct_nominal
+- 2_custo_imea_pecuaria_pecuaria_ciclo_completo_safra0_coe_nominal
+- 2_custo_imea_pecuaria_pecuaria_ciclo_completo_safra0_cot_nominal
+- 2_custo_imea_pecuaria_pecuaria_ciclo_completo_safra0_ct_nominal
+- 2_custo_conab_soja_ogm_safra1_conab_h_nominal
+- 2_custo_conab_soja_ogm_safra1_conab_h_usd2024
+- 2_custo_imea_agricola_milho_safra_nao_harmonizada_milho_alta_tecnologia_safra1_imea_coe_nominal
+- 2_custo_imea_agricola_milho_safra_nao_harmonizada_milho_alta_tecnologia_safra1_imea_cot_nominal
+- 2_custo_imea_agricola_milho_safra_nao_harmonizada_milho_alta_tecnologia_safra1_imea_ct_nominal
+- 2_custo_conab_soja_convencional_explicita_safra1_conab_h_nominal
+- 2_custo_conab_soja_convencional_explicita_safra1_conab_h_usd2024
+- 2_custo_conab_milho_1a_nao_declarada_safra1_conab_h_nominal
+- 2_custo_conab_milho_1a_nao_declarada_safra1_conab_h_usd2024
+- 2_custo_conab_milho_2a_nao_declarada_safra0_conab_h_nominal
+- 2_custo_conab_milho_2a_nao_declarada_safra0_conab_h_usd2024
+- 2_custo_imea_pecuaria_pecuaria_cria_safra0_coe_nominal
+- 2_custo_imea_pecuaria_pecuaria_cria_safra0_cot_nominal
+- 2_custo_imea_pecuaria_pecuaria_cria_safra0_ct_nominal
+- 2_custo_precario__soja
+- 2_custo_precario__milho
+- 2_custo_precario__pecuaria
+
+# 3_INSTITUCIONAIS
+###### 2_INTI\chapters\chap1\stats\2. MODELOS\grupos_h1\2_base_completa_h1_precaria\3_INSTITUCIONAIS\3_institucionais_investigacao.ipynb
+
+3_n_autos_flora__ibama_espacial
+3_flag_contagem_flora_parcial__ibama_espacial
+3_v2__flag_autos_flora_elegivel_t
+3_v2__flag_autos_flora_elegivel_lag1
+3_n_autos_flora_elegiveis_lag1__ibama_espacial
+
+***
+
+H1 - COMENTÁRIO SOBRE AS VARIÁVEIS Y E X
+================================================
+
+Objetivo: identificar as variáveis recomendadas para os testes manuais, com seus nomes exatos na base H1 e no arquivo variaveis_derivadas.csv.
+
+Cada modelo deve ser estimado separadamente para agricultura e pastagem.
+
+Y: VARIÁVEIS DEPENDENTES
+-----------------------------
+
+Y1 - Taxa de conversão de vegetação nativa para agricultura
+* Nome na base: 1_taxa_conversao__agricultura
+* Nome derivado: y_agricultura
+* Transformação: y_agricultura = 100 * 1_taxa_conversao__agricultura
+
+Y2 - Taxa de conversão de vegetação nativa para pastagem
+* Nome na base: 1_taxa_conversao__pastagem
+* Nome derivado: y_pastagem
+* Transformação: y_pastagem = 100 * 1_taxa_conversao__pastagem
+
+As taxas originais relacionam a conversão bruta ao estoque inicial de vegetação nativa. Multiplicadas por 100, ficam expressas em porcentagem;
+
+as diferenças estimadas entre taxas são medidas em pontos percentuais.
+
+Use apenas um desses desfechos como Y em cada regressão.
+
+2. X: COMPONENTES ECONÔMICOS
+-----------------------------
+
+Preço da soja, real em USD de 2024, já defasado em um ano
+* Nome na base: 2_preco_real_usd2024_media_anual_lag1__soja
+* Nome derivado: ps1
+* Transformação: log natural do preço, centralizado pela média dos logs dos preços nos 24 anos distintos do painel.
+
+Aptidão da soja (GAEZ)
+* Nome na base: 2_capacidade_valor__soja__gaez_yxHr0_soy
+* Nome derivado: as
+* Transformação: aptidão padronizada, subtraindo a média e dividindo pelo desvio-padrão populacional calculados sobre os 141 municípios distintos.
+
+Preço do milho, real em USD de 2024, já defasado em um ano
+* Nome na base: 2_preco_real_usd2024_media_anual_lag1__milho
+* Nome derivado: pm1
+* Transformação: log natural do preço, centralizado pela média dos logs dos preços nos 24 anos distintos do painel.
+
+Aptidão do milho (GAEZ)
+* Nome na base: 2_capacidade_valor__milho__gaez_yxHr0_mze
+* Nome derivado: am
+* Transformação: aptidão padronizada, subtraindo a média e dividindo pelo desvio-padrão populacional calculados sobre os 141 municípios distintos.
+
+X ECONÔMICAS QUE ENTRAM NO MODELO CENTRAL:
+xs1 = ps1 * as   (preço defasado da soja x aptidão da soja)
+xm1 = pm1 * am   (preço defasado do milho x aptidão do milho)
+
+xs1 e xm1 são colunas derivadas, não os nomes originais da base H1.
+Com efeitos fixos de município e ano, os preços comuns aos municípios
+são absorvidos pelos efeitos de ano, e as aptidões invariantes no tempo
+pelos efeitos de município. As interações permitem estimar diferenças
+de resposta aos preços conforme a aptidão, não o efeito médio do preço.
+
+3. CONTROLE CLIMÁTICO
+-----------------------------
+
+Anomalia anual de precipitação em relação a 1981-2000
+* Nome na base: 1_v2__precip_anomaly_1981_2000
+* Nome derivado: rain
+* Transformação: rain = 1_v2__precip_anomaly_1981_2000 / 100
+* Unidade usada na rodada: 100 mm de anomalia.
+
+4. X INSTITUCIONAL: AUTUAÇÕES
+-----------------------------
+
+* Número de autos de flora elegíveis, já defasado em um ano
+* Nome na base: 3_n_autos_flora_elegiveis_lag1__ibama_espacial
+* Nome derivado: f1
+* Transformação: f1 = ln(1 + 3_n_autos_flora_elegiveis_lag1__ibama_espacial)
+
+Essa variável representa registros de autuação. Ela não mede diretamente a intensidade ou a eficácia da fiscalização e pode reagir ao desmatamento.
+
+INTERAÇÕES PARA O MODELO INSTITUCIONAL COMPLETO:
+* ps1f1 = ps1 * f1       (preço da soja x autos)
+* pm1f1 = pm1 * f1       (preço do milho x autos)
+* asf1  = as * f1        (aptidão da soja x autos)
+* amf1  = am * f1        (aptidão do milho x autos)
+* xs1f1 = ps1 * as * f1  (preço da soja x aptidão da soja x autos)
+* xm1f1 = pm1 * am * f1  (preço do milho x aptidão do milho x autos)
+
+Ao incluir as interações triplas, mantenha xs1, xm1, f1 e todos os termos duplos acima, além de rain e dos efeitos fixos. Os termos simples de preço e aptidão são absorvidos pelos respectivos efeitos fixos.
+
+5. IDENTIFICADORES E EFEITOS FIXOS
+-------------------------------------
+
+* Município:   0_codigo_ibge          -> id
+* Ano:         0_ano                  -> year
+* Bioma:       0_bioma_predominante    -> biome
+* Microrregião: 0_microrregiao         -> micro
+
+* Referência: efeitos fixos de município + ano.
+* Sensibilidade 1: município + bioma x ano.
+* Sensibilidade 2: município + microrregião x ano.
+
+Bioma x ano e microrregião x ano são efeitos fixos para cada combinação de categorias, não multiplicações numéricas dos códigos. 
+
+Substituem o efeito anual geral, já contido nessas combinações.
+
+6. COMBINAÇÕES RECOMENDADAS
+-----------------------------
+
+Nas linhas abaixo, Y é y_agricultura OU y_pastagem. As expressões listam as variáveis explicativas; os modelos também incluem o erro aleatório.
+
+M1 - Soja isolada:
+Y ~ xs1 + rain + efeitos fixos de município e ano
+
+M2 - Milho isolado:
+Y ~ xm1 + rain + efeitos fixos de município e ano
+
+M3 - Núcleo econômico principal:
+Y ~ xs1 + xm1 + rain + efeitos fixos de município e ano
+
+M4 - Sensibilidade por bioma:
+Y ~ xs1 + xm1 + rain + efeitos fixos de município e bioma x ano
+
+M5 - Sensibilidade por microrregião:
+Y ~ xs1 + xm1 + rain + efeitos fixos de município e microrregião x ano
+
+M6 - Núcleo econômico com autuações:
+Y ~ xs1 + xm1 + rain + f1 + efeitos fixos de município e ano
+
+M7 - Moderação institucional das duas culturas:
+Y ~ xs1 + xm1 + rain + f1 + ps1f1 + pm1f1 + asf1 + amf1
+    + xs1f1 + xm1f1 + efeitos fixos de município e ano
+Depois, repetir M7 com município + bioma x ano.
+
+7. AMOSTRAS E CUIDADOS PARA REPRODUZIR OS TESTES
+----------------------------------------------------------
+
+Arquivos prontos: variaveis_derivadas.csv e mascaras_amostrais.csv.
+
+Unir os arquivos pelas duas chaves id e year, conjuntamente.
+
+Para M1 a M5, começar com observed = True:
+- Equivale à flag 4_v2__flag_amostra_conversao_ambos.
+- 2.772 observações de 137 municípios; exclui 612 linhas com desfechos preenchidos. Manter a mesma amostra nas comparações.
+
+Para M6 e M7, analisar separadamente:
+- fiscal1 = True: 1.140 observações de 128 municípios, com os critérios de observação do desfecho e de elegibilidade fiscal da rodada.
+- admin1 = True: 2.454 observações de 137 municípios, em cenário que inclui zeros administrativos. Esses zeros não comprovam ausência real de autuações; tratar como análise de sensibilidade.
+- Reestimar M3 na mesma amostra usada em M6/M7 antes de comparar resultados.
+
+Defasagens:
+- Os preços e os autos com lag1 no nome JÁ estão defasados em um ano.
+  Não aplicar outro lag para reproduzir M1 a M7.
+- Para investigar preços em t-2 ou t-3, usar ps2/pm2 e ps3/pm3, com interações xs2/xm2 e xs3/xm3. Foram construídos deslocando as séries lag1 em mais um ou dois anos dentro de cada município.
+- Comparar defasagens na mesma amostra e respeitar anos consecutivos.
+
+Outros cuidados:
+- Preservar as transformações e a padronização já existentes no arquivo derivado; não recalculá-las em cada subamostra para reproduzir a rodada.
+- Usar erros-padrão agrupados por município como referência e comparar com agrupamento por município e ano.
+- Registrar coeficientes, intervalos de confiança e tamanho da amostra.
+- Os resultados são associações exploratórias, não efeitos causais.
+- Custos, receitas e saldos ficam para uma etapa separada, fora deste núcleo inicial de variáveis.
+
+Fonte de conferência: inventario_variaveis.csv, variaveis_derivadas.csv, mascaras_amostrais.csv e run_h1.py do pacote
+H1_exploracao_resultados_2026-11-06.zip.
+Os nomes originais foram conferidos no inventário e no script do pacote;
