@@ -34,9 +34,15 @@ H1 - NOTAS SOBRE AS VARIÁVEIS
 ###### 2_INTI\chapters\chap1\stats\2. MODELOS\grupos_h1\2_base_completa_h1_precaria\2_ECONOMICOS\2_economicos_investigacao.ipynb
 
 #### 2a_mercado_precos
+- 2_preco_real_usd2024_media_anual__soja
+- 2_preco_real_usd2024_media_anual__milho
+- 2_preco_real_usd2024_media_anual__carne_bovina
 - 2_preco_real_usd2024_media_anual_lag1__soja
 - 2_preco_real_usd2024_media_anual_lag1__milho
 - 2_preco_real_usd2024_media_anual_lag1__carne_bovina
+- 2_preco_real_usd2024_media_anual_lag2__soja
+- 2_preco_real_usd2024_media_anual_lag2__milho
+- 2_preco_real_usd2024_media_anual_lag2__carne_bovina
 
 #### 2b_producao_aptidao
 - 2_capacidade_valor__soja__gaez_yxHr0_soy
