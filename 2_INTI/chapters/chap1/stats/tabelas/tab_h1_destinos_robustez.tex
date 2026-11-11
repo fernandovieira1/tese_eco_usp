@@ -1,0 +1,45 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\captionstyle{\centering}
+\normalcaption
+\caption{Destino comparativo pastagem, regimes temporais, placebo e sensibilidade, 2001--2024}
+\label{tab:h1-destinos-robustez}
+\begin{tabular}{lccccccc}
+\hline
+ & (1) & (2) & (3) & (4) & (5) & (6) & (7) \\
+Especificação & Pastagem & 2006--2024 & Pós-2005 & Placebo $t+1$ & Clust. Duplo & Winsor 99\% & Base 3.384 \\
+\hline
+\multicolumn{8}{l}{\textit{Painel A: Soja ($c = s$)}} \\
+$\ln P_{s,t-1} \times Z_{i,s}$ & 0,3206*** & -0,0067 & 0,0009 & 0,0559** & 0,0848* & 0,0555** & 0,0848*** \\
+ & (0,1016) & (0,0083) & (0,0097) & (0,0261) & (0,0481) & (0,0230) & (0,0314) \\
+$Z_{i,s} \times \mathbb{I}[t \ge 2005]$ & -- & -- & 0,0954* & -- & -- & -- & -- \\
+ &  &  & (0,0514) &  &  &  &  \\
+$\ln P_{s,t+1} \times Z_{i,s}$ & -- & -- & -- & 0,0844** & -- & -- & -- \\
+ &  &  &  & (0,0338) &  &  &  \\
+$Z_{i,s} \times \tau_t$ & -0,0485 & 0,0099* & -- & 0,0428*** & 0,0405** & 0,0359*** & 0,0456*** \\
+ & (0,0369) & (0,0054) &  & (0,0153) & (0,0165) & (0,0122) & (0,0134) \\
+Observações (Painel A) & 2.767 & 2.189 & 2.769 & 2.633 & 2.767 & 2.767 & 3.384 \\
+$R^2$ total (Painel A) & 0,4915 & 0,5143 & 0,3770 & 0,3883 & 0,3828 & 0,4950 & 0,3711 \\
+$R^2$ \textit{within} (Painel A) & 0,0195 & 0,0048 & 0,0359 & 0,0257 & 0,0198 & 0,0254 & 0,0212 \\
+\hline
+\multicolumn{8}{l}{\textit{Painel B: Milho ($c = m$)}} \\
+$\ln P_{m,t-1} \times Z_{i,m}$ & 0,4600*** & -0,0040 & 0,0032 & 0,0198** & 0,0519* & 0,0432*** & 0,0527*** \\
+ & (0,1397) & (0,0079) & (0,0076) & (0,0100) & (0,0277) & (0,0142) & (0,0146) \\
+$Z_{i,m} \times \mathbb{I}[t \ge 2005]$ & -- & -- & 0,1036*** & -- & -- & -- & -- \\
+ &  &  & (0,0329) &  &  &  &  \\
+$\ln P_{m,t+1} \times Z_{i,m}$ & -- & -- & -- & 0,1026*** & -- & -- & -- \\
+ &  &  &  & (0,0304) &  &  &  \\
+$Z_{i,m} \times \tau_t$ & 0,0033 & 0,0157*** & -- & 0,0531*** & 0,0538*** & 0,0491*** & 0,0543*** \\
+ & (0,0413) & (0,0060) &  & (0,0150) & (0,0192) & (0,0127) & (0,0123) \\
+Observações (Painel B) & 2.767 & 2.189 & 2.769 & 2.633 & 2.767 & 2.767 & 3.384 \\
+$R^2$ total (Painel B) & 0,4937 & 0,5149 & 0,3742 & 0,3867 & 0,3807 & 0,4944 & 0,3685 \\
+$R^2$ \textit{within} (Painel B) & 0,0259 & 0,0083 & 0,0392 & 0,0271 & 0,0165 & 0,0246 & 0,0178 \\
+\hline
+\end{tabular}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize
+\centering
+Fonte: elaboração própria com MapBiomas 10.1, Banco Mundial, BLS/FRED, FAO/IIASA (GAEZ v4) e IBGE.
+\end{minipage}
+\end{table}

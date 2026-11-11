@@ -1,0 +1,42 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{1.8pt}
+\captionstyle{\centering}
+\normalcaption
+\caption{Custos logísticos de acesso a portos e ferrovias e condicionamento por embargos do IBAMA, 2001--2024}
+\label{tab:h1-logistica-embargos}
+\begin{tabular}{lccccccc}
+\hline
+ & (1) & (2) & (3) & (4) & (5) & (6) & (7) \\
+Variável & Porto Sul & Log. (S) & Log. (M) & Emb. ha (S) & Emb. ha (M) & Mod. Emb. & Autos (S) \\
+\hline
+$\ln P_{c,t-1} \times Z_{i,c}$ & 0,1009** & 0,0940** & 0,0656*** & 0,0835** & 0,0483*** & 0,0933** & 0,0494 \\
+ & (0,0411) & (0,0394) & (0,0214) & (0,0361) & (0,0172) & (0,0375) & (0,0448) \\
+$\ln P_{s,t-1} \times Z_{i,s} \times P_i^{\text{sul}}$ & 0,0486 & -- & -- & -- & -- & -- & -- \\
+ & (0,0323) &  &  &  &  &  &  \\
+$D_{it}^{\text{min}}$ (porto) & -- & 0,0252*** & 0,0261*** & -- & -- & -- & -- \\
+ &  & (0,0079) & (0,0084) &  &  &  &  \\
+$F_{it}^{2013}$ (ferrovia) & -- & -0,1689*** & -0,1280*** & -- & -- & -- & -- \\
+ &  & (0,0453) & (0,0395) &  &  &  &  \\
+$\ln(1+E_{i,t-1}^{\text{ha}})$ & -- & -- & -- & -0,0076*** & -0,0082*** & -- & -- \\
+ &  &  &  & (0,0029) & (0,0030) &  &  \\
+Embargos/autos ($t-1$) & -- & -- & -- & -- & -- & 0,0082 & 0,0002 \\
+ &  &  &  &  &  & (0,0124) & (0,0060) \\
+$\ln P_{s,t-1} \times Z_{i,s} \times \text{Emb.}$ & -- & -- & -- & -- & -- & -0,0314* & -- \\
+ &  &  &  &  &  & (0,0179) &  \\
+$Z_{i,c} \times \tau_t$ & 0,0405*** & 0,0599*** & 0,0470*** & 0,0396*** & 0,0537*** & 0,0389*** & -- \\
+ & (0,0144) & (0,0157) & (0,0139) & (0,0149) & (0,0154) & (0,0139) &  \\
+Precipitação ($R_{it}$) & -0,0136** & -0,0149** & -0,0173** & -0,0138** & -0,0154** & -0,0137** & -0,0061 \\
+ & (0,0062) & (0,0062) & (0,0069) & (0,0063) & (0,0068) & (0,0062) & (0,0039) \\
+\hline
+Observações & 2.767 & 2.767 & 2.767 & 2.767 & 2.767 & 2.767 & 1.135 \\
+$R^2$ total & 0,3840 & 0,3939 & 0,3873 & 0,3842 & 0,3824 & 0,3834 & 0,4485 \\
+$R^2$ \textit{within} & 0,0256 & 0,0374 & 0,0269 & 0,0211 & 0,0144 & 0,0209 & 0,0076 \\
+\hline
+\end{tabular}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize
+\centering
+Fonte: elaboração própria com MapBiomas 10.1, IBGE (malha 2023), IBAMA e FAO/IIASA (GAEZ v4).
+\end{minipage}
+\end{table}

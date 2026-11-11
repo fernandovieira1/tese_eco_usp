@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\captionstyle{\centering}
+\normalcaption
+\caption{Associação entre preços reais, capacidade potencial e conversão para agricultura por regime temporal e bioma predominante, 2001--2024}
+\label{tab:h1-regimes-biomas}
+\begin{tabular}{lcccccc}
+\hline
+ & (1) & (2) & (3) & (4) & (5) & (6) \\
+Variável & Soja MT & Soja Amaz. & Soja Cerr. & Milho MT & Milho Amaz. & Milho Cerr. \\
+\hline
+$\ln P_{c,t-1} \times Z_{i,c} \times \mathbb{I}[2001\text{--}2005]$ & 0,3541*** & 0,3999 & 0,3392** & 0,4234*** & 0,3667 & 0,4499*** \\
+ & (0,1353) & (0,2463) & (0,1634) & (0,1206) & (0,3285) & (0,1337) \\
+$\ln P_{c,t-1} \times Z_{i,c} \times \mathbb{I}[2006\text{--}2011]$ & 0,0108 & -0,0643** & 0,0523** & 0,0198 & -0,1143 & 0,0553* \\
+ & (0,0211) & (0,0318) & (0,0250) & (0,0266) & (0,0729) & (0,0298) \\
+$\ln P_{c,t-1} \times Z_{i,c} \times \mathbb{I}[2012\text{--}2024]$ & 0,0120 & 0,0097 & 0,0057 & -0,0041 & -0,0183 & -0,0022 \\
+ & (0,0111) & (0,0153) & (0,0149) & (0,0077) & (0,0302) & (0,0074) \\
+Precipitação ($R_{it}$) & -0,0138** & -0,0231** & -0,0039 & -0,0161** & -0,0239** & -0,0076 \\
+ & (0,0062) & (0,0104) & (0,0057) & (0,0067) & (0,0107) & (0,0073) \\
+\hline
+Observações & 2.767 & 1.303 & 1.412 & 2.767 & 1.303 & 1.412 \\
+$R^2$ total & 0,3856 & 0,3763 & 0,3956 & 0,3835 & 0,3709 & 0,4056 \\
+$R^2$ \textit{within} & 0,0242 & 0,0194 & 0,0541 & 0,0209 & 0,0109 & 0,0697 \\
+\hline
+\end{tabular}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize
+\centering
+Fonte: elaboração própria com MapBiomas 10.1, Banco Mundial, BLS/FRED, FAO/IIASA (GAEZ v4) e IBGE.
+\end{minipage}
+\end{table}
