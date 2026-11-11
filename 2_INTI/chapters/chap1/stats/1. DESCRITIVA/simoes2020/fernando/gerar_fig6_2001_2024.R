@@ -21,7 +21,7 @@
 #          - 'Cerrado' (formação savânica / campestre / áreas úmidas nativas)
 #          - 'Área Urbana' (infraestrutura urbana)
 #          - 'Áreas Alagadas' (corpos d'água)
-#          - 'Outras Culturas' (soja-algodão, soja safra única/pousio,
+#          - 'Outros usos e coberturas' (soja-algodão, soja safra única/pousio,
 #            soja-milheto, soja-girassol, cana, algodão safra única,
 #            vegetação secundária e todas as demais classes restantes)
 #     3. Reprojeção estrita para coordenadas geográficas SIRGAS 2000 (EPSG:4674)
@@ -115,7 +115,17 @@ init_gee_session <- function(gee_project = Sys.getenv("GEE_PROJECT", unset = "gr
   ee
 }
 
-ee <- init_gee_session()
+tif_raw_2001 <- file.path(DATA_DIR, "mt_gee_2001_13classes_sirgas2000.tif")
+tif_2024     <- file.path(DATA_DIR, "mt_gee_2024_13classes_sirgas2000.tif")
+use_local_cache <- file.exists(tif_raw_2001) && file.info(tif_raw_2001)$size > 50000 &&
+  file.exists(tif_2024) && file.info(tif_2024)$size > 50000
+
+ee <- if (use_local_cache) {
+  cat("[1/6] Rasters brutos em cache local detectados; sessão GEE dispensada.\n")
+  NULL
+} else {
+  init_gee_session()
+}
 
 # ------------------------------------------------------------------------------
 # 2. Aquisição de Limites Vetoriais (Mato Grosso e Biomas via `geobr`)
@@ -218,7 +228,12 @@ select_best_gee_collection <- function(ee, candidates) {
   stop("Nenhum asset do MapBiomas pôde ser acessado no catálogo do GEE.")
 }
 
-selected_cov <- select_best_gee_collection(ee, GEE_COVERAGE_CANDIDATES)
+if (use_local_cache) {
+  selected_cov <- list(asset_id = "local_cache", bands = c("classification_2001", "classification_2024"))
+  cat("  -> Pulando consulta ao catálogo GEE; usando GeoTIFFs locais de 2001 e 2024.\n")
+} else {
+  selected_cov <- select_best_gee_collection(ee, GEE_COVERAGE_CANDIDATES)
+}
 
 # Função auxiliar para baixar uma banda bruta do GEE rapidamente (usando as pirâmides
 # nativas do asset no servidor do GEE) e alinhar à grade de referência
@@ -408,7 +423,7 @@ cat("[5/6] Aplicando matriz de reclassificação rigorosa (`terra::classify`)...
 #   4 = 'Cerrado'        -> `cerrado` (1 na legenda Simoes / 4, 11, 12 no MapBiomas)
 #   5 = 'Área Urbana'    -> `Urban Area` (13 na legenda Simoes / 24 no MapBiomas)
 #   6 = 'Áreas Alagadas' -> `Water` (11 na legenda Simoes / 26, 31, 33 no MapBiomas)
-#   7 = 'Outras Culturas'-> Agrupa `soy_cotton` (6), `soy_fallow` (7), `soy_millet` (8),
+#   7 = 'Outros usos e coberturas'-> Agrupa `soy_cotton` (6), `soy_fallow` (7), `soy_millet` (8),
 #                           `soy_sunflower` (9), `sugarcane` (12), `Fallow_Cotton` (2),
 #                           `Secondary Vegetation` (10) e todas as demais classes restantes
 RECLASS_TABLE <- data.frame(
@@ -430,32 +445,32 @@ RECLASS_TABLE <- data.frame(
   ),
   new_code    = c(
     4L, # 1  (Cerrado)              -> 4 ('Cerrado')
-    7L, # 2  (Fallow_Cotton)        -> 7 ('Outras Culturas')
+    7L, # 2  (Fallow_Cotton)        -> 7 ('Outros usos e coberturas')
     3L, # 3  (Forest)               -> 3 ('Floresta')
     2L, # 4  (Pasture)              -> 2 ('Pecuária')
     1L, # 5  (Soy_Corn)             -> 1 ('Soja e Milho') [EXCLUSIVAMENTE]
-    7L, # 6  (Soy_Cotton)           -> 7 ('Outras Culturas')
-    7L, # 7  (Soy_Fallow)           -> 7 ('Outras Culturas')
-    7L, # 8  (Soy_Millet)           -> 7 ('Outras Culturas')
-    7L, # 9  (Soy_Sunflower)        -> 7 ('Outras Culturas')
-    7L, # 10 (Secondary Vegetation) -> 7 ('Outras Culturas')
+    7L, # 6  (Soy_Cotton)           -> 7 ('Outros usos e coberturas')
+    7L, # 7  (Soy_Fallow)           -> 7 ('Outros usos e coberturas')
+    7L, # 8  (Soy_Millet)           -> 7 ('Outros usos e coberturas')
+    7L, # 9  (Soy_Sunflower)        -> 7 ('Outros usos e coberturas')
+    7L, # 10 (Secondary Vegetation) -> 7 ('Outros usos e coberturas')
     6L, # 11 (Water)                -> 6 ('Áreas Alagadas')
-    7L, # 12 (Sugarcane)            -> 7 ('Outras Culturas')
+    7L, # 12 (Sugarcane)            -> 7 ('Outros usos e coberturas')
     5L  # 13 (Urban Area)           -> 5 ('Área Urbana')
   ),
   new_label_pt = c(
     "Cerrado",
-    "Outras Culturas",
+    "Outros usos e coberturas",
     "Floresta",
     "Pecuária",
     "Soja e Milho",
-    "Outras Culturas",
-    "Outras Culturas",
-    "Outras Culturas",
-    "Outras Culturas",
-    "Outras Culturas",
+    "Outros usos e coberturas",
+    "Outros usos e coberturas",
+    "Outros usos e coberturas",
+    "Outros usos e coberturas",
+    "Outros usos e coberturas",
     "Áreas Alagadas",
-    "Outras Culturas",
+    "Outros usos e coberturas",
     "Área Urbana"
   ),
   stringsAsFactors = FALSE
@@ -468,8 +483,8 @@ utils::write.csv(
   fileEncoding = "UTF-8"
 )
 
-# Matriz `is-becomes` para `terra::classify()`, com `others = 7L` ('Outras Culturas')
-# garantindo que rigorosamente qualquer classe remanescente caia em 'Outras Culturas'
+# Matriz `is-becomes` para `terra::classify()`, com `others = 7L` ('Outros usos e coberturas')
+# garantindo que rigorosamente qualquer classe remanescente caia em 'Outros usos e coberturas'
 rcl_matrix <- as.matrix(RECLASS_TABLE[, c("orig_code", "new_code")])
 
 PT_CLASSES <- data.frame(
@@ -481,7 +496,7 @@ PT_CLASSES <- data.frame(
     "Cerrado",
     "Área Urbana",
     "Áreas Alagadas",
-    "Outras Culturas"
+    "Outros usos e coberturas"
   ),
   color = c(
     "#E66101", # 1: Soja e Milho (laranja/âmbar vibrante)
@@ -490,7 +505,7 @@ PT_CLASSES <- data.frame(
     "#8CCD65", # 4: Cerrado (verde claro savânico)
     "#D7191C", # 5: Área Urbana (vermelho intenso)
     "#2B5C8F", # 6: Áreas Alagadas (azul corpos d'água)
-    "#B266B2"  # 7: Outras Culturas (lilás/roxo agrícola)
+    "#B266B2"  # 7: Outros usos e coberturas (lilás/roxo agrícola/mosaico)
   ),
   stringsAsFactors = FALSE
 )
@@ -581,7 +596,7 @@ legend_order <- c(
   "Cerrado",
   "Pecuária",
   "Soja e Milho",
-  "Outras Culturas",
+  "Outros usos e coberturas",
   "Áreas Alagadas",
   "Área Urbana"
 )

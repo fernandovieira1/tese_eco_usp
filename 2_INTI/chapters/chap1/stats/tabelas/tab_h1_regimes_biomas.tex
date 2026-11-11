@@ -1,7 +1,7 @@
 \begin{table}[htbp]
 \centering
 \scriptsize
-\setlength{\tabcolsep}{3.2pt}
+\setlength{\tabcolsep}{3.0pt}
 \captionstyle{\centering}
 \normalcaption
 \caption{Associação entre preços reais, capacidade potencial e conversão para agricultura por regime temporal e bioma predominante, 2001--2024}
@@ -11,6 +11,7 @@
  & (1) & (2) & (3) & (4) & (5) & (6) \\
 Variável & Soja MT & Soja Amaz. & Soja Cerr. & Milho MT & Milho Amaz. & Milho Cerr. \\
 \hline
+\multicolumn{7}{l}{\textit{Painel A: Especificação base (sem interação de nível $Z_{i,c} \times \text{regime}$)}} \\
 $\ln P_{c,t-1} \times Z_{i,c} \times \mathbb{I}[2001\text{--}2005]$ & 0,3541*** & 0,3999 & 0,3392** & 0,4234*** & 0,3667 & 0,4499*** \\
  & (0,1353) & (0,2463) & (0,1634) & (0,1206) & (0,3285) & (0,1337) \\
 $\ln P_{c,t-1} \times Z_{i,c} \times \mathbb{I}[2006\text{--}2011]$ & 0,0108 & -0,0643** & 0,0523** & 0,0198 & -0,1143 & 0,0553* \\
@@ -19,10 +20,27 @@ $\ln P_{c,t-1} \times Z_{i,c} \times \mathbb{I}[2012\text{--}2024]$ & 0,0120 & 0
  & (0,0111) & (0,0153) & (0,0149) & (0,0077) & (0,0302) & (0,0074) \\
 Precipitação ($R_{it}$) & -0,0138** & -0,0231** & -0,0039 & -0,0161** & -0,0239** & -0,0076 \\
  & (0,0062) & (0,0104) & (0,0057) & (0,0067) & (0,0107) & (0,0073) \\
+Observações (Painel A) & 2.767 & 1.303 & 1.412 & 2.767 & 1.303 & 1.412 \\
+$R^2$ total (Painel A) & 0,3856 & 0,3763 & 0,3956 & 0,3835 & 0,3709 & 0,4056 \\
+$R^2$ \textit{within} (Painel A) & 0,0242 & 0,0194 & 0,0541 & 0,0209 & 0,0109 & 0,0697 \\
 \hline
-Observações & 2.767 & 1.303 & 1.412 & 2.767 & 1.303 & 1.412 \\
-$R^2$ total & 0,3856 & 0,3763 & 0,3956 & 0,3835 & 0,3709 & 0,4056 \\
-$R^2$ \textit{within} & 0,0242 & 0,0194 & 0,0541 & 0,0209 & 0,0109 & 0,0697 \\
+\multicolumn{7}{l}{\textit{Painel B: Especificação irrestrita (com $Z_{i,c} \times \text{regime}$ e preços centrados no regime)}} \\
+$\ln P_{c,t-1} \times Z_{i,c} \times \mathbb{I}[2001\text{--}2005]$ & 0,0507 & 0,1438 & 0,0229 & -0,5782** & 0,0324 & -0,6983** \\
+ & (0,1146) & (0,1423) & (0,1661) & (0,2639) & (0,8535) & (0,2688) \\
+$\ln P_{c,t-1} \times Z_{i,c} \times \mathbb{I}[2006\text{--}2011]$ & 0,0091 & -0,0704** & 0,0569** & 0,0195 & -0,1135 & 0,0531* \\
+ & (0,0224) & (0,0334) & (0,0258) & (0,0259) & (0,0709) & (0,0290) \\
+$\ln P_{c,t-1} \times Z_{i,c} \times \mathbb{I}[2012\text{--}2024]$ & -0,0061 & 0,0030 & -0,0247 & -0,0123 & -0,0187 & -0,0146 \\
+ & (0,0118) & (0,0139) & (0,0163) & (0,0084) & (0,0281) & (0,0093) \\
+$Z_{i,c} \times \mathbb{I}[2006\text{--}2011]$ & 0,1266*** & 0,1406 & 0,1155** & 0,1427*** & 0,1224 & 0,1489*** \\
+ & (0,0478) & (0,0912) & (0,0557) & (0,0403) & (0,1221) & (0,0437) \\
+$Z_{i,c} \times \mathbb{I}[2012\text{--}2024]$ & 0,1313*** & 0,1367 & 0,1319** & 0,1481*** & 0,1164 & 0,1608*** \\
+ & (0,0474) & (0,0860) & (0,0565) & (0,0416) & (0,1148) & (0,0461) \\
+Precipitação ($R_{it}$) & -0,0137** & -0,0227** & -0,0034 & -0,0165** & -0,0238** & -0,0087 \\
+ & (0,0062) & (0,0104) & (0,0057) & (0,0067) & (0,0108) & (0,0072) \\
+\hline
+Observações (Painel B) & 2.767 & 1.303 & 1.412 & 2.767 & 1.303 & 1.412 \\
+$R^2$ total (Painel B) & 0,3880 & 0,3772 & 0,4047 & 0,3861 & 0,3710 & 0,4191 \\
+$R^2$ \textit{within} (Painel B) & 0,0281 & 0,0208 & 0,0683 & 0,0250 & 0,0110 & 0,0908 \\
 \hline
 \end{tabular}
 \par\smallskip\begin{minipage}{\textwidth}\footnotesize
