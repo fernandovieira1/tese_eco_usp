@@ -1,12 +1,12 @@
 # Nova Figura 6 (Simoes et al., 2020) — Mato Grosso: 2001 vs. 2024
 
-Este diretório (`2_INTI/chapters/chap1/stats/descritiva/simoes2020/fernando/`) contém o script completo em R, os rasters reprojetados e reclassificados, as tabelas de áreas e as figuras finais (PDF e PNG) que atualizam a **Figura 6 de Simoes et al. (2020)** (*Scientific Data*, 7, 34) para o intervalo **2001 vs. 2024**.
+Este diretório (`2_INTI/chapters/chap1/stats/1. DESCRITIVA/simoes2020/fernando/`) contém o script completo em R, os rasters reprojetados e reclassificados, as tabelas de áreas e as figuras finais (PDF e PNG) que atualizam a **Figura 6 de Simoes et al. (2020)** (*Scientific Data*, 7, 34) para o intervalo **2001 vs. 2024**.
 
 ---
 
 ## 1. Aquisição de Dados via Google Earth Engine (`rgee`)
 
-O script [`gerar_fig6_2001_2024.R`](file:///c:/Users/ferna/Documents/dev/Tese%20USP/tese_eco_usp/2_INTI/chapters/chap1/stats/descritiva/simoes2020/fernando/gerar_fig6_2001_2024.R) conecta-se diretamente ao Google Earth Engine (via `rgee` / `reticulate`) utilizando as credenciais locais autenticadas e consulta a coleção oficial consolidada mais recente do **MapBiomas Brasil (Coleção 10.1)**, que cobre o período **1985–2024**:
+O script [`gerar_fig6_2001_2024.R`](file:///c:/Users/ferna/Documents/dev/Tese%20USP/tese_eco_usp/2_INTI/chapters/chap1/stats/1. DESCRITIVA/simoes2020/fernando/gerar_fig6_2001_2024.R) conecta-se diretamente ao Google Earth Engine (via `rgee` / `reticulate`) utilizando as credenciais locais autenticadas e consulta a coleção oficial consolidada mais recente do **MapBiomas Brasil (Coleção 10.1)**, que cobre o período **1985–2024**:
 
 1. **Cobertura e Uso da Terra (Coleção 10.1, 1985–2024):**
    - Asset GEE: `projects/mapbiomas-public/assets/brazil/lulc/collection10_1/mapbiomas_brazil_collection10_1_coverage_v1`
@@ -47,9 +47,17 @@ As 13 classes originais da legenda de Simoes et al. (2020) (e todos os códigos 
 
 ## 4. Como Executar
 
+Os produtos já utilizados no artigo permanecem em `outputs/` e os rasters
+de referência em `data/`. O script preparado para a readequação grava figuras,
+tabelas e rasters reclassificados em
+`2_INTI/audit/readequacao_artigo1_20261112/saidas/mapa_fig6/`, sem copiar a figura
+nova sobre a versão publicada. O cache dos rasters de origem continua sendo lido
+de `data/`. A preparação da etapa 1 não executa downloads ou reprocessamento
+geoespacial; a execução completa pode precisar de acesso ao GEE/geobr se faltar cache.
+
 A partir da raiz do repositório:
 
 ```powershell
-& "C:\Program Files\R\R-4.6.1\bin\Rscript.exe" "2_INTI\chapters\chap1\stats\descritiva\simoes2020\fernando\gerar_fig6_2001_2024.R"
+& "C:\Program Files\R\R-4.6.2\bin\Rscript.exe" "2_INTI\chapters\chap1\stats\1. DESCRITIVA\simoes2020\fernando\gerar_fig6_2001_2024.R"
 ```
 

@@ -26,10 +26,13 @@ município. Elas não isolam a conversão ocorrida dentro dos polígonos de cada
 **Antes de executar:** mantenha as bases na estrutura original do projeto e
 execute os blocos em ordem. O roteiro procura a pasta `2_INTI` a partir do
 arquivo ou do diretório de trabalho. Se necessário, informe `raiz_projeto`
-no bloco de configuração. A exportação começa ativada (`exportar <- TRUE`):
-figuras em `stats/figuras`, tabelas em `stats/tabelas` e CSVs/bases em `stats/dados`.
-Use `exportar <- FALSE` para explorar sem gravar. O botão **Knit** gera o HTML. Antes da primeira execução com oferta, execute
-`python 2_INTI/chapters/chap1/stats/descritiva/obter_oferta_h1.py` da raiz.
+no bloco de configuração. A exportação começa desativada (`exportar <- FALSE`).
+Ao ativá-la, figuras, tabelas e dados derivados serão gravados em
+`2_INTI/audit/readequacao_artigo1_20261112/saidas/descritiva_v3`,
+preservando os produtos atualmente utilizados no artigo.
+O botão **Knit** gera o HTML. As fontes de oferta já estão disponíveis localmente;
+o script de aquisição fica em `stats/1. DESCRITIVA/fernando_h1/obter_oferta_h1.py`
+e não precisa ser executado para reutilizá-las.
 O R lê as fontes locais sem acessar a rede. Variação percentual exige valor
 positivo no ano anterior; ausências não são convertidas em zero.
 
@@ -77,7 +80,7 @@ A configuração de idioma do sistema não precisa ser alterada.
 
 ```{r configuracao}
 raiz_projeto <- ""       # Vazio: localizar a raiz automaticamente.
-exportar <- TRUE         # FALSE: apenas explorar, sem gravar os resultados.
+exportar <- FALSE        # TRUE: gravar somente no destino separado abaixo.
 abrir_tabelas <- FALSE   # TRUE: abrir as tabelas no visualizador do RStudio/VS Code.
 linhas_previa <- 12L     # Altera apenas a exibição, nunca os cálculos.
 anos_esperados <- 2001:2024
@@ -117,9 +120,9 @@ localizar_projeto <- function() {
 if (!nzchar(raiz_projeto)) raiz_projeto <- localizar_projeto()
 raiz_projeto <- normalizePath(raiz_projeto, winslash = "/", mustWork = TRUE)
 
-pasta_base <- file.path(raiz_projeto, "2_INTI/chapters/chap1/stats/descritiva")
-pasta_saida <- file.path(raiz_projeto, "2_INTI/chapters/chap1/stats")
-pasta_auditoria <- file.path(raiz_projeto, "2_INTI/audit/descritiva_chap1_20261020/v3")
+pasta_base <- file.path(raiz_projeto, "2_INTI/chapters/chap1/stats/1. DESCRITIVA/fernando_h1")
+pasta_saida <- file.path(raiz_projeto, "2_INTI/audit/readequacao_artigo1_20261112/saidas/descritiva_v3")
+pasta_auditoria <- file.path(pasta_saida, "auditoria")
 
 # Aceita os nomes sem extensão do original e as versões com extensão .parquet.
 arquivo_parquet <- function(nome) {
@@ -136,7 +139,7 @@ caminhos <- c(
   dados = arquivo_parquet("df_h1"),
   proveniencia = arquivo_parquet("df_h1_proveniencia"),
   painel = file.path(raiz_projeto,
-    "2_INTI/chapters/chap1/stats/EDA/paineis/painel_tese_chap1_pt.csv"),
+    "2_INTI/chapters/chap1/stats/0. PRELIMINARES/EDA/paineis/painel_tese_chap1_pt.csv"),
   canonico = file.path(raiz_projeto,
     "2_INTI/xdata/chap1/processed/harmonizacao/painel_notebook/paineis/painel_tese_chap1_pt.csv"),
   dicionario = file.path(raiz_projeto,

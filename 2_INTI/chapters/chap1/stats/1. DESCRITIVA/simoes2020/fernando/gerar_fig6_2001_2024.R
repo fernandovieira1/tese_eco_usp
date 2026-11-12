@@ -2,7 +2,7 @@
 # ==============================================================================
 # Script: gerar_fig6_2001_2024.R
 # Projeto: Tese de Doutorado — Fernando Souza de Vieira (FEA/USP)
-# Diretório: 2_INTI/chapters/chap1/stats/descritiva/simoes2020/fernando/
+# Diretório: 2_INTI/chapters/chap1/stats/1. DESCRITIVA/simoes2020/fernando/
 #
 # Objetivo:
 #   Gerar uma nova versão atualizada da Figura 6 de Simoes et al. (2020)
@@ -56,7 +56,7 @@ get_script_dir <- function() {
     return(dirname(normalizePath(sub("^--file=", "", file_arg[1]), winslash = "/")))
   }
   normalizePath(
-    "2_INTI/chapters/chap1/stats/descritiva/simoes2020/fernando",
+    "2_INTI/chapters/chap1/stats/1. DESCRITIVA/simoes2020/fernando",
     winslash = "/",
     mustWork = FALSE
   )
@@ -64,7 +64,8 @@ get_script_dir <- function() {
 
 BASE_DIR <- get_script_dir()
 DATA_DIR <- file.path(BASE_DIR, "data")
-OUT_DIR  <- file.path(BASE_DIR, "outputs")
+OUT_DIR  <- normalizePath(file.path(BASE_DIR, "../../../../../../audit/readequacao_artigo1_20261112/saidas/mapa_fig6"),
+                           winslash = "/", mustWork = FALSE)
 
 for (d in c(BASE_DIR, DATA_DIR, OUT_DIR)) {
   if (!dir.exists(d)) dir.create(d, recursive = TRUE, showWarnings = FALSE)
@@ -90,7 +91,7 @@ options(timeout = 600)
 init_gee_session <- function(gee_project = Sys.getenv("GEE_PROJECT", unset = "grand-icon-237222")) {
   # Localiza automaticamente o ambiente Python `.venv` do repositório caso exista
   repo_root_candidates <- c(
-    normalizePath(file.path(BASE_DIR, "../../../../../.."), winslash = "/", mustWork = FALSE),
+    normalizePath(file.path(BASE_DIR, "../../../../../../.."), winslash = "/", mustWork = FALSE),
     normalizePath(getwd(), winslash = "/", mustWork = FALSE)
   )
   for (cand in repo_root_candidates) {
@@ -532,8 +533,8 @@ reclassify_lulc <- function(r_in, mt_sf, out_tif) {
   terra::rast(out_tif)
 }
 
-tif_reclass_2001  <- file.path(DATA_DIR, "mt_reclass_2001_sirgas2000.tif")
-tif_reclass_final <- file.path(DATA_DIR, sprintf("mt_reclass_%d_sirgas2000.tif", FINAL_YEAR_USED))
+tif_reclass_2001  <- file.path(OUT_DIR, "mt_reclass_2001_sirgas2000.tif")
+tif_reclass_final <- file.path(OUT_DIR, sprintf("mt_reclass_%d_sirgas2000.tif", FINAL_YEAR_USED))
 
 r_2001_pt  <- reclassify_lulc(r_raw_2001,  mt_state, tif_reclass_2001)
 r_final_pt <- reclassify_lulc(r_raw_final, mt_state, tif_reclass_final)
@@ -752,22 +753,18 @@ p_fig6 <- ggplot() +
     plot.margin      = margin(t = 8, r = 10, b = 8, l = 10)
   )
 
-# Salva nos diretórios `fernando/outputs/` e `fernando/` (raiz do projeto solicitado)
+# Preserva a figura publicada; exporta somente para o destino de readequacao.
 pdf_out_1 <- file.path(OUT_DIR,  sprintf("fig6_uso_solo_mt_2001_%d.pdf", FINAL_YEAR_USED))
 png_out_1 <- file.path(OUT_DIR,  sprintf("fig6_uso_solo_mt_2001_%d.png", FINAL_YEAR_USED))
-pdf_out_2 <- file.path(BASE_DIR, sprintf("fig6_uso_solo_mt_2001_%d.pdf", FINAL_YEAR_USED))
-png_out_2 <- file.path(BASE_DIR, sprintf("fig6_uso_solo_mt_2001_%d.png", FINAL_YEAR_USED))
 
 ggsave(pdf_out_1, plot = p_fig6, width = 12.5, height = 6.8, units = "in", device = "pdf")
 ggsave(png_out_1, plot = p_fig6, width = 12.5, height = 6.8, units = "in", dpi = 300, bg = "white")
 
-file.copy(pdf_out_1, pdf_out_2, overwrite = TRUE)
-file.copy(png_out_1, png_out_2, overwrite = TRUE)
 
 cat("======================================================================\n")
 cat("  CONCLUÍDO COM SUCESSO!\n")
-cat("  -> Figura PDF:", pdf_out_2, "\n")
-cat("  -> Figura PNG:", png_out_2, "\n")
+cat("  -> Figura PDF:", pdf_out_1, "\n")
+cat("  -> Figura PNG:", png_out_1, "\n")
 cat("  -> Tabela CSV:", file.path(OUT_DIR, sprintf("tabela_areas_reclassificadas_2001_%d.csv", FINAL_YEAR_USED)), "\n")
 cat("======================================================================\n")
 

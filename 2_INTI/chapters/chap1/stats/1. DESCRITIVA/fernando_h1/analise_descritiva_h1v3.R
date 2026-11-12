@@ -50,7 +50,7 @@ knitr::opts_chunk$set(
 
 # configuracao --------------------------------------------------
 raiz_projeto <- ""       # Vazio: localizar a raiz automaticamente.
-exportar <- TRUE         # FALSE: apenas explorar, sem gravar os resultados.
+exportar <- FALSE        # TRUE: gravar somente no destino separado abaixo.
 abrir_tabelas <- FALSE   # TRUE: abrir as tabelas no visualizador do RStudio/VS Code.
 linhas_previa <- 12L     # Altera apenas a exibição, nunca os cálculos.
 anos_esperados <- 2001:2024
@@ -90,9 +90,9 @@ localizar_projeto <- function() {
 if (!nzchar(raiz_projeto)) raiz_projeto <- localizar_projeto()
 raiz_projeto <- normalizePath(raiz_projeto, winslash = "/", mustWork = TRUE)
 
-pasta_base <- file.path(raiz_projeto, "2_INTI/chapters/chap1/stats/descritiva")
-pasta_saida <- file.path(raiz_projeto, "2_INTI/chapters/chap1/stats")
-pasta_auditoria <- file.path(raiz_projeto, "2_INTI/audit/descritiva_chap1_20261020/v3")
+pasta_base <- file.path(raiz_projeto, "2_INTI/chapters/chap1/stats/1. DESCRITIVA/fernando_h1")
+pasta_saida <- file.path(raiz_projeto, "2_INTI/audit/readequacao_artigo1_20261112/saidas/descritiva_v3")
+pasta_auditoria <- file.path(pasta_saida, "auditoria")
 
 # Aceita os nomes sem extensão do original e as versões com extensão .parquet.
 arquivo_parquet <- function(nome) {
@@ -109,7 +109,7 @@ caminhos <- c(
   dados = arquivo_parquet("df_h1"),
   proveniencia = arquivo_parquet("df_h1_proveniencia"),
   painel = file.path(raiz_projeto,
-    "2_INTI/chapters/chap1/stats/EDA/paineis/painel_tese_chap1_pt.csv"),
+    "2_INTI/chapters/chap1/stats/0. PRELIMINARES/EDA/paineis/painel_tese_chap1_pt.csv"),
   canonico = file.path(raiz_projeto,
     "2_INTI/xdata/chap1/processed/harmonizacao/painel_notebook/paineis/painel_tese_chap1_pt.csv"),
   dicionario = file.path(raiz_projeto,

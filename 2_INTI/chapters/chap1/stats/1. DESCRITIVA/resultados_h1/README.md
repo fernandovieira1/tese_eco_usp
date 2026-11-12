@@ -1,24 +1,32 @@
 # Descritiva do artigo 1
 
-Executar **da raiz do repositório**, em R:
+Esta pasta preserva os resultados da descritiva já incorporados ao artigo.
+Para a readequação, o gerador selecionado é a versão v3 em `fernando_h1`.
+Executar **da raiz do repositório**, em PowerShell, quando for a etapa de análise:
 
 ```powershell
-Rscript --vanilla 2_INTI/chapters/chap1/stats/descritiva/analise_descritiva_h1.R
+& "C:\Program Files\R\R-4.6.2\bin\Rscript.exe" --vanilla "2_INTI/chapters/chap1/stats/1. DESCRITIVA/fernando_h1/analise_descritiva_h1v3.R"
 ```
 
-O script usa arrow, dplyr, tidyr, ggplot2, readr e jsonlite já disponíveis no ambiente. As versões estão em `dependencias.txt`; `sessionInfo()` está em `2_INTI/audit/descritiva_chap1_20261020/sessionInfo.txt`. Não instala pacotes, não usa rede nem procedimentos aleatórios. O PDF vetorial usa o dispositivo nativo do R com codificação latina e sem fontes Dingbats; os PNG têm 320 dpi.
+O v3 inicia com `exportar <- FALSE`. Quando ativada, a exportação usa
+`2_INTI/audit/readequacao_artigo1_20261112/saidas/descritiva_v3`, com subpastas
+`dados`, `figuras`, `tabelas` e `auditoria`. A publicação dos produtos no artigo
+é uma ação posterior à sua validação. As versões anteriores são referências
+históricas e não fazem parte deste comando de execução.
+
+O script usa arrow, dplyr, tidyr, ggplot2, readr, jsonlite e knitr. As versões da geração original estão em `dependencias.txt`; `sessionInfo()` original está em `2_INTI/audit/descritiva_chap1_20261020/sessionInfo.txt`. Não instala pacotes, não usa rede nem procedimentos aleatórios. O PDF vetorial usa o dispositivo nativo do R com codificação latina e sem fontes Dingbats; os PNG têm 320 dpi.
 
 ## Entradas e salvaguardas
 
-- `../df_h1` e `../df_h1_proveniencia`: arquivos Parquet sem extensão; preservados.
-- Painel identificado: `2_INTI/chapters/chap1/stats/EDA/paineis/painel_tese_chap1_pt.csv`, conferido contra a cópia canônica em `2_INTI/xdata/chap1/processed/harmonizacao/painel_notebook/paineis/`.
+- `../fernando_h1/df_h1` e `../fernando_h1/df_h1_proveniencia`: arquivos Parquet sem extensão; preservados.
+- Painel identificado: `2_INTI/chapters/chap1/stats/0. PRELIMINARES/EDA/paineis/painel_tese_chap1_pt.csv`, conferido contra a fonte canônica em `2_INTI/xdata/chap1/processed/harmonizacao/painel_notebook/paineis/`.
 - Dicionário e cadastro municipal em `2_INTI/xdata/chap1/processed/`.
 
 A exportação original descartou as chaves do MultiIndex. A recuperação exige igualdade das máscaras de ausência e dos valores das 176 colunas com o painel identificado ordenado por município e ano. O script interrompe se essa correspondência falhar. Diferenças de serialização numérica são toleradas até `1e-12` na comparação; valores analíticos vêm do Parquet.
 
 Este fluxo reproduz os resultados a partir dos insumos locais fornecidos; não refaz downloads e extrações geoespaciais anteriores. A linhagem dessas etapas está documentada no dicionário e no relatório técnico.
 
-## Produtos
+## Produtos preservados nesta pasta
 
 - `dados/df_h1_selecionado.{rds,parquet,csv}`: 15 variáveis analíticas e quatro identificadores; nenhuma linha excluída.
 - `dicionario_variaveis.csv`: definições, unidades, fórmulas, fontes, evidências, cobertura e justificativas.
@@ -43,4 +51,7 @@ Pop-Location
 
 O auditor genérico exclui `stats` e PDFs da cópia temporária usada por sua compilação. Por isso, neste fluxo a auditoria estática e a compilação direta são etapas separadas; executar o auditor sem `--skip-compile` não reproduz a integração dos ativos desta seção. A compilação direta mantém os caminhos reais e grava PDF, logs e auxiliares na auditoria.
 
-Os scripts regeneram somente os produtos desta pasta e os diagnósticos dedicados. Não modificam os dados originais, o notebook de origem, a introdução ou a revisão de literatura. O texto da seção é editado manualmente; os números são macros geradas pelo script.
+O v3 preparado para a readequação grava os novos produtos somente no destino separado descrito acima. Não modifica os dados originais, o notebook de origem, a introdução ou a revisão de literatura. O texto da seção é editado manualmente; os números são macros geradas pelo script.
+
+O manifesto de referência, o mapa de execução e as verificações da preparação
+estão em `2_INTI/audit/readequacao_artigo1_20261112/etapa1/`.
