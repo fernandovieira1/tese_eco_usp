@@ -8,12 +8,13 @@
 # !2_INTI/chapters/chap1/stats/modelos
 
 # Materiais auxiliares locais
-2_INTI/audit/
-2_INTI/auxiliary/
-2_INTI/xlegado/
-2_INTI/tests/
-2_INTI/thread/
+2_INTI/audit
+2_INTI/auxiliary
+2_INTI/xlegado
+2_INTI/tests
+2_INTI/thread
 2_INTI/reports
+2_INTI/chapters/chap1/jem
 
 # Python
 __pycache__/

@@ -1,104 +1,44 @@
-\documentclass[a4paper,12pt,twoside,openany,brazil]{abntex2}
+% !TeX program = xelatex
+% !BIB program = bibtex
 
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[brazil]{babel}
-\usepackage{geometry}
-\usepackage{lmodern}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{setspace}
-\usepackage{hyperref}
-\usepackage{xcolor}
-\usepackage{graphicx}
-\usepackage{placeins}
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Arial}
+\usepackage[english,brazil]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{setspace,graphicx,float,array}
+\usepackage[unicode,hidelinks]{hyperref}
 \usepackage[alf,no-abnt-option-file]{abntex2cite}
-% Configuração local das citações; referências restritas às obras citadas.
 \citeoption{config-citacoes-abnt}
+\hypersetup{pdfauthor={},pdfcreator={},pdfsubject={},pdfkeywords={}}
+\usepackage{titlesec}
 
-% Gráficos têm numeração própria, independente de figuras e tabelas.
-\newfloat{grafico}{logr}{Gráfico}
-\AddToHook{env/grafico/begin}{\normalcaption\captionstyle{\centering}}
-
-\geometry{
-    top=3cm,
-    bottom=2cm,
-    left=3cm,
-    right=2cm
-}
-
-\setlength{\parindent}{1.25cm}
+\titleformat{\section}{\normalfont\normalsize\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{14pt}{8pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+\setlength{\parindent}{1.50cm}
 \setlength{\parskip}{0pt}
-\OnehalfSpacing
+\setlength{\tabcolsep}{2pt}
+\setlength{\emergencystretch}{1em}
+\singlespacing
 \raggedbottom
 
-% Citações indiretas: \cite{chave} ou \citeonline{chave}.
-% Citações diretas curtas: ``trecho'' com \cite[p.~45]{chave},
-% ou \citeonline[p.~45]{chave} antes do trecho entre aspas.
-% Citações diretas com mais de três linhas: ambiente citacao, sem aspas,
-% com autoria, ano e página. O espaço externo acompanha uma linha do corpo.
-\setlength{\ABNTEXcitacaorecuo}{4cm}
-\newlength{\espacocitacao}
-\setlength{\espacocitacao}{\baselineskip}
-\renewenvironment{citacao}{%
-    \par\addvspace{\espacocitacao}%
-    \begin{list}{}{%
-        \setlength{\leftmargin}{\ABNTEXcitacaorecuo}%
-        \setlength{\rightmargin}{0pt}%
-        \setlength{\listparindent}{0pt}%
-        \setlength{\itemindent}{0pt}%
-        \setlength{\topsep}{0pt}%
-        \setlength{\partopsep}{0pt}%
-        \setlength{\parsep}{0pt}%
-        \setlength{\itemsep}{0pt}%
-    }%
-    \item\relax
-    \SingleSpacing\fontsize{10}{12}\selectfont
-}{%
-    \end{list}%
-    \par\addvspace{\espacocitacao}%
-}
-
-% Numeração das seções sem o prefixo do capítulo
-\renewcommand{\thesection}{\arabic{section}}
-\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
-\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
-% O ponto pertence ao título da seção, não ao número recuperado por \ref.
-\setsecnumformat{\csname the#1\endcsname\ifstrequal{#1}{section}{.}{}\quad}
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=black,
-    citecolor=black,
-    urlcolor=black,
-    pdftitle={Incentivos de Mercado, Condicionamento Institucional e Heterogeneidade Territorial na Conversão da Vegetação Nativa em Mato Grosso (2001-2024)},
-    pdfauthor={Fernando Souza da Vieira}
-}
+\newcommand{\normalcaption}{}
+\newcommand{\captionstyle}[1]{}
+\renewcommand{\figurename}{Figura}
 
 \begin{document}
 \pagestyle{plain}
-\aliaspagestyle{chapter}{plain}
-
-\begin{center}
-    {\Large \bfseries Incentivos de Mercado, Condicionamento Institucional e Heterogeneidade Territorial na Conversão da Vegetação Nativa em Mato Grosso (2001-2024) \textit{(WORKING PAPER)}}\par\vspace{0.8cm}
-    Fernando Souza da Vieira
-\end{center}
-
-\vspace{0.8cm}
-
-\noindent\textbf{Resumo}
-
 \input{_abstract}
+\newpage
 \input{0_introduction}
 \input{1_literature_review}
 \input{2_mt_descriptive}
 \input{3_econometrics_strategy}
 \input{4_discussion}
 \input{5_Final_Remarks}
-
 \bibliographystyle{abntex2-alf}
 \bibliography{citation-options,library}
-
-\input{6_appendix}
-
 \end{document}
