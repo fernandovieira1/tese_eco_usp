@@ -1,0 +1,110 @@
+\clearpage
+\appendix
+\setcounter{section}{0}
+\renewcommand{\thesection}{\Alph{section}}
+\renewcommand{\thesubsection}{\Alph{section}.\arabic{subsection}}
+\setcounter{table}{0}
+\renewcommand{\thetable}{A\arabic{table}}
+\setcounter{equation}{0}
+\renewcommand{\theequation}{A\arabic{equation}}
+\section{Especificações e resultados complementares}
+\label{ap:complementos}
+
+\subsection{Ocorrência, mensuração e amostras comuns}
+
+A Tabela~\ref{tab:h1-ocorrencia-etapa9} apresenta a versão D20, que substitui a intensidade pela ocorrência de déficit de pelo menos 20\%. A diferença entre os grupos com e sem ocorrência é medida por $pD20$, mantidos capacidade, tendência, chuva e efeitos fixos. As amostras são as de B: 1.459 pares de soja e 2.376 de milho. Os intervalos são individuais; D20 é complementar e não integra o ajuste das duas culturas para a intensidade contínua. Na família principal de H1a, ajustam-se os dois coeficientes $pZ$ de B; na de H1b, os dois coeficientes $pL$ de B.
+
+\input{../stats/tabelas/tab_h1_ocorrencia_etapa9}
+\FloatBarrier
+
+As Tabelas~\ref{tab:h1-sens-soja} e~\ref{tab:h1-sens-milho} mantêm as dezesseis alternativas da família H1b de cada cultura. $p_H$ designa o p-valor ajustado por Holm, calculado separadamente para cada procedimento. Os intervalos de cluster duplo são individuais e não incorporam o ajuste simultâneo. As medidas contínuas usam uma unidade de perda, enquanto D10 e D30 comparam a presença com a ausência do evento; seus coeficientes não têm a mesma escala econômica. O desvio assinado preserva desempenhos acima da referência como valores negativos.
+
+Na mediana 10/7, a referência é a mediana de até dez anos anteriores, com mínimo de sete. As tendências 5/4 e 15/11 usam, respectivamente, cinco e quinze anos, com mínimos de quatro e onze. A versão por área colhida altera o denominador tanto no desempenho observado quanto na referência 10/7. As cinco primeiras linhas usam a interseção efetiva de cada alternativa com B. Por isso, a comparação de coeficientes da Tabela~\ref{tab:h1-pontes} reestima também a fórmula de referência nessas mesmas chaves. A coluna de amostra própria informa a cobertura da alternativa antes dessa interseção, após os efeitos fixos.
+
+\input{../stats/tabelas/tab_h1_sens_soja_etapa9}
+\FloatBarrier
+\input{../stats/tabelas/tab_h1_sens_milho_etapa9}
+\FloatBarrier
+\input{../stats/tabelas/tab_h1_pontes_etapa9}
+\FloatBarrier
+
+As anomalias de chuva são calculadas por mês contra 1981--2000 e somadas em centenas de milímetros. Para a safra $s=t-2$, a janela da soja cobre setembro de $s-1$ a abril de $s$, e a do milho, outubro de $s-1$ a agosto de $s$. São aproximações comuns, não calendários municipais observados. ``Clima do ciclo'' acrescenta essa soma à chuva anual em $t$; ``ciclo + partes de $t$'' substitui a chuva anual pelas somas de maio a setembro e dos demais meses de $t$, mantendo a chuva do ciclo. A segunda janela mais ampla do milho não separa suas safras. Na alternativa de preço futuro, o log-preço de $t+1$ substitui o defasado em $pZ$ e $pL$; como não há 2025 na série de preços integrada, a comparação termina em 2023.
+
+\subsection{Regimes e precisão dos contrastes}
+
+A Tabela~\ref{tab:h1-regimes-etapa9} apresenta $\beta$ e $\delta$ da Equação~\eqref{eq:modelo-regimes}, juntamente com dois testes conjuntos de H1b. O ajuste de Holm reúne os dois testes de cada cultura e inferência. Os intervalos dos coeficientes por regime não recebem esse ajuste e devem ser lidos como individuais. As matrizes de cluster duplo dos dois modelos tiveram autovalores negativos corrigidos.
+
+\input{../stats/tabelas/tab_h1_regimes_etapa9}
+\FloatBarrier
+
+Os regimes iniciais da soja contêm 148 e 281 pares, com cinco e vinte eventos D20; o terceiro contém 1.030 pares e dezesseis eventos. No milho, os valores são 351, 567 e 1.458 pares, com trinta, 86 e 166 eventos. Assim, os coeficientes de cada período não dispõem do mesmo suporte produtivo e temporal. Um diagnóstico adicional das bandas HAC de zero a quatro, realizado após a bateria registrada, preservou a rejeição bruta dos dois testes da soja em todas as bandas. No milho, a banda zero não rejeitou nenhum deles e a banda um produziu resultados distintos entre os testes; as bandas de dois a quatro rejeitaram ambos. Não se selecionou uma banda para obter rejeição nem se modificou a inferência principal.
+
+A Tabela~\ref{tab:h1-inferencia-extra} mantém os coeficientes e a amostra de B, alterando somente a covariância. O agrupamento por microrregião admite dependência entre municípios da mesma região histórica, mas não contempla automaticamente correlação entre regiões. Os procedimentos com um agrupamento usam graus de liberdade iguais ao número de grupos menos um; o duplo utiliza o menor dos dois números menos um. O HAC usa 23 graus de liberdade, pesos Bartlett, sem prewhitening ou ajuste finito adicional. A matriz microrregião+ano da soja também exigiu correção de autovalores negativos. As correções dos clusters seguem o ajuste finito com efeitos fixos não aninhados e o menor número de grupos na correção conjunta.
+
+\input{../stats/tabelas/tab_h1_inferencia_extra_etapa9}
+\FloatBarrier
+
+O \textit{wild bootstrap} impõe separadamente a nulidade de $pZ$ e $pL$, conserva as regressoras e multiplica os resíduos restritos pelo mesmo peso Rademacher para todas as observações de cada ano. Empregam-se 999 réplicas e estatística t com cluster anual; a tabela apresenta p-valores brutos. A independência entre grupos anuais é uma condição desse exercício, que não corrige conjuntamente toda dependência serial, espacial e incerteza da referência produtiva. Nas perturbações da referência, os pesos são comuns em blocos de três anos históricos, ancorados em 1988, e o desempenho observado da safra é preservado. Os quantis discutidos no corpo correspondem às 499 réplicas válidas de cada cultura, condicionais a essa regra e à amostra de B.
+
+\subsection{Extensões de capacidade, preços e culturas}
+
+Na Tabela~\ref{tab:h1-extensoes-etapa9}, a família da tripla reúne seis testes: nulidade conjunta de $(\beta,\kappa)$, nulidade conjunta de $(\delta,\kappa)$ e nulidade de $\kappa$, para soja e milho. A família do preço relativo contém as duas restrições conjuntas, uma por cultura. A família do modelo com ambas as culturas contém dois testes: nulidade das duas exposições preço×capacidade e nulidade das duas exposições preço×perda. Holm é aplicado dentro de cada família e procedimento.
+
+\input{../stats/tabelas/tab_h1_extensoes_etapa9}
+\FloatBarrier
+
+A Tabela~\ref{tab:h1-cenarios-tripla} traduz os gradientes da tripla em pontos percentuais. H1a compara 1 DP adicional de capacidade para +10\% no preço, condicionando a perda; H1b compara +0,10 de perda para +10\% no preço, condicionando a capacidade. P10, P50 e P90 são quantis calculados nos pares observados de cada amostra, e os quantis positivos de perda excluem $L=0$. Os intervalos incorporam a covariância entre o coeficiente principal e a tripla. São cenários marginais, não estimativas de efeito médio para municípios com uma combinação conjunta garantida de características.
+
+\input{../stats/tabelas/tab_h1_cenarios_tripla_etapa9}
+\FloatBarrier
+
+Na Tabela~\ref{tab:h1-precos-etapa9}, $p$ representa o log-preço relativo à carne na primeira versão e o log-preço da cultura no modelo de preços separados; $p_b$ é o log-preço da carne. Os demais controles de B permanecem. A primeira versão impõe que os coeficientes de $p_bZ$ e $p_bL$ sejam os opostos dos coeficientes correspondentes da cultura, conforme o teste da tabela anterior. A unidade monetária e a normalização comuns não transformam nenhuma dessas medidas em margem líquida ou receita por hectare efetivamente convertida.
+
+\input{../stats/tabelas/tab_h1_precos_etapa9}
+\FloatBarrier
+
+A Tabela~\ref{tab:h1-conjunto-etapa9} utiliza 1.450 pares e 105 municípios nos três modelos. As regressões individuais preservam cada capacidade, perda e tendência próprias; a conjunta inclui as duas capacidades, perdas, interações e tendências. Os intervalos são de cluster duplo, com correção de autovalores negativos no modelo conjunto. Essa comparação separa a inclusão da outra cultura da mudança de amostra, mas não torna independentes os incentivos associados aos preços internacionais.
+
+\input{../stats/tabelas/tab_h1_conjunto_etapa9}
+\FloatBarrier
+
+\subsection{Interações territoriais e marcos institucionais}
+
+Defina-se $B_{it}$ como a parte explicada de B na Equação~\eqref{eq:modelo-principal}, incluindo controles e efeitos fixos, com coeficientes reestimados em cada extensão. Omitem-se os índices de cultura e município nos produtos abaixo. Para cada exposição fixa $q$ e indicador pós-marco $D$, a extensão de H1a é
+\begin{equation}
+\begin{aligned}
+Y^{\mathrm{agr}}={}&B+\rho_1pq+\rho_2pZq+\rho_3ZD+\rho_4pZD\\
+&+\rho_5qD+\rho_6pqD+\rho_7ZqD+\omega_a pZqD
++\rho_8q\tau+\varepsilon.
+\end{aligned}
+\label{eq:instituicoes-h1a}
+\end{equation}
+O contraste $\omega_a$ compara entre períodos o gradiente preço×capacidade ao variar a exposição. Os termos $p$, $Z$, $q$, $Zq$, $D$ e $pD$ são absorvidos pelos efeitos municipais ou bioma×ano. Todos os demais termos inferiores da interação estão presentes. A extensão de H1b substitui a heterogeneidade adicional de capacidade pela de perda:
+\begin{equation}
+\begin{aligned}
+Y^{\mathrm{agr}}={}&B+\nu_1Lq+\nu_2pq+\nu_3pLq+\nu_4LD\\
+&+\nu_5pLD+\nu_6qD+\nu_7pqD+\nu_8LqD
++\omega_b pLqD+\nu_9q\tau+\varepsilon.
+\end{aligned}
+\label{eq:instituicoes-h1b}
+\end{equation}
+Aqui, $L$ e $pL$ já pertencem a B; $p$, $q$, $D$ e $pD$ são absorvidos. O contraste $\omega_b$ compara a modificação preço×perda entre períodos e exposições. Cada equação é estimada separadamente por cultura e exposição; não se incluem as duas interações máximas no mesmo modelo.
+
+$q^M$ é a fração municipal no bioma Amazônia. $q^F$ soma formação florestal e floresta alagável (classes 3 e 6 do MapBiomas) em 2000 e divide pela área municipal total da malha, incluindo pixels sem classe no denominador. Não há renormalização para tornar a fração equivalente a cobertura válida ou obrigação legal. Os indicadores principais são $D=1$ desde 2007 para $q^M$ e desde 2013 para $q^F$; as alternativas começam em 2006 e 2012. As amostras de B permanecem fixas por cultura.
+
+As Tabelas~\ref{tab:h1-instituicoes-principal} e~\ref{tab:h1-instituicoes-alternativa} apresentam $\omega_a$ ou $\omega_b$ na escala original. Cada tabela constitui uma família de oito testes, com Holm separado por procedimento. Os intervalos são individuais e usam as matrizes de cluster duplo após correção de autovalores negativos nas dezesseis versões. Um incremento de 0,10 na fração territorial, +10\% no preço e 1 DP na capacidade corresponde a $0{,}10\ln(1{,}10)\omega_a$ p.p.; para +0,10 na perda, o contraste é $0{,}01\ln(1{,}10)\omega_b$ p.p. A diferença pré--pós dessas associações não identifica efeitos das políticas.
+
+\input{../stats/tabelas/tab_h1_instituicoes_principal_etapa9}
+\FloatBarrier
+\input{../stats/tabelas/tab_h1_instituicoes_alternativa_etapa9}
+\FloatBarrier
+
+\subsection{Antecedentes sobre tecnologia e ocupação}
+\label{ap:antecedentes}
+
+A Tabela~\ref{tab:h1-margens-tecnologia} preserva as comparações anteriores sem perdas. Nas colunas 1--6, a dependente é a conversão bruta para agricultura e a cultura é soja. A coluna 1 usa o potencial em baixo insumo; a 2, o índice de adequação; a 3, a média histórica do rendimento PAM em 1991--2000, na subamostra de 45 municípios com pelo menos sete anos de registro anterior e 1.016 pares de conversão. As colunas 4 e 5 usam, como $H_i$, a ocupação agrícola de 1985--2000 e a participação da soja em 2000; a 6 reúne potencial de alto insumo e ocupação agrícola. Na coluna 7, a dependente passa a ser a área de milho como proporção municipal, e não a conversão de vegetação. As medidas de exposição são padronizadas conforme a construção original.
+
+Os erros-padrão entre parênteses são agrupados por município. Os asteriscos preservados na tabela original representam 10\%, 5\% e 1\%, respectivamente, sem ajuste de multiplicidade. Os modelos incluem efeitos municipais, efeitos de bioma×ano, chuva e tendências por exposição. Essas estimativas qualificam a leitura de H1a, mas não incluem o contraste preço×perda de H1b. A ausência de associação positiva em baixo insumo, o sinal negativo da adequação e os sinais negativos da ocupação devem ser preservados, sem escolher a medida pelo resultado. Rendimento realizado e ocupação anterior não equivalem à capacidade potencial nem garantem exogeneidade, e a área total de milho não mede abertura de vegetação para a cultura.
+
+\input{../stats/tabelas/tab_h1_margens_tecnologia}
+\FloatBarrier
