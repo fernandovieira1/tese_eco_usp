@@ -1,0 +1,679 @@
+% !TEX program = pdflatex
+% Apresentação: Evolução da Pesquisa - Regressões com Efeitos Fixos e Interações (H1)
+% Disciplina: Tópicos em Microeconomia Aplicada
+% Autor: Fernando Souza de Vieira
+% Data: 16 de novembro de 2026
+\documentclass[aspectratio=169,10.5pt]{beamer}
+\usetheme{Madrid}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs,array,tabularx}
+\usepackage{amsmath,amsfonts,amssymb}
+
+% Paleta de cores oficial
+\definecolor{verde}{HTML}{24574D}
+\definecolor{azul}{HTML}{1769A5}
+\definecolor{grafite}{HTML}{253A40}
+\definecolor{cinza}{HTML}{7F8C8D}
+\definecolor{alerta}{HTML}{C0392B}
+
+\setbeamercolor{structure}{fg=verde}
+\setbeamercolor{title}{bg=verde,fg=white}
+\setbeamercolor{frametitle}{bg=verde,fg=white}
+\setbeamercolor{normal text}{fg=grafite}
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.84\paperwidth,ht=2.6ex,dp=1.1ex,leftskip=1em]{author in head/foot}%
+      Retornos, instituições e conversão da vegetação nativa: modelos com efeitos fixos%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.16\paperwidth,ht=2.6ex,dp=1.1ex,center]{date in head/foot}%
+      \insertframenumber\,/\,\inserttotalframenumber%
+    \end{beamercolorbox}%
+  }%
+}
+
+\setbeamersize{text margin left=7mm,text margin right=7mm}
+\setbeamertemplate{itemize items}[circle]
+\newcommand{\fonte}[1]{\par\vspace{1mm}{\fontsize{6.5}{7.5}\selectfont\color{gray}Fonte: #1\par}}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcommand{\est}[2]{\ensuremath{#1}\;{\color{gray}\fontsize{7}{8}\selectfont(#2)}}
+\renewcommand{\arraystretch}{1.08}
+
+\title[Efeitos Fixos e Interações de Mercado]{Retornos Econômicos, Instituições e Conversão da Vegetação Nativa em Mato Grosso}
+\subtitle{Evolução da pesquisa: modelos de efeitos fixos e interações de mercado}
+\author{Fernando Souza de Vieira}
+\institute{Tópicos em Microeconomia Aplicada}
+\date{16 de novembro de 2026}
+
+\begin{document}
+
+% ================================================
+% SLIDE 1: TÍTULO
+% ================================================
+\begin{frame}
+\titlepage
+\end{frame}
+%% COMENTÁRIO:
+% (1) Bom dia a todos. Hoje apresento a evolução da minha pesquisa sobre os determinantes econômicos e institucionais da conversão da vegetação nativa em Mato Grosso entre 2001 e 2024.
+% (2) Na apresentação anterior, de 27 de outubro, mostrei as regressões preliminares por Mínimos Quadrados Ordinários (OLS), discutindo seus resultados contra-intuitivos e suas limitações conceituais.
+% (3) Hoje trago o salto metodológico e empírico do Capítulo 1 consolidado: relembro primeiro a intuição, o problema e as hipóteses da pesquisa; explico intuitivamente o que foi testado e como os modelos de efeitos fixos resolvem os gargalos anteriores; e, por fim, interpreto os principais resultados sobre tecnologia, embargos ambientais, logística, regimes regulatórios e vazamento entre biomas.
+
+% ================================================
+% SLIDE 2: RELEMBRANDO A PESQUISA (INTUIÇÃO, PROBLEMA E HIPÓTESE)
+% ================================================
+\begin{frame}{Relembrando a pesquisa: intuição, problema e hipóteses}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{block}{Intuição Econômica e o Problema}
+\fontsize{7.8}{9.4}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{0.8mm}
+    \item \textbf{Dilema na fronteira:} conservar ou converter diante de duas forças contrapostas:
+    \begin{itemize}
+        \fontsize{7.2}{8.6}\selectfont
+        \item \textbf{Mercado ($\uparrow$):} altas nos preços internacionais elevam o ganho potencial, mais fortemente em solos férteis.
+        \item \textbf{Instituições ($\downarrow$):} fiscalização, embargos e acordos de cadeia elevam o custo e o risco da abertura.
+    \end{itemize}
+    \item \textbf{Laboratório (MT, 2001--2024):} líder nacional; combina \textbf{Amazônia} (RL 80\%), \textbf{Cerrado} (35\%) e \textbf{Pantanal} (20\%) sob três regimes regulatórios.
+    \item \textbf{Pergunta:} \textit{em que medida choques nos preços induzem a conversão bruta em terras mais aptas, e como a fiscalização condiciona essa resposta?}
+\end{itemize}
+\end{block}
+\end{column}
+
+\begin{column}{0.49\textwidth}
+\begin{block}{Hipótese Geral (H1) e Desdobramentos}
+\fontsize{7.8}{9.4}\selectfont
+\textbf{(H1)} Altas nos preços próprios aceleram a conversão bruta para os respectivos usos, sendo a resposta \textbf{amplificada} pela aptidão e \textbf{atenuada} pela fiscalização:
+\vspace{1mm}
+\begin{enumerate}
+    \setlength{\itemsep}{0.9mm}
+    \item \textbf{H1a (Mercado $\times$ Aptidão):} resposta aos preços é maior em solos com maior potencial produtivo predeterminado ($\beta > 0$).
+    \item \textbf{H1b (Freio Institucional):} fiscalização ambiental local atenua a sensibilidade aos preços ($\delta < 0$).
+    \item \textbf{Recortes:} confronto entre \textbf{lavouras vs.\ pastagens} ($>$90\% da abertura) e \textbf{Amazônia vs.\ Cerrado} (Moratória em 2006).
+\end{enumerate}
+\end{block}
+\end{column}
+\end{columns}
+% \fonte{Capítulo 1, Introdução (REF1--REF10) e Seção 3.1.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Antes de entrar nas novas regressões, vale relembrar rapidamente do que trata a pesquisa. Na fronteira agropecuária de Mato Grosso, o produtor decide entre manter a vegetação nativa ou convertê-la respondendo à tensão entre duas forças: o estímulo econômico de mercado e a contenção regulatória.
+% (2) Pelo lado econômico, quando o preço internacional de uma commodity sobe, o ganho potencial por hectare não cresce igual em todo lugar: ele cresce muito mais onde o solo é plano, profundo e mecanizável. Pelo lado institucional, a presença do IBAMA, os embargos e restrições comerciais aumentam o custo esperado de abrir irregularmente novas áreas.
+% (3) Mato Grosso é um laboratório ideal entre 2001 e 2024 porque combina liderança produtiva em soja, milho e pecuária com três biomas submetidos a regras de Reserva Legal muito diferentes: 80% na Amazônia, 35% no Cerrado e 20% no Pantanal.
+% (4) Nossa pergunta central busca medir exatamente quanto os choques de preços induzem a conversão bruta em terras mais aptas e como a fiscalização condiciona esse efeito.
+% (5) A hipótese H1 desdobra-se em dois testes observáveis: H1a prevê amplificação pelos retornos potenciais do solo, e H1b prevê atenuação pela atuação ambiental. Tudo isso é confrontado entre lavouras versus pastagens e entre Amazônia versus Cerrado.
+
+% ================================================
+% SLIDE 3: O QUEBRA-CABEÇA DA OLS PRELIMINAR (27/10)
+% ================================================
+\begin{frame}{Ponto de partida: o quebra-cabeça da OLS preliminar (27/10)}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{block}{O que vimos nas regressões OLS (27/10)?}
+\fontsize{8.2}{10}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{1.1mm}
+    \item \textbf{Preço da soja negativo:} alta de 1 DP (+US\$\,132/t) associava-se a \est{-0{,}0674}{0{,}0667} pp na conversão agrícola em M01 (não significativo).
+    \item \textbf{Aptidão negativa:} maior rendimento potencial (+380 kg/ha) associava-se a menor abertura agrícola (\est{-0{,}0367}{0{,}0222} pp).
+    \item \textbf{Baixo ajuste e perda amostral:} $R^2$ entre 1,9\% e 5,6\% na agricultura; inclusão de autos em M02 reduzia a amostra de 2.772 para 1.140 pares.
+\end{itemize}
+\end{block}
+\end{column}
+
+\begin{column}{0.49\textwidth}
+\begin{block}{Por que a OLS aditiva não resolvia H1?}
+\fontsize{8.2}{10}\selectfont
+\begin{enumerate}
+    \setlength{\itemsep}{1.1mm}
+    \item \textbf{Viés de comparação espacial e temporal:} sem efeitos fixos municipais ($\alpha_m$) e temporais ($\lambda_t$), comparava municípios maduros (sem floresta restante) com fronteiras novas e confundia alta pós-2005 dos preços com queda do desmatamento.
+    \item \textbf{Erro de forma funcional:} preços e aptidão entravam somados; H1a exige interação ($P \times Z$).
+    \item \textbf{Limites de mensuração:} autos tinham 48\% de zeros administrativos na base bruta (18,1\% de $Y$ preenchido), exigindo base limpa e embargos georreferenciados.
+\end{enumerate}
+\end{block}
+\end{column}
+\end{columns}
+% \fonte{Apresentação de 27/10/2026; Capítulo 1, Seção 3.1.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Agora, relembrando onde paramos na apresentação de 27 de outubro: quando rodamos modelos OLS simples e múltiplos, encontramos um aparente quebra-cabeça empírico. Tanto o preço da soja quanto a aptidão agronômica apareciam com sinal negativo na conversão para lavouras, sem significância estatística e com R quadrado entre 2% e 6%.
+% (2) Vimos que isso não refutava a teoria, mas expunha três gargalos da modelagem preliminar. Primeiro, um grave viés de variável omitida no espaço e no tempo: por um lado, municípios muito férteis já desmataram no passado e têm menos estoque restante; por outro, no tempo, a disparada de preços após 2005 coincidiu com políticas fortes de combate ao desmatamento (PPCDAm e Moratória), criando correlação negativa espúria na OLS empilhada.
+% (3) Segundo, preços e aptidão entravam apenas somados, quando a teoria econômica prevê que o preço só altera a atratividade da conversão de forma multiplicativa pela produtividade local da terra.
+% (4) Terceiro, ao incluirmos autos do IBAMA, perdíamos mais da metade da amostra observada, e na base original havia imputações e zeros administrativos que distorciam as estimativas iniciais. Precisávamos mudar o desenho empírico.
+
+% ================================================
+% SLIDE 4: O QUE FOI TESTADO E COMO (INTUIÇÃO DAS REGRESSÕES)
+% ================================================
+\begin{frame}{O que foi testado e como: intuição das regressões em painel}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{block}{Como testamos? (A lógica da comparação)}
+\fontsize{7.5}{9.2}\selectfont
+\begin{enumerate}
+    \setlength{\itemsep}{0.9mm}
+    \item \textbf{Município contra ele mesmo ($\alpha_m$):} limpa relevo, distância e ocupação prévia $\rightarrow$ elimina o viés de comparar áreas maduras com frentes pioneiras.
+    \item \textbf{Mesmo bioma no mesmo ano ($\lambda_{b(m),t}$):} desconta câmbio, juros, clima amplo e políticas federais do ano $\rightarrow$ isola diferenças \textit{relativas} entre vizinhos.
+    \item \textbf{O teste de H1a ($P \times Z$):} \textit{``Quando o preço internacional sobe lá fora, municípios mais aptos dentro do mesmo bioma aceleram mais a conversão do que vizinhos menos aptos?''}
+    \item \textbf{O teste de H1b ($P \times Z \times \text{Inst}$):} \textit{``Quando há mais embargos do IBAMA no ano anterior, essa corrida nos solos aptos desacelera?''}
+\end{enumerate}
+\end{block}
+\end{column}
+
+\begin{column}{0.49\textwidth}
+\begin{block}{O que foi testado? (Mapa das 5 Baterias)}
+\fontsize{7.5}{9.2}\selectfont
+No notebook e no artigo (178 especificações/testes), estruturamos cinco blocos progressivos de evidência:
+\vspace{0.8mm}
+\begin{itemize}
+    \setlength{\itemsep}{0.8mm}
+    \item \textbf{1.\ Núcleo H1a (Tab.\ 1):} soja, milho e juntos; controle por tendência tecnológica ($Z \times \tau_t$) e chuva.
+    \item \textbf{2.\ Pacote técnico (Tab.\ 2):} alto vs.\ baixo insumo; fronteira pioneira vs.\ madura (1985--2000) e 2ª safra de milho.
+    \item \textbf{3.\ Logística e freio H1b (Tab.\ 3):} distância a portos, ferrovia (2013) e embargos geocodificados vs.\ autos.
+    \item \textbf{4.\ Quebras e biomas (Tab.\ 4):} regimes 2001--05, 06--11 e 12--24; Amazônia (Moratória) vs.\ Cerrado.
+    \item \textbf{5.\ Destinos e blindagem (Tab.\ 5):} pastagem vs.\ lavoura; cluster duplo, winsorização 99\%, pós-2006 e placebo $t+1$.
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+% \fonte{Capítulo 1, Seções 3 e 4; \texttt{modelos\_fixos\_h1\_prec\_v2.ipynb}.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Antes de olhar as fórmulas matemáticas e as cinco tabelas, este slide resume intuitivamente o que testamos e como funciona a comparação dentro dos modelos de efeitos fixos.
+% (2) Como comparamos os municípios? Em dois passos de limpeza: primeiro, os efeitos fixos de município fazem cada município ser comparado apenas com ele mesmo ao longo dos 24 anos, eliminando relevo, história fundiária e características geográficas permanentes. Segundo, os efeitos fixos de bioma por ano descontam todos os choques comuns àquele bioma em cada ano, como câmbio, juros, preços médios globais e leis federais.
+% (3) Com o tabuleiro nivelado, o termo de interação responde a uma pergunta simples e intuitiva: em anos de alta nos preços internacionais, municípios de solo mais fértil aceleram a abertura de mata mais do que municípios menos aptos do mesmo bioma? E, na sequência, o termo triplo pergunta se a incidência de embargos ambientais freia essa sensibilidade.
+% (4) Do lado direito está o roteiro completo do que foi efetivamente testado: começamos pelo núcleo econômico da Tabela 1, investigamos se o mecanismo depende de alta tecnologia e da ocupação prévia na Tabela 2, confrontamos logística e embargos versus multas na Tabela 3, quebramos por regimes institucionais e biomas na Tabela 4 e testamos a pastagem junto com toda a bateria de robustez e placebo na Tabela 5.
+
+% ================================================
+% SLIDE 5: A ESPECIFICAÇÃO FORMAL
+% ================================================
+\begin{frame}{Especificação econométrica formal: efeitos fixos e interações}
+\fontsize{8.5}{10.5}\selectfont
+Para testar \textbf{H1a} (mecanismo de mercado) e \textbf{H1b} (modulação institucional), estimam-se em painel:
+\vspace{-1.5mm}
+\[
+\begin{aligned}
+\text{\textbf{(H1a)}}\quad Y_{mt}^d &= \alpha_m + \lambda_{b(m),t} + \beta_d \big(\ln P_{jt-1} \times Z_{jm}\big) + \gamma_d \big(Z_{jm} \times \tau_t\big) + \rho_d R_{mt} + \varepsilon_{mt}^d \\[1mm]
+\text{\textbf{(H1b)}}\quad Y_{mt}^d &= \text{(H1a)} + \delta_d \big(\ln P_{jt-1} \times Z_{jm} \times \text{Inst}_{mt-1}\big) + \text{termos inferiores} + \varepsilon_{mt}^d
+\end{aligned}
+\]
+\vspace{-1mm}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\fontsize{8}{9.6}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{0.9mm}
+    \item $\mathbf{Y_{mt}^d}$: taxa anual de conversão bruta (\%) para agricultura ($d=\text{agr}$) ou pastagem ($d=\text{past}$).
+    \item $\mathbf{\alpha_m}$: efeito fixo municipal (absorve $Z_{jm}$ isolado, relevo, distâncias e estoque inicial).
+    \item $\mathbf{\lambda_{b(m),t}}$: efeito fixo de bioma$\times$ano (absorve $\ln P_{jt-1}$ comum e choques anuais por bioma).
+\end{itemize}
+\end{column}
+
+\begin{column}{0.49\textwidth}
+\fontsize{8}{9.6}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{0.9mm}
+    \item $\mathbf{\beta_d > 0}$: parâmetro de \textbf{H1a}; $\mathbf{\delta_d < 0}$: freio institucional de \textbf{H1b} ($\text{Inst}_{mt-1}$: embargos ou autos).
+    \item $\mathbf{Z_{jm} \times \tau_t}$: tendência linear por aptidão ($\tau_t = (t-2001)/10$), blindando $\beta_d$ contra difusão tecnológica secular.
+    \item $\mathbf{R_{mt}}$: anomalia de precipitação anual (CHIRPS). Erros agrupados por município ($G=134$).
+\end{itemize}
+\end{column}
+\end{columns}
+% \fonte{Capítulo 1, Seção 3, Equações (2) e (3); \texttt{modelos\_fixos\_h1\_prec\_v2.ipynb}.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Traduzindo essa intuição para a notação formal do artigo: estas são as duas equações centrais da Seção 3, estimadas por painel com efeitos fixos bidirecionais.
+% (2) Na equação de H1a, os efeitos fixos municipais (alfa) absorvem o nível fixo da aptidão Z, o relevo e toda característica geográfica permanente; os efeitos fixos de bioma por ano (lambda) absorvem o nível comum do preço internacional e os choques agregados de cada ano por bioma.
+% (3) Por isso, a identificação vem inteiramente da interação entre o log do preço defasado e a aptidão padronizada Z, esperando-se beta positivo sob H1a. Também controlamos explicitamente pela tendência linear diferenciada por aptidão (Z vezes tau) para evitar que beta capture apenas a modernização tecnológica gradual do Centro-Oeste, e pela anomalia de chuva contemporânea (R).
+% (4) Na extensão H1b, acrescentamos a interação tripla com a variável institucional defasada (autos de infração ou embargos do IBAMA) junto de todos os termos de ordem inferior não absorvidos, esperando delta negativo quando a fiscalização freia a resposta aos preços. A inferência base agrupa os erros-padrão pelos 134 municípios efetivos.
+
+% ================================================
+% SLIDE 6: AMOSTRA E TRATAMENTO DOS DADOS
+% ================================================
+\begin{frame}{Construção da base: painel desbalanceado (2001--2024)}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\fontsize{8}{9.5}\selectfont
+\begin{tabularx}{\textwidth}{L c c}
+\toprule
+\textbf{Dimensão Amostral} & \textbf{Teórico} & \textbf{Efetivo}\\
+\midrule
+Municípios analisados & 141 & \textbf{134}\\
+Anos cobertos (2001--2024) & 24 & \textbf{24}\\
+Observações município--ano & 3.384 & \textbf{2.767}\\
+Subamostra fiscal (autos) & -- & \textbf{1.135} (123 mun.)\\
+\bottomrule
+\end{tabularx}
+\vspace{2mm}
+\begin{block}{Saneamento Amostral e Cobertura}
+\fontsize{7.8}{9.3}\selectfont
+Exclusão dos 612 pares preenchidos na base precária (18,1\%) e de 5 grupos unitários (\textit{singletons}) absorvidos pelos efeitos fixos ($\text{3.384} - 612 - 5 = 2.767$). Embargos geocodificados (11.513 termos válidos) preservam toda a amostra efetiva.
+\end{block}
+\end{column}
+
+\begin{column}{0.49\textwidth}
+\begin{block}{Definição das Variáveis-Chave}
+\fontsize{7.8}{9.4}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{0.9mm}
+    \item \textbf{Desfecho ($Y_{mt}^d$):} conversão bruta pixel a pixel do MapBiomas 10.1 (evita compensações por regeneração). Média: \textbf{0,112 pp/ano} ($\approx 362\text{ mil ha}$ nativos médios).
+    \item \textbf{Preços ($P_{jt-1}$):} log da média real anual defasada (USD 2024/t), centrada nos 24 anos.
+    \item \textbf{Aptidão ($Z_{jm}$):} rendimento potencial GAEZ v4 (alto insumo, sequeiro), normalizado em escala $z$ ($1\text{ DP} \approx 380$ kg/ha soja; $779$ kg/ha milho).
+    \item \textbf{Exclusão de \textit{bad controls}:} preço da terra e crédito rural omitidos por serem variáveis endógenas simultâneas de equilíbrio.
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+% \fonte{MapBiomas 10.1, FAO/IIASA GAEZ v4, World Bank, BLS, CHIRPS e IBAMA.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Aqui detalho a base que alimenta todas as regressões de efeitos fixos. A grade completa de Mato Grosso possui 141 municípios em 24 anos, somando 3.384 pares teóricos.
+% (2) Na versão consolidada, eliminamos integralmente as 612 observações imputadas que existiam na base precária, chegando a 2.772 pares observados; ao estimar com efeitos fixos de município e bioma por ano, o fixest descarta 5 observações unitárias, resultando em exatamente 2.767 observações efetivas em 134 municípios.
+% (3) Já os embargos ambientais geocodificados (mais de 11 mil registros com coordenadas válidas) permitem estimar a modulação institucional nessa amostra plena de 2.767 observações, ao contrário dos autos administrativos de flora, cuja subamostra elegível restringe-se a 1.135 observações em 123 municípios efetivos.
+% (4) Nossa variável dependente Y é a conversão bruta anual do MapBiomas 10.1 — sem compensação contábil por áreas em regeneração — com média observada de 0,112 ponto percentual ao ano. E mantivemos fora da regressão o preço de mercado da terra e o crédito contemporâneo por serem maus controles (bad controls) determinados em equilíbrio pelo próprio choque de commodities.
+
+% ================================================
+% SLIDE 7: RESULTADO PRINCIPAL (H1a - TABELA 1)
+% ================================================
+\begin{frame}{Resultados principais: confirmação de H1a na agricultura}
+\begin{columns}[T]
+\begin{column}{0.55\textwidth}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccc}
+\toprule
+\textbf{Variável explicativa} & \textbf{M1 (Soja)} & \textbf{M2 (Milho)} & \textbf{M3 (Conj.)}\\
+\midrule
+$\ln P_{s,t-1} \times Z_{i,s}$ & \textcolor{verde}{\textbf{\est{0{,}0848^{**}}{0{,}0358}}} & -- & \est{0{,}0815^{*}}{0{,}0433}\\
+$\ln P_{m,t-1} \times Z_{i,m}$ & -- & \textcolor{verde}{\textbf{\est{0{,}0519^{***}}{0{,}0179}}} & \est{0{,}0060}{0{,}0239}\\
+Tendência $Z_{i,s} \times \tau_t$ & \est{0{,}0405^{***}}{0{,}0144} & -- & \est{0{,}0247}{0{,}0198}\\
+Tendência $Z_{i,m} \times \tau_t$ & -- & \est{0{,}0538^{***}}{0{,}0152} & \est{0{,}0346}{0{,}0220}\\
+Precipitação ($R_{it}$) & \est{-0{,}0135^{**}}{0{,}0063} & \est{-0{,}0152^{**}}{0{,}0067} & \est{-0{,}0137^{**}}{0{,}0062}\\
+\midrule
+Observações / Municípios & 2.767 / 134 & 2.767 / 134 & 2.767 / 134\\
+$R^2$ total / $R^2$ \textit{within} & 0,383 / 0,020 & 0,381 / 0,017 & 0,384 / 0,022\\
+Teste de Wald conjunto ($F$) & -- & -- & \textbf{4,12} ($p=0{,}018$)\\
+\bottomrule
+\end{tabular}%
+}
+\vspace{1mm}
+{\fontsize{6}{7}\selectfont Efeitos fixos: Município e Bioma$\times$Ano. Erros agrupados por município ($G=134$).\par}
+\end{column}
+
+\begin{column}{0.43\textwidth}
+\begin{block}{Interpretação Econômica de H1a}
+\fontsize{7.5}{9}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{0.8mm}
+    \item \textbf{Inversão do quebra-cabeça:} o sinal negativo da OLS converte-se em \textbf{positivo e significante} a 5\% na soja ($p=0{,}019$) e a 1\% no milho ($p=0{,}004$).
+    \item \textbf{Significância conjunta (M3):} correlação entre preços ($r=0{,}948$) divide a precisão individual, mas teste de Wald rejeita nulidade conjunta ($F=4{,}12$, $p=0{,}018$).
+    \item \textbf{Magnitude prática:} alta de $+10\%$ no preço da soja com $+1$ DP de aptidão gera \textbf{$+0{,}0081$ pp} na conversão (+7,2\% sobre a média de 0,112 pp); alta de $+50\%$ gera \textbf{$+0{,}0344$ pp} (+30,6\%, ou $\approx 125\text{ ha/ano}$).
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+% \fonte{Capítulo 1, Tabela 1; \texttt{tab\_h1\_principais.tex}.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Este slide traz o resultado empírico central da tese, correspondente à Tabela 1 do artigo.
+% (2) Vejam a inversão completa em relação ao OLS de 27 de outubro: ao controlarmos os atributos fixos municipais e os choques de bioma por ano, o coeficiente da interação de preços torna-se positivo e estatisticamente significante.
+% (3) Na coluna 1, para a soja, a estimativa é de 0,0848, significativa a 5%. Na coluna 2, para o milho, é de 0,0519, significativa a 1%. Reparem também no papel da tendência Z vezes tau, positiva e significante: sem ela, beta subiria artificialmente para 0,142 na soja por absorver a modernização gradual do estado.
+% (4) Na coluna 3, ao incluirmos soja e milho juntos, a altíssima correlação entre seus preços internacionais (r = 0,948) divide a precisão individual, mas o teste de Wald conjunto rejeita enfaticamente que ambos os efeitos sejam nulos (F = 4,12, p = 0,018).
+% (5) Em termos práticos: uma alta de 50% no preço real da soja gera um diferencial de 0,0344 ponto percentual na conversão anual entre municípios separados por 1 desvio-padrão de aptidão — equivalente a mais de 30% da taxa média estadual, ou cerca de 125 hectares adicionais por ano em um estoque médio. H1a é claramente confirmada na associação condicional.
+
+% ================================================
+% SLIDE 8: MECANISMO TECNOLÓGICO (TABELA 2)
+% ================================================
+\begin{frame}{O mecanismo tecnológico: a aptidão depende do pacote técnico}
+\begin{columns}[T]
+\begin{column}{0.54\textwidth}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Variável explicativa} & \textbf{(1) Baixo} & \textbf{(2) Adeq.} & \textbf{(3) PAM} & \textbf{(4) Ocup.}\\
+\midrule
+$\ln P \times Z$ & \est{-0{,}0191}{0{,}0286} & \textcolor{alerta}{\est{-0{,}0874^{**}}{0{,}0354}} & \est{-0{,}0644}{0{,}0488} & --\\
+$\ln P \times H_i$ & -- & -- & -- & \textcolor{verde}{\est{-0{,}1160^{***}}{0{,}0429}}\\
+Tendência ($Z$ ou $H \times \tau$) & \est{0{,}0049}{0{,}0125} & \est{-0{,}0337^{**}}{0{,}0146} & \est{-0{,}0427^{*}}{0{,}0218} & \est{-0{,}0695^{***}}{0{,}0224}\\
+Precipitação ($R_{it}$) & \est{-0{,}0167^{**}}{0{,}0068} & \est{-0{,}0157^{**}}{0{,}0064} & \est{-0{,}0305^{***}}{0{,}0106} & \est{-0{,}0150^{**}}{0{,}0061}\\
+\midrule
+Observações & 2.767 & 2.767 & 1.016 & 2.767\\
+Municípios / Clusters & 134 & 134 & 45 & 134\\
+$R^2$ \textit{within} & 0,006 & 0,021 & 0,035 & 0,057\\
+\bottomrule
+\end{tabular}%
+}
+\vspace{1mm}
+{\fontsize{6}{7}\selectfont (1) Baixo insumo GAEZ; (2) Adequação agroclimática; (3) PAM 91-00; (4) Ocupação agrícola 85-00.\par}
+\end{column}
+
+\begin{column}{0.44\textwidth}
+\begin{block}{Diagnóstico Microeconômico}
+\fontsize{7.4}{8.9}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{0.75mm}
+    \item \textbf{A fertilidade natural não basta:} sob baixo insumo (col.\ 1), adequação pura (col.\ 2) ou produtividade antiga PAM (col.\ 3), o gradiente positivo some ou inverte.
+    \item \textbf{Dependência do pacote técnico:} solos tropicais exigem mecanização, adubação e calagem intensiva para converter estímulo de preços em lavoura.
+    \item \textbf{Pioneira vs.\ consolidada (col.\ 4 e 7):} municípios já ocupados em 1985--2000 desmatam \textbf{menos} ($\beta = -0{,}1160^{***}$) e expandem via \textbf{2ª safra de milho} ($+2{,}51^{***}$ pp/década; $R^2$ \textit{within} $= 0{,}324$).
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+% \fonte{Capítulo 1, Tabela 2; \texttt{tab\_h1\_margens\_tecnologia.tex}.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Na Tabela 2, perguntamos: qualquer medida de solo gera esse efeito positivo ou ele depende especificamente da agricultura empresarial de alta tecnologia?
+% (2) As colunas 1 a 3 dão uma resposta incisiva: quando substituímos a aptidão de alto insumo pelo cenário GAEZ de baixo insumo, pelo índice genérico de adequação agroclimática ou pela produtividade comercial histórica da PAM nos anos 90, o gradiente positivo desaparece completamente ou até inverte.
+% (3) Isso faz todo sentido agronômico: solos de Cerrado em estado natural são ácidos e pouco férteis. O choque de preços internacionais só induz abertura extensiva de lavouras onde é rentável aplicar correção pesada de solo, fertilizantes e mecanização.
+% (4) Além disso, as colunas 4 a 7 revelam a dualidade territorial de Mato Grosso: a ocupação agrícola histórica (1985–2000) é ortogonal ao potencial GAEZ (r = -0,025) e apresenta coeficiente fortemente negativo sobre a conversão bruta (-0,1160). Onde a agricultura já estava consolidada, os produtores responderam aos altos preços intensificando a área plantada com a segunda safra de milho (+2,51 pontos percentuais por década na coluna 7), poupando vegetação nativa enquanto a abertura bruta deslocava-se para as novas fronteiras.
+
+% ================================================
+% SLIDE 9: DISSUASÃO E EMBARGOS AMBIENTAIS (H1b)
+% ================================================
+\begin{frame}{Dissuasão ambiental (H1b): o poder dos embargos do IBAMA}
+\begin{columns}[T]
+\begin{column}{0.54\textwidth}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccc}
+\toprule
+\textbf{Variável explicativa} & \textbf{(4) Emb.\ ha} & \textbf{(6) Modulação} & \textbf{(7) Autos}\\
+\midrule
+$\ln P \times Z$ & \est{0{,}0835^{**}}{0{,}0361} & \textcolor{verde}{\textbf{\est{0{,}0933^{**}}{0{,}0375}}} & \est{0{,}0494}{0{,}0448}\\
+Área embargada ($t-1$) & \textcolor{verde}{\textbf{\est{-0{,}0076^{***}}{0{,}0029}}} & -- & --\\
+$\ln P \times Z \times \text{Emb}_{t-1}$ & -- & \textcolor{verde}{\textbf{\est{-0{,}0314^{*}}{0{,}0179}}} & --\\
+Embargos / Autos ($t-1$) & -- & \est{0{,}0082}{0{,}0124} & \est{0{,}0002}{0{,}0060}\\
+Tendência $Z \times \tau_t$ & \est{0{,}0396^{***}}{0{,}0149} & \est{0{,}0389^{***}}{0{,}0139} & --\\
+Precipitação ($R_{it}$) & \est{-0{,}0138^{**}}{0{,}0063} & \est{-0{,}0137^{**}}{0{,}0062} & \est{-0{,}0061}{0{,}0039}\\
+\midrule
+Observações & 2.767 & 2.767 & 1.135\\
+Municípios / Clusters & 134 & 134 & 123\\
+$R^2$ \textit{within} & 0,022 & 0,021 & 0,005\\
+\bottomrule
+\end{tabular}%
+}
+\vspace{1mm}
+{\fontsize{6}{7}\selectfont Cols.\ 4 e 6: embargos geocodificados (col.\ 6 inclui termos inferiores). Col.\ 7: subamostra fiscal.\par}
+\end{column}
+
+\begin{column}{0.44\textwidth}
+\begin{block}{Sanção Patrimonial vs.\ Autuação Administrativa}
+\fontsize{7.4}{8.9}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{0.75mm}
+    \item \textbf{Autos de infração nulos (col.\ 7):} na subamostra fiscal ($N=1.135$), o coeficiente de autos é nulo (\est{0{,}0002}{0{,}0060}; interação tripla em M7 também nula, $p=0{,}264$), refletindo morosidade pecuniária e perda de amostra.
+    \item \textbf{Embargos reduzem conversão (col.\ 4):} área embargada defasada associa-se a menor abertura (\est{-0{,}0076^{***}}{0{,}0029}).
+    \item \textbf{Modulação H1b (col.\ 6):} interação tripla é negativa ($-0{,}0314^*$, $p=0{,}081$). O 1º embargo ($\ln 2$) \textbf{atenua o gradiente de preços em 23,3\%} ($-33{,}6\%$ por log), operando via bloqueio de uso da terra e crédito rural.
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+% \fonte{Capítulo 1, Tabela 3; \texttt{tab\_h1\_logistica\_embargos.tex}.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Na Tabela 3, colunas 4 a 7, testamos diretamente a hipótese H1b: instrumentos de fiscalização ambiental conseguem moderar a sensibilidade da conversão aos choques de preços?
+% (2) O contraste entre os instrumentos é um dos achados mais importantes da pesquisa. Na coluna 7, utilizando os autos de infração de flora do IBAMA na subamostra fiscal elegível (1.135 observações em 123 municípios efetivos), o coeficiente é estatisticamente nulo (0,0002; e também nulo quando testado em tripla interação). Como discutimos no texto, isso reflete tanto a baixa liquidez e lentidão judicial das multas pecuniárias quanto a redução amostral e de variação nessa subamostra.
+% (3) Em contrapartida, ao utilizarmos os embargos ambientais geocodificados — que preservam toda a amostra observada de 2.767 observações —, a área embargada defasada reduz diretamente a conversão a 1% de significância (-0,0076).
+% (4) Ainda mais decisivo para H1b: na coluna 6, a interação tripla entre preço, aptidão e número de novos embargos entra negativa (-0,0314, significativa a 10%). O registro do primeiro embargo em um município está associado a uma atenuação estimada de 23,3% no gradiente preço-aptidão (e uma taxa marginal de -33,6% por unidade logarítmica).
+% (5) A explicação econômica é clara: diferentemente da multa avulsa, o embargo ambiental impõe restrição patrimonial imediata à área autuada e bloqueia o acesso ao crédito rural oficial, elevando o custo esperado de responder a altas de preços via desmatamento.
+
+% ================================================
+% SLIDE 10: CUSTOS LOGÍSTICOS E ACESSO A MERCADOS
+% ================================================
+\begin{frame}{Logística e infraestrutura de transporte (Tabela 3)}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\begin{block}{Distâncias aos Portos e Choque Ferroviário}
+\fontsize{7.5}{9}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{0.95mm}
+    \item \textbf{Núcleo H1a preservado:} ao controlar por acesso a mercados, as interações de preços permanecem positivas e significantes (\est{0{,}0940^{**}}{0{,}0394} soja; \est{0{,}0656^{***}}{0{,}0214} milho).
+    \item \textbf{Distância mínima aos portos ($D_{it}^{\text{min}}$):} coeficiente positivo (\est{0{,}0252^{***}}{0{,}0079} soja; \est{0{,}0261^{***}}{0{,}0084} milho), refletindo variação relativa após a abertura do Arco Norte (2014).
+    \item \textbf{Terminal ferroviário de Rondonópolis ($F_{it}^{2013}$):} efeito negativo e forte (\est{-0{,}1689^{***}}{0{,}0453} soja; \est{-0{,}1280^{***}}{0{,}0395} milho).
+    \item \textbf{Corredor Sul ($P_i^{\text{sul}}$):} interação positiva (\est{0{,}0486}{0{,}0323}), embora imprecisa ($p=0{,}135$).
+\end{itemize}
+\end{block}
+\end{column}
+
+\begin{column}{0.49\textwidth}
+\begin{block}{Intuição von Thüniana: Logística e Consolidação}
+\fontsize{7.5}{9}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{1mm}
+    \item \textbf{Preço líquido na fazenda:} na lógica espacial, o estímulo efetivo à conversão depende da renda líquida descontado o custo de transporte até os portos exportadores:
+    \[
+    P_{it}^{\text{fazenda}} \approx P_t^{\text{world}} - \text{Frete}\bigl(D_{it}^{\text{min}},\, F_{it}^{2013}\bigr)
+    \]
+    \item \textbf{Por que a ferrovia reduziu a conversão?} O terminal de Rondonópolis (2013) atendeu prioritariamente o sul e sudeste já consolidados de MT, elevando a rentabilidade de intensificar terras já abertas (ex.: 2ª safra) em vez de expandir a fronteira pioneira no norte.
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+% \fonte{Capítulo 1, Tabela 3, Cols.\ 1--3; distâncias geodésicas via malha IBGE 2023.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Ainda na Tabela 3, nas colunas 1 a 3, avaliamos o papel da infraestrutura logística — calculada diretamente por distâncias geodésicas dos centroides municipais aos portos do Sul, ao Arco Norte após 2014 e ao terminal ferroviário de Rondonópolis, inaugurado em 2013.
+% (2) Primeiro ponto: incluir logística não enfraquece nosso achado central de H1a; pelo contrário, soja (0,0940) e milho (0,0656) ficam até mais precisos e fortes.
+% (3) Segundo ponto: a inauguração da ferrovia em Rondonópolis em 2013 exibe forte associação negativa com a conversão bruta (-0,1689 na soja e -0,1280 no milho). Ao mesmo tempo, a distância mínima aos portos tem coeficiente positivo (0,0252) depois que o Arco Norte encurtou as rotas do norte mato-grossense após 2014.
+% (4) Qual é a intuição microeconômica desse resultado? Seguindo von Thünen, o produtor reage ao preço internacional líquido do frete local. Como a ferrovia chegou a uma região agrícola já consolidada no sul-sudeste do estado, o barateamento do frete aumentou o custo de oportunidade de abrir mata virgem distante, incentivando a intensificação nas lavouras já estabelecidas em detrimento da fronteira pioneira.
+
+% ================================================
+% SLIDE 11: REGIMES REGULATÓRIOS E QUEBRAS TEMPORAIS
+% ================================================
+\begin{frame}{Regimes regulatórios: quebra estrutural pós-2005}
+\begin{columns}[T]
+\begin{column}{0.50\textwidth}
+\fontsize{7.5}{9}\selectfont
+\begin{tabularx}{\textwidth}{L c c}
+\toprule
+\textbf{Regime Temporal} & \textbf{Soja MT} & \textbf{Milho MT}\\
+\midrule
+\textbf{2001--2005 (Boom inicial)} & \textcolor{verde}{\textbf{\est{0{,}3541^{***}}{0{,}1353}}} & \textcolor{verde}{\textbf{\est{0{,}4234^{***}}{0{,}1206}}}\\
+\textbf{2006--2011 (Moratória/Listas)} & \est{0{,}0108}{0{,}0211} & \est{0{,}0198}{0{,}0266}\\
+\textbf{2012--2024 (Código Florestal)} & \est{0{,}0120}{0{,}0111} & \est{-0{,}0041}{0{,}0077}\\
+\midrule
+Observações / Municípios & 2.767 / 134 & 2.767 / 134\\
+$R^2$ \textit{within} & 0,024 & 0,021\\
+\bottomrule
+\end{tabularx}
+\vspace{1mm}
+{\fontsize{6.5}{7.5}\selectfont Painel A (especificação base, preços centrados na média de 24 anos). FE: Município e Bioma$\times$Ano.\par}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+\begin{block}{Desacoplamento de Mercado pós-2005}
+\fontsize{7.6}{9.1}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{0.9mm}
+    \item \textbf{Sensibilidade concentrada em 2001--2005:} na abertura do superciclo, o gradiente base foi mais de \textbf{4 vezes superior} à média dos 24 anos ($\beta_s = 0{,}3541^{***}$).
+    \item \textbf{Desacoplamento pós-2005:} a partir de 2006, o coeficiente estadual cai próximo de zero e torna-se nulo na média agregada.
+    \item \textbf{Marcos e ressalva do Painel B:} monitoramento por satélite (PPCDAm 2004), Moratória da Soja (2006), restrição de crédito e CAR (2012). No Painel B (com níveis por regime), a magnitude de 2001--2005 mostra sensibilidade à parametrização das tendências, mas a nulidade pós-2005 permanece robusta.
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+% \fonte{Capítulo 1, Tabela 4 (Painel A); \texttt{tab\_h1\_regimes\_biomas.tex}.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Na Tabela 4, testamos se a relação entre preços internacionais e conversão manteve a mesma força ao longo dos 24 anos ou se houve quebra estrutural com a mudança das regras ambientais.
+% (2) Dividimos o painel em três regimes institucionais: 2001–2005 (abertura do superciclo e desmatamento recorde), 2006–2011 (endurecimento do PPCDAm, Moratória da Soja e restrição ao crédito) e 2012–2024 (Novo Código Florestal e governança cadastral pelo CAR).
+% (3) No Painel A, os resultados revelam uma ruptura nítida: toda a sensibilidade positiva concentra-se no quinquênio 2001–2005, com coeficientes superiores a 0,35 na soja e 0,42 no milho (mais de quatro vezes a média de 24 anos). A partir de 2006, o coeficiente estadual cai para perto de zero e perde significância estatística.
+% (4) Com rigor metodológico, também reportamos no Painel B (slide seguinte) uma especificação irrestrita permitindo níveis diferentes por regime: nela, a magnitude média inicial de 2001–2005 é sensível à parametrização das tendências, mas o desacoplamento médio do pós-2005 na fronteira agrícola se mantém firme.
+% (5) Resta perguntar: esse desacoplamento após 2005 aconteceu igualmente na Amazônia e no Cerrado?
+
+% ================================================
+% SLIDE 12: ASSIMETRIA ENTRE BIOMAS E VAZAMENTO REGULATÓRIO
+% ================================================
+\begin{frame}{Amazônia vs.\ Cerrado: evidência de vazamento regulatório}
+\begin{columns}[T]
+\begin{column}{0.50\textwidth}
+\fontsize{7.5}{9}\selectfont
+\begin{tabularx}{\textwidth}{L c c}
+\toprule
+\textbf{Regime e Bioma (Soja)} & \textbf{Amazônia} & \textbf{Cerrado}\\
+\midrule
+2001--2005 (Boom inicial) & \est{0{,}1438}{0{,}1423} & \est{0{,}0229}{0{,}1661}\\
+\textbf{2006--2011 (Moratória)} & \textcolor{alerta}{\textbf{\est{-0{,}0704^{**}}{0{,}0334}}} & \textcolor{verde}{\textbf{\est{0{,}0569^{**}}{0{,}0258}}}\\
+2012--2024 (Código Florestal) & \est{0{,}0030}{0{,}0139} & \est{-0{,}0247}{0{,}0163}\\
+\midrule
+Observações / Municípios & 1.303 / 71 & 1.412 / 60\\
+$R^2$ \textit{within} & 0,021 & 0,068\\
+\bottomrule
+\end{tabularx}
+\vspace{1mm}
+{\fontsize{6.5}{7.5}\selectfont Painel B (com $Z \times \text{regime}$ e preços centrados no regime). Subamostras por bioma predominante.\par}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+\begin{block}{Divergência Institucional e \textit{Leakage}}
+\fontsize{7.6}{9.1}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{0.9mm}
+    \item \textbf{Amazônia sob Moratória (2006--2011):} resposta aos preços inverte e torna-se \textbf{negativa e significante} ($\beta = -0{,}0704^{**}$, $p=0{,}035$). O pacto setorial bloqueou a abertura direta de floresta para soja.
+    \item \textbf{Cerrado no mesmo período:} resposta permaneceu \textbf{positiva e significante} ($\beta = +0{,}0569^{**}$, $p=0{,}028$).
+    \item \textbf{Assimetria e vazamento (\textit{leakage}):} proteção assimétrica na Amazônia (Reserva Legal de 80\% + Moratória) desviou a pressão de mercado para as savanas do Cerrado (RL de 35\%, fora do pacto), padrão estável entre os Painéis A e B.
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+% \fonte{Capítulo 1, Tabela 4 (Painel B); \texttt{tab\_h1\_regimes\_biomas.tex}.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Este slide mostra um dos resultados mais expressivos do artigo, separando as subamostras de bioma predominante: 71 municípios amazônicos e 60 de Cerrado no Painel B (e idêntico em sinal e significância no Painel A).
+% (2) Lembram que a Moratória da Soja de 2006 proibiu a compra de grãos oriundos de desmatamentos novos apenas no bioma Amazônia? Olhem o que acontece exatamente na janela 2006–2011:
+% (3) Na Amazônia, a sensibilidade da conversão aos preços da soja inverte para menos 0,0704, significativo a 5% — sinal de que o bloqueio de cadeia, somado ao PPCDAm e à Reserva Legal de 80%, conteve o avanço direto da soja sobre a floresta mesmo em anos de alta externa.
+% (4) Já no Cerrado, no exato mesmo período de 2006 a 2011, o coeficiente manteve-se positivo em mais 0,0569, também significativo a 5%.
+% (5) Embora identificar causalmente a transferência de cada produtor exija um desenho contrafactual próprio de spillover, essa divergência estável entre os dois painéis é plenamente compatível com a hipótese de vazamento regulatório (leakage): proteger unilateralmente um bioma sem estender regras semelhantes ao bioma vizinho redirecionou a expansão extensiva para as savanas do Cerrado.
+
+% ================================================
+% SLIDE 13: A PECUÁRIA COMO PONTA DE LANÇA (TABELA 5)
+% ================================================
+\begin{frame}{Destinos comparados: a pecuária como ponta de lança}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\fontsize{7.5}{9}\selectfont
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabularx}{\textwidth}{L c c}
+\toprule
+\textbf{Destino da Conversão} & \textbf{Soja ($\beta_s$)} & \textbf{Milho ($\beta_m$)}\\
+\midrule
+\textbf{Agricultura ($d=\text{agr}$)} & \est{0{,}0848^{**}}{0{,}0358} & \est{0{,}0519^{***}}{0{,}0179}\\
+\textbf{Pastagem ($d=\text{past}$)} & \textcolor{verde}{\textbf{\est{0{,}3206^{***}}{0{,}1016}}} & \textcolor{verde}{\textbf{\est{0{,}4600^{***}}{0{,}1397}}}\\
+\midrule
+Razão Pastagem / Lavouras & \textbf{3,8 vezes} & \textbf{8,9 vezes}\\
+Observações / Municípios & 2.767 / 134 & 2.767 / 134\\
+\bottomrule
+\end{tabularx}
+\vspace{1mm}
+{\fontsize{6.5}{7.5}\selectfont Coluna 1 da Tabela 5 vs.\ Tabela 1. FE: Município e Bioma$\times$Ano.\par}
+\end{column}
+
+\begin{column}{0.50\textwidth}
+\begin{block}{Dinâmica Fundiária da Margem Extensiva}
+\fontsize{7.5}{9}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{0.9mm}
+    \item \textbf{Aptidão utilizada é de grãos:} o índice $Z_{jm}$ mede relevo plano e mecanizável para soja e milho, e não suporte forrageiro de pasto.
+    \item \textbf{Pecuária como vetor preparatório:} mais de 90\% da abertura primária em MT torna-se pasto inicialmente, pois derrubar e formar pasto exige fração do capital inicial da lavoura mecanizada.
+    \item \textbf{Assentamento e transição:} a pastagem limpa a área, consolida a posse e valoriza a terra antes da transferência posterior para grãos. Além disso, o termo capta o recuo mais intenso do desmatamento pós-2005 nas áreas de menor aptidão agrícola.
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+% \fonte{Capítulo 1, Tabela 5, Coluna 1; \texttt{tab\_h1\_destinos\_robustez.tex}.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Na Tabela 5, coluna 1, testamos a mesma especificação tendo como desfecho a conversão bruta para pastagem, já que a análise descritiva mostrou que mais de 90% da vegetação nativa suprimida em Mato Grosso vira pasto em um primeiro momento.
+% (2) Vejam o contraste de magnitude: o gradiente associado ao preço e à aptidão GAEZ na pastagem é de 0,3206 na soja e 0,4600 no milho — quase quatro vezes maior que o da lavoura direta na soja, e quase nove vezes maior no milho.
+% (3) Por que o preço internacional de soja e milho e a aptidão mecanizável para grãos se associam tão fortemente à abertura de pastagens?
+% (4) A literatura de fronteira agrícola e nossos resultados apontam para a dinâmica sequencial do uso da terra: abrir floresta diretamente para soja mecanizada exige destoca profunda, nivelamento e calagem caríssimos. A pecuária entra como ponta de lança de baixo custo para limpar o terreno, assegurar posse fundiária e esperar o assentamento do solo, sendo convertida anos depois em áreas de grãos.
+% (5) Com transparência analítica, também destacamos que esse forte sinal na pastagem sob a tendência linear 2001–2024 reflete parcialmente a retração generalizada do desmatamento pós-2005 justamente nas regiões menos aptas à mecanização, como boa parte da Amazônia mato-grossense.
+
+% ================================================
+% SLIDE 14: LIMITES DA INFERÊNCIA E PLACEBO (TABELA 5)
+% ================================================
+\begin{frame}{Rigor metodológico: sensibilidade e teste de placebo}
+\begin{columns}[T]
+\begin{column}{0.53\textwidth}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lccc}
+\toprule
+\textbf{Teste de Robustez} & \textbf{Soja} & \textbf{Milho} & \textbf{Obs.}\\
+\midrule
+Referência (Tabela 1) & \est{0{,}0848^{**}}{0{,}0358} & \est{0{,}0519^{***}}{0{,}0179} & 2.767\\
+Clust.\ Duplo (Mun.\ e Ano) & \est{0{,}0848^{*}}{0{,}0481} & \est{0{,}0519^{*}}{0{,}0277} & 2.767\\
+Winsorização a 99\% & \est{0{,}0555^{**}}{0{,}0230} & \est{0{,}0432^{***}}{0{,}0142} & 2.767\\
+Subjanela 2006--2024 & \est{-0{,}0067}{0{,}0083} & \est{-0{,}0040}{0{,}0079} & 2.189\\
+Base Completa (c/ imput.) & \est{0{,}0848^{***}}{0{,}0314} & \est{0{,}0527^{***}}{0{,}0146} & 3.384\\
+\textbf{Placebo temporal ($t+1$)} & \textcolor{alerta}{\textbf{\est{0{,}0844^{**}}{0{,}0338}}} & \textcolor{alerta}{\textbf{\est{0{,}1026^{***}}{0{,}0304}}} & 2.633\\
+\bottomrule
+\end{tabular}%
+}
+\vspace{1mm}
+{\fontsize{6}{7}\selectfont Tabela 5 (colunas 2 e 4--7). Placebo utiliza preços futuros em $t+1$.\par}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\begin{block}{Por que o Placebo em $t+1$ é Significativo?}
+\fontsize{7.4}{8.9}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{0.75mm}
+    \item \textbf{Robustez preservada:} resultados sobrevivem a cluster duplo (mun.\ + ano), winsorização a 99\%, exclusão do Pantanal e \textit{leave-one-year-out} (24/24 anos com $p < 0{,}10$).
+    \item \textbf{Falha no placebo ($t+1$):} preços possuem forte autocorrelação ($r \approx 0{,}73$ na soja) e persistência de regime pós-2006; além disso, abertura e destoca levam 2--3 anos, gerando resposta antecipatória.
+    \item \textbf{Leitura científica honesta:} coeficientes medem \textbf{associações condicionais aos ciclos de mercado}, e não choques exógenos puramente pontuais ano a ano.
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+\fonte{Capítulo 1, Tabela 5; \texttt{tab\_h1\_destinos\_robustez.tex}.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Na Tabela 5, colunas 2 a 7, submetemos nossos resultados a uma bateria rigorosa de testes de sensibilidade e limites de identificação.
+% (2) Do lado da robustez estatística, as estimativas sobrevivem à dupla clusterização por município e ano, ao truncamento de extremos por winsorização a 99%, à transformação arco-seno hiperbólico, à regressão nos 24 pontos anuais (FWL-HAC) e à exclusão iterativa de cada ano da amostra (significativas em todos os 24 cortes). Também confirmam o desacoplamento na subjanela 2006–2024, onde o coeficiente zera.
+% (3) Contudo, a coluna 4 traz um teste fundamental de transparência metodológica: ao inserirmos o preço futuro em t+1 como teste de placebo, ele entra positivo e significativo (0,0844 na soja e 0,1026 no milho).
+% (4) Em vez de omitir esse resultado, nós o incorporamos diretamente à interpretação do paper: primeiro, as séries de preços de commodities exibem forte autocorrelação serial (cerca de 0,73 na soja) e clara separação de nível antes e depois de 2006; segundo, abrir e destocar mata até o primeiro plantio é um investimento plurianual sujeito a expectativas.
+% (5) Por isso, delimitamos rigorosamente o alcance da inferência: o modelo não estima um experimento aleatório ano a ano, mas associações condicionais robustas que revelam como ciclos de mercado e instituições moldam a fronteira agrícola ao longo de duas décadas.
+
+% ================================================
+% SLIDE 15: CONCLUSÕES E PRÓXIMOS PASSOS
+% ================================================
+\begin{frame}{Síntese da evolução e próximos passos da tese}
+\begin{columns}[T]
+\begin{column}{0.50\textwidth}
+\begin{block}{O que avançamos desde a OLS de 27/10?}
+\fontsize{7.8}{9.4}\selectfont
+\begin{enumerate}
+    \setlength{\itemsep}{1mm}
+    \item \textbf{H1a confirmada:} com FE e interações ($P \times Z$), preços amplificam a conversão em solos aptos sob tecnologia moderna de alto insumo (\est{0{,}0848^{**}}{0{,}0358} soja; \est{0{,}0519^{***}}{0{,}0179} milho).
+    \item \textbf{H1b via sanção patrimonial:} embargos geocodificados atenuam a resposta a preços em até $-33{,}6\%$ por log (-23,3\% no 1º embargo), ao passo que autos avulsos não mostram efeito.
+    \item \textbf{Canais territoriais:} desacoplamento pós-2005, vazamento Amazônia--Cerrado (2006--2011), efeito consolidador da ferrovia (2013) e pecuária preparatória.
+\end{enumerate}
+\end{block}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+\begin{block}{Próximos Passos (Capítulo 2 da Tese)}
+\fontsize{7.8}{9.4}\selectfont
+\begin{itemize}
+    \setlength{\itemsep}{1.1mm}
+    \item \textbf{Via reversa (margem intensiva):} investigar como a perda acumulada de capital natural e alterações no microclima regional afetam retroativamente a produtividade agrícola em Mato Grosso.
+    \item \textbf{Resiliência produtiva:} avaliar o sistema soja--milho (2ª safra) diante de quebras de safra e choques climáticos extremos.
+\end{itemize}
+\end{block}
+\vspace{3mm}
+\centering\color{verde}\textbf{Muito obrigado! Aberto a dúvidas e sugestões.}
+\end{column}
+\end{columns}
+\fonte{Capítulo 1 consolidado (novembro/2026), Seções 3 a 5.}
+\end{frame}
+%% COMENTÁRIO:
+% (1) Para concluir: a evolução desde as regressões OLS preliminares de 27 de outubro até a especificação em painel com efeitos fixos e interações resolveu os quebra-cabeças iniciais e consolidou o Capítulo 1 da tese.
+% (2) Mostramos que o mecanismo de mercado previsto em H1a opera claramente nos dados observados, mas condicionado ao pacote tecnológico de alto insumo e concentrado nas frentes de expansão e na dinâmica preparatória via pastagens.
+% (3) Evidenciamos que a dissuasão ambiental prevista em H1b funciona onde há incidência patrimonial e restrição de crédito — via embargos ambientais — e que a proteção setorial restrita à Amazônia conviveu com pressões persistentes sobre o Cerrado vizinho.
+% (4) Com esse primeiro elo entre incentivos econômicos, instituições e mudança de cobertura fechado, o próximo passo da tese é avançar para o Capítulo 2: investigar a via reversa na margem intensiva, analisando como a transformação da paisagem e o microclima regional afetam a produtividade e a resiliência das lavouras.
+% (5) Muito obrigado pela atenção, e fico aberto às perguntas e sugestões da turma e do professor.
+
+\end{document}
