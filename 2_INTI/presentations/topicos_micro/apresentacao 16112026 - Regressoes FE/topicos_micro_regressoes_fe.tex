@@ -156,7 +156,7 @@
 \begin{enumerate}
     \setlength{\itemsep}{1.1mm}
     \item \textbf{Cada cidade contra ela mesma ($\alpha_m$):} em vez de comparar Sorriso com o Pantanal, comparamos o \textit{filme} de cada município ao longo dos 24 anos contra sua própria média histórica (limpa relevo, distância e passado fundiário).
-    \item \textbf{Descontar a ``maré do ano'' ($\lambda_{b(m),t}$):} subtraímos tudo o que atingiu todo o bioma naquele ano (dólar, juros Selic, clima amplo e leis federais) $\rightarrow$ sobra quem acelerou acima ou abaixo dos vizinhos.
+    \item \textbf{Descontar o ``contexto do ano'' ($\lambda_{b(m),t}$):} subtraímos tudo o que atingiu todo o bioma naquele ano (dólar, juros Selic, clima amplo e leis federais) $\rightarrow$ sobra quem acelerou acima ou abaixo dos vizinhos.
 \end{enumerate}
 \end{block}
 \end{column}
@@ -177,13 +177,13 @@
 \end{columns}
 \vspace{2mm}
 \centering\fontsize{8.2}{9.8}\selectfont
-\textbf{Resumo:} $Y_{mt} = \underbrace{\text{Efeito da Cidade}}_{\alpha_m} + \underbrace{\text{Maré Bioma/Ano}}_{\lambda_{b(m),t}} + \beta\,\underbrace{(\ln\text{Preço}_{t-1} \times \text{Aptidão}_m)}_{\text{H1a}} + \text{Controles}$
+\textbf{Resumo:} $Y_{mt} = \underbrace{\text{Efeito da Cidade}}_{\alpha_m} + \underbrace{\text{contexto Bioma/Ano}}_{\lambda_{b(m),t}} + \beta\,\underbrace{(\ln\text{Preço}_{t-1} \times \text{Aptidão}_m)}_{\text{H1a}} + \text{Controles}$
 % \fonte{Capítulo 1, Seção 3.}
 \end{frame}
 %% COMENTÁRIO:
 % (1) Para quem ainda não estudou modelos de painel ou efeitos fixos na graduação, a lógica do nosso novo teste pode ser resumida em quatro passos muito intuitivos.
 % (2) Passo 1 — cada cidade contra ela mesma: em vez de comparar uma cidade rica com uma distante em "foto", damos a cada município seu próprio ponto de partida. Isso limpa tudo o que não muda na cidade ao longo do tempo, como relevo, tipo de solo, distância dos portos e histórico antigo de ocupação.
-% (3) Passo 2 — descontar a "maré do ano": em qualquer ano, dólar, juros (Selic), seca ou mudança na lei federal afetam todos os municípios daquele bioma juntos. Ao descontar essa média anual de cada bioma, o tabuleiro fica nivelado e vemos apenas quem fugiu do padrão dos vizinhos.
+% (3) Passo 2 — descontar o "contexto do ano": em qualquer ano, dólar, juros (Selic), seca ou mudança na lei federal afetam todos os municípios daquele bioma juntos. Ao descontar essa média anual de cada bioma, o tabuleiro fica nivelado e vemos apenas quem fugiu do padrão dos vizinhos.
 % (4) Passos 3 e 4 — acelerador e freio: com o campo nivelado, perguntamos primeiro se altas nos preços internacionais aceleram a abertura mais nos municípios de solo mais fértil do que nos menos férteis (esse é o parâmetro beta de H1a); e depois perguntamos se embargos do IBAMA no ano anterior desaceleram esse impulso (H1b). Controlamos ainda por chuvas e pela tendência temporal de longo prazo de cada tipo de solo.
 
 % ================================================
@@ -259,7 +259,7 @@ Teste conjunto (p-valor) & -- & -- & $F=4{,}12$ ($p=0{,}018$)\\
 \fontsize{7.8}{9.4}\selectfont
 \begin{itemize}
     \setlength{\itemsep}{0.9mm}
-    \item \textbf{Fim do paradoxo de 27/10:} limpando diferenças fixas e a maré anual, o sinal negativo vira \textbf{positivo e significante} (5\% soja; 1\% milho).
+    \item \textbf{Fim do paradoxo de 27/10:} limpando diferenças fixas e a contexto anual, o sinal negativo vira \textbf{positivo e significante} (5\% soja; 1\% milho).
     \item \textbf{Por que juntos ficam menos precisos?} Preços de soja e milho caminham juntos ($r = 0{,}95$), mas o teste conjunto confirma que os grãos importam ($p = 0{,}018$).
     \item \textbf{Exemplo concreto:} se o preço da soja sobe \textbf{50\%}, um município com solo 1 DP mais fértil converte \textbf{$+0{,}0344$ pp} a mais por ano (\textbf{+30,6\% acima da taxa média}, ou $\approx \textbf{125 ha extras/ano}$).
 \end{itemize}
@@ -512,7 +512,7 @@ Base cheia antiga (c/ estimados) & \est{0{,}0848^{***}}{0{,}0314} & \est{0{,}052
 \fontsize{8}{9.6}\selectfont
 \begin{enumerate}
     \setlength{\itemsep}{1.1mm}
-    \item \textbf{H1a confirmada:} limpando cidade e maré do ano, preço alto acelera conversão em terras aptas sob tecnologia moderna ($+30{,}6\%$ no desmatamento com alta de 50\% da soja).
+    \item \textbf{H1a confirmada:} limpando cidade e contexto do ano, preço alto acelera conversão em terras aptas sob tecnologia moderna ($+30{,}6\%$ no desmatamento com alta de 50\% da soja).
     \item \textbf{H1b via embargos:} multas avulsas não surtem efeito claro, mas \textbf{embargos} reduzem abertura e atenuam em \textbf{23,3\%} o estímulo de preços ao travar crédito e vendas.
     \item \textbf{Dinâmica espacial:} desacoplamento pós-2005, vazamento da Amazônia para o Cerrado, papel consolidador da ferrovia e pecuária preparatória.
 \end{enumerate}
@@ -520,15 +520,15 @@ Base cheia antiga (c/ estimados) & \est{0{,}0848^{***}}{0{,}0314} & \est{0{,}052
 \end{column}
 
 \begin{column}{0.48\textwidth}
-\begin{block}{Próximos Passos (Capítulo 2 da Tese)}
-\fontsize{8}{9.6}\selectfont
-\begin{itemize}
-    \setlength{\itemsep}{1.1mm}
-    \item \textbf{O caminho inverso:} se o Capítulo 1 mostrou como economia e regras transformam a cobertura vegetal, o \textbf{Capítulo 2} vai investigar como a perda acumulada de vegetação e alterações no microclima afetam de volta a \textbf{produtividade agrícola}.
-    \item \textbf{Resiliência:} papel da 2ª safra de milho diante de choques climáticos extremos.
-\end{itemize}
-\end{block}
-\vspace{4mm}
+% \begin{block}{Próximos Passos (Capítulo 2 da Tese)}
+% \fontsize{8}{9.6}\selectfont
+% \begin{itemize}
+%     \setlength{\itemsep}{1.1mm}
+%     \item \textbf{O caminho inverso:} se o Capítulo 1 mostrou como economia e regras transformam a cobertura vegetal, o \textbf{Capítulo 2} vai investigar como a perda acumulada de vegetação e alterações no microclima afetam de volta a \textbf{produtividade agrícola}.
+%     \item \textbf{Resiliência:} papel da 2ª safra de milho diante de choques climáticos extremos.
+% \end{itemize}
+% \end{block}
+% \vspace{4mm}
 \centering\color{verde}\textbf{Muito obrigado! Aberto a dúvidas e sugestões.}
 \end{column}
 \end{columns}
@@ -536,7 +536,7 @@ Base cheia antiga (c/ estimados) & \est{0{,}0848^{***}}{0{,}0314} & \est{0{,}052
 \end{frame}
 %% COMENTÁRIO:
 % (1) Para fechar, o balanço da nossa evolução desde a apresentação de 27 de outubro é muito claro.
-% (2) Ao sair da OLS simples para comparações em painel que olham cada cidade contra si mesma e descontam a maré de cada bioma por ano, resolvemos o paradoxo inicial: confirmamos H1a — preços altos aceleram a conversão em solos aptos, mediados pela agricultura de alta tecnologia — e confirmamos H1b para os embargos ambientais, que atingem o crédito e a comercialização do produtor.
+% (2) Ao sair da OLS simples para comparações em painel que olham cada cidade contra si mesma e descontam a contexto de cada bioma por ano, resolvemos o paradoxo inicial: confirmamos H1a — preços altos aceleram a conversão em solos aptos, mediados pela agricultura de alta tecnologia — e confirmamos H1b para os embargos ambientais, que atingem o crédito e a comercialização do produtor.
 % (3) Mostramos ainda como as regras pós-2005 contiveram o desmatamento amazônico ligado à soja, mas deixaram pressão no Cerrado vizinho, e como a pecuária opera como etapa preparatória antes das lavouras.
 % (4) Com o Capítulo 1 fechado, o próximo passo na tese é o Capítulo 2, investigando a mão contrária: como essa perda de vegetação nativa ao longo do tempo e mudanças no microclima afetam o rendimento e a resiliência das lavouras.
 % (5) Muito obrigado pela atenção e fico à disposição para perguntas!
