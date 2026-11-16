@@ -38,11 +38,11 @@ A ordenação temporal das variáveis garante que os incentivos econômicos e re
 \begin{itemize}[itemsep=2pt,topsep=2pt]
     \item \textbf{Preços das commodities ($P_{jt-1}$):} utiliza-se a média anual do preço real internacional da commodity própria no ano anterior ($t-1$), expressa em logaritmo natural e deflacionada pelo índice CPI-U dos Estados Unidos para dólares de poder de compra de 2024 \cite{WorldBank2026, BLSCPI2026}. As séries são centradas na média do período amostral (2001--2024);
     \item \textbf{Capacidade biofísica predeterminada ($Z_{jm}$):} mensurada pelo rendimento potencial do solo modelado pelo \textit{Global Agro-Ecological Zones} (GAEZ v4, FAO/IIASA) para a cultura $j$ (soja ou milho) no cenário de alto insumo e sequeiro, em kg de matéria seca por hectare \cite{FAOGAEZ2021}. A variável é normalizada na escala $z$ a partir da média e do desvio-padrão dos 141 municípios de Mato Grosso, permanecendo fixa ao longo de todo o painel temporal;
-    \item \textbf{Atuação institucional ($F_{mt-1}$ e $E_{mt-1}$):} a fiscalização pública é observada pelas contagens municipais de autos de infração ambiental do IBAMA na categoria Flora defasadas em um ano ($F_{mt-1}$, expressas por dezena de autos) \cite{IBAMA2026}, bem como pela ocorrência e área total sob embargo ambiental federal vigente no início do período ($E_{mt-1}$);
+    \item \textbf{Atuação institucional ($F_{mt-1}$ e $E_{mt-1}$):} a fiscalização pública é observada pelo fluxo de autuações do IBAMA na categoria Flora defasadas em um ano, expresso em $\ln(1 + \text{Autos}_{mt-1})$ \cite{IBAMA2026}, bem como pelo fluxo anual de novos registros de embargos ambientais federais defasados em $t-1$, mensurados pela área embargada $\ln(1 + \text{Área Embargada}_{mt-1})$ e pela contagem de termos $\ln(1 + N_{mt-1}^{\text{emb}})$;
     \item \textbf{Controle climático ($R_{mt}$):} anomalia de precipitação anual do CHIRPS no ano $t$ em relação à média histórica local de 1981--2000, expressa em centenas de milímetros, controlando por variações contemporâneas de umidade que afetam a biomassa e o calendário de manejo.
 \end{itemize}
 
-O painel cobre o intervalo de 24 anos (2001--2024) para os 141 municípios de Mato Grosso. Nas estimativas empíricas, utilizam-se duas amostras fundamentais: (i) a amostra de cobertura integral da conversão, contendo 2.767 a 2.772 observações município-ano em 137 municípios com pares de satélite livres de cobertura de nuvem para ambos os destinos; e (ii) a amostra fiscal completa, restrita a 1.135 a 1.140 observações em 128 municípios que dispõem de registros administrativos de fiscalização do IBAMA com classificação temática integralmente preenchida.
+O painel cobre o intervalo de 24 anos (2001--2024) para os 141 municípios de Mato Grosso. A grade teórica completa totaliza $3.384$ pares município--ano ($141 \times 24$). Nas estimativas empíricas, a amostra principal constitui um \textbf{painel desbalanceado de 2.767 observações} cobrindo $134$ municípios efetivos (após a exclusão de pares com descontinuidade ou sem cobertura válida de satélite no MapBiomas e a remoção de grupos unitários absorvidos pela estrutura de efeitos fixos). Para a análise específica de autuações administrativas, utiliza-se a subamostra fiscal de $1.135$ observações em municípios com relatórios temáticos completos de fiscalização.
 
 \subsection{Especificação econométrica de H1a: mecanismo de mercado e aptidão biofísica}
 \label{estrategia-h1a}
@@ -68,6 +68,8 @@ O parâmetro de interesse é $\beta_d$. Ele mede o gradiente diferencial da taxa
     H_0: \beta_d \le 0 \quad \text{contra} \quad H_1: \beta_d > 0
 \end{equation}
 
+Cabe justificar a opção metodológica de estimar o modelo em sua forma reduzida e excluir preços de mercado da terra (valor do hectare de terra nua ou aberta) e fluxos contemporâneos de crédito rural do conjunto de covariadas. Na fronteira agrícola, o preço do solo é uma variável de equilíbrio endógena que capitaliza os fluxos futuros esperados da atividade produtiva e prêmios de segurança patrimonial \cite{Angelsen2010, LubowskiEtAl2008}, sendo a própria conversão florestal e o preparo do solo vetores primários de sua valorização comercial. A inclusão do preço da terra no lado direito da equação introduziria viés de simultaneidade (\textit{bad controls}) e bloquearia o canal de transmissão primordial que se busca identificar: o estímulo que os choques exógenos de preços internacionais exercem sobre a margem extensiva intermediados pelo potencial agronômico predeterminado da terra.
+
 \subsection{Especificação econométrica de H1b: modulação institucional e dissuasão}
 \label{estrategia-h1b}
 
@@ -84,11 +86,11 @@ em que $\text{Inst}_{mt-1}$ representa a intensidade da fiscalização e dissuas
 
 Operacionalizam-se duas medidas complementares de atuação institucional:
 \begin{enumerate}[label=(\roman*),leftmargin=1.8cm,itemsep=2pt,topsep=2pt]
-    \item \textbf{Autos de infração de Flora ($F_{mt-1}$):} contagem anual de autuações lavradas pelo IBAMA em $t-1$, expressas por dezena de autos. Essa medida avalia a intensidade contínua do esforço fiscalizatório estatal na repressão ao desmatamento irregular;
-    \item \textbf{Embargos ambientais do IBAMA ($E_{mt-1}$):} variável indicadora da ocorrência de áreas embargadas e a área acumulada sob embargo administrativo ($\ln(1 + \text{Área Embargada}_{mt-1})$). O embargo administrativo impede o uso econômico da gleba e a concessão de crédito rural oficial, operando como mecanismo direto de sanção patrimonial.
+    \item \textbf{Autos de infração de Flora ($F_{mt-1}$):} transformada logarítmica das autuações lavradas pelo IBAMA em $t-1$, expressa por $\ln(1 + \text{Autos}_{mt-1})$. Essa medida avalia o registro administrativo do esforço fiscalizatório estatal;
+    \item \textbf{Novos embargos ambientais do IBAMA ($E_{mt-1}$):} mensurados tanto pela área embargada no ano anterior ($\ln(1 + \text{Área Embargada}_{mt-1})$) quanto pelo logaritmo da contagem de novos termos lavrados ($\ln(1 + N_{mt-1}^{\text{emb}})$). O embargo administrativo impede o uso econômico da área autuada e suspende o acesso a crédito rural oficial, operando com incidência patrimonial direta.
 \end{enumerate}
 
-O parâmetro central de H1b é $\delta_d$, associado à interação tripla Preço $\times$ Aptidão $\times$ Fiscalização. Ele mede como a presença da fiscalização modifica a elasticidade de resposta da conversão ao gradiente de receita potencial. A hipótese de modulação prevê que a fiscalização reduz o incentivo marginal de abertura de terras, correspondendo a um efeito atenuador:
+O parâmetro central de H1b é $\delta_d$, associado à interação tripla Preço $\times$ Aptidão $\times$ Fiscalização. Ele mede como a intensidade da fiscalização ambiental defasada modula o gradiente de semielasticidade preço--aptidão. A hipótese de freio regulatório prevê que maior atuação fiscalizatória reduz a sensibilidade da conversão aos aumentos de preços nos solos mais aptos, correspondendo a um efeito atenuador:
 \begin{equation}
     H_0: \delta_d \ge 0 \quad \text{contra} \quad H_1: \delta_d < 0
 \end{equation}
@@ -122,7 +124,7 @@ Dada a constatação descritiva de que mais de 90\% da conversão bruta da veget
 
 A multiplicação de preços de commodities cotados em nível internacional por medidas municipais amplia a variação espacial das regressões, mas a fonte temporal primária de variação econômica advém das séries anuais. Para assegurar a robustez da inferência estatística e prevenir falsos positivos decorrentes de autocorrelação serial ou correlação espacial contemporânea dos erros, os testes de hipótese são avaliados sob três matrizes de covariância alternativas \cite{CameronMiller2015}:
 \begin{enumerate}[label=(\arabic*),leftmargin=1.8cm,itemsep=2pt,topsep=2pt]
-    \item \textbf{Cluster municipal:} robusto a heterocedasticidade e dependência serial arbitrária dentro de cada município ao longo do tempo ($G = 137$ clusters);
+    \item \textbf{Cluster municipal:} robusto a heterocedasticidade e dependência serial arbitrária dentro de cada município ao longo do tempo ($G = 134$ clusters na amostra de referência);
     \item \textbf{Cluster duplo (município + ano):} acomoda adicionalmente choques espaciais contemporâneos não observados correlacionados entre municípios no mesmo ano civil;
     \item \textbf{HAC sobre escores anuais (Frisch-Waugh-Lovell):} estimador de heterocedasticidade e autocorrelação aplicado aos escores residuais anuais com janela de Bartlett de duas defasagens, testando a persistência temporal das contribuições à identificação.
 \end{enumerate}
