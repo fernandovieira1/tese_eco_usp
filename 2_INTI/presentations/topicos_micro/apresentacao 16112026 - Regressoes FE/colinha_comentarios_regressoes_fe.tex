@@ -64,11 +64,11 @@
     \item \textbf{Arco da apresentação (12 slides):} Relembrar problema/hipóteses $\rightarrow$ quebra-cabeça OLS de 27/10 $\rightarrow$ lógica intuitiva dos Efeitos Fixos $\rightarrow$ resultados principais e limites.
 \end{itemize}
 \end{tcolorbox}
-\vspace{2.5mm}
+\vspace{2mm}
 
 \noindent{\color{verde}\large\bfseries Roteiro de Apresentação Oral}
 \vspace{1mm}
-\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1.2mm]
+\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1mm]
     \item Bom dia a todos. Hoje apresento a evolução da minha pesquisa sobre o que impulsiona e o que freia a conversão da vegetação nativa em Mato Grosso entre 2001 e 2024.
     \item Em outubro, mostrei as primeiras regressões simples (OLS) e vimos um resultado paradoxal: parecia que preços mais altos reduziam o desmatamento.
     \item Hoje vou relembrar rapidamente a pergunta da pesquisa, explicar de forma intuitiva como mudamos a forma de comparar os municípios e mostrar o que os dados revelam sobre preços, tecnologia, fiscalização, leis ambientais e pecuária.
@@ -98,11 +98,11 @@
     \item \textbf{Hipóteses:} \textbf{H1a} = preço alto acelera abertura mais em solo fértil; \textbf{H1b} = fiscalização pisa no freio desse estímulo.
 \end{itemize}
 \end{tcolorbox}
-\vspace{2.5mm}
+\vspace{2mm}
 
 \noindent{\color{verde}\large\bfseries Roteiro de Apresentação Oral}
 \vspace{1mm}
-\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1.2mm]
+\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1mm]
     \item Para situar todo mundo: na fronteira agrícola de Mato Grosso, o produtor decide entre conservar a vegetação nativa ou abrir terra respondendo a duas forças contrapostas.
     \item De um lado está o acelerador de mercado: quando o preço internacional de soja ou milho sobe, o ganho potencial por hectare cresce muito mais onde a terra é fértil e mecanizável. De outro está o freio das instituições: fiscalização do IBAMA, embargos e restrições de compra pelas tradings aumentam o custo e o risco de derrubar vegetação.
     \item Mato Grosso é o laboratório perfeito entre 2001 e 2024 porque abriga soja, milho e pecuária em larga escala, divididos entre Amazônia (onde a lei exige 80\% de Reserva Legal), Cerrado (35\%) e Pantanal (20\%).
@@ -133,11 +133,11 @@
     \item \textbf{Forma funcional:} Receita depende da multiplicação $\text{Preço} \times \text{Produtividade}$, não da soma.
 \end{itemize}
 \end{tcolorbox}
-\vspace{2.5mm}
+\vspace{2mm}
 
 \noindent{\color{verde}\large\bfseries Roteiro de Apresentação Oral}
 \vspace{1mm}
-\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1.2mm]
+\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1mm]
     \item Em 27 de outubro, quando rodamos regressões OLS tradicionais, encontramos um paradoxo: tanto o preço da soja quanto a fertilidade do solo apareciam com sinal negativo sobre a abertura de lavouras, como se pagar mais caro pela soja reduzisse o desmatamento.
     \item Esse resultado contra-intuitivo não refutava a teoria econômica, mas revelava duas armadilhas da regressão simples que quebram o ceteris paribus. Primeiro, no espaço, comparar cidades diferentes em "foto" mistura municípios ricos que já abriram suas terras lá atrás (e quase não têm mais floresta para derrubar) com fronteiras pioneiras.
     \item Segundo, no tempo, a disparada dos preços agrícolas depois de 2005 coincidiu justamente com o endurecimento da fiscalização por satélite do PPCDAm e com a Moratória da Soja. A OLS olhou "preço alto + desmatamento caindo" e misturou as duas coisas.
@@ -168,16 +168,27 @@
     \item \textbf{Se perguntarem da tendência por solo ($Z \times \tau_t$):} Traça uma linha reta própria para cada solo ao longo das décadas para impedir que o preço roube tendências tecnológicas graduais.
 \end{itemize}
 \end{tcolorbox}
-\vspace{2.5mm}
+\vspace{2mm}
 
 \noindent{\color{verde}\large\bfseries Roteiro de Apresentação Oral}
 \vspace{1mm}
-\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1.2mm]
+\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=1.8mm,topsep=1mm]
     \item Para quem ainda não estudou modelos de painel ou efeitos fixos na graduação, a lógica do nosso novo teste pode ser resumida em quatro passos muito intuitivos.
     \item Passo 1 — cada cidade contra ela mesma: em vez de comparar uma cidade rica com uma distante em "foto", damos a cada município seu próprio ponto de partida. Isso limpa tudo o que não muda na cidade ao longo do tempo, como relevo, tipo de solo, distância dos portos e histórico antigo de ocupação.
-    \item Passo 2 — descontar a "maré do ano": em qualquer ano, dólar, juros (Selic), seca ou mudança na lei federal afetam todos os municípios daquele bioma juntos. Ao descontar essa média anual de cada bioma, o tabuleiro fica nivelado e vemos apenas quem fugiu do padrão dos vizinhos.
+    \item Passo 2 — descontar o "contexto do ano": em qualquer ano, dólar, juros (Selic), seca ou mudança na lei federal afetam todos os municípios daquele bioma juntos. Ao descontar essa média anual de cada bioma, o tabuleiro fica nivelado e vemos apenas quem fugiu do padrão dos vizinhos.
     \item Passos 3 e 4 — acelerador e freio: com o campo nivelado, perguntamos primeiro se altas nos preços internacionais aceleram a abertura mais nos municípios de solo mais fértil do que nos menos férteis (esse é o parâmetro beta de H1a); e depois perguntamos se embargos do IBAMA no ano anterior desaceleram esse impulso (H1b). Controlamos ainda por chuvas e pela tendência temporal de longo prazo de cada tipo de solo.
 \end{enumerate}
+
+\vspace{1.5mm}
+\begin{tcolorbox}[colback=azul!5,colframe=azul,title={\bfseries\small SE PERGUNTAREM: COMO DESCONTAR DÓLAR, SELIC E CLIMA COM UNIDADES DISTINTAS?},left=3mm,right=3mm,top=2mm,bottom=2mm]
+{\small
+\begin{itemize}[leftmargin=*,itemsep=0.8mm,topsep=0.3mm]
+    \item \textbf{Sem misturar R\$, \% e mm:} o efeito fixo Bioma$\times$Ano usa \textit{dummies} (0/1), o que equivale a subtrair a \textbf{média do bioma naquele ano} na própria unidade de $Y$ (pontos percentuais de conversão).
+    \item \textbf{Exemplo (2 cidades do Cerrado):} em \textbf{2004}, A converte $0{,}60\%$ e B $0{,}20\%$ (maré $= \mathbf{0{,}40\%} \Rightarrow$ desvios $+0{,}20$ e $-0{,}20$ pp). Em \textbf{2008} (crise/Selic/dólar), A cai para $0{,}30\%$ e B para $0{,}10\%$ (maré $= \mathbf{0{,}20\%} \Rightarrow$ desvios $+0{,}10$ e $-0{,}10$ pp).
+    \item \textbf{Resultado:} a queda da maré ($0{,}40\% \to 0{,}20\%$) absorve o efeito líquido macroeconômico do ano inteiro; diferenças \textit{locais} de chuva entre vizinhos entram à parte via $R_{mt}$.
+\end{itemize}
+}
+\end{tcolorbox}
 
 \newpage
 
@@ -203,11 +214,11 @@
     \item \textbf{Sem efeito circular:} Preço da terra e crédito rural ficam de fora porque também reagem ao preço da soja.
 \end{itemize}
 \end{tcolorbox}
-\vspace{2.5mm}
+\vspace{2mm}
 
 \noindent{\color{verde}\large\bfseries Roteiro de Apresentação Oral}
 \vspace{1mm}
-\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1.2mm]
+\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1mm]
     \item Aqui estão os dados que alimentam as novas comparações entre 2001 e 2024. Mato Grosso tem 141 municípios ao longo de 24 anos, mas na base bruta anterior cerca de 18\% das observações tinham preenchimentos estimados.
     \item Limpamos todas essas 612 observações preenchidas e 5 casos sem par nos efeitos fixos, ficando com exatamente 2.767 observações reais em 134 municípios. E, graças aos mapas de embargos do IBAMA, conseguimos testar fiscalização nessa amostra completa, em vez de ficar restritos às 1.135 observações com autos administrativos.
     \item A nossa medida de desmatamento é bruta: ela mede o percentual da vegetação nativa existente no início do ano que foi convertido diretamente para agricultura (0,112\% ao ano na média) ou para pasto (1,19\% ao ano), sem deixar que terras abandonadas em regeneração mascarem novas derrubadas.
@@ -238,11 +249,11 @@
     \item \textbf{Nota técnica (se perguntarem):} Sem a tendência por solo, soja subiria artificialmente de $0{,}0848$ para $0{,}1421$.
 \end{itemize}
 \end{tcolorbox}
-\vspace{2.5mm}
+\vspace{2mm}
 
 \noindent{\color{verde}\large\bfseries Roteiro de Apresentação Oral}
 \vspace{1mm}
-\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1.2mm]
+\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1mm]
     \item Este é o resultado principal do capítulo, que resolve diretamente o quebra-cabeça de outubro.
     \item Quando nivelamos as comparações com efeitos fixos de município e de bioma por ano, os coeficientes da interação preço vezes aptidão viram positivos e altamente significantes: 0,0848 na soja (significante a 5\%) e 0,0519 no milho (significante a 1\%).
     \item Na coluna 3, quando colocamos soja e milho juntos, seus preços internacionais têm correlação de 0,95, então fica difícil separar perfeitamente um do outro; mesmo assim, o teste conjunto confirma com clareza (p = 0,018) que o incentivo de mercado em terras aptas acelera a conversão.
@@ -273,11 +284,11 @@
     \item \textbf{Ferrovia (Tabela 3):} Terminal de Rondonópolis (2013) reduz conversão ($-0{,}169^{***}$ na soja) ao baratear frete em áreas já abertas.
 \end{itemize}
 \end{tcolorbox}
-\vspace{2.5mm}
+\vspace{2mm}
 
 \noindent{\color{verde}\large\bfseries Roteiro de Apresentação Oral}
 \vspace{1mm}
-\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1.2mm]
+\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1mm]
     \item Aqui damos um passo além para entender o mecanismo econômico: por que os preços puxam desmatamento apenas em certos lugares?
     \item Primeiro achado: quando testamos índices de fertilidade sem tecnologia moderna (baixo insumo, apenas clima ou a produtividade antiga dos anos 90), o efeito positivo some. Isso faz todo sentido agronômico: o Cerrado natural é ácido e fraco, então o choque de preços só incentiva abrir terra onde vale a pena investir em calcário, adubo e máquinas pesadas.
     \item Segundo achado: onde a agricultura já estava consolidada antes de 2001, o choque de preços na verdade associa-se a MENOS desmatamento novo (-0,116). O motivo aparece quando olhamos a área plantada de milho: esses municípios responderam intensificando a produção com a segunda safra (safrinha), crescendo 2,51 pontos percentuais por década sobre terras já desmatadas.
@@ -308,11 +319,11 @@
     \item \textbf{Mecanismo:} Embargo trava uso da área, corta crédito rural no banco e barra vendas às tradings.
 \end{itemize}
 \end{tcolorbox}
-\vspace{2.5mm}
+\vspace{2mm}
 
 \noindent{\color{verde}\large\bfseries Roteiro de Apresentação Oral}
 \vspace{1mm}
-\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1.2mm]
+\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1mm]
     \item Agora olhamos para a hipótese H1b: o governo consegue usar a fiscalização para pisar no freio desse impulso econômico?
     \item O contraste nos dados é muito didático. Na coluna C, quando olhamos apenas os autos de infração (multas pecuniárias do IBAMA), não há nenhum efeito estatisticamente diferente de zero (0,0002) — tanto pela lentidão e baixa efetividade da cobrança judicial de multas quanto pela amostra fiscal menor.
     \item Quando trocamos pelas áreas embargadas georreferenciadas (colunas A e B), que cobrem toda a nossa amostra de 2.767 observações, o cenário muda: primeiro, mais área embargada reduz diretamente a abertura de lavouras no ano seguinte (-0,0076).
@@ -343,11 +354,11 @@
     \item \textbf{Conceito econômico:} Padrão compatível com desacoplamento amazônico e vazamento regulatório (\textit{leakage}) para o Cerrado.
 \end{itemize}
 \end{tcolorbox}
-\vspace{2.5mm}
+\vspace{2mm}
 
 \noindent{\color{verde}\large\bfseries Roteiro de Apresentação Oral}
 \vspace{1mm}
-\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1.2mm]
+\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1mm]
     \item Na Tabela 4, separamos os 24 anos em três fases históricas das leis ambientais e olhamos também a diferença entre Amazônia e Cerrado.
     \item Primeiro achado: no estado inteiro, quase toda a força dessa resposta aos preços aconteceu no quinquênio 2001–2005, quando os coeficientes eram mais de quatro vezes maiores (0,354). A partir de 2006, com o monitoramento por satélite do PPCDAm e o bloqueio de crédito, a média do estado "desacopla" e cai perto de zero.
     \item Mas olhem para o contraste impressionante entre 2006 e 2011 nas colunas da direita: exatamente nesse período vigorou a Moratória da Soja, um pacto privado em que as empresas deixaram de comprar soja de áreas recém-desmatadas — só que valendo APENAS na Amazônia.
@@ -378,11 +389,11 @@
     \item \textbf{Ressalva:} Parte da magnitude na pastagem também reflete o recuo do desmatamento pós-2005 em áreas menos mecanizáveis.
 \end{itemize}
 \end{tcolorbox}
-\vspace{2.5mm}
+\vspace{2mm}
 
 \noindent{\color{verde}\large\bfseries Roteiro de Apresentação Oral}
 \vspace{1mm}
-\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1.2mm]
+\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1mm]
     \item Até aqui olhamos o desmatamento que vira diretamente lavoura, mas sabemos que mais de 90\% da vegetação nativa derrubada em Mato Grosso vira pastagem primeiro.
     \item Quando rodamos exatamente a mesma regressão para pastagem, aparece um dado curioso: o efeito ligado ao preço da soja e do milho sobre terras aptas para grãos é quase 4 vezes maior na pastagem (0,321) para soja e quase 9 vezes maior (0,460) para milho do que na lavoura direta.
     \item Por que preço de grão em solo bom de grão puxa abertura de pastagem? Por duas razões práticas da fronteira agrícola: primeiro, abrir floresta diretamente para soja mecanizada custa muito caro com destoca, nivelamento e correção do solo. A pecuária entra como "ponta de lança" de baixo custo: limpa o terreno, garante a posse e vai valorizando a terra, que anos depois é arrendada ou vendida para os produtores de soja.
@@ -413,11 +424,11 @@
     \item \textbf{Alcance:} Associações condicionais rigorosas aos ciclos de mercado, não experimento aleatório ano a ano.
 \end{itemize}
 \end{tcolorbox}
-\vspace{2.5mm}
+\vspace{2mm}
 
 \noindent{\color{verde}\large\bfseries Roteiro de Apresentação Oral}
 \vspace{1mm}
-\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1.2mm]
+\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1mm]
     \item Um bom trabalho empírico também testa até onde suas conclusões resistem — e mostra abertamente onde estão seus limites.
     \item Pelas quatro primeiras linhas da tabela, vemos que nossos resultados são bastante sólidos: eles sobrevivem quando corrigimos os erros-padrão simultaneamente por município e ano, quando cortamos os 1\% maiores valores extremos para evitar distorção por outliers e quando excluímos qualquer ano isolado dos 24 anos. Também confirmam que no pós-2005 o efeito médio zera.
     \item Porém, na última linha fizemos um teste placebo: colocamos o preço do ano FUTURO (t+1) no lugar — ou junto — do preço passado, e ele também aparece positivo e significante!
@@ -448,13 +459,13 @@
     \item \textbf{Capítulo 2:} Caminho inverso --- como perda acumulada de vegetação e microclima afetam de volta a produtividade das lavouras e a resiliência da 2ª safra.
 \end{itemize}
 \end{tcolorbox}
-\vspace{2.5mm}
+\vspace{2mm}
 
 \noindent{\color{verde}\large\bfseries Roteiro de Apresentação Oral}
 \vspace{1mm}
-\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1.2mm]
+\begin{enumerate}[leftmargin=*,label=\textbf{(\arabic*)},itemsep=2.6mm,topsep=1mm]
     \item Para fechar, o balanço da nossa evolução desde a apresentação de 27 de outubro é muito claro.
-    \item Ao sair da OLS simples para comparações em painel que olham cada cidade contra si mesma e descontam a maré de cada bioma por ano, resolvemos o paradoxo inicial: confirmamos H1a — preços altos aceleram a conversão em solos aptos, mediados pela agricultura de alta tecnologia — e confirmamos H1b para os embargos ambientais, que atingem o crédito e a comercialização do produtor.
+    \item Ao sair da OLS simples para comparações em painel que olham cada cidade contra si mesma e descontam a contexto de cada bioma por ano, resolvemos o paradoxo inicial: confirmamos H1a — preços altos aceleram a conversão em solos aptos, mediados pela agricultura de alta tecnologia — e confirmamos H1b para os embargos ambientais, que atingem o crédito e a comercialização do produtor.
     \item Mostramos ainda como as regras pós-2005 contiveram o desmatamento amazônico ligado à soja, mas deixaram pressão no Cerrado vizinho, e como a pecuária opera como etapa preparatória antes das lavouras.
     \item Com o Capítulo 1 fechado, o próximo passo na tese é o Capítulo 2, investigando a mão contrária: como essa perda de vegetação nativa ao longo do tempo e mudanças no microclima afetam o rendimento e a resiliência das lavouras.
     \item Muito obrigado pela atenção e fico à disposição para perguntas!
