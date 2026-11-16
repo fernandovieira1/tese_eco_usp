@@ -1,49 +1,36 @@
 \section{Estratégia Econométrica}
 \label{sec:estrategia}
 
-O objetivo central da estratégia empírica é identificar como a decisão privada de conversão da vegetação nativa em Mato Grosso responde aos incentivos econômicos de mercado e em que medida essa resposta é condicionada pelo ambiente institucional e pela aptidão biofísica da terra. Antes de formalizar as especificações matemáticas, convém recapitular a intuição econômica subjacente ao desenho amostral e os desafios de identificação que orientam as escolhas metodológicas deste artigo.
+O objetivo da estratégia empírica é identificar como a conversão bruta da vegetação nativa em Mato Grosso responde aos incentivos de mercado e em que medida essa resposta é condicionada pelo ambiente institucional e pela aptidão biofísica do solo.
 
-%%% Escrevi esta seção inspirado em outros papers, como Angelsen(2010). A ideia é facilitar para o leitor, mas ela é opcional e poderá ser retirada da versão final. 
-\subsection{Intuição econômica do desenho e o desafio da identificação}
+\subsection{Intuição econômica do desenho e desafio de identificação}
 \label{estrategia-intuicao}
 
-A tomada de decisão do produtor rural na fronteira agrícola opera sob a tensão de duas forças contrapostas: um vetor econômico de expansão (o estímulo de mercado) e um vetor regulatório de contenção (a governança socioambiental).
+A decisão de abertura na fronteira agrícola opõe um estímulo econômico de expansão a um freio regulatório. Um choque positivo nos preços internacionais das commodities eleva a receita bruta potencial em maior magnitude nos municípios com solos planos, férteis e aptos à mecanização intensiva (H1a), enquanto fiscalização em campo, embargos e restrições de cadeia comercial elevam o custo esperado do descumprimento e amortecem essa resposta (H1b).
 
-Por um lado, aumentos nos preços internacionais das commodities elevam a receita potencial esperada por hectare, impulsionando a abertura de novas áreas. Contudo, essa força atrativa do mercado não se distribui de maneira homogênea pelo território: um mesmo aumento percentual no preço da soja ou do milho gera um acréscimo de receita bruta significativamente superior em municípios dotados de solos planos, férteis e altamente aptos à mecanização intensiva do que em territórios de baixa aptidão agronômica. A proposição H1a postula exatamente que o impacto dos preços sobre a conversão da vegetação é amplificado pela capacidade biofísica predeterminada da terra.
+Como o superciclo de commodities do início dos anos 2000 coincidiu no tempo com o endurecimento regulatório brasileiro (PPCDAm, DETER e Moratória da Soja), regressões empilhadas sem controle temporal confundem preços elevados com desaceleração do desmatamento. Para isolar os dois mecanismos, adota-se um modelo em painel com dois conjuntos de efeitos fixos: (a) efeitos fixos municipais ($\alpha_m$), que absorvem características invariantes como relevo, fertilidade natural, distância portuária e histórico fundiário; e (b) efeitos fixos de bioma por ano ($\lambda_{b(m),t}$), que absorvem choques macroeconômicos comuns (câmbio, juros de crédito rural, políticas federais e o nível internacional das cotações) especificamente em cada bioma.
 
-Por outro lado, a conversão da vegetação nativa sujeita-se a regras formais de uso do solo e ao risco de sanções. A fiscalização em campo pelo IBAMA, a aplicação de embargos e a imposição de restrições comerciais por acordos de cadeia produtiva (como a Moratória da Soja) elevam os custos esperados da abertura irregular. A proposição H1b postula que a presença e a intensidade dessas instituições atenuam a atratividade conferida pelos choques de preços, reduzindo a sensibilidade da conversão nas áreas sob maior rigor fiscalizatório.
-
-O desafio empírico reside em isolar esses dois mecanismos em um contexto histórico em que preços e políticas ambientais variaram conjuntamente. No início dos anos 2000, o superciclo de commodities impulsionou as cotações agrícolas globais, ao mesmo tempo em que o governo brasileiro implementava o Plano de Ação para Prevenção e Controle do Desmatamento na Amazônia Legal (PPCDAm), refinava o monitoramento por satélite (DETER) e o setor privado firmava a Moratória da Soja (2006). Em razão dessa coincidência temporal, uma regressão empilhada ingênua por Mínimos Quadrados Ordinários (MQO) sem efeitos fixos adequados correlaciona preços elevados com menores taxas agregadas de conversão, gerando coeficientes negativos contra-intuitivos e espúrios decorrentes de viés de variável omitida macroeconômica.
-
-Para superar essa limitação, a estratégia econométrica adota uma abordagem em painel com dois grupos de efeitos fixos:
-\begin{enumerate}[label=(\alph*),leftmargin=1.8cm,itemsep=2pt,topsep=2pt]
-    \item \textbf{Efeitos fixos de município ($\alpha_m$):} controlam por todos os determinantes biofísicos, geográficos e institucionais que são invariantes no tempo em cada localidade, tais como relevo, fertilidade natural básica do solo, distância física aos portos de escoamento e histórico fundiário prévio;
-    \item \textbf{Efeitos fixos de ano ou de bioma$\times$ano ($\lambda_{b(m),t}$):} absorvem os choques macroeconômicos comuns que afetam simultaneamente todos os municípios no mesmo período, incluindo taxa de câmbio, taxa Selic de crédito rural, políticas federais globais e o próprio nível médio internacional das cotações das commodities.
-\end{enumerate}
-
-Sob essa estrutura de absorção, o nível comum do preço e o nível fixo da aptidão não podem ser estimados isoladamente. A identificação do mecanismo de mercado (H1a) opera, portanto, por meio do \textbf{termo de interação} entre o choque anual de preço e o índice predeterminado de aptidão biofísica do município ($P_{jt-1} \times Z_{jm}$). Essa interação compara se, diante de um mesmo choque de preços em dado ano, os municípios com terras mais aptas convertem sistematicamente mais vegetação nativa do que os municípios com terras menos aptas.
-
-De forma análoga, o teste do condicionamento institucional (H1b) é operacionalizado por meio de \textbf{termos de interação adicionais} entre a variável de preço-aptidão e indicadores locais de fiscalização ambiental (autos de infração e embargos do IBAMA) ou quebras estruturais de políticas regulatórias (a vigência da Moratória da Soja no bioma Amazônia confrontada ao Cerrado). A seguir, detalham-se as variáveis, as especificações e os procedimentos estatísticos utilizados.
+Sob essa absorção, os níveis puros do preço ($\ln P_{jt-1}$) e da aptidão fixa ($Z_{jm}$) não são identificados isoladamente. A hipótese H1a é testada pela interação $\ln P_{jt-1} \times Z_{jm}$, que compara se, diante de um mesmo choque anual de preços, municípios mais aptos convertem proporcionalmente mais vegetação nativa do que os menos aptos. De modo análogo, H1b é avaliada interagindo esse gradiente com indicadores municipais de fiscalização (autos e embargos do IBAMA) ou com quebras regulatórias entre biomas.
 
 \subsection{Variáveis dependentes, ordenação temporal e amostras}
 \label{estrategia-variaveis}
 
-A variável dependente principal é a taxa municipal anual de conversão bruta da vegetação nativa para fins agropecuários ($Y_{mt}^d$), mensurada separadamente para os destinos agricultura ($d = \text{agr}$) e pastagem ($d = \text{past}$). Para o município $m$ e o ano civil $t$, a taxa é definida como:
+A variável dependente principal é a taxa municipal anual de conversão bruta da vegetação nativa ($Y_{mt}^d$), mensurada separadamente para agricultura ($d = \text{agr}$) e pastagem ($d = \text{past}$):
 \begin{equation}
     Y_{mt}^d = \frac{\text{Área convertida de vegetação nativa para o uso } d \text{ em } t \text{ (ha)}}{\text{Estoque de vegetação nativa remanescente no início do período } t-1 \text{ (ha)}} \times 100
     \label{eq:taxa-conversao}
 \end{equation}
-A unidade de medida é expressa em pontos percentuais (p.p.) do estoque inicial de vegetação. Os fluxos anuais de conversão bruta e os estoques de vegetação nativa (abrangendo formações florestais, savânicas e campestres) são calculados a partir das matrizes de transição espacial pixel a pixel da Coleção 10.1 do MapBiomas. Ao empregar transições brutas diretamente observadas, a métrica evita a distorção introduzida por medidas líquidas de desmatamento, nas quais regenerações em áreas abandonadas poderiam compensar contabilmente a abertura de novas áreas produtivas.
+Expressa em pontos percentuais (p.p.) do estoque inicial, $Y_{mt}^d$ integra formações florestais, savânicas e campestres a partir das matrizes pixel a pixel do MapBiomas (Coleção 10.1) \cite{MapBiomas2026}, evitando que regenerações secundárias compensem contabilmente novas aberturas.
 
-A ordenação temporal das variáveis garante que os incentivos econômicos e regulatórios antecedam a execução física da conversão registrada nos mapas de satélite:
+As covariadas antecedem ou controlam o ano da transição em satélite:
 \begin{itemize}[itemsep=2pt,topsep=2pt]
-    \item \textbf{Preços das commodities ($P_{jt-1}$):} utiliza-se a média anual do preço real internacional da commodity própria no ano anterior ($t-1$), expressa em logaritmo natural e deflacionada pelo índice CPI-U dos Estados Unidos para dólares de poder de compra de 2024 \cite{WorldBank2026, BLSCPI2026}. As séries são centradas na média do período amostral (2001--2024);
-    \item \textbf{Capacidade biofísica predeterminada ($Z_{jm}$):} mensurada pelo rendimento potencial do solo modelado pelo \textit{Global Agro-Ecological Zones} (GAEZ v4, FAO/IIASA) para a cultura $j$ (soja ou milho) no cenário de alto insumo e sequeiro, em kg de matéria seca por hectare \cite{FAOGAEZ2021}. A variável é normalizada na escala $z$ a partir da média e do desvio-padrão dos 141 municípios de Mato Grosso, permanecendo fixa ao longo de todo o painel temporal;
-    \item \textbf{Atuação institucional ($F_{mt-1}$ e $E_{mt-1}$):} a fiscalização pública é observada pelo fluxo de autuações do IBAMA na categoria Flora defasadas em um ano, expresso em $\ln(1 + \text{Autos}_{mt-1})$ \cite{IBAMA2026}, bem como pelo fluxo anual de novos registros de embargos ambientais federais defasados em $t-1$, mensurados pela área embargada $\ln(1 + \text{Área Embargada}_{mt-1})$ e pela contagem de termos $\ln(1 + N_{mt-1}^{\text{emb}})$;
-    \item \textbf{Controle climático ($R_{mt}$):} anomalia de precipitação anual do CHIRPS no ano $t$ em relação à média histórica local de 1981--2000, expressa em centenas de milímetros, controlando por variações contemporâneas de umidade que afetam a biomassa e o calendário de manejo.
+    \item \textbf{Preços das commodities ($P_{jt-1}$):} média anual do preço real internacional defasado em $t-1$ (soja, milho e carne bovina), em logaritmo natural deflacionado pelo CPI-U para dólares de 2024 e centrado na média de 2001--2024 \cite{WorldBank2026, BLSCPI2026};
+    \item \textbf{Capacidade biofísica ($Z_{jm}$):} rendimento potencial GAEZ v4 (alto insumo, sequeiro, kg/ha) para soja ou milho \cite{FAOGAEZ2021}, padronizado em escore $z$ nos 141 municípios e invariante no tempo;
+    \item \textbf{Atuação institucional ($F_{mt-1}$ e $E_{mt-1}$):} fluxo defasado de autos de infração de Flora ($\ln[1 + \text{Autos}_{mt-1}]$) \cite{IBAMA2026} e de novos embargos do IBAMA mensurados por área ($\ln[1 + \text{Área Embargada}_{mt-1}]$) e por contagem de termos ($\ln[1 + N_{mt-1}^{\text{emb}}]$) \cite{IBAMAEmbargos2026};
+    \item \textbf{Controle climático ($R_{mt}$):} anomalia anual de precipitação CHIRPS em relação à normal de 1981--2000 (em 100 mm) \cite{FunkEtAl2015}.
 \end{itemize}
 
-O painel cobre o intervalo de 24 anos (2001--2024) para os 141 municípios de Mato Grosso. A grade teórica completa totaliza $3.384$ pares município--ano ($141 \times 24$). Nas estimativas empíricas, a amostra principal constitui um \textbf{painel desbalanceado de 2.767 observações} cobrindo $134$ municípios efetivos (após a exclusão de pares com descontinuidade ou sem cobertura válida de satélite no MapBiomas e a remoção de grupos unitários absorvidos pela estrutura de efeitos fixos). Para a análise específica de autuações administrativas, utiliza-se a subamostra fiscal de $1.135$ observações em municípios com relatórios temáticos completos de fiscalização.
+Na grade teórica de $3.384$ pares ($141 \text{ municípios} \times 24 \text{ anos}$), a exclusão de transições sem cobertura válida livre de nuvens e de grupos unitários resulta na amostra de referência de \textbf{2.767 observações} em \textbf{134 municípios efetivos}. A comparação pareada com autos de infração restringe-se à subamostra fiscal comum de $1.125$ observações com classificação temática completa e mesma estrutura de efeitos fixos.
 
 \subsection{Especificação econométrica de H1a: mecanismo de mercado e aptidão biofísica}
 \label{estrategia-h1a}
@@ -74,7 +61,7 @@ Cabe justificar a opção metodológica de estimar o modelo em sua forma reduzid
 \subsection{Especificação econométrica de H1b: modulação institucional e dissuasão}
 \label{estrategia-h1b}
 
-A hipótese H1b postula que a presença e a intensidade da fiscalização ambiental atuam como força condicionante, atenuando a sensibilidade da conversão aos preços agrícolas. Para testar empiricamente essa modulação, estende-se a Equação~\eqref{eq:modelo-h1a} incorporando medidas locais de atuação estatal:
+A hipótese H1b postula que a atuação fiscalizatória ambiental atenua a sensibilidade da conversão aos preços agrícolas. Estende-se a Equação~\eqref{eq:modelo-h1a} com medidas locais defasadas de atuação estatal ($\text{Inst}_{mt-1}$), incluindo todos os termos de ordem inferior não absorvidos pelos efeitos fixos:
 \begin{equation}
     \begin{aligned}
         Y_{mt}^d ={}& \alpha_m + \lambda_{b(m),t} + \beta_d \big(\ln P_{jt-1} \times Z_{jm}\big) + \delta_d \big(\ln P_{jt-1} \times Z_{jm} \times \text{Inst}_{mt-1}\big) \\
@@ -83,52 +70,35 @@ A hipótese H1b postula que a presença e a intensidade da fiscalização ambien
     \end{aligned}
     \label{eq:modelo-h1b}
 \end{equation}
-em que $\text{Inst}_{mt-1}$ representa a intensidade da fiscalização e dissuasão ambiental no município no ano anterior. Todos os termos de ordem inferior da interação tripla que não são absorvidos pelos efeitos fixos são incluídos explicitamente para respeitar a hierarquia da especificação.
-
-Operacionalizam-se duas medidas complementares de atuação institucional:
-\begin{enumerate}[label=(\roman*),leftmargin=1.8cm,itemsep=2pt,topsep=2pt]
-    \item \textbf{Autos de infração de Flora ($F_{mt-1}$):} transformada logarítmica das autuações lavradas pelo IBAMA em $t-1$, expressa por $\ln(1 + \text{Autos}_{mt-1})$. Essa medida avalia o registro administrativo do esforço fiscalizatório estatal;
-    \item \textbf{Novos embargos ambientais do IBAMA ($E_{mt-1}$):} mensurados tanto pela área embargada no ano anterior ($\ln(1 + \text{Área Embargada}_{mt-1})$) quanto pelo logaritmo da contagem de novos termos lavrados ($\ln(1 + N_{mt-1}^{\text{emb}})$). O embargo administrativo impede o uso econômico da área autuada e suspende o acesso a crédito rural oficial, operando com incidência patrimonial direta.
-\end{enumerate}
-
-O parâmetro central de H1b é $\delta_d$, associado à interação tripla Preço $\times$ Aptidão $\times$ Fiscalização. Ele mede como a intensidade da fiscalização ambiental defasada modula o gradiente de semielasticidade preço--aptidão. A hipótese de freio regulatório prevê que maior atuação fiscalizatória reduz a sensibilidade da conversão aos aumentos de preços nos solos mais aptos, correspondendo a um efeito atenuador:
-\begin{equation}
-    H_0: \delta_d \ge 0 \quad \text{contra} \quad H_1: \delta_d < 0
-\end{equation}
+Adotam-se duas métricas complementares de atuação estatal: os autos de infração de Flora ($F_{mt-1} = \ln[1 + \text{Autos}_{mt-1}]$) e os novos embargos ambientais do IBAMA ($E_{mt-1}$), expressos por área embargada e por contagem de termos, os quais interditam o uso econômico da parcela autuada e suspendem o acesso a linhas oficiais de crédito rural. O parâmetro $\delta_d$ testa se maior rigor institucional atenua a sensibilidade preço--aptidão ($H_0: \delta_d \ge 0$ contra $H_1: \delta_d < 0$). Contudo, como as operações de fiscalização respondem taticamente a áreas com histórico recente de desmatamento — gerando possível causalidade reversa ou seleção focalizada —, a análise principal de embargos é complementada no Apêndice~\ref{ap:complementos} por três verificações de sensibilidade: a estimação pareada com autos na subamostra fiscal comum ($N = 1.125$, sob idênticos efeitos fixos e tendências), o controle dinâmico pela taxa de conversão defasada ($Y_{m,t-1}$) e um teste placebo com embargos futuros ($E_{m,t+1}$).
 
 \subsection{Extensões empíricas: regimes temporais, marcos regulatórios e destinos}
 \label{estrategia-extensoes}
 
-Para aprofundar os canais institucionais e examinar a heterogeneidade territorial prevista na introdução, formulam-se três extensões empíricas:
+Para aprofundar os canais institucionais e examinar a heterogeneidade setorial e espacial, formulam-se três extensões empíricas:
 
 \subsubsection{Quebra estrutural e regimes temporais (2001--2005, 2006--2011 e 2012--2024)}
-A trajetória institucional de Mato Grosso foi marcada por inflexões regulatórias decisivas. Para testar se a sensibilidade aos preços variou historicamente entre esses regimes, flexibiliza-se o coeficiente de inclinação $\beta_d$ para três períodos mutuamente excludentes:
+Para testar se a sensibilidade aos preços variou entre as fases regulatórias brasileiras, flexibiliza-se o coeficiente $\beta_d$ para três períodos mutuamente excludentes:
 \begin{equation}
     Y_{mt}^d = \alpha_m + \lambda_{b(m),t} + \sum_{r=1}^3 \beta_d^r \Big(\ln P_{jt-1} \times Z_{jm} \times \mathbb{I}[t \in \text{Regime}_r]\Big) + \boldsymbol{W}_{mt}'\boldsymbol{\theta} + \varepsilon_{mt}^d
     \label{eq:modelo-regimes}
 \end{equation}
-onde os regimes correspondem a: (i) 2001--2005 (abertura do superciclo, baixa restrição ambiental e boom de desmatamento); (ii) 2006--2011 (endurecimento de comando e controle pelo PPCDAm e introdução da Moratória da Soja); e (iii) 2012--2024 (promulgação do Novo Código Florestal e governança baseada no CAR). A comparação entre os $\beta_d^r$ permite testar formalmente se houve quebra estrutural e arrefecimento da resposta aos preços após 2005.
+em que os regimes correspondem a: (i) 2001--2005 (abertura do superciclo com baixa restrição institucional); (ii) 2006--2011 (endurecimento de comando e controle pelo PPCDAm, restrição ao crédito e Moratória da Soja); e (iii) 2012--2024 (Novo Código Florestal e governança cadastral pelo CAR). No Painel B de sensibilidade, introduzem-se deslocamentos de nível $Z_{jm} \times \mathbb{I}[\text{Regime}_r]$ e preços centrados no interior de cada período para distinguir alterações reais de inclinação de deslocamentos médios entre épocas.
 
 \subsubsection{Exposição setorial à Moratória da Soja e ao Código Florestal}
-A governança ambiental brasileira estabeleceu assimetrias regulatórias no território. A Moratória da Soja (2006) incidiu exclusivamente sobre áreas desmatadas no bioma Amazônia, não se aplicando ao Cerrado. Para avaliar esse efeito por meio de um quase-experimento espacial em diferenças-em-diferenças, interage-se a exposição ao bioma Amazônia ($q_m^M$) com o indicador pós-marco ($D_{2006} = 1$ para $t \ge 2006$):
+Como a Moratória da Soja de 2006 incidiu exclusivamente sobre o bioma Amazônia, avalia-se essa assimetria regulatória por meio de um contraste espacial interagindo a fração municipal amazônica ($q_m^M$) com o indicador pós-2006 ($D_{2006}$):
 \begin{equation}
     \omega_a \cdot \Big(\ln P_{jt-1} \times Z_{jm} \times q_m^M \times D_{2006}\Big)
     \label{eq:tripla-moratoria}
 \end{equation}
-O coeficiente $\omega_a$ captura o contraste triplo de resposta aos preços entre municípios amazônicos e de Cerrado antes e depois da assinatura da Moratória. De forma similar, a reforma do Código Florestal (2012) é examinada interagindo a fração municipal de floresta nativa em 2000 ($q_m^F$) com o período pós-2012 ($D_{2012} = 1$ para $t \ge 2012$), avaliando a resposta nas áreas sujeitas à exigência mais rígida de 80\% de Reserva Legal.
+De modo análogo, examina-se a transição regulatória de 2012 interagindo a fração municipal de floresta nativa em 2000 ($q_m^F$) com o indicador pós-2012 ($D_{2012}$).
 
-\subsubsection{Assimetria setorial entre destinos: agricultura versus pastagem}
-Dada a constatação descritiva de que mais de 90\% da conversão bruta da vegetação nativa destina-se à formação de pastagens, estima-se um sistema conjunto empilhado para agricultura e pastagem. Essa abordagem permite calcular a diferença direta entre os gradientes ($\beta_{\text{agr}} - \beta_{\text{past}}$) e computar sua matriz de variância-covariância conjunta, testando formalmente a hipótese de que a sensibilidade da margem extensiva aos ciclos de preços difere estruturalmente entre as cadeias de grãos e da pecuária bovina.
+\subsubsection{Assimetria entre destinos: agricultura versus pastagem e preços relativos}
+Como mais de 90\% da conversão bruta destinou-se inicialmente a pastagens, estima-se um sistema conjunto empilhado para agricultura e pastagem ($N = 5.534$), computando a matriz conjunta de covariância para testar diretamente o contraste $\beta_{\text{agr}} - \beta_{\text{past}}$. Ademais, para discernir se a conversão em pastagens reflete demanda própria da bovinocultura ou expectativa especulativa de valorização fundiária para futura conversão agrícola, reestimam-se as equações de pastagem com o preço real da carne bovina ($\ln P_{\text{boi},t-1}$) interagido com o histórico pastoril ($H_m^{\text{past}}$) e com a aptidão GAEZ, bem como modelos simultâneos e em razão relativa grãos/boi ($\ln(P_j/P_{\text{boi}})_{t-1}$, \textit{crop-to-beef}).
 
 \subsection{Inferência estatística e limitações do desenho empírico}
 \label{estrategia-inferencia}
 
-A multiplicação de preços de commodities cotados em nível internacional por medidas municipais amplia a variação espacial das regressões, mas a fonte temporal primária de variação econômica advém das séries anuais. Para assegurar a robustez da inferência estatística e prevenir falsos positivos decorrentes de autocorrelação serial ou correlação espacial contemporânea dos erros, os testes de hipótese são avaliados sob três matrizes de covariância alternativas \cite{CameronMiller2015}:
-\begin{enumerate}[label=(\arabic*),leftmargin=1.8cm,itemsep=2pt,topsep=2pt]
-    \item \textbf{Cluster municipal:} robusto a heterocedasticidade e dependência serial arbitrária dentro de cada município ao longo do tempo ($G = 134$ clusters na amostra de referência);
-    \item \textbf{Cluster duplo (município + ano):} acomoda adicionalmente choques espaciais contemporâneos não observados correlacionados entre municípios no mesmo ano civil;
-    \item \textbf{HAC sobre escores anuais (Frisch-Waugh-Lovell):} estimador de heterocedasticidade e autocorrelação aplicado aos escores residuais anuais com janela de Bartlett de duas defasagens, testando a persistência temporal das contribuições à identificação.
-\end{enumerate}
-Para controlar a taxa de erro familiar diante de múltiplos testes nas sub-hipóteses e extensões, aplica-se o procedimento de Holm-Bonferroni dentro das famílias especificadas.
+Embora a multiplicação por aptidões municipais gere variação espacial nas regressões, a fonte primária de variação econômica provém das séries anuais de preços internacionais. Para prevenir falsa precisão decorrente de autocorrelação serial ou choques espaciais contemporâneos entre municípios, avaliam-se cinco estratégias de covariância e amostragem \cite{CameronMiller2015}: (1) erros-padrão agrupados por município na especificação de referência ($G = 134$); (2) agrupamento duplo por município e ano ($T = 24$); (3) estimador HAC aplicado aos 24 escores anuais de Frisch--Waugh--Lovell (janela de Bartlett com duas defasagens), que testa diretamente a identificação no componente temporal comum; (4) erros-padrão de Driscoll--Kraay (duas defasagens) robustos a dependência transversal; e (5) subamostra balanceada contínua ($N = 2.256$). O erro familiar em múltiplos testes é controlado pelo procedimento de Holm--Bonferroni em quatro famílias pré-especificadas (F1: H1a e biomas; F2: H1b instituições; F3: regimes 2006--2011 e contraste entre destinos; F4: pastagem e preço relativo).
 
-Por fim, cabe delimitar rigorosamente o alcance inferencial do modelo. O emprego de dados em painel com efeitos fixos bidirecionais controla de forma robusta por confundidores invariantes e choques agregados comuns. Todavia, em um contexto observacional agregado em nível municipal, essa estratégia não reproduz um experimento aleatório nem elimina inteiramente potenciais choques contemporâneos locais não observados (como crédito rural local ou investimentos municipais em infraestrutura viária). Por essa razão, os coeficientes estimados são interpretados como associações condicionais rigorosas e indicadoras de mecanismos econômicos e institucionais, mantendo a prudência analítica recomendada pelas diretrizes científicas deste projeto.
+Por fim, cabe delimitar o alcance inferencial do desenho empírico. Em um painel municipal observacional, os efeitos fixos bidirecionais não equivalem a um experimento aleatório e não eliminam potenciais choques locais contemporâneos não observados, como variações municipais de crédito rural ou investimentos viários vicinais. Os coeficientes estimados devem ser lidos, portanto, como associações condicionais rigorosas indicadoras de mecanismos econômicos e institucionais.

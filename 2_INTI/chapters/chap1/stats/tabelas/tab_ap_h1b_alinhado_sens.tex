@@ -1,0 +1,51 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2.4pt}
+\captionstyle{\centering}
+\normalcaption
+\caption{Ponte na subamostra fiscal alinhada ($N=1.125$) e testes de sensibilidade à focalização dos embargos}
+\label{tab:ap-h1b-sens}
+\begin{tabular}{lccccc}
+\toprule
+ & (1) & (2) & (3) & (4) & (5) \\
+\multicolumn{6}{l}{\textit{Painel A: Subamostra fiscal comum (Soja, $N = 1.125$)}} \\
+Variável & Base & Autos M6 & Autos M7 & Área Emb. & Mod. Emb. \\
+\midrule
+$\ln P_{s,t-1} \times Z_{i,s}$ & 0,0230 & 0,0225 & 0,0439 & 0,0109 & 0,0150 \\
+ & (0,0544) & (0,0544) & (0,0724) & (0,0601) & (0,0669) \\
+Autos / Emb. ($t-1$) & -- & 0,0034 & -0,0009 & -0,0030 & 0,0030 \\
+ &  & (0,0063) & (0,0059) & (0,0026) & (0,0067) \\
+Tripla ($\ln P \times Z \times \text{Inst}$) & -- & -- & -0,0062 & -- & 0,0112 \\
+ &  &  & (0,0121) &  & (0,0152) \\
+$Z_{i,s} \times \tau_t$ & 0,0143 & 0,0146 & 0,0129 & 0,0159 & 0,0168 \\
+ & (0,0235) & (0,0234) & (0,0228) & (0,0232) & (0,0204) \\
+Observações (Painel A) & 1.125 & 1.125 & 1.125 & 1.125 & 1.125 \\
+$R^2$ \textit{within} (Painel A) & 0,0046 & 0,0048 & 0,0089 & 0,0065 & 0,0076 \\
+\midrule
+\multicolumn{6}{l}{\textit{Painel B: Dinâmica ($Y_{i,t-1}$) e placebo ($E_{i,t+1}$)}} \\
+Variável & Dyn. Ár. (S) & Dyn. Ár. (M) & Dyn. Mod. & Lead Ár. & Lead Mod. \\
+\midrule
+$\ln P_{c,t-1} \times Z_{i,c}$ & 0,0400** & 0,0097 & 0,0484** & 0,0804** & 0,0906** \\
+ & (0,0199) & (0,0068) & (0,0206) & (0,0355) & (0,0387) \\
+Embargos ($t-1$) & -0,0028* & -0,0030* & 0,0067 & -0,0072** & 0,0077 \\
+ & (0,0017) & (0,0017) & (0,0085) & (0,0029) & (0,0124) \\
+Tripla ($t-1$) & -0,0001 & 0,0062 & -0,0207 & -0,0006 & -0,0251 \\
+ & (0,0050) & (0,0053) & (0,0153) & (0,0096) & (0,0378) \\
+Conversão ($Y_{i,t-1}^{\text{agr}}$) & 0,5487*** & 0,5495*** & 0,5491*** & -- & -- \\
+ & (0,0276) & (0,0279) & (0,0274) &  &  \\
+Embargos futuros ($t+1$) & -- & -- & -- & -0,0026 & 0,0017 \\
+ &  &  &  & (0,0035) & (0,0147) \\
+Tripla futura ($t+1$) & -- & -- & -- & -- & -0,0108 \\
+ &  &  &  &  & (0,0381) \\
+\midrule
+Observações (Painel B) & 2.590 & 2.590 & 2.590 & 2.633 & 2.633 \\
+$R^2$ \textit{within} (Painel B) & 0,3432 & 0,3429 & 0,3433 & 0,0208 & 0,0200 \\
+EF Mun. + Bioma$\times$Ano & Sim & Sim & Sim & Sim & Sim \\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize
+\centering
+Fonte: elaboração própria com MapBiomas 10.1, IBAMA e FAO/IIASA (GAEZ v4). Todos os termos inferiores das triplas incluídos.
+\end{minipage}
+\end{table}

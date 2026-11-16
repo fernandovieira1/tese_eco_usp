@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2.0pt}
+\captionstyle{\centering}
+\normalcaption
+\caption{Conversão para pastagem e agricultura sob preços da carne bovina e razão \textit{crop-to-beef}, 2001--2024}
+\label{tab:ap-pecuaria}
+\begin{tabular}{lccccccc}
+\toprule
+ & (1) & (2) & (3) & (4) & (5) & (6) & (7) \\
+Variável & Boi$\times H$ & Boi$\times Z$ & Pas S/B & Pas S+B & Pas M+B & Agr S/B & Agr S+B \\
+\midrule
+$\ln P_{c,t-1} \times Z_{i,c}$ & -- & -- & -- & 0,3963*** & 0,5810*** & -- & 0,0655** \\
+ &  &  &  & (0,1321) & (0,1629) &  & (0,0293) \\
+$\ln P_{\text{boi}} \times H_i^{\text{past}}$ & -0,0022 & -- & -- & -- & -- & -- & -- \\
+ & (0,1711) &  &  &  &  &  &  \\
+$\ln P_{\text{boi}} \times Z_{i,c}$ & -- & 0,0040 & -- & -0,3413 & -0,6503*** & -- & 0,0872** \\
+ &  & (0,1590) &  & (0,2229) & (0,2436) &  & (0,0424) \\
+$\ln(P_{s}/P_{\text{boi}}) \times Z_{i,s}$ & -- & -- & 0,3941*** & -- & -- & 0,0593** & -- \\
+ &  &  & (0,1335) &  &  & (0,0270) &  \\
+$H_i^{\text{past}} \times \tau_t$ & 0,0917 & -- & -- & -- & -- & -- & -- \\
+ & (0,0630) &  &  &  &  &  &  \\
+$Z_{i,c} \times \tau_t$ & -- & 0,0057 & 0,0295 & 0,0170 & 0,1303** & 0,0585*** & 0,0238** \\
+ &  & (0,0508) & (0,0496) & (0,0534) & (0,0580) & (0,0212) & (0,0114) \\
+Precipitação ($R_{it}$) & -0,0158 & -0,0216 & -0,0225 & -0,0227 & -0,0194 & -0,0131** & -0,0137** \\
+ & (0,0147) & (0,0156) & (0,0155) & (0,0157) & (0,0156) & (0,0061) & (0,0063) \\
+\midrule
+Observações & 2.767 & 2.767 & 2.767 & 2.767 & 2.767 & 2.767 & 2.767 \\
+$R^2$ total & 0,4919 & 0,4900 & 0,4918 & 0,4919 & 0,4945 & 0,3819 & 0,3831 \\
+$R^2$ \textit{within} & 0,0046 & 0,0009 & 0,0046 & 0,0046 & 0,0098 & 0,0183 & 0,0203 \\
+EF Mun. + Bioma$\times$Ano & Sim & Sim & Sim & Sim & Sim & Sim & Sim \\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize
+\centering
+Fonte: elaboração própria com MapBiomas 10.1, Banco Mundial, BLS/FRED, FAO/IIASA (GAEZ v4) e IBGE.
+\end{minipage}
+\end{table}

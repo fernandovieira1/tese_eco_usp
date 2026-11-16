@@ -3,6 +3,8 @@ SUYANA: Esperança
 INTI: Sol
 -->
 
+<!-- Revista: https://www.sciencedirect.com/journal/ecological-economics -->
+
 # Tese de Doutorado
 
 > Programa de Pós-Graduação em Economia — FEARP/USP

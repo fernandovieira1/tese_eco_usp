@@ -1,45 +1,25 @@
 \section{Contexto: Heterogeneidade Econômica, Ambiental e Dados de Mato Grosso (2001--2024)}
 \label{sec:contexto-dados}
 
-\begingroup
 \input{../stats/1. DESCRITIVA/resultados_h1/tabelas/numeros}
 
-O estado de Mato Grosso oferece um ambiente empírico singular para investigar como incentivos de mercado e governança ambiental condicionam a conversão da vegetação nativa. Ao longo do período 2001--2024, o estado consolidou-se como o maior produtor e exportador nacional de soja, milho e carne bovina, ao mesmo tempo em que esteve no centro das principais transformações da regulação ambiental brasileira. Essa trajetória desenrolou-se sobre um território marcado pela coexistência de três biomas (Amazônia, Cerrado e Pantanal), sujeitos a exigências regulatórias contrastantes de Reserva Legal e a pronunciados gradientes de aptidão edafoclimática.
+O estado de Mato Grosso reúne as condições empíricas para examinar como incentivos de mercado e governança ambiental condicionam a conversão da vegetação nativa. Entre 2001 e 2024, o estado consolidou-se como o maior produtor e exportador brasileiro de soja, milho e carne bovina, atravessando transformações regulatórias decisivas sobre um território repartido entre três biomas (Amazônia, Cerrado e Pantanal), com regras contrastantes de Reserva Legal e acentuados gradientes edafoclimáticos.
 
-Esta seção contextualiza a dinâmica produtiva e institucional de Mato Grosso e apresenta as variáveis, fontes de dados e fatos estilizados que fundamentam o teste de H1. A análise apoia-se em um painel anual com os 141 municípios do estado (malha IBGE 2023)\footnote{O município de Boa Esperança do Norte, criado a partir de áreas de Sorriso e Nova Ubiratã pela Lei Estadual nº 7.264, de 29 de março de 2000, teve sua instalação confirmada pelo Supremo Tribunal Federal em outubro de 2023. Por não possuir série histórica própria no intervalo 2001--2024, ele não é tratado como unidade autônoma nesta análise.}. A exposição organiza-se em cinco subseções: primeiro, examina-se a trajetória agropecuária, a reorientação para o comércio global e as taxas de conversão bruta; segundo, analisam-se as séries de preços internacionais, a paridade de compra e a capacidade biofísica; terceiro, descrevem-se os registros de fiscalização ambiental e sua articulação com a governança de cadeias de exportação; quarto, detalha-se a heterogeneidade territorial entre biomas e exigências legais; por fim, sintetizam-se as evidências descritivas e sua correspondência com a estratégia econométrica.
+Esta seção apresenta o contexto empírico, as fontes de dados e os fatos estilizados sobre um painel anual de 141 municípios (malha IBGE 2023)\footnote{Boa Esperança do Norte, instalado pelo STF em outubro de 2023 a partir de áreas de Sorriso e Nova Ubiratã, não integra a amostra como unidade autônoma por ausência de série histórica no intervalo 2001--2024.}. As séries complementares de produção agrícola, rebanho, exportações, cobertura amostral, distribuição municipal e rendimento potencial por bioma encontram-se no Apêndice~\ref{ap:complementos}.
 
 \subsection{Expansão agropecuária, inserção internacional e transições de cobertura}
 \label{descritiva-retornos}
 
-A trajetória agropecuária de Mato Grosso no século XXI foi impulsionada pela intensificação de sua inserção nos mercados globais de commodities. A adesão da China à Organização Mundial do Comércio (OMC) em 2001 e o rápido crescimento da demanda asiática deflagraram uma reorientação estrutural das exportações do estado, que superaram os destinos tradicionais europeus e expandiram a escala da produção de grãos e proteína animal \cite{fearnside2016china, LathuilliereEtAl2014}.
+A trajetória agropecuária de Mato Grosso no século XXI foi impulsionada pela inserção nos mercados globais de commodities. A adesão da China à Organização Mundial do Comércio (OMC) em 2001 deflagrou uma reorientação estrutural das exportações estaduais para a demanda asiática, ampliando a escala da produção de grãos e proteína animal \cite{fearnside2016china, LathuilliereEtAl2014}.
 
-O Gráfico~\ref{fig:h1-lavouras} ilustra essa expansão produtiva ao desagregar as trajetórias de área, produção e rendimento físico da soja (coluna esquerda) e do milho (coluna direita) entre 2001 e 2024. A linha azul acompanha uma amostra balanceada de municípios com informações completas em todos os 24 anos (66 municípios para soja e 121 para milho), enquanto a linha cinza tracejada engloba todos os municípios com dados no respectivo ano civil.
+Entre 2001 e 2024 (Gráfico~\ref{fig:h1-lavouras} e Tabela~\ref{tab:h1-oferta-contexto}, no Apêndice~\ref{ap:complementos}), a produção estadual de soja saltou de cerca de 8,8 para mais de 38 milhões de toneladas por expansão da área colhida, com rendimento estável em torno de 3,1 t/ha, enquanto a do milho multiplicou-se por mais de trinta vezes (de 1,4 para 47,4 milhões de toneladas), combinando ampliação de área e duplicação da produtividade (de 3,26 para 6,72 t/ha) via consórcio em segunda safra (safrinha) após soja precoce \cite{Spera2017, VanWeyEtAl2013}. No mesmo intervalo, o rebanho bovino estadual cresceu 64,5\% (de 19,92 para 32,77 milhões de cabeças nos municípios com registro contínuo), e o abate inspecionado mais que triplicou, acompanhado pela expansão exponencial das exportações de soja, milho e carne bovina.
 
-\begin{grafico}[htbp]
-    \centering
-    \includegraphics[width=\textwidth,trim=0 0 0 20bp,clip]{../stats/figuras/fig05_lavouras.pdf}
-    \caption{Evolução das lavouras de soja e milho em Mato Grosso, 2001--2024}
-    \label{fig:h1-lavouras}
-    \begin{minipage}{\textwidth}\footnotesize
-    \centering
-    Fonte: elaboração própria, com base em IBGE/PAM.
-    \end{minipage}
-\end{grafico}
-\FloatBarrier
-
-A leitura conjunta dos painéis evidencia distinções tecnológicas marcantes entre as duas culturas. Na soja, o crescimento da produção (que saltou de cerca de 8,8 para mais de 38 milhões de toneladas) decorreu predominantemente da expansão da área colhida, com rendimento físico médio estável em torno de 3,1 toneladas por hectare entre os extremos da série. Já no caso do milho, a produção multiplicou-se por mais de trinta vezes (de 1,4 para 47,4 milhões de toneladas), combinando forte ampliação de área com um salto de rendimento de 3,26 para 6,72 toneladas por hectare. Essa elevação de produtividade reflete a consolidação agronômica do sistema de cultivo de duas safras (\textit{double-cropping}), viabilizado por variedades de soja de ciclo precoce semeadas precocemente e seguidas pelo milho de segunda safra (safrinha) na mesma área agrícola no mesmo ano-safra \cite{Spera2017, VanWeyEtAl2013}.
-
-Paralelamente à expansão agrícola, o setor pecuário ampliou expressivamente sua escala operacional e sua capacidade frigorífica. A Tabela~\ref{tab:h1-oferta-contexto} documenta a evolução da pecuária bovina e das vendas externas entre 2001 e 2024. O rebanho bovino estadual cresceu 64,5\% (de 19,92 para 32,77 milhões de cabeças nos municípios com registro contínuo), enquanto o abate inspecionado e o peso de carcaças mais que triplicaram no período, acompanhados pela elevação exponencial das receitas de exportação de soja, milho e carne bovina.
-
-\input{tabelas/tab_contexto_oferta_h1}
-\FloatBarrier
-
-Esse intenso crescimento agropecuário e comercial coexistiu, contudo, com uma inflexão nas taxas anuais de conversão da vegetação nativa. O Gráfico~\ref{fig:h1-conversao} apresenta as taxas agregadas de conversão bruta anual para agricultura e para pastagem, calculadas a partir das transições espaciais de uso e cobertura do solo do MapBiomas (Coleção 10.1). A taxa representa a área bruta de vegetação nativa convertida no ano $t$ como proporção do estoque remanescente de vegetação no ano $t-1$.
+Esse intenso crescimento agropecuário coexistiu, contudo, com uma inflexão nas taxas anuais de conversão da vegetação nativa. O Gráfico~\ref{fig:h1-conversao} apresenta as taxas agregadas de conversão bruta anual para agricultura e pastagem a partir das transições pixel a pixel do MapBiomas (Coleção 10.1) \cite{MapBiomas2026}, definidas como a área convertida em $t$ sobre o estoque remanescente de vegetação nativa em $t-1$.
 
 \begin{grafico}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{../stats/1. DESCRITIVA/resultados_h1/figuras/fig01_conversao.pdf}
-    \caption{Taxas agregadas de conversão da vegetação nativa para agricultura e pastagem em MT -- 2001--2024}
+    \includegraphics[width=\textwidth]{../stats/figuras/fig01_conversao.pdf}
+    \caption{Taxas agregadas de conversão da vegetação nativa para agricultura e pastagem em MT, 2001--2024}
     \label{fig:h1-conversao}
     \begin{minipage}{\textwidth}\footnotesize
     \centering
@@ -48,22 +28,16 @@ Esse intenso crescimento agropecuário e comercial coexistiu, contudo, com uma i
 \end{grafico}
 \FloatBarrier
 
-Dois fatos estilizados centrais emergem do Gráfico~\ref{fig:h1-conversao}:
-\begin{enumerate}[label=(\roman*),leftmargin=1.8cm,itemsep=2pt,topsep=2pt]
-    \item \textbf{Inflexão temporal das taxas:} As taxas agregadas de conversão atingiram picos históricos entre 2001 e 2004, sofreram expressiva retração entre 2005 e 2009 e mantiveram-se em níveis substancialmente mais baixos no período pós-2012, mesmo diante da continuidade do crescimento da produção agrícola e da pecuária;
-    \item \textbf{Predomínio absoluto da pastagem como destino imediato:} Ao longo de toda a série de 24 anos, as taxas de conversão bruta para pastagem superaram sistematicamente as de conversão para agricultura. A formação de pastagens respondeu por mais de 90\% da conversão direta acumulada da vegetação nativa no estado.
-\end{enumerate}
-
-Essa assimetria empírica corrobora a importância de desagregar a conversão bruta pelo uso final que sucede à vegetação: enquanto a soja expandiu-se em larga escala sobre pastagens formadas em anos anteriores \cite{MacedoEtAl2012, Braganca2018}, a pressão de abertura direta sobre a fronteira vegetal recaiu historicamente sobre a atividade pecuária. Avaliar os determinantes dessa decisão requer confrontar essas taxas com os incentivos de preços e com os marcos de governança que incidiram sobre o território.
+Dois fatos estilizados emergem do Gráfico~\ref{fig:h1-conversao}: (i) as taxas de conversão atingiram picos em 2001--2004, retraíram-se entre 2005 e 2009 e mantiveram-se em patamares reduzidos após 2012, apesar do avanço contínuo da produção; e (ii) a formação de pastagens superou sistematicamente a agricultura em toda a série, respondendo por mais de 90\% da conversão direta acumulada. Enquanto a soja expandiu-se largamente sobre pastagens preexistentes \cite{MacedoEtAl2012, Braganca2018}, a pressão direta sobre remanescentes nativos concentrou-se na abertura para pecuária.
 
 \subsection{Preços agropecuários, custos de insumos e capacidade biofísica}
 \label{descritiva-precos}
 
-A decisão privada de abertura de novas áreas orienta-se pela receita líquida esperada da atividade na margem extensiva. O Gráfico~\ref{fig:h1-precos} apresenta os índices de preços reais internacionais da soja, do milho e da carne bovina entre 2000 e 2023 (ano-base 2000 = 100), extraídos da \textit{Pink Sheet} do Banco Mundial e deflacionados pelo CPI-U dos Estados Unidos. Para compatibilizar a defasagem temporal entre incentivo econômico e execução física da conversão, o preço do ano civil $t-1$ é relacionado à conversão observada em $t$.
+A decisão privada de abertura de novas áreas orienta-se pela receita líquida esperada na margem extensiva. O Gráfico~\ref{fig:h1-precos} apresenta os índices de preços reais internacionais de soja, milho e carne bovina entre 2000 e 2023 (base 2000 = 100), extraídos da \textit{Pink Sheet} do Banco Mundial e deflacionados pelo CPI-U dos Estados Unidos \cite{WorldBank2026, BLSCPI2026}. Na estimação, o preço em $t-1$ é relacionado à conversão observada em $t$.
 
 \begin{grafico}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{../stats/1. DESCRITIVA/resultados_h1/figuras/fig03_precos.pdf}
+    \includegraphics[width=\textwidth]{../stats/figuras/fig03_precos.pdf}
     \caption{Trajetórias dos preços reais internacionais de soja, milho e carne bovina}
     \label{fig:h1-precos}
     \begin{minipage}{\textwidth}\footnotesize
@@ -73,24 +47,16 @@ A decisão privada de abertura de novas áreas orienta-se pela receita líquida 
 \end{grafico}
 \FloatBarrier
 
-O comportamento das séries ilustra os grandes ciclos do mercado global de commodities: o superciclo com forte valorização real dos grãos até 2012 (índice atingindo 210,7 para soja e 252,6 para milho), seguido por uma acomodação nas cotações e um novo ciclo de alta associado a choques de oferta e demanda entre 2020 e 2022.
-
-A tradução dessas cotações em estímulo efetivo à conversão é mediada, contudo, por duas forças fundamentais: os custos de insumos e a capacidade biofísica do solo. Conforme salientado na literatura teórica, choques nos preços de venda frequentemente coincidem com expressiva alta nos preços internacionais de fertilizantes químicos, óleo diesel e defensivos agrícolas \cite{BaffesHaniotis2010}. Em Mato Grosso, dados de custo operacional documentados pelo IMEA e CEPEA apontam que variações desfavoráveis na relação de troca (\textit{paridade de compra do produtor}) podem comprimir as margens de lucro por hectare mesmo em anos de cotações nominais elevadas, amortecendo a pressão sobre a margem extensiva \cite{IMEA2024, CEPEA2024}.
-
-Por outro lado, diante de um mesmo nível de preços de mercado, o ganho potencial de receita por hectare varia no espaço conforme a dotação agronômica predeterminada da terra. Para capturar essa dimensão sem incorrer na endogeneidade dos rendimentos observados das lavouras comerciais (que incorporam adubação, manejo e autosseleção de glebas), este estudo emprega as estimativas de rendimento potencial do \textit{Global Agro-Ecological Zones} (GAEZ v4, FAO/IIASA) no cenário de alto insumo e sequeiro \cite{FAOGAEZ2021}.
-
-No modelo econométrico em painel que será formalizado na Seção~\ref{sec:estrategia}, o rendimento potencial GAEZ é uma medida biofísica constante no tempo para cada município ($GAEZ_{jm}$). Em razão dessa invariância temporal, o efeito direto em nível da aptidão agronômica é plenamente absorvido pelos efeitos fixos municipais ($\alpha_m$). Sua função identificadora reside exclusivamente no termo de interação com os preços de commodities ($P_{jt-1} \times GAEZ_{jm}$): esse produto aproxima a variação temporal na receita bruta potencial por hectare gerada pelos choques de mercado em cada território, permitindo testar diretamente a hipótese H1a.
+As séries ilustram o superciclo de alta dos grãos até 2012 (com índices de 210,7 para soja e 252,6 para milho), seguido por acomodação e novo repique entre 2020 e 2022. Essa transmissão de preços para o retorno líquido é moderada pelos custos de insumos importados — fertilizantes e energia caminham com as cotações agrícolas globais, elevando os custos operacionais e moderando as margens líquidas por hectare \cite{BaffesHaniotis2010, IMEA2026, CONAB2026} — e heterogênea segundo a dotação biofísica do solo. Para capturar essa variação espacial sem a endogeneidade do rendimento realizado nas lavouras, emprega-se o rendimento potencial do GAEZ v4 (FAO/IIASA) sob alto insumo e sequeiro ($Z_{jm}$) \cite{FAOGAEZ2021}. Como $Z_{jm}$ é invariante no tempo e absorvido pelos efeitos fixos municipais ($\alpha_m$), sua função identificadora opera pela interação $\ln P_{jt-1} \times Z_{jm}$, que aproxima o ganho marginal potencial de receita por hectare para testar H1a.
 
 \subsection{Fiscalização ambiental, dissuasão e governança de cadeias}
 \label{descritiva-instituicoes}
 
-O ambiente institucional em Mato Grosso combinou intervenções públicas de comando e controle com mecanismos de governança privada de cadeias produtivas globais. No âmbito público, a atuação fiscalizatória federal é observada por meio dos registros administrativos de autos de infração ambiental lavrados pelo IBAMA entre 2001 e 2024 \cite{IBAMA2026}, restritos à categoria temática Flora e georreferenciados na malha municipal.
-
-O Gráfico~\ref{fig:h1-ibama} detalha a cobertura e o comportamento estatístico dessas autuações. Para evitar equívocos de interpretação sobre os registros administrativos, a figura estrutura-se em dois painéis analíticos:
+O ambiente institucional mato-grossense articulou comando e controle federal e governança privada de cadeias exportadoras. Na esfera pública, acompanham-se os registros municipais do IBAMA para autos de infração da categoria Flora (\cite{IBAMA2026}, Gráfico~\ref{fig:h1-ibama}) e novos termos e áreas de embargos ambientais (\cite{IBAMAEmbargos2026}, utilizados nas especificações econométricas da Seção~\ref{sec:estrategia}).
 
 \begin{grafico}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{../stats/1. DESCRITIVA/resultados_h1/figuras/fig04_ibama.pdf}
+    \includegraphics[width=\textwidth]{../stats/figuras/fig04_ibama.pdf}
     \caption{Cobertura e distribuição das autuações do IBAMA classificadas como Flora}
     \label{fig:h1-ibama}
     \begin{minipage}{\textwidth}\footnotesize
@@ -100,32 +66,14 @@ O Gráfico~\ref{fig:h1-ibama} detalha a cobertura e o comportamento estatístico
 \end{grafico}
 \FloatBarrier
 
-O Painel A documenta a extensão da cobertura das séries ao longo do tempo. No período completo, registram-se \HibValid{} contagens município-ano, das quais \HibComplete{} possuem classificação temática integralmente preenchida. Nos primeiros anos da década de 2000, apenas uma fração dos municípios mato-grossenses contava com registros georreferenciados completos nos sistemas eletrônicos; a partir de 2006, com o aprimoramento dos sistemas de informação do IBAMA e a integração com os alertas DETER, a cobertura expandiu-se, alcançando mais de 80 municípios com dados completos.
+O Painel A do Gráfico~\ref{fig:h1-ibama} documenta a expansão da cobertura administrativa: entre \HibValid{} contagens município--ano válidas no período, \HibComplete{} possuem classificação temática completa, passando de uma fração restrita no início dos anos 2000 para mais de 80 municípios a partir de 2006 com a integração aos alertas DETER. O Painel B confronta a média municipal (linha laranja contínua) com a mediana (linha escura em traço-ponto), evidenciando forte assimetria à direita: enquanto a mediana manteve-se entre 1 e 6 autos na maior parte do período, a média atingiu picos próximos de 19 autos (como em 2018), refletindo a concentração tática das operações em municípios prioritários da fronteira ativa. Cabe ressaltar que tais registros espelham o esforço administrativo observado — sujeito a oscilações operacionais de campo e lacunas de preenchimento que restringem a subamostra comum para 1.125 observações na comparação pareada (Apêndice~\ref{ap:complementos}) —, e não a taxa integral de conformidade legal no território. Por dispor de cobertura completa nos 24 anos e impor restrição direta ao uso da parcela e ao acesso ao crédito rural oficial, a base de embargos ambientais constitui o indicador institucional de referência na avaliação de H1b.
 
-O Painel B revela a distribuição das autuações anuais entre os municípios com informação completa, confrontando a média municipal (linha cinza-escura em traço-ponto) com a mediana municipal (linha laranja contínua). A acentuada divergência entre média e mediana evidencia uma pronunciada assimetria à direita na distribuição das sanções: enquanto a mediana municipal manteve-se em patamares baixos (oscilando entre 1 e 6 autos por ano na maior parte do período), a média atingiu picos expressivos (como 18,8 autos em 2018). Essa assimetria reflete a concentração tática das operações de fiscalização em um conjunto específico de municípios situados na fronteira ativa de desmatamento, em consonância com a política de municípios prioritários do Ministério do Meio Ambiente.
-
-É essencial ressaltar que a frequência de autos de infração reflete a atuação administrativa registrada, e não a eficácia substantiva ou a taxa de conformidade integral da lei no território. A redução recente das autuações médias pode espelhar tanto a retração das infrações cometidas quanto oscilações na capacidade operacional de campo dos órgãos fiscalizadores. No modelo econométrico, a intensidade dessas autuações é tratada como um indicador da presença do Estado que modula a probabilidade percebida de dissuasão $\pi_{mt}$.
-
-Paralelamente às autuações públicas, a governança territorial foi profundamente afetada pela inserção de Mato Grosso nas cadeias de comércio exterior. O Gráfico~\ref{fig:h1-exportacoes} ilustra o volume e o valor FOB das exportações estaduais de soja, milho e carne bovina entre 2001 e 2024.
-
-\begin{grafico}[htbp]
-    \centering
-    \includegraphics[width=\textwidth,trim=0 16bp 0 20bp,clip]{../stats/figuras/fig09_exportacoes.pdf}
-    \caption{Valor e peso líquido das exportações registradas por domicílio fiscal em Mato Grosso}
-    \label{fig:h1-exportacoes}
-    \begin{minipage}{\textwidth}\footnotesize
-    \centering
-    Fonte: elaboração própria com MDIC/SECEX, Comex Stat.
-    \end{minipage}
-\end{grafico}
-\FloatBarrier
-
-A expansão das exportações conecta-se de forma direta à eficácia das instituições ambientais por meio de acordos de cadeia de suprimentos (\textit{supply chain agreements}). Em 2006, a assinatura da Moratória da Soja estabeleceu o compromisso das tradings exportadoras de não adquirir grãos originados de áreas recém-desmatadas no bioma Amazônia \cite{HeilmayrEtAl2020}. Dado que as exportações de soja alcançaram dezenas de milhões de toneladas destinadas a compradores sensíveis a critérios socioambientais, a ameaça de embargo comercial tornou o custo esperado de descumprimento extremamente oneroso para produtores no bioma Amazônia, direcionando a abertura de novas lavouras para áreas de pastagens consolidadas ou para o bioma Cerrado \cite{HardingEtAl2021}. Assim, a governança privada de mercado atuou de forma complementar ao comando e controle estatal, estabelecendo um regime regulatório diferenciado entre os biomas do estado.
+Paralelamente, a inserção exportadora de Mato Grosso (Gráfico~\ref{fig:h1-exportacoes}, Apêndice~\ref{ap:complementos}) vinculou o território a acordos privados de cadeia. A partir de 2006, a Moratória da Soja baniu a compra de grãos oriundos de áreas desmatadas após o marco temporal no bioma Amazônia \cite{HeilmayrEtAl2020}, elevando o custo esperado de descumprimento nesse bioma sem incidir com igual rigor sobre o Cerrado ou a pecuária \cite{HardingEtAl2021}.
 
 \subsection{Heterogeneidade territorial: biomas, aptidão agronômica e Reserva Legal}
 \label{descritiva-heterogeneidade}
 
-A diversidade ecológica e institucional de Mato Grosso expressa-se na sobreposição de seus sistemas produtivos com os biomas Amazônia, Cerrado e Pantanal. A Figura~\ref{fig:h1-uso-solo} sintetiza a distribuição espacial das principais classes de uso e cobertura do solo em 2001 e 2024, adaptada a partir das camadas do MapBiomas.
+A Figura~\ref{fig:h1-uso-solo} sintetiza a especialização espacial de Mato Grosso entre 2001 e 2024: as lavouras concentraram-se nos platôs centrais e orientais do Cerrado e na faixa de transição amazônica, a pecuária difundiu-se pelo estado e os maciços florestais e campos inundáveis preservaram-se sobretudo no noroeste amazônico e no Pantanal.
 
 \begin{figure}[htbp]
     \centering
@@ -138,56 +86,6 @@ A diversidade ecológica e institucional de Mato Grosso expressa-se na sobreposi
 \end{figure}
 \FloatBarrier
 
-O mapa evidencia a especialização espacial do território mato-grossense: as lavouras de grãos consolidaram-se nos platôs centrais e orientais do Cerrado e na transição amazônica, a pecuária bovina distribui-se de forma disseminada pelo estado, e os remanescentes florestais contínuos concentram-se no noroeste amazônico e na planície pantaneira.
+Essa compartimentação ecológica impõe regras assimétricas de Reserva Legal no Código Florestal (Lei nº 12.651/2012): 80\% em florestas da Amazônia Legal e 35\% no Cerrado (art. 12), além de 20\% em formações campestres e no Pantanal (art. 10), alterando entre biomas a parcela passível de conversão legal e o custo de oportunidade da conservação \cite{Brasil2012}. Classificando os 141 municípios por predominância territorial (76 na Amazônia, 61 no Cerrado e 4 no Pantanal, dos quais \Hmixed{} possuem limites mistos; Tabela~\ref{tab:h1-cobertura}, Apêndice~\ref{ap:complementos}), verifica-se maior continuidade livre de nuvens no Cerrado (96,4\% da grade teórica contra 71,6\% na Amazônia) e uma subamostra descritiva balanceada de \Hfixed{} municípios com cobertura completa nos 24 anos, enquanto a estimação econométrica aproveita todos os 2.767 pares válidos.
 
-Essa compartimentação ecológica impõe regras legais heterogêneas de uso do solo. Sob o Código Florestal (Lei nº 12.651/2012, art. 12), a exigência de Reserva Legal varia segundo a fitofisionomia e a localização geográfica: alcança 80\% da área do imóvel nas formações florestais situadas na Amazônia Legal, 35\% nas áreas de Cerrado e 20\% nas formações campestres e no Pantanal (art. 10) \cite{Brasil2012}. Embora o percentual efetivo no nível de cada imóvel rural dependa do histórico fundiário e de regras de consolidação legal, essa assimetria territorial altera substancialmente o custo de oportunidade da conservação e a proporção de terra passível de conversão legal entre os biomas.
-
-Para estruturar a análise empírica, os 141 municípios foram classificados de acordo com a predominância territorial de cada bioma em sua área total (interseção da malha IBGE 2023 com os limites de biomas do IBGE 2019). A Tabela~\ref{tab:h1-cobertura} descreve a estrutura dessa amostra.
-
-\input{../stats/1. DESCRITIVA/resultados_h1/tabelas/tab01_cobertura}
-\FloatBarrier
-
-A Tabela~\ref{tab:h1-cobertura} elucida a composição do painel:
-\begin{itemize}[itemsep=2pt,topsep=2pt]
-    \item Dos 141 municípios, 76 possuem predominância territorial no bioma Amazônia, 61 no Cerrado e 4 no Pantanal. Destaca-se que \Hmixed{} municípios apresentam limites territoriais mistos, abrangendo mais de um bioma em sua malha;
-    \item A coluna ``Pares válidos'' indica o total de transições anuais com mapas livres de nuvem no MapBiomas (1.306 pares na Amazônia, representando 71,6\% da grade teórica, e 1.412 no Cerrado, 96,4\% da grade);
-    \item A coluna ``Fixos'' define uma subamostra descritiva balanceada de referência, reunindo \Hfixed{} municípios que possuem dados válidos de conversão em todos os 24 anos da série temporal (39 na Amazônia, 55 no Cerrado e 1 no Pantanal, totalizando 2.280 pares), utilizada em exercícios descritivos para acompanhar trajetórias contínuas sem alterações na composição da amostra. Na estimação econométrica principal, utiliza-se a totalidade dos 2.767 pares válidos observados com cobertura florestal.
-\end{itemize}
-
-Mesmo dentro de um mesmo bioma, as taxas médias de conversão apresentam expressiva heterogeneidade espacial. O Gráfico~\ref{fig:h1-distribuicao} apresenta a distribuição das taxas médias de conversão municipal no período 2001--2024 para agricultura (painel esquerdo) e para pastagem (painel direito).
-
-\begin{grafico}[htbp]
-    \centering
-    \includegraphics[width=\textwidth]{../stats/figuras/fig02_distribuicao.pdf}
-    \caption{Heterogeneidade das taxas médias municipais de conversão, 2001--2024}
-    \label{fig:h1-distribuicao}
-    \begin{minipage}{\textwidth}\footnotesize
-    \centering
-    Fonte: elaboração própria com MapBiomas 10.1 e IBGE.
-    \end{minipage}
-\end{grafico}
-\FloatBarrier
-
-A dispersão observada no Gráfico~\ref{fig:h1-distribuicao} confirma que a delimitação do bioma não esgota as diferenças de incentivos: a proximidade a eixos logísticos rodoviários (como as rodovias BR-163 e BR-364) e as variações locais na aptidão agronômica geram respostas divergentes de conversão entre municípios sob a mesma moldura regulatória \cite{VanWeyEtAl2013}.
-
-Para caracterizar essa variação biofísica subjacente, a Tabela~\ref{tab:h1-capacidade} reúne os rendimentos potenciais do solo modelados pelo GAEZ v4 para milho e soja em cada grupo de predominância territorial.
-
-\input{../stats/1. DESCRITIVA/resultados_h1/tabelas/tab02_capacidade}
-\FloatBarrier
-
-Os dados da Tabela~\ref{tab:h1-capacidade} mostram que os municípios com predominância no Cerrado exibem medianas de rendimento potencial significativamente superiores às da Amazônia (3.261 versus 2.701 kg/ha para soja, e 3.320 versus 3.002 kg/ha para milho). Os municípios pantaneiros apresentam elevados potenciais edáficos de sequeiro, mas sujeitam-se a regimes sazonais de inundação que inviabilizam a agricultura mecanizada intensiva em escala. Esse gradiente de aptidão biofísica interage diretamente com os choques de preços externos, fornecendo a variação transversal necessária para identificar o mecanismo de ampliação postulado em H1a.
-
-\subsection{Síntese das evidências e articulação com a estratégia econométrica}
-\label{descritiva-sintese}
-
-A análise descritiva dos dados de Mato Grosso evidencia quatro regularidades empíricas fundamentais:
-\begin{enumerate}[label=(\arabic*),leftmargin=1.8cm,itemsep=2pt,topsep=2pt]
-    \item A desconexão parcial entre crescimento do produto e conversão de remanescentes: o aumento acelerado da produção de grãos e carnes coexistiu com o arrefecimento das taxas agregadas de conversão bruta pós-2005;
-    \item O papel assimétrico das atividades produtivas: a conversão direta da vegetação nativa foi dominada historicamente pela formação de pastagens, enquanto a soja avançou prioritariamente sobre áreas previamente desmatadas;
-    \item A importância da heterogeneidade biofísica predeterminada: municípios com maior capacidade produtiva GAEZ oferecem maior receita potencial marginal diante de elevações de preços;
-    \item A atuação combinada de instrumentos públicos de comando e controle e pactos setoriais privados, que alteraram o ambiente de risco e custos regulatórios entre biomas e ao longo do tempo.
-\end{enumerate}
-
-Esses fatos estilizados sustentam a formulação empírica das hipóteses H1a e H1b. A Seção~\ref{sec:estrategia} detalhará o modelo de efeitos fixos de painel, especificando como o termo de interação entre preços e aptidão GAEZ identifica o canal de mercado (H1a) e como a interação com autuações do IBAMA e com marcos institucionais (Moratória da Soja e Código Florestal) identifica o condicionamento da governança ambiental (H1b).
-
-\endgroup
+Confrontando a dispersão municipal das taxas de conversão (Gráfico~\ref{fig:h1-distribuicao}) com o rendimento potencial GAEZ (Tabela~\ref{tab:h1-capacidade}, Apêndice~\ref{ap:complementos}), observa-se que os municípios do Cerrado exibem medianas biofísicas claramente superiores às da Amazônia (3.261 versus 2.701 kg/ha na soja; 3.320 versus 3.002 kg/ha no milho). Os municípios pantaneiros apresentam elevado potencial edáfico teórico de sequeiro, mas sujeitam-se a regimes sazonais de inundação que restringem a agricultura mecanizada intensiva em escala. Esse duplo gradiente agronômico e institucional sustenta a estratégia em painel desenvolvida na Seção~\ref{sec:estrategia}.

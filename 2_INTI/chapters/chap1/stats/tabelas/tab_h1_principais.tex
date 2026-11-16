@@ -1,16 +1,16 @@
 \begin{table}[htbp]
 \centering
-\scriptsize
-\setlength{\tabcolsep}{2.8pt}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
 \captionstyle{\centering}
 \normalcaption
 \caption{Associação entre preços reais, capacidade potencial e conversão para agricultura, 2001--2024}
 \label{tab:h1-principais}
 \begin{tabular}{lccccccc}
-\hline
+\toprule
  & (1) & (2) & (3) & (4) & (5) & (6) & (7) \\
 Variável & M1 Soja & M2 Milho & M3 Conj. & Amaz. (S) & Cerr. (S) & Amaz. (M) & Cerr. (M) \\
-\hline
+\midrule
 $\ln P_{s,t-1} \times Z_{i,s}$ & 0,0848** & -- & 0,0815* & 0,0866 & 0,0752* & -- & -- \\
  & (0,0358) &  & (0,0433) & (0,0610) & (0,0439) &  &  \\
 $\ln P_{m,t-1} \times Z_{i,m}$ & -- & 0,0519*** & 0,0060 & -- & -- & 0,0185 & 0,0572*** \\
@@ -21,11 +21,14 @@ $Z_{i,m} \times \tau_t$ & -- & 0,0538*** & 0,0346 & -- & -- & 0,0426 & 0,0623***
  &  & (0,0152) & (0,0220) &  &  & (0,0361) & (0,0175) \\
 Precipitação ($R_{it}$) & -0,0135** & -0,0152** & -0,0137** & -0,0230** & -0,0023 & -0,0241** & -0,0048 \\
  & (0,0063) & (0,0067) & (0,0062) & (0,0104) & (0,0058) & (0,0108) & (0,0073) \\
-\hline
+\midrule
 Observações & 2.767 & 2.767 & 2.767 & 1.303 & 1.412 & 1.303 & 1.412 \\
 $R^2$ total & 0,3828 & 0,3807 & 0,3841 & 0,3735 & 0,3924 & 0,3700 & 0,3968 \\
 $R^2$ \textit{within} & 0,0198 & 0,0165 & 0,0218 & 0,0149 & 0,0492 & 0,0094 & 0,0560 \\
-\hline
+EF Município & Sim & Sim & Sim & Sim & Sim & Sim & Sim \\
+EF Bioma $\times$ Ano & Sim & Sim & Sim & Não & Não & Não & Não \\
+EF Ano & Não & Não & Não & Sim & Sim & Sim & Sim \\
+\bottomrule
 \end{tabular}
 \par\smallskip\begin{minipage}{\textwidth}\footnotesize
 \centering
