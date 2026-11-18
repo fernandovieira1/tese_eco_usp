@@ -1,0 +1,3 @@
+* Testar modelos com P e Z em separado, e separados com a interação P*Z;
+* Verificar se aptidão afeita preço e vice-versa
+* Rodar em nível
