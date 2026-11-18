@@ -102,36 +102,115 @@ g3 <- ggplot(precos, aes(ano_preco, indice, color = produto, linetype = produto)
   labs(x = "Ano da cotação (defasada em t - 1 no painel)", y = "Índice do preço real em USD de 2024 (2000 = 100)")
 salvar_padrao(g3, "fig03_precos", largura = 7.6, altura = 3.8, copiar_res = TRUE)
 
-# 4. fig04_ibama (CORREÇÃO DOS EIXOS TROCADOS) -------------------------------
+# 4. fig04_ibama (Caminho B: Embargos + Autos Flora por bioma + Top 10) ------
+emb_bio <- read_csv(file.path(dir_dados_h1, "embargos_ibama_anual_bioma.csv"), show_col_types = FALSE) |>
+  transmute(ano, bioma = factor(bioma_predominante, levels = c("Amazônia", "Cerrado", "Pantanal")),
+            instrumento = "A1. Novos embargos (termos/ano)", total = total_termos)
+fl_bio <- read_csv(file.path(dir_dados_h1, "flora_ibama_anual_bioma.csv"), show_col_types = FALSE) |>
+  transmute(ano, bioma = factor(bioma_predominante, levels = c("Amazônia", "Cerrado", "Pantanal")),
+            instrumento = "A2. Autos de Flora completos (autos/ano)", total = total_autos_comp)
+
+painel_a_df <- bind_rows(emb_bio, fl_bio) |>
+  mutate(instrumento = factor(instrumento, levels = c(
+    "A1. Novos embargos (termos/ano)",
+    "A2. Autos de Flora completos (autos/ano)"
+  )))
+
+g4_top <- ggplot(painel_a_df, aes(ano, total, color = bioma, linetype = bioma)) +
+  geom_line(linewidth = 0.8) +
+  facet_wrap(~ instrumento, ncol = 2) +
+  scale_color_manual(values = cores_biomas) +
+  scale_linetype_manual(values = c("Amazônia" = "solid", "Cerrado" = "dashed", "Pantanal" = "dotted")) +
+  scale_x_continuous(breaks = c(2001, 2006, 2012, 2018, 2024)) +
+  scale_y_continuous(limits = c(0, 1450), labels = rotulo_pt) +
+  labs(subtitle = "A. Incidência anual das ações do IBAMA por bioma predominante (2001–2024)",
+       x = "Ano", y = "Ocorrências anuais") +
+  theme(plot.subtitle = element_text(face = "bold", size = 9.5, color = "grey15"),
+        legend.position = "bottom",
+        panel.spacing = unit(0.8, "lines"))
+
+top10 <- read_csv(file.path(dir_dados_h1, "embargos_ibama_top10.csv"), show_col_types = FALSE) |>
+  mutate(
+    bioma = factor(bioma_predominante, levels = c("Amazônia", "Cerrado", "Pantanal")),
+    municipio_ord = factor(municipio, levels = rev(municipio)),
+    rotulo = sprintf("%s (%s%%)", format(total_emb, big.mark = ".", decimal.mark = ","),
+                     formatC(pct_estado, format = "f", digits = 1, decimal.mark = ","))
+  )
+
+g4_bot <- ggplot(top10, aes(total_emb, municipio_ord, fill = bioma)) +
+  geom_col(width = 0.68, alpha = 0.9) +
+  geom_vline(xintercept = 199, linetype = "dashed", color = "#D55E00", linewidth = 0.7) +
+  annotate("label", x = 1435, y = 4.5, hjust = 1, vjust = 0.5, size = 2.95,
+           fill = "grey98", color = "grey15", linewidth = 0.25,
+           label = paste0(
+             "Top 10 (todos na Amazônia): 4.720 de 11.412 termos (41,4% do estado)\n",
+             "Linha tracejada: maior acumulado no Cerrado (Paranatinga, 199)"
+           )) +
+  geom_text(aes(label = rotulo), hjust = -0.08, size = 2.9, color = "grey15") +
+  scale_fill_manual(values = cores_biomas, drop = FALSE) +
+  scale_x_continuous(limits = c(0, 1480), expand = c(0, 0), labels = rotulo_pt) +
+  labs(subtitle = "B. Concentração nos 10 municípios com mais novos embargos (2001–2024)",
+       x = "Total acumulado de novos embargos geocodificados (termos)", y = NULL) +
+  theme(plot.subtitle = element_text(face = "bold", size = 9.5, color = "grey15"),
+        legend.position = "none",
+        panel.grid.major.y = element_blank())
+
+draw_fig04 <- function() {
+  grid::grid.newpage()
+  grid::pushViewport(grid::viewport(layout = grid::grid.layout(2, 1, heights = grid::unit(c(1.06, 0.94), "null"))))
+  print(g4_top, vp = grid::viewport(layout.pos.row = 1, layout.pos.col = 1))
+  print(g4_bot, vp = grid::viewport(layout.pos.row = 2, layout.pos.col = 1))
+}
+
+for (dest_dir in c(out_fig_main, out_fig_res)) {
+  pdf(file.path(dest_dir, "fig04_ibama.pdf"), width = 8.4, height = 6.1, useDingbats = FALSE, encoding = "ISOLatin1.enc")
+  draw_fig04()
+  dev.off()
+  png(file.path(dest_dir, "fig04_ibama.png"), width = 8.4, height = 6.1, units = "in", res = 320, bg = "white")
+  draw_fig04()
+  dev.off()
+}
+cat("Salvo: fig04_ibama (8.4 x 6.1 in)\n")
+
+# 4b. fig_ap_ibama_cobertura (Diagnóstico detalhado para Apêndice A) ---------
 ibama <- read_csv(file.path(dir_dados_h1, "ibama_anual.csv"), show_col_types = FALSE)
-pA <- "A. Cobertura dos registros (número de municípios)"
-pB <- "B. Autuações na categoria Flora (autos por município)"
+pA_ap <- "A. Cobertura cadastral (municípios/ano; soma 24 anos: 1.760 vs. 1.526 pares)"
+pB_ap <- "B. Autos de Flora nos municípios com tema completo (autos/município)"
 ibama_plot <- bind_rows(
-  ibama |> transmute(ano, painel = pA, serie = "Contagem observada", valor = n_observado),
-  ibama |> transmute(ano, painel = pA, serie = "Classificação completa", valor = n_classificado),
-  ibama |> transmute(ano, painel = pB, serie = "Média municipal", valor = media),
-  ibama |> transmute(ano, painel = pB, serie = "Mediana municipal", valor = mediana)
+  ibama |> transmute(ano, painel = pA_ap, serie = "Com autos registrados (total observado)", valor = n_observado),
+  ibama |> transmute(ano, painel = pA_ap, serie = "Com tema completo (Flora apurada)", valor = n_classificado),
+  ibama |> transmute(ano, painel = pB_ap, serie = "Média municipal", valor = media),
+  ibama |> transmute(ano, painel = pB_ap, serie = "Mediana municipal", valor = mediana)
 ) |> mutate(
-  painel = factor(painel, levels = c(pA, pB)),
-  serie = factor(serie, levels = c("Contagem observada", "Classificação completa", "Média municipal", "Mediana municipal"))
+  painel = factor(painel, levels = c(pA_ap, pB_ap)),
+  serie = factor(serie, levels = c(
+    "Com autos registrados (total observado)",
+    "Com tema completo (Flora apurada)",
+    "Média municipal",
+    "Mediana municipal"
+  ))
 )
 
-g4 <- ggplot(ibama_plot, aes(ano, valor, color = serie, linetype = serie)) +
+g4_ap <- ggplot(ibama_plot, aes(ano, valor, color = serie, linetype = serie)) +
   geom_line(linewidth = 0.8) +
   facet_wrap(~ painel, ncol = 1, scales = "free_y") +
   scale_x_continuous(breaks = c(2001, 2005, 2010, 2015, 2020, 2024)) +
   scale_y_continuous(limits = c(0, NA), labels = rotulo_pt) +
   scale_color_manual(values = c(
-    "Contagem observada" = "#666666", "Classificação completa" = "#0072B2",
-    "Média municipal" = "#D55E00", "Mediana municipal" = "#222222"
+    "Com autos registrados (total observado)" = "#666666",
+    "Com tema completo (Flora apurada)" = "#0072B2",
+    "Média municipal" = "#D55E00",
+    "Mediana municipal" = "#222222"
   )) +
   scale_linetype_manual(values = c(
-    "Contagem observada" = "solid", "Classificação completa" = "dashed",
-    "Média municipal" = "solid", "Mediana municipal" = "dotdash"
+    "Com autos registrados (total observado)" = "solid",
+    "Com tema completo (Flora apurada)" = "dashed",
+    "Média municipal" = "solid",
+    "Mediana municipal" = "dotdash"
   )) +
   labs(x = "Ano de lavratura", y = NULL) +
   guides(color = guide_legend(nrow = 2), linetype = guide_legend(nrow = 2))
-salvar_padrao(g4, "fig04_ibama", largura = 7.6, altura = 5.0, copiar_res = TRUE)
+salvar_padrao(g4_ap, "fig_ap_ibama_cobertura", largura = 7.6, altura = 5.0, copiar_res = FALSE)
 
 # 5. fig05_lavouras (sem título interno, mesma paleta/tema) ------------------
 lav_raw <- read_csv(file.path(dir_dados_pre, "oferta_agricultura_anual.csv"), show_col_types = FALSE) |>

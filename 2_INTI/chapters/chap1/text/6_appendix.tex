@@ -14,7 +14,7 @@
 \subsection{Séries produtivas, cobertura amostral e aptidão por bioma}
 \label{ap:descritiva}
 
-Este apêndice reúne os elementos descritivos complementares referidos na Seção~\ref{sec:contexto-dados}: evolução municipal das lavouras de soja e milho (Gráfico~\ref{fig:h1-lavouras}), evolução da pecuária bovina e das exportações registradas por domicílio fiscal (Tabela~\ref{tab:h1-oferta-contexto} e Gráfico~\ref{fig:h1-exportacoes}), cobertura territorial por bioma predominante (Tabela~\ref{tab:h1-cobertura}), dispersão municipal das taxas médias de conversão (Gráfico~\ref{fig:h1-distribuicao}) e distribuição do rendimento potencial GAEZ v4 (Tabela~\ref{tab:h1-capacidade}).
+Este apêndice reúne os elementos descritivos complementares referidos na Seção~\ref{sec:contexto-dados}: evolução municipal das lavouras de soja e milho (Gráfico~\ref{fig:h1-lavouras}), evolução da pecuária bovina e das exportações registradas por domicílio fiscal (Tabela~\ref{tab:h1-oferta-contexto} e Gráfico~\ref{fig:h1-exportacoes}), cobertura territorial por bioma predominante (Tabela~\ref{tab:h1-cobertura}), dispersão municipal das taxas médias de conversão (Gráfico~\ref{fig:h1-distribuicao}), distribuição do rendimento potencial GAEZ v4 (Tabela~\ref{tab:h1-capacidade}) e diagnóstico cadastral de cobertura e dispersão dos autos de infração de Flora do IBAMA (Gráfico~\ref{fig:ap-ibama-cobertura}).
 
 \begin{grafico}[htbp]
     \centering
@@ -59,6 +59,20 @@ Este apêndice reúne os elementos descritivos complementares referidos na Seç�
 \FloatBarrier
 
 \input{../stats/1. DESCRITIVA/resultados_h1/tabelas/tab02_capacidade}
+\FloatBarrier
+
+O Gráfico~\ref{fig:ap-ibama-cobertura} documenta a diferença entre a presença bruta de autuações e a classificação temática integral nos autos de Flora do IBAMA. No Painel A, a soma das duas séries ao longo dos 24 anos na grade de 141 municípios totaliza 1.760 pares município--ano com registro observado frente a 1.526 com tema completo (sendo o hiato concentrado entre 2003 e 2008, antes da estabilização cadastral em 2009). No Painel B, calculado apenas sobre o subconjunto de registros completos, o descolamento entre a média municipal (pico de 18,8 autos em 2018) e a mediana (entre 1 e 6 autos) ilustra a assimetria à direita na distribuição das autuações.
+
+\begin{grafico}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{../stats/figuras/fig_ap_ibama_cobertura.pdf}
+    \caption{Cobertura cadastral (A) e distribuição dos autos de Flora completos (B) do IBAMA em Mato Grosso, 2001--2024}
+    \label{fig:ap-ibama-cobertura}
+    \begin{minipage}{\textwidth}\footnotesize
+    \centering
+    Fonte: elaboração própria com registros do IBAMA e malha IBGE 2023.
+    \end{minipage}
+\end{grafico}
 \FloatBarrier
 
 \subsection{Modelos complementares de pecuária, sensibilidade institucional e multiplicidade}
