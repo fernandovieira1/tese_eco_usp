@@ -8,6 +8,7 @@ Este repositório contém a tese de doutorado de Fernando Souza de Vieira.
 - As regras de IA do projeto estão em `2_INTI/auxiliary/agents/`. Consulte essa pasta ao iniciar cada tarefa relacionada à tese. Referências internas aos caminhos antigos dos arquivos de regras devem ser resolvidas nesse diretório.
 - `1_SUYANA/` é material histórico/legado e não deve ser alterado salvo instrução explícita.
 - Antes de executar tarefas no projeto, leia e cumpra `2_INTI/auxiliary/agents/RESEARCH_PROTOCOL.md`.
+- Em tarefas de criação ou edição de códigos e notebooks, leia e aplique `2_INTI/auxiliary/agents/STYLE_CODE.md`.
 - Em tarefas de escrita e revisão, inclusive com Writing Style ou `/fernando`, leia e aplique integralmente `2_INTI/auxiliary/agents/STYLE_GUIDE.md`, incluindo as referências aprovadas e as diretrizes de organização lógica e textual. As determinações explícitas do autor prevalecem sobre padrões inferidos por ferramentas.
 
 ## Regras gerais
