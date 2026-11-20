@@ -1,0 +1,101 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\captionstyle{\centering}
+\normalcaption
+\caption{Observações por etapa e bioma}
+\label{tab:ap-h1b-amostra-quali}
+\begin{tabular}{lrrrr}
+\toprule
+Etapa & Amazônia & Cerrado & Pantanal & Total \\
+\midrule
+Grade inicial & 1.824 & 1.464 & 96 & 3.384 \\
+Conversão elegível & 1.306 & 1.412 & 54 & 2.772 \\
+Amostra efetiva de M1 e M2 & 1.303 & 1.412 & 52 & 2.767 \\
+Contagem fiscal elegível & 621 & 490 & 29 & 1.140 \\
+Subamostra fiscal efetiva & 618 & 486 & 21 & 1.125 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize
+\SingleSpacing
+\noindent\textbf{Fonte}. Elaboração própria com MapBiomas 10.1, IBGE e registros do IBAMA.
+\end{minipage}
+\end{table}
+
+\FloatBarrier
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\captionstyle{\centering}
+\normalcaption
+\caption{Sequência de modelos na subamostra fiscal comum}
+\label{tab:ap-h1b-ponte-quali}
+\begin{tabular}{lrrrr}
+\toprule
+Cultura e medida & \shortstack{Só medida\\($\phi_1$)} & \shortstack{Com interações\\inferiores ($\phi_1$)} & \shortstack{Modelo\\completo ($\phi_1$)} & \shortstack{Tripla\\($\delta$)} \\
+\midrule
+Soja -- Autos de Flora & 0,0034 & -0,0010 & -0,0009 & -0,0062 \\
+ & (0,0063) & (0,0060) & (0,0059) & (0,0121) \\
+Soja -- Área de novos embargos & -0,0031 & -0,0043 & -0,0047 & 0,0141 \\
+ & (0,0026) & (0,0029) & (0,0030) & (0,0080) \\
+Soja -- Número de novos termos & 0,0083 & 0,0036 & 0,0030 & 0,0112 \\
+ & (0,0066) & (0,0065) & (0,0067) & (0,0152) \\
+\addlinespace
+Milho -- Autos de Flora & 0,0029 & -0,0001 & -0,0001 & -0,0014 \\
+ & (0,0063) & (0,0060) & (0,0059) & (0,0124) \\
+Milho -- Área de novos embargos & -0,0030 & -0,0038 & -0,0038 & 0,0136 \\
+ & (0,0025) & (0,0025) & (0,0025) & (0,0095) \\
+Milho -- Número de novos termos & 0,0076 & 0,0031 & 0,0027 & 0,0150 \\
+ & (0,0070) & (0,0056) & (0,0056) & (0,0141) \\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize
+\SingleSpacing
+\noindent\textbf{Fonte}. Elaboração própria com MapBiomas 10.1, GAEZ v4, preços reais e registros do IBAMA.
+\end{minipage}
+\end{table}
+
+\FloatBarrier
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\captionstyle{\centering}
+\normalcaption
+\caption{Sensibilidade institucional à escala, à defasagem e à conversão anterior}
+\label{tab:ap-h1b-testes-quali}
+\begin{tabular}{lrrr}
+\toprule
+Comparação & Soja & Milho & Pares \\
+\midrule
+\multicolumn{4}{l}{\textit{Área, de zero a 380,76 ha ($\Delta Y$ no ponto de referência)}} \\
+$\ln(1+x)$ & -0,0329 & -0,0403 & 2.767 \\
+ & [-0,0629 a -0,0029] & [-0,0722 a -0,0083] &  \\
+Nível & -0,0000 & 0,0001 & 2.767 \\
+ & [-0,0008 a 0,0007] & [-0,0004 a 0,0005] &  \\
+\multicolumn{4}{l}{\textit{Contagem, de zero a um termo ($\Delta$ inclinação)}} \\
+$\ln(1+x)$ & -0,0218 & 0,0047 & 2.767 \\
+ & [-0,0463 a 0,0027] & [-0,0180 a 0,0274] &  \\
+Nível & -0,0020 & -0,0004 & 2.767 \\
+ & [-0,0048 a 0,0007] & [-0,0040 a 0,0031] &  \\
+\addlinespace
+\multicolumn{4}{l}{\textit{Área de novos embargos, coeficiente de $\ln(1+\text{ha})$}} \\
+Em $t-1$, amostra comum & -0,0052 & -0,0064 & 2.650 \\
+ & [-0,0100 a -0,0004] & [-0,0114 a -0,0013] &  \\
+Em $t-2$, amostra comum & -0,0025 & -0,0027 & 2.650 \\
+ & [-0,0065 a 0,0015] & [-0,0068 a 0,0013] &  \\
+Em $t-1$, sem $Y_{t-1}$ & -0,0051 & -0,0062 & 2.590 \\
+ & [-0,0099 a -0,0003] & [-0,0113 a -0,0011] &  \\
+Em $t-1$, com $Y_{t-1}$ & -0,0025 & -0,0027 & 2.590 \\
+ & [-0,0060 a 0,0009] & [-0,0059 a 0,0006] &  \\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize
+\SingleSpacing
+\noindent\textbf{Fonte}. Elaboração própria com MapBiomas 10.1, GAEZ v4, preços reais e registros do IBAMA.
+\end{minipage}
+\end{table}

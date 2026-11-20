@@ -79,15 +79,32 @@ O Gráfico~\ref{fig:ap-ibama-cobertura} documenta a diferença entre a presença
 \end{grafico}
 \FloatBarrier
 
-\subsection{Modelos complementares de pecuária, sensibilidade institucional e multiplicidade}
+\subsection{Modelos complementares e análises de sensibilidade}
 \label{ap:econometria}
 
-A Tabela~\ref{tab:ap-pecuaria} reporta as estimações para conversão em pastagem e agricultura incorporando o preço real da carne bovina e a razão relativa \textit{crop-to-beef}. A Tabela~\ref{tab:ap-h1b-sens} apresenta a comparação pareada entre autos de infração de Flora e embargos ambientais na subamostra fiscal comum ($N = 1.125$), bem como os testes com conversão defasada ($Y_{i,t-1}$) e embargos futuros ($E_{i,t+1}$). Por fim, a Tabela~\ref{tab:ap-inferencia-holm} reporta os estimadores alternativos de covariância (cluster duplo, FWL-HAC e Driscoll--Kraay), o painel balanceado ($N = 2.256$), o contraste empilhado entre destinos ($N = 5.534$) e os $p$-valores ajustados pelo procedimento de Holm--Bonferroni nas famílias de testes F1 a F4.
+A Tabela~\ref{tab:ap-pecuaria} reúne as regressões para pastagem e agricultura com o preço da carne bovina e a razão entre os preços de grãos e carne.
 
 \input{../stats/tabelas/tab_ap_pecuaria}
 \FloatBarrier
 
+A Tabela~\ref{tab:ap-h1b-amostra-quali} apresenta a seleção por bioma. Nas 1.125 observações fiscais efetivas, a Tabela~\ref{tab:ap-h1b-ponte-quali} mostra a sequência de modelos para cada medida institucional, com erros-padrão entre parênteses. A referência na mesma subamostra tem coeficiente preço--aptidão de $0{,}0230$ na soja e $0{,}0126$ no milho. A Tabela~\ref{tab:ap-h1b-testes-quali} usa a especificação com todos os termos inferiores das triplas e compara mudanças na escala original da medida. Para área, o contraste vai de zero à mediana positiva de 380,76 ha. Para a contagem, usa-se a passagem de zero para um termo. Os colchetes contêm intervalos de 95\% com agrupamento municipal e sem ajuste de multiplicidade.
+
+\input{tabelas/tab_quali_h1b}
+\FloatBarrier
+
+A Tabela~\ref{tab:ap-h1b-sens} reúne os exercícios da qualificação para a subamostra fiscal, a inclusão da conversão defasada e o placebo com embargos futuros. As regressões com a contagem de termos incluem as interações inferiores. Nas regressões dessa tabela com área de novos embargos, incluem-se a medida e sua interação tripla.
+
 \input{../stats/tabelas/tab_ap_h1b_alinhado_sens}
+\FloatBarrier
+
+A Tabela~\ref{tab:h1-regimes-biomas} conserva as duas parametrizações da qualificação. O Painel A libera as inclinações sem a tendência diferenciada por aptidão. O Painel B usa preços centrados por período e admite deslocamentos de nível por aptidão. Essas variantes complementam a especificação alinhada a M1 e M2.
+
+\input{../stats/tabelas/tab_h1_regimes_biomas}
+\FloatBarrier
+
+A Tabela~\ref{tab:h1-destinos-robustez} reúne a janela pós-2005, o degrau que vale um a partir de 2005, o placebo com preços futuros, a winsorização e o exercício com a grade preenchida. A Tabela~\ref{tab:ap-inferencia-holm} apresenta as covariâncias alternativas, o painel balanceado, o contraste empilhado e a correção Holm--Bonferroni nas quatro famílias da análise de referência.
+
+\input{../stats/tabelas/tab_h1_destinos_robustez}
 \FloatBarrier
 
 \input{../stats/tabelas/tab_ap_inferencia_holm}
