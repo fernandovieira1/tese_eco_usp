@@ -1,0 +1,2 @@
+- Modelos em nível.
+- Começar de poucas variáveis e ir evoluindo passo a passo.
