@@ -1,0 +1,225 @@
+\begingroup
+\footnotesize
+\SingleSpacing
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.25\linewidth}
+                     >{\raggedright\arraybackslash}p{0.38\linewidth}
+                     >{\raggedright\arraybackslash}p{0.13\linewidth}
+                     >{\raggedright\arraybackslash}p{\dimexpr0.24\linewidth-6\tabcolsep\relax}@{}}
+\caption{Dicionário das variáveis dos modelos da Seção~\ref{sec:discussao}}
+\label{tab:ap-dicionario-h1}\\
+\toprule
+\textbf{Variável} & \textbf{Descrição} & \textbf{Unidade de medida} & \textbf{Comentário} \\
+\midrule
+\endfirsthead
+\caption[]{Dicionário das variáveis (continuação)}\\
+\toprule
+\textbf{Variável} & \textbf{Descrição} & \textbf{Unidade de medida} & \textbf{Comentário} \\
+\midrule
+\endhead
+\midrule
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multicolumn{4}{@{}l}{\textit{Variáveis dependentes e controle dinâmico}} \\
+Conversão para agricultura \newline $Y_{it}^{\text{agr}}$
+    & Área que passou de vegetação nativa em $t-1$ para agricultura em $t$, dividida pelo estoque nativo em $t-1$ e multiplicada por 100.
+    & p.p. do estoque nativo inicial
+    & MapBiomas 10.1. Numerador e denominador usam a mesma máscara de observação. \\
+Conversão para pastagem \newline $Y_{it}^{\text{past}}$
+    & Área que passou de vegetação nativa em $t-1$ para pastagem em $t$, dividida pelo estoque nativo em $t-1$ e multiplicada por 100.
+    & p.p. do estoque nativo inicial
+    & MapBiomas 10.1. A taxa é de conversão bruta, assim como no destino agrícola. \\
+Participação da área plantada de milho \newline $A_{it}^{\text{milho}}$
+    & Área municipal plantada com milho no ano $t$, dividida pela área do município e multiplicada por 100.
+    & \% da área municipal
+    & Área plantada da PAM/IBGE. \\
+Conversão agrícola winsorizada
+    & Taxa $Y_{it}^{\text{agr}}$ limitada superiormente ao percentil 99 da amostra observada.
+    & p.p. do estoque nativo inicial
+    & Valores acima do limite são substituídos pelo percentil. \\
+Conversão agrícola na grade completa
+    & Taxa $Y_{it}^{\text{agr}}$ na grade de 3.384 pares município--ano, incluindo valores preenchidos na base precária.
+    & p.p. do estoque nativo inicial
+    & Dos 612 pares sem conversão observada, 594 têm preenchimento positivo. \\
+Conversão agrícola defasada \newline $Y_{i,t-1}^{\text{agr}}$
+    & Taxa de conversão para agricultura observada no mesmo município no ano anterior.
+    & p.p. do estoque nativo inicial
+    & Controle de persistência no modelo dinâmico de H1b. \\
+
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Preços internacionais e tendência}} \\
+Preço real da soja \newline $\ln P_{s,t-1}$
+    & Logaritmo natural centrado da média anual do preço internacional real da soja em $t-1$.
+    & log (adim.)
+    & Série em US\$ de 2024/t antes do logaritmo. \\
+Preço real do milho \newline $\ln P_{m,t-1}$
+    & Logaritmo natural centrado da média anual do preço internacional real do milho em $t-1$.
+    & log (adim.)
+    & Série em US\$ de 2024/t antes do logaritmo. \\
+Preço real da carne bovina \newline $\ln P_{\text{boi},t-1}$
+    & Logaritmo natural centrado da média anual do preço internacional real da carne bovina em $t-1$.
+    & log (adim.)
+    & Série em US\$ de 2024/kg antes do logaritmo. \\
+Preço relativo soja/boi \newline $\ln(P_s/P_{\text{boi}})_{t-1}$
+    & Diferença entre os logaritmos centrados dos preços reais da soja e da carne bovina, ambos em $t-1$.
+    & log (adim.)
+    & Termo \textit{crop-to-beef} nas equações de agricultura e pastagem. \\
+Preço futuro da soja ou do milho \newline $\ln P_{j,t+1}$
+    & Logaritmo natural do preço real médio no ano seguinte, centrado pela mesma média do preço defasado.
+    & log (adim.)
+    & Placebo temporal. \\
+Preço centrado por regime
+    & Logaritmo do preço real defasado da soja ou do milho, menos a média de seu logaritmo no regime correspondente.
+    & log (adim.)
+    & Painel B da Tabela~\ref{tab:h1-regimes-biomas}. \\
+Tendência temporal $\tau_t$
+    & Tempo decorrido desde 2001, calculado como $(t-2001)/10$.
+    & década
+    & \\
+
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Aptidão e ocupação prévia}} \\
+Aptidão de alto insumo \newline $Z_{i,j}$
+    & Rendimento potencial municipal de soja ou milho no cenário de alto insumo e sequeiro do GAEZ v4.
+    & escore $z$
+    & Rendimento original em kg/ha. Padronização nos 141 municípios. \\
+Aptidão de baixo insumo
+    & Rendimento potencial municipal da soja no cenário de baixo insumo e sequeiro do GAEZ v4.
+    & escore $z$
+    & Rendimento original em kg/ha. \\
+Índice de adequação da soja
+    & Índice de adequação do GAEZ v4 para soja em alto insumo e sequeiro.
+    & escore $z$
+    & Cenário de índice \texttt{sxHr0}. \\
+Rendimento histórico da soja
+    & Rendimento médio municipal da soja registrado na PAM de 1991 a 2000.
+    & escore $z$
+    & Rendimento original em kg/ha. Exige ao menos sete anos válidos. \\
+Histórico agrícola $H_i$
+    & Média das frações anuais do município ocupadas por lavouras temporárias entre 1985 e 2000.
+    & escore $z$
+    & MapBiomas 10.1. \\
+Histórico de soja $H_i$
+    & Fração da área municipal ocupada por soja em 2000.
+    & escore $z$
+    & Medida alternativa de ocupação prévia na Tabela~\ref{tab:h1-margens-tecnologia}. \\
+Histórico pastoril \newline $H_i^{\text{past}}$
+    & Média das frações anuais do município ocupadas por pastagem entre 1985 e 2000.
+    & escore $z$
+    & MapBiomas 10.1. \\
+
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Clima, logística e fiscalização}} \\
+Anomalia de precipitação \newline $R_{it}$
+    & Precipitação anual municipal em $t$ menos a média anual de 1981--2000.
+    & 100 mm
+    & CHIRPS. Valor positivo indica um ano mais chuvoso que a média histórica. \\
+Proximidade portuária \newline $P_i^{\text{sul}}$
+    & Negativo do escore $z$ da menor distância geodésica do centroide municipal a Santos ou Paranaguá.
+    & escore $z$
+    & Valores maiores indicam maior proximidade. \\
+Distância portuária mínima \newline $D_{it}^{\min}$
+    & Menor distância geodésica a Santos ou Paranaguá até 2013. A partir de 2014, o cálculo também considera Miritituba.
+    & 100 km
+    & Medida indireta do custo de acesso aos mercados. \\
+Exposição à ferrovia \newline $F_{it}^{2013}$
+    & Proximidade ao terminal ferroviário de Rondonópolis, multiplicada pelo indicador de 2013 em diante.
+    & escore $z$
+    & Proximidade é o negativo do escore $z$ da distância geodésica. \\
+Autos de Flora \newline $F_{i,t-1}$
+    & $\ln(1+n)$, em que $n$ é o total de autos de infração de Flora do IBAMA no município em $t-1$.
+    & log (adim.)
+    & Usa registros geolocalizados e com classificação temática completa na subamostra fiscal. \\
+Área de novos embargos \newline $E_{i,t-1}^{\text{ha}}$
+    & $\ln(1+a)$, em que $a$ é a soma das áreas, em hectares, dos novos termos de embargo do IBAMA no município em $t-1$.
+    & log (adim.)
+    & Termos geolocalizados, deduplicados e sem cancelamento registrado. \\
+Contagem de novos embargos \newline $E_{i,t-1}^{\text{n}}$
+    & $\ln(1+n)$, em que $n$ é o número de novos termos de embargo do IBAMA no município em $t-1$.
+    & log (adim.)
+    & Mesmos critérios de seleção da medida por área. \\
+Embargos futuros \newline $E_{i,t+1}^{\text{ha}}$, $E_{i,t+1}^{\text{n}}$
+    & Medidas de área e contagem de novos embargos construídas da mesma forma, usando o ano seguinte.
+    & log (adim.)
+    & Placebo de fiscalização. \\
+
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Território, regimes e efeitos fixos}} \\
+Bioma predominante $b(i)$
+    & Bioma com a maior fração territorial no município (Amazônia, Cerrado ou Pantanal).
+    & categoria
+    & Define os recortes e os efeitos fixos de bioma por ano. \\
+Frações territoriais de bioma \newline $q_i^M$, $q_i^{\text{Pan}}$
+    & Frações da área municipal situadas na Amazônia e no Pantanal, respectivamente.
+    & fração (0 a 1)
+    & O Cerrado é a referência no teste de moderação contínua. \\
+Indicadores de regime $I_{rt}$
+    & Indicadores dos períodos 2001--2005, 2006--2011 e 2012--2024. Cada indicador assume 1 no respectivo período.
+    & binária (0/1)
+    & \\
+Indicador do degrau de 2005 \newline $D_{2005}$
+    & Indicador que assume 1 a partir de 2005, inclusive.
+    & binária (0/1)
+    & Coluna (3) da Tabela~\ref{tab:h1-destinos-robustez}. \\
+Indicador do destino agrícola \newline $I_{\text{agr}}$
+    & Indicador que assume 1 para agricultura e 0 para pastagem no painel empilhado.
+    & binária (0/1)
+    & Cada par município--ano entra com os dois destinos. \\
+Efeitos fixos de município, de ano e de bioma por ano
+    & Categorias de município (código IBGE), ano civil ou par bioma predominante--ano.
+    & categoria
+    & No modelo empilhado, os efeitos de município e de bioma por ano variam por destino. \\
+
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Interações e termos derivados}} \\
+Preço $\times$ aptidão
+    & Produto de $\ln P_{j,t-1}$ por $Z_{i,j}$, ou por uma medida alternativa de aptidão.
+    & log $\times$ escore $z$
+    & No placebo, usa-se o preço em $t+1$. \\
+Preço $\times$ ocupação prévia
+    & Produto do preço dos grãos com $H_i$, ou do preço da carne bovina com $H_i^{\text{past}}$.
+    & log $\times$ escore $z$
+    & Os preços entram em log e defasados. \\
+Tendência $\times$ aptidão ou ocupação prévia
+    & Produto de $\tau_t$ pela medida de aptidão ou de ocupação prévia usada na especificação.
+    & década $\times$ escore $z$
+    & Permite tendências distintas por aptidão ou ocupação. \\
+Preço da carne bovina ou preço relativo $\times$ aptidão
+    & Produto de $\ln P_{\text{boi},t-1}$ ou $\ln(P_s/P_{\text{boi}})_{t-1}$ pelo escore GAEZ da cultura.
+    & log $\times$ escore $z$
+    & \\
+Preço e aptidão $\times$ proximidade portuária
+    & Produtos de $P_i^{\text{sul}}$ pelo log do preço defasado e pelo gradiente preço--aptidão.
+    & log $\times$ um ou dois escores $z$
+    & Inclui a interação dupla e a tripla. \\
+Preço e aptidão $\times$ fiscalização
+    & Interações do log do preço defasado e do escore de aptidão com autos de Flora, área embargada ou contagem de embargos.
+    & log $\times$ log, log $\times$ escore $z$ ou produto dos três fatores
+    & Inclui os termos duplos e triplos usados em cada modelo e a interação com a contagem futura no placebo. \\
+Preço--aptidão $\times$ fração de bioma
+    & Produto do gradiente preço--aptidão pelas frações municipais de Amazônia e Pantanal.
+    & log $\times$ escore $z$ $\times$ fração
+    & Permite que a inclinação varie com a composição territorial. \\
+Preço--aptidão $\times$ regime
+    & Produto do gradiente preço--aptidão por cada indicador $I_{rt}$.
+    & log $\times$ escore $z$
+    & Usa preço centrado dentro do regime no Painel B da Tabela~\ref{tab:h1-regimes-biomas}. \\
+Aptidão $\times$ regime
+    & Produto de $Z_{i,j}$ pelos indicadores de 2006--2011 e 2012--2024.
+    & escore $z$
+    & Deslocamentos de nível em relação a 2001--2005. \\
+Degrau de 2005
+    & Produtos de $D_{2005}$ pela fração amazônica, pela aptidão e pelo produto dessas duas medidas.
+    & fração, escore $z$ ou produto
+    & A tabela de robustez reporta o termo com aptidão. \\
+Interações por destino
+    & Produtos de $I_{\text{agr}}$ com o gradiente preço--aptidão, a tendência por aptidão e a anomalia de precipitação.
+    & unidade do fator interagido
+    & Permitem comparar a resposta na agricultura com a resposta na pastagem. \\
+\end{longtable}
+\noindent\textbf{Nota.} Os índices $i$ e $t$ indicam município e ano. O índice $j$ identifica a commodity e $s$ e $m$ designam soja e milho nas interações com aptidão. As séries de preços são da \textit{Pink Sheet} do Banco Mundial, deflacionadas pelo CPI-U para dólares de 2024. Na especificação de referência, os logaritmos são centrados pela média da série defasada no painel de 2001--2024. As unidades referem-se à escala usada na regressão. A abreviação p.p. indica pontos percentuais e adim. indica uma escala adimensional.
+\par
+\endgroup
