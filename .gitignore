@@ -52,8 +52,8 @@ yarn-error.log*
 *.run.xml
 
 # PDFs compilados dos artigos ativos
-2_INTI/chapters/*/main.pdf
-2_INTI/chapters/*/text/main.pdf
+# 2_INTI/chapters/*/main.pdf
+# 2_INTI/chapters/*/text/main.pdf
 
 # Sistema operacional
 .DS_Store
